@@ -99,7 +99,7 @@ function AppAnual() {
   }, [meta]);
 
   const toggle = useCallback(k => {
-    setSelecionados(prev => prev.includes(k) ? prev.filter(x => x !== k) : [...prev, k]);
+    setSelecionados(prev => prev.includes(k) ? prev.filter(x => x !== k) : [k, ...prev]);
   }, []);
 
   const closeMenu = () => setMenuAberto(false);
