@@ -30,7 +30,7 @@
         const { useState, useEffect, useMemo, useCallback } = React;
         const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceArea, ReferenceLine, ReferenceDot, Label } = Recharts;
 
-        const CORES_CAT = { 'Economia': '#ea580c', 'Economia EUA': '#0a580c', 'Impostos e Consumo': '#ea283c', 'Institucional': '#0a58ac', 'PolÃ­tica': '#7a88ac', 'Internacional': '#7a28bc', 'Social': '#aa58ac', 'Bolsas': '#6a580c', 'Moedas': '#3aa82c', 'Emprego e Renda': '#16a34a', 'Desenvolvimento': '#dc2626', 'SaÃºde': '#0891b2', 'EducaÃ§Ã£o': '#db2777', 'Meio Ambiente': '#16234a', 'DÃ­vida': '#475569', 'CiÃªncia e Tecnologia': '#0d9488', 'CorrupÃ§Ã£o': '#ca8a04', 'SeguranÃ§a': '#9f1239', 'Commodities': '#9f12a9' };
+        const CORES_CAT = { 'Economia': '#ea580c', 'Economia EUA': '#0a580c', 'Impostos e Consumo': '#ea283c', 'Institucional': '#0a58ac', 'PolÃ­tica': '#7a88ac', 'Internacional': '#7a28bc', 'Social': '#aa58ac', 'Bolsas': '#6a580c', 'Moedas': '#3aa82c', 'Emprego e Renda': '#16a34a', 'Desenvolvimento': '#dc2626', 'Saúde': '#0891b2', 'Educação': '#db2777', 'Meio Ambiente': '#16234a', 'Dí­vida': '#475569', 'CiÃªncia e Tecnologia': '#0d9488', 'Corrupção': '#ca8a04', 'SeguranÃ§a': '#9f1239', 'Commodities': '#9f12a9' };
         const PRES_ANOS = window.__MANDATOS__ || [];
         const CORES_CAT_NORMALIZADAS = window.__CATEGORIAS__ || {};
 
@@ -89,7 +89,7 @@
             const [menuAberto, setMenuAberto] = useState(false);
 
             useEffect(() => {
-                // FunÃ§Ã£o para carregar os dados de forma robusta
+                // Função para carregar os dados de forma robusta
                 const carregar = () => {
                     const json = window.__DADOS_ANUAIS__;
                     if (!json) {
@@ -216,7 +216,7 @@
             const [exibirAviso, setExibirAviso] = React.useState(false);
 
             const copiarParaIA = () => {
-                const prompt = `InstruÃ§Ãµes para a IA: Por favor, valide a confiabilidade dos dados do indicador abaixo. Verifique se os valores numÃ©ricos batem com a fonte oficial citada (${info.fonte}), se a descriÃ§Ã£o e os eventos histÃ³ricos condizem com a realidade brasileira e se a metodologia estÃ¡ correta conforme os padrÃµes estatÃ­sticos. Informe se encontrou alguma inconsistÃªncia significativa ou se os dados sÃ£o altamente confiÃ¡veis.
+                const prompt = `Instruções para a IA: Por favor, valide a confiabilidade dos dados do indicador abaixo. Verifique se os valores numéricos batem com a fonte oficial citada (${info.fonte}), se a descrição e os eventos históricos condizem com a realidade brasileira e se a metodologia está correta conforme os padrões estatísticos. Informe se encontrou alguma inconsistência significativa ou se os dados são altamente confiáveis.
 
 DADOS DO INDICADOR (JSON):
 ${JSON.stringify(info, null, 2)}`;
@@ -318,7 +318,7 @@ ${JSON.stringify(info, null, 2)}`;
             };
 
             const fixedFields = [
-                ['descricao', 'DescriÃ§Ã£o'],
+                ['descricao', 'Descrição'],
                 ['como_interpretar', 'Como interpretar']
             ];
 
@@ -343,7 +343,7 @@ ${JSON.stringify(info, null, 2)}`;
                             {info.label}{info.validacao && (<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" title="Validado"><polyline points="20 6 9 17 4 12"></polyline></svg>)}
                         </div>
                         {info.validacao && (
-                            <button onClick={copiarParaIA} className="export-btn" title="Exportar para validaÃ§Ã£o em IA">
+                            <button onClick={copiarParaIA} className="export-btn" title="Exportar para validação em IA">
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                                     <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
@@ -377,7 +377,7 @@ ${JSON.stringify(info, null, 2)}`;
                                     labelFormatter={(ano) => {
                                         const d = dadosComEventos.find(x => x.ano === ano);
                                         const evs = d?._eventos?.map(e => e.nome).join(" | ");
-                                        return evs ? `${ano} â€¢ ${evs}` : `${ano}`;
+                                        return evs ? `${ano} - ${evs}` : `${ano}`;
                                     }}
                                     formatter={v => [v != null ? v.toFixed(2) : '-', info.label]}
                                     contentStyle={{ background: '#fff', border: '1px solid #d0d7de', fontSize: 14, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,.08)' }}
@@ -445,7 +445,7 @@ ${JSON.stringify(info, null, 2)}`;
                             <button
                                 onClick={() => setEventoAtivo(null)}
                                 style={{ position: 'absolute', right: 8, top: 8, border: 'none', background: 'none', cursor: 'pointer', color: '#9ca3af', fontSize: 16 }}
-                            >âœ•</button>
+                            >x</button>
                             <div style={{ fontWeight: 600, color: '#9a6700', marginBottom: 4 }}>
                                 {eventoAtivo.ano || eventoAtivo.data}: {eventoAtivo.nome}
                             </div>

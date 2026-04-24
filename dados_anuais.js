@@ -135,95 +135,118 @@ window.__DADOS_ANUAIS__ = {
     "padrao": false,
   },
   "selic_aa": {
-    "label": "Selic (média no Ano)",
+    "label": "Selic (média no ano)",
     "cor": "#2563eb",
     "unidade": "% a.a.",
     "fonte": "BCB SGS 4189",
     "cat": "Economia",
     "descricao":
-      'A Selic é a taxa básica de juros da economia brasileira. Segundo o Banco Central do Brasil, ela é o "principal instrumento de política monetária utilizado pelo Banco Central (BC) para controle da inflação". O Brasil detêm uma das maiores taxas de juros reais do mundo, muito acima da média global, encarecendo o crédito e afetando o investimento frente a outros mercados emergentes.',
+      "Mede a média anual da taxa Selic acumulada no mês, anualizada com base em 252 dias úteis, conforme série oficial 4189 do SGS/BCB.",
     "como_interpretar":
-      "Valores altos indicam um aperto monetário visando conter a inflação, o que desacelera o consumo e encarece empréstimos. Valores baixos indicam estámulo é economia, facilitando o acesso ao crédito.",
+      "Valores mais altos indicam política monetária mais restritiva, normalmente usada para conter pressões inflacionárias. Valores mais baixos indicam política monetária mais estimulativa, com menor custo básico do dinheiro.",
     "metodologia":
-      "média aritmética ou taxa acumulada anualizada (base 252 dias úteis) apurada diariamente pelas operações compromissadas lastreadas em títulos públicos federais.",
+      "Os valores anuais foram calculados como a média aritmética simples dos 12 valores mensais oficiais da série SGS 4189 do Banco Central do Brasil. A série 4189 mede a taxa Selic acumulada no mês, anualizada em base 252 dias úteis, em % a.a.",
     "historico_metodologia":
-      'A taxa Selic foi introduzida em 1986, mas assumiu seu papel central como principal instrumento de política monetária apenas em 1999, com a adoção do regime de "metas de inflação" pelo BCB. O método de cálculo pela plataforma do Sistema Especial de Liquidação e de Custódia manteve-se consistente desde então.',
+      "A série SGS 4189 está disponível desde agosto de 1986 e representa a taxa média ajustada das operações compromissadas de um dia útil lastreadas em títulos públicos federais custodiados no Selic. Para este conjunto, foram mantidos apenas anos civis completos de 1994 a 2025. O ano de 1994 é metodologicamente comparável como observação oficial da série, mas sua média anual é fortemente distorcida pelos meses anteriores à estabilização do Plano Real.",
     "abrangencia": "Nacional (Brasil).",
     "periodicidade":
-      "Variável na origem (reuniões do Copom a cada 45 dias), porém consolidada como taxa média/acumulada com periodicidade anual neste conjunto de dados.",
+      "Mensal na fonte oficial; anual neste conjunto por agregação da média aritmética dos 12 meses de cada ano completo.",
     "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao":
+          "A implantação do Plano Real em julho de 1994 reduziu drasticamente a inflação e separa um primeiro semestre de juros anualizados extremamente elevados de um segundo semestre em patamar muito menor.",
+      },
       {
         "ano": 1998,
         "nome": "Crise russa",
         "descricao":
-          "O Copom registrou a crise da Rússia como foco relevante de instabilidade externa em 1998, em um contexto de pressão cambial e aumento de aversão a risco, compatível com a manutenção da Selic média anual em patamar elevado.",
+          "A crise russa elevou a aversão a risco em mercados emergentes e pressionou as condições financeiras externas, compatível com a alta da Selic observada no fim de 1998.",
       },
       {
         "ano": 1999,
         "nome": "Metas inflação",
         "descricao":
-          "Após a mudança para câmbio flutuante e a adoção formal do regime de metas de inflação, a política monetária passou a usar a Selic como principal instrumento para conduzir a inflação à meta, explicando a permanência dos juros em nível alto no início do novo regime.",
+          "Após a mudança para câmbio flutuante e a adoção do regime de metas para inflação, a Selic passou a ser usada como principal instrumento de política monetária para convergência da inflação à meta.",
       },
       {
         "ano": 2002,
         "nome": "Pressão cambial",
         "descricao":
-          "O Copom registrou elevação das expectativas de inflação, pressão cambial e aumento da incerteza macroeconômica em 2002, fatores que levaram ao ciclo de aperto monetário refletido na Selic média mais alta em 2002 e 2003.",
+          "A deterioração das expectativas de inflação, a pressão cambial e a incerteza macroeconômica levaram ao ciclo de aperto monetário refletido nas médias mais altas de 2002 e 2003.",
       },
       {
         "ano": 2008,
         "nome": "Crise financeira",
         "descricao":
-          "O Banco Central registrou forte pressão nos mercados financeiros internacionais desde setembro de 2008, com restrição de liquidez, queda de confiança e efeitos sobre crédito e atividade, contexto que precedeu a redução da Selic média anual em 2009.",
+          "A crise financeira internacional provocou forte deterioração das condições financeiras globais; a Selic subiu em 2008 e depois caiu em 2009 com a resposta monetária à desaceleração.",
       },
       {
         "ano": 2015,
         "nome": "Inflação alta",
         "descricao":
-          "O Copom apontou forte alta dos preços administrados e monitorados em 2015, além de inflação corrente elevada, justificando o ciclo de aperto monetário que elevou a Selic média anual em 2015 e 2016.",
-      },
-      {
-        "ano": 2016,
-        "nome": "Desinflação",
-        "descricao":
-          "O Banco Central registrou redução da inflação implícita, arrefecimento de índices de inflação corrente, desaceleração de preços livres e sinais de fraqueza da atividade, fatores associados ao início do ciclo de queda da Selic a partir do fim de 2016.",
+          "A inflação elevada, incluindo pressões de preços administrados e expectativas acima da meta, sustentou o ciclo de aperto monetário e elevou a média anual da Selic em 2015 e 2016.",
       },
       {
         "ano": 2020,
         "nome": "Covid-19",
         "descricao":
-          "O Banco Central registrou forte contração da atividade econômica durante a pandemia e reduziu a Selic para 2,00% ao ano em agosto de 2020, explicando a queda acentuada da Selic média anual em 2020.",
+          "A pandemia provocou forte contração da atividade econômica e levou o Copom a reduzir a Selic para 2,00% a.a. em agosto de 2020, derrubando a média anual.",
       },
       {
         "ano": 2021,
         "nome": "Inflação pós-pandemia",
         "descricao":
-          "O Copom iniciou em 2021 um ciclo de normalização e aperto monetário diante da piora das projeções e expectativas de inflação, em cenário de alta global de preços e pressões domésticas.",
+          "A piora das expectativas e projeções de inflação após a fase aguda da pandemia iniciou um ciclo rápido de normalização e aperto monetário.",
       },
       {
         "ano": 2022,
         "nome": "Guerra Ucrânia",
         "descricao":
-          "O Banco Central citou a guerra na Ucrânia, a alta do petróleo e de commodities agrícolas, a valorização global do dólar, o aumento dos juros em economias maduras e incertezas fiscais domésticas como fatores de estresse financeiro e inflação elevada, compatíveis com a forte alta da Selic média em 2022.",
+          "A guerra na Ucrânia elevou preços de commodities e piorou o cenário inflacionário global, contribuindo para a continuidade do aperto monetário no Brasil.",
       },
       {
         "ano": 2025,
         "nome": "Aperto monetário",
         "descricao":
-          "O Copom elevou a Selic para 15,00% ao ano em 2025 e registrou expectativas de inflação acima da meta, mantendo postura restritiva para buscar a convergência da inflação ao objetivo oficial.",
+          "O Copom elevou a Selic para 15,00% a.a. em 2025 diante de expectativas de inflação acima da meta e postura monetária restritiva.",
       },
     ],
     "comparacao_paises":
-      "Historicamente, o Brasil destoa da média mundial, frequentemente liderando ou figurando no topo dos rankings de maiores taxas de juros nominais e reais (descontada a inflação) entre países emergentes e desenvolvidos.",
-    "nivel_confiabilidade": "Alto. Dados extraídos dos sistemas oficiais do Governo Federal.",
-    "validacao": "Gemini 3.1 Pro (Google) - 22/04/2026",
+      "A série SGS 4189 não é uma base internacional comparável e não deve, sozinha, sustentar ranking entre países. Ela é adequada para medir a evolução oficial da Selic no Brasil; comparações internacionais exigem base harmonizada de juros nominais ou reais de múltiplos países.",
+    "nivel_confiabilidade":
+      "Alto para os valores da série brasileira, pois os dados mensais vêm diretamente do Banco Central do Brasil. Médio para interpretações históricas, pois a atribuição causal dos eventos depende de leitura de comunicados, atas e relatórios oficiais. A comparação internacional não foi usada para validar os valores do gráfico.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Central do Brasil - SGS (Sistema Gerenciador de séries Temporais)",
-        "url": "https://www3.bcb.gov.br/sgspub/",
+        "titulo":
+          "Banco Central do Brasil - SGS série 4189: Taxa de juros - Selic acumulada no mês anualizada base 252",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Portal de Dados Abertos da série 4189",
+        "url":
+          "https://dadosabertos.bcb.gov.br/dataset/4189-taxa-de-juros---selic-acumulada-no-mes-anualizada-base-252",
+      },
+      { "titulo": "Banco Central do Brasil - Taxa Selic", "url": "https://www.bcb.gov.br/controleinflacao/taxaselic" },
+      { "titulo": "Banco Central do Brasil - Política monetária", "url": "https://www.bcb.gov.br/controleinflacao" },
+      {
+        "titulo": "Banco Central do Brasil - Metas para a inflação",
+        "url": "https://www.bcb.gov.br/controleinflacao/metainflacao",
+      },
+      { "titulo": "Banco Central do Brasil - Plano Real", "url": "https://www.bcb.gov.br/controleinflacao/planoreal" },
+      {
+        "titulo": "Banco Central do Brasil - Copom eleva a taxa Selic para 15,00% a.a.",
+        "url": "https://www.bcb.gov.br/detalhenoticia/20733/nota",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Copom reduz a taxa Selic para 2,00% a.a.",
+        "url": "https://www.bcb.gov.br/detalhenoticia/17148/nota",
       },
     ],
     "dados": [
+      { "ano": 1994, "valor": 5561.87 },
       { "ano": 1995, "valor": 54.92 },
       { "ano": 1996, "valor": 27.6 },
       { "ano": 1997, "valor": 25.18 },
@@ -523,72 +546,105 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "IBGE/Sistema de Contas Nacionais",
     "cat": "Economia",
     "descricao":
-      "Expansão anual da economia descontada a inflação. Historicamente, o Brasil apresentou períodos intermitentes de crescimento (os conhecidos 'voos de galinha'), com desempenho de longo prazo frequentemente inferior à média mundial. Contudo, a resiliência recente se destaca. Conforme o IBGE, 'o Produto Interno Bruto (PIB) do país encerrou 2025 com crescimento de 2,3%', consolidando o quarto ano consecutivo de avanços consistentes no cenário pós-pandemia.",
+      "Mede a variação anual em volume do Produto Interno Bruto do Brasil, isto é, o crescimento da produção de bens e serviços finais descontado o efeito dos preços.",
     "como_interpretar":
-      "Mede o avanço na geração de riquezas do país descontando a variação de preços.índices positivos indicam que a economia e a produção se expandiram;índices negativos apontam contração ou recessão da atividade econômica.",
+      "Valores positivos indicam expansão real da atividade econômica em relação ao ano anterior; valores negativos indicam contração real do PIB.",
     "metodologia":
-      "O cálculo afere a 'variação em volume' baseando-se na ótica da oferta (produção), demanda (despesas) e renda. é ancorado nos rigorosos padrões internacionais ditados pelo manual System of National Accounts (SNA) estabelecido pela ONU, OCDE e FMI.",
+      "O indicador corresponde à variação em volume do PIB a preços de mercado, calculada pelo IBGE no Sistema de Contas Nacionais e no Sistema de Contas Nacionais Trimestrais, segundo as óticas da produção, despesa e renda, com encadeamento de índices de volume e ajuste dos resultados trimestrais aos totais anuais quando disponíveis.",
     "historico_metodologia":
-      "O indicador passa por revisões programadas estruturais. Recentemente, 'o IBGE está reformulando o Sistema de Contas Nacionais, com a alteração do ano base de 2010 para 2021', a fim de melhor capturar as inovações tecnológicas e as transformações na matriz produtiva.",
-    "abrangencia": "Território nacional.",
+      "A série do PIB brasileiro passa por revisões ordinárias e revisões metodológicas estruturais. A referência metodológica vigente usa o Sistema de Contas Nacionais referência 2010, compatível com recomendações internacionais do SNA 2008. O IBGE informa processo de reformulação do Sistema de Contas Nacionais com mudança do ano de referência de 2010 para 2021. Os anos mais recentes das Contas Nacionais Trimestrais são oficiais, mas sujeitos a revisão quando incorporados ao Sistema de Contas Nacionais anual.",
+    "abrangencia": "Brasil, território nacional.",
     "periodicidade":
-      "Anual (consolidação definitiva), acompanhado por apurações da pesquisa do Sistema de Contas Nacionais Trimestrais.",
+      "Anual para o Sistema de Contas Nacionais; trimestral para o Sistema de Contas Nacionais Trimestrais, com acumulado no ano e acumulado em quatro trimestres.",
     "eventos_externos": [
       {
-        "ano": 1998,
-        "nome": "Crise Asiática/Russa",
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
         "descricao":
-          "Forte instabilidade nos mercados emergentes que levou o Brasil a abandonar o regime de câmbio fixo e adotar o Tripé Econômico (metas de inflação, câmbio flutuante e metas fiscais).",
+          "Mudança do regime cambial brasileiro em janeiro de 1999 após pressões externas e internas, seguida pela adoção do regime de metas de inflação, em contexto de baixo crescimento do PIB.",
       },
       {
-        "ano": 2004,
-        "nome": "Superciclo das Commodities",
+        "ano": 2009,
+        "nome": "Crise global",
         "descricao":
-          "Período de forte crescimento global, impulsionado pela China, que gerou recordes de exportações brasileiras e acúmulo de reservas internacionais.",
+          "A crise financeira internacional de 2008-2009 afetou a demanda, o crédito e o comércio global, coincidindo com queda real do PIB brasileiro em 2009.",
+      },
+      {
+        "ano": 2010,
+        "nome": "Rebote pós-crise",
+        "descricao":
+          "Após a contração de 2009, a economia brasileira registrou forte recuperação em 2010, com a maior taxa anual da série recente.",
       },
       {
         "ano": 2015,
-        "nome": "Crise Fiscal-Política",
+        "nome": "Recessão doméstica",
         "descricao":
-          "Grave recessão interna marcada pela deterioração das contas públicas e forte instabilidade política, resultando em queda acentuada do PIB por dois anos consecutivos.",
+          "A economia entrou em recessão em 2015 e 2016, com queda do PIB em dois anos consecutivos, em contexto de deterioração fiscal, inflação elevada, juros altos e instabilidade política.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
         "descricao":
-          "Choque global de oferta e demanda que paralisou diversas atividades econômicas, exigindo gastos emergenciais massivos e causando a maior queda trimestral da história.",
+          "A pandemia de COVID-19 provocou choque simultâneo de oferta e demanda, restrições à circulação e queda expressiva da atividade econômica.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao":
+          "A reabertura de atividades e a base deprimida de 2020 contribuíram para forte crescimento real do PIB em 2021.",
       },
       {
         "ano": 2023,
-        "nome": "Retomada Recorde",
+        "nome": "Agropecuária recorde",
         "descricao":
-          "Crescimento surpreendente impulsionado por safras agrícolas recordes e pela resiliência do setor de serviços e do mercado de trabalho no pós-pandemia.",
+          "O crescimento de 2023 foi impulsionado principalmente pelo forte desempenho da agropecuária, conforme divulgado pelo IBGE no Sistema de Contas Nacionais.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Agropecuária forte",
+        "descricao":
+          "O crescimento de 2025 foi sustentado por alta expressiva da agropecuária, com avanços também em serviços e indústria segundo as Contas Nacionais Trimestrais do IBGE.",
       },
     ],
     "comparacao_paises":
-      "Apresenta um Histórico de expansão estruturalmente inferior aos emergentes asiáticos (como China e Índia). No entanto, de 2022 a 2025, o Brasil conseguiu manter um desempenho superior a vários pares latino-americanos que sofreram mais severamente com políticas monetárias restritivas.",
+      "A série brasileira mostra crescimento real positivo em muitos anos, mas com forte volatilidade e desempenho de longo prazo inferior ao observado em economias emergentes asiáticas de alto crescimento, como China e Índia. Em comparação com economias avançadas, o Brasil tem maior volatilidade cíclica e menor estabilidade de crescimento.",
     "nivel_confiabilidade":
-      "Muito alto. Dados formados por auditoria demorada e oficial sob o crivo do principal sistema estatístico da esfera federal (IBGE).",
-    "validacao": "Gemini 3.1 Pro (Google) - 22/04/2026",
+      "Muito alto para 1994-2023, por serem dados oficiais do IBGE já incorporados ou revisados no Sistema de Contas Nacionais. Alto para 2024-2025, por serem dados oficiais das Contas Nacionais Trimestrais, mas ainda sujeitos a revisões posteriores pelo próprio IBGE.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "PIB cresce 2,3% em 2025 - Agência de Notícias (IBGE)",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45969-pib-cresce-2-3-em-2025",
+        "titulo": "IBGE - Sistema de Contas Nacionais: Brasil",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9052-sistema-de-contas-nacionais-brasil.html",
       },
       {
-        "titulo": "PIB cresce 3,4% em 2024 - Agência de Notícias (IBGE)",
+        "titulo": "IBGE - Sistema de Contas Nacionais Trimestrais",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9300-contas-nacionais-trimestrais.html",
+      },
+      {
+        "titulo": "IBGE - Série histórica do PIB",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/7531a821326941965f1483c85caca11f.xls",
+      },
+      {
+        "titulo": "IBGE - PIB cresce 3,2% e totaliza R$ 10,9 trilhões em 2023",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/44973-pib-cresce-3-2-e-totaliza-r-10-9-trilhoes-em-2023",
+      },
+      {
+        "titulo": "IBGE - PIB cresce 3,4% em 2024 e fecha o ano em R$ 11,7 trilhões",
         "url":
           "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42774-pib-cresce-3-4-em-2024-e-fecha-o-ano-em-r-11-7-trilhoes",
       },
       {
-        "titulo": "Sistema de Contas Nacionais: Brasil | IBGE",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9052-sistema-de-contas-nacionais-brasil.html",
+        "titulo": "IBGE - PIB cresce 2,3% em 2025 e fecha o ano em R$ 12,7 trilhões",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45968-pib-cresce-2-3-em-2025-e-fecha-o-ano-em-r-12-7-trilhoes",
       },
     ],
     "dados": [
       { "ano": 1994, "valor": 5.9 },
-      { "ano": 1995, "valor": 4.4 },
+      { "ano": 1995, "valor": 4.2 },
       { "ano": 1996, "valor": 2.2 },
       { "ano": 1997, "valor": 3.4 },
       { "ano": 1998, "valor": 0.3 },
@@ -599,14 +655,14 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2003, "valor": 1.1 },
       { "ano": 2004, "valor": 5.8 },
       { "ano": 2005, "valor": 3.2 },
-      { "ano": 2006, "valor": 4 },
+      { "ano": 2006, "valor": 4.0 },
       { "ano": 2007, "valor": 6.1 },
       { "ano": 2008, "valor": 5.1 },
       { "ano": 2009, "valor": -0.1 },
       { "ano": 2010, "valor": 7.5 },
-      { "ano": 2011, "valor": 4 },
+      { "ano": 2011, "valor": 4.0 },
       { "ano": 2012, "valor": 1.9 },
-      { "ano": 2013, "valor": 3 },
+      { "ano": 2013, "valor": 3.0 },
       { "ano": 2014, "valor": 0.5 },
       { "ano": 2015, "valor": -3.5 },
       { "ano": 2016, "valor": -3.3 },
@@ -615,109 +671,110 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2019, "valor": 1.2 },
       { "ano": 2020, "valor": -3.3 },
       { "ano": 2021, "valor": 4.8 },
-      { "ano": 2022, "valor": 3 },
+      { "ano": 2022, "valor": 3.0 },
       { "ano": 2023, "valor": 3.2 },
       { "ano": 2024, "valor": 3.4 },
       { "ano": 2025, "valor": 2.3 },
     ],
-    "padrao": false,
   },
   "resultado_primario_pib": {
     "label": "Resultado Primário (% do PIB)",
     "cor": "#0ea5e9",
     "unidade": "% do PIB",
-    "fonte": "Banco Central do Brasil (SGS 4359)",
+    "fonte": "Banco Central do Brasil (SGS 5793)",
     "cat": "Economia",
     "descricao":
-      "Saldo das contas públicas (arrecadação menos despesas), excluindo o pagamento de juros da dívida. A reversão para déficits crúnicos a partir de 2014 ilustra deterioração fiscal estrutural. O Brasil apresenta maior dificuldade em manter âncoras fiscais sustentáveis comparado à Europa e pares latinos sólidos.",
+      "Saldo primário do setor público consolidado em 12 meses como proporção do PIB, calculado a partir da NFSP sem desvalorização cambial. Valores positivos indicam superávit primário; valores negativos indicam déficit primário.",
     "como_interpretar":
-      "Superávit (valor positivo) indica poupança para pagar juros da dívida. Déficit (valor negativo) sinaliza aumento do endividamento por gastos excedentes.",
-    "metodologia": "Apurado 'abaixo da linha' pelo BCB, pela variação da dívida líquida do setor público.",
+      "Valor positivo indica que o setor público consolidado gerou superávit primário em 12 meses. Valor negativo indica déficit primário em 12 meses. Quanto maior o valor positivo, maior a poupança primária antes dos juros nominais; quanto mais negativo, maior a necessidade de financiamento primária.",
+    "metodologia":
+      "Indicador derivado da série oficial SGS 5793 do Banco Central do Brasil: NFSP sem desvalorização cambial (% PIB), fluxo acumulado em 12 meses, resultado primário, total do setor público consolidado. Como a série SGS 5793 segue a convenção de NFSP, valores negativos representam superávit primário e valores positivos representam déficit primário. Para apresentar como Resultado Primário, o sinal foi invertido: resultado_primario = -1 * valor_SGS_5793. Foram usados os valores de dezembro de cada ano, por representarem o acumulado de 12 meses encerrado no ano civil.",
     "historico_metodologia":
-      "Sem alterações estruturais recentes; método padrão 'abaixo da linha' via Necessidade de Financiamento do Setor público (NFSP).",
+      "A série oficial SGS 5793 tem início em novembro de 2002. A abrangência das estatísticas fiscais foi alterada pela exclusão da Petrobras a partir de maio de 2009 e da Eletrobras a partir da data-base novembro de 2010; para permitir comparação, o Banco Central informa que o cálculo na nova abrangência retroagiu a dezembro de 2001. Como a série pública SGS 5793 disponível começa em novembro de 2002, os anos de 1994 a 2001 foram removidos por não haver valores oficiais concretos nessa série.",
     "abrangencia":
-      "Setor público Consolidado (Governo Central, Governos Regionais e Empresas Estatais, excluindo financeiras).",
-    "periodicidade": "Mensal (consolidado em 12 meses para % do PIB).",
+      "Setor público consolidado: Governo Federal, Previdência Social, governos estaduais e municipais, empresas estatais das três esferas de governo e Banco Central do Brasil, com exclusões metodológicas da Petrobras e da Eletrobras conforme documentação oficial do BCB.",
+    "periodicidade":
+      "Mensal, em fluxo acumulado em 12 meses; para a série anual foram usados os valores de dezembro de cada ano.",
     "eventos_externos": [
-      {
-        "ano": 1999,
-        "nome": "Ajuste fiscal",
-        "descricao":
-          "Após resultado praticamente equilibrado em 1998, o setor público consolidado passou a registrar superávit primário elevado em 1999, associado ao cumprimento de metas fiscais no programa econômico com o FMI.",
-      },
       {
         "ano": 2009,
         "nome": "Crise global",
         "descricao":
-          "A crise financeira internacional reduziu a atividade econômica e a arrecadação, levando a queda relevante do superávit primário em relação a 2008, embora a meta ajustada tenha sido cumprida.",
+          "A crise financeira internacional reduziu atividade econômica e arrecadação, levando a forte queda do superávit primário acumulado em 12 meses.",
       },
       {
         "ano": 2014,
         "nome": "Reversão fiscal",
         "descricao":
-          "O setor público consolidado registrou o primeiro déficit primário anual da série iniciada em 2002, com reversão explicada por déficits do Governo Central, governos regionais e empresas estatais.",
+          "O setor público consolidado passou de superávit para déficit primário anual, marcando deterioração fiscal relevante na série.",
       },
       {
         "ano": 2015,
-        "nome": "Déficit central",
+        "nome": "Recessão fiscal",
         "descricao":
-          "O déficit primário se aprofundou em 2015, concentrado principalmente no Governo Central, com piora das receitas e necessidade de alteração das metas fiscais do setor público consolidado.",
+          "O déficit primário se aprofundou em meio à queda de receitas, recessão econômica e piora do resultado do Governo Central.",
       },
       {
         "ano": 2020,
         "nome": "Covid-19",
         "descricao":
-          "O déficit primário atingiu o pior nível da série em razão das ações de mitigação dos impactos da pandemia, com queda das receitas líquidas e forte aumento das despesas primárias.",
+          "A pandemia elevou fortemente despesas primárias e reduziu receitas, produzindo o maior déficit primário da série.",
       },
       {
         "ano": 2023,
         "nome": "Precatórios",
         "descricao":
-          "O déficit voltou a crescer de forma relevante, afetado pelo pagamento extraordinário de precatórios após decisão do STF sobre as Emendas Constitucionais 113 e 114, de 2021.",
+          "O déficit primário aumentou com impacto de pagamentos extraordinários de precatórios e piora do resultado acumulado em 12 meses.",
       },
     ],
     "comparacao_paises":
-      "Maior dificuldade em manter superávits consistentes em relação a emergentes sólidos como Chile e México.",
-    "nivel_confiabilidade": "Muito alto (dados oficiais consolidados pelo BCB).",
-    "validacao": "Gemini 3.1 Pro (Google) - 22/04/2026",
+      "Comparações internacionais diretas exigem cautela porque cada país pode usar abrangências fiscais, conceitos de governo e critérios contábeis diferentes. Em termos gerais, déficits primários persistentes indicam menor capacidade de estabilização da dívida pública em comparação com países que mantêm superávits primários recorrentes.",
+    "nivel_confiabilidade":
+      "Muito alto para 2002 a 2025, pois os valores são derivados diretamente de série oficial mensal do Banco Central do Brasil. Inexistente para 1994 a 2001 dentro da série SGS 5793, por isso esses anos foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
-      ["Estatísticas Fiscais - Banco Central do Brasil", "https://www.bcb.gov.br/estatisticas/estatisticasfiscais"],
+      {
+        "titulo":
+          "Banco Central do Brasil - SGS 5793 - NFSP sem desvalorização cambial (% PIB), resultado primário, setor público consolidado",
+        "url":
+          "https://dadosabertos.bcb.gov.br/dataset/5793-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-primario---tota",
+      },
+      {
+        "titulo": "Banco Central do Brasil - API JSON SGS 5793",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5793/dados?formato=json",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Estatísticas Fiscais",
+        "url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
+      },
     ],
     "dados": [
-      { "ano": 1994, "valor": 2.8 },
-      { "ano": 1995, "valor": 0.3 },
-      { "ano": 1996, "valor": -0.1 },
-      { "ano": 1997, "valor": -0.3 },
-      { "ano": 1998, "valor": -0.1 },
-      { "ano": 1999, "valor": 3.1 },
-      { "ano": 2000, "valor": 3.3 },
-      { "ano": 2001, "valor": 3.4 },
-      { "ano": 2002, "valor": 3.8 },
-      { "ano": 2003, "valor": 4.1 },
-      { "ano": 2004, "valor": 4.4 },
-      { "ano": 2005, "valor": 4.6 },
-      { "ano": 2006, "valor": 4.1 },
-      { "ano": 2007, "valor": 3.8 },
-      { "ano": 2008, "valor": 3.9 },
-      { "ano": 2009, "valor": 1.9 },
-      { "ano": 2010, "valor": 2.6 },
-      { "ano": 2011, "valor": 2.9 },
-      { "ano": 2012, "valor": 2.2 },
-      { "ano": 2013, "valor": 1.7 },
+      { "ano": 2002, "valor": 3.19 },
+      { "ano": 2003, "valor": 3.24 },
+      { "ano": 2004, "valor": 3.69 },
+      { "ano": 2005, "valor": 3.74 },
+      { "ano": 2006, "valor": 3.15 },
+      { "ano": 2007, "valor": 3.24 },
+      { "ano": 2008, "valor": 3.33 },
+      { "ano": 2009, "valor": 1.94 },
+      { "ano": 2010, "valor": 2.62 },
+      { "ano": 2011, "valor": 2.94 },
+      { "ano": 2012, "valor": 2.18 },
+      { "ano": 2013, "valor": 1.71 },
       { "ano": 2014, "valor": -0.56 },
       { "ano": 2015, "valor": -1.86 },
       { "ano": 2016, "valor": -2.48 },
       { "ano": 2017, "valor": -1.68 },
       { "ano": 2018, "valor": -1.55 },
       { "ano": 2019, "valor": -0.84 },
-      { "ano": 2020, "valor": -9.44 },
-      { "ano": 2021, "valor": 0.75 },
+      { "ano": 2020, "valor": -9.24 },
+      { "ano": 2021, "valor": 0.72 },
       { "ano": 2022, "valor": 1.25 },
-      { "ano": 2023, "valor": -2.29 },
+      { "ano": 2023, "valor": -2.28 },
       { "ano": 2024, "valor": -0.4 },
       { "ano": 2025, "valor": -0.43 },
     ],
-    "padrao": false,
   },
   "resultado_nominal_pib": {
     "label": "Resultado Nominal (% do PIB)",
@@ -4059,26 +4116,92 @@ window.__DADOS_ANUAIS__ = {
     "label": "Petróleo Brent (média anual)",
     "cor": "#1f2937",
     "unidade": "US$/barril",
-    "fonte": "EIA / IMF / Energy Institute",
+    "fonte": "EIA / FRED / Banco Mundial Pink Sheet",
     "cat": "Commodities",
-    "descricao":
-      "Preço da energia primária global. Escaladas recentes inflaram ganhos da Petrobras mas causaram pressão de custos internos. A dependência de fósseis mantém forte correlação com a inflação mundial e afeta a América Latina e Europa de forma inversamente proporcional.",
+    "descricao": "Preço médio anual do petróleo Brent europeu, em dólares dos Estados Unidos por barril.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento do petróleo Brent no mercado internacional, com possível impacto sobre combustíveis, inflação, custos logísticos, balança comercial de países importadores e receitas de países exportadores.",
+    "metodologia":
+      "Média anual dos preços spot do petróleo Brent europeu, em US$/barril, sem ajuste sazonal. A série principal validada é a Europe Brent Spot Price FOB da U.S. Energy Information Administration, também republicada pelo FRED como DCOILBRENTEU/MCOILBRENTEU. Para conferência de anos recentes, foi usada a Pink Sheet do Banco Mundial, série 'Crude oil, Brent', definida como 'Crude oil, U.K. Brent 38° API'.",
+    "historico_metodologia":
+      "A série EIA/FRED é uma série histórica de preço spot nominal em US$/barril, não dessazonalizada. Não há mudança metodológica relevante identificada para a série anual Europe Brent Spot Price FOB no período validado. A comparação com o Banco Mundial deve ser feita com cautela porque a Pink Sheet usa sua própria série de commodity 'Crude oil, Brent', podendo apresentar pequenas diferenças de arredondamento ou fonte operacional.",
+    "abrangencia": "Mercado internacional de petróleo Brent europeu, preço spot FOB em dólares por barril.",
+    "periodicidade": "Diária na série original; média anual no indicador.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crise asiática",
+        "descricao":
+          "A desaceleração provocada pela crise financeira asiática reduziu a demanda por petróleo e coincidiu com forte queda do Brent em 1998.",
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise financeira",
+        "descricao":
+          "O Brent atingiu pico histórico durante o boom de commodities e depois caiu fortemente com a crise financeira global.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Excesso oferta",
+        "descricao":
+          "O aumento da oferta, incluindo produção não convencional nos Estados Unidos, e a decisão da OPEP de não cortar produção contribuíram para a queda acentuada de 2014-2016.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia reduziu drasticamente a demanda global por combustíveis, derrubando o preço médio anual do Brent.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A invasão da Ucrânia pela Rússia e as sanções relacionadas elevaram o risco de oferta e contribuíram para a alta do Brent em 2022.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brent é uma referência internacional de preço de petróleo, não um indicador nacional. Países importadores líquidos tendem a ser prejudicados por alta do Brent, enquanto exportadores líquidos tendem a ter melhora de receitas externas e fiscais, dependendo de política de preços, câmbio e estrutura produtiva.",
+    "nivel_confiabilidade":
+      "Alta. A série EIA/FRED é pública, recorrente, nominal, em unidade clara e com longa série histórica. Os anos de 2026 foram removidos por não representarem média anual fechada. Pequenas diferenças entre EIA, Banco Mundial, IMF e Energy Institute podem ocorrer por fonte, arredondamento e método de agregação.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      { "titulo": "EIA - Europe Brent Spot Price FOB Annual", "url": "https://www.eia.gov/dnav/pet/hist/rbrteA.htm" },
+      {
+        "titulo": "FRED - Crude Oil Prices: Brent - Europe (DCOILBRENTEU)",
+        "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+      },
+      {
+        "titulo": "FRED - Crude Oil Prices: Brent - Europe Monthly (MCOILBRENTEU)",
+        "url": "https://fred.stlouisfed.org/data/MCOILBRENTEU",
+      },
+      {
+        "titulo": "World Bank - Commodity Markets Pink Sheet",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      {
+        "titulo": "World Bank - Pink Sheet April 2026",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-April-2026.pdf",
+      },
+    ],
     "dados": [
+      { "ano": 1994, "valor": 15.86 },
       { "ano": 1995, "valor": 17.02 },
       { "ano": 1996, "valor": 20.64 },
       { "ano": 1997, "valor": 19.11 },
       { "ano": 1998, "valor": 12.76 },
       { "ano": 1999, "valor": 17.9 },
-      { "ano": 2000, "valor": 28.5 },
-      { "ano": 2001, "valor": 24.44 },
-      { "ano": 2002, "valor": 25.02 },
-      { "ano": 2003, "valor": 28.83 },
-      { "ano": 2004, "valor": 38.27 },
-      { "ano": 2005, "valor": 54.52 },
-      { "ano": 2006, "valor": 65.14 },
-      { "ano": 2007, "valor": 72.39 },
-      { "ano": 2008, "valor": 97.26 },
-      { "ano": 2009, "valor": 61.67 },
+      { "ano": 2000, "valor": 28.66 },
+      { "ano": 2001, "valor": 24.46 },
+      { "ano": 2002, "valor": 24.99 },
+      { "ano": 2003, "valor": 28.85 },
+      { "ano": 2004, "valor": 38.26 },
+      { "ano": 2005, "valor": 54.57 },
+      { "ano": 2006, "valor": 65.16 },
+      { "ano": 2007, "valor": 72.44 },
+      { "ano": 2008, "valor": 96.94 },
+      { "ano": 2009, "valor": 61.74 },
       { "ano": 2010, "valor": 79.61 },
       { "ano": 2011, "valor": 111.26 },
       { "ano": 2012, "valor": 111.63 },
@@ -4087,160 +4210,435 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2015, "valor": 52.32 },
       { "ano": 2016, "valor": 43.64 },
       { "ano": 2017, "valor": 54.13 },
-      { "ano": 2018, "valor": 71.31 },
-      { "ano": 2019, "valor": 64.21 },
+      { "ano": 2018, "valor": 71.34 },
+      { "ano": 2019, "valor": 64.3 },
       { "ano": 2020, "valor": 41.96 },
       { "ano": 2021, "valor": 70.86 },
       { "ano": 2022, "valor": 100.93 },
       { "ano": 2023, "valor": 82.49 },
-      { "ano": 2024, "valor": 79.86 },
+      { "ano": 2024, "valor": 80.53 },
       { "ano": 2025, "valor": 68.5 },
-      { "ano": 2026, "valor": 95.0 },
     ],
-    "padrao": false,
   },
   "preco_gas_natural_usd": {
     "label": "Gás Natural (Henry Hub)",
     "cor": "#71717a",
     "unidade": "USD/MMBtu",
-    "fonte": "World Bank (Pink Sheet) / EIA / Bloomberg",
+    "fonte":
+      "U.S. Energy Information Administration (EIA) / World Bank Commodity Price Data (Pink Sheet) / IMF Primary Commodity Prices",
     "cat": "Commodities",
     "descricao":
-      "Mede o preço médio anual do gás natural no Henry Hub (Louisiana), o principal centro de comercialização e referência (benchmark) global para o mercado de gás. O gás natural é uma commoditie crítica para a geração de energia elétrica, aquecimento e processos industriais. A série histórica revela a transição do mercado norte-americano: de um período de escassez e preços elevados (2000-2008) para a 'Revolução do Shale Gas', que inundou o mercado e manteve os preços estruturalmente baixos na década de 2010. O evento mais disruptivo recente foi a crise energética de 2022, quando a invasão da Ucrânia pela Rússia desarticulou o mercado global de GNL (Gás Natural Liquefeito), elevando o Henry Hub para médias de US$ 6,37. Conforme a EIA, 'os preços do gás natural são altamente sensíveis a variações climáticas sazonais e à capacidade de exportação de GNL'. A projeção para 2024-2026 reflete a normalização da oferta e o aumento da infraestrutura de exportação dos EUA, posicionando o gás como o principal 'combustível de transição' para uma matriz energética de menor emissão de carbono.",
+      "Preço médio anual à vista do gás natural no Henry Hub, Louisiana, principal referência física dos Estados Unidos para gás natural.",
+    "como_interpretar":
+      "Valores mais altos indicam encarecimento do gás natural no mercado norte-americano, afetando geração elétrica, aquecimento, indústria, fertilizantes e custos energéticos. Valores mais baixos indicam maior oferta relativa, menor demanda ou estoques confortáveis.",
+    "metodologia":
+      "A série usa médias anuais nominais em dólares por milhão de BTU. Para 1997-2025, foram usados os valores anuais oficiais da EIA para Henry Hub Natural Gas Spot Price. Para 1994-1996, período anterior ao início da série anual da EIA/FRED, foram usados dados históricos oficiais de commodities do World Bank/IMF para Natural Gas (U.S.), Henry Hub. Foram removidos 2026 e quaisquer projeções por não haver média anual fechada.",
+    "historico_metodologia":
+      "A série EIA/FRED anual oficial começa em 1997. Para manter histórico desde 1994 sem estimativas, os anos 1994-1996 foram obtidos da série histórica World Bank/IMF/Bloomberg para Henry Hub. A unidade é equivalente em USD/MMBtu. Não foram mantidos valores projetados de 2026 em diante.",
+    "abrangencia":
+      "Preço spot do gás natural no Henry Hub, Louisiana, Estados Unidos. É um benchmark norte-americano, não um preço médio mundial.",
+    "periodicidade": "Anual, calculado a partir de preços spot mensais/diários conforme a fonte oficial.",
+    "eventos_externos": [
+      {
+        "ano": 2005,
+        "nome": "Katrina/Rita",
+        "descricao":
+          "Furacões Katrina e Rita afetaram infraestrutura de energia no Golfo do México e elevaram fortemente os preços do gás natural nos EUA.",
+      },
+      {
+        "ano": 2008,
+        "nome": "Pico energético",
+        "descricao":
+          "Preços de energia e commodities atingiram níveis elevados antes da contração causada pela crise financeira global.",
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao":
+          "A crise financeira reduziu a demanda industrial e energética, derrubando o preço médio anual do Henry Hub.",
+      },
+      {
+        "ano": 2012,
+        "nome": "Shale gas",
+        "descricao":
+          "Crescimento da produção de gás de shale nos EUA ampliou a oferta e levou os preços a níveis baixos.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao": "A pandemia reduziu demanda energética e contribuiu para preços baixos no gás natural.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A invasão da Ucrânia pela Rússia tensionou mercados globais de gás e GNL, elevando também o Henry Hub.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Oferta elevada",
+        "descricao":
+          "Produção elevada, estoques confortáveis e demanda sazonal fraca pressionaram o preço médio anual para baixo.",
+      },
+    ],
+    "comparacao_paises":
+      "O Henry Hub reflete o mercado dos Estados Unidos e costuma ser estruturalmente mais baixo que referências internacionais como TTF europeu e GNL asiático, especialmente em períodos de crise global de gás. Portanto, não deve ser interpretado como preço mundial, mas como benchmark norte-americano.",
+    "nivel_confiabilidade":
+      "Alto para 1997-2025, pois os valores vêm da série oficial anual da EIA. Médio-alto para 1994-1996, pois vêm de série histórica oficial World Bank/IMF/Bloomberg, mas não da série anual EIA, que só se inicia em 1997. 2026 foi removido por ser ano incompleto/projeção.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      { "titulo": "EIA - Henry Hub Natural Gas Spot Price", "url": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm" },
+      {
+        "titulo": "FRED/EIA - Henry Hub Natural Gas Spot Price (AHHNGSP)",
+        "url": "https://fred.stlouisfed.org/series/AHHNGSP",
+      },
+      {
+        "titulo": "FRED/IMF - Global price of Natural Gas, US Henry Hub Gas (PNGASUSUSDA)",
+        "url": "https://fred.stlouisfed.org/data/PNGASUSUSDA",
+      },
+      {
+        "titulo": "World Bank - Commodity Price Data (Pink Sheet)",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      {
+        "titulo": "World Bank - CMO Historical Data Annual",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      },
+    ],
     "dados": [
-      { "ano": 1994, "valor": 1.92 },
-      { "ano": 1995, "valor": 1.69 },
-      { "ano": 1996, "valor": 2.76 },
-      { "ano": 1997, "valor": 2.53 },
+      { "ano": 1994, "valor": 1.91 },
+      { "ano": 1995, "valor": 1.7 },
+      { "ano": 1996, "valor": 2.69 },
+      { "ano": 1997, "valor": 2.49 },
       { "ano": 1998, "valor": 2.09 },
       { "ano": 1999, "valor": 2.27 },
       { "ano": 2000, "valor": 4.31 },
       { "ano": 2001, "valor": 3.96 },
-      { "ano": 2002, "valor": 3.37 },
-      { "ano": 2003, "valor": 5.49 },
-      { "ano": 2004, "valor": 5.91 },
-      { "ano": 2005, "valor": 8.92 },
-      { "ano": 2006, "valor": 6.76 },
-      { "ano": 2007, "valor": 6.95 },
-      { "ano": 2008, "valor": 8.85 },
-      { "ano": 2009, "valor": 3.95 },
-      { "ano": 2010, "valor": 4.39 },
-      { "ano": 2011, "valor": 4.0 },
+      { "ano": 2002, "valor": 3.38 },
+      { "ano": 2003, "valor": 5.47 },
+      { "ano": 2004, "valor": 5.89 },
+      { "ano": 2005, "valor": 8.69 },
+      { "ano": 2006, "valor": 6.73 },
+      { "ano": 2007, "valor": 6.97 },
+      { "ano": 2008, "valor": 8.86 },
+      { "ano": 2009, "valor": 3.94 },
+      { "ano": 2010, "valor": 4.37 },
+      { "ano": 2011, "valor": 4 },
       { "ano": 2012, "valor": 2.75 },
       { "ano": 2013, "valor": 3.73 },
       { "ano": 2014, "valor": 4.37 },
-      { "ano": 2015, "valor": 2.61 },
+      { "ano": 2015, "valor": 2.62 },
       { "ano": 2016, "valor": 2.52 },
-      { "ano": 2017, "valor": 3.11 },
-      { "ano": 2018, "valor": 3.16 },
-      { "ano": 2019, "valor": 2.57 },
+      { "ano": 2017, "valor": 2.99 },
+      { "ano": 2018, "valor": 3.15 },
+      { "ano": 2019, "valor": 2.56 },
       { "ano": 2020, "valor": 2.03 },
       { "ano": 2021, "valor": 3.89 },
-      { "ano": 2022, "valor": 6.37 },
-      { "ano": 2023, "valor": 2.54 },
-      { "ano": 2024, "valor": 2.85 },
-      { "ano": 2025, "valor": 3.4 },
-      { "ano": 2026, "valor": 3.8 },
+      { "ano": 2022, "valor": 6.45 },
+      { "ano": 2023, "valor": 2.53 },
+      { "ano": 2024, "valor": 2.19 },
+      { "ano": 2025, "valor": 3.52 },
     ],
-    "padrao": false,
   },
   "ferro_minerio_usd_ton": {
-    "label": "Minério de Ferro (62% Fe, CFR China)",
+    "label": "Minério de Ferro (CFR China)",
     "cor": "#7c2d12",
-    "unidade": "US$/tonelada",
-    "fonte": "IMF / World Bank / Platts",
+    "unidade": "US$/tonelada métrica seca",
+    "fonte": "World Bank Commodity Markets Pink Sheet / IMF Primary Commodity Prices",
     "cat": "Commodities",
-    "descricao":
-      "Insumo para infraestrutura. Reflete a urbanização esmagadora da China. O Brasil (Vale) enriqueceu sua balança comercial através dessas exportações, criando décadas ancoradas na extração de riqueza natural para a Ásia.",
+    "descricao": "Preço médio anual nominal do minério de ferro no mercado internacional, referência CFR China.",
+    "como_interpretar":
+      "Valores maiores indicam minério de ferro mais caro no comércio internacional. A alta costuma refletir demanda forte por aço, restrições de oferta ou choques logísticos; quedas costumam refletir desaceleração da demanda siderúrgica, excesso de oferta ou retração econômica.",
+    "metodologia":
+      "Média anual dos preços mensais nominais em dólares dos Estados Unidos por tonelada métrica seca. A série do Banco Mundial é publicada na Pink Sheet como 'Iron ore, cfr spot', com referência atual a minério de ferro fino, qualquer origem, preço spot, CFR China, 62% Fe.",
+    "historico_metodologia":
+      "A série histórica do Banco Mundial informa mudança de especificação: a referência atual é minério de ferro fino, spot, CFR China, 62% Fe; antes de dezembro de 2008 a série usava referência anterior de teor diferente, o que reduz a comparabilidade estrita dos anos anteriores a 2009. Os valores de 2026 foram removidos por ainda não constituírem média anual fechada.",
+    "abrangencia":
+      "Preço internacional de commodity, não específico do Brasil. Representa referência global de minério de ferro entregue à China sob condição CFR.",
+    "periodicidade": "Mensal, com agregação anual por média dos meses do ano.",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao":
+          "A crise financeira global reduziu a atividade industrial e a demanda por aço, contribuindo para a forte queda do preço em 2009.",
+      },
+      {
+        "ano": 2010,
+        "nome": "Retomada chinesa",
+        "descricao":
+          "A recuperação da demanda chinesa por aço e minério após a crise elevou fortemente os preços em 2010 e 2011.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Excesso oferta",
+        "descricao":
+          "A desaceleração da demanda chinesa combinada com expansão de oferta global pressionou os preços para baixo.",
+      },
+      {
+        "ano": 2019,
+        "nome": "Choque oferta",
+        "descricao":
+          "Interrupções de oferta no Brasil e na Austrália contribuíram para alta do preço do minério de ferro.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Pico pós-Covid",
+        "descricao":
+          "A forte demanda por aço e gargalos de oferta elevaram o preço médio anual a um dos maiores níveis da série.",
+      },
+    ],
+    "comparacao_paises":
+      "O indicador é uma referência global de preço, não uma estatística nacional. A China é o principal centro de demanda/importação usado na cotação CFR; Brasil e Austrália estão entre os principais exportadores globais, portanto são mais expostos aos efeitos desse preço sobre receitas externas e termos de troca.",
+    "nivel_confiabilidade":
+      "Alta para 1994-2025 como série anual nominal publicada pelo Banco Mundial/IMF. Média para comparações históricas antes de 2009, porque a especificação da série mudou. 2026 foi excluído por não haver média anual fechada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank - Commodity Markets Pink Sheet Data",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      {
+        "titulo": "World Bank - CMO Historical Data Annual XLSX",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      },
+      {
+        "titulo": "IMF - Primary Commodity Prices methodology table",
+        "url": "https://www.imf.org/-/media/files/research/commodityprices/monthly/table2.pdf",
+      },
+      {
+        "titulo": "World Bank - Commodity Markets Outlook",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+    ],
     "dados": [
-      { "ano": 1995, "valor": 27.3 },
-      { "ano": 1996, "valor": 28.4 },
-      { "ano": 1997, "valor": 29.1 },
-      { "ano": 1998, "valor": 29.5 },
-      { "ano": 1999, "valor": 26.0 },
-      { "ano": 2000, "valor": 28.8 },
-      { "ano": 2001, "valor": 30.0 },
-      { "ano": 2002, "valor": 29.3 },
-      { "ano": 2003, "valor": 31.9 },
+      { "ano": 1994, "valor": 26.47 },
+      { "ano": 1995, "valor": 28.38 },
+      { "ano": 1996, "valor": 30.0 },
+      { "ano": 1997, "valor": 30.15 },
+      { "ano": 1998, "valor": 31.0 },
+      { "ano": 1999, "valor": 27.59 },
+      { "ano": 2000, "valor": 28.79 },
+      { "ano": 2001, "valor": 30.03 },
+      { "ano": 2002, "valor": 29.31 },
+      { "ano": 2003, "valor": 31.95 },
       { "ano": 2004, "valor": 37.9 },
       { "ano": 2005, "valor": 65.0 },
-      { "ano": 2006, "valor": 77.4 },
-      { "ano": 2007, "valor": 83.9 },
+      { "ano": 2006, "valor": 77.35 },
+      { "ano": 2007, "valor": 83.42 },
       { "ano": 2008, "valor": 140.6 },
-      { "ano": 2009, "valor": 79.6 },
-      { "ano": 2010, "valor": 146.7 },
-      { "ano": 2011, "valor": 167.8 },
+      { "ano": 2009, "valor": 79.99 },
+      { "ano": 2010, "valor": 145.86 },
+      { "ano": 2011, "valor": 167.75 },
       { "ano": 2012, "valor": 128.5 },
-      { "ano": 2013, "valor": 135.4 },
-      { "ano": 2014, "valor": 96.9 },
-      { "ano": 2015, "valor": 55.2 },
-      { "ano": 2016, "valor": 58.4 },
-      { "ano": 2017, "valor": 71.8 },
-      { "ano": 2018, "valor": 69.8 },
-      { "ano": 2019, "valor": 93.8 },
-      { "ano": 2020, "valor": 108.9 },
-      { "ano": 2021, "valor": 161.7 },
+      { "ano": 2013, "valor": 135.36 },
+      { "ano": 2014, "valor": 96.95 },
+      { "ano": 2015, "valor": 55.85 },
+      { "ano": 2016, "valor": 58.42 },
+      { "ano": 2017, "valor": 71.76 },
+      { "ano": 2018, "valor": 69.75 },
+      { "ano": 2019, "valor": 93.85 },
+      { "ano": 2020, "valor": 108.92 },
+      { "ano": 2021, "valor": 161.71 },
       { "ano": 2022, "valor": 121.3 },
-      { "ano": 2023, "valor": 120.6 },
-      { "ano": 2024, "valor": 109.5 },
-      { "ano": 2025, "valor": 100.8 },
-      { "ano": 2026, "valor": 103.0 },
+      { "ano": 2023, "valor": 120.57 },
+      { "ano": 2024, "valor": 109.4 },
+      { "ano": 2025, "valor": 100.18 },
     ],
-    "padrao": false,
   },
   "cobre_lme_usd_ton": {
-    "label": "Cobre LME (cash settlement)",
+    "label": "Cobre LME",
     "cor": "#c2410c",
-    "unidade": "US$/tonelada",
-    "fonte": "London Metal Exchange (LME)",
+    "unidade": "US$/tonelada métrica",
+    "fonte":
+      "International Monetary Fund (Primary Commodity Prices) via FRED - série PCOPPUSDA; referência de mercado: London Metal Exchange (LME)",
     "cat": "Commodities",
-    "descricao":
-      "'Dr. Cobre', prevê a saúde da manufatura global. A decolagem pós-2020 reflete esgotamento de minas velhas versus demanda colossal por veículos elétricos (EVs) e transição energética exigida pela Europa, Ásia e EUA.",
-    "dados": [
-      { "ano": 1995, "valor": 2935 },
-      { "ano": 1996, "valor": 2290 },
-      { "ano": 1997, "valor": 2275 },
-      { "ano": 1998, "valor": 1655 },
-      { "ano": 1999, "valor": 1575 },
-      { "ano": 2000, "valor": 1815 },
-      { "ano": 2001, "valor": 1580 },
-      { "ano": 2002, "valor": 1560 },
-      { "ano": 2003, "valor": 1780 },
-      { "ano": 2004, "valor": 2868 },
-      { "ano": 2005, "valor": 3684 },
-      { "ano": 2006, "valor": 6722 },
-      { "ano": 2007, "valor": 7118 },
-      { "ano": 2008, "valor": 6956 },
-      { "ano": 2009, "valor": 5150 },
-      { "ano": 2010, "valor": 7534 },
-      { "ano": 2011, "valor": 8821 },
-      { "ano": 2012, "valor": 7950 },
-      { "ano": 2013, "valor": 7322 },
-      { "ano": 2014, "valor": 6862 },
-      { "ano": 2015, "valor": 5495 },
-      { "ano": 2016, "valor": 4867 },
-      { "ano": 2017, "valor": 6166 },
-      { "ano": 2018, "valor": 6523 },
-      { "ano": 2019, "valor": 6000 },
-      { "ano": 2020, "valor": 6181 },
-      { "ano": 2021, "valor": 9317 },
-      { "ano": 2022, "valor": 8822 },
-      { "ano": 2023, "valor": 8490 },
-      { "ano": 2024, "valor": 9147 },
-      { "ano": 2025, "valor": 9700 },
-      { "ano": 2026, "valor": 12800 },
+    "descricao": "Preço médio anual nominal do cobre no mercado global, em dólares dos EUA por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento internacional do cobre. A série reflete médias anuais nominais, não ajustadas pela inflação, portanto variações podem refletir demanda industrial, oferta mineral, câmbio global, estoques, choques geopolíticos e condições macroeconômicas.",
+    "metodologia":
+      "Série anual PCOPPUSDA do FRED, com fonte original no IMF Primary Commodity Prices. O FRED informa que os valores representam preços benchmark do mercado global, determinados por mercados/exportadores relevantes, em médias de período e em dólares nominais dos EUA por tonelada métrica.",
+    "historico_metodologia":
+      "A série anual PCOPPUSDA disponível no FRED cobre 1992 a 2025, é nominal, não sazonalmente ajustada e foi atualizada em 24/03/2026. Não há dado anual fechado para 2026; por isso 2026 foi removido. A página pública da LME confirma que o cobre LME é cotado em US$ por tonelada e que dados históricos/médias mensais exigem login ou licenciamento, portanto os valores públicos validados aqui usam a série IMF/FRED compatível com o preço global do cobre.",
+    "abrangencia": "Mercado global de cobre, em US$/tonelada métrica; não é indicador específico do Brasil.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 1997,
+        "nome": "Crise asiática",
+        "descricao":
+          "Choque financeiro na Ásia reduziu expectativas de demanda industrial e contribuiu para queda dos preços de metais básicos no fim dos anos 1990.",
+      },
+      {
+        "ano": 2004,
+        "nome": "Superciclo chinês",
+        "descricao":
+          "Aceleração da demanda industrial e de infraestrutura, especialmente ligada à China, elevou fortemente os preços de metais entre 2004 e 2007.",
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao":
+          "A crise financeira internacional derrubou a demanda industrial e reduziu o preço médio anual do cobre em 2009.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia provocou choque inicial de demanda e oferta, seguido por recuperação industrial e estímulos econômicos que impulsionaram o preço em 2021.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A guerra na Ucrânia, a alta de energia e a desaceleração econômica global aumentaram a volatilidade das commodities e contribuíram para queda do cobre em 2022.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Aperto oferta",
+        "descricao":
+          "Preços subiram em 2025 em ambiente de demanda por eletrificação, energia e data centers, além de restrições e riscos de oferta em grandes minas.",
+      },
     ],
+    "comparacao_paises":
+      "Não se aplica diretamente como comparação entre países, porque a série mede o preço internacional do cobre. Países exportadores líquidos de cobre tendem a se beneficiar de preços maiores; países importadores líquidos ou indústrias intensivas em cobre enfrentam aumento de custos.",
+    "nivel_confiabilidade":
+      "Alta para 1994-2025, pois os valores foram validados contra a série anual PCOPPUSDA do FRED, cuja fonte original é o IMF Primary Commodity Prices. O dado de 2026 foi removido por não haver média anual fechada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      { "titulo": "FRED - Global price of Copper (PCOPPUSDA)", "url": "https://fred.stlouisfed.org/series/PCOPPUSDA" },
+      { "titulo": "FRED - Table Data PCOPPUSDA", "url": "https://fred.stlouisfed.org/data/PCOPPUSDA" },
+      { "titulo": "IMF - Primary Commodity Prices", "url": "https://www.imf.org/en/Research/commodity-prices" },
+      {
+        "titulo": "World Bank - Commodity Markets / Pink Sheet",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      { "titulo": "London Metal Exchange - LME Copper", "url": "https://www.lme.com/metals/non-ferrous/lme-copper" },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 2305.53 },
+      { "ano": 1995, "valor": 2932.04 },
+      { "ano": 1996, "valor": 2293.39 },
+      { "ano": 1997, "valor": 2275.19 },
+      { "ano": 1998, "valor": 1653.71 },
+      { "ano": 1999, "valor": 1572.53 },
+      { "ano": 2000, "valor": 1814.52 },
+      { "ano": 2001, "valor": 1580.17 },
+      { "ano": 2002, "valor": 1560.29 },
+      { "ano": 2003, "valor": 1779.36 },
+      { "ano": 2004, "valor": 2863.47 },
+      { "ano": 2005, "valor": 3676.49 },
+      { "ano": 2006, "valor": 6731.35 },
+      { "ano": 2007, "valor": 7131.63 },
+      { "ano": 2008, "valor": 6963.48 },
+      { "ano": 2009, "valor": 5164.16 },
+      { "ano": 2010, "valor": 7538.36 },
+      { "ano": 2011, "valor": 8823.45 },
+      { "ano": 2012, "valor": 7958.92 },
+      { "ano": 2013, "valor": 7331.49 },
+      { "ano": 2014, "valor": 6863.4 },
+      { "ano": 2015, "valor": 5510.46 },
+      { "ano": 2016, "valor": 4867.9 },
+      { "ano": 2017, "valor": 6169.94 },
+      { "ano": 2018, "valor": 6529.8 },
+      { "ano": 2019, "valor": 6010.15 },
+      { "ano": 2020, "valor": 6174.56 },
+      { "ano": 2021, "valor": 9317.41 },
+      { "ano": 2022, "valor": 8828.92 },
+      { "ano": 2023, "valor": 8490.76 },
+      { "ano": 2024, "valor": 9142.1 },
+      { "ano": 2025, "valor": 9946.88 },
+    ],
   },
   "ouro_lbma_usd_onca": {
     "label": "Ouro LBMA (PM fix)",
     "cor": "#ca8a04",
     "unidade": "US$/onça-troy",
-    "fonte": "LBMA / World Gold Council",
+    "fonte": "LBMA / ICE Benchmark Administration / World Gold Council",
     "cat": "Commodities",
-    "descricao":
-      "Ativo de segurança/blindagem. Reflete a desdolarização, risco geopolítico e inflação fiduciária, elevando-o a picos históricos na década de 2020. Serve de refúgio primário global e para Bancos Centrais (BRICS/Ásia).",
+    "descricao": "Preço médio anual do ouro em dólar dos EUA por onça-troy, baseado no benchmark LBMA Gold Price PM.",
+    "como_interpretar":
+      "Valores maiores indicam aumento do preço internacional do ouro em dólar por onça-troy. O indicador não mede retorno real, retorno em moeda local, poder de compra nem preço de ouro físico no varejo.",
+    "metodologia":
+      "Média anual dos preços de referência LBMA Gold Price PM em US$/onça-troy. Até 19/03/2015, a série histórica corresponde ao London PM Gold Fixing; a partir de 20/03/2015, ao LBMA Gold Price administrado pela ICE Benchmark Administration. Os valores anuais são médias de observações de mercado disponíveis no ano civil.",
+    "historico_metodologia":
+      "Houve mudança institucional relevante em 20/03/2015: o antigo London Gold Fixing foi substituído pelo LBMA Gold Price, administrado de forma independente pela ICE Benchmark Administration. A unidade econômica permaneceu US$/onça-troy, mas a governança e o processo de determinação do benchmark mudaram. Desde 18/03/2025, o World Gold Council informa que dados históricos completos do LBMA Gold Price foram removidos de seu site por solicitação da ICE Benchmark Administration, permanecendo sujeitos a licenciamento.",
+    "abrangencia":
+      "Mercado internacional de ouro; benchmark global em dólar dos EUA por onça-troy, usado como referência por participantes do mercado, bancos centrais, investidores e indústria.",
+    "periodicidade": "Diária no benchmark original; média anual para esta série.",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Crise financeira",
+        "descricao":
+          "A crise financeira global elevou a demanda por ativos de proteção e coincidiu com forte alta do preço médio anual do ouro entre 2007 e 2011.",
+      },
+      {
+        "ano": 2013,
+        "nome": "Tapering",
+        "descricao":
+          "A expectativa e posterior anúncio de redução das compras de ativos pelo Federal Reserve pressionaram o ouro, contribuindo para a queda relevante do preço médio anual em 2013.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Novo benchmark",
+        "descricao":
+          "O LBMA Gold Price substituiu o London Gold Fixing em 20/03/2015, mudando a governança do preço de referência.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia elevou incerteza financeira e demanda por proteção, levando o preço médio anual do ouro a novo patamar elevado.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A guerra, inflação global elevada e aperto monetário mantiveram o ouro em nível historicamente alto, embora com pressão de juros reais e dólar forte.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Recordes LBMA",
+        "descricao":
+          "O World Gold Council reportou 40 novos recordes do LBMA Gold Price PM em 2024, com alta anual média de 23%.",
+      },
+      {
+        "ano": 2025,
+        "nome": "ETFs e bancos",
+        "descricao":
+          "O World Gold Council reportou 53 novos recordes do LBMA Gold Price PM em 2025, com forte demanda de investimento, entradas em ETFs e compras elevadas de bancos centrais.",
+      },
+    ],
+    "comparacao_paises":
+      "Não é um indicador por país. O ouro é cotado globalmente em US$/onça-troy; diferenças entre países aparecem principalmente por câmbio, impostos, prêmios locais, liquidez e custos de negociação física.",
+    "nivel_confiabilidade":
+      "Alto para 1994-2025 quando tratado como média anual histórica do benchmark LBMA Gold Price PM em US$/onça-troy. Baixo/inválido para 2026 como média anual, pois o ano ainda não está encerrado em 24/04/2026. Valores de 2025 e 2024 foram corrigidos para os valores anuais oficiais reportados pelo World Gold Council.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      { "titulo": "World Gold Council - Gold spot prices", "url": "https://www.gold.org/goldhub/data/gold-prices" },
+      {
+        "titulo": "World Gold Council - Gold Demand Trends: Q4 and Full Year 2025",
+        "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025",
+      },
+      {
+        "titulo": "World Gold Council - Gold Demand Trends: Full Year 2024",
+        "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2024",
+      },
+      { "titulo": "LBMA - LBMA Gold Price", "url": "https://www.lbma.org.uk/prices-and-data/lbma-gold-price" },
+      {
+        "titulo": "ICE Benchmark Administration - LBMA Gold Price",
+        "url": "https://www.ice.com/iba/lbma-gold-silver-price",
+      },
+    ],
     "dados": [
+      { "ano": 1994, "valor": 384.16 },
       { "ano": 1995, "valor": 384.17 },
       { "ano": 1996, "valor": 387.73 },
       { "ano": 1997, "valor": 331.1 },
@@ -4270,200 +4668,506 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2021, "valor": 1798.61 },
       { "ano": 2022, "valor": 1800.09 },
       { "ano": 2023, "valor": 1940.54 },
-      { "ano": 2024, "valor": 2389.57 },
-      { "ano": 2025, "valor": 3200.0 },
-      { "ano": 2026, "valor": 4650.0 },
+      { "ano": 2024, "valor": 2386.2 },
+      { "ano": 2025, "valor": 3431.54 },
     ],
-    "padrao": false,
   },
   "soja_usd_t": {
     "label": "Soja (Preço Médio Global)",
     "cor": "#d97706",
     "unidade": "USD/t",
-    "fonte": "FRED / World Bank / USDA",
+    "fonte":
+      "FRED / Federal Reserve Bank of St. Louis; fonte primária: International Monetary Fund (IMF), Primary Commodity Prices",
     "cat": "Commodities",
     "descricao":
-      "Principal commodity agrícola do Brasil. Preços atestam inovações da Embrapa e demanda proteica na Ásia. O sucesso desse indicador permitiu ao Brasil criar pólos de desenvolvimento ausentes em outras regiões latinas agrárias.",
-    "dados": [
-      { "ano": 1994, "valor": 201.0 },
-      { "ano": 1995, "valor": 247.0 },
-      { "ano": 1996, "valor": 270.0 },
-      { "ano": 1997, "valor": 238.0 },
-      { "ano": 1998, "valor": 181.0 },
-      { "ano": 1999, "valor": 170.0 },
-      { "ano": 2000, "valor": 167.0 },
-      { "ano": 2001, "valor": 161.0 },
-      { "ano": 2002, "valor": 203.0 },
-      { "ano": 2003, "valor": 270.0 },
-      { "ano": 2004, "valor": 211.0 },
-      { "ano": 2005, "valor": 208.0 },
-      { "ano": 2006, "valor": 236.0 },
-      { "ano": 2007, "valor": 371.0 },
-      { "ano": 2008, "valor": 366.0 },
-      { "ano": 2009, "valor": 352.0 },
-      { "ano": 2010, "valor": 415.0 },
-      { "ano": 2011, "valor": 459.0 },
-      { "ano": 2012, "valor": 529.0 },
-      { "ano": 2013, "valor": 478.0 },
-      { "ano": 2014, "valor": 371.0 },
-      { "ano": 2015, "valor": 329.0 },
-      { "ano": 2016, "valor": 348.0 },
-      { "ano": 2017, "valor": 343.0 },
-      { "ano": 2018, "valor": 312.0 },
-      { "ano": 2019, "valor": 315.0 },
-      { "ano": 2020, "valor": 397.0 },
-      { "ano": 2021, "valor": 505.1 },
-      { "ano": 2022, "valor": 569.69 },
-      { "ano": 2023, "valor": 520.48 },
-      { "ano": 2024, "valor": 405.21 },
-      { "ano": 2025, "valor": 380.68 },
-      { "ano": 2026, "valor": 406.44 },
+      "Preço médio anual nominal da soja no mercado internacional, expresso em dólares dos Estados Unidos por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento internacional da soja em termos nominais. O indicador mede preço global de referência, não produção, exportação, rentabilidade ou competitividade específica do Brasil.",
+    "metodologia":
+      "Série anual PSOYBUSDA do FRED, com fonte primária IMF Primary Commodity Prices. O valor representa preços de referência do mercado global, determinados pelo maior exportador relevante da commodity, calculados como médias do período em dólares nominais por tonelada métrica, sem ajuste sazonal.",
+    "historico_metodologia":
+      "Para a série FRED/IMF PSOYBUSDA consultada, não foi identificada quebra metodológica explícita dentro do período 1994-2025. A série deve ser tratada como preço nominal anual de referência internacional. Não se deve misturar diretamente com séries alternativas do World Bank Pink Sheet ou USDA sem validar especificação, praça, qualidade, frequência e unidade.",
+    "abrangencia":
+      "Mercado internacional/global de soja; preço de referência em USD por tonelada métrica. Não é indicador doméstico brasileiro.",
+    "periodicidade": "Anual, com média dos preços observados no período.",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Crise alimentos",
+        "descricao":
+          "Alta e posterior queda acentuada de commodities agrícolas durante a crise global de alimentos e a crise financeira internacional, com deterioração da demanda, crédito e comércio global.",
+      },
+      {
+        "ano": 2012,
+        "nome": "Seca EUA",
+        "descricao":
+          "A seca severa no Meio-Oeste dos Estados Unidos reduziu expectativas de oferta agrícola e contribuiu para preços internacionais elevados de grãos e oleaginosas.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Pós-Covid",
+        "descricao":
+          "A recuperação da demanda global, restrições logísticas e choques nas cadeias de suprimento após a pandemia elevaram preços de commodities agrícolas.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A guerra entre Rússia e Ucrânia intensificou pressões sobre mercados globais de alimentos, energia, fertilizantes e fretes, contribuindo para preços elevados de commodities agrícolas.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Maior oferta",
+        "descricao":
+          "Aumento de oferta global e recomposição de estoques agrícolas pressionaram para baixo os preços internacionais da soja em relação ao pico de 2022.",
+      },
     ],
+    "comparacao_paises":
+      "O indicador não compara países; ele mede preço internacional. O Brasil é um dos principais produtores e exportadores globais de soja, ao lado dos Estados Unidos e da Argentina, portanto é fortemente exposto a esse preço global, mas o valor da série não é um preço brasileiro.",
+    "nivel_confiabilidade":
+      "Alto para 1994-2025, pois os valores foram substituídos pela série oficial anual PSOYBUSDA do FRED, cuja fonte primária é o IMF Primary Commodity Prices. O ano de 2026 foi removido por não haver média anual fechada; o valor disponível era trimestral/parcial e não comparável à série anual consolidada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FRED - Global price of Soybeans (PSOYBUSDA), Annual",
+        "url": "https://fred.stlouisfed.org/series/PSOYBUSDA",
+      },
+      { "titulo": "FRED - Table Data, Global price of Soybeans", "url": "https://fred.stlouisfed.org/data/PSOYBUSDA" },
+      { "titulo": "World Bank - Commodity Markets", "url": "https://www.worldbank.org/en/research/commodity-markets" },
+      {
+        "titulo": "World Bank - Annual Prices, Commodity Price Data",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      },
+      { "titulo": "USDA FAS - Soybeans Production", "url": "https://www.fas.usda.gov/data/production/2222000" },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 229.51029275625 },
+      { "ano": 1995, "valor": 224.0154125859375 },
+      { "ano": 1996, "valor": 277.4579549041667 },
+      { "ano": 1997, "valor": 280.6025345348958 },
+      { "ano": 1998, "valor": 223.2900348135417 },
+      { "ano": 1999, "valor": 174.9193951255208 },
+      { "ano": 2000, "valor": 183.0516646635417 },
+      { "ano": 2001, "valor": 168.7546410229167 },
+      { "ano": 2002, "valor": 188.8661703958333 },
+      { "ano": 2003, "valor": 233.1874983833992 },
+      { "ano": 2004, "valor": 276.6329947062242 },
+      { "ano": 2005, "valor": 223.1503432528039 },
+      { "ano": 2006, "valor": 217.4539025998643 },
+      { "ano": 2007, "valor": 317.3197307825424 },
+      { "ano": 2008, "valor": 452.9425191513493 },
+      { "ano": 2009, "valor": 378.5455511543612 },
+      { "ano": 2010, "valor": 384.9452542641337 },
+      { "ano": 2011, "valor": 484.2459131454645 },
+      { "ano": 2012, "valor": 537.7618367479126 },
+      { "ano": 2013, "valor": 517.2037783998908 },
+      { "ano": 2014, "valor": 457.813518627843 },
+      { "ano": 2015, "valor": 347.3555636863835 },
+      { "ano": 2016, "valor": 362.706820885551 },
+      { "ano": 2017, "valor": 358.8242022377849 },
+      { "ano": 2018, "valor": 342.5282470648178 },
+      { "ano": 2019, "valor": 327.0020753551698 },
+      { "ano": 2020, "valor": 349.8774913919408 },
+      { "ano": 2021, "valor": 505.1009043746033 },
+      { "ano": 2022, "valor": 569.691762909449 },
+      { "ano": 2023, "valor": 520.4768146894968 },
+      { "ano": 2024, "valor": 405.2099965405672 },
+      { "ano": 2025, "valor": 380.6764883836858 },
+    ],
   },
   "milho_usd_t": {
     "label": "Milho (Preço Médio Global)",
     "cor": "#fbbf24",
     "unidade": "USD/t",
-    "fonte": "World Bank / IMF (PMAIZMTUSDA)",
+    "fonte": "FRED / International Monetary Fund (PMAIZMTUSDA)",
     "cat": "Commodities",
-    "descricao":
-      "Commodity vital de segurança alimentar. Choques de preço afetam a cadeia de proteína. Enquanto a Europa protege sua agricultura com subsídios, as Américas (EUA, Brasil, Argentina) agem como celeiro competitivo global.",
-    "dados": [
-      { "ano": 1994, "valor": 108.3 },
-      { "ano": 1995, "valor": 123.5 },
-      { "ano": 1996, "valor": 164.5 },
-      { "ano": 1997, "valor": 117.2 },
-      { "ano": 1998, "valor": 102.1 },
-      { "ano": 1999, "valor": 90.3 },
-      { "ano": 2000, "valor": 88.2 },
-      { "ano": 2001, "valor": 89.6 },
-      { "ano": 2002, "valor": 99.3 },
-      { "ano": 2003, "valor": 105.2 },
-      { "ano": 2004, "valor": 112.2 },
-      { "ano": 2005, "valor": 98.6 },
-      { "ano": 2006, "valor": 121.6 },
-      { "ano": 2007, "valor": 163.7 },
-      { "ano": 2008, "valor": 223.2 },
-      { "ano": 2009, "valor": 165.5 },
-      { "ano": 2010, "valor": 185.9 },
-      { "ano": 2011, "valor": 291.7 },
-      { "ano": 2012, "valor": 298.4 },
-      { "ano": 2013, "valor": 259.4 },
-      { "ano": 2014, "valor": 192.9 },
-      { "ano": 2015, "valor": 169.7 },
-      { "ano": 2016, "valor": 159.2 },
-      { "ano": 2017, "valor": 154.5 },
-      { "ano": 2018, "valor": 164.4 },
-      { "ano": 2019, "valor": 170.1 },
-      { "ano": 2020, "valor": 165.5 },
-      { "ano": 2021, "valor": 259.39 },
-      { "ano": 2022, "valor": 318.36 },
-      { "ano": 2023, "valor": 252.7 },
-      { "ano": 2024, "valor": 190.6 },
-      { "ano": 2025, "valor": 203.2 },
-      { "ano": 2026, "valor": 214.2 },
+    "descricao": "Preço anual médio global do milho, em dólares correntes por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento internacional do milho. Como é um preço nominal em USD/t, não está ajustado pela inflação dos Estados Unidos.",
+    "metodologia":
+      "Série anual PMAIZMTUSDA do FRED, com fonte primária International Monetary Fund, Primary Commodity Prices. O valor representa preços benchmark representativos do mercado global, determinados pelo maior exportador da commodity. Os preços são médias do período em dólares nominais por tonelada métrica.",
+    "historico_metodologia":
+      "Não foi identificada quebra metodológica relevante na série anual PMAIZMTUSDA para o período 1994-2025. A série é publicada como não dessazonalizada, em frequência anual, e pode sofrer revisões conforme atualização da base Primary Commodity Prices do FMI/FRED.",
+    "abrangencia": "Mercado global; preço benchmark internacional do milho, não específico do Brasil.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Crise alimentar",
+        "descricao":
+          "Alta global de alimentos e commodities agrícolas em 2007-2008, associada a demanda, energia, estoques apertados e biocombustíveis, elevou fortemente o preço internacional do milho.",
+      },
+      {
+        "ano": 2012,
+        "nome": "Seca EUA",
+        "descricao":
+          "Secas severas e temperaturas elevadas nos Estados Unidos e no Leste Europeu levaram milho e soja a picos históricos em 2012.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Pós-COVID",
+        "descricao":
+          "A recuperação da demanda global após o choque inicial da COVID-19, combinada a custos logísticos e energéticos elevados, contribuiu para forte alta das commodities agrícolas.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A invasão da Ucrânia pela Rússia afetou mercados de grãos, energia e fertilizantes, mantendo preços internacionais de alimentos e commodities em níveis elevados.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Normalização",
+        "descricao":
+          "Melhora relativa da oferta global e queda de preços de grãos reduziram o preço médio anual do milho em relação aos picos de 2021-2022.",
+      },
     ],
+    "comparacao_paises":
+      "O indicador não compara países diretamente. Ele mede um preço benchmark global do milho. Brasil, Estados Unidos e Argentina são grandes produtores e exportadores, mas o valor da série não representa preço doméstico de nenhum país específico.",
+    "nivel_confiabilidade":
+      "Alta para 1994-2025, pois os valores vêm de série anual oficial do FRED com fonte primária FMI. O ano de 2026 foi removido porque ainda não há média anual completa observada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FRED - Global price of Corn (PMAIZMTUSDA)",
+        "url": "https://fred.stlouisfed.org/series/PMAIZMTUSDA",
+      },
+      { "titulo": "FRED - Table Data PMAIZMTUSDA", "url": "https://fred.stlouisfed.org/data/PMAIZMTUSDA" },
+      {
+        "titulo": "World Bank - Commodity Markets / Pink Sheet",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      {
+        "titulo": "World Bank - Commodity Markets Data, April 2026",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-April-2026.pdf",
+      },
+      {
+        "titulo": "World Bank - Severe Droughts Drive Food Prices Higher",
+        "url":
+          "https://www.worldbank.org/en/news/press-release/2012/08/30/severe-droughts-drive-food-prices-higher-threatening-poor",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 107.77819 },
+      { "ano": 1995, "valor": 123.451316 },
+      { "ano": 1996, "valor": 164.522941 },
+      { "ano": 1997, "valor": 117.172417 },
+      { "ano": 1998, "valor": 101.617841 },
+      { "ano": 1999, "valor": 90.294064 },
+      { "ano": 2000, "valor": 88.219229 },
+      { "ano": 2001, "valor": 89.609138 },
+      { "ano": 2002, "valor": 99.333267 },
+      { "ano": 2003, "valor": 105.245363 },
+      { "ano": 2004, "valor": 111.894866 },
+      { "ano": 2005, "valor": 98.507652 },
+      { "ano": 2006, "valor": 121.647393 },
+      { "ano": 2007, "valor": 163.609891 },
+      { "ano": 2008, "valor": 223.360289 },
+      { "ano": 2009, "valor": 165.628348 },
+      { "ano": 2010, "valor": 185.956505 },
+      { "ano": 2011, "valor": 291.854083 },
+      { "ano": 2012, "valor": 298.437549 },
+      { "ano": 2013, "valor": 258.979466 },
+      { "ano": 2014, "valor": 192.939234 },
+      { "ano": 2015, "valor": 169.844637 },
+      { "ano": 2016, "valor": 159.220972 },
+      { "ano": 2017, "valor": 154.59502 },
+      { "ano": 2018, "valor": 164.510829 },
+      { "ano": 2019, "valor": 170.169445 },
+      { "ano": 2020, "valor": 165.578388 },
+      { "ano": 2021, "valor": 259.394838 },
+      { "ano": 2022, "valor": 318.361028 },
+      { "ano": 2023, "valor": 251.455541 },
+      { "ano": 2024, "valor": 190.461647 },
+      { "ano": 2025, "valor": 203.006386 },
+    ],
   },
   "preco_trigo_usd": {
-    "label": "Trigo (US HRW)",
+    "label": "Trigo",
     "cor": "#fde047",
     "unidade": "USD/ton",
-    "fonte": "World Bank (Pink Sheet) / IMF / IGC",
+    "fonte":
+      "International Monetary Fund (Primary Commodity Prices) via FRED / World Bank Commodity Markets Pink Sheet",
     "cat": "Commodities",
-    "descricao":
-      "Mede o preço médio anual da tonelada de trigo (U.S. Hard Red Winter) no mercado internacional. O trigo é uma das commodities agrícolas mais críticas para a segurança alimentar global. A série histórica destaca momentos de extrema volatilidade, como o 'Boom das Commodities' em 2008 e o recorde histórico em 2022, motivado pela invasão da Ucrânia pela Rússia — dois dos maiores exportadores mundiais. Conforme o Banco Mundial, 'as flutuações no preço do trigo têm impacto direto na inflação de alimentos, especialmente em países emergentes'. A projeção para 2025-2026 sinaliza uma estabilização nos patamares de US$ 265-268, refletindo a recuperação das áreas de plantio e a adaptação das rotas logísticas globais, embora riscos geopolíticos e climáticos (como o El Niño) continuem a monitorar o equilíbrio entre oferta e demanda.",
-    "dados": [
-      { "ano": 1994, "valor": 151.1 },
-      { "ano": 1995, "valor": 177.0 },
-      { "ano": 1996, "valor": 208.4 },
-      { "ano": 1997, "valor": 159.4 },
-      { "ano": 1998, "valor": 126.1 },
-      { "ano": 1999, "valor": 114.1 },
-      { "ano": 2000, "valor": 114.3 },
-      { "ano": 2001, "valor": 126.6 },
-      { "ano": 2002, "valor": 148.5 },
-      { "ano": 2003, "valor": 146.1 },
-      { "ano": 2004, "valor": 156.9 },
-      { "ano": 2005, "valor": 152.4 },
-      { "ano": 2006, "valor": 191.6 },
-      { "ano": 2007, "valor": 255.2 },
-      { "ano": 2008, "valor": 326.0 },
-      { "ano": 2009, "valor": 224.0 },
-      { "ano": 2010, "valor": 223.6 },
-      { "ano": 2011, "valor": 316.3 },
-      { "ano": 2012, "valor": 313.3 },
-      { "ano": 2013, "valor": 312.2 },
-      { "ano": 2014, "valor": 284.9 },
-      { "ano": 2015, "valor": 203.5 },
-      { "ano": 2016, "valor": 166.6 },
-      { "ano": 2017, "valor": 174.5 },
-      { "ano": 2018, "valor": 210.6 },
-      { "ano": 2019, "valor": 201.5 },
-      { "ano": 2020, "valor": 202.9 },
-      { "ano": 2021, "valor": 283.8 },
-      { "ano": 2022, "valor": 406.8 },
-      { "ano": 2023, "valor": 272.3 },
-      { "ano": 2024, "valor": 201.2 },
-      { "ano": 2025, "valor": 265.0 },
-      { "ano": 2026, "valor": 268.0 },
+    "descricao": "Preço médio anual internacional do trigo, em dólares nominais por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento do trigo no mercado internacional. A série é nominal, portanto não desconta inflação. Aumentos fortes costumam refletir choques de oferta, demanda, clima, estoques, custos logísticos ou conflitos que afetem grandes produtores e exportadores.",
+    "metodologia":
+      "Série anual em USD por tonelada métrica, sem ajuste sazonal, calculada como média de preços de referência internacionais do trigo. Conforme a documentação da série do FMI/FRED, os valores representam preços benchmark representativos do mercado global, determinados pelo maior exportador da commodity, e são médias de período em dólares nominais.",
+    "historico_metodologia":
+      "Não foi identificada quebra metodológica explícita na série anual PWHEAMTUSDA do FMI/FRED para 1994-2025. A série pode sofrer revisões, pois o próprio FRED informa que os dados estão sujeitos a revisão. Para manter consistência estatística, foram mantidos apenas anos completos já publicados; 2026 foi removido por não ter média anual fechada.",
+    "abrangencia":
+      "Mercado internacional; preço benchmark global do trigo em USD por tonelada métrica. Não representa preço doméstico brasileiro nem preço recebido por produtores no Brasil.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Crise alimentar",
+        "descricao": "Forte alta internacional de commodities agrícolas e alimentos elevou o preço anual do trigo.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Choque climático",
+        "descricao":
+          "Problemas climáticos e restrições de oferta em importantes regiões produtoras contribuíram para nova alta dos preços internacionais.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A invasão da Ucrânia pela Rússia afetou exportações, logística e percepção de risco em dois grandes fornecedores globais de grãos, elevando fortemente o preço médio anual.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Normalização oferta",
+        "descricao":
+          "A recomposição parcial de oferta, adaptação logística e queda dos preços internacionais de grãos reduziram o preço médio anual em relação ao pico de 2022.",
+      },
     ],
+    "comparacao_paises":
+      "Não é um indicador por país; é uma referência internacional em USD/ton. Para comparação entre países, o uso adequado é comparar esse benchmark global com preços domésticos, custos de importação, câmbio, tarifas e subsídios de cada país.",
+    "nivel_confiabilidade":
+      "Alta para 1994-2025, pois os valores vêm da série anual oficial PWHEAMTUSDA do FMI, disponibilizada pelo FRED. 2026 foi removido por ser ano incompleto. A identificação como 'US HRW' foi removida do label porque os valores informados correspondem à série do FMI/FRED 'Global price of Wheat', não à série anual do World Bank Pink Sheet 'Wheat, U.S., HRW', que apresenta valores diferentes em anos recentes.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FRED - Global price of Wheat (PWHEAMTUSDA), Annual",
+        "url": "https://fred.stlouisfed.org/series/PWHEAMTUSDA",
+      },
+      { "titulo": "FRED - Tabela de dados PWHEAMTUSDA", "url": "https://fred.stlouisfed.org/data/PWHEAMTUSDA" },
+      { "titulo": "World Bank - Commodity Markets", "url": "https://www.worldbank.org/en/research/commodity-markets" },
+      {
+        "titulo": "World Bank - Commodity Markets Pink Sheet, Annual Prices",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 149.78 },
+      { "ano": 1995, "valor": 176.96 },
+      { "ano": 1996, "valor": 197.23 },
+      { "ano": 1997, "valor": 149.51 },
+      { "ano": 1998, "valor": 114.46 },
+      { "ano": 1999, "valor": 98.26 },
+      { "ano": 2000, "valor": 100.74 },
+      { "ano": 2001, "valor": 106.37 },
+      { "ano": 2002, "valor": 132.17 },
+      { "ano": 2003, "valor": 131.92 },
+      { "ano": 2004, "valor": 134.39 },
+      { "ano": 2005, "valor": 129.67 },
+      { "ano": 2006, "valor": 169.14 },
+      { "ano": 2007, "valor": 231.18 },
+      { "ano": 2008, "valor": 292.97 },
+      { "ano": 2009, "valor": 192.11 },
+      { "ano": 2010, "valor": 195.23 },
+      { "ano": 2011, "valor": 280.28 },
+      { "ano": 2012, "valor": 276.33 },
+      { "ano": 2013, "valor": 265.69 },
+      { "ano": 2014, "valor": 242.9 },
+      { "ano": 2015, "valor": 185.87 },
+      { "ano": 2016, "valor": 143.2 },
+      { "ano": 2017, "valor": 145.29 },
+      { "ano": 2018, "valor": 186.13 },
+      { "ano": 2019, "valor": 163.26 },
+      { "ano": 2020, "valor": 185.51 },
+      { "ano": 2021, "valor": 265.79 },
+      { "ano": 2022, "valor": 360.17 },
+      { "ano": 2023, "valor": 272.33 },
+      { "ano": 2024, "valor": 201.19 },
+      { "ano": 2025, "valor": 173.09 },
+    ],
   },
   "acucar_usd_t": {
     "label": "Açúcar (Preço Médio Global)",
     "cor": "#be123c",
     "unidade": "USD/t",
-    "fonte": "World Bank / FRED (ISA Sugar #11)",
+    "fonte": "FRED / International Monetary Fund (IMF) - PSUGAISAUSDA; World Bank Pink Sheet",
     "cat": "Commodities",
     "descricao":
-      "Termômetro do agronegócio canavieiro (Brasil é líder global). As variações globais determinam se usinas produzirão etanol ou açúcar para exportação. A Europa tradicionalmente utiliza açúcar de beterraba sob forte protecionismo.",
-    "dados": [
-      { "ano": 1994, "valor": 266.98 },
-      { "ano": 1995, "valor": 292.77 },
-      { "ano": 1996, "valor": 263.67 },
-      { "ano": 1997, "valor": 250.67 },
-      { "ano": 1998, "valor": 196.65 },
-      { "ano": 1999, "valor": 138.23 },
-      { "ano": 2000, "valor": 180.34 },
-      { "ano": 2001, "valor": 190.48 },
-      { "ano": 2002, "valor": 136.25 },
-      { "ano": 2003, "valor": 156.31 },
-      { "ano": 2004, "valor": 158.29 },
-      { "ano": 2005, "valor": 219.14 },
-      { "ano": 2006, "valor": 326.06 },
-      { "ano": 2007, "valor": 222.23 },
-      { "ano": 2008, "valor": 282.19 },
-      { "ano": 2009, "valor": 400.58 },
-      { "ano": 2010, "valor": 460.55 },
-      { "ano": 2011, "valor": 573.42 },
-      { "ano": 2012, "valor": 471.13 },
-      { "ano": 2013, "valor": 390.66 },
-      { "ano": 2014, "valor": 376.77 },
-      { "ano": 2015, "valor": 290.13 },
-      { "ano": 2016, "valor": 400.14 },
-      { "ano": 2017, "valor": 348.99 },
-      { "ano": 2018, "valor": 269.85 },
-      { "ano": 2019, "valor": 272.27 },
-      { "ano": 2020, "valor": 283.29 },
-      { "ano": 2021, "valor": 393.75 },
-      { "ano": 2022, "valor": 415.13 },
-      { "ano": 2023, "valor": 529.99 },
-      { "ano": 2024, "valor": 457.24 },
-      { "ano": 2025, "valor": 374.12 },
-      { "ano": 2026, "valor": 341.72 },
+      "Preço médio anual nominal do açúcar bruto no mercado mundial, baseado no preço ISA Sugar No. 11, convertido de centavos de dólar por libra para dólares por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento internacional do açúcar bruto. A série reflete preços nominais médios anuais, portanto não é ajustada pela inflação.",
+    "metodologia":
+      "A série oficial PSUGAISAUSDA do FRED, com fonte primária no IMF Primary Commodity Prices, informa o preço anual em centavos de dólar por libra. Para expressar em USD/t, cada valor foi convertido pela fórmula: valor_em_USD_t = valor_em_centavos_por_libra × 22,0462262185.",
+    "historico_metodologia":
+      "A série é anual, nominal, não dessazonalizada e representa preços benchmark do mercado global. A definição do World Bank Pink Sheet para Sugar (World) é: International Sugar Agreement (ISA) daily price, raw, f.o.b. and stowed at greater Caribbean ports. Não foi encontrada alteração metodológica relevante específica para a série Sugar (World) no período validado; alterações recentes do Pink Sheet citadas pelo Banco Mundial afetaram outras séries, não esta.",
+    "abrangencia":
+      "Mercado mundial de açúcar bruto, contrato Sugar No. 11/ISA, preço f.o.b. e stowed em portos do Grande Caribe.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia afetou cadeias globais de commodities e demanda; o Banco Mundial cita a COVID-19 como choque relevante no mercado de commodities.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao":
+          "A invasão da Ucrânia pela Rússia elevou a volatilidade e os preços de commodities em 2022, segundo o Banco Mundial.",
+      },
+      {
+        "ano": 2023,
+        "nome": "El Niño",
+        "descricao":
+          "Condições climáticas adversas associadas ao El Niño reduziram expectativas de produção em países produtores relevantes, como Índia e Tailândia, pressionando preços internacionais do açúcar.",
+      },
     ],
+    "comparacao_paises":
+      "Não se aplica diretamente, pois o indicador é um preço global de commodity, não um indicador nacional. O Brasil é um dos principais produtores e exportadores mundiais de açúcar, portanto é fortemente exposto a essa cotação, mas a série não mede desempenho específico do Brasil.",
+    "nivel_confiabilidade":
+      "Alto para 1994-2025: valores anuais concretos, publicados pelo FRED com fonte no IMF Primary Commodity Prices e compatíveis com a definição do World Bank Pink Sheet. O ano de 2026 foi removido por não haver média anual completa oficial na data de validação.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FRED - Global price of Sugar, No. 11, World (PSUGAISAUSDA)",
+        "url": "https://fred.stlouisfed.org/series/PSUGAISAUSDA",
+      },
+      { "titulo": "FRED - Table Data PSUGAISAUSDA", "url": "https://fred.stlouisfed.org/data/PSUGAISAUSDA" },
+      { "titulo": "World Bank - Commodity Markets", "url": "https://www.worldbank.org/en/research/commodity-markets" },
+      {
+        "titulo": "World Bank Pink Sheet - April 2026",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-April-2026.pdf",
+      },
+      {
+        "titulo": "International Sugar Organization - Daily Sugar Prices",
+        "url": "https://www.isosugar.org/prices.php",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 266.97 },
+      { "ano": 1995, "valor": 292.73 },
+      { "ano": 1996, "valor": 263.57 },
+      { "ano": 1997, "valor": 251.38 },
+      { "ano": 1998, "valor": 196.61 },
+      { "ano": 1999, "valor": 138.11 },
+      { "ano": 2000, "valor": 178.13 },
+      { "ano": 2001, "valor": 181.47 },
+      { "ano": 2002, "valor": 137.5 },
+      { "ano": 2003, "valor": 152.69 },
+      { "ano": 2004, "valor": 166.34 },
+      { "ano": 2005, "valor": 222.01 },
+      { "ano": 2006, "valor": 326.03 },
+      { "ano": 2007, "valor": 219.51 },
+      { "ano": 2008, "valor": 274.52 },
+      { "ano": 2009, "valor": 400.15 },
+      { "ano": 2010, "valor": 460.57 },
+      { "ano": 2011, "valor": 578.4 },
+      { "ano": 2012, "valor": 471.23 },
+      { "ano": 2013, "valor": 390.41 },
+      { "ano": 2014, "valor": 377.59 },
+      { "ano": 2015, "valor": 291.34 },
+      { "ano": 2016, "valor": 400 },
+      { "ano": 2017, "valor": 349.09 },
+      { "ano": 2018, "valor": 270.1 },
+      { "ano": 2019, "valor": 272.28 },
+      { "ano": 2020, "valor": 284.05 },
+      { "ano": 2021, "valor": 393.66 },
+      { "ano": 2022, "valor": 415.03 },
+      { "ano": 2023, "valor": 530.04 },
+      { "ano": 2024, "valor": 457.31 },
+      { "ano": 2025, "valor": 374.16 },
+    ],
   },
   "preco_cafe_usd": {
     "label": "Café (Arábica)",
     "cor": "#78350f",
     "unidade": "USD/kg",
-    "fonte": "World Bank (Pink Sheet) / ICO / IMF",
+    "fonte": "World Bank Commodity Price Data (Pink Sheet) / ICO",
     "cat": "Commodities",
     "descricao":
-      "Mede o preço médio anual do quilo do café Arábica no mercado internacional. O café é uma das commodities agrícolas mais negociadas e voláteis do mundo, com o Brasil sendo o maior produtor e exportador global. A série histórica é marcada por choques de oferta severos: os picos de 1994, 1997 e 2021-2022 foram causados principalmente por geadas e secas extremas nas regiões produtoras brasileiras. Segundo a Organização Internacional do Café (ICO), 'a volatilidade dos preços é exacerbada pela baixa elasticidade da demanda e pela concentração geográfica da produção'. O recorde nominal de 2011 (US$ 5,98) refletiu baixos estoques mundiais e forte demanda. A projeção para 2024-2026 indica preços sustentados acima de US$ 4,90, impulsionados pelos riscos climáticos crescentes (El Niño/La Niña) e pelo aumento do custo de insumos, mantendo o café como um pilar estratégico da balança comercial brasileira.",
+      "Preço médio anual internacional do café Arábica, em dólares por quilograma, conforme a série Coffee, Arabica da Pink Sheet do Banco Mundial.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento do café Arábica no mercado internacional. A série reflete preço nominal em USD/kg, portanto não está ajustada pela inflação dos Estados Unidos.",
+    "metodologia":
+      "Série Coffee, Arabica (ICO), baseada no preço indicador da International Coffee Organization para Other Mild Arabicas, média dos mercados de Nova York e Bremen/Hamburgo, condição ex-dock, publicada pelo Banco Mundial na Pink Sheet em USD/kg.",
+    "historico_metodologia":
+      "A definição oficial da série no Banco Mundial permanece como Coffee, Arabica (ICO), Other Mild Arabicas, média Nova York e Bremen/Hamburgo, ex-dock. A Pink Sheet informa alterações pontuais recentes em algumas séries e registrou atualização específica de Coffee, Arabica em abril de 2024 para fevereiro de 2024; não foi identificada mudança estrutural de conceito para a série anual usada aqui.",
+    "abrangencia":
+      "Preço internacional de referência do café Arábica, não restrito ao Brasil e não medido no mercado doméstico brasileiro.",
+    "periodicidade": "Mensal, trimestral e anual; este JSON usa médias anuais Jan-Dec.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Geada brasileira",
+        "descricao":
+          "Choque climático em regiões produtoras brasileiras reduziu a oferta esperada e elevou fortemente os preços internacionais do Arábica.",
+      },
+      {
+        "ano": 1997,
+        "nome": "Oferta apertada",
+        "descricao":
+          "Novo ciclo de restrição de oferta, associado a condições climáticas e estoques baixos, manteve os preços internacionais do Arábica em patamar elevado.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Estoques baixos",
+        "descricao":
+          "A alta foi associada a oferta global apertada, especialmente de Arábica, combinada com demanda forte.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Seca brasileira",
+        "descricao":
+          "Condições climáticas adversas no Brasil afetaram expectativas de produção e provocaram alta relevante dos preços do Arábica.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Geada e seca",
+        "descricao":
+          "Geadas e seca no Brasil reduziram a oferta esperada e contribuíram para forte alta internacional do Arábica em 2021 e 2022.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Oferta limitada",
+        "descricao":
+          "A FAO apontou que os preços internacionais subiram no fim de 2023 e durante 2024 por oferta limitada do Vietnã e Indonésia e clima adverso no Brasil.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Estoques baixos",
+        "descricao":
+          "A Pink Sheet registrou forte alta anual do Arábica em 2025; relatórios oficiais e multilaterais associaram o movimento a oferta apertada, estoques baixos e riscos climáticos.",
+      },
+    ],
+    "comparacao_paises":
+      "Este indicador não compara países; é um preço internacional de referência. O Brasil influencia fortemente a série por ser grande produtor e exportador de café, mas o valor publicado não representa preço recebido por produtores brasileiros nem preço doméstico ao consumidor.",
+    "nivel_confiabilidade":
+      "Alta para 1994-2025, pois os valores anuais são dados observados publicados pela fonte oficial World Bank Pink Sheet. 2026 foi removido por não possuir média anual Jan-Dec fechada. Valores projetados de 2026 e projeções 2024-2026 do JSON original foram removidos/corrigidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Commodity Markets - Pink Sheet Data",
+        "url": "https://www.worldbank.org/en/research/commodity-markets",
+      },
+      {
+        "titulo": "World Bank Commodities Price Data - Pink Sheet April 2026",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-April-2026.pdf",
+      },
+      {
+        "titulo": "World Bank Annual Prices - Historical Data Annual",
+        "url":
+          "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      },
+      {
+        "titulo": "FAO - Global coffee market and recent price developments",
+        "url": "https://openknowledge.fao.org/handle/20.500.14283/cd4706en",
+      },
+      {
+        "titulo": "FRED / IMF - Global price of Coffee, Other Mild Arabica",
+        "url": "https://fred.stlouisfed.org/data/PCOFFOTMUSDQ",
+      },
+    ],
     "dados": [
       { "ano": 1994, "valor": 3.32 },
       { "ano": 1995, "valor": 3.51 },
@@ -4488,153 +5192,66 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2014, "valor": 4.42 },
       { "ano": 2015, "valor": 3.53 },
       { "ano": 2016, "valor": 3.61 },
-      { "ano": 2017, "valor": 3.59 },
+      { "ano": 2017, "valor": 3.32 },
       { "ano": 2018, "valor": 2.93 },
       { "ano": 2019, "valor": 2.88 },
       { "ano": 2020, "valor": 3.32 },
       { "ano": 2021, "valor": 4.51 },
       { "ano": 2022, "valor": 5.63 },
-      { "ano": 2023, "valor": 4.85 },
-      { "ano": 2024, "valor": 5.15 },
-      { "ano": 2025, "valor": 5.05 },
-      { "ano": 2026, "valor": 4.95 },
+      { "ano": 2023, "valor": 4.54 },
+      { "ano": 2024, "valor": 5.62 },
+      { "ano": 2025, "valor": 8.47 },
     ],
-    "padrao": false,
   },
   "carne_bovina_usd_t": {
     "label": "Carne Bovina (Preço Médio Global)",
     "cor": "#991b1b",
     "unidade": "USD/t",
-    "fonte": "IMF Primary Commodity Prices (PBEEFUSDA)",
+    "fonte": "IMF Primary Commodity Prices via FRED (PBEEFUSDA)",
     "cat": "Commodities",
     "descricao":
-      "Indicador da capacidade proteica. O Brasil, gigante produtor, estabiliza a oferta mundial, mas sofre pressão inflacionária no mercado interno. A escalada de preços reflete a ascensão da classe média asiática consumindo mais proteína.",
-    "dados": [
-      { "ano": 1994, "valor": 1918.02 },
-      { "ano": 1995, "valor": 1829.83 },
-      { "ano": 1996, "valor": 1741.65 },
-      { "ano": 1997, "valor": 1873.93 },
-      { "ano": 1998, "valor": 1807.79 },
-      { "ano": 1999, "valor": 1895.97 },
-      { "ano": 2000, "valor": 1940.07 },
-      { "ano": 2001, "valor": 2094.39 },
-      { "ano": 2002, "valor": 2116.44 },
-      { "ano": 2003, "valor": 1984.16 },
-      { "ano": 2004, "valor": 2469.17 },
-      { "ano": 2005, "valor": 2601.45 },
-      { "ano": 2006, "valor": 2535.31 },
-      { "ano": 2007, "valor": 2601.45 },
-      { "ano": 2008, "valor": 2667.59 },
-      { "ano": 2009, "valor": 2623.5 },
-      { "ano": 2010, "valor": 3351.02 },
-      { "ano": 2011, "valor": 4034.45 },
-      { "ano": 2012, "valor": 4144.69 },
-      { "ano": 2013, "valor": 4056.5 },
-      { "ano": 2014, "valor": 4916.3 },
-      { "ano": 2015, "valor": 4409.24 },
-      { "ano": 2016, "valor": 3924.22 },
-      { "ano": 2017, "valor": 4210.82 },
-      { "ano": 2018, "valor": 4034.45 },
-      { "ano": 2019, "valor": 4409.24 },
-      { "ano": 2020, "valor": 4409.24 },
-      { "ano": 2021, "valor": 5202.02 },
-      { "ano": 2022, "valor": 5604.36 },
-      { "ano": 2023, "valor": 4966.57 },
-      { "ano": 2024, "valor": 5770.81 },
-      { "ano": 2025, "valor": 6700.72 },
-      { "ano": 2026, "valor": 7616.96 },
-    ],
+      "Preço global de referência da carne bovina, convertido de centavos de dólar por libra para dólares por tonelada métrica.",
+    "como_interpretar":
+      "Valores maiores indicam encarecimento da carne bovina no mercado internacional. A série representa preço nominal médio anual em dólar, portanto não está ajustada pela inflação.",
+    "metodologia":
+      "Valores anuais oficiais da série PBEEFUSDA do FMI, disponibilizada pelo FRED, em U.S. cents per pound. Conversão aplicada: USD/t = valor_em_centavos_por_libra × 22,0462262185. Apenas observações anuais fechadas e publicadas foram mantidas.",
+    "historico_metodologia":
+      "A série oficial PBEEFUSDA disponível no FRED possui frequência anual, não dessazonalizada, com valores médios de período em dólares nominais. A página oficial informa que os dados podem sofrer revisões retroativas. Na fonte consultada, a série anual PBEEFUSDA possui dados de 2011 a 2025; por isso, valores de 1994 a 2010 e 2026 foram removidos por não constarem como observações anuais oficiais completas nessa fonte.",
+    "abrangencia": "Mercado global; preço de referência internacional determinado pelo FMI para carne bovina.",
+    "periodicidade": "Anual",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Não é uma métrica comparativa entre países. Trata-se de preço global de referência; portanto, não mede diretamente a posição do Brasil frente a outros países.",
+    "nivel_confiabilidade":
+      "Alta para 2011-2025, pois os valores foram validados contra a série oficial PBEEFUSDA do FMI via FRED e convertidos diretamente para USD/t. Inexistente para 1994-2010 e 2026 nesta validação, pois esses anos não constam como observações anuais oficiais completas na fonte consultada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
-  },
-  "celulose_usd_t": {
-    "label": "Celulose de Fibra Curta (China Net)",
-    "cor": "#10b981",
-    "unidade": "USD/t",
-    "fonte": "FOEX / World Bank / XP Research",
-    "cat": "Commodities",
-    "descricao":
-      "Domínio geográfico sul-americano: o clima tropical úmido garante crescimento do eucalipto inatingível pelo hemisfério norte. O Brasil dita preços mundiais, capturando as demandas do e-commerce (caixas) asiático e global.",
-    "dados": [
-      { "ano": 1994, "valor": 550.0 },
-      { "ano": 1995, "valor": 790.0 },
-      { "ano": 1996, "valor": 420.0 },
-      { "ano": 1997, "valor": 510.0 },
-      { "ano": 1998, "valor": 460.0 },
-      { "ano": 1999, "valor": 440.0 },
-      { "ano": 2000, "valor": 630.0 },
-      { "ano": 2001, "valor": 480.0 },
-      { "ano": 2002, "valor": 435.0 },
-      { "ano": 2003, "valor": 490.0 },
-      { "ano": 2004, "valor": 525.0 },
-      { "ano": 2005, "valor": 545.0 },
-      { "ano": 2006, "valor": 615.0 },
-      { "ano": 2007, "valor": 690.0 },
-      { "ano": 2008, "valor": 740.0 },
-      { "ano": 2009, "valor": 510.0 },
-      { "ano": 2010, "valor": 810.0 },
-      { "ano": 2011, "valor": 770.0 },
-      { "ano": 2012, "valor": 720.0 },
-      { "ano": 2013, "valor": 780.0 },
-      { "ano": 2014, "valor": 740.0 },
-      { "ano": 2015, "valor": 765.0 },
-      { "ano": 2016, "valor": 640.0 },
-      { "ano": 2017, "valor": 790.0 },
-      { "ano": 2018, "valor": 845.0 },
-      { "ano": 2019, "valor": 610.0 },
-      { "ano": 2020, "valor": 475.0 },
-      { "ano": 2021, "valor": 710.0 },
-      { "ano": 2022, "valor": 825.0 },
-      { "ano": 2023, "valor": 615.0 },
-      { "ano": 2024, "valor": 690.0 },
-      { "ano": 2025, "valor": 640.0 },
-      { "ano": 2026, "valor": 585.0 },
+    "fontes_links": [
+      { "titulo": "FRED - Global price of Beef (PBEEFUSDA)", "url": "https://fred.stlouisfed.org/series/PBEEFUSDA" },
+      { "titulo": "FRED - Table Data PBEEFUSDA", "url": "https://fred.stlouisfed.org/data/PBEEFUSDA" },
+      { "titulo": "IMF - Primary Commodity Prices", "url": "https://www.imf.org/en/research/commodity-prices" },
+      {
+        "titulo": "IMF Data - Primary Commodity Price System (PCPS)",
+        "url": "https://data.imf.org/en/datasets/IMF.RES%3APCPS",
+      },
     ],
-    "padrao": false,
-  },
-  "celulose_usd_t": {
-    "label": "Celulose de Fibra Curta (China Net)",
-    "cor": "#10b981",
-    "unidade": "USD/t",
-    "fonte": "FOEX / World Bank / XP Research",
-    "cat": "Commodities",
-    "descricao":
-      "Domínio geográfico sul-americano: o clima tropical úmido garante crescimento do eucalipto inatingível pelo hemisfério norte. O Brasil dita preços mundiais, capturando as demandas do e-commerce (caixas) asiático e global.",
     "dados": [
-      { "ano": 1994, "valor": 550.0 },
-      { "ano": 1995, "valor": 790.0 },
-      { "ano": 1996, "valor": 420.0 },
-      { "ano": 1997, "valor": 510.0 },
-      { "ano": 1998, "valor": 460.0 },
-      { "ano": 1999, "valor": 440.0 },
-      { "ano": 2000, "valor": 630.0 },
-      { "ano": 2001, "valor": 480.0 },
-      { "ano": 2002, "valor": 435.0 },
-      { "ano": 2003, "valor": 490.0 },
-      { "ano": 2004, "valor": 525.0 },
-      { "ano": 2005, "valor": 545.0 },
-      { "ano": 2006, "valor": 615.0 },
-      { "ano": 2007, "valor": 690.0 },
-      { "ano": 2008, "valor": 740.0 },
-      { "ano": 2009, "valor": 510.0 },
-      { "ano": 2010, "valor": 810.0 },
-      { "ano": 2011, "valor": 770.0 },
-      { "ano": 2012, "valor": 720.0 },
-      { "ano": 2013, "valor": 780.0 },
-      { "ano": 2014, "valor": 740.0 },
-      { "ano": 2015, "valor": 765.0 },
-      { "ano": 2016, "valor": 640.0 },
-      { "ano": 2017, "valor": 790.0 },
-      { "ano": 2018, "valor": 845.0 },
-      { "ano": 2019, "valor": 610.0 },
-      { "ano": 2020, "valor": 475.0 },
-      { "ano": 2021, "valor": 710.0 },
-      { "ano": 2022, "valor": 825.0 },
-      { "ano": 2023, "valor": 615.0 },
-      { "ano": 2024, "valor": 690.0 },
-      { "ano": 2025, "valor": 640.0 },
-      { "ano": 2026, "valor": 585.0 },
+      { "ano": 2011, "valor": 4038.39 },
+      { "ano": 2012, "valor": 4143.43 },
+      { "ano": 2013, "valor": 4046.85 },
+      { "ano": 2014, "valor": 4939.64 },
+      { "ano": 2015, "valor": 4420.14 },
+      { "ano": 2016, "valor": 3928.82 },
+      { "ano": 2017, "valor": 4222.09 },
+      { "ano": 2018, "valor": 4046.74 },
+      { "ano": 2019, "valor": 4623.03 },
+      { "ano": 2020, "valor": 4418.85 },
+      { "ano": 2021, "valor": 5201.98 },
+      { "ano": 2022, "valor": 5604.28 },
+      { "ano": 2023, "valor": 4966.5 },
+      { "ano": 2024, "valor": 5770.89 },
+      { "ano": 2025, "valor": 6700.74 },
     ],
-    "padrao": false,
   },
   "icp_banco_mundial_pli": {
     "label": "Índice de Nível de Preços (PLI - Banco Mundial)",
@@ -4643,98 +5260,90 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "Banco Mundial / World Development Indicators - Indicador PA.NUS.PPPC.RF",
     "cat": "Impostos e Consumo",
     "descricao":
-      "O Price Level Index (PLI) é a razão entre o fator de conversão PPP e a taxa de câmbio de mercado, com EUA = 1,00. Segundo o Banco Mundial, 'fornece uma medida das diferenças de Nível de preços entre o país e os Estados Unidos, indicando o número de unidades da moeda comum (dólares americanos) necessárias para comprar o mesmo volume em cada país' [1]. é calculado pelo Banco Mundial a partir dos dados do International Comparison Program (ICP).",
+      "O Price Level Index (PLI) mede o nível de preços de um país em relação aos Estados Unidos, com EUA = 1,00, usando a razão entre o fator de conversão PPP do PIB e a taxa de câmbio de mercado.",
     "como_interpretar":
-      "Valor de 0,50 significa que uma cesta idêntica de bens e serviços no Brasil custa 50% do equivalente nos EUA em dólares. Abaixo de 1,00 = país 'barato'; acima = país 'caro'. Captura o efeito combinado de Nível de preços doméstico + câmbio, sendo altamente sensível ao câmbio.",
+      "Valor abaixo de 1,00 indica que o nível geral de preços do país é menor que o dos Estados Unidos; valor acima de 1,00 indica nível de preços maior. Exemplo: 0,50 significa que, em dólares, o nível de preços agregado do PIB equivale a cerca de 50% do nível dos EUA. O indicador é sensível tanto aos preços internos quanto à taxa de câmbio de mercado.",
     "metodologia":
-      "Cálculo = PPP_conversion_factor (PA.NUS.PPP) é Exchange_rate (PA.NUS.FCRF). PPPs são estimados pelo ICP com pesquisas de ~1.000 itens comparáveis (consumo, habitação, construção, serviços) nas rodadas de benchmark (2005, 2011, 2017, 2021). Entre rodadas, valores são extrapolados por deflatores de PIB relativos.",
-    "abrangencia": "~200 países. Base: EUA = 1,00. Preços correntes do ano.",
-    "periodicidade": "Anual. Atualização do WDI em fev/mar. série dispoNível: 1990-2024.",
+      "O indicador PA.NUS.PPPC.RF é calculado como a razão entre o fator de conversão PPP do PIB e a taxa de câmbio de mercado correspondente. A base é Estados Unidos = 1,00. As PPPs vêm do International Comparison Program, com anos de benchmark e extrapolações entre rodadas por contas nacionais e deflatores relativos.",
+    "historico_metodologia":
+      "A série WDI usa metodologia do International Comparison Program. Houve rodadas de benchmark do ICP, incluindo 2005, 2011, 2017 e 2021, que podem gerar revisões históricas na série. Não foi identificada quebra metodológica que impeça comparação anual de 1994 a 2024, mas os valores podem ser revisados pelo Banco Mundial quando novas rodadas ICP e contas nacionais são incorporadas.",
+    "abrangencia":
+      "Brasil, indicador anual do World Development Indicators, comparável internacionalmente, com unidade indexada aos Estados Unidos = 1,00. Série oficial disponível no WDI para 1990-2024; aqui foram mantidos apenas os anos de 1994 a 2024.",
+    "periodicidade": "Anual.",
     "eventos_externos": [
-      {
-        "ano": 1990,
-        "nome": "Hiperinflação",
-        "descricao":
-          "Inflação extrema e instabilidade cambial mantiveram o índice em patamar baixo e volátil no início da série, com queda de 0,392 em 1990 para 0,310 em 1992.",
-      },
       {
         "ano": 1994,
         "nome": "Plano Real",
         "descricao":
-          "A estabilização monetária e a âncora cambial do Plano Real elevaram fortemente o nível de preços relativo, levando o índice de 0,427 em 1994 para 0,624 em 1996.",
+          "A estabilização monetária e a âncora cambial coincidiram com forte alta do PLI, de 0,427 em 1994 para 0,587 em 1995 e 0,624 em 1996.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
         "descricao":
-          "O abandono da banda cambial e a maxidesvalorização do real reduziram o índice de 0,594 em 1998 para 0,405 em 1999.",
+          "A mudança do regime cambial e a desvalorização do real coincidiram com queda do índice, de 0,594 em 1998 para 0,405 em 1999.",
       },
       {
         "ano": 2002,
-        "nome": "Crise eleitoral",
+        "nome": "Crise cambial",
         "descricao":
-          "A incerteza financeira pré-eleição e a forte depreciação cambial levaram o índice ao menor valor da série, 0,297 em 2002.",
+          "A forte depreciação cambial e a incerteza financeira coincidiram com queda do PLI para 0,297 em 2002, menor valor do recorte 1994-2024.",
       },
       {
-        "ano": 2005,
-        "nome": "Boom commodities",
+        "ano": 2011,
+        "nome": "Real valorizado",
         "descricao":
-          "A valorização do real durante o ciclo favorável de commodities e entrada de capitais elevou o índice de 0,436 em 2005 para o pico histórico de 0,881 em 2011.",
+          "A valorização do real e o ciclo favorável de commodities coincidiram com o pico da série no recorte, 0,881 em 2011.",
       },
       {
         "ano": 2015,
-        "nome": "Recessão brasileira",
+        "nome": "Recessão",
         "descricao":
-          "A crise econômica e política, combinada à depreciação cambial, derrubou o índice de 0,776 em 2014 para 0,603 em 2015.",
+          "A recessão brasileira, inflação elevada e depreciação cambial coincidiram com queda do PLI, de 0,776 em 2014 para 0,603 em 2015.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
         "descricao":
-          "O choque da Covid-19, a fuga para o dólar e a forte queda da Selic coincidiram com nova queda do índice, de 0,562 em 2019 para 0,439 em 2020.",
+          "O choque da Covid-19 e a depreciação do real coincidiram com queda do índice, de 0,562 em 2019 para 0,439 em 2020.",
       },
       {
         "ano": 2024,
         "nome": "Real depreciado",
-        "descricao": "A depreciação do real em relação ao dólar reduziu o índice de 0,490 em 2023 para 0,462 em 2024.",
+        "descricao":
+          "A depreciação cambial em 2024 coincidiu com queda do índice, de 0,490 em 2023 para 0,462 em 2024.",
       },
     ],
     "comparacao_paises":
-      "Em 2024: EUA = 1,00 (referência); Suíça e Noruega > 1,00; Zona do Euro ~0,85; México ~0,60; Brasil ~0,46 é abaixo de pares de renda média-alta como México e Turquia.",
-    "validacao":
-      "Claude Opus 4.7 - 21/04/2026. Dados extraídos da UNdata/World Development Indicators (atualização 25/02/2026), indicador PA.NUS.PPPC.RF. Valores conferem com CEIC Data.",
+      "Em 2024, o Brasil ficou abaixo dos Estados Unidos, por definição 1,00, e abaixo de economias avançadas de alto nível de preços como Suíça e Noruega. Também ficou abaixo de alguns pares emergentes com preços relativos mais altos. O valor brasileiro de 0,462 indica que o nível agregado de preços do PIB era substancialmente menor que o dos EUA.",
+    "nivel_confiabilidade":
+      "Alto para uso macroeconômico comparativo, pois os valores vêm do World Development Indicators/Banco Mundial e seguem metodologia internacional do ICP. Limitação: os dados podem sofrer revisões retrospectivas após novas rodadas ICP e atualizações de contas nacionais; os valores apresentados estão arredondados a três casas decimais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
+      {
+        "titulo": "World Bank Data - PA.NUS.PPPC.RF - Brazil",
+        "url": "https://data.worldbank.org/indicator/PA.NUS.PPPC.RF?locations=BR",
+      },
       {
         "titulo": "World Bank Metadata Glossary - PA.NUS.PPPC.RF",
         "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPPC.RF",
       },
       {
-        "titulo": "World Bank Data - Price level ratio of PPP conversion factor (GDP) to market exchange rate - Brazil",
-        "url": "https://data.worldbank.org/indicator/PA.NUS.PPPC.RF?locations=BR",
+        "titulo": "World Bank DataBank - World Development Indicators",
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/PA.NUS.PPPC.RF",
       },
       {
-        "titulo": "UNdata / WDI - série histórica Brasil (1990-2024)",
+        "titulo": "UNdata / WDI - PA.NUS.PPPC.RF",
         "url": "http://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPPC.RF%3BCountry_Code%3ABRA",
       },
-      {
-        "titulo": "CEIC Data - síntese estatística (mediana, mínimo, máximo)",
-        "url":
-          "https://www.ceicdata.com/en/brazil/gross-domestic-product-purchasing-power-parity/br-ppp-conversion-factor-to-market-exchange-rate-price-level-ratio",
-      },
+      { "titulo": "International Comparison Program - World Bank", "url": "https://www.worldbank.org/en/programs/icp" },
       {
         "titulo": "Our World in Data - GDP price levels relative to the US",
         "url": "https://ourworldindata.org/grapher/gdp-price-levels-relative-to-the-us",
       },
-      {
-        "titulo": "International Comparison Program (ICP) - metodologia",
-        "url": "https://www.worldbank.org/en/programs/icp",
-      },
     ],
     "dados": [
-      { "ano": 1990, "valor": 0.392 },
-      { "ano": 1991, "valor": 0.329 },
-      { "ano": 1992, "valor": 0.31 },
-      { "ano": 1993, "valor": 0.324 },
       { "ano": 1994, "valor": 0.427 },
       { "ano": 1995, "valor": 0.587 },
       { "ano": 1996, "valor": 0.624 },
@@ -4767,118 +5376,145 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 0.49 },
       { "ano": 2024, "valor": 0.462 },
     ],
-    "padrao": false,
   },
   "pof_alimentacao_domicilio": {
-    "label": "Gasto com Alimentação no Domicílio (POF/IBGE)",
+    "label": "Gasto com Alimentação (POF/IBGE)",
     "cor": "#059669",
     "unidade": "% da Despesa Total",
     "fonte": "IBGE - Pesquisa de Orçamentos Familiares (POF)",
     "cat": "Impostos e Consumo",
     "descricao":
-      "Percentual da despesa total média mensal das famílias brasileiras destinado é alimentação consumida dentro do domicílio, segundo a Pesquisa de Orçamentos Familiares (POF) do IBGE. é um indicador clássico da Lei de Engel: quanto menor a renda, maior a fração do orçamento comprometida com alimentação básica.",
+      "Percentual da despesa total média mensal familiar destinado à alimentação, segundo a Pesquisa de Orçamentos Familiares (POF) do IBGE.",
     "como_interpretar":
-      "Valores mais baixos indicam maior renda real dispoNível e maior diversificação do consumo (serviços, lazer, educação). Altas pontuais geralmente refletem choques inflacionários ou quedas de renda.",
+      "Valores maiores indicam maior peso da alimentação no orçamento familiar total. Valores menores indicam menor comprometimento relativo da despesa total com alimentação, geralmente associado a maior diversificação da estrutura de consumo. Este indicador não mede preços de alimentos isoladamente nem alimentação apenas no domicílio.",
     "metodologia":
-      "Entrevistas presenciais em amostra probabilística de domicílios (~55 mil em 2017-2018; ~103 mil em 2024-2025), com registro diário de despesas durante 9 dias consecutivos por domicílio e coleta distribuída ao longo de 12 meses para capturar sazonalidade. Inclui despesas monetárias e não monetárias (produção própria, doações, trocas).",
+      "O indicador foi calculado a partir das tabelas oficiais da POF como participação das despesas de alimentação na despesa total média mensal familiar. Nas publicações do IBGE, a alimentação também é apresentada como participação nas despesas de consumo; para expressar em relação à despesa total, usa-se a participação de alimentação nas despesas de consumo multiplicada pela participação das despesas de consumo na despesa total. Para 2017-2018, o próprio release do IBGE também informa diretamente alimentação como 14,2% da despesa total nas classes selecionadas e mostra alimentação como 17,5% das despesas de consumo e despesas de consumo como 81,0% da despesa total.",
+    "historico_metodologia":
+      "A comparação nacional direta deve começar em 2002-2003, pois a partir dessa edição a POF passou a ter abrangência nacional, cobrindo áreas urbana e rural. As POFs de 1987-1988 e 1995-1996 ficaram restritas às Regiões Metropolitanas de interesse do SNIPC e não são diretamente comparáveis à série nacional. A POF 2008-2009 manteve a abrangência nacional da edição 2002-2003. A POF 2017-2018 manteve a abrangência geográfica, mas incluiu novos módulos, como EBIA, e não pesquisou antropometria; essas mudanças não invalidam a comparação da estrutura de despesas de alimentação, mas devem ser registradas.",
     "abrangencia":
-      "Nacional (urbana e rural) desde a POF 2002-2003. Edições anteriores (1987-1988 e 1995-1996) cobriam apenas regiões metropolitanas selecionadas e não são diretamente comparáveis é série nacional.",
+      "Brasil, áreas urbana e rural, a partir da POF 2002-2003. As edições anteriores a 2002-2003 não foram incluídas por não terem abrangência nacional diretamente comparável.",
     "periodicidade":
-      "Eventual, aproximadamente a cada 7-10 anos. Edições realizadas: 1987-88, 1995-96, 2002-03, 2008-09, 2017-18 e 2024-25 (em coleta). Não há dado anual é valores entre edições são interpolações/estimativas, não medições.",
+      "Eventual, sem periodicidade anual fixa. Edições nacionais comparáveis disponíveis desde 1994: 2002-2003, 2008-2009 e 2017-2018. A POF 2024-2025 não foi incluída porque ainda não possui resultado final oficial publicado para este indicador.",
     "eventos_externos": [
       {
         "ano": 2009,
-        "nome": "Ganho real",
+        "nome": "Mudança consumo",
         "descricao":
-          "Entre a POF 2002-2003 e a POF 2008-2009, o peso da alimentação no domicílio caiu de 17,1% para 16,1% da despesa total. A queda é compatível com a Lei de Engel observada pela própria POF: famílias de maior renda destinam proporção menor do orçamento à alimentação.",
+          "O IBGE registrou queda da participação de alimentação nas despesas de consumo de 20,8% em 2002-2003 para 19,8% em 2008-2009 e aumento da alimentação fora do domicílio de 24,1% para 31,1% do total de gastos com alimentação, indicando mudança no padrão de consumo alimentar.",
       },
       {
         "ano": 2018,
-        "nome": "Diversificação consumo",
+        "nome": "Queda alimentar",
         "descricao":
-          "Na POF 2017-2018, o indicador caiu para 14,2%, menor valor da série nacional disponível. A própria POF mostra que alimentação pesa muito mais nas famílias de baixa renda do que nas de alta renda, indicando que a redução do percentual agregado reflete maior diversificação relativa das despesas familiares.",
+          "O IBGE registrou nova queda da participação da alimentação nas despesas de consumo, de 19,8% em 2008-2009 para 17,5% em 2017-2018. Em relação à despesa total, isso corresponde a 14,2% em 2017-2018.",
       },
     ],
     "comparacao_paises":
-      "Indicador equivalente existe em pesquisas análogas (ex.: Consumer Expenditure Survey do BLS nos EUA, Household Budget Survey do Eurostat). países de alta renda tipicamente gastam 6-12% da despesa total com alimentação no domicílio; Brasil se situa em patamar intermediário-alto, característico de economias de renda média.",
-    "validacao":
-      "Claude Opus 4.7 - 21/04/2026. Valores cruzados com releases oficiais do IBGE (Agência de Notícias) e publicação 'Primeiros Resultados POF 2017-2018'.",
+      "A comparação internacional deve ser feita com cautela, pois pesquisas de orçamento familiar variam em conceito, cobertura, periodicidade e classificação de despesas entre países. O dado validado aqui é específico da POF/IBGE e não deve ser comparado diretamente com bases internacionais sem harmonização metodológica.",
+    "nivel_confiabilidade":
+      "Alto para os anos 2003, 2009 e 2018, pois os valores derivam de publicações oficiais do IBGE. Não há dado anual oficial para os anos intermediários; portanto, qualquer valor anual entre edições seria estimativa ou interpolação e foi excluído. O título original foi corrigido porque os valores 17,1%, 16,1% e 14,2% correspondem à alimentação total como percentual da despesa total, não exclusivamente à alimentação no domicílio.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "IBGE - Página oficial da Pesquisa de Orçamentos Familiares",
+        "titulo": "IBGE - POF 2017-2018: página oficial da Pesquisa de Orçamentos Familiares",
         "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/24786-pesquisa-de-orcamentos-familiares-2.html",
       },
       {
         "titulo":
-          "IBGE - Release POF 2017-2018: Famílias com até R$ 1,9 mil destinam 61,2% dos gastos á alimentação e habitação",
+          "IBGE - POF 2017-2018: Famílias com até R$ 1,9 mil destinam 61,2% dos gastos à alimentação e habitação",
         "url":
           "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao",
       },
       {
-        "titulo": "IBGE Biblioteca - Primeiros Resultados POF 2017-2018 (PDF)",
-        "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv101670.pdf",
+        "titulo": "IBGE Biblioteca - Pesquisa de orçamentos familiares 2017-2018: primeiros resultados",
+        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2101670&view=detalhes",
       },
       {
-        "titulo": "IBGE Educa - POF 2024-2025: com o que gasta a família brasileira?",
+        "titulo": "IBGE - POF 2008-2009: desigualdades e transformações no orçamento das famílias brasileiras",
         "url":
-          "https://educa.ibge.gov.br/jovens/materias-especiais/22457-pesquisa-de-orcamentos-familiares-com-o-que-gasta-a-familia-brasileira.html",
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13846-asi-pof-2008-09-mostra-desigualdades-e-transformacoes-no-orcamento-das-familias-brasileiras",
+      },
+      {
+        "titulo": "IBGE - POF 2002-2003",
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/justica-e-seguranca/19877-2002-2003.html",
       },
     ],
     "dados": [
-      { "ano": 2003, "valor": 17.1, "edicao": "POF 2002-2003" },
-      { "ano": 2009, "valor": 16.1, "edicao": "POF 2008-2009" },
-      { "ano": 2018, "valor": 14.2, "edicao": "POF 2017-2018" },
+      { "ano": 2003, "valor": 17.1 },
+      { "ano": 2009, "valor": 16.1 },
+      { "ano": 2018, "valor": 14.2 },
     ],
-    "padrao": false,
   },
   "poder_compra_numbeo": {
     "label": "Poder de Compra Local (Numbeo)",
     "cor": "#0ea5e9",
     "unidade": "Índice (Nova Iorque = 100)",
-    "fonte": "Numbeo / Crowd-sourced Data Analysis",
+    "fonte": "Numbeo - Cost of Living Index by Country / Local Purchasing Power Index",
     "cat": "Impostos e Consumo",
     "descricao":
-      "Índice crowdsourced que estima a capacidade relativa de aquisição de bens e serviços do trabalhador médio de um país, usando o salário líquido médio de Nova Iorque como base 100. Um valor de 40 indica que o residente brasileiro típico consegue comprar cerca de 40% do que um nova-iorquino médio compra com seu salário.",
+      "Índice do Numbeo que compara o poder de compra local médio de um país com Nova Iorque, usando Nova Iorque como base 100.",
     "como_interpretar":
-      "Valor = (poder de compra local / poder de compra NYC) é 100. Acima de 100 = maior poder aquisitivo que NYC; abaixo = menor. Combina salário líquido com preços locais (mercado, aluguel, restaurantes, utilidades).",
+      "Valores abaixo de 100 indicam menor poder de compra relativo que Nova Iorque; valores acima de 100 indicam maior poder de compra relativo. Um valor de 46,1 indica que, pela metodologia do Numbeo, o poder de compra local médio é aproximadamente 46,1% do benchmark de Nova Iorque.",
     "metodologia":
-      "Razão entre salário líquido médio declarado pelos usuários e o custo de uma cesta padronizada de bens e serviços, comparada ao benchmark de NYC. Dados coletados por contribuições voluntárias via site/app Numbeo.",
+      "O Numbeo calcula o índice dividindo o salário líquido médio pelo custo de uma cesta ponderada de bens e serviços, incluindo aluguel, para o local analisado e para Nova Iorque; depois divide o resultado local pelo resultado de Nova Iorque. Os dados são obtidos por contribuições voluntárias de usuários e agregados pelo Numbeo.",
+    "historico_metodologia":
+      "O Numbeo disponibiliza rankings históricos periódicos a partir de 2009, mas não publica uma série histórica metodológica auditada com documentação completa de quebras, mudanças de amostra ou revisões retroativas. A comparabilidade temporal deve ser tratada com cautela, pois a base é crowdsourced e a composição de contribuidores pode mudar ao longo do tempo.",
     "abrangencia":
-      "país agregado a partir de médias de cidades com amostra suficiente; enviesado para centros urbanos e contribuidores de classe média conectada é internet.",
+      "Brasil, agregado em ranking por país do Numbeo. A cobertura depende das cidades e usuários com dados suficientes na plataforma, com viés provável para áreas urbanas, usuários conectados à internet e contribuições voluntárias.",
     "periodicidade":
-      "Snapshots anuais e semestrais (mid-year); Índice 'current' atualizado continuamente conforme novas contribuições chegam.",
-    "eventos_externos": [
+      "Snapshots históricos anuais e semestrais publicados pelo Numbeo, além de páginas atuais atualizadas continuamente.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2026, o Brasil aparece com 46,1 no Local Purchasing Power Index do Numbeo, abaixo de países como Estados Unidos, China, África do Sul e Chile, e próximo de países como Albânia, Marrocos e Tailândia. A comparação internacional é possível pela escala comum Nova Iorque = 100, mas deve ser usada com cautela por causa da natureza crowdsourced e da diferença de tamanho/amostragem entre países.",
+    "limitacoes":
+      "Não é indicador estatístico oficial de governo ou organismo multilateral; é uma métrica privada e crowdsourced. Não há validação estatística pública equivalente a pesquisas oficiais de renda e preços. Não há dados oficiais do Numbeo anteriores a 2009, portanto não existe série concreta desde 1994 para este indicador.",
+    "nivel_confiabilidade":
+      "Médio para reprodução dos valores publicados nas páginas históricas do Numbeo; baixo a médio para análise econômica rigorosa ou comparação temporal estrita, pois os dados são crowdsourced, sujeitos a viés amostral e não auditados por órgão estatístico oficial.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
       {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao":
-          "Queda forte do índice de 37,4 para 32,8. Pelo critério do Numbeo, isso é compatível com perda relativa entre salário líquido e custo da cesta; no Brasil, o choque da Covid-19 coincidiu com alta de alimentos e depreciação cambial, fatores apontados pelo Banco Central como pressões relevantes sobre inflação.",
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2026",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5",
       },
       {
-        "ano": 2021,
-        "nome": "Inflação cambial",
-        "descricao":
-          "Nova queda relevante, de 32,8 para 28,7. O Banco Central registrou que a inflação recente foi afetada por alta de commodities e depreciação do câmbio, o que reduz o poder de compra medido pelo Numbeo quando salários líquidos não acompanham o custo da cesta.",
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2025",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2025",
       },
       {
-        "ano": 2025,
-        "nome": "Mercado forte",
-        "descricao":
-          "Maior salto da série, de 30,1 para 42,3. A melhora é compatível com recuperação do mercado de trabalho e da renda real observada pelo IBGE, enquanto o índice do Numbeo combina salário líquido médio com custo de vida relativo.",
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2024",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2024",
       },
       {
-        "ano": 2026,
-        "nome": "Emprego recorde",
-        "descricao":
-          "Alta adicional de 42,3 para 46,1. O IBGE registrou desemprego em mínima histórica no fim de 2025, o que ajuda a explicar melhora no componente de renda do poder de compra local, embora o Numbeo continue sujeito a ruído amostral por ser crowdsourced.",
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2023",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2023",
+      },
+      {
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2022",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2022",
+      },
+      {
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2021",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2021",
+      },
+      {
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2020",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2020",
+      },
+      {
+        "titulo": "Numbeo - Local Purchasing Power Index by Country 2019",
+        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&region=019&title=2019",
+      },
+      {
+        "titulo": "Numbeo - Methodology and Motivation",
+        "url": "https://www.numbeo.com/common/motivation_and_methodology.jsp",
+      },
+      {
+        "titulo": "Numbeo - Understanding Cost of Living Indexes",
+        "url": "https://www.numbeo.com/cost-of-living/cpi_explained.jsp",
       },
     ],
-    "comparacao_paises":
-      "Permite comparação cross-country em escala comum (NYC=100), mas com ressalvas: amostras variam muito de país pra país; países com poucos contribuidores têm ruído alto.",
-    "limitacoes":
-      "Crowdsourced sem validação estatística rigorosa; não é peer-reviewed; metodologia e base de contribuidores mudaram ao longo do tempo, o que compromete comparabilidade temporal estrita. Numbeo não disponibiliza série histórica oficial do Brasil para anos anteriores a 2009.",
-    "validacao":
-      "Claude Opus 4.7 - 21/04/2026. Valores conferidos diretamente nas páginas do Numbeo (rankings_by_country.jsp por ano)",
     "dados": [
       { "ano": 2019, "valor": 37.4 },
       { "ano": 2020, "valor": 32.8 },
@@ -4889,21 +5525,6 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2025, "valor": 42.3 },
       { "ano": 2026, "valor": 46.1 },
     ],
-    "fontes_links": [
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2026",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5",
-      },
-      {
-        "titulo": "Numbeo - Methodology and Motivation",
-        "url": "https://www.numbeo.com/common/motivation_and_methodology.jsp",
-      },
-      {
-        "titulo": "Numbeo - Cost of Living Indices Explained",
-        "url": "https://www.numbeo.com/cost-of-living/cpi_explained.jsp",
-      },
-    ],
-    "padrao": false,
   },
   "ipca_anual_2": {
     "label": "IPCA - inflação anual",
@@ -5040,127 +5661,112 @@ window.__DADOS_ANUAIS__ = {
     ],
     "padrao": false,
   },
-  "ipc_c1_fgv": {
-    "label": "IPC-C1 (FGV) - Inflação Baixa Renda",
-    "cor": "#e11d48",
-    "unidade": "% no ano",
-    "fonte": "FGV IBRE",
-    "cat": "Impostos e Consumo",
-    "descricao":
-      "Índice de Preços ao Consumidor - Classe 1, calculado pela FGV IBRE, que mede a variação de preços da cesta de consumo de famílias com renda mensal entre 1 e 2,5 salários mínimos. Serve como termômetro específico da inflação percebida pela base da pirâmide, cuja cesta é dominada por Alimentação e Habitação.",
-    "como_interpretar":
-      "Valor em % representa a inflação acumulada no ano para famílias de baixa renda. Quanto maior, maior a perda de poder de compra da população mais vulnerável. Comparar com IPC-BR ou IPCA: quando IPC-C1 > IPCA, há 'imposto inflacionário' desproporcional sobre os mais pobres.",
-    "metodologia":
-      "Coleta mensal de preços com pesos derivados da POF 2017/2018 (atualizada em jan/2020). Oito classes: Alimentação, Habitação, Vestuário, Saúde, Educação/Leitura/Recreação, Transportes, Comunicação e Despesas Diversas. Variação anual = produtório das variações mensais do ano.",
-    "abrangencia":
-      "7 capitais: São Paulo, Rio de Janeiro, Belo Horizonte, Salvador, Recife, Porto Alegre e Brasília. público-alvo: famílias com renda mensal de 1 a 2,5 salários mínimos.",
-    "periodicidade": "Mensal (coleta do 1º ao último dia do mês; divulgação mensal).",
-    "eventos_externos":
-      "Sensível a choques de commodities agrícolas, tarifas de energia elétrica, reajustes de combustíveis e de transporte público, e alterações no salário mínimo. Picos Históricos coincidem com crises energéticas e pandemia (2020-2021).",
-    "comparacao_paises":
-      "Não aplicável – índice doméstico brasileiro. Indicadores internacionais análogos: 'low-income CPI' do BLS (EUA) e 'CPI for low-income households' em bancos centrais europeus, mas com metodologias distintas, não comparáveis diretamente.",
-    "validacao":
-      "Claude Opus 4.7 - 21/04/2026. série histórica completa do IPC-C1 restrita a assinantes do FGV IBRE Dados. Mantidos apenas valores com confirmação em comunicados oficiais públicos da FGV. Valores 2004-2017 e 2021-2025 requerem validação contra a série paga do IBRE.",
-    "fontes_links": [
-      {
-        "titulo": "IPC-C1 - FGV IBRE (página oficial do indicador)",
-        "url": "https://portalibre.fgv.br/estudos-e-pesquisas/indices-de-precos/ipc-c1",
-      },
-      { "titulo": "Portal da Inflação - FGV IBRE", "url": "https://portal-da-inflacao-ibre.fgv.br/" },
-      {
-        "titulo": "FGV - Comunicado IPC-C1 dezembro/2019 (fechamento 4,60%)",
-        "url":
-          "https://portalibre.fgv.br/noticias/inflacao-para-familias-com-renda-ate-25-salarios-minimos-avanca-e-permanece-acima-do-ipc",
-      },
-      { "titulo": "FGV - Notícias IPC-C1 (taxonomy 119)", "url": "https://portalibre.fgv.br/taxonomy/term/119" },
-      {
-        "titulo": "FGV - Comunicado IPC-C1 dezembro/2018 (fechamento 4,17%)",
-        "url": "https://portalibre.fgv.br/noticias?page=383",
-      },
-    ],
-    "dados": [
-      { "ano": 2018, "valor": 4.17 },
-      { "ano": 2019, "valor": 4.6 },
-      { "ano": 2020, "valor": 6.3 },
-    ],
-    "padrao": false,
-  },
   "igpm_fgv": {
     "label": "IGP-M (FGV)",
     "cor": "#0284c7",
-    "unidade": "% a.a. (Acumulado)",
+    "unidade": "% a.a. (acumulado no ano)",
     "fonte": "FGV IBRE",
     "cat": "Impostos e Consumo",
     "descricao":
-      "O índice Geral de Preços - Mercado (IGP-M), calculado pela FGV/IBRE, é conhecido como 'inflação do aluguel' por sua ampla utilização em contratos de locação, tarifas de energia, telefonia e serviços. é composto por trás sub Índices ponderados: IPA-M (Preços ao Produtor Amplo - 60%), IPC-M (Preços ao Consumidor - 30%) e INCC-M (Custo da Construção Civil - 10%). Sua forte exposição ao atacado e a commodities o torna altamente sensível ao câmbio e a choques de preços internacionais, resultando em volatilidade muito superior ao IPCA. A série histórica mostra picos como em 2002 (25,31%), 2020 (23,14%) e 2021 (17,78%), além de dois anos consecutivos de deflação acumulada: 2023 (-3,18%) e 2025 (-1,05%), puxados pela queda dos preços ao produtor.",
+      "O Índice Geral de Preços - Mercado (IGP-M), calculado pela FGV IBRE, mede a variação de preços em diferentes estágios da economia brasileira, combinando preços ao produtor, ao consumidor e custos da construção.",
     "como_interpretar":
-      "Valores positivos indicam inflação (aumento de preços); valores negativos indicam deflação. Por incluir 60% de preços ao produtor, reflete pressões de custo antes de chegarem ao consumidor final, funcionando como indicador antecedente.",
+      "Valores positivos indicam alta acumulada de preços no ano; valores negativos indicam deflação acumulada. Por ter peso majoritário de preços ao produtor, o IGP-M tende a ser mais sensível a câmbio, commodities e preços no atacado do que índices estritamente ao consumidor.",
     "metodologia":
-      "média ponderada dos trás sub Índices (IPA-M 60% + IPC-M 30% + INCC-M 10%). Coleta entre o dia 21 do mês anterior e o dia 20 do mês de referência. Divulgação mensal pela FGV IBRE, com prévias (IGP-M 1º e 2º prévia).",
+      "O IGP-M resulta da média ponderada de três subíndices: IPA-M, com peso de 60%; IPC-M, com peso de 30%; e INCC-M, com peso de 10%. A coleta de preços ocorre entre o dia 21 do mês anterior e o dia 20 do mês de referência. Os valores anuais apresentados correspondem à variação acumulada de janeiro a dezembro de cada ano, calculada por composição das variações mensais oficiais.",
+    "historico_metodologia":
+      "O IGP-M passou a ser calculado pela FGV IBRE em maio de 1989, com base metodológica derivada do IGP-DI. A estrutura principal de ponderação entre IPA, IPC e INCC foi mantida no período analisado. A FGV informa que, a partir de setembro de 2021, parte dos índices econômicos específicos passou a ter acesso restrito via FGV Dados, mas os resultados gerais do IGP-M permanecem publicados em canais públicos da FGV IBRE.",
     "abrangencia":
-      "Nacional. IPA-M cobre preços no atacado em todo o país; IPC-M pesquisa 7 capitais (Rio, SP, BH, Salvador, Recife, Porto Alegre, Brasília); INCC-M cobre custos de construção em 7 capitais.",
+      "Brasil. O IGP-M combina preços ao produtor, preços ao consumidor e custos da construção. A abrangência geográfica informada pela FGV IBRE inclui Belo Horizonte, Brasília, Porto Alegre, Recife, Rio de Janeiro, São Paulo e Salvador para os componentes com coleta territorial explícita.",
     "periodicidade":
-      "Mensal, com acumulados em 12 meses e no ano. Divulgação no final de cada mês (em torno do dia 29-30) referente ao mês corrente.",
+      "Mensal, com divulgação de variação mensal, acumulado no ano e acumulado em 12 meses. O fechamento anual corresponde ao resultado de dezembro de cada ano.",
     "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao":
+          "A estabilização monetária reduziu drasticamente a inflação mensal no segundo semestre, após taxas extremamente elevadas no primeiro semestre.",
+      },
       {
         "ano": 1999,
         "nome": "Crise cambial",
         "descricao":
-          "A desvalorização do real após a mudança do regime cambial pressionou preços industriais e agrícolas no atacado, elevando fortemente o IGP-M.",
+          "A mudança para câmbio flutuante e a forte desvalorização do real pressionaram preços no atacado e elevaram o IGP-M.",
       },
       {
         "ano": 2002,
         "nome": "Estresse cambial",
         "descricao":
-          "A forte depreciação do real e a incerteza eleitoral pressionaram o IPA, especialmente produtos industriais e agrícolas no atacado, levando ao maior pico da série recente.",
+          "A depreciação do real e a incerteza macroeconômica elevaram fortemente os preços ao produtor, levando o IGP-M ao maior pico pós-Plano Real.",
       },
       {
         "ano": 2008,
-        "nome": "Choque commodities",
+        "nome": "Commodities",
         "descricao":
-          "A alta internacional de commodities em 2008 elevou pressões inflacionárias no atacado, afetando diretamente o IPA, componente de maior peso no IGP-M.",
+          "A alta internacional de commodities elevou preços no atacado, componente de maior peso no índice.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
         "descricao":
-          "A crise financeira internacional derrubou preços de commodities e reduziu pressões no atacado, gerando deflação anual do IGP-M.",
+          "A crise financeira internacional reduziu preços de commodities e pressões no atacado, levando o IGP-M a fechar o ano em deflação.",
       },
       {
         "ano": 2020,
-        "nome": "Câmbio-pandemia",
+        "nome": "Pandemia-câmbio",
         "descricao":
-          "A pandemia, a depreciação cambial e a alta de commodities pressionaram fortemente o IPA, fazendo o IGP-M atingir a maior alta desde 2002.",
+          "A pandemia, a depreciação cambial e choques de commodities pressionaram intensamente o IPA-M, elevando o IGP-M.",
       },
       {
         "ano": 2021,
-        "nome": "Commodities altas",
+        "nome": "Insumos caros",
         "descricao":
-          "A continuidade da pressão em matérias-primas, energia, insumos industriais e commodities manteve o IPA elevado, sustentando nova alta expressiva do IGP-M.",
+          "A continuidade de pressões sobre matérias-primas, energia, commodities e insumos industriais manteve o IGP-M em patamar elevado.",
       },
       {
         "ano": 2023,
         "nome": "Deflação IPA",
         "descricao":
-          "A queda dos preços ao produtor, especialmente no IPA, levou o IGP-M à menor taxa anual da série histórica.",
+          "A queda dos preços ao produtor, especialmente no IPA-M, levou o IGP-M a fechar o ano em deflação acumulada.",
       },
       {
         "ano": 2025,
-        "nome": "Produtor fraco",
+        "nome": "Safras melhores",
         "descricao":
-          "A nova queda acumulada do IGP-M foi puxada pelos preços ao produtor, com o IPA voltando a exercer pressão deflacionária sobre o índice.",
+          "A FGV IBRE atribuiu a queda acumulada de 2025 à desaceleração global, à limitação de repasses de custos, à melhora das safras agrícolas e ao impacto nos preços ao produtor.",
       },
     ],
     "comparacao_paises":
-      "Não é diretamente comparável a índices internacionais por sua composição peculiar (60% atacado). O equivalente mais próximo internacionalmente seria o PPI (Producer Price Index) combinado com CPI, mas nenhum país utiliza a mesma ponderação. Para comparações internacionais de inflação, utiliza-se o IPCA (equivalente ao CPI).",
-    "validacao": "Claude Opus 4.7 - 21/04/2026.",
+      "O IGP-M não é diretamente comparável aos principais índices internacionais de inflação ao consumidor, como CPI/IPCA, porque combina preços ao produtor, preços ao consumidor e custos da construção, com peso de 60% para o IPA-M. Para comparação internacional de inflação ao consumidor, o indicador brasileiro mais adequado é o IPCA, não o IGP-M.",
+    "nivel_confiabilidade":
+      "Alto para 1994 a 2025, pois os valores foram validados contra séries e publicações da FGV IBRE, incluindo Conjuntura Estatística e press releases oficiais de fechamento anual. O valor de 1994 foi mantido por composição das variações mensais históricas disponíveis; os demais anos correspondem ao acumulado anual fechado.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
-      { "titulo": "FGV Portal IBRE - IGP-M", "url": "https://portalibre.fgv.br/igp" },
-      { "titulo": "FGV - Resultados IGP-M 2025", "url": "https://portal.fgv.br/noticias/igp-m-2025" },
-      { "titulo": "Brasil Indicadores - série Histórica IGP-M", "url": "https://brasilindicadores.com.br/igpm/" },
-      { "titulo": "Yahii - IGP-M série Histórica 1989-2026", "url": "https://www.yahii.com.br/indices/igp-m.php" },
+      { "titulo": "FGV IBRE - IGP", "url": "https://portalibre.fgv.br/igp" },
+      {
+        "titulo": "FGV IBRE - Metodologia IGP-M 2019",
+        "url": "https://portalibre.fgv.br/sites/default/files/2020-03/metodologia-igp-m-jul-2019.pdf",
+      },
+      {
+        "titulo": "FGV IBRE - Conjuntura Estatística Abril 2026",
+        "url": "https://portalibre.fgv.br/sites/default/files/2026-04/conjest-abril-2026.pdf",
+      },
+      {
+        "titulo": "FGV IBRE - IGP-M de dezembro de 2024",
+        "url": "https://portalibre.fgv.br/press-releases/igp-m-de-dezembro-de-2024",
+      },
+      {
+        "titulo": "FGV IBRE - IGP-M de dezembro de 2025",
+        "url": "https://portalibre.fgv.br/press-releases/igp-m-de-dezembro-de-2025",
+      },
+      {
+        "titulo": "Banco Central do Brasil - SGS Série 189 IGP-M",
+        "url":
+          "https://www3.bcb.gov.br/sgspub/consultarvalores/consultarValoresSeries.do?method=consultarSeries&series=189",
+      },
     ],
     "dados": [
+      { "ano": 1994, "valor": 869.74 },
       { "ano": 1995, "valor": 15.25 },
       { "ano": 1996, "valor": 9.2 },
       { "ano": 1997, "valor": 7.74 },
@@ -5193,29 +5799,31 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2024, "valor": 6.54 },
       { "ano": 2025, "valor": -1.05 },
     ],
-    "padrao": false,
   },
   "irbes_br_pontos": {
-    "label": "Índice de Retorno de Bem-Estar é Sociedade (IRBES)",
+    "label": "Índice de Retorno de Bem-Estar à Sociedade (IRBES)",
     "cor": "#6366f1",
     "unidade": "pontos",
     "fonte": "IBPT (Instituto Brasileiro de Planejamento e Tributação)",
     "cat": "Impostos e Consumo",
     "descricao":
-      "Índice criado pelo IBPT em 2011 que mede a eficiência do retorno social dos tributos arrecadados. Combina a carga tributária sobre o PIB (peso 15%) com o IDH (peso 85%). Quanto maior o valor, melhor o retorno em bem-estar. O Brasil ocupa a última posição (30º) desde a primeira edição, entre os 30 países de maior carga tributária.",
+      "Índice criado pelo IBPT para comparar, entre os 30 países com maior carga tributária, a relação entre arrecadação tributária sobre o PIB e desenvolvimento humano medido pelo IDH.",
     "como_interpretar":
-      "Escala: quanto maior, melhor. Valores típicos vão de ~139 (pior, Brasil) a ~172 (melhor, Irlanda). Diferenças de 20-30 pontos indicam abismo de eficiência estatal.",
+      "Quanto maior o IRBES, melhor o retorno relativo dos tributos em bem-estar social. O ranking é ordenado em ordem decrescente: países com maior pontuação são interpretados como tendo melhor retorno social da arrecadação.",
     "metodologia":
-      "IRBES = (CT_ponderada é 15%) + (IDH_ponderado é 85%). Usa carga tributária/PIB da OCDE e IDH do PNUD. Só entram os 30 países com maior carga tributária do mundo (Chile, p.ex., fica de fora).",
+      "O IRBES é calculado pelo IBPT a partir da combinação da carga tributária sobre o PIB, com peso de 15%, e do IDH, com peso de 85%. A carga tributária usada no estudo é obtida em bases da OCDE e o IDH em bases da ONU/PNUD. O universo comparado é restrito aos 30 países com maior carga tributária.",
+    "historico_metodologia":
+      "A série oficial disponível do IBPT começa em 2011; não há dados oficiais do IRBES para 1994 a 2010. A metodologia declarada nas edições consultadas mantém a estrutura geral de comparação entre carga tributária/PIB e IDH, com pesos de 15% e 85%, respectivamente. A seleção dos países depende dos 30 países com maior carga tributária em cada edição, o que pode alterar a composição do ranking ao longo do tempo.",
     "abrangencia":
-      "Brasil comparado aos 30 países de maior carga tributária global. Inclui nações OCDE, alguns sul-americanos (Argentina, Uruguai) e Israel.",
+      "Brasil comparado aos 30 países com maior carga tributária do mundo segundo o critério adotado pelo IBPT. O indicador não mede todos os países do mundo nem todos os determinantes de bem-estar; compara apenas carga tributária/PIB e IDH dentro desse grupo.",
     "periodicidade":
-      "Anual, com defasagem de ~2 anos entre o ano-base dos dados e a publicação (ex.: 14ª edição publicada em 2025 usa dados de 2023).",
-    "eventos_externos":
-      "Valor do Brasil é pouco sensível a eventos pontuais (carga tributária e IDH mudam gradualmente). Pandemia COVID-19 afetou carga/PIB de vários países em 2020. Reforma tributária brasileira (2023) ainda não teve efeito nas edições publicadas.",
+      "Publicação quase anual, com defasagem entre o ano-base dos dados de carga tributária/IDH e a data de publicação do estudo.",
+    "eventos_externos": [],
     "comparacao_paises":
-      "Irlanda lidera desde 2017. Brasil está em último (30ª) em todas as 14 edições. Perde para Argentina e Uruguai, vizinhos com carga menor e IDH superior.",
-    "validacao": "Claude Opus 4.7 - 21/04/2026.",
+      "Nas edições oficiais consultadas, o Brasil permanece na 30ª posição. Na 13ª edição, com dados de 2022, o Brasil teve IRBES de 142,35, enquanto a Irlanda liderou com 171,72. Na 14ª edição, com dados de 2023, o IBPT informa que o Brasil continuou em último lugar e que a Irlanda liderou pela sétima vez consecutiva.",
+    "nivel_confiabilidade":
+      "Médio-alto para os valores do IRBES explicitamente publicados pelo IBPT. A confiabilidade é menor do que a de uma série estatística governamental ou multilateral, porque o IRBES é um índice proprietário do IBPT, com metodologia sintética e forte dependência de escolhas de ponderação. Foram mantidos apenas valores diretamente publicados em estudo do IBPT; valores não localizados de forma explícita em fonte primária foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "fontes_links": [
       {
         "titulo": "IBPT - Estudo IRBES 14ª Edição (dados 2023)",
@@ -5227,110 +5835,126 @@ window.__DADOS_ANUAIS__ = {
           "https://ibpt.org.br/brasil-lidera-ranking-de-pior-retorno-dos-tributos-a-populacao-entre-os-paises-com-maior-carga-tributaria/",
       },
       {
-        "titulo": "Contábeis - IRBES 13ª edição (dados 2022)",
-        "url":
-          "https://www.contabeis.com.br/noticias/65436/ibpt-brasil-ocupa-ultimo-lugar-em-ranking-de-retorno-de-impostos/",
+        "titulo": "IBPT/Poder360 - Estudo sobre carga tributária/PIB x IDH, 13ª edição",
+        "url": "https://static.poder360.com.br/2024/05/ESTUDO-SOBRE-CARGA-TRIBUTARIA.docx-pff.pdf",
       },
       {
-        "titulo": "CFA - Carga Tributária e IRBES (dados 2018)",
+        "titulo": "IBPT - Estudo sobre carga tributária/PIB x IDH 2023",
+        "url": "https://www.ibpt.org.br/estudo-sobre-carga-tributaria-pib-x-idh-2023/",
+      },
+      {
+        "titulo": "CFA - Carga Tributária: imposto alto, pouca entrega de serviços",
         "url": "https://cfa.org.br/imposto-alto-pouca-entrega/",
       },
     ],
     "dados": [
-      { "ano": 2018, "valor": 139.19 },
-      { "ano": 2022, "valor": 142.35 },
+      { "ano": 2011, "valor": 134.02 },
+      { "ano": 2012, "valor": 135.83 },
+      { "ano": 2012, "valor": 134.61 },
+      { "ano": 2013, "valor": 135.63 },
+      { "ano": 2014, "valor": 135.34 },
+      { "ano": 2015, "valor": 137.94 },
+      { "ano": 2017, "valor": 140.48 },
+      { "ano": 2018, "valor": 139.14 },
+      { "ano": 2019, "valor": 140.13 },
+      { "ano": 2020, "valor": 139.19 },
+      { "ano": 2022, "valor": 142.29 },
+      { "ano": 2023, "valor": 140.11 },
+      { "ano": 2024, "valor": 142.35 },
     ],
     "padrao": false,
   },
   "tributacao_indireta_total": {
     "label": "Peso dos Impostos sobre Consumo",
     "cor": "#7c3aed",
-    "unidade": "% da arrecadação total",
+    "unidade": "% da arrecadação tributária total",
     "fonte": "Tesouro Nacional (STN) / OCDE-CIAT Revenue Statistics LAC",
     "cat": "Impostos e Consumo",
-    "descricao":
-      "Participação dos tributos sobre bens e serviços (ICMS, ISS, IPI, PIS, COFINS, IOF, II) na arrecadação tributária total das trás esferas de governo. Característica regressiva do sistema: penaliza proporcionalmente mais a baixa renda, pois o consumo representa fatia maior da renda dos mais pobres.",
+    "descricao": "Participação dos impostos sobre bens e serviços na Carga Tributária Bruta total do Governo Geral.",
     "como_interpretar":
-      "Quanto maior o percentual, mais o sistema tributário depende do consumo (regressivo). Brasil gira em torno de 40-43%, acima da média da OCDE (~31%) mas abaixo da média LAC (~50%).",
+      "Quanto maior o percentual, maior a dependência da arrecadação tributária em impostos incidentes sobre consumo, produção, circulação, serviços, comércio exterior e operações financeiras. Percentuais elevados indicam maior peso relativo de tributos indiretos na estrutura tributária.",
     "metodologia":
-      "Razão entre arrecadação de impostos sobre bens e serviços (% PIB) e carga tributária bruta total (% PIB) do Governo Geral, conforme padrão do Manual de Estatísticas de Finanças Públicas do FMI (GFSM 2014). série revisada em 2025 pelo STN, excluindo FGTS e Sistema S do governo geral.",
-    "abrangencia": "Governo Geral: União, 26 estados, DF e 5.570 municípios (consolidado).",
-    "periodicidade":
-      "Anual. Prévia do Tesouro divulgada em março/abril; dado oficial da Receita Federal no 2º semestre do ano seguinte.",
+      "Cálculo feito pela razão entre a arrecadação de 'Impostos sobre bens e serviços' e a 'Carga Tributária Bruta Total - Governo Geral', ambos em R$ milhões correntes, conforme a base oficial da STN. Fórmula: valor = (Impostos sobre bens e serviços / Carga Tributária Bruta Total do Governo Geral) * 100.",
+    "historico_metodologia":
+      "A série validada usa a base oficial da STN publicada em 2026 para a Carga Tributária Bruta do Governo Geral, seguindo o padrão GFSM 2014 do FMI. A STN informa que a série revisada exclui FGTS e Sistema S da carga tributária, classificando-os como pagamentos compulsórios não tributários. Por isso, foram mantidos apenas os anos disponíveis na base revisada da STN com valores anuais completos, de 2010 a 2024. O dado de 2025 foi removido por estar identificado pela própria STN como preliminar/estimativa.",
+    "abrangencia":
+      "Governo Geral: Governo Central, governos estaduais, Distrito Federal e governos municipais, em base consolidada nacional.",
+    "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2020,
         "nome": "COVID-19",
         "descricao":
-          "A pandemia contraiu produção, consumo e serviços, reduzindo a arrecadação de tributos sobre bens e serviços, especialmente PIS/COFINS, ISS e IOF.",
+          "A pandemia reduziu a atividade econômica e afetou a arrecadação de impostos sobre bens e serviços, especialmente tributos ligados a produção, consumo e serviços.",
       },
       {
         "ano": 2022,
         "nome": "LC 194",
         "descricao":
-          "A Lei Complementar 194/2022 limitou o ICMS sobre combustíveis, energia elétrica, comunicações e transporte coletivo, reduzindo a arrecadação estadual sobre consumo.",
+          "A Lei Complementar 194/2022 reduziu a arrecadação de ICMS ao limitar a tributação estadual sobre combustíveis, energia elétrica, comunicações e transporte coletivo.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Efeito ICMS",
+        "descricao":
+          "A STN atribui parte relevante da queda da carga estadual em 2023 à continuidade dos efeitos da LC 194/2022 sobre o ICMS.",
       },
       {
         "ano": 2024,
         "nome": "Reoneração",
         "descricao":
-          "A recomposição de desonerações federais e a reoneração do ICMS sobre combustíveis elevaram a arrecadação de COFINS, IPI-importação e ICMS, aumentando o peso dos tributos sobre consumo.",
-      },
-      {
-        "ano": 2025,
-        "nome": "Queda ICMS",
-        "descricao":
-          "A arrecadação estadual de ICMS cresceu abaixo do PIB, pois o crescimento econômico ficou mais concentrado em setores com menor incidência do imposto, reduzindo levemente a participação dos tributos sobre consumo.",
+          "A STN aponta recomposição de desonerações sobre combustíveis, aumento de COFINS, IPI vinculado à importação, reoneração do ICMS sobre combustíveis e crescimento de vendas como fatores de alta dos impostos sobre bens e serviços.",
       },
     ],
     "comparacao_paises":
-      "média OCDE é 31,5% (2022); média LAC é 50% (2023); Brasil é 42-43% (2024-2025). Brasil é menos dependente de consumo que média latino-americana, mas ainda muito acima de países desenvolvidos que priorizam renda e patrimônio.",
-    "validacao": "Claude Opus 4.7 - 21/04/2026.",
+      "Segundo a OCDE, em 2023 os impostos sobre bens e serviços representaram quase metade da arrecadação tributária total média da América Latina e Caribe, enquanto na OCDE representaram 31,5% em 2022. O Brasil, pela base STN revisada, ficou em 41,45% em 2023 e 43,04% em 2024, acima da média da OCDE e abaixo da média regional latino-americana.",
+    "nivel_confiabilidade":
+      "Alto para 2010-2024, pois os valores foram recalculados diretamente a partir da base oficial da STN em R$ milhões correntes. Médio para comparações internacionais, pois a OCDE usa classificação harmonizada própria e a comparação deve ser interpretada como estrutural, não como reprodução exata da série STN. O ano de 2025 foi excluído por ser preliminar/estimativa.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "STN - Boletim Carga Tributária Bruta do Governo Geral 2024",
-        "url":
-          "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/marco/carga-tributaria-bruta-do-governo-geral-atingiu-32-32-do-pib-em-2024-mostra-boletim-do-tesouro",
+        "titulo": "Tesouro Transparente - Carga Tributária do Governo Geral 2025 - Base CTB GG.xlsx",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/carga-tributaria-do-governo-geral/2025/114",
       },
       {
-        "titulo": "Agência Brasil - Prévia Carga Tributária 2025 (32,4% do PIB)",
+        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,32% do PIB em 2024",
         "url":
-          "https://agenciabrasil.ebc.com.br/economia/noticia/2026-04/previa-da-carga-tributaria-sobe-para-324-do-pib-em-2025",
+          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-32-do-pib-em-2024",
+      },
+      {
+        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,40% do PIB em 2025",
+        "url":
+          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-40-do-pib-em-2025",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
         "url":
-          "https://www.oecd.org/en/publications/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3.html",
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html",
       },
       {
-        "titulo": "Tesouro Transparente - Carga Tributária do Governo Geral",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/carga-tributaria-do-governo-geral/2022/114",
-      },
-      {
-        "titulo": "Observatório de Política Fiscal FGV - série Histórica 1990-2024",
+        "titulo": "OCDE - Brazil Country Note 2025",
         "url":
-          "https://observatorio-politica-fiscal.ibre.fgv.br/series-historicas/carga-tributaria/carga-tributaria-no-brasil-1990-2024",
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_111c5149-en/brazil_f6a5cb34-en.html",
       },
     ],
     "dados": [
-      { "ano": 2010, "valor": 48.7 },
-      { "ano": 2011, "valor": 48.5 },
-      { "ano": 2012, "valor": 48.4 },
-      { "ano": 2013, "valor": 48.6 },
-      { "ano": 2014, "valor": 48.2 },
-      { "ano": 2015, "valor": 47.9 },
-      { "ano": 2016, "valor": 47.3 },
-      { "ano": 2017, "valor": 47.5 },
-      { "ano": 2018, "valor": 47.2 },
-      { "ano": 2019, "valor": 46.0 },
-      { "ano": 2020, "valor": 44.8 },
-      { "ano": 2021, "valor": 43.2 },
-      { "ano": 2022, "valor": 43.2 },
-      { "ano": 2023, "valor": 41.4 },
-      { "ano": 2024, "valor": 43.0 },
-      { "ano": 2025, "valor": 42.5 },
+      { "ano": 2010, "valor": 48.73 },
+      { "ano": 2011, "valor": 47.4 },
+      { "ano": 2012, "valor": 47.76 },
+      { "ano": 2013, "valor": 47.33 },
+      { "ano": 2014, "valor": 46.75 },
+      { "ano": 2015, "valor": 46.68 },
+      { "ano": 2016, "valor": 45.31 },
+      { "ano": 2017, "valor": 46.21 },
+      { "ano": 2018, "valor": 46.69 },
+      { "ano": 2019, "valor": 45.77 },
+      { "ano": 2020, "valor": 45.04 },
+      { "ano": 2021, "valor": 45.68 },
+      { "ano": 2022, "valor": 42.22 },
+      { "ano": 2023, "valor": 41.45 },
+      { "ano": 2024, "valor": 43.04 },
     ],
-    "padrao": false,
   },
   "tempo_trabalho_cesta_basica_dieese_sp": {
     "label": "Tempo de Trabalho para Cesta Básica - São Paulo (DIEESE)",
@@ -5553,59 +6177,57 @@ window.__DADOS_ANUAIS__ = {
     "label": "Tempo Gasto com Impostos",
     "cor": "#ea580c",
     "unidade": "horas / ano",
-    "fonte": "Banco Mundial (Doing Business / B-READY)",
+    "fonte": "Banco Mundial - World Development Indicators / Doing Business",
     "cat": "Impostos e Consumo",
     "descricao":
-      "Mede o tempo gasto anualmente por uma empresa de médio porte para cumprir a burocracia tributária (preparação, declaração e pagamento). O Brasil possui historicamente o sistema que exige o maior tempo do mundo (cerca de 1.500 horas), enquanto a média da OCDE fica em torno de 160 horas. Esse custo invisível corrói dramaticamente a produtividade nacional.",
+      "Mede o tempo anual necessário para uma empresa padronizada preparar, declarar, pagar ou reter os principais tributos: imposto de renda corporativo, imposto sobre valor agregado ou vendas, e tributos trabalhistas, incluindo folha de pagamento e contribuições sociais.",
     "como_interpretar":
-      "Quanto maior o valor, mais ineficiente, complexo e burocrítico é o sistema tributário, indicando que empresas precisam desviar alto volume de recursos e pessoal apenas para o cumprimento de regras fiscais.",
+      "Quanto maior o valor, maior o custo administrativo de conformidade tributária para a empresa-padrão do Doing Business. O indicador não mede a carga tributária total nem todos os custos reais de empresas brasileiras; mede apenas o tempo estimado dentro de um caso padronizado internacionalmente.",
     "metodologia":
-      "Levantamento do tempo (em horas anuais) que contadores e administradores dedicam ao recolhimento de impostos sobre lucro, consumo (ICMS, PIS/Cofins, IPI, ISS) e encargos trabalhistas. Base histórica apoiada em relatórios globais de ambiente de negócios.",
+      "Indicador IC.TAX.DURS do Banco Mundial. Mede, em horas por ano, o tempo necessário para preparar, declarar, pagar ou reter três grupos principais de tributos: imposto de renda corporativo, imposto sobre valor agregado ou vendas, e tributos trabalhistas, incluindo folha de pagamento e contribuições sociais. A metodologia usa uma empresa limitada, doméstica, de médio porte, com premissas padronizadas para permitir comparação internacional.",
+    "historico_metodologia":
+      "O indicador pertenceu ao projeto Doing Business, descontinuado pelo Banco Mundial em 16/09/2021. Os dados do Doing Business são apresentados por ano de pesquisa, não por ano de publicação. A última rodada de coleta do Paying Taxes foi concluída em 01/05/2019, cobrindo o ano-calendário de 2018. O indicador IC.TAX.DURS não está mais disponível como série ativa no portal principal do World Bank Data; por isso não há observações oficiais novas após a série histórica do Doing Business.",
     "abrangencia":
-      "Nacional. Apresenta pequenas variações subnacionais dependendo do estado (entre 1.483h e 1.501h), mas a máxima costuma representar o padrão nacional nos índices mundiais.",
+      "Nacional, com base na economia brasileira no Doing Business. Na metodologia tradicional do Doing Business, o caso-padrão considera a maior cidade de negócios da economia; no Doing Business 2020 para o Brasil, São Paulo e Rio de Janeiro aparecem com 1.501 horas por ano. O relatório Subnational Doing Business in Brazil 2021 mostra variação subnacional, mas esses dados não substituem a série histórica nacional IC.TAX.DURS.",
     "periodicidade":
-      "Anual (Atualmente em transição de indicador, do extinto Doing Business para a nova série do B-READY).",
+      "Anual, enquanto o Doing Business estava ativo. Série histórica oficial disponível para 2005 a 2019; sem dados oficiais concretos para 1994 a 2004 nem após 2019 nessa métrica.",
     "eventos_externos": [
       {
-        "ano": 2016,
-        "nome": "Digitalização fiscal",
+        "ano": 2021,
+        "nome": "Fim Doing Business",
         "descricao":
-          "O indicador cai de 2.600 para 2.038 horas no período em que a escrituração digital tributária já estava consolidada via SPED, reduzindo parte do trabalho manual de preparação, declaração e pagamento de tributos.",
-      },
-      {
-        "ano": 2018,
-        "nome": "eSocial",
-        "descricao":
-          "A obrigatoriedade do eSocial para empregadores em 2018 unificou e padronizou o envio de informações trabalhistas, fiscais e previdenciárias, antecedendo a queda relevante do indicador para 1.501 horas em 2019.",
-      },
-      {
-        "ano": 2019,
-        "nome": "Doing Business",
-        "descricao":
-          "O Doing Business 2020 registrou o novo patamar de 1.501 horas anuais para o Brasil no componente 'Time', mantendo o país entre os sistemas mais custosos do mundo em conformidade tributária.",
+          "O Banco Mundial descontinuou o projeto Doing Business em 16/09/2021, encerrando a atualização regular da série histórica usada para este indicador.",
       },
     ],
     "comparacao_paises":
-      "O Brasil lidera os piores rankings globais neste indicador. países desenvolvidos exigem, em média, de 150 a 200 horas anuais, quase dez vezes menos que o Brasil.",
-    "validacao": "Gemini 3.1 Pro (21 de Abril de 2026)",
+      "No Doing Business 2020, o Brasil registrou 1.501 horas por ano em São Paulo, contra 317,1 horas na média da América Latina e Caribe, 158,8 horas na média de economias de alta renda da OCDE e 49 horas no melhor desempenho regulatório reportado.",
+    "nivel_confiabilidade":
+      "Alta para os anos com observação oficial do Banco Mundial/Doing Business entre 2005 e 2019. Baixa ou inexistente para 1994 a 2004 e após 2019, pois não foram encontrados dados oficiais concretos da série IC.TAX.DURS para esses anos. Os valores de 1994 a 2004, 2020 e 2021 foram removidos por não terem base oficial direta nesta métrica.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "Doing Business Subnacional Brasil 2021 - Banco Mundial",
-        "url": "https://www.worldbank.org/pt/country/brazil/publication/doing-business-subnational-brazil-2021",
+        "titulo": "World Bank DataBank - Metadata Glossary: IC.TAX.DURS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IC.TAX.DURS",
+      },
+      {
+        "titulo": "World Bank Data - IC.TAX.DURS Brazil",
+        "url": "https://data.worldbank.org/indicator/IC.TAX.DURS?locations=BR",
+      },
+      {
+        "titulo": "Doing Business Archive - Paying Taxes",
+        "url": "https://archive.doingbusiness.org/en/data/exploretopics/paying-taxes",
+      },
+      {
+        "titulo": "Doing Business 2020 Brazil - World Bank Group",
+        "url": "https://archive.doingbusiness.org/content/dam/doingBusiness/country/b/brazil/BRA.pdf",
+      },
+      {
+        "titulo": "Subnational Doing Business in Brazil 2021 - World Bank Group",
+        "url": "https://subnational.doingbusiness.org/en/data/exploretopics/paying-taxes/brazil",
       },
     ],
     "dados": [
-      { "ano": 1994, "valor": 2400 },
-      { "ano": 1995, "valor": 2450 },
-      { "ano": 1996, "valor": 2510 },
-      { "ano": 1997, "valor": 2580 },
-      { "ano": 1998, "valor": 2600 },
-      { "ano": 1999, "valor": 2620 },
-      { "ano": 2000, "valor": 2600 },
-      { "ano": 2001, "valor": 2580 },
-      { "ano": 2002, "valor": 2550 },
-      { "ano": 2003, "valor": 2600 },
-      { "ano": 2004, "valor": 2600 },
       { "ano": 2005, "valor": 2600 },
       { "ano": 2006, "valor": 2600 },
       { "ano": 2007, "valor": 2600 },
@@ -5621,10 +6243,7 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2017, "valor": 1958 },
       { "ano": 2018, "valor": 1958 },
       { "ano": 2019, "valor": 1501 },
-      { "ano": 2020, "valor": 1501 },
-      { "ano": 2021, "valor": 1501 },
     ],
-    "padrao": false,
   },
   "vdem_ldi_br": {
     "label": "Índice de Democracia Liberal (V-Dem)",
@@ -7694,83 +8313,242 @@ window.__DADOS_ANUAIS__ = {
     "label": "Desemprego (PNAD Contínua)",
     "cor": "#ea580c",
     "unidade": "% da força de trabalho",
-    "fonte": "IBGE/PNAD Contínua (BCB SGS 24369)",
+    "fonte": "IBGE/PNAD Contínua Anual - SIDRA tabela 4562",
     "cat": "Emprego e Renda",
     "descricao":
-      "Mede a força de trabalho desocupada. Picos >13% em recessões atestam o drama social. É estruturalmente muito superior à métrica global de pleno emprego (EUA, Japão, Europa nórdica) e não contabiliza a informalidade profunda latino-americana.",
-    "dados": [
-      { "ano": 2012, "valor": 7.36 },
-      { "ano": 2013, "valor": 7.2583 },
-      { "ano": 2014, "valor": 6.8583 },
-      { "ano": 2015, "valor": 8.4 },
-      { "ano": 2016, "valor": 11.3667 },
-      { "ano": 2017, "valor": 12.875 },
-      { "ano": 2018, "valor": 12.3667 },
-      { "ano": 2019, "valor": 12.0333 },
-      { "ano": 2020, "valor": 13.475 },
-      { "ano": 2021, "valor": 13.5 },
-      { "ano": 2022, "valor": 9.5083 },
-      { "ano": 2023, "valor": 8.0417 },
-      { "ano": 2024, "valor": 6.925 },
-      { "ano": 2025, "valor": 5.95 },
-      { "ano": 2026, "valor": 5.6 },
+      "Taxa anual de desocupação das pessoas de 14 anos ou mais de idade no Brasil, medida pela PNAD Contínua.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção da força de trabalho sem ocupação e procurando trabalho. Valores menores indicam menor desocupação, mas não medem diretamente informalidade, desalento ou subutilização.",
+    "metodologia":
+      "Taxa de desocupação = pessoas desocupadas / força de trabalho × 100. A PNAD Contínua considera pessoas de 14 anos ou mais, na semana de referência, classificadas segundo ocupação, desocupação e força de trabalho. A série anual validada usa a Retrospectiva anual de mercado de trabalho da PNAD Contínua/SIDRA, tabela 4562.",
+    "historico_metodologia":
+      "A PNAD Contínua tem série histórica comparável iniciada em 2012; portanto, não há valores oficiais desta mesma métrica desde 1994. A partir da divulgação de 31/01/2024, o IBGE passou a calcular os indicadores da Retrospectiva anual de mercado de trabalho com o banco de dados anual por visita, refazendo a série histórica. Houve reponderação da PNAD Contínua em 2021 e correções metodológicas anteriores documentadas pelo IBGE, mas a série anual vigente no SIDRA já incorpora as revisões oficiais.",
+    "abrangencia":
+      "Brasil, pessoas de 14 anos ou mais de idade, em pesquisa domiciliar amostral de abrangência nacional.",
+    "periodicidade":
+      "Anual para esta série retrospectiva; a PNAD Contínua também possui divulgações mensais e trimestrais com recortes diferentes.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia de Covid-19 afetou fortemente o mercado de trabalho; segundo o IBGE, em 2020 e 2021 a taxa anual chegou a 13,7% e 14,0%, respectivamente.",
+      },
     ],
+    "comparacao_paises":
+      "A comparação internacional direta deve ser feita por bases harmonizadas como OIT/ILOSTAT ou OCDE. Esta série mede apenas o Brasil pela PNAD Contínua. Conceitualmente, a taxa segue critérios compatíveis com estatísticas de força de trabalho, mas valores entre países podem variar por desenho amostral, mercado informal, regras de busca por trabalho e estrutura demográfica.",
+    "nivel_confiabilidade":
+      "Alto para a série oficial brasileira de 2012 a 2025. Não há dado PNAD Contínua anual comparável para 1994-2011. O valor de 2026 foi removido por não haver ano completo divulgado oficialmente.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IBGE - PNAD Contínua: estatísticas e notas técnicas",
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html",
+      },
+      { "titulo": "IBGE SIDRA - Tabela 4562: Taxa de desocupação", "url": "https://sidra.ibge.gov.br/Tabela/4562" },
+      {
+        "titulo": "IBGE - Retrospectiva anual PNAD Contínua 2012-2025",
+        "url":
+          "https://www.ibge.gov.br/estatisticas/sociais/trabalho/2511-np-pnad-continua/30980-pnadc-divulgacao-pnadc4.html",
+      },
+      {
+        "titulo": "IBGE - PNAD Contínua: taxa anual de desocupação foi de 5,6% em 2025",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45759-pnad-continua-em-2025-taxa-anual-de-desocupacao-foi-de-5-6-enquanto-taxa-de-subutilizacao-foi-14-5",
+      },
+      {
+        "titulo": "IBGE - PNAD Contínua: taxa anual de desocupação foi de 6,6% em 2024",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42530-pnad-continua-em-2024-taxa-anual-de-desocupacao-foi-de-6-6-enquanto-taxa-de-subutilizacao-foi-de-16-2",
+      },
+      {
+        "titulo": "IBGE - PNAD Contínua: taxa anual de desocupação foi de 7,8% em 2023",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39025-pnad-continua-em-2023-taxa-anual-de-desocupacao-foi-de-7-8-enquanto-de-taxa-de-subutilizacao-foi-de-18-0",
+      },
+    ],
+    "dados": [
+      { "ano": 2012, "valor": 7.4 },
+      { "ano": 2013, "valor": 7.3 },
+      { "ano": 2014, "valor": 7.0 },
+      { "ano": 2015, "valor": 8.9 },
+      { "ano": 2016, "valor": 11.7 },
+      { "ano": 2017, "valor": 12.6 },
+      { "ano": 2018, "valor": 12.2 },
+      { "ano": 2019, "valor": 11.8 },
+      { "ano": 2020, "valor": 13.8 },
+      { "ano": 2021, "valor": 14.0 },
+      { "ano": 2022, "valor": 9.6 },
+      { "ano": 2023, "valor": 7.8 },
+      { "ano": 2024, "valor": 6.6 },
+      { "ano": 2025, "valor": 5.6 },
+    ],
   },
   "caged_saldo": {
     "label": "CAGED — saldo anual de empregos formais",
     "cor": "#059669",
     "unidade": "postos de trabalho (saldo anual)",
-    "fonte": "Ministério do Trabalho/CAGED (BCB SGS 28763)",
+    "fonte": "Ministério do Trabalho e Emprego — Caged/Novo Caged",
     "cat": "Emprego e Renda",
     "descricao":
-      "Termômetro do emprego formal. Contrastes violentos entre crises (2015/2020) e retomadas evidenciam a instabilidade cíclica latino-americana, diferentemente da rígida, porém segura, regulação de empregos europeia.",
-    "dados": [
-      { "ano": 1994, "valor": 265973.5 },
-      { "ano": 1995, "valor": 267438.6 },
-      { "ano": 1996, "valor": 264835.6 },
-      { "ano": 1997, "valor": 263900 },
-      { "ano": 1998, "valor": 260369.6 },
-      { "ano": 1999, "valor": 253756.5 },
-      { "ano": 2000, "valor": 258291.5 },
-      { "ano": 2001, "valor": 265870 },
-      { "ano": 2002, "valor": 274235.9 },
-      { "ano": 2003, "valor": 282234.5 },
-      { "ano": 2004, "valor": 298417.4 },
-      { "ano": 2005, "valor": 318577.1 },
-      { "ano": 2006, "valor": 337427.4 },
-      { "ano": 2007, "valor": 358077.1 },
-      { "ano": 2008, "valor": 383602.5 },
-      { "ano": 2009, "valor": 395178 },
-      { "ano": 2010, "valor": 424849.4 },
-      { "ano": 2011, "valor": 452709.8 },
-      { "ano": 2012, "valor": 472835.9 },
-      { "ano": 2013, "valor": 486796.2 },
-      { "ano": 2014, "valor": 496846.7 },
-      { "ano": 2015, "valor": 488723.4 },
-      { "ano": 2016, "valor": 469230.7 },
-      { "ano": 2017, "valor": 461369.9 },
-      { "ano": 2018, "valor": 465656.7 },
-      { "ano": 2019, "valor": 472331.2 },
-      { "ano": 2020, "valor": 466574.4 },
-      { "ano": 2021, "valor": 491511.1 },
-      { "ano": 2022, "valor": 521707.7 },
-      { "ano": 2023, "valor": 541651.3 },
-      { "ano": 2024, "valor": 562258.4 },
-      { "ano": 2025, "valor": 580561.7 },
+      "Saldo anual entre admissões e desligamentos de vínculos formais celetistas no Brasil, conforme Caged/Novo Caged.",
+    "como_interpretar":
+      "Valor positivo indica criação líquida de postos formais no ano; valor negativo indica destruição líquida de postos formais. A série mede fluxo anual, não estoque total de empregos.",
+    "metodologia":
+      "Saldo anual calculado como admissões menos desligamentos, acumulado de janeiro a dezembro. Para 2002 a 2019, os dados são do Caged; a partir de 2020, do Novo Caged. Quando indicado pela fonte, os valores incluem ajustes de declarações fora do prazo.",
+    "historico_metodologia":
+      "Houve quebra metodológica relevante a partir de 2020, com substituição gradual da captação do Caged tradicional pelo Novo Caged/eSocial. Por isso, a comparação direta entre 2002-2019 e 2020 em diante deve ser feita com cautela. A fonte oficial consultada publica a série anual comparável apenas desde 2002 para este formato de saldo anual com ajustes; valores de 1994 a 2001 foram removidos por não estarem disponíveis nessa fonte oficial consolidada.",
+    "abrangencia": "Brasil; vínculos formais celetistas informados ao Caged/Novo Caged.",
+    "periodicidade": "Mensal, com consolidação anual acumulada de janeiro a dezembro.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Crise econômica",
+        "descricao":
+          "A recessão brasileira de 2015-2016 coincidiu com forte destruição líquida de empregos formais, resultando nos piores saldos da série anual.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 afetou fortemente admissões e desligamentos e coincidiu com saldo anual negativo em 2020.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Retomada",
+        "descricao":
+          "A reabertura econômica e a recuperação pós-choque sanitário coincidiram com forte saldo positivo em 2021.",
+      },
     ],
+    "comparacao_paises":
+      "A comparação internacional direta é limitada, porque o Caged/Novo Caged é um registro administrativo brasileiro de admissões e desligamentos formais celetistas. Outros países usam conceitos, coberturas legais e bases administrativas diferentes; para comparação internacional de emprego, são mais adequadas séries padronizadas da OIT/ILOSTAT ou OCDE.",
+    "nivel_confiabilidade":
+      "Alta para 2002-2025, pois os valores foram substituídos pelos dados oficiais publicados pelo Ministério do Trabalho e Emprego. Baixa/inadequada para os valores originais informados: eles não representavam saldo anual de empregos formais, tinham casas decimais e eram incompatíveis com a unidade da métrica. A referência original ao BCB SGS 28763 também era inadequada para saldo anual, pois a série 28763 é usada como estoque de empregos formais, não como saldo anual.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Ministério do Trabalho e Emprego — Apresentação Novo Caged dezembro de 2025",
+        "url": "https://static.poder360.com.br/2026/01/Caged-apresentacao-dez-2025-1.pdf",
+      },
+      {
+        "titulo": "Ministério do Trabalho e Emprego — Página Caged",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/o-pdet/o-que-e-caged",
+      },
+      {
+        "titulo": "Banco Central do Brasil — Sistema Gerenciador de Séries Temporais(SGS)",
+        "url": "https://www4.bcb.gov.br/pec/series/port/aviso.asp?frame=1",
+      },
+    ],
+    "dados": [
+      { "ano": 2002, "valor": 1009483 },
+      { "ano": 2003, "valor": 864312 },
+      { "ano": 2004, "valor": 1796535 },
+      { "ano": 2005, "valor": 1561533 },
+      { "ano": 2006, "valor": 1549602 },
+      { "ano": 2007, "valor": 1943050 },
+      { "ano": 2008, "valor": 1707288 },
+      { "ano": 2009, "valor": 1397845 },
+      { "ano": 2010, "valor": 2629827 },
+      { "ano": 2011, "valor": 2026571 },
+      { "ano": 2012, "valor": 1372594 },
+      { "ano": 2013, "valor": 1138562 },
+      { "ano": 2014, "valor": 420690 },
+      { "ano": 2015, "valor": -1534989 },
+      { "ano": 2016, "valor": -1326558 },
+      { "ano": 2017, "valor": -11964 },
+      { "ano": 2018, "valor": 546445 },
+      { "ano": 2019, "valor": 644079 },
+      { "ano": 2020, "valor": -189393 },
+      { "ano": 2021, "valor": 2782295 },
+      { "ano": 2022, "valor": 2014894 },
+      { "ano": 2023, "valor": 1455279 },
+      { "ano": 2024, "valor": 1677575 },
+      { "ano": 2025, "valor": 1279498 },
+    ],
   },
   "salario_min_nominal": {
     "label": "Salário mínimo nominal",
     "cor": "#4f46e5",
     "unidade": "R$ correntes",
-    "fonte": "Legislação federal (BCB SGS 1619)",
+    "fonte": "Legislação federal; Banco Central do Brasil - SGS série 1619",
     "cat": "Emprego e Renda",
-    "descricao":
-      "Valor legal do piso em reais correntes. Âncora contra a miséria extrema e base para gastos do INSS. O valor convertido em dólares é modesto (aquém da Europa/EUA), ilustrando baixa produtividade per capita brasileira.",
+    "descricao": "Valor nominal legal do salário mínimo nacional em reais correntes.",
+    "como_interpretar":
+      "Indica o piso legal nominal mensal vigente no Brasil. A série não mede poder de compra; para isso é necessário deflacionar os valores por índice de preços, como INPC ou IPCA.",
+    "metodologia":
+      "Valores anuais consolidados como o valor mensal do salário mínimo nacional vigente em dezembro de cada ano civil, em reais correntes. Para anos com mais de um reajuste dentro do mesmo ano, foi mantido o último valor legal vigente no ano. Para 2026, foi mantido o valor já oficializado pelo Decreto nº 12.797/2025, vigente a partir de 1º de janeiro de 2026.",
+    "historico_metodologia":
+      "A série é nominal e acompanha os atos legais federais que fixam o salário mínimo. Houve mudanças relevantes na regra de reajuste ao longo do período, incluindo política de valorização com INPC e crescimento do PIB em parte dos anos 2000/2010, ausência de ganho real em alguns períodos e nova regra fiscal limitando o ganho real a partir de 2025. Essas mudanças afetam a trajetória do indicador, mas não alteram o conceito do valor legal nominal.",
+    "abrangencia": "Brasil, salário mínimo nacional definido por legislação federal.",
+    "periodicidade": "Mensal na fonte SGS; anual nesta série por valor vigente em dezembro de cada ano.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao":
+          "Conversão monetária para o real e fixação de valores nominais do salário mínimo em R$ durante 1994.",
+      },
+      {
+        "ano": 2006,
+        "nome": "Valorização",
+        "descricao":
+          "Período de reajustes com ganhos reais mais frequentes, associado à política de valorização do salário mínimo.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Regra formal",
+        "descricao":
+          "Institucionalização de regra de reajuste baseada em inflação medida pelo INPC e crescimento real do PIB de anos anteriores.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Duplo reajuste",
+        "descricao":
+          "O salário mínimo foi reajustado de R$ 1.039 para R$ 1.045 ainda no início do ano, após atualização do cálculo inflacionário.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Reajuste extra",
+        "descricao": "O valor passou de R$ 1.302 para R$ 1.320 em maio, por novo ato federal no mesmo ano.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Limite fiscal",
+        "descricao": "A política de valorização passou a observar limite de ganho real vinculado ao arcabouço fiscal.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta do salário mínimo nominal em reais não é metodologicamente adequada. Para comparação entre países, devem ser usados valores convertidos por paridade de poder de compra, salário mínimo em dólares internacionais, proporção do salário mediano ou custo de vida relativo.",
+    "nivel_confiabilidade":
+      "Alto. Os valores são nominais, legais e verificáveis em legislação federal e na série oficial SGS 1619 do Banco Central. A principal ressalva é metodológica: a fonte SGS é mensal, enquanto esta série anual usa o valor vigente em dezembro de cada ano.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Central do Brasil - Metadados SGS série 1619: Salário mínimo",
+        "url": "https://www4.bcb.gov.br/pec/series/port/metadados/mg659ap.htm",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Sistema Gerenciador de Séries Temporais",
+        "url": "https://www4.bcb.gov.br/pec/series/port/aviso.asp?frame=1",
+      },
+      {
+        "titulo": "Planalto - Decreto nº 12.797/2025",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm",
+      },
+      {
+        "titulo": "Planalto - Decreto nº 12.342/2024",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12342.htm",
+      },
+      {
+        "titulo": "TRT da 3ª Região - Tabela de salário mínimo",
+        "url": "https://portal.trt3.jus.br/internet/servicos/valores/salario-minimo",
+      },
+    ],
     "dados": [
-      { "ano": 1994, "valor": 64.79 },
+      { "ano": 1994, "valor": 70 },
       { "ano": 1995, "valor": 100 },
       { "ano": 1996, "valor": 112 },
       { "ano": 1997, "valor": 120 },
@@ -7804,141 +8582,311 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2025, "valor": 1518 },
       { "ano": 2026, "valor": 1621 },
     ],
-    "padrao": false,
   },
   "salario_min_real_idx": {
     "label": "Salário mínimo real (poder de compra)",
     "cor": "#7c3aed",
     "unidade": "índice (base 1994=100)",
-    "fonte": "BCB 1619 deflacionado pelo INPC/IBGE",
+    "fonte": "Banco Central do Brasil/SGS série 1619; INPC/IBGE via SGS série 188",
     "cat": "Emprego e Renda",
     "descricao":
-      "Poder de compra real. Ganhos expressivos tiraram milhões da fome, mas pressionaram as contas do Estado previdenciário e encolheram empregos formais na base, algo comum na América Latina populista.",
+      "Índice do salário mínimo nacional nominal corrigido pela inflação medida pelo INPC, com base 1994=100.",
+    "como_interpretar":
+      "Valores acima de 100 indicam ganho de poder de compra em relação a 1994; valores abaixo de 100 indicariam perda. A variação anual depende do reajuste nominal do salário mínimo e da inflação acumulada pelo INPC.",
+    "metodologia":
+      "Para cada ano, utiliza-se o salário mínimo nacional nominal vigente no ano e deflaciona-se pela inflação acumulada do INPC/IBGE. O índice é normalizado em 1994=100. Fórmula: índice_t = 100 * (salário_min_t / salário_min_1994) / (INPC_acumulado_1995_t).",
+    "historico_metodologia":
+      "O salário mínimo nacional é série oficial mensal do Banco Central do Brasil no SGS, código 1619. O deflator é o INPC/IBGE, série SGS 188. O IBGE informa que o INPC passou por atualizações de estruturas de ponderação com base em POFs, com encadeamento das séries históricas, permitindo comparações no tempo. Em 2020, foram incorporadas ponderações da POF 2017-2018. A partir de janeiro de 2020, a população-objetivo do INPC passou a abranger famílias com rendimentos de 1 a 5 salários mínimos cuja pessoa de referência é assalariada.",
+    "abrangencia":
+      "Brasil. Salário mínimo nacional nominal; deflator INPC nacional, calculado para famílias urbanas com rendimento de 1 a 5 salários mínimos cuja pessoa de referência é assalariada, nas áreas de abrangência do SNIPC/IBGE.",
+    "periodicidade": "Anual, calculado a partir de séries mensais oficiais.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao":
+          "Mudança monetária e estabilização inflacionária após julho de 1994 tornam 1994 a base adequada para comparação em reais.",
+      },
+      {
+        "ano": 2005,
+        "nome": "Valorização",
+        "descricao":
+          "Política de valorização do salário mínimo elevou reajustes reais em vários anos, ampliando o índice real.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Lei 12.382",
+        "descricao": "Formalizou regra de reajuste vinculada ao INPC e ao crescimento real do PIB de dois anos antes.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Inflação alta",
+        "descricao": "INPC acumulado de 2015 foi elevado, reduzindo o ganho real do salário mínimo no índice.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Choque inflacionário",
+        "descricao": "Inflação elevada em 2021 reduziu o poder de compra real do salário mínimo.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Lei 14.663",
+        "descricao": "Retomou política permanente de valorização do salário mínimo com INPC e crescimento real do PIB.",
+      },
+    ],
+    "comparacao_paises":
+      "O indicador é específico do Brasil e não é diretamente comparável entre países sem padronizar salário mínimo, inflação, moeda, jornada legal e paridade de poder de compra. Para comparação internacional, recomenda-se usar salário mínimo real em PPC ou razão entre salário mínimo e salário mediano/médio, conforme bases da OCDE, OIT ou Banco Mundial.",
+    "nivel_confiabilidade":
+      "Alto para a metodologia declarada. Os valores originais foram corrigidos porque estavam mais compatíveis com deflação por IPCA do que por INPC. Os novos valores usam INPC/IBGE como deflator, conforme a fonte declarada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Central do Brasil - Metadados SGS série 1619: Salário mínimo",
+        "url": "https://www4.bcb.gov.br/pec/series/port/metadados/mg659ap.htm",
+      },
+      {
+        "titulo": "Banco Central do Brasil - API SGS série 1619",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1619/dados?formato=json",
+      },
+      {
+        "titulo": "Banco Central do Brasil - API SGS série 188: INPC",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.188/dados?formato=json",
+      },
+      {
+        "titulo": "IBGE - Índice Nacional de Preços ao Consumidor (INPC)",
+        "url":
+          "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9258-indice-nacional-de-precos-ao-consumidor.html",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - INPC fecha 2025 em 3,90%",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45612-ipca-vai-a-0-33-em-dezembro-e-fecha-o-ano-em-4-26",
+      },
+      {
+        "titulo": "Planalto - Lei nº 12.382/2011",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12382.htm",
+      },
+      {
+        "titulo": "Planalto - Lei nº 14.663/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm",
+      },
+    ],
     "dados": [
       { "ano": 1994, "valor": 100 },
-      { "ano": 1995, "valor": 116.7049 },
-      { "ano": 1996, "valor": 119.2999 },
-      { "ano": 1997, "valor": 121.4746 },
-      { "ano": 1998, "valor": 129.4541 },
-      { "ano": 1999, "valor": 124.3152 },
-      { "ano": 2000, "valor": 130.2452 },
-      { "ano": 2001, "valor": 144.1947 },
-      { "ano": 2002, "valor": 142.3762 },
-      { "ano": 2003, "valor": 156.3142 },
-      { "ano": 2004, "valor": 157.3786 },
-      { "ano": 2005, "valor": 171.8149 },
-      { "ano": 2006, "valor": 194.3449 },
-      { "ano": 2007, "valor": 201.9992 },
-      { "ano": 2008, "valor": 208.3094 },
-      { "ano": 2009, "valor": 223.7583 },
-      { "ano": 2010, "valor": 231.7199 },
-      { "ano": 2011, "valor": 232.5024 },
-      { "ano": 2012, "valor": 250.7132 },
-      { "ano": 2013, "valor": 258.0336 },
-      { "ano": 2014, "valor": 258.9479 },
-      { "ano": 2015, "valor": 254.6575 },
-      { "ano": 2016, "valor": 267.5645 },
-      { "ano": 2017, "valor": 276.7389 },
-      { "ano": 2018, "valor": 271.5875 },
-      { "ano": 2019, "valor": 272.3846 },
-      { "ano": 2020, "valor": 272.8851 },
-      { "ano": 2021, "valor": 260.9892 },
-      { "ano": 2022, "valor": 271.8373 },
-      { "ano": 2023, "valor": 282.9835 },
-      { "ano": 2024, "valor": 288.7559 },
-      { "ano": 2025, "valor": 297.7364 },
+      { "ano": 1995, "valor": 117.1139 },
+      { "ano": 1996, "valor": 120.2081 },
+      { "ano": 1997, "valor": 123.4371 },
+      { "ano": 1998, "valor": 130.4781 },
+      { "ano": 1999, "valor": 125.8875 },
+      { "ano": 2000, "valor": 132.7724 },
+      { "ano": 2001, "valor": 144.6173 },
+      { "ano": 2002, "valor": 140.0435 },
+      { "ano": 2003, "valor": 152.2434 },
+      { "ano": 2004, "valor": 155.3994 },
+      { "ano": 2005, "valor": 170.6915 },
+      { "ano": 2006, "valor": 193.6908 },
+      { "ano": 2007, "valor": 199.9824 },
+      { "ano": 2008, "valor": 205.1078 },
+      { "ano": 2009, "valor": 220.7389 },
+      { "ano": 2010, "valor": 227.3989 },
+      { "ano": 2011, "valor": 229.0771 },
+      { "ano": 2012, "valor": 246.1841 },
+      { "ano": 2013, "valor": 254.2079 },
+      { "ano": 2014, "valor": 255.5394 },
+      { "ano": 2015, "valor": 249.9443 },
+      { "ano": 2016, "valor": 261.8932 },
+      { "ano": 2017, "valor": 273.2097 },
+      { "ano": 2018, "valor": 268.9315 },
+      { "ano": 2019, "valor": 269.2676 },
+      { "ano": 2020, "valor": 267.3833 },
+      { "ano": 2021, "valor": 255.4971 },
+      { "ano": 2022, "valor": 265.7464 },
+      { "ano": 2023, "valor": 279.0812 },
+      { "ano": 2024, "valor": 284.9463 },
+      { "ano": 2025, "valor": 294.8448 },
     ],
-    "padrao": false,
   },
   "endividamento_familias_renda": {
     "label": "Endividamento das Famílias",
     "cor": "#be123c",
     "unidade": "% da renda anual",
-    "fonte": "Banco Central do Brasil (BCB)",
+    "fonte": "Banco Central do Brasil (BCB/SGS 29037)",
     "cat": "Emprego e Renda",
     "descricao":
-      "Mede o percentual da renda anual acumulada das famílias que está comprometido com o saldo de dívidas no Sistema Financeiro Nacional. A série mostra uma expansão do crédito a partir de 2005. O salto de 2020 a 2022 reflete o impacto da pandemia e a queda na renda real, elevando a taxa para o patamar de 50%. A projeção de 47,2% em 2026 sugere uma leve acomodação impulsionada por programas de renegociação de dívidas e juros restritivos.",
-    "dados": [
-      { "ano": 1994, "valor": 12.5 },
-      { "ano": 1995, "valor": 13.0 },
-      { "ano": 1996, "valor": 13.5 },
-      { "ano": 1997, "valor": 14.1 },
-      { "ano": 1998, "valor": 14.8 },
-      { "ano": 1999, "valor": 15.2 },
-      { "ano": 2000, "valor": 15.8 },
-      { "ano": 2001, "valor": 16.5 },
-      { "ano": 2002, "valor": 17.0 },
-      { "ano": 2003, "valor": 17.5 },
-      { "ano": 2004, "valor": 18.2 },
-      { "ano": 2005, "valor": 19.5 },
-      { "ano": 2006, "valor": 22.1 },
-      { "ano": 2007, "valor": 26.5 },
-      { "ano": 2008, "valor": 30.2 },
-      { "ano": 2009, "valor": 33.8 },
-      { "ano": 2010, "valor": 36.5 },
-      { "ano": 2011, "valor": 39.8 },
-      { "ano": 2012, "valor": 43.1 },
-      { "ano": 2013, "valor": 45.2 },
-      { "ano": 2014, "valor": 46.0 },
-      { "ano": 2015, "valor": 46.2 },
-      { "ano": 2016, "valor": 44.5 },
-      { "ano": 2017, "valor": 43.0 },
-      { "ano": 2018, "valor": 43.5 },
-      { "ano": 2019, "valor": 45.0 },
-      { "ano": 2020, "valor": 49.5 },
-      { "ano": 2021, "valor": 52.0 },
-      { "ano": 2022, "valor": 50.5 },
-      { "ano": 2023, "valor": 48.5 },
-      { "ano": 2024, "valor": 47.8 },
-      { "ano": 2025, "valor": 47.5 },
-      { "ano": 2026, "valor": 47.2 },
+      "Relação entre o valor atual das dívidas das famílias com o Sistema Financeiro Nacional e a renda das famílias acumulada nos últimos doze meses.",
+    "como_interpretar":
+      "Valores maiores indicam maior endividamento das famílias em relação à renda acumulada em doze meses. O indicador mede estoque de dívida em relação à renda, não inadimplência nem comprometimento mensal da renda.",
+    "metodologia":
+      "Série SGS 29037 do Banco Central do Brasil. Indicador mensal em percentual, calculado como a relação entre o valor atual das dívidas das famílias com o Sistema Financeiro Nacional e a renda das famílias acumulada nos últimos doze meses. Para compatibilizar com a estrutura anual do gráfico, foi usado o valor oficial de dezembro de cada ano. Para 2026, foi usado o último dado mensal oficial disponível em 24/04/2026, referente a janeiro de 2026.",
+    "historico_metodologia":
+      "A série oficial disponível no SGS 29037 começa em janeiro de 2005. Não há valores oficiais nessa série para 1994 a 2004, portanto esses anos foram removidos. Não foi identificada quebra metodológica explícita no cadastro da série do SGS consultado; a série é mensal e expressa em percentual.",
+    "abrangencia": "Brasil; famílias com dívidas no Sistema Financeiro Nacional.",
+    "periodicidade":
+      "Mensal; neste JSON, dados consolidados por ano usando dezembro, exceto 2026, que usa o último mês oficial disponível.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia impactou renda, atividade econômica e condições financeiras das famílias, afetando a trajetória do endividamento.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Retomada",
+        "descricao":
+          "O segundo ano da pandemia foi marcado por avanço da vacinação, retomada da atividade econômica e elevação da taxa de juros, com repercussões sobre crédito e endividamento.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Juros altos",
+        "descricao":
+          "O Banco Central registrou aumento do endividamento e do comprometimento da renda das famílias pelo segundo ano consecutivo, permanecendo em níveis elevados.",
+      },
     ],
+    "comparacao_paises":
+      "Não há comparação internacional direta confiável neste indicador, pois a série SGS 29037 usa metodologia doméstica do Banco Central do Brasil, baseada em dívidas das famílias com o Sistema Financeiro Nacional e renda acumulada em doze meses. Comparações com outros países exigem indicadores harmonizados, como dívida das famílias sobre renda disponível ou sobre PIB, que não são metodologicamente idênticos.",
+    "nivel_confiabilidade":
+      "Alto para 2005 em diante, pois os valores vêm da série oficial SGS 29037 do Banco Central do Brasil. Baixo/inexistente para 1994 a 2004 nesta métrica específica, pois não há valores oficiais disponíveis na série consultada. Valores projetados de 2025 e 2026 do JSON original foram substituídos por dados oficiais disponíveis.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Central do Brasil - Dados Abertos - SGS 29037",
+        "url":
+          "https://dadosabertos.bcb.gov.br/dataset/29037-endividamento-das-familias-com-o-sistema-financeiro-nacional-em-relacao-a-renda-acumulada-dos",
+      },
+      {
+        "titulo": "Banco Central do Brasil - API SGS 29037 JSON",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.29037/dados?formato=json",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Estatísticas monetárias e de crédito",
+        "url": "https://www.bcb.gov.br/estatisticas/estatisticasmonetariascredito",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Relatório de Política Monetária - março de 2026",
+        "url": "https://www.bcb.gov.br/content/ri/relatorioinflacao/202603/rpm202603p.pdf",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Relatório de Economia Bancária 2021",
+        "url": "https://www.bcb.gov.br/content/publicacoes/relatorioeconomiabancaria/reb_2021.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2005, "valor": 19.56 },
+      { "ano": 2006, "valor": 21.98 },
+      { "ano": 2007, "valor": 24.96 },
+      { "ano": 2008, "valor": 27.44 },
+      { "ano": 2009, "valor": 29.45 },
+      { "ano": 2010, "valor": 33.97 },
+      { "ano": 2011, "valor": 36.56 },
+      { "ano": 2012, "valor": 38.04 },
+      { "ano": 2013, "valor": 38.36 },
+      { "ano": 2014, "valor": 39.29 },
+      { "ano": 2015, "valor": 40.09 },
+      { "ano": 2016, "valor": 38.2 },
+      { "ano": 2017, "valor": 37.27 },
+      { "ano": 2018, "valor": 39.06 },
+      { "ano": 2019, "valor": 41.47 },
+      { "ano": 2020, "valor": 41.75 },
+      { "ano": 2021, "valor": 49.44 },
+      { "ano": 2022, "valor": 49 },
+      { "ano": 2023, "valor": 47.69 },
+      { "ano": 2024, "valor": 48.44 },
+      { "ano": 2025, "valor": 49.71 },
+      { "ano": 2026, "valor": 49.69 },
+    ],
   },
   "idh_brasil": {
     "label": "IDH Brasil",
     "cor": "#22c55e",
     "unidade": "pontos",
-    "fonte": "PNUD (ONU)",
+    "fonte": "PNUD/UNDP - Human Development Reports",
     "cat": "Desenvolvimento",
-    "descricao":
-      "Agrega longevidade, escolaridade e renda. Alta lenta, mas oculta desigualdades internas abissais. O Brasil não atinge o status nórdico ou ocidental europeu (>0.900), figurando como nação de renda média em desenvolvimento ao lado do Chile.",
+    "descricao": "Índice composto que resume o desenvolvimento humano do Brasil em saúde, educação e renda.",
+    "como_interpretar":
+      "Varia de 0 a 1. Quanto maior o valor, maior o nível médio de desenvolvimento humano. O indicador não mede desigualdade interna, pobreza multidimensional, segurança humana ou sustentabilidade ambiental.",
+    "metodologia":
+      "O IDH é calculado como a média geométrica de três índices normalizados: saúde, medida pela expectativa de vida ao nascer; educação, medida por anos médios de escolaridade e anos esperados de escolaridade; e padrão de vida, medido pela renda nacional bruta per capita em PPC. A renda entra em forma logarítmica.",
+    "historico_metodologia":
+      "A série foi mantida conforme a base comparável mais recente do Human Development Report Office. O PNUD revisa periodicamente fontes, parâmetros e séries históricas; por isso, valores de relatórios antigos podem diferir dos valores da série atual. Para consistência temporal, todos os valores abaixo usam a série oficial atual do HDR 2025, não relatórios históricos isolados.",
+    "abrangencia": "Brasil, nível nacional, comparável internacionalmente.",
+    "periodicidade": "Anual, conforme disponibilidade e atualização do Human Development Report Office.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia gerou queda inédita do IDH global em 2020 e 2021, segundo o PNUD. No Brasil, o IDH caiu de 0.776 em 2019 para 0.770 em 2020 e 0.768 em 2021.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Recuperação pós-COVID",
+        "descricao":
+          "O PNUD registrou recuperação do IDH após a queda de 2020-2021. No Brasil, o índice subiu para 0.780 em 2022 e 0.786 em 2023.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou IDH de 0.786, classificado como alto desenvolvimento humano e ocupando a posição 84 no ranking do HDR 2025. O país permaneceu abaixo do grupo de muito alto desenvolvimento humano e acima dos países classificados como médio ou baixo desenvolvimento humano.",
+    "nivel_confiabilidade":
+      "Alta. Valores extraídos da série oficial comparável do Human Development Report Office/PNUD. Anos sem valor oficial observado foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "UNDP Human Development Index Data Center",
+        "url": "https://hdr.undp.org/data-center/human-development-index",
+      },
+      {
+        "titulo": "UNDP HDR 2025 - Composite indices complete time series",
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+      },
+      {
+        "titulo": "UNDP HDR 2025 - Statistical Annex HDI Table",
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Table.xlsx",
+      },
+      {
+        "titulo": "UNDP Human Development Report 2021/2022",
+        "url": "https://hdr.undp.org/content/human-development-report-2021-22",
+      },
+      {
+        "titulo": "UNDP Human Development Report 2023/2024 Snapshot",
+        "url": "https://hdr.undp.org/system/files/documents/global-report-document/hdr2023-24snapshoten.pdf",
+      },
+    ],
     "dados": [
-      { "ano": 1994, "valor": 0.642 },
-      { "ano": 1995, "valor": 0.649 },
-      { "ano": 1996, "valor": 0.656 },
-      { "ano": 1997, "valor": 0.663 },
-      { "ano": 1998, "valor": 0.67 },
-      { "ano": 1999, "valor": 0.677 },
-      { "ano": 2000, "valor": 0.685 },
-      { "ano": 2001, "valor": 0.692 },
-      { "ano": 2002, "valor": 0.699 },
-      { "ano": 2003, "valor": 0.7 },
-      { "ano": 2004, "valor": 0.704 },
-      { "ano": 2005, "valor": 0.709 },
-      { "ano": 2006, "valor": 0.714 },
-      { "ano": 2007, "valor": 0.719 },
-      { "ano": 2008, "valor": 0.724 },
-      { "ano": 2009, "valor": 0.729 },
-      { "ano": 2010, "valor": 0.734 },
-      { "ano": 2011, "valor": 0.739 },
-      { "ano": 2012, "valor": 0.744 },
-      { "ano": 2013, "valor": 0.749 },
-      { "ano": 2014, "valor": 0.752 },
-      { "ano": 2015, "valor": 0.755 },
-      { "ano": 2016, "valor": 0.758 },
-      { "ano": 2017, "valor": 0.761 },
-      { "ano": 2018, "valor": 0.763 },
-      { "ano": 2019, "valor": 0.765 },
-      { "ano": 2020, "valor": 0.758 },
-      { "ano": 2021, "valor": 0.76 },
+      { "ano": 1994, "valor": 0.659 },
+      { "ano": 1995, "valor": 0.666 },
+      { "ano": 1996, "valor": 0.671 },
+      { "ano": 1997, "valor": 0.676 },
+      { "ano": 1998, "valor": 0.68 },
+      { "ano": 1999, "valor": 0.684 },
+      { "ano": 2000, "valor": 0.69 },
+      { "ano": 2001, "valor": 0.694 },
+      { "ano": 2002, "valor": 0.7 },
+      { "ano": 2003, "valor": 0.705 },
+      { "ano": 2004, "valor": 0.712 },
+      { "ano": 2005, "valor": 0.718 },
+      { "ano": 2006, "valor": 0.725 },
+      { "ano": 2007, "valor": 0.732 },
+      { "ano": 2008, "valor": 0.739 },
+      { "ano": 2009, "valor": 0.742 },
+      { "ano": 2010, "valor": 0.748 },
+      { "ano": 2011, "valor": 0.753 },
+      { "ano": 2012, "valor": 0.758 },
+      { "ano": 2013, "valor": 0.762 },
+      { "ano": 2014, "valor": 0.765 },
+      { "ano": 2015, "valor": 0.764 },
+      { "ano": 2016, "valor": 0.765 },
+      { "ano": 2017, "valor": 0.77 },
+      { "ano": 2018, "valor": 0.774 },
+      { "ano": 2019, "valor": 0.776 },
+      { "ano": 2020, "valor": 0.77 },
+      { "ano": 2021, "valor": 0.768 },
       { "ano": 2022, "valor": 0.78 },
       { "ano": 2023, "valor": 0.786 },
-      { "ano": 2024, "valor": 0.792 },
-      { "ano": 2025, "valor": 0.798 },
-      { "ano": 2026, "valor": 0.804 },
     ],
-    "padrao": false,
   },
   "pobreza_extrema": {
     "label": "Pobreza extrema (linha US$2,15/dia PPP)",
@@ -7947,7 +8895,80 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "Banco Mundial/PIP (Poverty & Inequality Platform)",
     "cat": "Desenvolvimento",
     "descricao":
-      "População com < US$2,15/dia. Recuos nos anos 2000 (Bolsa Família). A queda de 2020 foi artificial (auxílios pandêmicos). Estruturalmente, o país ainda mantém parcelas imensas com miséria análoga a regiões da África e Ásia meridional.",
+      "Percentual da população brasileira vivendo abaixo da linha internacional de pobreza extrema de US$2,15 por dia em paridade de poder de compra.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a parcela da população em pobreza extrema. Quedas indicam redução da pobreza extrema; altas indicam piora das condições de renda na base da distribuição.",
+    "metodologia":
+      "Indicador do Banco Mundial/Poverty & Inequality Platform baseado em microdados de pesquisas domiciliares, convertidos para dólares internacionais por paridade de poder de compra e comparados à linha internacional de pobreza extrema.",
+    "historico_metodologia":
+      "A série internacional de pobreza do Banco Mundial sofreu revisões metodológicas associadas às rodadas de PPP. A linha de US$2,15/dia em PPP de 2017 substituiu a linha anterior de US$1,90/dia em PPP de 2011. Em atualização posterior, o Banco Mundial passou a divulgar a linha equivalente revisada de US$3,00/dia em PPP de 2021; portanto, esta série deve ser interpretada como série na metodologia US$2,15/dia PPP 2017, sem mistura com a nova linha.",
+    "abrangencia": "Brasil, população total, nível nacional.",
+    "periodicidade":
+      "Anual, conforme disponibilidade de pesquisas domiciliares harmonizadas no PIP; anos sem valor oficial publicado não foram preenchidos.",
+    "eventos_externos": [
+      {
+        "ano": 2003,
+        "nome": "Bolsa Família",
+        "descricao":
+          "Criação e expansão do programa de transferência condicionada de renda, associada à redução da pobreza extrema nos anos seguintes.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Brasil sem Miséria",
+        "descricao":
+          "Plano federal voltado à superação da extrema pobreza, com integração de políticas sociais e reforço de transferências.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao":
+          "Deterioração econômica e do mercado de trabalho associada à alta da pobreza extrema entre 2015 e 2017.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Auxílio Emergencial",
+        "descricao":
+          "Transferência extraordinária durante a pandemia reduziu temporariamente a pobreza extrema medida em 2020.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Retirada auxílio",
+        "descricao":
+          "Redução e descontinuidade parcial do auxílio emergencial contribuíram para recomposição da pobreza extrema em 2021.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Novo Bolsa",
+        "descricao":
+          "Reformulação e ampliação do Bolsa Família contribuíram para nova queda da pobreza extrema em 2023 e 2024.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2024, o Brasil aparece com pobreza extrema próxima de outros países latino-americanos de renda média, mas acima de economias da região com incidência quase nula nessa linha e muito abaixo dos países de baixa renda mais pobres.",
+    "nivel_confiabilidade":
+      "Alta para comparações internacionais oficiais, pois os valores vêm do Banco Mundial/PIP. Não são projeções próprias; são estimativas estatísticas oficiais baseadas em pesquisas domiciliares harmonizadas. Anos sem dado oficial foram omitidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Poverty headcount ratio at $2.15 a day / SI.POV.DDAY",
+        "url": "https://data.worldbank.org/indicator/SI.POV.DDAY",
+      },
+      {
+        "titulo": "World Bank Data360 CSV - WB_WDI_SI_POV_DDAY",
+        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_SI_POV_DDAY.csv",
+      },
+      {
+        "titulo": "World Bank Poverty and Inequality Platform - Brazil",
+        "url": "https://pip.worldbank.org/country-profiles/BRA",
+      },
+      { "titulo": "World Bank Poverty and Inequality Platform", "url": "https://pip.worldbank.org/" },
+      {
+        "titulo": "World Bank - June 2025 Update to the Poverty and Inequality Platform",
+        "url":
+          "https://documents1.worldbank.org/curated/en/099510306052516849/pdf/IDU-eb272b02-ecd1-4633-9e37-9297e20a711c.pdf",
+      },
+    ],
     "dados": [
       { "ano": 1995, "valor": 19.5 },
       { "ano": 1996, "valor": 20.7 },
@@ -7978,56 +8999,175 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 3.8 },
       { "ano": 2024, "valor": 3 },
     ],
-    "padrao": false,
   },
   "pobreza_nacional": {
-    "label": "Pobreza (linha nacional — FGV/IBGE)",
+    "label": "Pobreza monetária (linha Banco Mundial US$ 6,85 PPC — IBGE/SIS)",
     "cor": "#991b1b",
     "unidade": "% da população",
-    "fonte": "IBGE/PNAD-PNADC; estimativas FGV Social",
+    "fonte": "IBGE/Síntese de Indicadores Sociais; PNAD Contínua Anual",
     "cat": "Desenvolvimento",
     "descricao":
-      "Percentual abaixo da linha de dignidade urbana (IBGE/FGV). Quase 30% da nação lida com incerteza diária, destoando violentamente das redes institucionais europeias. O ganho de riqueza esbarrou em corrupção e desigualdade.",
-    "dados": [
-      { "ano": 1995, "valor": 43.4 },
-      { "ano": 1996, "valor": 43.3 },
-      { "ano": 1997, "valor": 43 },
-      { "ano": 1998, "valor": 41.9 },
-      { "ano": 1999, "valor": 43.8 },
-      { "ano": 2001, "valor": 45.4 },
-      { "ano": 2002, "valor": 45.3 },
-      { "ano": 2003, "valor": 46.5 },
-      { "ano": 2004, "valor": 44.9 },
-      { "ano": 2005, "valor": 43.1 },
-      { "ano": 2006, "valor": 41.5 },
-      { "ano": 2007, "valor": 39.6 },
-      { "ano": 2008, "valor": 37.3 },
-      { "ano": 2009, "valor": 36.1 },
-      { "ano": 2011, "valor": 33.8 },
-      { "ano": 2012, "valor": 32.2 },
-      { "ano": 2013, "valor": 30.7 },
-      { "ano": 2014, "valor": 30.5 },
-      { "ano": 2015, "valor": 31.9 },
-      { "ano": 2016, "valor": 34.3 },
-      { "ano": 2017, "valor": 33 },
-      { "ano": 2018, "valor": 32 },
-      { "ano": 2019, "valor": 30.9 },
-      { "ano": 2020, "valor": 31.6 },
-      { "ano": 2021, "valor": 30.8 },
-      { "ano": 2022, "valor": 33.2 },
-      { "ano": 2023, "valor": 31.1 },
-      { "ano": 2024, "valor": 30.3 },
+      "Percentual da população residente no Brasil com rendimento domiciliar per capita inferior à linha de pobreza de US$ 6,85 por dia em paridade de poder de compra, conforme parâmetro do Banco Mundial usado pelo IBGE.",
+    "como_interpretar":
+      "Quanto maior o percentual, maior a proporção da população vivendo abaixo da linha monetária de pobreza. Quedas indicam redução da pobreza monetária medida por rendimento domiciliar per capita.",
+    "metodologia":
+      "Indicador calculado pelo IBGE a partir da PNAD Contínua Anual, considerando pessoas em domicílios com rendimento domiciliar per capita inferior à linha de pobreza do Banco Mundial de US$ 6,85 PPC por dia, convertida para valor mensal em reais conforme a metodologia da Síntese de Indicadores Sociais.",
+    "historico_metodologia":
+      "A série oficial comparável disponível na Síntese de Indicadores Sociais inicia em 2012, com base na PNAD Contínua. Os valores anteriores a 2012 do JSON original foram removidos por não pertencerem a uma série oficial homogênea e diretamente comparável da PNAD Contínua. A referência original a FGV Social foi removida dos dados porque estudos da FGV usam microdados oficiais do IBGE, mas produzem estimativas próprias, não valores oficiais do IBGE.",
+    "abrangencia":
+      "Brasil, população residente em domicílios particulares permanentes, conforme cobertura da PNAD Contínua Anual.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Auxílio Emergencial",
+        "descricao":
+          "A transferência emergencial de renda durante a pandemia reduziu temporariamente a pobreza e a extrema pobreza em 2020, segundo análise do IBGE sobre programas sociais.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Covid-19",
+        "descricao":
+          "A pobreza atingiu o maior percentual da série em 2021, após o choque da pandemia e a redução do efeito das transferências emergenciais.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Bolsa Família",
+        "descricao": "A ampliação e manutenção de benefícios sociais contribuíram para a queda da pobreza em 2023.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Mercado trabalho",
+        "descricao":
+          "O IBGE atribuiu a continuidade da queda da pobreza em 2024 à manutenção do Bolsa Família em patamar superior ao pré-pandemia e ao maior dinamismo do mercado de trabalho.",
+      },
     ],
+    "comparacao_paises":
+      "Na comparação internacional da OCDE citada pelo IBGE, o Brasil aparece entre os países com maior desigualdade de rendimento e com a maior proporção de trabalhadores pobres entre 40 países analisados. Essa comparação usa critérios próprios da OCDE para trabalhadores pobres, não exatamente a linha US$ 6,85 PPC usada nos dados anuais deste indicador.",
+    "nivel_confiabilidade":
+      "Alto para 2012 a 2024, pois os valores foram extraídos de divulgação oficial do IBGE/Síntese de Indicadores Sociais. Não há validação oficial homogênea para 1994 a 2011 nesta mesma metodologia; por isso esses anos foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IBGE — Síntese de Indicadores Sociais",
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias — 8,6 milhões de pessoas saíram da pobreza entre 2023 e 2024",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45344-8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024",
+      },
+      {
+        "titulo": "IBGE Biblioteca — Síntese de Indicadores Sociais 2024",
+        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2102144&view=detalhes",
+      },
+      {
+        "titulo": "IBGE — PNAD Contínua",
+        "url":
+          "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html",
+      },
+    ],
+    "dados": [
+      { "ano": 2012, "valor": 34.7 },
+      { "ano": 2013, "valor": 32.5 },
+      { "ano": 2014, "valor": 30.9 },
+      { "ano": 2015, "valor": 31.7 },
+      { "ano": 2016, "valor": 33.7 },
+      { "ano": 2017, "valor": 33.7 },
+      { "ano": 2018, "valor": 33.4 },
+      { "ano": 2019, "valor": 32.6 },
+      { "ano": 2020, "valor": 31.1 },
+      { "ano": 2021, "valor": 36.8 },
+      { "ano": 2022, "valor": 31.6 },
+      { "ano": 2023, "valor": 27.3 },
+      { "ano": 2024, "valor": 23.1 },
+    ],
   },
   "gini": {
     "label": "Coeficiente de Gini (renda domiciliar per capita)",
     "cor": "#f59e0b",
     "unidade": "índice 0-100 (0=igualdade total; 100=desigualdade máxima)",
-    "fonte": "Banco Mundial/PIP (base IBGE PNAD/PNADC)",
+    "fonte": "Banco Mundial/Poverty and Inequality Platform (PIP), com base em pesquisas domiciliares oficiais",
     "cat": "Desenvolvimento",
-    "descricao":
-      "Régua mundial da desigualdade. Brasil está no Top 15 dos mais excludentes (sempre >50). A riqueza gerada permanece no terço superior. A Europa ostenta índices muito mais igualitários na faixa de 25-35.",
+    "descricao": "Índice que mede a desigualdade na distribuição de renda domiciliar per capita no Brasil.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a desigualdade. Valor 0 representa igualdade perfeita e valor 100 representa desigualdade máxima.",
+    "metodologia":
+      "O índice de Gini mede a área entre a curva de Lorenz e a linha hipotética de igualdade perfeita, expressa como percentual da área máxima sob essa linha. Os dados do Banco Mundial/PIP são baseados em pesquisas domiciliares primárias obtidas de agências estatísticas governamentais e departamentos do Banco Mundial.",
+    "historico_metodologia":
+      "A série do Banco Mundial/PIP para o Brasil usa pesquisas domiciliares oficiais. Há quebras relevantes de comparabilidade: a PNAD tradicional não teve observações em alguns anos, como 1994, 2000 e 2010, e a partir de 2012 a principal base nacional passou a ser a PNAD Contínua. O IBGE informa que, para a PNAD Contínua, os dados de rendimento usam primeiras visitas em 2012-2019 e 2023-2024, e quintas visitas em 2020-2022, o que deve ser considerado em comparações históricas.",
+    "abrangencia":
+      "Brasil, renda ou consumo de pessoas ou domicílios conforme a base harmonizada do Banco Mundial/PIP; para a PNAD Contínua, rendimento mensal real domiciliar per capita da população residente em domicílios particulares.",
+    "periodicidade": "Anual, com lacunas em anos sem observação disponível.",
+    "eventos_externos": [
+      {
+        "ano": 2003,
+        "nome": "Bolsa Família",
+        "descricao":
+          "A expansão de programas de transferência de renda contribuiu para a redução da desigualdade e da pobreza nos anos seguintes, em conjunto com mercado de trabalho e salário mínimo.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Recessão",
+        "descricao":
+          "O ciclo de crise econômica a partir de 2014 interrompeu parte da trajetória anterior de melhora distributiva, com deterioração do mercado de trabalho e renda.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Auxílio emergencial",
+        "descricao":
+          "Durante a pandemia de Covid-19, a participação dos programas sociais no rendimento domiciliar per capita atingiu o ápice da série da PNAD Contínua, reduzindo temporariamente o Gini.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Retirada auxílio",
+        "descricao":
+          "A redução do alcance e valor das transferências emergenciais após 2020 elevou novamente a desigualdade medida pelo Gini.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Bolsa Família",
+        "descricao":
+          "A reedição e expansão do Bolsa Família, junto à melhora do mercado de trabalho, contribuiu para a queda da desigualdade em 2023 e 2024.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Renda recorde",
+        "descricao":
+          "O IBGE registrou recorde de rendimento domiciliar per capita e menor Gini da série da PNAD Contínua, associado ao dinamismo do mercado de trabalho, reajustes do salário mínimo e programas sociais.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil permanece entre os países de alta desigualdade: o Banco Mundial classifica Gini acima de 40 como alta desigualdade. Em 2024, o Brasil registrou 50,3, acima de economias europeias típicas, frequentemente na faixa de cerca de 25 a 35, e abaixo dos casos mais extremos como África do Sul.",
+    "nivel_confiabilidade":
+      "Alta para os anos listados, pois os valores vêm do Banco Mundial/PIP e são baseados em pesquisas domiciliares oficiais. A comparação histórica exige cautela por mudanças de pesquisa, cobertura e tratamento entre PNAD e PNAD Contínua. Não foram incluídos anos sem observação disponível na série.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Gini index - Brazil (SI.POV.GINI)",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=BR",
+      },
+      {
+        "titulo": "World Bank Poverty and Inequality Platform - Brazil",
+        "url": "https://pip.worldbank.org/country-profiles/BRA",
+      },
+      {
+        "titulo": "FRED - GINI Index for Brazil (World Bank/WDI)",
+        "url": "https://fred.stlouisfed.org/series/SIPOVGINIBRA",
+      },
+      {
+        "titulo":
+          "IBGE - PNAD Contínua: Rendimento per capita é recorde e desigualdades caem ao menor nível desde 2012",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43302-rendimento-per-capita-e-recorde-e-desigualdades-caem-ao-menor-nivel-desde-2012",
+      },
+      {
+        "titulo": "IBGE - Síntese de Indicadores Sociais 2024",
+        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2102144&view=detalhes",
+      },
+    ],
     "dados": [
       { "ano": 1995, "valor": 59.5 },
       { "ano": 1996, "valor": 59.8 },
@@ -8058,24 +9198,75 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 51.5 },
       { "ano": 2024, "valor": 50.3 },
     ],
-    "padrao": false,
   },
   "subnutricao": {
     "label": "Prevalência de subalimentação",
     "cor": "#d97706",
     "unidade": "% da população",
-    "fonte": "FAO/SOFI (via Banco Mundial)",
+    "fonte": "FAO/SOFI via Banco Mundial",
     "cat": "Desenvolvimento",
     "descricao":
-      "Carência calórica contínua (FAO). Retirou o país do 'Mapa da Fome' em 2014, com leve recuo. Inferior às tragédias de partes da Ásia/África, difere contudo da estabilidade europeia de segurança agrícola total.",
+      "Percentual da população cuja ingestão habitual de alimentos é insuficiente para fornecer a energia alimentar necessária para uma vida normal, ativa e saudável.",
+    "como_interpretar":
+      "Valores maiores indicam maior prevalência de subalimentação crônica. No Banco Mundial/FAO, valor exibido como 2,5 pode significar prevalência abaixo de 2,5%, portanto deve ser interpretado como limite inferior censurado, não como valor exato.",
+    "metodologia":
+      "Indicador FAO PoU, compilado no World Development Indicators do Banco Mundial. Mede privação alimentar com base na disponibilidade média de alimentos para consumo humano por pessoa, desigualdade no acesso aos alimentos e necessidades mínimas de energia alimentar.",
+    "historico_metodologia":
+      "A série disponível no Banco Mundial para o Brasil cobre 2001 a 2023. Anos anteriores a 2001 foram removidos por não constarem no período de referência oficial atual do indicador. O próprio Banco Mundial informa que dados mostrados como 2,5 podem representar prevalência abaixo de 2,5%, criando censura inferior na série.",
+    "abrangencia": "Brasil, população total.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2003,
+        "nome": "Fome Zero",
+        "descricao":
+          "Início e consolidação de políticas federais de segurança alimentar e transferência de renda, associadas pela FAO e pelo governo brasileiro à queda da fome no período seguinte.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Mapa da Fome",
+        "descricao":
+          "Brasil foi considerado fora do Mapa da Fome da FAO após reduzir a prevalência para nível muito baixo, abaixo do limiar usado pela FAO.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "Choque econômico e alimentar global associado pela FAO/SOFI à piora da fome e da insegurança alimentar em diversos países.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Recuperação social",
+        "descricao":
+          "Retomada e ampliação de políticas de segurança alimentar e proteção social citadas pela FAO Brasil como fatores de melhora recente.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 2,5% no WDI/Banco Mundial, próximo ao piso estatístico do indicador. O valor é muito inferior aos países com maiores prevalências, como Haiti, Somália, Madagascar, Síria e República Democrática do Congo, mas deve ser comparado com cautela porque valores de 2,5 podem significar abaixo de 2,5%, não exatamente 2,5%.",
+    "nivel_confiabilidade":
+      "Alta para a série oficial publicada de 2001 a 2023 pelo Banco Mundial/FAO. Média para interpretação pontual dos anos com valor 2,5, pois o próprio metadado informa que esse valor pode representar prevalência abaixo de 2,5%.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Prevalence of undernourishment (% of population) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SN.ITK.DEFC.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SN.ITK.DEFC.ZS",
+      },
+      { "titulo": "FAOSTAT - Suite of Food Security Indicators", "url": "https://www.fao.org/faostat/en/#data/FS" },
+      {
+        "titulo": "SOFI 2024 - The State of Food Security and Nutrition in the World",
+        "url": "https://openknowledge.fao.org/items/09cbffe8-8048-4af9-955f-8a9db0c52118",
+      },
+      {
+        "titulo": "FAO Brasil - Brasil voltou a sair do Mapa da Fome",
+        "url": "https://www.fao.org/brasil/noticias/detail-events/en/c/1741586/",
+      },
+    ],
     "dados": [
-      { "ano": 1994, "valor": 11 },
-      { "ano": 1995, "valor": 10 },
-      { "ano": 1996, "valor": 10 },
-      { "ano": 1997, "valor": 10 },
-      { "ano": 1998, "valor": 10 },
-      { "ano": 1999, "valor": 10 },
-      { "ano": 2000, "valor": 9 },
       { "ano": 2001, "valor": 10.5 },
       { "ano": 2002, "valor": 9.1 },
       { "ano": 2003, "valor": 7.6 },
@@ -8100,7 +9291,6 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2022, "valor": 3.2 },
       { "ano": 2023, "valor": 2.5 },
     ],
-    "padrao": false,
   },
   "inseg_alimentar_grave": {
     "label": "Insegurança alimentar grave (FIES)",
@@ -8109,21 +9299,73 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "FAO/FIES (Food Insecurity Experience Scale)",
     "cat": "Desenvolvimento",
     "descricao":
-      "Experiência de fome relatada (FIES). Demonstra a realidade qualitativa. A inflação expõe o paradoxo de um país gigante do agronegócio que sofre carestia severa na base da pirâmide em crises econômicas.",
-    "dados": [
-      { "ano": 2004, "valor": 6.9 },
-      { "ano": 2009, "valor": 5 },
-      { "ano": 2013, "valor": 3.2 },
-      { "ano": 2017, "valor": 10.1 },
-      { "ano": 2018, "valor": 9 },
-      { "ano": 2019, "valor": 6.5 },
-      { "ano": 2020, "valor": 9 },
-      { "ano": 2021, "valor": 9 },
-      { "ano": 2022, "valor": 7.7 },
-      { "ano": 2023, "valor": 5.2 },
-      { "ano": 2024, "valor": 4.8 },
+      "Percentual da população em insegurança alimentar grave, medido pela Food Insecurity Experience Scale (FIES), isto é, pessoas que relataram experiências severas de restrição de acesso a alimentos por falta de dinheiro ou outros recursos.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a proporção da população exposta a insegurança alimentar grave. A FAO define a insegurança alimentar grave como situação em que a pessoa provavelmente ficou sem comida, passou fome e, no caso mais extremo, passou um dia ou mais sem comer por falta de dinheiro ou recursos.",
+    "metodologia":
+      "Indicador AG_PRD_FIESS, vinculado ao ODS 2.1.2. A FIES usa respostas diretas a oito perguntas sobre experiências de restrição de acesso a alimentos nos últimos 12 meses. A FAO calibra as respostas em uma escala internacional de severidade por modelo estatístico de Rasch e estima a prevalência da população acima do limiar de insegurança alimentar grave.",
+    "historico_metodologia":
+      "A série FIES internacionalmente comparável começa em 2014 para o Brasil nas bases oficiais da ONU/FAO. Valores anteriores de 2004, 2009 e 2013 pertencem a outras medições nacionais de segurança alimentar, como EBIA/PNAD, e não são metodologicamente equivalentes à FIES; por isso foram removidos. A FAO publica dados FIES com incerteza amostral e, em relatórios SOFI, frequentemente usa médias trienais para maior estabilidade. Para este JSON foram mantidos apenas valores anuais oficiais FIES disponíveis, sem projeções.",
+    "abrangencia": "Brasil, população total, indicador internacional comparável da FAO/ONU.",
+    "periodicidade": "Anual, conforme disponibilidade na base oficial ODS/FAOSTAT.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia afetou renda, emprego e acesso a alimentos, contribuindo para piora da insegurança alimentar em vários países, incluindo o Brasil.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Inflação alimentar",
+        "descricao":
+          "A alta de preços de alimentos e choques econômicos pós-pandemia agravaram a restrição de acesso a alimentos, elevando a insegurança alimentar grave.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Retomada social",
+        "descricao":
+          "A FAO/SOFI e o governo brasileiro registraram queda expressiva da insegurança alimentar grave no Brasil em 2023, associada à recomposição de renda e políticas sociais.",
+      },
     ],
+    "comparacao_paises":
+      "O Brasil apresentou forte piora no período da pandemia e choque inflacionário, chegando a cerca de 8% em 2022, mas caiu para patamar próximo de 1% em 2023-2024. Em comparação, a prevalência global de insegurança alimentar grave permaneceu próxima de 10% em 2023-2024, e a América Latina e Caribe ficou acima do nível brasileiro recente.",
+    "nivel_confiabilidade":
+      "Alto para a fonte e metodologia, por ser indicador oficial FAO/ONU/ODS. Médio para leitura ano a ano, pois os valores são derivados de pesquisa amostral FIES e têm incerteza estatística; comparações de tendência são mais robustas quando feitas por médias trienais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FAO - FAOSTAT: Suite of Food Security Indicators",
+        "url": "https://www.fao.org/faostat/en/#data/FS",
+      },
+      {
+        "titulo": "FAO SDG Data Portal - Indicator 2.1.2",
+        "url":
+          "https://www.fao.org/sustainable-development-goals-data-portal/data/indicators/212-prevalence-of-moderate-or-severe-food-insecurity-in-the-population-based-on-the-food-insecurity-experience-scale/en",
+      },
+      {
+        "titulo": "UN Statistics Division - Metadata AG_PRD_FIESS",
+        "url": "https://unstats.un.org/sdgs/dataportal/SDMXMetadataPage?2.1.2-AG_PRD_FIESS=",
+      },
+      { "titulo": "FAO Microdata - Brazil FIES", "url": "https://microdata.fao.org/index.php/catalog/2450" },
+      {
+        "titulo": "SOFI 2024 - The State of Food Security and Nutrition in the World",
+        "url": "https://www.fao.org/3/cd1254en/online/cd1254en.html",
+      },
+      { "titulo": "FAO Hunger Map 2025", "url": "https://www.fao.org/interactive/hunger-map/en/" },
+      {
+        "titulo": "Gov.br - UN Hunger Map: severe food insecurity drops in Brazil",
+        "url":
+          "https://www.gov.br/secom/en/latest-news/2024/07/un-hunger-map-2023-severe-food-insecurity-drops-85-in-brazil",
+      },
+    ],
+    "dados": [
+      { "ano": 2014, "valor": 1.0 },
+      { "ano": 2022, "valor": 8.0 },
+      { "ano": 2023, "valor": 1.2 },
+      { "ano": 2024, "valor": 1.0 },
+    ],
   },
   "expectativa_vida": {
     "label": "Expectativa de vida ao nascer",
@@ -8132,33 +9374,59 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "IBGE/Tábuas Completas de Mortalidade",
     "cat": "Saúde",
     "descricao":
-      "Reflexo de melhorias em saneamento e SUS. Brasil envelheceu velozmente. A queda em 2020/2021 pela Covid foi sentida fortemente em emergentes (colapso hospitalar), enquanto a Europa conteve mortes contínuas pela infraestrutura.",
+      "Expectativa de vida ao nascer da população brasileira, em anos, segundo as Tábuas Completas de Mortalidade do IBGE.",
+    "como_interpretar":
+      "Indica quantos anos, em média, uma pessoa nascida no Brasil viveria se fossem mantidos os padrões de mortalidade observados ou projetados para o ano de referência. Valores maiores indicam menor mortalidade média e maior longevidade populacional.",
+    "metodologia":
+      "Indicador extraído das Tábuas Completas de Mortalidade do IBGE para ambos os sexos. As tábuas descrevem a incidência da mortalidade por idade exata e permitem calcular a expectativa de vida ao nascer. A metodologia utiliza censos demográficos, estimativas populacionais, registros oficiais de óbitos e nascidos vivos, além de procedimentos demográficos para transformar tábuas abreviadas em tábuas completas.",
+    "historico_metodologia":
+      "Desde 1999, o IBGE divulga anualmente as Tábuas Completas de Mortalidade para o total da população brasileira. A série foi afetada por revisões metodológicas associadas às projeções populacionais. As tábuas de 2020 e 2021 inicialmente não incorporavam os efeitos da Covid-19; a revisão mais recente passou a refletir a queda observada da expectativa de vida durante a pandemia, com recuperação a partir de 2022. A Tábua de 2024 é proveniente da Projeção da População do Brasil para 2000-2070, revisão 2024.",
+    "abrangencia": "Brasil, população residente, ambos os sexos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao": "A pandemia elevou o número de mortes no Brasil e reduziu a expectativa de vida ao nascer.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Pico pandêmico",
+        "descricao":
+          "A expectativa de vida ao nascer caiu para 72,8 anos, menor valor da série recente, devido ao agravamento da mortalidade associada à pandemia.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Arrefecimento",
+        "descricao":
+          "Com a redução do excesso de mortes causado pela pandemia, a expectativa de vida voltou a crescer.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2024, a expectativa de vida ao nascer no Brasil foi de 76,6 anos. Segundo o IBGE, os maiores valores mundiais citados para comparação eram Mônaco, 86,5 anos; San Marino, 85,8; Hong Kong, 85,6; Japão, 84,9; e Coreia do Sul, 84,4.",
+    "nivel_confiabilidade":
+      "Alto para os anos listados, pois os valores foram mantidos apenas quando confirmados em publicações oficiais do IBGE. Foram removidos anos anuais não confirmados diretamente nas fontes oficiais consultadas nesta validação.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IBGE - Tábuas Completas de Mortalidade",
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9126-tabuas-completas-de-mortalidade.html",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Expectativa de vida chega a 76,6 anos em 2024",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45275-expectativa-de-vida-chega-a-76-6-anos-em-2024",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Em 2023, expectativa de vida chega aos 76,4 anos",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia",
+      },
+    ],
     "dados": [
-      { "ano": 1994, "valor": 67.4 },
-      { "ano": 1995, "valor": 67.9 },
-      { "ano": 1996, "valor": 68.4 },
-      { "ano": 1997, "valor": 68.8 },
-      { "ano": 1998, "valor": 69.2 },
-      { "ano": 1999, "valor": 69.6 },
-      { "ano": 2000, "valor": 70.4 },
-      { "ano": 2001, "valor": 70.7 },
-      { "ano": 2002, "valor": 70.9 },
-      { "ano": 2003, "valor": 71.2 },
-      { "ano": 2004, "valor": 71.5 },
-      { "ano": 2005, "valor": 71.9 },
-      { "ano": 2006, "valor": 72.4 },
-      { "ano": 2007, "valor": 72.7 },
-      { "ano": 2008, "valor": 73 },
-      { "ano": 2009, "valor": 73.2 },
-      { "ano": 2010, "valor": 73.5 },
-      { "ano": 2011, "valor": 74.1 },
-      { "ano": 2012, "valor": 74.6 },
-      { "ano": 2013, "valor": 74.9 },
-      { "ano": 2014, "valor": 75.2 },
-      { "ano": 2015, "valor": 75.5 },
-      { "ano": 2016, "valor": 75.8 },
-      { "ano": 2017, "valor": 76.1 },
-      { "ano": 2018, "valor": 76.3 },
+      { "ano": 2000, "valor": 71.1 },
+      { "ano": 2010, "valor": 74.4 },
       { "ano": 2019, "valor": 76.2 },
       { "ano": 2020, "valor": 74.8 },
       { "ano": 2021, "valor": 72.8 },
@@ -8166,16 +9434,65 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 76.4 },
       { "ano": 2024, "valor": 76.6 },
     ],
-    "padrao": false,
   },
   "mortalidade_infantil": {
     "label": "Mortalidade infantil (menores de 1 ano)",
     "cor": "#0891b2",
     "unidade": "óbitos por 1.000 nascidos vivos",
-    "fonte": "Banco Mundial/UN IGME (base DATASUS SIM-Sinasc)",
+    "fonte": "Banco Mundial / UN IGME",
     "cat": "Saúde",
-    "descricao":
-      "Maior ganho social pós-democratização (vacinação, SUS). O Brasil já se aproxima de padrões de primeiro mundo, mas ainda enfrenta falhas de infraestrutura nas periferias e no Norte/Nordeste.",
+    "descricao": "Taxa de óbitos de crianças antes de completar 1 ano de idade por 1.000 nascidos vivos no Brasil.",
+    "como_interpretar":
+      "Quanto menor o valor, melhor o resultado sanitário. O indicador mede risco de morte no primeiro ano de vida e reflete condições de pré-natal, parto, neonatal, vacinação, nutrição, saneamento e acesso a serviços de saúde.",
+    "metodologia":
+      "Indicador SP.DYN.IMRT.IN do World Development Indicators. A taxa de mortalidade infantil é definida como o número de crianças que morrem antes de completar 1 ano por 1.000 nascidos vivos em determinado ano. A fonte primária metodológica é o UN Inter-agency Group for Child Mortality Estimation (UN IGME), formado por UNICEF, WHO, World Bank e UN DESA Population Division.",
+    "historico_metodologia":
+      "A série do Banco Mundial/WDI usa estimativas oficiais harmonizadas do UN IGME, revisadas periodicamente conforme novas bases vitais, censos, pesquisas domiciliares e métodos de modelagem são incorporados. Portanto, os valores são comparáveis internacionalmente, mas podem sofrer revisões retroativas. A fonte não é uma contagem bruta direta do DATASUS; é uma série internacional harmonizada.",
+    "abrangencia":
+      "Brasil, população total, ambos os sexos, crianças menores de 1 ano, taxa anual por 1.000 nascidos vivos.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2016,
+        "nome": "Zika",
+        "descricao":
+          "O Brasil registrou epidemia de Zika e aumento de anomalias congênitas associadas, com impacto sanitário relevante sobre gestantes e recém-nascidos; a série mostra interrupção temporária da tendência de queda em 2016.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia afetou sistemas de saúde, vacinação e serviços materno-infantis globalmente; na série brasileira do UN IGME/Banco Mundial, a taxa permaneceu quase estável entre 2020 e 2022, sem forte queda no período.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 12,3 óbitos por 1.000 nascidos vivos, abaixo da média mundial de 27,7, mas ainda acima dos níveis típicos de países de alta renda.",
+    "nivel_confiabilidade":
+      "Alta para comparação histórica e internacional, pois a série é publicada pelo Banco Mundial com metodologia UN IGME. Porém, os valores são estimativas oficiais harmonizadas, não contagens brutas observadas; podem ser revisados em atualizações futuras.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Mortality rate, infant (per 1,000 live births) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=BR",
+      },
+      {
+        "titulo": "FRED / World Bank - Infant Mortality Rate for Brazil",
+        "url": "https://fred.stlouisfed.org/series/SPDYNIMRTINBRA",
+      },
+      {
+        "titulo": "FRED / World Bank - Table Data - Infant Mortality Rate for Brazil",
+        "url": "https://fred.stlouisfed.org/data/SPDYNIMRTINBRA",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SP.DYN.IMRT.IN",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.DYN.IMRT.IN",
+      },
+      {
+        "titulo": "UN IGME / UNICEF - Levels and Trends in Child Mortality",
+        "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality/",
+      },
+    ],
     "dados": [
       { "ano": 1994, "valor": 42.4 },
       { "ano": 1995, "valor": 39.9 },
@@ -8186,18 +9503,18 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2000, "valor": 29.1 },
       { "ano": 2001, "valor": 27.3 },
       { "ano": 2002, "valor": 25.6 },
-      { "ano": 2003, "valor": 24 },
+      { "ano": 2003, "valor": 24.0 },
       { "ano": 2004, "valor": 22.4 },
-      { "ano": 2005, "valor": 21 },
+      { "ano": 2005, "valor": 21.0 },
       { "ano": 2006, "valor": 19.7 },
       { "ano": 2007, "valor": 18.6 },
       { "ano": 2008, "valor": 17.6 },
       { "ano": 2009, "valor": 16.7 },
-      { "ano": 2010, "valor": 16 },
+      { "ano": 2010, "valor": 16.0 },
       { "ano": 2011, "valor": 15.3 },
       { "ano": 2012, "valor": 14.8 },
       { "ano": 2013, "valor": 14.4 },
-      { "ano": 2014, "valor": 14 },
+      { "ano": 2014, "valor": 14.0 },
       { "ano": 2015, "valor": 13.7 },
       { "ano": 2016, "valor": 14.6 },
       { "ano": 2017, "valor": 13.3 },
@@ -8209,198 +9526,372 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 12.4 },
       { "ano": 2024, "valor": 12.3 },
     ],
-    "padrao": false,
   },
   "cobertura_vacinal_infantil": {
-    "label": "Cobertura Vacinal Infantil (PNI)",
+    "label": "Cobertura Vacinal Infantil (Calendário Nacional - média simples)",
     "cor": "#3b82f6",
     "unidade": "% da população-alvo",
-    "fonte": "DataSUS / Ministério da Saúde / OMS / UNICEF",
+    "fonte": "Ministério da Saúde / DataSUS / RNDS / SI-PNI",
     "cat": "Saúde",
     "descricao":
-      "A Cobertura Vacinal Infantil mede o percentual de crianças que receberam o esquema completo das vacinas básicas (como Polio, Pentavalente e Tríplice Viral) preconizadas pelo Programa Nacional de Imunizações (PNI). Ela funciona como o principal indicador de saúde pública preventiva, essencial para evitar o ressurgimento de doenças erradicadas. Historicamente, o Brasil foi referência mundial com coberturas acima de 95% até 2015. As maiores variações negativas iniciaram em 2016, devido à complexidade do calendário, falhas no abastecimento e o crescimento da hesitação vacinal impulsionada por fake news. O evento mais crítico foi a pandemia de 2020, que derrubou a cobertura para patamares alarmantes de ~70% devido ao isolamento social e medo de contágio em postos de saúde. A precisão dos dados de 1994 a 2023 baseia-se nos registros oficiais do DataSUS (SI-PNI); os valores para 2024-2026 são projeções que consideram o impacto do 'Movimento Nacional pela Vacinação' e a busca ativa de não vacinados. Comparativamente, o Brasil já superou a Europa na década de 2000, mas hoje luta para se reaproximar da média europeia (~93%). Na América Latina, o país perdeu a liderança para o Uruguai e Chile, situando-se próximo à média regional de 80%. No cenário mundial, a queda brasileira seguiu uma tendência global de 'fadiga vacinal', mas a projeção de 89,5% para 2026 sinaliza uma retomada da confiança e da eficiência logística do sistema público de saúde.",
-    "dados": [
-      { "ano": 1994, "valor": 88.5 },
-      { "ano": 1995, "valor": 89.2 },
-      { "ano": 1996, "valor": 91.4 },
-      { "ano": 1997, "valor": 92.8 },
-      { "ano": 1998, "valor": 94.5 },
-      { "ano": 1999, "valor": 95.1 },
-      { "ano": 2000, "valor": 96.2 },
-      { "ano": 2001, "valor": 95.8 },
-      { "ano": 2002, "valor": 96.5 },
-      { "ano": 2003, "valor": 97.1 },
-      { "ano": 2004, "valor": 97.8 },
-      { "ano": 2005, "valor": 98.2 },
-      { "ano": 2006, "valor": 97.5 },
-      { "ano": 2007, "valor": 97.2 },
-      { "ano": 2008, "valor": 96.8 },
-      { "ano": 2009, "valor": 97.4 },
-      { "ano": 2010, "valor": 98.1 },
-      { "ano": 2011, "valor": 97.9 },
-      { "ano": 2012, "valor": 96.5 },
-      { "ano": 2013, "valor": 97.2 },
-      { "ano": 2014, "valor": 96.8 },
-      { "ano": 2015, "valor": 95.1 },
-      { "ano": 2016, "valor": 89.4 },
-      { "ano": 2017, "valor": 85.2 },
-      { "ano": 2018, "valor": 86.5 },
-      { "ano": 2019, "valor": 84.1 },
-      { "ano": 2020, "valor": 75.8 },
-      { "ano": 2021, "valor": 71.4 },
-      { "ano": 2022, "valor": 72.9 },
-      { "ano": 2023, "valor": 77.5 },
-      { "ano": 2024, "valor": 82.3 },
-      { "ano": 2025, "valor": 86.8 },
-      { "ano": 2026, "valor": 89.5 },
+      "Indicador derivado que resume a cobertura vacinal infantil no Brasil pela média aritmética simples das coberturas oficiais dos 16 imunobiológicos do Calendário Nacional infantil divulgados pelo Ministério da Saúde para 2023 e 2024. A série original enviada continha projeções e valores não verificáveis como série oficial única desde 1994; por isso foi substituída apenas por valores concretos calculados a partir de dados oficiais disponíveis.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção da população-alvo infantil com doses registradas para os imunobiológicos avaliados. Como é uma média simples de diferentes vacinas, não substitui a análise individual por imunobiológico. A meta operacional usual do PNI é de 90% ou 95%, dependendo da vacina, conforme regra do Ministério da Saúde.",
+    "metodologia":
+      "Média aritmética simples das coberturas oficiais publicadas para os 16 imunobiológicos infantis listados pelo Ministério da Saúde: BCG, Hepatite B, Rotavírus Humano, Meningococo C, Penta, Pneumocócica, Polio Oral Bivalente, Polio Injetável, Febre Amarela, Hepatite A Infantil, Pneumocócica 1º reforço, Meningococo C 1º reforço, Tríplice Viral D1, Tríplice Viral D2, DTP 1º reforço e Varicela. Fórmula: soma das coberturas dos imunobiológicos no ano dividida por 16. Os dados de 2023 e 2024 foram extraídos de material oficial do Ministério da Saúde; 2024 consta como dado extraído em 25/11/2024.",
+    "historico_metodologia":
+      "Não existe, nas fontes oficiais consultadas, uma série histórica anual única chamada 'Cobertura Vacinal Infantil (PNI)' com um único valor agregado desde 1994. O DataSUS disponibiliza séries por imunobiológico desde 1994, mas com alterações de calendário, inclusão/substituição de vacinas e mudanças de sistemas de informação. O Ministério da Saúde informa que as regras de cálculo de cobertura vacinal para crianças menores de 1 ano e de 1 ano usam últimas doses do esquema no numerador e população SINASC no denominador, com transição metodológica para novas regras em 2023 e 2024. Portanto, os valores de 1994 a 2022 da série enviada foram removidos por não corresponderem a uma série oficial única verificável.",
+    "abrangencia":
+      "Brasil, população-alvo infantil conforme regras de cobertura vacinal do Calendário Nacional de Vacinação.",
+    "periodicidade": "Anual, conforme divulgação e atualização dos sistemas oficiais de imunização.",
+    "eventos_externos": [
+      {
+        "ano": 2023,
+        "nome": "Retomada PNI",
+        "descricao":
+          "O Ministério da Saúde registrou aumento nas coberturas de 13 dos 16 principais imunizantes do calendário infantil em 2023 em comparação com 2022.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Recertificação sarampo",
+        "descricao":
+          "A OPAS/OMS recertificou o Brasil como país livre do sarampo; o Ministério da Saúde atribuiu o resultado às ações de recuperação das coberturas vacinais.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta infantil",
+        "descricao":
+          "O Ministério da Saúde divulgou aumento de 15 das 16 vacinas recomendadas para o público infantil em 2024, com três vacinas acima da meta.",
+      },
     ],
+    "comparacao_paises":
+      "Comparação internacional direta não foi mantida porque a métrica validada aqui é uma média simples derivada de 16 imunobiológicos do Calendário Nacional brasileiro, não um indicador padronizado internacionalmente. Para comparação entre países, o uso metodologicamente mais adequado é por vacina específica, como DTP3, Polio3 ou MCV1, geralmente nas bases OMS/UNICEF; porém essas séries internacionais são estimativas e foram excluídas conforme a regra de manter apenas dados oficiais concretos.",
+    "nivel_confiabilidade":
+      "Médio-alto para 2023 e 2024, porque os valores de base são oficiais do Ministério da Saúde, mas o indicador agregado é derivado por média simples e não é uma série oficial única do PNI. Baixo/inválido para os valores originais de 1994 a 2026, porque incluíam projeções futuras e números agregados não rastreáveis a uma metodologia oficial única.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "DataSUS - Imunizações desde 1994",
+        "url": "https://datasus.saude.gov.br/acesso-a-informacao/imunizacoes-desde-1994/",
+      },
+      {
+        "titulo": "Ministério da Saúde - Coberturas Vacinais Brasil 2023-2024",
+        "url": "https://infoms.saude.gov.br/content/Default/Cobertura%20Vacinal%202023-2024.pdf",
+      },
+      {
+        "titulo": "Ministério da Saúde - Nota Informativa sobre Cobertura Vacinal do Calendário Nacional",
+        "url": "https://infoms.saude.gov.br/content/Default/NOTA_INFORMATIVA_SOBRE_CV_CALEND%C3%81RIO_NACIONAL.pdf",
+      },
+      {
+        "titulo": "Ministério da Saúde - Cobertura Vacinal Calendário Nacional",
+        "url":
+          "https://infoms.saude.gov.br/extensions/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA.html",
+      },
+      {
+        "titulo": "Ministério da Saúde - Aumento de 15 das 16 vacinas do calendário infantil",
+        "url":
+          "https://www.gov.br/saude/pt-br/assuntos/noticias/2024/dezembro/cresce-a-cobertura-de-15-das-16-vacinas-do-calendario-infantil",
+      },
+      {
+        "titulo": "Ministério da Saúde - Recertificação de país livre do sarampo",
+        "url":
+          "https://www.gov.br/saude/pt-br/assuntos/noticias/2024/novembro/brasil-recebe-recertificacao-de-pais-livre-do-sarampo",
+      },
+    ],
+    "dados": [
+      { "ano": 2023, "valor": 82.35 },
+      { "ano": 2024, "valor": 86.99 },
+    ],
   },
   "gasto_saude_publico_pib": {
     "label": "Gasto público em saúde / PIB",
     "cor": "#0284c7",
     "unidade": "% do PIB",
-    "fonte": "OMS Global Health Expenditure Database; Ministério da Saúde/SIOPS",
+    "fonte": "OMS Global Health Expenditure Database via World Bank WDI",
     "cat": "Saúde",
-    "descricao":
-      "Proporção da riqueza voltada ao SUS (<4,5% do PIB). Indica subfinanciamento estrutural se comparado aos 8-9% da Europa (NHS/França). A elite recorre ao setor privado enquanto a massa enfrenta restrições do teto fiscal.",
-    "dados": [
-      { "ano": 2000, "valor": 2.9 },
-      { "ano": 2001, "valor": 3 },
-      { "ano": 2002, "valor": 3.1 },
-      { "ano": 2003, "valor": 3.2 },
-      { "ano": 2004, "valor": 3.3 },
-      { "ano": 2005, "valor": 3.4 },
-      { "ano": 2006, "valor": 3.6 },
-      { "ano": 2007, "valor": 3.6 },
-      { "ano": 2008, "valor": 3.7 },
-      { "ano": 2009, "valor": 3.9 },
-      { "ano": 2010, "valor": 3.9 },
-      { "ano": 2011, "valor": 3.9 },
-      { "ano": 2012, "valor": 4 },
-      { "ano": 2013, "valor": 4 },
-      { "ano": 2014, "valor": 4.1 },
-      { "ano": 2015, "valor": 3.9 },
-      { "ano": 2016, "valor": 3.9 },
-      { "ano": 2017, "valor": 3.9 },
-      { "ano": 2018, "valor": 3.9 },
-      { "ano": 2019, "valor": 3.9 },
-      { "ano": 2020, "valor": 4.5 },
-      { "ano": 2021, "valor": 4.3 },
-      { "ano": 2022, "valor": 4 },
-      { "ano": 2023, "valor": 3.9 },
-      { "ano": 2024, "valor": 3.9 },
+    "descricao": "Despesa pública doméstica do governo geral em saúde como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior participação do gasto público doméstico em saúde na economia. O indicador mede volume relativo de gasto, não eficiência, qualidade, acesso ou resultado em saúde.",
+    "metodologia":
+      "Indicador SH.XPD.GHED.GD.ZS: despesa pública em saúde de fontes domésticas como proporção do PIB. A série é preparada pela OMS no Global Health Expenditure Database sob o System of Health Accounts 2011 (SHA 2011) e divulgada no World Development Indicators do Banco Mundial. Fórmula: gasto público doméstico em saúde dividido pelo PIB, multiplicado por 100.",
+    "historico_metodologia":
+      "A série oficial atual da OMS/Banco Mundial para o Brasil cobre 2000 a 2023. Não há valor oficial consolidado nessa fonte para 1994 nem para 2024. O SIOPS/RIPSA mede ASPS no SUS e tem metodologia nacional própria baseada em despesas empenhadas de União, estados e municípios; por isso, seus valores não são idênticos aos da OMS/GHED. Para manter consistência metodológica internacional, os dados abaixo usam apenas a série OMS/GHED/WDI.",
+    "abrangencia":
+      "Brasil; governo geral; despesa pública doméstica em saúde; indicador internacional comparável entre países.",
+    "periodicidade": "Anual",
+    "eventos_externos": [
+      {
+        "ano": 2012,
+        "nome": "LC 141",
+        "descricao":
+          "A Lei Complementar nº 141/2012 regulamentou critérios de aplicação mínima em ações e serviços públicos de saúde no Brasil, afetando a governança nacional do financiamento público em saúde.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia elevou a pressão sobre o gasto público em saúde e coincide com aumento do indicador em 2020 e manutenção em patamar elevado em 2021.",
+      },
     ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 4,29% do PIB em gasto público doméstico em saúde, abaixo de países como Alemanha, Estados Unidos, Reino Unido e França, e acima de México, Índia e Indonésia na mesma métrica internacional da OMS/GHED/WDI.",
+    "nivel_confiabilidade":
+      "Alto para comparações internacionais entre 2000 e 2023, pois usa série padronizada da OMS/GHED divulgada pelo Banco Mundial. Não foram mantidos 1994-1999 nem 2024 por ausência de valor oficial consolidado na série WDI atual para o Brasil.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank WDI - Domestic general government health expenditure (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SH.XPD.GHED.GD.ZS",
+        "url":
+          "https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SH.XPD.GHED.GD.ZS",
+      },
+      {
+        "titulo": "WHO - Domestic general government health expenditure (GGHE-D) as percentage of GDP",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/domestic-general-government-health-expenditure-(gghe-d)-as-percentage-of-gross-domestic-product-(gdp)-(-)",
+      },
+      { "titulo": "Ministério da Saúde - SIOPS", "url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/siops" },
+      {
+        "titulo": "RIPSA - Gasto em ASPS como percentual do PIB",
+        "url": "https://www.ripsa.org.br/fichasidb/a-demografico/ficha?code=RIPSA006RC",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 3.47 },
+      { "ano": 2001, "valor": 3.51 },
+      { "ano": 2002, "valor": 3.69 },
+      { "ano": 2003, "valor": 3.51 },
+      { "ano": 2004, "valor": 3.47 },
+      { "ano": 2005, "valor": 3.35 },
+      { "ano": 2006, "valor": 3.54 },
+      { "ano": 2007, "valor": 3.49 },
+      { "ano": 2008, "valor": 3.51 },
+      { "ano": 2009, "valor": 3.71 },
+      { "ano": 2010, "valor": 3.58 },
+      { "ano": 2011, "valor": 3.47 },
+      { "ano": 2012, "valor": 3.36 },
+      { "ano": 2013, "valor": 3.56 },
+      { "ano": 2014, "valor": 3.71 },
+      { "ano": 2015, "valor": 3.86 },
+      { "ano": 2016, "valor": 3.95 },
+      { "ano": 2017, "valor": 3.96 },
+      { "ano": 2018, "valor": 3.9 },
+      { "ano": 2019, "valor": 3.93 },
+      { "ano": 2020, "valor": 4.18 },
+      { "ano": 2021, "valor": 4.32 },
+      { "ano": 2022, "valor": 4.26 },
+      { "ano": 2023, "valor": 4.29 },
+    ],
   },
   "pisa_brasil_media": {
-    "label": "PISA (Média Global de Desempenho)",
+    "label": "PISA (Média de Matemática, Leitura e Ciências)",
     "cor": "#ef4444",
-    "unidade": "Pontos (Escala 0-600)",
+    "unidade": "Pontos",
     "fonte": "OCDE / INEP",
     "cat": "Educação",
     "descricao":
-      "O PISA (Programa Internacional de Avaliação de Estudantes) é a métrica de maior prestígio para avaliar a qualidade dos sistemas educacionais globais. Ele não mede apenas a memorização de conteúdos, mas a capacidade de estudantes de 15 anos de 'aplicar conhecimentos em Leitura, Matemática e Ciências para resolver desafios da vida real'. Coordenado pela OCDE a cada três anos, o exame funciona através de provas padronizadas aplicadas a uma amostra representativa de alunos. No Brasil, a série histórica revela uma evolução inicial modesta nos anos 2000, seguida por uma estagnação estrutural. O maior impacto negativo ocorreu no ciclo de 2022 (divulgado no fim de 2023), onde o Brasil sofreu um recuo severo em Matemática e Leitura devido ao 'longo período de escolas fechadas durante a pandemia e à profunda desigualdade no acesso ao ensino remoto'. A precisão dos dados é estatisticamente elevada para os anos de aplicação (2000, 2003, 2006, 2009, 2012, 2015, 2018, 2022, 2025), enquanto os anos intermediários e o período 1994-1999 são retroprojeções fundamentadas no SAEB. Comparativamente, o Brasil apresenta um desempenho persistentemente abaixo da média da OCDE (~472 pontos); na América Latina, o país costuma figurar atrás de Chile, Uruguai e México. Em relação à Europa, o hiato é alarmante: estudantes brasileiros estão, em média, o equivalente a três anos de escolaridade atrás de um estudante da Estónia ou Finlândia. Globalmente, o Brasil luta para romper a barreira do 'nível 2' de proficiência (considerado o básico para exercer a cidadania), situando-se em 2026 em uma trajetória de recuperação lenta, com média projetada de 392 pontos após os resultados do ciclo 2025.",
-    "dados": [
-      { "ano": 1994, "valor": 352 },
-      { "ano": 1995, "valor": 355 },
-      { "ano": 1996, "valor": 358 },
-      { "ano": 1997, "valor": 361 },
-      { "ano": 1998, "valor": 364 },
-      { "ano": 1999, "valor": 366 },
-      { "ano": 2000, "valor": 368 },
-      { "ano": 2001, "valor": 371 },
-      { "ano": 2002, "valor": 373 },
-      { "ano": 2003, "valor": 375 },
-      { "ano": 2004, "valor": 378 },
-      { "ano": 2005, "valor": 382 },
-      { "ano": 2006, "valor": 385 },
-      { "ano": 2007, "valor": 390 },
-      { "ano": 2008, "valor": 395 },
-      { "ano": 2009, "valor": 401 },
-      { "ano": 2010, "valor": 398 },
-      { "ano": 2011, "valor": 395 },
-      { "ano": 2012, "valor": 391 },
-      { "ano": 2013, "valor": 393 },
-      { "ano": 2014, "valor": 394 },
-      { "ano": 2015, "valor": 395 },
-      { "ano": 2016, "valor": 397 },
-      { "ano": 2017, "valor": 399 },
-      { "ano": 2018, "valor": 400 },
-      { "ano": 2019, "valor": 396 },
-      { "ano": 2020, "valor": 390 },
-      { "ano": 2021, "valor": 385 },
-      { "ano": 2022, "valor": 379 },
-      { "ano": 2023, "valor": 382 },
-      { "ano": 2024, "valor": 385 },
-      { "ano": 2025, "valor": 388 },
-      { "ano": 2026, "valor": 392 },
+      "Média simples dos desempenhos do Brasil nas três áreas centrais do PISA: Matemática, Leitura e Ciências.",
+    "como_interpretar":
+      "Quanto maior o valor, melhor o desempenho médio dos estudantes brasileiros de 15 anos nas competências avaliadas pelo PISA. O indicador não é divulgado oficialmente como uma métrica única pela OCDE; foi calculado a partir das pontuações oficiais das três áreas.",
+    "metodologia":
+      "O PISA avalia estudantes de 15 anos em Matemática, Leitura e Ciências, por amostragem representativa nacional. Para este indicador, foi calculada a média aritmética simples dos três escores oficiais do Brasil em cada ciclo com dados comparáveis disponíveis para as três áreas: valor = (Matemática + Leitura + Ciências) / 3.",
+    "historico_metodologia":
+      "O PISA é aplicado em ciclos trienais desde 2000. Matemática é comparável como domínio principal desde 2003; Ciências desde 2006; Leitura desde 2000. Por isso, foram removidos 1994-2005 e anos intermediários, pois não há série oficial anual nem pontuação oficial única de média global. O ciclo de 2021 foi adiado para 2022 por causa da pandemia. Resultados de 2025 ainda não estavam oficialmente publicados em 24/04/2026.",
+    "abrangencia":
+      "Brasil; estudantes de 15 anos matriculados a partir dos anos/séries elegíveis definidos pela metodologia do PISA.",
+    "periodicidade": "Trienal, apenas nos ciclos de aplicação do PISA.",
+    "eventos_externos": [
+      {
+        "ano": 2022,
+        "nome": "Pandemia",
+        "descricao":
+          "O ciclo previsto para 2021 foi adiado para 2022 no contexto da pandemia de Covid-19. A OCDE registrou que, no Brasil, os resultados médios de 2022 ficaram aproximadamente no mesmo nível de 2018 em Matemática, Leitura e Ciências.",
+      },
     ],
+    "comparacao_paises":
+      "Em 2022, o Brasil ficou abaixo da média da OCDE nas três áreas: Matemática 379 contra 472 da OCDE, Leitura 410 contra 476 da OCDE, e Ciências 403 contra 485 da OCDE. Na América Latina, em Leitura, o INEP informou que o Brasil ficou abaixo de Chile e Uruguai, acima da Argentina e sem diferença estatisticamente significativa frente a Colômbia e Peru.",
+    "nivel_confiabilidade":
+      "Alto para os ciclos oficiais do PISA incluídos, pois os valores vêm da base oficial OCDE/INEP. Baixo ou inexistente para anos fora dos ciclos oficiais; por isso, projeções, interpolações, retroprojeções e anos sem resultado publicado foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "OECD - PISA 2022 Results: Brazil Country Note",
+        "url":
+          "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html",
+      },
+      {
+        "titulo": "OECD Education GPS - Brazil Student Performance PISA 2022",
+        "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=BRA&topic=PI",
+      },
+      {
+        "titulo": "INEP - Divulgados os resultados do PISA 2022",
+        "url":
+          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/acoes-internacionais/divulgados-os-resultados-do-pisa-2022",
+      },
+      {
+        "titulo": "INEP - Nota sobre o Brasil no PISA 2022",
+        "url": "https://download.inep.gov.br/acoes_internacionais/pisa/resultados/2022/pisa_2022_brazil_prt.pdf",
+      },
+      { "titulo": "OECD - PISA Data Explorer", "url": "https://pisadataexplorer.oecd.org/ide/idepisa/" },
+      {
+        "titulo": "OECD - PISA Data and Methodology",
+        "url": "https://www.oecd.org/en/about/programmes/pisa/pisa-data.html",
+      },
+    ],
+    "dados": [
+      { "ano": 2006, "valor": 384.25 },
+      { "ano": 2009, "valor": 401 },
+      { "ano": 2012, "valor": 400.35 },
+      { "ano": 2015, "valor": 395.03 },
+      { "ano": 2018, "valor": 400.02 },
+      { "ano": 2022, "valor": 397.35 },
+    ],
   },
   "alfabetizacao": {
     "label": "Taxa de alfabetização (15+ anos)",
     "cor": "#10b981",
     "unidade": "% da população 15+",
-    "fonte": "Banco Mundial/UNESCO (base IBGE PNAD/PNADC/Censo)",
+    "fonte": "Banco Mundial / UNESCO Institute for Statistics",
     "cat": "Educação",
     "descricao":
-      "Capacidade mínima de leitura (15+ anos). O país aproxima-se de 95%, mas mascara analfabetismo funcional massivo (INAF). A Europa e o Cone Sul resolveram a base funcional no início do séc XX.",
-    "dados": [
-      { "ano": 1995, "valor": 83.3 },
-      { "ano": 1996, "valor": 85.4 },
-      { "ano": 1997, "valor": 85.3 },
-      { "ano": 1998, "valor": 86 },
-      { "ano": 1999, "valor": 86.7 },
-      { "ano": 2000, "valor": 86.37 },
-      { "ano": 2001, "valor": 87.6 },
-      { "ano": 2002, "valor": 88.2 },
-      { "ano": 2003, "valor": 88.5 },
-      { "ano": 2004, "valor": 88.62 },
-      { "ano": 2005, "valor": 88.9 },
-      { "ano": 2006, "valor": 89.62 },
-      { "ano": 2007, "valor": 90.01 },
-      { "ano": 2008, "valor": 90.04 },
-      { "ano": 2009, "valor": 90.3 },
-      { "ano": 2010, "valor": 90.38 },
-      { "ano": 2011, "valor": 91.41 },
-      { "ano": 2012, "valor": 91.34 },
-      { "ano": 2013, "valor": 91.48 },
-      { "ano": 2014, "valor": 91.73 },
-      { "ano": 2015, "valor": 92.05 },
-      { "ano": 2016, "valor": 92.81 },
-      { "ano": 2017, "valor": 93.08 },
-      { "ano": 2018, "valor": 93.23 },
-      { "ano": 2019, "valor": 93.8926 },
-      { "ano": 2020, "valor": 94.7444 },
-      { "ano": 2021, "valor": 94.7726 },
-      { "ano": 2022, "valor": 94.3769 },
-      { "ano": 2023, "valor": 94.5725 },
-      { "ano": 2024, "valor": 94.74 },
-    ],
+      "Percentual da população de 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a proporção de adultos alfabetizados. O indicador mede alfabetização básica declarada/registrada, não alfabetismo funcional avançado.",
+    "metodologia":
+      "O indicador é calculado dividindo o número de pessoas alfabetizadas com 15 anos ou mais pela população total da mesma faixa etária, excluindo pessoas com situação de alfabetização desconhecida, e multiplicando o resultado por 100.",
+    "historico_metodologia":
+      "A série do Banco Mundial/WDI usa dados compilados pelo UNESCO Institute for Statistics a partir de censos nacionais e pesquisas domiciliares. A metadata oficial informa que, para países sem dados recentes, podem ser usadas projeções pelo Global Age-Specific Literacy Projection Model (GALP). Nesta validação foram mantidos apenas anos com valor publicado na série WDI/FRED; anos sem valor foram removidos.",
+    "abrangencia": "Brasil; população de 15 anos ou mais.",
+    "periodicidade": "Anual, com lacunas em anos sem observação publicada.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "O indicador é comparável internacionalmente na base WDI/UNESCO. Em 2024, o Brasil aparece com 94,74%, próximo da alfabetização adulta universal, mas ainda abaixo de países com taxas próximas de 99% e acima de muitos países de menor renda. Comparações anuais devem considerar que nem todos os países têm observações disponíveis no mesmo ano.",
+    "nivel_confiabilidade":
+      "Alta para os anos mantidos, pois os valores vêm da série World Development Indicators do Banco Mundial, com fonte primária UNESCO Institute for Statistics. A confiabilidade é menor para inferências entre anos, porque a série possui lacunas antes de 2006 e a própria metadata oficial admite uso de projeções em alguns países quando não há dados recentes.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Literacy rate, adult total (% of people ages 15 and above) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=BR",
+      },
+      {
+        "titulo": "FRED - Literacy Rate, Adult Total for Brazil (SEADTLITRZSBRA)",
+        "url": "https://fred.stlouisfed.org/series/SEADTLITRZSBRA",
+      },
+      {
+        "titulo": "FRED - Table Data - Literacy Rate, Adult Total for Brazil",
+        "url": "https://fred.stlouisfed.org/data/SEADTLITRZSBRA",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata Glossary - SE.ADT.LITR.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/millennium-development-goals/series/SE.ADT.LITR.ZS",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 86.370002746582 },
+      { "ano": 2004, "valor": 88.620002746582 },
+      { "ano": 2006, "valor": 89.620002746582 },
+      { "ano": 2007, "valor": 90.0100021362305 },
+      { "ano": 2008, "valor": 90.0400009155273 },
+      { "ano": 2009, "valor": 90.3000030517578 },
+      { "ano": 2010, "valor": 90.379997253418 },
+      { "ano": 2011, "valor": 91.4100036621094 },
+      { "ano": 2012, "valor": 91.3399963378906 },
+      { "ano": 2013, "valor": 91.4800033569336 },
+      { "ano": 2014, "valor": 91.7300033569336 },
+      { "ano": 2015, "valor": 92.0500030517578 },
+      { "ano": 2016, "valor": 92.8099975585938 },
+      { "ano": 2017, "valor": 93.0800018310547 },
+      { "ano": 2018, "valor": 93.2300033569336 },
+      { "ano": 2019, "valor": 93.8926266999537 },
+      { "ano": 2020, "valor": 94.7444114331042 },
+      { "ano": 2021, "valor": 94.7726170886975 },
+      { "ano": 2022, "valor": 94.376866160108 },
+      { "ano": 2023, "valor": 94.5725490635077 },
+      { "ano": 2024, "valor": 94.7399978637695 },
+    ],
   },
   "ideb_fund_iniciais": {
     "label": "IDEB — Anos Iniciais do Ensino Fundamental",
     "cor": "#059669",
     "unidade": "nota 0-10",
-    "fonte": "INEP/MEC (SAEB + Censo Escolar)",
+    "fonte": "Inep/MEC (Saeb + Censo Escolar)",
     "cat": "Educação",
     "descricao":
-      "Eficiência infantil nas escolas municipais. Alcançou as metas governamentais (Série de 6.0), mas o aprendizado dilui-se em níveis superiores de ciências puras, onde as lacunas básicas persistem.",
+      "Índice de Desenvolvimento da Educação Básica dos anos iniciais do ensino fundamental no Brasil, combinando desempenho no Saeb e fluxo escolar do Censo Escolar.",
+    "como_interpretar":
+      "Quanto maior o valor, melhor o resultado combinado de aprendizagem e aprovação escolar. O índice varia de 0 a 10 e é calculado pela multiplicação da proficiência média padronizada pelo indicador de rendimento escolar.",
+    "metodologia":
+      "O Ideb reúne dois componentes: médias de desempenho dos estudantes no Saeb e dados de aprovação escolar do Censo Escolar. Na apresentação oficial do Ideb 2023, o Inep explicita o cálculo como Ideb = N x P, em que N é a média padronizada de proficiência e P é o indicador de rendimento.",
+    "historico_metodologia":
+      "O Ideb foi criado em 2007, com série histórica iniciada em 2005. A divulgação é bienal para os anos de aplicação do Saeb. O primeiro ciclo de metas do Ideb foi definido de 2007 a 2021 no âmbito do Compromisso Todos pela Educação. Para 2021, a interpretação exige cautela porque o período foi afetado pela pandemia de Covid-19, com alterações fortes nas taxas de aprovação e no desempenho medido.",
+    "abrangencia":
+      "Brasil, anos iniciais do ensino fundamental, total de redes de ensino com dados válidos no Saeb e no Censo Escolar.",
+    "periodicidade": "Bienal.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Criação Ideb",
+        "descricao":
+          "O Ideb foi criado em 2007 e passou a reunir fluxo escolar e desempenho em avaliações em um único indicador, com série histórica iniciada em 2005.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Covid-19",
+        "descricao":
+          "O resultado de 2021 ocorreu após forte impacto da pandemia na trajetória escolar, nas taxas de aprovação e nas proficiências medidas pelo Saeb.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Retomada Saeb",
+        "descricao":
+          "Em 2023, o Ideb dos anos iniciais voltou a 6,0, com indicador de rendimento de 0,97 e média padronizada de proficiência de 6,15.",
+      },
+    ],
+    "comparacao_paises":
+      "O Ideb não é diretamente comparável entre países, pois é um indicador nacional brasileiro baseado no Saeb e no Censo Escolar. Para comparação internacional de aprendizagem, o indicador mais apropriado é o PISA, da OCDE.",
+    "nivel_confiabilidade":
+      "Alto. Os valores são oficiais, publicados pelo Inep/MEC, e correspondem à série histórica nacional do Ideb Total dos anos iniciais do ensino fundamental de 2005 a 2023.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Inep — Índice de Desenvolvimento da Educação Básica (Ideb)",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb",
+      },
+      {
+        "titulo": "Inep — Resultados do Ideb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
+      },
+      {
+        "titulo": "Inep — Apresentação Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
+      },
+      {
+        "titulo": "Inep — Nota técnica das metas intermediárias do Ideb",
+        "url":
+          "https://download.inep.gov.br/educacao_basica/portal_ideb/o_que_sao_as_metas/Nota_Tecnica_n2_metas_intermediarias_IDEB.pdf",
+      },
+    ],
     "dados": [
       { "ano": 2005, "valor": 3.8 },
       { "ano": 2007, "valor": 4.2 },
       { "ano": 2009, "valor": 4.6 },
-      { "ano": 2011, "valor": 5 },
+      { "ano": 2011, "valor": 5.0 },
       { "ano": 2013, "valor": 5.2 },
       { "ano": 2015, "valor": 5.5 },
       { "ano": 2017, "valor": 5.8 },
       { "ano": 2019, "valor": 5.9 },
       { "ano": 2021, "valor": 5.8 },
-      { "ano": 2023, "valor": 6 },
+      { "ano": 2023, "valor": 6.0 },
     ],
-    "padrao": false,
   },
   "ideb_medio": {
     "label": "IDEB — Ensino Médio",
@@ -8409,7 +9900,63 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "INEP/MEC (SAEB + Censo Escolar)",
     "cat": "Educação",
     "descricao":
-      "Gargalo estadual e produtivo (estagnado perto de 4.0). Jovens formam-se desprovidos de competência básica frente a asiáticos e europeus/canadenses nas avaliações do PISA. O fosso brutal de qualificação é exato.",
+      "Indicador sintético da qualidade da educação no ensino médio brasileiro, combinando desempenho no Saeb e fluxo escolar do Censo Escolar.",
+    "como_interpretar":
+      "Quanto maior o valor, melhor o resultado agregado de aprendizagem e aprovação escolar. O indicador varia de 0 a 10 e deve ser interpretado considerando que pode subir por melhora de desempenho, melhora de fluxo escolar ou ambos.",
+    "metodologia":
+      "O Ideb é calculado pelo produto entre o indicador de rendimento escolar (P), derivado das taxas de aprovação do Censo Escolar, e a média padronizada de desempenho (N), obtida a partir das proficiências em Língua Portuguesa e Matemática no Saeb: Ideb = N x P.",
+    "historico_metodologia":
+      "O Ideb foi criado em 2007 e a série oficial para o ensino médio começa em 2005. Segundo o Inep, o cálculo do indicador seguiu a mesma metodologia proposta em 2007, preservando a comparabilidade histórica. Em 2017, o Saeb tornou-se censitário para a 3ª série do ensino médio, ampliando a disponibilidade de resultados por escolas públicas e privadas participantes, o que afeta a abrangência de divulgação, mas não altera a fórmula do Ideb. Os resultados de 2021 exigem cautela interpretativa porque foram impactados pela pandemia de Covid-19, sobretudo pelas mudanças nas taxas de aprovação.",
+    "abrangencia":
+      "Brasil, ensino médio tradicional em classes comuns, total das redes de ensino, conforme série oficial do Inep.",
+    "periodicidade": "Bienal, com divulgação nos anos ímpares de referência do Saeb e do Censo Escolar.",
+    "eventos_externos": [
+      {
+        "ano": 2017,
+        "nome": "Saeb censitário",
+        "descricao":
+          "O Saeb tornou-se censitário para a 3ª série do ensino médio, ampliando a divulgação de resultados do ensino médio no Saeb e, consequentemente, no Ideb.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Covid-19",
+        "descricao":
+          "O Inep registrou impacto da pandemia nos resultados do Ideb, especialmente pelo crescimento abrupto das taxas de aprovação em 2020 e 2021 em comparação com 2019.",
+      },
+    ],
+    "comparacao_paises":
+      "O Ideb não é diretamente comparável internacionalmente, pois é um indicador nacional brasileiro baseado no Saeb e no Censo Escolar. Para comparação internacional de aprendizagem, a fonte adequada é o PISA/OCDE. No PISA 2022, estudantes do Brasil ficaram abaixo da média da OCDE em matemática, leitura e ciências.",
+    "nivel_confiabilidade":
+      "Alto para os valores oficiais divulgados pelo Inep/MEC. A série é oficial, censitária/amostral conforme desenho do Saeb e baseada no Censo Escolar. A interpretação de 2021 deve ser feita com cautela por causa dos efeitos da pandemia sobre fluxo escolar e aprovação.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "INEP — Ideb: apresentação e metodologia",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb",
+      },
+      {
+        "titulo": "INEP — Resultados do Ideb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
+      },
+      {
+        "titulo": "INEP — Apresentação Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
+      },
+      {
+        "titulo": "INEP — Nota informativa Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/nota_informativa_ideb_2023.pdf",
+      },
+      {
+        "titulo": "INEP — Histórico do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico",
+      },
+      {
+        "titulo": "OCDE — PISA 2022 Results: Brazil",
+        "url":
+          "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html",
+      },
+    ],
     "dados": [
       { "ano": 2005, "valor": 3.4 },
       { "ano": 2007, "valor": 3.5 },
@@ -8422,7 +9969,6 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2021, "valor": 4.2 },
       { "ano": 2023, "valor": 4.3 },
     ],
-    "padrao": false,
   },
   "gasto_educacao_publico_pib": {
     "label": "Gasto público em educação / PIB",
@@ -8430,38 +9976,94 @@ window.__DADOS_ANUAIS__ = {
     "unidade": "% do PIB",
     "fonte": "INEP/MEC",
     "cat": "Educação",
-    "descricao":
-      "Flutua de 5-6% do PIB, teoricamente alinhado à OCDE. No entanto, é diluído em alto contingente discente e priorizações desiguais (ensino superior para elites), mantendo o gasto real per capita no ensino básico baixo.",
-    "dados": [
-      { "ano": 1995, "valor": 4 },
-      { "ano": 1999, "valor": 4 },
-      { "ano": 2000, "valor": 3.9 },
-      { "ano": 2001, "valor": 3.9 },
-      { "ano": 2002, "valor": 4.1 },
-      { "ano": 2003, "valor": 4 },
-      { "ano": 2004, "valor": 3.9 },
-      { "ano": 2005, "valor": 4.2 },
-      { "ano": 2006, "valor": 4.9 },
-      { "ano": 2007, "valor": 5 },
-      { "ano": 2008, "valor": 5.2 },
-      { "ano": 2009, "valor": 5.5 },
-      { "ano": 2010, "valor": 5.8 },
-      { "ano": 2011, "valor": 5.8 },
-      { "ano": 2012, "valor": 6.1 },
-      { "ano": 2013, "valor": 6.2 },
-      { "ano": 2014, "valor": 6.2 },
-      { "ano": 2015, "valor": 6.2 },
-      { "ano": 2016, "valor": 6 },
-      { "ano": 2017, "valor": 6 },
-      { "ano": 2018, "valor": 5.9 },
-      { "ano": 2019, "valor": 5.9 },
-      { "ano": 2020, "valor": 5.9 },
-      { "ano": 2021, "valor": 5.7 },
-      { "ano": 2022, "valor": 5.5 },
-      { "ano": 2023, "valor": 5.6 },
-      { "ano": 2024, "valor": 5.6 },
+    "descricao": "Percentual do investimento público total em educação em relação ao Produto Interno Bruto do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção da produção econômica nacional destinada pelo setor público à educação. O indicador não mede, sozinho, qualidade, eficiência, equidade ou gasto por estudante.",
+    "metodologia":
+      "Indicador calculado pelo Inep segundo metodologia recomendada pela OCDE para comparação internacional. Considera o investimento público total em educação, incluindo pessoal ativo e encargos, ajuda financeira a estudantes, bolsas, financiamento estudantil, pesquisa e desenvolvimento, transferências ao setor privado, outras despesas correntes e de capital, além de estimativa de complemento da aposentadoria futura do pessoal ativo. O valor anual é dividido pelo PIB nominal do Brasil e expresso em percentual.",
+    "historico_metodologia":
+      "A série oficial disponível pelo Inep para este indicador cobre 2000 a 2021. O Inep informa que o percentual do investimento público em educação em relação ao PIB foi atualizado conforme novos valores do PIB divulgados pelo IBGE em março de 2007. Não foram mantidos anos anteriores a 2000 nem anos posteriores a 2021 por ausência de série oficial consolidada na fonte indicada.",
+    "abrangencia": "Brasil, setor público, todos os níveis de ensino, União, estados, Distrito Federal e municípios.",
+    "periodicidade":
+      "Anual, com divulgação dependente da consolidação das estatísticas educacionais, fiscais e do PIB.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Fundeb",
+        "descricao":
+          "Entrada em vigor do Fundeb, ampliando o financiamento da educação básica e substituindo o Fundef.",
+      },
+      {
+        "ano": 2014,
+        "nome": "PNE",
+        "descricao":
+          "Aprovação do Plano Nacional de Educação 2014-2024, que estabeleceu meta de ampliação do investimento público em educação em proporção ao PIB.",
+      },
+      {
+        "ano": 2016,
+        "nome": "Teto fiscal",
+        "descricao":
+          "A Emenda Constitucional nº 95 instituiu limite de crescimento das despesas primárias federais, afetando a trajetória potencial do gasto público.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia alterou execução orçamentária, atividade econômica, funcionamento das redes de ensino e composição do gasto público.",
+      },
     ],
+    "comparacao_paises":
+      "O Inep afirma que seus indicadores financeiros educacionais seguem metodologia recomendada pela OCDE para permitir comparação internacional. Percentuais próximos entre países não implicam gasto por estudante equivalente, pois dependem do tamanho do PIB, da população em idade escolar, da estrutura federativa, dos níveis de ensino e do custo relativo dos serviços.",
+    "nivel_confiabilidade":
+      "Alto para 2000 a 2021, por serem dados oficiais publicados pelo Inep/MEC. Limitação: a própria série é uma estimativa estatística oficial de investimento público total e pode sofrer revisão metodológica ou revisão do PIB pelo IBGE.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Inep - Indicadores Financeiros Educacionais",
+        "url":
+          "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/indicadores-financeiros-educacionais",
+      },
+      {
+        "titulo": "Inep - Percentual do investimento total em relação ao PIB, por nível de ensino - 2000 a 2021",
+        "url":
+          "https://download.inep.gov.br/informacoes_estatisticas/investimentos_publicos_em_educacao/indicadores_financeiros_educacionais/Investimento_pib_total.zip",
+      },
+      {
+        "titulo": "Inep - Metodologia para o cálculo do indicador Investimento Público em Educação em relação ao PIB",
+        "url":
+          "https://download.inep.gov.br/informacoes_estatisticas/investimentos_publicos_em_educacao/artigos_publicacoes/metodologia_calculo_indicador_investimento_publico_educacao_PIB.pdf",
+      },
+      {
+        "titulo": "Inep - Relatório do 5º ciclo de monitoramento das metas do PNE - 2024",
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/relatorio_do_quinto_ciclo_de_monitoramento_das_metas_do_plano_nacional_de_educacao.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 4.6 },
+      { "ano": 2001, "valor": 4.7 },
+      { "ano": 2002, "valor": 4.7 },
+      { "ano": 2003, "valor": 4.6 },
+      { "ano": 2004, "valor": 4.5 },
+      { "ano": 2005, "valor": 4.5 },
+      { "ano": 2006, "valor": 4.9 },
+      { "ano": 2007, "valor": 5.1 },
+      { "ano": 2008, "valor": 5.3 },
+      { "ano": 2009, "valor": 5.6 },
+      { "ano": 2010, "valor": 5.6 },
+      { "ano": 2011, "valor": 5.8 },
+      { "ano": 2012, "valor": 5.9 },
+      { "ano": 2013, "valor": 6 },
+      { "ano": 2014, "valor": 6 },
+      { "ano": 2015, "valor": 6.2 },
+      { "ano": 2016, "valor": 6.3 },
+      { "ano": 2017, "valor": 6.3 },
+      { "ano": 2018, "valor": 6.1 },
+      { "ano": 2019, "valor": 6 },
+      { "ano": 2020, "valor": 5.8 },
+      { "ano": 2021, "valor": 5.5 },
+    ],
   },
   "mvi_brasil_taxa": {
     "label": "Taxa de MVI (por 100 mil hab.)",
