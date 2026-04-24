@@ -11,7 +11,7 @@
       display: flex;
       flex-direction: column;
       font-family: -apple-system, system-ui, sans-serif;
-      background: #fff;
+      background: #eeeeee;
       color: #1f2328;
     }
 
@@ -303,14 +303,18 @@
       }
 
       .chart-box {
-        padding: 12px 4px !important;
-        border-radius: 0 !important;
-        border-left: none !important;
-        border-right: none !important;
+        padding: 16px 12px !important;
+        border-radius: 8px !important;
+        border: 1px solid #d0d7de !important;
+        margin: 0 8px !important;
       }
 
       .menu-btn-anual {
         display: flex !important;
+      }
+
+      .cards-wrapper {
+        padding: 8px 4px 120px 4px !important;
       }
     }
 
@@ -432,4 +436,32 @@
         padding: 16px !important;
         border-radius: 12px !important;
       }
+    }
+
+    /* ── Scrollbars modernas ── */
+    .sidebar-anual,
+    .main-content-anual {
+      scrollbar-width: thin;
+      scrollbar-color: #c1c7cd transparent;
+    }
+
+    .sidebar-anual::-webkit-scrollbar,
+    .main-content-anual::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .sidebar-anual::-webkit-scrollbar-track,
+    .main-content-anual::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .sidebar-anual::-webkit-scrollbar-thumb,
+    .main-content-anual::-webkit-scrollbar-thumb {
+      background: #c1c7cd;
+      border-radius: 10px;
+    }
+
+    .sidebar-anual::-webkit-scrollbar-thumb:hover,
+    .main-content-anual::-webkit-scrollbar-thumb:hover {
+      background: #8c959f;
     }

@@ -109,7 +109,7 @@ function AppAnual() {
   if (erro) return <div className="loading" style={{ color: '#f85149', padding: 48, textAlign: "center" }}>Erro: {erro}</div>;
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", backgroundColor: "#fff", overflow: "hidden" }}>
+    <div style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
       <header>
         <div>
           <h1>Brasil 1995-2026</h1>
@@ -133,7 +133,25 @@ function AppAnual() {
               <input type="number" min={anoIni} max="2026" value={anoFim} onChange={e => setAnoFim(+e.target.value)} style={{ width: "100%", padding: "6px 8px", borderRadius: 6, border: "1px solid #d0d7de", fontSize: 13, fontWeight: "600", outline: "none", color: "#24292f" }} />
             </div>
           </div>
-          <label style={{ fontSize: 14, fontWeight: 600, color: "#24292f", borderBottom: "1px solid #e1e4e8", paddingBottom: 8, margin: 0 }}>Métricas ({meta ? Object.keys(meta).length : 0})</label>
+          <div style={{ borderBottom: "1px solid #e1e4e8", paddingBottom: 10, marginBottom: 0 }}>
+            <label style={{ fontSize: 14, fontWeight: 600, color: "#24292f", margin: 0, display: "block" }}>Métricas ({meta ? Object.keys(meta).length : 0})</label>
+            {meta && (() => {
+              const total = Object.keys(meta).length;
+              const validadas = Object.values(meta).filter(v => v.validacao).length;
+              return (
+                <div style={{ display: "flex", gap: 12, marginTop: 6, fontSize: 11, color: "#656d76" }}>
+                  <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                    <strong style={{ color: "#059669" }}>{validadas}</strong> validadas
+                  </span>
+                  <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                    <span style={{ width: 9, height: 9, borderRadius: "50%", border: "1.5px solid #b1bac4", display: "inline-block" }} />
+                    <strong style={{ color: "#656d76" }}>{total - validadas}</strong> não validadas
+                  </span>
+                </div>
+              );
+            })()}
+          </div>
           {Object.entries(cats).map(([cat, keys]) => (
             <div key={cat}>
               <div className="cat-label" style={{ color: getCategoriaCor(cat), fontSize: 13, textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: 8 }}>{cat} ({keys.length})</div>
@@ -152,7 +170,7 @@ function AppAnual() {
         {/* Main Content */}
         <div className="main-content main-content-anual" style={{ flex: 1, display: "flex", flexDirection: "column", overflowY: "auto", overflowX: "hidden", minHeight: 0 }}>
           <LegendMandatos />
-          <div style={{ padding: "16px 24px 150px 24px", display: "flex", flexDirection: "column", gap: 16 }}>
+          <div className="cards-wrapper" style={{ padding: "16px 24px 150px 24px", display: "flex", flexDirection: "column", gap: 16 }}>
             {selecionados.length === 0 ? (
               <div className="loading" style={{ padding: 48, background: "#fff", borderRadius: 8, border: "1px dashed #d0d7de", color: "#656d76", textAlign: "center" }}>Selecione ao menos um indicador na barra lateral.</div>
             ) : (
@@ -177,6 +195,17 @@ function AppAnual() {
     </div>
   );
 }
+
+const extraFields = [
+  ['nivel_confiabilidade', 'Nível de Confiabilidade'],
+  ['metodologia', 'Metodologia'],
+  ['historico_metodologia', 'Histórico da Metodologia'],
+  ['abrangencia', 'Abrangência'],
+  ['periodicidade', 'Periodicidade'],
+  ['eventos_externos', 'Eventos externos'],
+  ['validacao', 'Validação'],
+  ['fontes_links', 'Fontes e Links']
+];
 
 function GraficoAnual({ dados, info, cor, anoIni, anoFim }) {
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
@@ -289,20 +318,10 @@ ${JSON.stringify(info, null, 2)}`;
 
   const fixedFields = [
     ['descricao', 'Descrição'],
-    ['como_interpretar', 'Como interpretar']
+    ['como_interpretar', 'Como interpretar'],
+    ['comparacao_paises', 'Comparação entre países']
   ];
 
-  const extraFields = [
-    ['metodologia', 'Metodologia'],
-    ['historico_metodologia', 'Histórico da Metodologia'],
-    ['abrangencia', 'Abrangência'],
-    ['periodicidade', 'Periodicidade'],
-    ['eventos_externos', 'Eventos externos'],
-    ['comparacao_paises', 'Comparação entre países'],
-    ['nivel_confiabilidade', 'Nível de Confiabilidade'],
-    ['validacao', 'Validação'],
-    ['fontes_links', 'Fontes e Links']
-  ];
 
   const temExtras = extraFields.some(([key]) => info[key]);
 
