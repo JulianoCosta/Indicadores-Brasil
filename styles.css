@@ -20,9 +20,12 @@
 
 /* ── 1. Reset & Base ── */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -43,9 +46,12 @@ html, body {
   flex-direction: column;
 }
 
-a { color: #0969da; }
+a {
+  color: #0969da;
+}
 
-select, input {
+select,
+input {
   background: #fff;
   color: #1f2328;
   border: 1px solid #d0d7de;
@@ -54,15 +60,23 @@ select, input {
   font-size: 13px;
 }
 
-select:focus, input:focus {
+select:focus,
+input:focus {
   outline: none;
   border-color: #0969da;
   box-shadow: 0 0 0 3px rgba(9, 105, 218, .1);
 }
 
 @keyframes slideIn {
-  from { transform: translateY(100%); opacity: 0; }
-  to   { transform: translateY(0);    opacity: 1; }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
@@ -301,18 +315,24 @@ h1 {
 .chart-title {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 6px;
+  justify-content: flex-start;
+  gap: 12px;
   /* color: dinâmico via inline */
 }
 
 .chart-title__left {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.chart-title__left svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-bottom: 2px;
 }
 
 .chart-unit {
@@ -331,8 +351,8 @@ h1 {
   background: #fff;
   border: 1px solid #d0d7de;
   border-radius: 8px;
-  color: #0969da;
-  padding: 6px 12px;
+  color: #000;
+  padding: 8px 16px;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -345,7 +365,25 @@ h1 {
 
 .export-btn:hover {
   background: #f6f8fa;
-  border-color: #0969da;
+  border-color: #000;
+}
+
+.chart-actions {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .chart-actions {
+    justify-content: center;
+  }
+
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 
@@ -398,7 +436,9 @@ h1 {
   color: #656d76;
 }
 
-.sources-list li { margin-bottom: 2px; }
+.sources-list li {
+  margin-bottom: 2px;
+}
 
 /* Botão expandir metadados */
 .expand-btn {
@@ -540,7 +580,7 @@ h1 {
   bottom: 24px;
   right: 24px;
   z-index: 1001;
-  background: #0969da;
+  background: #24292f;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -644,13 +684,20 @@ h1 {
     display: flex !important;
   }
 
-  .legend-mandatos-mobile {
-    display: flex !important;
+  .chart-title {
+    align-items: flex-start !important;
+    gap: 12px !important;
   }
 
-  .recharts-reference-area text,
-  .recharts-reference-area-label {
-    display: none !important;
+  .chart-title__left {
+    display: inline-block !important;
+  }
+
+  .chart-title__left svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-bottom: 2px;
   }
 
   .validation-toast {

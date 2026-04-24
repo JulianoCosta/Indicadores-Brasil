@@ -234,7 +234,7 @@ ${JSON.stringify(info, null, 2)}`;
 
     const concluir = () => {
       setExibirAviso(true);
-      setTimeout(() => setExibirAviso(false), 15000);
+      setTimeout(() => setExibirAviso(false), 10000);
     };
 
     if (navigator.clipboard?.writeText) {
@@ -316,15 +316,6 @@ ${JSON.stringify(info, null, 2)}`;
             </svg>
           )}
         </div>
-        {info.validacao && (
-          <button onClick={copiarParaIA} className="export-btn" title="Exportar para validação em IA">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-              <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-            </svg>
-            <span>Validar</span>
-          </button>
-        )}
       </div>
 
       {/* Unidade / Fonte */}
@@ -344,7 +335,23 @@ ${JSON.stringify(info, null, 2)}`;
               return [
                 <ReferenceArea key={`area-${i}`} x1={x1} x2={x2} fill={p.cor} fillOpacity={0.08} ifOverflow="hidden" />,
                 p.ini >= anoIni ? <ReferenceLine key={`line-${i}`} x={x1} stroke="#000" strokeOpacity={0.2} strokeDasharray="3 3" ifOverflow="hidden" /> : null,
-                <ReferenceArea key={`label-${i}`} x1={x1} x2={x2} fill="transparent" ifOverflow="hidden" label={{ value: p.nome, position: 'insideBottom', fill: p.cor, fontSize: 11, fontWeight: "bold", dy: -5 }} />
+                <ReferenceArea key={`label-${i}`} x1={x1} x2={x2} fill="transparent" ifOverflow="hidden" label={isMobile
+                  ? (props) => {
+                    const { viewBox } = props;
+                    if (!viewBox) return null;
+                    const cx = viewBox.x + viewBox.width / 2 + 4;
+                    const startY = viewBox.y + viewBox.height - 7;
+                    return (
+                      <text
+                        x={cx} y={startY}
+                        fill={p.cor} fontSize={11} fontWeight="bold" opacity={0.3}
+                        textAnchor="start"
+                        transform={`rotate(-90, ${cx}, ${startY})`}
+                      >{p.nome}</text>
+                    );
+                  }
+                  : { value: p.nome, position: 'insideBottom', fill: p.cor, fontSize: 11, fontWeight: "bold", dy: -5 }
+                } />
               ];
             })}
             <CartesianGrid stroke="#e5e7eb" strokeDasharray="3 3" vertical={false} />
@@ -405,6 +412,19 @@ ${JSON.stringify(info, null, 2)}`;
       {/* Metadados */}
       <div className="chart-meta" style={{ marginTop: eventoAtivo ? 12 : 0 }}>
         {fixedFields.map(renderField)}
+
+        {/* Ações */}
+        {info.validacao && (
+          <div className="chart-actions">
+            <button onClick={copiarParaIA} className="export-btn" title="Exportar para validação em IA">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+              </svg>
+              <span>Validar indicador com IA</span>
+            </button>
+          </div>
+        )}
 
         {temExtras && (
           <button className="expand-btn" onClick={() => setExpandido(!expandido)}>
