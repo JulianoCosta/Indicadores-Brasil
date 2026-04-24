@@ -1,0 +1,56 @@
+window.__MANDATOS__ = [
+  {
+    nome: "FHC I",
+    partido: "PSDB",
+    ini: 1995,
+    fim: 1999
+  },
+  {
+    nome: "FHC II",
+    partido: "PSDB",
+    ini: 1999,
+    fim: 2003
+  },
+  {
+    nome: "Lula I",
+    partido: "PT",
+    ini: 2003,
+    fim: 2007
+  },
+  {
+    nome: "Lula II",
+    partido: "PT",
+    ini: 2007,
+    fim: 2011
+  },
+  {
+    nome: "Dilma I",
+    partido: "PT",
+    ini: 2011,
+    fim: 2015
+  },
+  {
+    nome: "Dilma II",
+    partido: "PT",
+    ini: 2015,
+    fim: 2017
+  },
+  {
+    nome: "Temer",
+    partido: "MDB",
+    ini: 2017,
+    fim: 2019
+  },
+  {
+    nome: "Bolsonaro",
+    partido: "PL",
+    ini: 2019,
+    fim: 2023
+  },
+  {
+    nome: "Lula III",
+    partido: "PT",
+    ini: 2023,
+    fim: 2027
+  }
+];
