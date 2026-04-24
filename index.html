@@ -18,6 +18,7 @@
 
     <!-- Data -->
     <script src="mandatos.js"></script>
+    <script src="categorias.js"></script>
     <script src="dados_anuais.js"></script>
 </head>
 
@@ -29,16 +30,47 @@
         const { useState, useEffect, useMemo, useCallback } = React;
         const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceArea, ReferenceLine, ReferenceDot, Label } = Recharts;
 
-        const CORES_PARTIDO = { 'PMDB': '#94a3b8', 'PSDB': '#60a5fa', 'PT': '#f87171', 'MDB': '#fbbf24', 'PL': '#34d399' };
         const CORES_CAT = { 'Economia': '#ea580c', 'Economia EUA': '#0a580c', 'Impostos e Consumo': '#ea283c', 'Institucional': '#0a58ac', 'PolÃ­tica': '#7a88ac', 'Internacional': '#7a28bc', 'Social': '#aa58ac', 'Bolsas': '#6a580c', 'Moedas': '#3aa82c', 'Emprego e Renda': '#16a34a', 'Desenvolvimento': '#dc2626', 'SaÃºde': '#0891b2', 'EducaÃ§Ã£o': '#db2777', 'Meio Ambiente': '#16234a', 'DÃ­vida': '#475569', 'CiÃªncia e Tecnologia': '#0d9488', 'CorrupÃ§Ã£o': '#ca8a04', 'SeguranÃ§a': '#9f1239', 'Commodities': '#9f12a9' };
         const PRES_ANOS = window.__MANDATOS__ || [];
+        const CORES_CAT_NORMALIZADAS = window.__CATEGORIAS__ || {};
+
+        function tentarCorrigirMojibake(texto) {
+            if (typeof texto !== "string") return "";
+            try {
+                return decodeURIComponent(escape(texto));
+            } catch (e) {
+                return texto;
+            }
+        }
+
+        function normalizarCategoria(cat) {
+            return String(cat || "")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .replace(/\s+/g, " ")
+                .trim();
+        }
+
+        function getCategoriaCor(cat) {
+            const candidatos = [
+                normalizarCategoria(cat),
+                normalizarCategoria(tentarCorrigirMojibake(cat))
+            ];
+
+            for (const chave of candidatos) {
+                if (CORES_CAT_NORMALIZADAS[chave]) return CORES_CAT_NORMALIZADAS[chave];
+            }
+
+            return '#79c0ff';
+        }
 
         function LegendMandatos() {
             return (
                 <div className="legend-mandatos-mobile">
                     {PRES_ANOS.map(p => (
                         <div key={p.nome} style={{ display: "flex", alignItems: "center", gap: 4 }}>
-                            <span style={{ width: 12, height: 8, backgroundColor: CORES_PARTIDO[p.partido], opacity: 0.3, borderRadius: 2, border: `1px solid ${CORES_PARTIDO[p.partido]}` }}></span>
+                            <span style={{ width: 12, height: 8, backgroundColor: p.cor, opacity: 0.3, borderRadius: 2, border: `1px solid ${p.cor}` }}></span>
                             <span>{p.nome}</span>
                         </div>
                     ))}
@@ -108,13 +140,22 @@
 
             return (
                 <div style={{ display: "flex", flexDirection: "column", height: "100%", backgroundColor: "#fff", overflow: "hidden" }}>
+                    <header>
+                        <div>
+                            <h1>Brasil 1995-2026</h1>
+                            <div className="subtitle">Explorador de indicadores anuais e contexto presidencial</div>
+                        </div>
+                        <div className="subtitle">
+                            {selecionados.length} indicador{selecionados.length === 1 ? "" : "es"} selecionado{selecionados.length === 1 ? "" : "s"}
+                        </div>
+                    </header>
                     <div style={{ display: "flex", flex: 1, overflow: "hidden", minHeight: 0 }}>
 
                         {/* Sidebar */}
                         <div className={"sidebar sidebar-anual" + (menuAberto ? " aberto" : "")} style={{ width: 320, flexShrink: 0, borderRight: "1px solid #e1e4e8", padding: "24px 16px 150px 16px", display: "flex", flexDirection: "column", gap: 16, background: "#fff", overflowY: "auto", position: "relative", zIndex: 10 }}>
                             <div style={{ display: "flex", gap: 12, marginBottom: 8, paddingBottom: 16, borderBottom: "1px solid #e1e4e8" }}>
                                 <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 4 }}>
-                                    <label style={{ fontSize: 11, fontWeight: 600, color: "#656d76", textTransform: "uppercase" }}>InÃ­cio</label>
+                                    <label style={{ fontSize: 11, fontWeight: 600, color: "#656d76", textTransform: "uppercase" }}>Iní­cio</label>
                                     <input type="number" min="1994" max={anoFim} value={anoIni} onChange={e => setAnoIni(+e.target.value)} style={{ width: "100%", padding: "6px 8px", borderRadius: 6, border: "1px solid #d0d7de", fontSize: 13, fontWeight: "600", outline: "none", color: "#24292f" }} />
                                 </div>
                                 <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 4 }}>
@@ -122,14 +163,14 @@
                                     <input type="number" min={anoIni} max="2026" value={anoFim} onChange={e => setAnoFim(+e.target.value)} style={{ width: "100%", padding: "6px 8px", borderRadius: 6, border: "1px solid #d0d7de", fontSize: 13, fontWeight: "600", outline: "none", color: "#24292f" }} />
                                 </div>
                             </div>
-                            <label style={{ fontSize: 14, fontWeight: 600, color: "#24292f", borderBottom: "1px solid #e1e4e8", paddingBottom: 8, margin: 0 }}>MÃ©tricas ({meta ? Object.keys(meta).length : 0})</label>
+                            <label style={{ fontSize: 14, fontWeight: 600, color: "#24292f", borderBottom: "1px solid #e1e4e8", paddingBottom: 8, margin: 0 }}>Métricas ({meta ? Object.keys(meta).length : 0})</label>
                             {Object.entries(cats).map(([cat, keys]) => (
                                 <div key={cat}>
-                                    <div className="cat-label" style={{ color: CORES_CAT[cat], fontSize: 13, textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: 8 }}>{cat} ({keys.length})</div>
+                                    <div className="cat-label" style={{ color: getCategoriaCor(cat), fontSize: 13, textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: 8 }}>{cat} ({keys.length})</div>
                                     <div className="ind-grid" style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                                         {keys.map(k => (
-                                            <button key={k} type="button" className={`ind-btn${selecionados.includes(k) ? ' ativo' : ''}`} style={{ flex: "1 1 100%", minWidth: 0, padding: "6px 8px", fontSize: 12, display: "flex", alignItems: "center", gap: 6, justifyContent: "flex-start", transition: "all 0.2s", ...(selecionados.includes(k) ? { backgroundColor: "#f8fafc", color: "#000", border: `1px solid ${CORES_CAT[cat]}`, boxShadow: `inset 3px 0 0 ${CORES_CAT[cat]}` } : { border: "1px solid #e1e4e8" }) }} onClick={e => { e.preventDefault(); toggle(k); }}>
-                                                <span style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: CORES_CAT[cat], flexShrink: 0 }}></span>
+                                            <button key={k} type="button" className={`ind-btn${selecionados.includes(k) ? ' ativo' : ''}`} style={{ flex: "1 1 100%", minWidth: 0, padding: "6px 8px", fontSize: 12, display: "flex", alignItems: "center", gap: 6, justifyContent: "flex-start", transition: "all 0.2s", ...(selecionados.includes(k) ? { backgroundColor: "#f8fafc", color: "#000", border: `1px solid ${getCategoriaCor(cat)}`, boxShadow: `inset 3px 0 0 ${getCategoriaCor(cat)}` } : { border: "1px solid #e1e4e8" }) }} onClick={e => { e.preventDefault(); toggle(k); }}>
+                                                <span style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: getCategoriaCor(cat), flexShrink: 0 }}></span>
                                                 <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", flex: 1, textAlign: "left" }}>{meta[k].label}</span>{meta[k].validacao && (<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }} title="Indicador Validado"><polyline points="20 6 9 17 4 12"></polyline></svg>)}
                                             </button>
                                         ))}
@@ -149,7 +190,7 @@
                                         const dadosMetrica = filtrado[k]?.dados || [];
                                         const dadosFiltrados = dadosMetrica.filter(d => d.ano >= anoIni && d.ano <= anoFim);
                                         if (!meta || !meta[k]) return null;
-                                        return <GraficoAnual key={k} dados={dadosFiltrados} info={meta[k]} cor={CORES_CAT[meta[k].cat] || '#79c0ff'} anoIni={anoIni} anoFim={anoFim} />;
+                                        return <GraficoAnual key={k} dados={dadosFiltrados} info={meta[k]} cor={getCategoriaCor(meta[k].cat)} anoIni={anoIni} anoFim={anoFim} />;
                                     })
                                 )}
                             </div>
@@ -323,9 +364,9 @@ ${JSON.stringify(info, null, 2)}`;
                                     const x1 = p.ini - 0.5;
                                     const x2 = p.fim - 0.5;
                                     return [
-                                        <ReferenceArea key={`area-${i}`} x1={x1} x2={x2} fill={CORES_PARTIDO[p.partido]} fillOpacity={0.08} ifOverflow="hidden" />,
+                                        <ReferenceArea key={`area-${i}`} x1={x1} x2={x2} fill={p.cor} fillOpacity={0.08} ifOverflow="hidden" />,
                                         p.ini >= anoIni ? <ReferenceLine key={`line-${i}`} x={x1} stroke="#000" strokeOpacity={0.2} strokeDasharray="3 3" ifOverflow="hidden" /> : null,
-                                        <ReferenceArea key={`label-${i}`} x1={x1} x2={x2} fill="transparent" ifOverflow="hidden" label={{ value: p.nome, position: 'insideBottom', fill: CORES_PARTIDO[p.partido], fontSize: 11, fontWeight: "bold", dy: -5 }} />
+                                        <ReferenceArea key={`label-${i}`} x1={x1} x2={x2} fill="transparent" ifOverflow="hidden" label={{ value: p.nome, position: 'insideBottom', fill: p.cor, fontSize: 11, fontWeight: "bold", dy: -5 }} />
                                     ];
                                 })}
                                 <CartesianGrid stroke="#e5e7eb" strokeDasharray="3 3" vertical={false} />

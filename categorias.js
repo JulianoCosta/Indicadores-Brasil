@@ -1,0 +1,21 @@
+window.__CATEGORIAS__ = {
+  'economia': '#ea580c',
+  'economia eua': '#0a580c',
+  'impostos e consumo': '#ea283c',
+  'institucional': '#0a58ac',
+  'politica': '#7a88ac',
+  'internacional': '#7a28bc',
+  'social': '#aa58ac',
+  'bolsas': '#6a580c',
+  'moedas': '#3aa82c',
+  'emprego e renda': '#16a34a',
+  'desenvolvimento': '#dc2626',
+  'saude': '#0891b2',
+  'educacao': '#db2777',
+  'meio ambiente': '#16234a',
+  'divida': '#475569',
+  'ciencia e tecnologia': '#0d9488',
+  'corrupcao': '#ca8a04',
+  'seguranca': '#9f1239',
+  'commodities': '#9f12a9'
+};
