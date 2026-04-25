@@ -79,8 +79,7 @@ function AppAnual() {
         setDados(json);
         const keys = Object.keys(json);
         if (keys.length > 0) {
-          let defaults = keys.filter(k => json[k].padrao === true);
-          if (defaults.length === 0) defaults = keys.slice(0, 3);
+          const defaults = keys.filter(k => json[k].padrao === true);
           setSelecionados(defaults);
         }
         setLoading(false);
@@ -181,7 +180,7 @@ function AppAnual() {
           <LegendMandatos />
           <div className="cards-wrapper">
             {selecionados.length === 0 ? (
-              <div className="empty-state">Selecione ao menos um indicador na barra lateral.</div>
+              <div className="empty-state">Selecione pelo menos um indicador no menu.</div>
             ) : (
               selecionados.map(k => {
                 const dadosMetrica = dados[k]?.dados || [];
