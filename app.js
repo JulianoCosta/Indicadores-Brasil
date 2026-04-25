@@ -109,8 +109,7 @@ function AppAnual() {
   if (loading) return <div className="empty-state" style={{ marginTop: 48 }}>Carregando dados anuais...</div>;
   if (erro) return <div className="empty-state" style={{ color: '#f85149' }}>Erro: {erro}</div>;
 
-  const total = meta ? Object.keys(meta).length : 0;
-  const validadas = meta ? Object.values(meta).filter(v => v.validacao).length : 0;
+  const totalValidadas = meta ? Object.values(meta).filter(v => v.validacao).length : 0;
 
   return (
     <div className="app-layout">
@@ -141,51 +140,40 @@ function AppAnual() {
             </div>
           </div>
 
-          {/* Cabeçalho de métricas */}
           <div className="sidebar-metrics-header">
-            <span className="sidebar-metrics-title">Métricas ({total})</span>
-            <div className="validation-stats">
-              <span className="validation-stat">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <strong style={{ color: "#059669" }}>{validadas}</strong> validadas
-              </span>
-              <span className="validation-stat">
-                <span className="validation-dot" />
-                <strong>{total - validadas}</strong> não validadas
-              </span>
-            </div>
+            <span className="sidebar-metrics-title">INDICADORES ({totalValidadas})</span>
           </div>
 
           {/* Lista de métricas por categoria */}
-          {Object.entries(cats).map(([cat, keys]) => (
-            <div key={cat}>
-              <div className="cat-label" style={{ color: getCategoriaCor(cat) }}>{cat} ({keys.length})</div>
-              <div className="ind-grid">
-                {keys.map(k => (
-                  <button
-                    key={k}
-                    type="button"
-                    className={"ind-btn" + (selecionados.includes(k) ? ' ativo' : '')}
-                    style={selecionados.includes(k) ? {
-                      border: `1px solid ${getCategoriaCor(cat)}`,
-                      boxShadow: `inset 3px 0 0 ${getCategoriaCor(cat)}`
-                    } : undefined}
-                    onClick={e => { e.preventDefault(); toggle(k); }}
-                  >
-                    <span className="ind-dot" style={{ backgroundColor: getCategoriaCor(cat) }} />
-                    <span className="ind-label">{meta[k].label}</span>
-                    {meta[k].validacao && (
+          {Object.entries(cats).map(([cat, keys]) => {
+            const validados = keys.filter(k => meta[k].validacao);
+            if (validados.length === 0) return null;
+            return (
+              <div key={cat}>
+                <div className="cat-label" style={{ color: getCategoriaCor(cat) }}>{cat} ({validados.length})</div>
+                <div className="ind-grid">
+                  {validados.map(k => (
+                    <button
+                      key={k}
+                      type="button"
+                      className={"ind-btn" + (selecionados.includes(k) ? ' ativo' : '')}
+                      style={selecionados.includes(k) ? {
+                        border: `1px solid ${getCategoriaCor(cat)}`,
+                        boxShadow: `inset 3px 0 0 ${getCategoriaCor(cat)}`
+                      } : undefined}
+                      onClick={e => { e.preventDefault(); toggle(k); }}
+                    >
+                      <span className="ind-dot" style={{ backgroundColor: getCategoriaCor(cat) }} />
+                      <span className="ind-label">{meta[k].label}</span>
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }} title="Indicador Validado">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                    )}
-                  </button>
-                ))}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Área principal */}
