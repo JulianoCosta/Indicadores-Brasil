@@ -347,7 +347,7 @@ ${JSON.stringify(info, null, 2)}`;
                       >{p.nome}</text>
                     );
                   }
-                  : { value: p.nome, position: 'insideBottom', fill: p.cor, fontSize: 11, fontWeight: "bold", dy: -5 }
+                  : { value: p.nome, position: 'insideBottom', fill: p.cor, fontSize: 11, fontWeight: "bold", dy: -5, fillOpacity: 0.6 }
                 } />
               ];
             })}

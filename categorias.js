@@ -1,7 +1,7 @@
 window.__CATEGORIAS__ = {
   'Economia e Atividade': '#e11d48',
   'Emprego, Renda e Desigualdade': '#2563eb',
-  'Preços, Juros e Poder de Compra': '#f97316',
+  'Preços, Juros e Poder de Compra': '#008c1eff',
   'Finanças Públicas e Tributação': '#7423ffff',
   'Saúde': '#059669',
   'Educação': '#003ae7ff',

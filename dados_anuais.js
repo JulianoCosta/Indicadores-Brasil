@@ -4131,6 +4131,1841 @@
     ],
     "padrao": false,
   },
+  "cpi_index": {
+    "label": "(FMI/WDI) Índice de Preços ao Consumidor",
+    "unidade": "Índice, 2010 = 100",
+    "fonte": "Fundo Monetário Internacional - International Financial Statistics, via Banco Mundial - World Development Indicators (FP.CPI.TOTL)",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a evolução do nível médio dos preços de bens e serviços de consumo no Brasil, com base 2010 igual a 100.",
+    "como_interpretar": "Valores maiores indicam aumento acumulado do nível de preços ao consumidor em relação a 2010. O índice mede inflação acumulada de preços ao consumidor, não custo de vida individual, qualidade dos bens, renda real ou poder de compra por si só.",
+    "metodologia": "O indicador corresponde ao índice de preços de bens e serviços de consumo em relação a um período de referência, com 2010 = 100. A série do Banco Mundial identifica como fonte primária o banco de dados International Financial Statistics do Fundo Monetário Internacional. O índice de preços ao consumidor geralmente utiliza fórmula de Laspeyres para medir a variação do custo de aquisição de uma cesta de bens e serviços pelo consumidor médio.",
+    "historico_metodologia": "A série WDI/IFS é padronizada internacionalmente e pode sofrer revisões quando o FMI, o Banco Mundial ou a fonte estatística nacional incorporam revisões de pesos, cestas, cobertura, classificação de itens, bases de referência ou séries históricas. No Brasil, o IPCA do IBGE é o principal índice oficial de inflação ao consumidor usado como referência nacional para metas de inflação, mas o indicador FP.CPI.TOTL é a série internacional harmonizada publicada pelo WDI/IFS. Não foi incluído dado de 2025 ou 2026 porque a série anual oficial consultada vai até 2024.",
+    "abrangencia": "Brasil, cobertura nacional conforme padronização internacional do World Development Indicators, com dados derivados da base International Financial Statistics do FMI.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A transição para o Real ocorreu após período de hiperinflação, e o índice ainda reflete forte elevação acumulada de preços no ano de estabilização monetária."
+      },
+      {
+        "ano": 1995,
+        "nome": "Estabilização",
+        "descricao": "A inflação caiu fortemente após a implantação do Plano Real, reduzindo de forma abrupta o ritmo de crescimento do índice de preços."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A mudança para o regime de câmbio flutuante e a desvalorização cambial pressionaram preços, mas sem retorno ao padrão hiperinflacionário anterior."
+      },
+      {
+        "ano": 2002,
+        "nome": "Crise cambial",
+        "descricao": "A instabilidade cambial e financeira no período eleitoral pressionou a inflação e elevou o índice de preços ao consumidor."
+      },
+      {
+        "ano": 2003,
+        "nome": "Ajuste monetário",
+        "descricao": "A inflação anual permaneceu elevada, refletindo efeitos defasados da depreciação cambial de 2002 e política monetária restritiva posterior."
+      },
+      {
+        "ano": 2008,
+        "nome": "Choque global",
+        "descricao": "A crise financeira global e choques de commodities afetaram preços, com aceleração moderada do índice de preços ao consumidor."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira, realinhamentos de preços administrados e desvalorização cambial coincidiram com aceleração relevante da inflação."
+      },
+      {
+        "ano": 2016,
+        "nome": "Inflação alta",
+        "descricao": "A inflação permaneceu elevada no segundo ano da recessão, mantendo crescimento expressivo do índice de preços."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 alterou padrões de consumo, cadeias de suprimento e preços relativos, mas a inflação média anual ainda ficou moderada em comparação com 2021 e 2022."
+      },
+      {
+        "ano": 2021,
+        "nome": "Choque pós-pandemia",
+        "descricao": "A reabertura econômica, gargalos de oferta, energia e alimentos aceleraram a inflação e elevaram fortemente o índice de preços."
+      },
+      {
+        "ano": 2022,
+        "nome": "Choque energético",
+        "descricao": "Pressões globais de energia, alimentos e cadeias produtivas mantiveram inflação elevada e novo avanço expressivo do índice."
+      }
+    ],
+    "comparacao_paises": "Como índice com base 2010 = 100, a comparação entre países deve focar a variação acumulada desde 2010, não o nível absoluto de preços. Em 2024, o Brasil apresentava aumento acumulado de preços bem superior ao de economias avançadas de baixa inflação, mas inferior ao de países que enfrentaram inflação crônica ou episódios recentes de inflação muito alta.",
+    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois a série é publicada pelo Banco Mundial no World Development Indicators e tem como fonte primária o International Financial Statistics do FMI. A principal ressalva é que índices de preços podem ser revisados por mudanças metodológicas, reponderações de cesta, ajustes de cobertura e revisões históricas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Consumer price index (2010 = 100) - Brazil",
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata FP.CPI.TOTL",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FP.CPI.TOTL"
+      },
+      {
+        "titulo": "FRED - Inflation, consumer prices for Brazil, World Bank/WDI",
+        "url": "https://fred.stlouisfed.org/series/FPCPITOTLZGBRA"
+      },
+      {
+        "titulo": "FMI - International Financial Statistics",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:IFS"
+      },
+      {
+        "titulo": "IBGE - IPCA",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 22.07154429343356
+      },
+      {
+        "ano": 1995,
+        "valor": 36.64031594114098
+      },
+      {
+        "ano": 1996,
+        "valor": 42.413974402024955
+      },
+      {
+        "ano": 1997,
+        "valor": 45.351868475586706
+      },
+      {
+        "ano": 1998,
+        "valor": 46.800895273592246
+      },
+      {
+        "ano": 1999,
+        "valor": 49.07469219953418
+      },
+      {
+        "ano": 2000,
+        "valor": 52.53158274257138
+      },
+      {
+        "ano": 2001,
+        "valor": 56.12493160361266
+      },
+      {
+        "ano": 2002,
+        "valor": 60.867580580643505
+      },
+      {
+        "ano": 2003,
+        "valor": 69.82419620030474
+      },
+      {
+        "ano": 2004,
+        "valor": 74.430627668128
+      },
+      {
+        "ano": 2005,
+        "valor": 79.54366733067458
+      },
+      {
+        "ano": 2006,
+        "valor": 82.87143084573388
+      },
+      {
+        "ano": 2007,
+        "valor": 85.88900587439682
+      },
+      {
+        "ano": 2008,
+        "valor": 90.76629372519166
+      },
+      {
+        "ano": 2009,
+        "valor": 95.20298174803098
+      },
+      {
+        "ano": 2010,
+        "valor": 100
+      },
+      {
+        "ano": 2011,
+        "valor": 106.6364496221309
+      },
+      {
+        "ano": 2012,
+        "valor": 112.3985492607838
+      },
+      {
+        "ano": 2013,
+        "valor": 119.37210444145057
+      },
+      {
+        "ano": 2014,
+        "valor": 126.92721286561117
+      },
+      {
+        "ano": 2015,
+        "valor": 138.38861456010247
+      },
+      {
+        "ano": 2016,
+        "valor": 150.48259420640787
+      },
+      {
+        "ano": 2017,
+        "valor": 155.66878623001776
+      },
+      {
+        "ano": 2018,
+        "valor": 161.37381418390567
+      },
+      {
+        "ano": 2019,
+        "valor": 167.39786028006054
+      },
+      {
+        "ano": 2020,
+        "valor": 172.77429125288793
+      },
+      {
+        "ano": 2021,
+        "valor": 187.11742505829562
+      },
+      {
+        "ano": 2022,
+        "valor": 204.48212061577473
+      },
+      {
+        "ano": 2023,
+        "valor": 213.8751352877195
+      },
+      {
+        "ano": 2024,
+        "valor": 223.21605499002638
+      }
+    ]
+  },
+  "inflacao_alimentos": {
+    "label": "(FAO) Inflação de Alimentos",
+    "unidade": "% ao ano",
+    "fonte": "FAOSTAT / Banco Mundial Data360 - Consumer Price Indices: Food price inflation (FAO_CP_23014), com referência metodológica ao CPI do FMI para alimentos e bebidas não alcoólicas",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a variação anual dos preços ao consumidor de alimentos no Brasil, com base no índice de preços ao consumidor de alimentos.",
+    "como_interpretar": "Valores positivos indicam aumento médio dos preços de alimentos em relação ao ano anterior; valores negativos indicam deflação de alimentos. Inflação de alimentos acima da inflação geral reduz o poder de compra, especialmente de famílias de menor renda, porque alimentos têm peso proporcionalmente maior no orçamento dessas famílias.",
+    "metodologia": "A série da FAOSTAT/Banco Mundial Data360 define inflação de alimentos como a variação percentual do Índice de Preços ao Consumidor de Alimentos. O índice é padronizado internacionalmente, com base 2015=100, e deriva de dados nacionais de CPI, incluindo a divisão de alimentos e bebidas não alcoólicas quando disponível. Para o Brasil, a referência nacional subjacente é o IPCA do IBGE, grupo Alimentação e Bebidas, harmonizado para comparação internacional.",
+    "historico_metodologia": "A FAOSTAT informa que os índices gerais e de alimentos são atualizados trimestralmente e que a base metodológica atual usa dados do FMI, UNSD, OCDE e institutos nacionais de estatística. Houve harmonização da base para 2015=100 e uso de procedimentos de imputação quando há lacunas. Para manter apenas dados concretos e evitar estimativas, foram mantidos somente anos com valores oficiais observados na série anual disponível. A série brasileira também pode ser afetada por mudanças de ponderação do IPCA associadas às Pesquisas de Orçamentos Familiares do IBGE.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da FAOSTAT e Banco Mundial Data360 para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária reduziu drasticamente a hiperinflação brasileira e tornou a série pós-1994 mais comparável."
+      },
+      {
+        "ano": 2002,
+        "nome": "Choque cambial",
+        "descricao": "A forte depreciação cambial e a incerteza macroeconômica pressionaram preços administrados, bens comercializáveis e alimentos."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise alimentos",
+        "descricao": "A alta internacional de commodities agrícolas em 2007-2008 elevou pressões sobre alimentos em vários países, incluindo o Brasil."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira, a depreciação cambial e choques de custos elevaram a inflação geral e contribuíram para pressão sobre alimentos."
+      },
+      {
+        "ano": 2017,
+        "nome": "Supersafra",
+        "descricao": "A boa oferta agrícola contribuiu para queda ou forte desaceleração dos preços de alimentos no Brasil."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19, a depreciação cambial, choques logísticos e mudanças de demanda pressionaram fortemente alimentos."
+      },
+      {
+        "ano": 2022,
+        "nome": "Guerra Ucrânia",
+        "descricao": "A guerra entre Rússia e Ucrânia elevou preços internacionais de grãos, energia e fertilizantes, afetando custos globais de alimentos."
+      },
+      {
+        "ano": 2024,
+        "nome": "Choques climáticos",
+        "descricao": "Eventos climáticos adversos e pressões em itens como carnes, café, frutas e alimentos in natura contribuíram para nova aceleração de alimentos."
+      }
+    ],
+    "comparacao_paises": "O Brasil apresenta inflação de alimentos historicamente mais volátil que economias avançadas, em parte por maior exposição cambial, choques agrícolas, peso relevante de alimentos na cesta de consumo e influência de commodities. Em 2024, a alta de alimentos no Brasil ficou acima da inflação geral brasileira e acima do patamar observado em várias economias avançadas, mas abaixo de países com inflação alimentar extrema, como Argentina e Turquia.",
+    "nivel_confiabilidade": "Alto, pois a série é baseada em fontes oficiais internacionais e nacionais: FAOSTAT, Banco Mundial Data360, FMI CPI e dados nacionais do IBGE. A principal ressalva é que a FAOSTAT pode aplicar harmonização, reescalonamento e imputação em parte das observações globais; por isso, para uso estritamente oficial nacional, o IPCA/IBGE deve ser consultado como fonte primária complementar.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial Data360 - FAOSTAT Consumer Price Indices: Food price inflation (FAO_CP_23014)",
+        "url": "https://data360files.worldbank.org/data360-data/data/FAO_CP/FAO_CP_23014_WIDEF.csv"
+      },
+      {
+        "titulo": "Banco Mundial Data360 - FAOSTAT Consumer Price Indices Dataset",
+        "url": "https://data360.worldbank.org/en/dataset/FAO_CP"
+      },
+      {
+        "titulo": "FAOSTAT - Consumer Price Indices",
+        "url": "https://www.fao.org/faostat/en/#data/CP"
+      },
+      {
+        "titulo": "FAO - Food and General Consumer Price Indices Methodology",
+        "url": "https://files-faostat.fao.org/production/CP/CP_e.pdf"
+      },
+      {
+        "titulo": "FMI - Consumer Price Index (CPI) Dataset",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:CPI"
+      },
+      {
+        "titulo": "IBGE SIDRA - Tabela 7060: IPCA por grupos, subgrupos, itens e subitens",
+        "url": "https://sidra.ibge.gov.br/tabela/7060"
+      },
+      {
+        "titulo": "IBGE - IPCA: Índice Nacional de Preços ao Consumidor Amplo",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 18.57
+      },
+      {
+        "ano": 1995,
+        "valor": 22.0
+      },
+      {
+        "ano": 1996,
+        "valor": 8.56
+      },
+      {
+        "ano": 1997,
+        "valor": -0.89
+      },
+      {
+        "ano": 1998,
+        "valor": 1.56
+      },
+      {
+        "ano": 1999,
+        "valor": 7.92
+      },
+      {
+        "ano": 2000,
+        "valor": 5.32
+      },
+      {
+        "ano": 2001,
+        "valor": 9.63
+      },
+      {
+        "ano": 2002,
+        "valor": 19.47
+      },
+      {
+        "ano": 2003,
+        "valor": 8.48
+      },
+      {
+        "ano": 2004,
+        "valor": 3.86
+      },
+      {
+        "ano": 2005,
+        "valor": 1.46
+      },
+      {
+        "ano": 2006,
+        "valor": 1.23
+      },
+      {
+        "ano": 2007,
+        "valor": 10.79
+      },
+      {
+        "ano": 2008,
+        "valor": 11.11
+      },
+      {
+        "ano": 2009,
+        "valor": 3.18
+      },
+      {
+        "ano": 2010,
+        "valor": 10.39
+      },
+      {
+        "ano": 2011,
+        "valor": 7.18
+      },
+      {
+        "ano": 2012,
+        "valor": 9.86
+      },
+      {
+        "ano": 2013,
+        "valor": 8.48
+      },
+      {
+        "ano": 2014,
+        "valor": 8.03
+      },
+      {
+        "ano": 2015,
+        "valor": 12.03
+      },
+      {
+        "ano": 2016,
+        "valor": 8.62
+      },
+      {
+        "ano": 2017,
+        "valor": -1.87
+      },
+      {
+        "ano": 2018,
+        "valor": 4.04
+      },
+      {
+        "ano": 2019,
+        "valor": 6.37
+      },
+      {
+        "ano": 2020,
+        "valor": 14.09
+      },
+      {
+        "ano": 2021,
+        "valor": 7.94
+      },
+      {
+        "ano": 2022,
+        "valor": 11.64
+      },
+      {
+        "ano": 2023,
+        "valor": 1.03
+      },
+      {
+        "ano": 2024,
+        "valor": 7.69
+      }
+    ],
+    "padrao": false
+  },
+  "deflator_pib_inflacao_ampla": {
+    "label": "(WDI) Deflator Do PIB - Inflação Ampla Da Economia",
+    "unidade": "% ao ano",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.DEFL.KD.ZG), com referência metodológica complementar do FMI WEO",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a variação anual do deflator implícito do PIB do Brasil, captando a mudança média dos preços de todos os bens e serviços finais produzidos na economia.",
+    "como_interpretar": "Valores maiores indicam maior inflação ampla da economia medida pelas contas nacionais. Diferente do IPCA/CPI, o deflator do PIB cobre a produção doméstica final e não apenas uma cesta de consumo das famílias. Pode divergir da inflação ao consumidor quando mudam preços de exportações, investimento, governo ou composição do PIB.",
+    "metodologia": "O Banco Mundial define a inflação pelo deflator do PIB como a taxa anual de crescimento do deflator implícito do PIB. O deflator implícito do PIB é calculado como a razão entre o PIB em moeda local corrente e o PIB em moeda local constante. A série usada é a NY.GDP.DEFL.KD.ZG do WDI, baseada em contas nacionais oficiais, arquivos de contas nacionais, OCDE e procedimentos de padronização do Banco Mundial. Para o Brasil, os valores refletem a série anual observada disponível até 2024.",
+    "historico_metodologia": "A série pode ser revisada quando o IBGE revisa o Sistema de Contas Nacionais, atualiza pesos, fontes primárias, classificações, ano de referência ou incorpora mudanças metodológicas internacionais. Mudanças relevantes no Brasil incluem a adoção da referência 2000, divulgada em 2007, e a referência 2010, divulgada em 2015, com alterações como inclusão de P&D e exploração mineral na formação bruta de capital fixo. Portanto, apesar de a série ser oficial e comparável internacionalmente, valores históricos podem sofrer revisões quando as contas nacionais são reprocessadas.",
+    "abrangencia": "Brasil, cobertura nacional, anual, padronizada pelo World Development Indicators para comparação internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária reduziu drasticamente a inflação após o período de hiperinflação, mas o valor anual de 1994 ainda captura a transição inflacionária do início do ano."
+      },
+      {
+        "ano": 1995,
+        "nome": "Estabilização",
+        "descricao": "Após a implantação do Real, o deflator do PIB caiu fortemente em relação a 1994, refletindo a desinflação da economia brasileira."
+      },
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A desvalorização do real e a mudança do regime cambial coincidem com reaceleração do deflator do PIB."
+      },
+      {
+        "ano": 2002,
+        "nome": "Choque cambial",
+        "descricao": "A depreciação cambial e a incerteza macroeconômica elevaram a inflação ampla medida pelo deflator."
+      },
+      {
+        "ano": 2003,
+        "nome": "Ajuste macro",
+        "descricao": "A inflação ampla permaneceu elevada em 2003, refletindo efeitos defasados do choque cambial anterior e aperto macroeconômico."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional afetou preços relativos, demanda e atividade econômica, coincidindo com aumento do deflator do PIB."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira e choques de preços administrados e relativos mantiveram a inflação ampla elevada."
+      },
+      {
+        "ano": 2017,
+        "nome": "Desinflação",
+        "descricao": "A queda da inflação e a fraqueza da demanda após a recessão reduziram fortemente o deflator do PIB."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao": "A recuperação pós-pandemia, choques de oferta, commodities e câmbio elevaram de forma expressiva o deflator do PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Inflação moderada",
+        "descricao": "A inflação ampla desacelerou em relação a 2021 e 2022, embora o FMI tenha registrado rebote inflacionário em 2024 associado à demanda forte, alimentos e depreciação cambial."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 4,0797% no deflator do PIB, acima de economias avançadas típicas e próximo de uma inflação ampla moderada para padrões internacionais recentes. Ainda assim, a comparação deve ser feita com cautela: o deflator do PIB depende da estrutura produtiva de cada país, dos preços de exportação, importação, investimento, governo e consumo, não sendo equivalente direto ao índice de preços ao consumidor.",
+    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente. Os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e padronização internacional. A principal ressalva é que contas nacionais e deflatores podem ser revisados retroativamente por atualização metodológica, revisão de fontes e mudança de ano de referência.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Inflation, GDP deflator (annual %) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.DEFL.KD.ZG?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NY.GDP.DEFL.KD.ZG",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.DEFL.KD.ZG"
+      },
+      {
+        "titulo": "Banco Mundial Data360 - WDI NY.GDP.DEFL.KD.ZG CSV",
+        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_NY_GDP_DEFL_KD_ZG_WIDEF.csv"
+      },
+      {
+        "titulo": "FMI - World Economic Outlook Databases",
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
+      },
+      {
+        "titulo": "FMI - Brazil 2025 Article IV Consultation",
+        "url": "https://www.imf.org/en/publications/cr/issues/2025/07/16/brazil-2025-article-iv-consultation-press-release-staff-report-and-statement-by-the-568678"
+      },
+      {
+        "titulo": "IBGE - Sistema de Contas Nacionais Trimestrais",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9300-contas-nacionais-trimestrais.html"
+      },
+      {
+        "titulo": "IBGE - Sistema de Contas Nacionais Brasil, Referência 2010",
+        "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/272becb827a896fa8ce5b6fd476288ea.pdf"
+      },
+      {
+        "titulo": "IBGE - Nova Série do Sistema de Contas Nacionais, Referência 2000",
+        "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13264-asi-ibge-divulga-nova-serie-do-sistema-de-contas-nacionais"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1996,
+        "valor": 18.456243770341075
+      },
+      {
+        "ano": 1997,
+        "valor": 7.729023410047816
+      },
+      {
+        "ano": 1998,
+        "valor": 4.924361586752909
+      },
+      {
+        "ano": 1999,
+        "valor": 8.010500876868292
+      },
+      {
+        "ano": 2000,
+        "valor": 5.606065152717775
+      },
+      {
+        "ano": 2001,
+        "valor": 8.225094316433413
+      },
+      {
+        "ano": 2002,
+        "valor": 9.798112234313109
+      },
+      {
+        "ano": 2003,
+        "valor": 14.091021527267017
+      },
+      {
+        "ano": 2004,
+        "valor": 7.752060759462694
+      },
+      {
+        "ano": 2005,
+        "valor": 7.431224757439779
+      },
+      {
+        "ano": 2006,
+        "valor": 6.77427409299591
+      },
+      {
+        "ano": 2007,
+        "valor": 6.439038101761412
+      },
+      {
+        "ano": 2008,
+        "valor": 8.778552729858589
+      },
+      {
+        "ano": 2009,
+        "valor": 7.313482741521511
+      },
+      {
+        "ano": 2010,
+        "valor": 8.423338339283376
+      },
+      {
+        "ano": 2011,
+        "valor": 8.318592219748908
+      },
+      {
+        "ano": 2012,
+        "valor": 7.943126937476279
+      },
+      {
+        "ano": 2013,
+        "valor": 7.50456453269075
+      },
+      {
+        "ano": 2014,
+        "valor": 7.846709751198432
+      },
+      {
+        "ano": 2015,
+        "valor": 7.566175007869049
+      },
+      {
+        "ano": 2016,
+        "valor": 8.10360437332622
+      },
+      {
+        "ano": 2017,
+        "valor": 3.6713845041894473
+      },
+      {
+        "ano": 2018,
+        "valor": 4.493534327832307
+      },
+      {
+        "ano": 2019,
+        "valor": 4.224258863782367
+      },
+      {
+        "ano": 2020,
+        "valor": 6.472499623112739
+      },
+      {
+        "ano": 2021,
+        "valor": 13.047270859634281
+      },
+      {
+        "ano": 2022,
+        "valor": 8.57028196142548
+      },
+      {
+        "ano": 2023,
+        "valor": 5.159501075019961
+      },
+      {
+        "ano": 2024,
+        "valor": 4.079674484396207
+      }
+    ],
+    "padrao": false
+  },
+  "taxa_real_juros": {
+    "label": "(WDI/FMI) Taxa Real de Juros",
+    "unidade": "% ao ano",
+    "fonte": "Banco Mundial - World Development Indicators; Fundo Monetário Internacional - International Financial Statistics (FR.INR.RINR)",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a taxa de juros real do Brasil, calculada como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB.",
+    "como_interpretar": "Valores maiores indicam custo real mais elevado do crédito após descontar a inflação medida pelo deflator do PIB. Valores menores indicam crédito real menos caro. A comparação entre países deve ser feita com cautela, pois as condições, prazos, riscos e estruturas das taxas de empréstimo diferem entre sistemas financeiros.",
+    "metodologia": "O indicador FR.INR.RINR do World Development Indicators mede a taxa de juros de empréstimo ajustada pela inflação, usando o deflator do PIB como medida de inflação. A fonte primária da taxa de juros é a base International Financial Statistics do FMI, combinada pelo Banco Mundial com dados do deflator do PIB. O indicador é expresso como porcentagem anual.",
+    "historico_metodologia": "A metodologia oficial define a taxa real de juros como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB. A série do Banco Mundial/WDI para o Brasil possui dados anuais observados de 1997 a 2024; não há valores publicados para 1994, 1995 e 1996 na série FR.INR.RINR consultada. Os valores podem ser revisados quando o FMI atualiza as séries de juros, quando o Banco Mundial atualiza o WDI ou quando as contas nacionais/deflator do PIB são revisados.",
+    "abrangencia": "Brasil, cobertura nacional, série anual padronizada internacionalmente pelo World Development Indicators para comparação com outros países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crise cambial",
+        "descricao": "A combinação de juros nominais elevados e inflação medida pelo deflator do PIB produziu o maior valor da série em 1998."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A transição para o regime de câmbio flutuante e o ajuste monetário mantiveram a taxa real de juros em patamar muito elevado."
+      },
+      {
+        "ano": 2003,
+        "nome": "Aperto monetário",
+        "descricao": "O período de incerteza macroeconômica e política monetária restritiva manteve a taxa real de juros acima de 40%."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional e a resposta de política monetária coincidiram com queda da taxa real de juros em relação aos anos anteriores."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira e o ambiente de inflação elevada coincidiram com forte aumento da taxa real de juros medida pela série."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da recessão e a política monetária restritiva mantiveram a taxa real de juros em nível muito alto."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "Durante a pandemia de COVID-19, a redução dos juros nominais e o choque econômico levaram a nova queda da taxa real de juros."
+      },
+      {
+        "ano": 2021,
+        "nome": "Mínima histórica",
+        "descricao": "A série atingiu seu menor valor em 2021, em meio ao período de juros nominais ainda baixos e aceleração posterior da inflação."
+      },
+      {
+        "ano": 2022,
+        "nome": "Alta Selic",
+        "descricao": "O ciclo de aperto monetário iniciado após a alta da inflação elevou novamente a taxa real de juros."
+      },
+      {
+        "ano": 2024,
+        "nome": "Juro elevado",
+        "descricao": "Apesar da queda em relação a 2023, a taxa real de juros permaneceu muito alta em 2024 no comparativo internacional."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil aparece entre os países com maior taxa real de juros na série FR.INR.RINR do Banco Mundial, com valor de aproximadamente 34,729% ao ano. Esse nível é muito superior ao observado na maioria das economias avançadas e emergentes, mas a comparação deve ser feita com cautela porque a metodologia usa taxa de empréstimo e deflator do PIB, não a Selic real ex-ante.",
+    "nivel_confiabilidade": "Alto para uma série macroeconômica oficial e comparável internacionalmente, pois os dados são publicados pelo World Development Indicators do Banco Mundial com base no International Financial Statistics do FMI e em dados do deflator do PIB. A principal limitação é a comparabilidade internacional imperfeita das taxas de empréstimo, pois termos, riscos, prazos e estrutura do crédito diferem entre países.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Real interest rate (%) - Brazil",
+        "url": "https://data.worldbank.org/indicator/FR.INR.RINR?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata FR.INR.RINR",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.RINR"
+      },
+      {
+        "titulo": "CEIC - Brazil BR: Real Interest Rate - World Bank/WDI",
+        "url": "https://www.ceicdata.com/en/brazil/interest-rates/br-real-interest-rate"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1997,
+        "valor": 65.4088449795992
+      },
+      {
+        "ano": 1998,
+        "valor": 77.6168379948237
+      },
+      {
+        "ano": 1999,
+        "valor": 67.0609170941772
+      },
+      {
+        "ano": 2000,
+        "valor": 48.5047281998625
+      },
+      {
+        "ano": 2001,
+        "valor": 45.6378187103224
+      },
+      {
+        "ano": 2002,
+        "valor": 48.3404374454115
+      },
+      {
+        "ano": 2003,
+        "valor": 46.4473988425047
+      },
+      {
+        "ano": 2004,
+        "valor": 43.7791527165785
+      },
+      {
+        "ano": 2005,
+        "valor": 44.6351688638607
+      },
+      {
+        "ano": 2006,
+        "valor": 41.2403264526711
+      },
+      {
+        "ano": 2007,
+        "valor": 35.0225154695215
+      },
+      {
+        "ano": 2008,
+        "valor": 35.3667577965037
+      },
+      {
+        "ano": 2009,
+        "valor": 34.7920096326271
+      },
+      {
+        "ano": 2010,
+        "valor": 29.1158055214655
+      },
+      {
+        "ano": 2011,
+        "valor": 32.8334595068102
+      },
+      {
+        "ano": 2012,
+        "valor": 26.5820905307869
+      },
+      {
+        "ano": 2013,
+        "valor": 18.4988444166435
+      },
+      {
+        "ano": 2014,
+        "valor": 22.403672441435
+      },
+      {
+        "ano": 2015,
+        "valor": 33.832343966101
+      },
+      {
+        "ano": 2016,
+        "valor": 40.6983614489962
+      },
+      {
+        "ano": 2017,
+        "valor": 41.7138078720244
+      },
+      {
+        "ano": 2018,
+        "valor": 33.1023342480424
+      },
+      {
+        "ano": 2019,
+        "valor": 31.9030727508498
+      },
+      {
+        "ano": 2020,
+        "valor": 21.1971796870516
+      },
+      {
+        "ano": 2021,
+        "valor": 15.0108849661413
+      },
+      {
+        "ano": 2022,
+        "valor": 28.3960928277404
+      },
+      {
+        "ano": 2023,
+        "valor": 36.554
+      },
+      {
+        "ano": 2024,
+        "valor": 34.729
+      }
+    ]
+  },
+  "taxa_juros_emprestimos": {
+    "label": "(WDI/FMI) Taxa de Juros de Empréstimos",
+    "unidade": "% ao ano",
+    "fonte": "Banco Mundial - World Development Indicators (FR.INR.LEND), com dados da base International Financial Statistics do Fundo Monetário Internacional",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a taxa bancária de empréstimos que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado.",
+    "como_interpretar": "Valores maiores indicam custo nominal mais alto do crédito bancário ao setor privado. O indicador deve ser interpretado com cautela em comparações internacionais, pois os termos, prazos, garantias, risco dos tomadores e composição dos empréstimos variam entre países.",
+    "metodologia": "O indicador corresponde à taxa de empréstimos bancários reportada nas estatísticas monetárias e financeiras, expressa como percentual ao ano. A série do WDI usa como fonte primária a base International Financial Statistics do FMI. Segundo a definição do Banco Mundial, a taxa de empréstimos é a taxa bancária que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado, podendo variar conforme a qualidade de crédito dos tomadores e os objetivos do financiamento.",
+    "historico_metodologia": "A fonte metodológica do WDI informa que as estatísticas monetárias e financeiras são compiladas de acordo com padrões internacionais, incluindo o Monetary and Financial Statistics Manual de 2004 ou 2018. A própria definição do indicador alerta que os termos e condições das taxas diferem por país, limitando a comparabilidade internacional. Para o Brasil, a série anual observada disponível no WDI começa em 1997 e vai até 2024; não há valores observados para 1994, 1995, 1996 ou 2025 na consulta validada.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional no World Development Indicators para comparação entre países quando disponível.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crise cambial",
+        "descricao": "A pressão cambial e financeira de 1998-1999 coincidiu com o pico da taxa de empréstimos da série validada."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A transição para o regime de câmbio flutuante e o ajuste macroeconômico mantiveram a taxa de empréstimos em nível muito elevado."
+      },
+      {
+        "ano": 2003,
+        "nome": "Aperto monetário",
+        "descricao": "O período de inflação elevada, incerteza macroeconômica e política monetária restritiva coincidiu com nova alta expressiva da taxa de empréstimos."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional foi acompanhada por queda da taxa de empréstimos em relação a 2008, refletindo mudança nas condições monetárias e de crédito."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira e a elevação dos juros domésticos coincidiram com forte alta da taxa de empréstimos em 2015 e 2016."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 coincidiu com forte queda da taxa de empréstimos, em ambiente de afrouxamento monetário e medidas extraordinárias de liquidez."
+      },
+      {
+        "ano": 2022,
+        "nome": "Inflação global",
+        "descricao": "O ciclo de alta de juros para conter a inflação no Brasil e no exterior coincidiu com forte aumento da taxa de empréstimos em 2022 e 2023."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 40,22% ao ano, nível muito acima da média mundial reportada para países com dados disponíveis no mesmo indicador. Isso coloca o Brasil entre os países com maior custo nominal de crédito bancário ao setor privado, embora a comparação internacional seja limitada pelas diferenças de estrutura financeira, risco de crédito, inflação, prazos e metodologia nacional de reporte.",
+    "nivel_confiabilidade": "Alto para série macrofinanceira oficial, pois os dados são publicados no World Development Indicators do Banco Mundial e derivados da base International Financial Statistics do FMI. A principal ressalva é metodológica: o próprio WDI informa que as condições das taxas de empréstimos diferem por país, limitando a comparabilidade internacional; além disso, os valores podem ser revisados em atualizações futuras da base.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Lending interest rate (%) - Brazil",
+        "url": "https://data.worldbank.org/indicator/FR.INR.LEND?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial - Lending interest rate (%) - Indicador Global",
+        "url": "https://data.worldbank.org/indicator/FR.INR.LEND"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata FR.INR.LEND",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LEND"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators FR.INR.LEND",
+        "url": "https://databank.worldbank.org/data/reports.aspx?country=BRA&series=FR.INR.LEND&source=2"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1997,
+        "valor": 78.19
+      },
+      {
+        "ano": 1998,
+        "valor": 86.36
+      },
+      {
+        "ano": 1999,
+        "valor": 80.44
+      },
+      {
+        "ano": 2000,
+        "valor": 56.83
+      },
+      {
+        "ano": 2001,
+        "valor": 57.62
+      },
+      {
+        "ano": 2002,
+        "valor": 62.88
+      },
+      {
+        "ano": 2003,
+        "valor": 67.08
+      },
+      {
+        "ano": 2004,
+        "valor": 54.92
+      },
+      {
+        "ano": 2005,
+        "valor": 55.38
+      },
+      {
+        "ano": 2006,
+        "valor": 50.81
+      },
+      {
+        "ano": 2007,
+        "valor": 43.72
+      },
+      {
+        "ano": 2008,
+        "valor": 47.25
+      },
+      {
+        "ano": 2009,
+        "valor": 44.65
+      },
+      {
+        "ano": 2010,
+        "valor": 39.99
+      },
+      {
+        "ano": 2011,
+        "valor": 43.88
+      },
+      {
+        "ano": 2012,
+        "valor": 36.64
+      },
+      {
+        "ano": 2013,
+        "valor": 27.39
+      },
+      {
+        "ano": 2014,
+        "valor": 32.01
+      },
+      {
+        "ano": 2015,
+        "valor": 43.96
+      },
+      {
+        "ano": 2016,
+        "valor": 52.1
+      },
+      {
+        "ano": 2017,
+        "valor": 46.92
+      },
+      {
+        "ano": 2018,
+        "valor": 39.08
+      },
+      {
+        "ano": 2019,
+        "valor": 37.48
+      },
+      {
+        "ano": 2020,
+        "valor": 29.04
+      },
+      {
+        "ano": 2021,
+        "valor": 30.02
+      },
+      {
+        "ano": 2022,
+        "valor": 39.4
+      },
+      {
+        "ano": 2023,
+        "valor": 43.6
+      },
+      {
+        "ano": 2024,
+        "valor": 40.22
+      }
+    ],
+    "padrao": false
+  },
+  "taxa_juros_depositos": {
+    "label": "(WDI/FMI) Taxa de Juros de Depósitos",
+    "unidade": "% ao ano",
+    "fonte": "Banco Mundial - World Development Indicators (FR.INR.DPST), com dados originais do Fundo Monetário Internacional - International Financial Statistics",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a taxa paga por bancos comerciais ou instituições similares sobre depósitos à vista, a prazo ou de poupança no Brasil.",
+    "como_interpretar": "Valores maiores indicam remuneração nominal mais alta dos depósitos bancários. A série não deve ser interpretada diretamente como retorno real do poupador, pois não desconta inflação, impostos, prazos, liquidez, risco, nem diferenças institucionais entre países.",
+    "metodologia": "O Banco Mundial reproduz no WDI a série FR.INR.DPST do FMI/IFS. A taxa de juros de depósitos corresponde à taxa paga por bancos comerciais ou similares por depósitos à vista, a prazo ou de poupança. Os termos e condições desses instrumentos diferem entre países, o que limita a comparabilidade internacional. A unidade é percentual anual.",
+    "historico_metodologia": "A definição oficial do WDI/FMI permaneceu conceitualmente estável: taxa paga por bancos comerciais ou similares sobre depósitos. A principal ressalva metodológica é que os instrumentos, prazos, condições de remuneração e práticas bancárias variam entre países e ao longo do tempo. No caso brasileiro, os anos iniciais da série capturam o ambiente de hiperinflação e transição monetária anterior e posterior ao Plano Real, o que torna os valores nominais de 1994 muito pouco comparáveis aos anos posteriores em termos econômicos reais. Não foram incluídos dados de 2025 ou 2026 porque a série anual oficial validada do WDI disponível vai até 2024.",
+    "abrangencia": "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional, baseada no IMF International Financial Statistics.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária iniciada com o Plano Real reduziu drasticamente a inflação e levou a forte queda das taxas nominais de depósitos após 1994."
+      },
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial brasileiro e a desvalorização do real coincidiram com alta relevante das taxas nominais de juros."
+      },
+      {
+        "ano": 2002,
+        "nome": "Stress eleitoral",
+        "descricao": "A instabilidade financeira e cambial associada ao ciclo eleitoral de 2002 elevou as taxas de juros nominais no Brasil."
+      },
+      {
+        "ano": 2003,
+        "nome": "Aperto monetário",
+        "descricao": "A política monetária restritiva adotada para conter inflação e estabilizar expectativas manteve a taxa de depósitos em nível elevado."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional elevou a aversão a risco e antecedeu mudanças relevantes na política monetária brasileira."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira, inflação elevada e política monetária contracionista coincidiram com aumento da taxa de depósitos."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 coincidiu com forte redução da taxa básica de juros e com o menor valor da série anual desde 1994."
+      },
+      {
+        "ano": 2022,
+        "nome": "Aperto pós-pandemia",
+        "descricao": "A alta global e doméstica da inflação após a pandemia levou a forte ciclo de aperto monetário, elevando a taxa de depósitos."
+      },
+      {
+        "ano": 2024,
+        "nome": "Easing monetário",
+        "descricao": "O ciclo de redução da taxa Selic em 2023 e 2024 coincidiu com queda da taxa anual de depósitos em 2024."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 7,7037% ao ano, nível superior ao de muitas economias avançadas e acima de países como México e Coreia do Sul no mesmo indicador, mas inferior ao de economias com juros nominais muito elevados, como Turquia e Uganda. A comparação deve ser feita com cautela porque o próprio WDI informa que os termos e condições dos depósitos diferem por país, limitando a comparabilidade.",
+    "nivel_confiabilidade": "Alto para série macrofinanceira oficial comparável internacionalmente, pois o indicador é publicado pelo Banco Mundial no WDI e tem como fonte original o FMI/IFS. A ressalva é que os valores são nominais, dependem das definições nacionais de depósitos bancários e podem sofrer revisões nas bases internacionais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Deposit interest rate (%) - Brazil",
+        "url": "https://data.worldbank.org/indicator/FR.INR.DPST?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata FR.INR.DPST",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.DPST"
+      },
+      {
+        "titulo": "Fundo Monetário Internacional - International Financial Statistics",
+        "url": "https://data.imf.org/"
+      },
+      {
+        "titulo": "Banco Central do Brasil - Selic rate",
+        "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 5175.241
+      },
+      {
+        "ano": 1995,
+        "valor": 52.24649
+      },
+      {
+        "ano": 1996,
+        "valor": 26.44843
+      },
+      {
+        "ano": 1997,
+        "valor": 24.35065
+      },
+      {
+        "ano": 1998,
+        "valor": 28.00333
+      },
+      {
+        "ano": 1999,
+        "valor": 26.02
+      },
+      {
+        "ano": 2000,
+        "valor": 17.2
+      },
+      {
+        "ano": 2001,
+        "valor": 17.86
+      },
+      {
+        "ano": 2002,
+        "valor": 19.14
+      },
+      {
+        "ano": 2003,
+        "valor": 21.97
+      },
+      {
+        "ano": 2004,
+        "valor": 15.42
+      },
+      {
+        "ano": 2005,
+        "valor": 17.63
+      },
+      {
+        "ano": 2006,
+        "valor": 13.93
+      },
+      {
+        "ano": 2007,
+        "valor": 10.58
+      },
+      {
+        "ano": 2008,
+        "valor": 11.66
+      },
+      {
+        "ano": 2009,
+        "valor": 9.28
+      },
+      {
+        "ano": 2010,
+        "valor": 8.87
+      },
+      {
+        "ano": 2011,
+        "valor": 10.99
+      },
+      {
+        "ano": 2012,
+        "valor": 7.91
+      },
+      {
+        "ano": 2013,
+        "valor": 7.81
+      },
+      {
+        "ano": 2014,
+        "valor": 10.02
+      },
+      {
+        "ano": 2015,
+        "valor": 12.62
+      },
+      {
+        "ano": 2016,
+        "valor": 12.45
+      },
+      {
+        "ano": 2017,
+        "valor": 8.51
+      },
+      {
+        "ano": 2018,
+        "valor": 6.87
+      },
+      {
+        "ano": 2019,
+        "valor": 5.43
+      },
+      {
+        "ano": 2020,
+        "valor": 2.2
+      },
+      {
+        "ano": 2021,
+        "valor": 4.35
+      },
+      {
+        "ano": 2022,
+        "valor": 12
+      },
+      {
+        "ano": 2023,
+        "valor": 12.14
+      },
+      {
+        "ano": 2024,
+        "valor": 7.7037
+      }
+    ],
+    "padrao": false
+  },
+  "spread_bancario": {
+    "label": "(WDI) Spread Bancário",
+    "unidade": "pontos percentuais",
+    "fonte": "Banco Mundial - World Development Indicators (FR.INR.LNDP), com dados originais do International Financial Statistics do FMI",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede a diferença entre a taxa de juros cobrada pelos bancos em empréstimos ao setor privado e a taxa paga por bancos comerciais ou similares em depósitos.",
+    "como_interpretar": "Valores maiores indicam maior diferença entre juros de empréstimos e juros pagos em depósitos, podendo refletir risco de crédito, inadimplência, custos administrativos, tributação, concentração bancária, compulsórios, inflação, política monetária e estrutura do mercado financeiro. A comparação entre países exige cautela porque as condições e definições das taxas podem variar.",
+    "metodologia": "O Banco Mundial define o indicador como a taxa de empréstimo menos a taxa de depósito. A taxa de empréstimo é a taxa cobrada pelos bancos em empréstimos ao setor privado, enquanto a taxa de depósito é a taxa paga por bancos comerciais ou similares em depósitos à vista, a prazo ou de poupança. A série do WDI usa como fonte primária o International Financial Statistics do FMI.",
+    "historico_metodologia": "A série disponível para o Brasil no WDI começa em 1997; portanto, não há valores oficiais observados para 1994, 1995 e 1996 nesse indicador. O Banco Mundial informa que os termos e condições associados às taxas diferem por país, limitando a comparabilidade internacional. A série pode sofrer revisões quando o FMI/IFS ou o Banco Mundial atualizam bases, definições, cobertura ou dados nacionais.",
+    "abrangencia": "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crises externas",
+        "descricao": "Crises financeiras internacionais e forte aperto monetário no Brasil coincidiram com o maior valor da série."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A mudança para o regime de câmbio flutuante e a transição macroeconômica mantiveram o spread em nível muito elevado."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional elevou a aversão a risco e afetou condições de crédito."
+      },
+      {
+        "ano": 2013,
+        "nome": "Mínimo histórico",
+        "descricao": "O spread atingiu o menor valor da série validada, em contexto de juros básicos relativamente mais baixos e expansão de crédito."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira, inflação elevada e deterioração do risco de crédito coincidiram com forte alta do spread."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 coincidiu com queda do spread anual, em ambiente de juros básicos historicamente baixos e medidas emergenciais de crédito."
+      },
+      {
+        "ano": 2022,
+        "nome": "Aperto monetário",
+        "descricao": "O ciclo de alta da Selic e a piora das condições financeiras coincidiram com retomada gradual do spread."
+      },
+      {
+        "ano": 2024,
+        "nome": "Juros altos",
+        "descricao": "A manutenção de juros elevados e condições restritivas de crédito coincidiu com nova alta do spread."
+      }
+    ],
+    "comparacao_paises": "O Brasil apresenta spread bancário estruturalmente alto em comparação internacional no WDI. Em 2024, o valor brasileiro foi de 32,521 pontos percentuais, nível muito superior ao observado em economias avançadas e também elevado frente a muitos países emergentes, embora a comparabilidade seja limitada pelas diferenças nacionais nas definições e condições das taxas.",
+    "nivel_confiabilidade": "Alto para série macrofinanceira internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com origem no International Financial Statistics do FMI. A principal limitação é metodológica: as taxas de empréstimo e depósito não são perfeitamente comparáveis entre países porque contratos, prazos, risco, regulação e estrutura bancária diferem.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Interest rate spread (lending rate minus deposit rate, %) - Brazil",
+        "url": "https://data.worldbank.org/indicator/FR.INR.LNDP?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata FR.INR.LNDP",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LNDP"
+      },
+      {
+        "titulo": "Banco Mundial - Indicators API Documentation",
+        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries"
+      },
+      {
+        "titulo": "FRED / Federal Reserve Bank of St. Louis - Bank Lending Deposit Spread for Brazil, fonte World Bank",
+        "url": "https://fred.stlouisfed.org/series/DDEI02BRA156NWDB"
+      },
+      {
+        "titulo": "Banco Central do Brasil - Selic Rate",
+        "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1997,
+        "valor": 53.84269
+      },
+      {
+        "ano": 1998,
+        "valor": 58.36
+      },
+      {
+        "ano": 1999,
+        "valor": 54.42083
+      },
+      {
+        "ano": 2000,
+        "valor": 39.63083
+      },
+      {
+        "ano": 2001,
+        "valor": 39.76
+      },
+      {
+        "ano": 2002,
+        "valor": 43.73228
+      },
+      {
+        "ano": 2003,
+        "valor": 45.11265
+      },
+      {
+        "ano": 2004,
+        "valor": 39.50885
+      },
+      {
+        "ano": 2005,
+        "valor": 37.75459
+      },
+      {
+        "ano": 2006,
+        "valor": 36.87593
+      },
+      {
+        "ano": 2007,
+        "valor": 33.13942
+      },
+      {
+        "ano": 2008,
+        "valor": 35.59467
+      },
+      {
+        "ano": 2009,
+        "valor": 35.37117
+      },
+      {
+        "ano": 2010,
+        "valor": 31.12123
+      },
+      {
+        "ano": 2011,
+        "valor": 32.89097
+      },
+      {
+        "ano": 2012,
+        "valor": 28.7292
+      },
+      {
+        "ano": 2013,
+        "valor": 19.58456
+      },
+      {
+        "ano": 2014,
+        "valor": 21.9847
+      },
+      {
+        "ano": 2015,
+        "valor": 31.33587
+      },
+      {
+        "ano": 2016,
+        "valor": 39.65424
+      },
+      {
+        "ano": 2017,
+        "valor": 38.40313
+      },
+      {
+        "ano": 2018,
+        "valor": 32.21117
+      },
+      {
+        "ano": 2019,
+        "valor": 32.04483
+      },
+      {
+        "ano": 2020,
+        "valor": 26.84524
+      },
+      {
+        "ano": 2021,
+        "valor": 25.7
+      },
+      {
+        "ano": 2022,
+        "valor": 27.4
+      },
+      {
+        "ano": 2023,
+        "valor": 31.461
+      },
+      {
+        "ano": 2024,
+        "valor": 32.521
+      }
+    ],
+    "padrao": false
+  },
+  "paridade_poder_compra_ppp": {
+    "label": "(WDI/ICP) Paridade de Poder de Compra",
+    "unidade": "Moeda local por dólar internacional",
+    "fonte": "Banco Mundial - World Development Indicators / International Comparison Program (PA.NUS.PPP)",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede o fator de conversão por paridade de poder de compra do PIB, indicando quantas unidades de moeda local equivalem a um dólar internacional em termos de poder de compra.",
+    "como_interpretar": "Valores maiores indicam que são necessárias mais unidades de moeda local para igualar o poder de compra de um dólar internacional. O indicador serve para converter agregados econômicos nominais em valores comparáveis internacionalmente, removendo diferenças de níveis de preços entre países. Não deve ser interpretado como taxa de câmbio de mercado.",
+    "metodologia": "O fator PPP do PIB é calculado pelo International Comparison Program, pelo Banco Mundial e por programas PPP da OCDE/Eurostat. As PPPs convertem moedas nacionais para uma moeda comum e equalizam seu poder de compra ao eliminar diferenças de níveis de preços entre países. O indicador PA.NUS.PPP é expresso em unidades de moeda local por dólar internacional e refere-se ao nível do PIB. A série anual do WDI incorpora benchmarks do ICP e atualizações por contas nacionais, deflatores e revisões metodológicas oficiais.",
+    "historico_metodologia": "A série foi afetada por ciclos internacionais de benchmark do ICP, especialmente 2011, 2017 e 2021. Em anos sem benchmark direto, o WDI mantém série temporal oficial usando atualizações consistentes com contas nacionais e deflatores. O Banco Mundial informa que o indicador PA.NUS.PPP foi atualizado com base em deflatores do PIB e nos resultados do ICP. Valores anteriores a 1994 foram excluídos porque a mudança monetária brasileira antes e durante o Plano Real reduz a comparabilidade direta da unidade monetária histórica.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária e a introdução do real mudaram a unidade monetária brasileira, tornando 1994 o primeiro ano adequado desta série recortada para comparação em moeda local atual."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A mudança para câmbio flutuante e a desvalorização do real coincidiram com alta do fator PPP em moeda local por dólar internacional."
+      },
+      {
+        "ano": 2002,
+        "nome": "Crise cambial",
+        "descricao": "A forte instabilidade cambial e inflacionária no período eleitoral coincidiu com aumento expressivo do fator PPP."
+      },
+      {
+        "ano": 2011,
+        "nome": "Benchmark ICP",
+        "descricao": "Ano de benchmark do International Comparison Program, usado como referência internacional para recalibrar PPPs."
+      },
+      {
+        "ano": 2017,
+        "nome": "Benchmark ICP",
+        "descricao": "Novo ciclo de benchmark do ICP, incorporado às séries internacionais de paridade de poder de compra."
+      },
+      {
+        "ano": 2021,
+        "nome": "Benchmark ICP",
+        "descricao": "Benchmark ICP 2021 incorporado ao WDI, afetando a base de comparação internacional das PPPs mais recentes."
+      },
+      {
+        "ano": 2024,
+        "nome": "Atualização WDI",
+        "descricao": "Último valor anual disponível na série consultada, incorporando a atualização oficial do WDI disponível em 2026."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o fator PPP do Brasil foi 2,4873 R$ por dólar internacional. Como a taxa de câmbio média de mercado foi maior que esse fator, o nível de preços do Brasil ficou abaixo do nível dos Estados Unidos quando medido pelo indicador de razão entre PPP e câmbio. Em termos práticos, isso significa que o PIB brasileiro convertido por PPP fica maior do que quando convertido por câmbio de mercado.",
+    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base no International Comparison Program e programas PPP da OCDE/Eurostat. A ressalva técnica é que PPPs anuais podem ser revisadas após novos benchmarks do ICP, revisões de contas nacionais e atualizações de deflatores.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - PPP conversion factor, GDP (LCU per international $) - Brazil",
+        "url": "https://data.worldbank.org/indicator/PA.NUS.PPP?locations=BR"
+      },
+      {
+        "titulo": "UNdata / World Development Indicators - PA.NUS.PPP - Brazil",
+        "url": "https: //data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPP%3BCountry_Code%3ABRA"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata PA.NUS.PPP",
+        "url": "https: //databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPP"
+      },
+      {
+        "titulo": "Banco Mundial - WDI Quarterly Update: December 2025",
+        "url": "https: //datatopics.worldbank.org/world-development-indicators/release-note/dec-2025.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 0.283749422450889
+      },
+      {
+        "ano": 1995,
+        "valor": 0.539108158157798
+      },
+      {
+        "ano": 1996,
+        "valor": 0.627126072175384
+      },
+      {
+        "ano": 1997,
+        "valor": 0.664143975878935
+      },
+      {
+        "ano": 1998,
+        "valor": 0.689104221274963
+      },
+      {
+        "ano": 1999,
+        "valor": 0.733919243539917
+      },
+      {
+        "ano": 2000,
+        "valor": 0.757895423928933
+      },
+      {
+        "ano": 2001,
+        "valor": 0.802170641878033
+      },
+      {
+        "ano": 2002,
+        "valor": 0.867290572535915
+      },
+      {
+        "ano": 2003,
+        "valor": 0.970343048319856
+      },
+      {
+        "ano": 2004,
+        "valor": 1.01818475110308
+      },
+      {
+        "ano": 2005,
+        "valor": 1.06059390834922
+      },
+      {
+        "ano": 2006,
+        "valor": 1.09856354069215
+      },
+      {
+        "ano": 2007,
+        "valor": 1.13845673008303
+      },
+      {
+        "ano": 2008,
+        "valor": 1.21498747295577
+      },
+      {
+        "ano": 2009,
+        "valor": 1.29585280195023
+      },
+      {
+        "ano": 2010,
+        "valor": 1.38813702344533
+      },
+      {
+        "ano": 2011,
+        "valor": 1.4732164144516
+      },
+      {
+        "ano": 2012,
+        "valor": 1.60913586532018
+      },
+      {
+        "ano": 2013,
+        "valor": 1.70855542893458
+      },
+      {
+        "ano": 2014,
+        "valor": 1.82485052496386
+      },
+      {
+        "ano": 2015,
+        "valor": 2.00586931129873
+      },
+      {
+        "ano": 2016,
+        "valor": 2.15597159643949
+      },
+      {
+        "ano": 2017,
+        "valor": 2.2096791267395
+      },
+      {
+        "ano": 2018,
+        "valor": 2.19759154319763
+      },
+      {
+        "ano": 2019,
+        "valor": 2.21644520759583
+      },
+      {
+        "ano": 2020,
+        "valor": 2.26491117477417
+      },
+      {
+        "ano": 2021,
+        "valor": 2.37927412986755
+      },
+      {
+        "ano": 2022,
+        "valor": 2.41127335896254
+      },
+      {
+        "ano": 2023,
+        "valor": 2.44760850115975
+      },
+      {
+        "ano": 2024,
+        "valor": 2.48731718948001
+      }
+    ],
+    "padrao": false
+  },
+  "indice_nivel_precos_pib": {
+    "label": "(WDI/ICP) Índice de Nível de Preços do PIB",
+    "unidade": "Índice relativo aos Estados Unidos = 1,00",
+    "fonte": "Banco Mundial - World Development Indicators / International Comparison Program (PA.NUS.PPPC.RF / PA.NUS.GDP.PLI)",
+    "cat": "Preços, Juros e Poder de Compra",
+    "descricao": "Mede o nível geral de preços do PIB do Brasil em relação aos Estados Unidos, calculado pela razão entre a paridade de poder de compra do PIB e a taxa de câmbio de mercado.",
+    "como_interpretar": "Valor menor que 1 indica que o nível de preços do PIB no Brasil é menor que o dos Estados Unidos; valor maior que 1 indicaria nível de preços superior. O indicador mede preços relativos internacionais, não inflação doméstica anual nem custo de vida individual.",
+    "metodologia": "O indicador é calculado como a razão entre o fator de conversão por paridade de poder de compra do PIB e a taxa de câmbio de mercado correspondente. As PPPs vêm do International Comparison Program, coordenado pelo Banco Mundial com parceiros internacionais, e permitem comparar níveis de preços e volumes reais entre economias. Para o nível do PIB, o índice resume diferenças de preços gerais entre países, tomando os Estados Unidos como base igual a 1,00.",
+    "historico_metodologia": "A série do WDI foi atualizada para refletir os resultados do ciclo ICP 2021 e pode sofrer revisões quando há atualização de PPPs, contas nacionais, taxas de câmbio ou metodologia internacional. A série oficial disponível na consulta cobre 1990 a 2024; para manter a janela solicitada, foram mantidos apenas os valores observados de 1994 a 2024. Não há valor oficial observado para 2025 ou 2026 na fonte consultada.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators e do International Comparison Program para comparação com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária e a mudança do regime inflacionário no início do Plano Real coincidem com aumento do nível de preços relativo medido em dólares."
+      },
+      {
+        "ano": 1999,
+        "nome": "Câmbio flutuante",
+        "descricao": "A adoção da livre flutuação cambial em janeiro de 1999 coincide com forte redução do índice, refletindo a mudança da taxa de câmbio de mercado frente às PPPs."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional afetou fluxos financeiros, câmbio e atividade econômica, contribuindo para variações relevantes do nível de preços relativo no período."
+      },
+      {
+        "ano": 2011,
+        "nome": "Real valorizado",
+        "descricao": "O indicador atingiu o maior valor da série validada em 2011, período associado a câmbio relativamente valorizado e preços domésticos elevados em relação ao dólar."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira e a depreciação cambial coincidem com queda expressiva do nível de preços relativo entre 2014 e 2015."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 e a depreciação cambial coincidem com nova queda do índice de nível de preços relativo."
+      },
+      {
+        "ano": 2024,
+        "nome": "Baixa relativa",
+        "descricao": "Em 2024, o índice permaneceu abaixo de 0,50, indicando que o nível de preços do PIB brasileiro continuou substancialmente inferior ao dos Estados Unidos."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 0,4615600731879536, ou cerca de 46,16% do nível de preços dos Estados Unidos. Isso indica que, no agregado do PIB, os preços brasileiros estavam bem abaixo dos preços dos Estados Unidos, embora essa comparação não represente diretamente inflação doméstica nem preços de uma cesta de consumo específica.",
+    "nivel_confiabilidade": "Muito alto para comparação internacional oficial, pois a série vem do World Development Indicators do Banco Mundial e é baseada em PPPs do International Comparison Program. A principal ressalva é que PPPs, contas nacionais e taxas de câmbio podem ser revisadas em ciclos metodológicos posteriores.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Price level index (GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/PA.NUS.GDP.PLI?locations=BR"
+      },
+      {
+        "titulo": "UNdata / World Development Indicators - PA.NUS.PPPC.RF - Brazil",
+        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPPC.RF%3BCountry_Code%3ABRA"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata PA.NUS.PPPC.RF",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPPC.RF"
+      },
+      {
+        "titulo": "Banco Mundial - ICP 2021: Price levels",
+        "url": "https://www.worldbank.org/en/programs/icp/brief/ICP2021_DataViz_5"
+      },
+      {
+        "titulo": "Banco Central do Brasil - Análise do Mercado de Câmbio: 1999",
+        "url": "https://www.bcb.gov.br/rex/MerCambio/Port/cambio991/1999-1Flutuante.asp?frame=1"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 0.42689402765629536
+      },
+      {
+        "ano": 1995,
+        "valor": 0.587477106579966
+      },
+      {
+        "ano": 1996,
+        "valor": 0.6239439579896368
+      },
+      {
+        "ano": 1997,
+        "valor": 0.6160937940383571
+      },
+      {
+        "ano": 1998,
+        "valor": 0.5937908873247576
+      },
+      {
+        "ano": 1999,
+        "valor": 0.4046011101874917
+      },
+      {
+        "ano": 2000,
+        "valor": 0.41428110029512627
+      },
+      {
+        "ano": 2001,
+        "valor": 0.34140271375423975
+      },
+      {
+        "ano": 2002,
+        "valor": 0.296980398412685
+      },
+      {
+        "ano": 2003,
+        "valor": 0.31530492074061456
+      },
+      {
+        "ano": 2004,
+        "valor": 0.34808313598171914
+      },
+      {
+        "ano": 2005,
+        "valor": 0.435671315022621
+      },
+      {
+        "ano": 2006,
+        "valor": 0.5050108369970407
+      },
+      {
+        "ano": 2007,
+        "valor": 0.584706020673505
+      },
+      {
+        "ano": 2008,
+        "valor": 0.6625638337849332
+      },
+      {
+        "ano": 2009,
+        "valor": 0.6481117048286279
+      },
+      {
+        "ano": 2010,
+        "valor": 0.7890609067502696
+      },
+      {
+        "ano": 2011,
+        "valor": 0.8806737747566982
+      },
+      {
+        "ano": 2012,
+        "valor": 0.8239013499960396
+      },
+      {
+        "ano": 2013,
+        "valor": 0.7924326449601667
+      },
+      {
+        "ano": 2014,
+        "valor": 0.7755579178047892
+      },
+      {
+        "ano": 2015,
+        "valor": 0.6029236432730128
+      },
+      {
+        "ano": 2016,
+        "valor": 0.617524506135989
+      },
+      {
+        "ano": 2017,
+        "valor": 0.6923878028428448
+      },
+      {
+        "ano": 2018,
+        "valor": 0.6014495291300556
+      },
+      {
+        "ano": 2019,
+        "valor": 0.5619118895592852
+      },
+      {
+        "ano": 2020,
+        "valor": 0.4393467749879024
+      },
+      {
+        "ano": 2021,
+        "valor": 0.4410636551986668
+      },
+      {
+        "ano": 2022,
+        "valor": 0.46694175664895204
+      },
+      {
+        "ano": 2023,
+        "valor": 0.49007256503428953
+      },
+      {
+        "ano": 2024,
+        "valor": 0.4615600731879536
+      }
+    ]
+  },
   "meios_de_pagamento_m2": {
     "label": "(BCB) M2 - Meios de Pagamento Amplos",
     "unidade": "Bilhões de R$",
@@ -4313,208 +6148,6 @@
       { "ano": 2025, "valor": 13308.933353 },
     ],
   },
-  "icp_banco_mundial_pli": {
-    "label": "(WDI) Índice de Nível de Preços (PLI - Banco Mundial)",
-    "unidade": "Razão (EUA = 1,00)",
-    "fonte": "Banco Mundial / World Development Indicators - Indicador PA.NUS.PPPC.RF",
-    "cat": "Preços, Juros e Poder de Compra",
-    "descricao":
-      "O Price Level Index (PLI) mede o nível de preços de um país em relação aos Estados Unidos, com EUA = 1,00, usando a razão entre o fator de conversão PPP do PIB e a taxa de câmbio de mercado.",
-    "como_interpretar":
-      "Valor abaixo de 1,00 indica que o nível geral de preços do país é menor que o dos Estados Unidos; valor acima de 1,00 indica nível de preços maior. Exemplo: 0,50 significa que, em dólares, o nível de preços agregado do PIB equivale a cerca de 50% do nível dos EUA. O indicador é sensível tanto aos preços internos quanto à taxa de câmbio de mercado.",
-    "metodologia":
-      "O indicador PA.NUS.PPPC.RF é calculado como a razão entre o fator de conversão PPP do PIB e a taxa de câmbio de mercado correspondente. A base é Estados Unidos = 1,00. As PPPs vêm do International Comparison Program, com anos de benchmark e extrapolações entre rodadas por contas nacionais e deflatores relativos.",
-    "historico_metodologia":
-      "A série WDI usa metodologia do International Comparison Program. Houve rodadas de benchmark do ICP, incluindo 2005, 2011, 2017 e 2021, que podem gerar revisões históricas na série. Não foi identificada quebra metodológica que impeça comparação anual de 1994 a 2024, mas os valores podem ser revisados pelo Banco Mundial quando novas rodadas ICP e contas nacionais são incorporadas.",
-    "abrangencia":
-      "Brasil, indicador anual do World Development Indicators, comparável internacionalmente, com unidade indexada aos Estados Unidos = 1,00. Série oficial disponível no WDI para 1990-2024; aqui foram mantidos apenas os anos de 1994 a 2024.",
-    "periodicidade": "Anual.",
-    "eventos_externos": [
-      {
-        "ano": 1994,
-        "nome": "Plano Real",
-        "descricao":
-          "A estabilização monetária e a âncora cambial coincidiram com forte alta do PLI, de 0,427 em 1994 para 0,587 em 1995 e 0,624 em 1996.",
-      },
-      {
-        "ano": 1999,
-        "nome": "Câmbio flutuante",
-        "descricao":
-          "A mudança do regime cambial e a desvalorização do real coincidiram com queda do índice, de 0,594 em 1998 para 0,405 em 1999.",
-      },
-      {
-        "ano": 2002,
-        "nome": "Crise cambial",
-        "descricao":
-          "A forte depreciação cambial e a incerteza financeira coincidiram com queda do PLI para 0,297 em 2002, menor valor do recorte 1994-2024.",
-      },
-      {
-        "ano": 2011,
-        "nome": "Real valorizado",
-        "descricao":
-          "A valorização do real e o ciclo favorável de commodities coincidiram com o pico da série no recorte, 0,881 em 2011.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Recessão",
-        "descricao":
-          "A recessão brasileira, inflação elevada e depreciação cambial coincidiram com queda do PLI, de 0,776 em 2014 para 0,603 em 2015.",
-      },
-      {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao":
-          "O choque da Covid-19 e a depreciação do real coincidiram com queda do índice, de 0,562 em 2019 para 0,439 em 2020.",
-      },
-      {
-        "ano": 2024,
-        "nome": "Real depreciado",
-        "descricao":
-          "A depreciação cambial em 2024 coincidiu com queda do índice, de 0,490 em 2023 para 0,462 em 2024.",
-      },
-    ],
-    "comparacao_paises":
-      "Em 2024, o Brasil ficou abaixo dos Estados Unidos, por definição 1,00, e abaixo de economias avançadas de alto nível de preços como Suíça e Noruega. Também ficou abaixo de alguns pares emergentes com preços relativos mais altos. O valor brasileiro de 0,462 indica que o nível agregado de preços do PIB era substancialmente menor que o dos EUA.",
-    "nivel_confiabilidade":
-      "Alto para uso macroeconômico comparativo, pois os valores vêm do World Development Indicators/Banco Mundial e seguem metodologia internacional do ICP. Limitação: os dados podem sofrer revisões retrospectivas após novas rodadas ICP e atualizações de contas nacionais; os valores apresentados estão arredondados a três casas decimais.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "World Bank Data - PA.NUS.PPPC.RF - Brazil",
-        "url": "https://data.worldbank.org/indicator/PA.NUS.PPPC.RF?locations=BR",
-      },
-      {
-        "titulo": "World Bank Metadata Glossary - PA.NUS.PPPC.RF",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPPC.RF",
-      },
-      {
-        "titulo": "World Bank DataBank - World Development Indicators",
-        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/PA.NUS.PPPC.RF",
-      },
-      {
-        "titulo": "UNdata / WDI - PA.NUS.PPPC.RF",
-        "url": "http://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPPC.RF%3BCountry_Code%3ABRA",
-      },
-      { "titulo": "International Comparison Program - World Bank", "url": "https://www.worldbank.org/en/programs/icp" },
-      {
-        "titulo": "Our World in Data - GDP price levels relative to the US",
-        "url": "https://ourworldindata.org/grapher/gdp-price-levels-relative-to-the-us",
-      },
-    ],
-    "dados": [
-      { "ano": 1994, "valor": 0.427 },
-      { "ano": 1995, "valor": 0.587 },
-      { "ano": 1996, "valor": 0.624 },
-      { "ano": 1997, "valor": 0.616 },
-      { "ano": 1998, "valor": 0.594 },
-      { "ano": 1999, "valor": 0.405 },
-      { "ano": 2000, "valor": 0.414 },
-      { "ano": 2001, "valor": 0.341 },
-      { "ano": 2002, "valor": 0.297 },
-      { "ano": 2003, "valor": 0.315 },
-      { "ano": 2004, "valor": 0.348 },
-      { "ano": 2005, "valor": 0.436 },
-      { "ano": 2006, "valor": 0.505 },
-      { "ano": 2007, "valor": 0.585 },
-      { "ano": 2008, "valor": 0.663 },
-      { "ano": 2009, "valor": 0.648 },
-      { "ano": 2010, "valor": 0.789 },
-      { "ano": 2011, "valor": 0.881 },
-      { "ano": 2012, "valor": 0.824 },
-      { "ano": 2013, "valor": 0.792 },
-      { "ano": 2014, "valor": 0.776 },
-      { "ano": 2015, "valor": 0.603 },
-      { "ano": 2016, "valor": 0.618 },
-      { "ano": 2017, "valor": 0.692 },
-      { "ano": 2018, "valor": 0.601 },
-      { "ano": 2019, "valor": 0.562 },
-      { "ano": 2020, "valor": 0.439 },
-      { "ano": 2021, "valor": 0.441 },
-      { "ano": 2022, "valor": 0.467 },
-      { "ano": 2023, "valor": 0.49 },
-      { "ano": 2024, "valor": 0.462 },
-    ],
-  },
-  "poder_compra_numbeo": {
-    "label": "(Numbeo) Poder de Compra Local",
-    "unidade": "Índice (Nova Iorque = 100)",
-    "fonte": "Numbeo - Cost of Living Index by Country / Local Purchasing Power Index",
-    "cat": "Preços, Juros e Poder de Compra",
-    "descricao":
-      "Índice do Numbeo que compara o poder de compra local médio de um país com Nova Iorque, usando Nova Iorque como base 100.",
-    "como_interpretar":
-      "Valores abaixo de 100 indicam menor poder de compra relativo que Nova Iorque; valores acima de 100 indicam maior poder de compra relativo. Um valor de 46,1 indica que, pela metodologia do Numbeo, o poder de compra local médio é aproximadamente 46,1% do benchmark de Nova Iorque.",
-    "metodologia":
-      "O Numbeo calcula o índice dividindo o salário líquido médio pelo custo de uma cesta ponderada de bens e serviços, incluindo aluguel, para o local analisado e para Nova Iorque; depois divide o resultado local pelo resultado de Nova Iorque. Os dados são obtidos por contribuições voluntárias de usuários e agregados pelo Numbeo.",
-    "historico_metodologia":
-      "O Numbeo disponibiliza rankings históricos periódicos a partir de 2009, mas não publica uma série histórica metodológica auditada com documentação completa de quebras, mudanças de amostra ou revisões retroativas. A comparabilidade temporal deve ser tratada com cautela, pois a base é crowdsourced e a composição de contribuidores pode mudar ao longo do tempo.",
-    "abrangencia":
-      "Brasil, agregado em ranking por país do Numbeo. A cobertura depende das cidades e usuários com dados suficientes na plataforma, com viés provável para áreas urbanas, usuários conectados à internet e contribuições voluntárias.",
-    "periodicidade":
-      "Snapshots históricos anuais e semestrais publicados pelo Numbeo, além de páginas atuais atualizadas continuamente.",
-    "eventos_externos": [],
-    "comparacao_paises":
-      "Em 2026, o Brasil aparece com 46,1 no Local Purchasing Power Index do Numbeo, abaixo de países como Estados Unidos, China, África do Sul e Chile, e próximo de países como Albânia, Marrocos e Tailândia. A comparação internacional é possível pela escala comum Nova Iorque = 100, mas deve ser usada com cautela por causa da natureza crowdsourced e da diferença de tamanho/amostragem entre países.",
-    "limitacoes":
-      "Não é indicador estatístico oficial de governo ou organismo multilateral; é uma métrica privada e crowdsourced. Não há validação estatística pública equivalente a pesquisas oficiais de renda e preços. Não há dados oficiais do Numbeo anteriores a 2009, portanto não existe série concreta desde 1994 para este indicador.",
-    "nivel_confiabilidade":
-      "Médio para reprodução dos valores publicados nas páginas históricas do Numbeo; baixo a médio para análise econômica rigorosa ou comparação temporal estrita, pois os dados são crowdsourced, sujeitos a viés amostral e não auditados por órgão estatístico oficial.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2026",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2025",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2025",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2024",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2024",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2023",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2023",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2022",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2022",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2021",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2021",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2020",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&title=2020",
-      },
-      {
-        "titulo": "Numbeo - Local Purchasing Power Index by Country 2019",
-        "url": "https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?displayColumn=5&region=019&title=2019",
-      },
-      {
-        "titulo": "Numbeo - Methodology and Motivation",
-        "url": "https://www.numbeo.com/common/motivation_and_methodology.jsp",
-      },
-      {
-        "titulo": "Numbeo - Understanding Cost of Living Indexes",
-        "url": "https://www.numbeo.com/cost-of-living/cpi_explained.jsp",
-      },
-    ],
-    "dados": [
-      { "ano": 2019, "valor": 37.4 },
-      { "ano": 2020, "valor": 32.8 },
-      { "ano": 2021, "valor": 28.7 },
-      { "ano": 2022, "valor": 27.8 },
-      { "ano": 2023, "valor": 28.7 },
-      { "ano": 2024, "valor": 30.1 },
-      { "ano": 2025, "valor": 42.3 },
-      { "ano": 2026, "valor": 46.1 },
-    ],
-  },
   "indice_big_mac_usd": {
     "label": "(The Economist) Índice Big Mac",
     "unidade": "Preço em US$",
@@ -4620,74 +6253,6 @@
       { "ano": 2026, "valor": 4.45 },
     ],
     "padrao": false,
-  },
-  "pof_alimentacao_domicilio": {
-    "label": "(IBGE) Gasto com Alimentação (POF/IBGE)",
-    "unidade": "% da Despesa Total",
-    "fonte": "IBGE - Pesquisa de Orçamentos Familiares (POF)",
-    "cat": "Preços, Juros e Poder de Compra",
-    "descricao":
-      "Percentual da despesa total média mensal familiar destinado à alimentação, segundo a Pesquisa de Orçamentos Familiares (POF) do IBGE.",
-    "como_interpretar":
-      "Valores maiores indicam maior peso da alimentação no orçamento familiar total. Valores menores indicam menor comprometimento relativo da despesa total com alimentação, geralmente associado a maior diversificação da estrutura de consumo. Este indicador não mede preços de alimentos isoladamente nem alimentação apenas no domicílio.",
-    "metodologia":
-      "O indicador foi calculado a partir das tabelas oficiais da POF como participação das despesas de alimentação na despesa total média mensal familiar. Nas publicações do IBGE, a alimentação também é apresentada como participação nas despesas de consumo; para expressar em relação à despesa total, usa-se a participação de alimentação nas despesas de consumo multiplicada pela participação das despesas de consumo na despesa total. Para 2017-2018, o próprio release do IBGE também informa diretamente alimentação como 14,2% da despesa total nas classes selecionadas e mostra alimentação como 17,5% das despesas de consumo e despesas de consumo como 81,0% da despesa total.",
-    "historico_metodologia":
-      "A comparação nacional direta deve começar em 2002-2003, pois a partir dessa edição a POF passou a ter abrangência nacional, cobrindo áreas urbana e rural. As POFs de 1987-1988 e 1995-1996 ficaram restritas às Regiões Metropolitanas de interesse do SNIPC e não são diretamente comparáveis à série nacional. A POF 2008-2009 manteve a abrangência nacional da edição 2002-2003. A POF 2017-2018 manteve a abrangência geográfica, mas incluiu novos módulos, como EBIA, e não pesquisou antropometria; essas mudanças não invalidam a comparação da estrutura de despesas de alimentação, mas devem ser registradas.",
-    "abrangencia":
-      "Brasil, áreas urbana e rural, a partir da POF 2002-2003. As edições anteriores a 2002-2003 não foram incluídas por não terem abrangência nacional diretamente comparável.",
-    "periodicidade":
-      "Eventual, sem periodicidade anual fixa. Edições nacionais comparáveis disponíveis desde 1994: 2002-2003, 2008-2009 e 2017-2018. A POF 2024-2025 não foi incluída porque ainda não possui resultado final oficial publicado para este indicador.",
-    "eventos_externos": [
-      {
-        "ano": 2009,
-        "nome": "Mudança consumo",
-        "descricao":
-          "O IBGE registrou queda da participação de alimentação nas despesas de consumo de 20,8% em 2002-2003 para 19,8% em 2008-2009 e aumento da alimentação fora do domicílio de 24,1% para 31,1% do total de gastos com alimentação, indicando mudança no padrão de consumo alimentar.",
-      },
-      {
-        "ano": 2018,
-        "nome": "Queda alimentar",
-        "descricao":
-          "O IBGE registrou nova queda da participação da alimentação nas despesas de consumo, de 19,8% em 2008-2009 para 17,5% em 2017-2018. Em relação à despesa total, isso corresponde a 14,2% em 2017-2018.",
-      },
-    ],
-    "comparacao_paises":
-      "A comparação internacional deve ser feita com cautela, pois pesquisas de orçamento familiar variam em conceito, cobertura, periodicidade e classificação de despesas entre países. O dado validado aqui é específico da POF/IBGE e não deve ser comparado diretamente com bases internacionais sem harmonização metodológica.",
-    "nivel_confiabilidade":
-      "Alto para os anos 2003, 2009 e 2018, pois os valores derivam de publicações oficiais do IBGE. Não há dado anual oficial para os anos intermediários; portanto, qualquer valor anual entre edições seria estimativa ou interpolação e foi excluído. O título original foi corrigido porque os valores 17,1%, 16,1% e 14,2% correspondem à alimentação total como percentual da despesa total, não exclusivamente à alimentação no domicílio.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "IBGE - POF 2017-2018: página oficial da Pesquisa de Orçamentos Familiares",
-        "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/24786-pesquisa-de-orcamentos-familiares-2.html",
-      },
-      {
-        "titulo":
-          "IBGE - POF 2017-2018: Famílias com até R$ 1,9 mil destinam 61,2% dos gastos à alimentação e habitação",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao",
-      },
-      {
-        "titulo": "IBGE Biblioteca - Pesquisa de orçamentos familiares 2017-2018: primeiros resultados",
-        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2101670&view=detalhes",
-      },
-      {
-        "titulo": "IBGE - POF 2008-2009: desigualdades e transformações no orçamento das famílias brasileiras",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13846-asi-pof-2008-09-mostra-desigualdades-e-transformacoes-no-orcamento-das-familias-brasileiras",
-      },
-      {
-        "titulo": "IBGE - POF 2002-2003",
-        "url": "https://www.ibge.gov.br/estatisticas/sociais/justica-e-seguranca/19877-2002-2003.html",
-      },
-    ],
-    "dados": [
-      { "ano": 2003, "valor": 17.1 },
-      { "ano": 2009, "valor": 16.1 },
-      { "ano": 2018, "valor": 14.2 },
-    ],
   },
   "resultado_primario_pib": {
     "label": "(BCB) Resultado Primário",
