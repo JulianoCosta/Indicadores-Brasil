@@ -6481,7 +6481,7 @@
     ],
   },
   "divida_liquida_governo_geral_pib_fmi_weo": {
-    "label": "(FMI) Dívida Líquida do Governo Geral / PIB",
+    "label": "(FMI) Dívida Líquida do Governo Geral",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), indicador GGXWDN_NGDP",
     "cat": "Finanças Públicas e Tributação",
@@ -7966,6 +7966,1263 @@
       { "ano": 2024, "valor": 32.32 },
     ],
     "padrao": false,
+  },
+  "gasto_protecao_social_pib": {
+    "label": "(FMI/OCDE) Gasto em Proteção Social",
+    "unidade": "% do PIB",
+    "fonte": "Tesouro Nacional / STN, SOF, IBGE e BCB; metodologia COFOG da OCDE/ONU incorporada ao GFSM 2014 do FMI",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral brasileiro destinada à função COFOG 710 - Proteção Social como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior da produção econômica anual foi destinada a despesas públicas de proteção social, como previdência, pensões, benefícios assistenciais, seguro-desemprego, programas de transferência de renda e outras subfunções sociais. O indicador mede esforço fiscal relativo, não eficiência, focalização, qualidade do gasto ou impacto distributivo.",
+    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE em parceria com a ONU e adotada no Manual de Estatísticas de Finanças Públicas 2014 do FMI (GFSM 2014). O numerador corresponde à despesa do governo geral brasileiro na função 710 - Proteção Social, abrangendo governo central, estados e municípios. O denominador é o PIB nominal do Brasil. Os valores são apresentados como percentual do PIB.",
+    "historico_metodologia": "A série abrangente para governo geral, incluindo União, estados e municípios, está disponível de forma oficial e comparável a partir de 2010 nos boletins COFOG do Tesouro Nacional. A edição de 2023 revisou valores anteriores em relação ao boletim inicial de 2022, incluindo a revisão do valor de 2022 de 16,7% para 15,72% do PIB. Por isso, foram usados os dados mais recentes disponíveis: série 2010-2023 do boletim COFOG 2023 e atualização de 2024 do boletim COFOG 2024. Não foram incluídos anos de 1994 a 2009 por ausência de série oficial consolidada, comparável e validada para governo geral nessa metodologia.",
+    "abrangencia": "Brasil, governo geral, incluindo governo central, governos estaduais e governos municipais, segundo a função COFOG 710 - Proteção Social.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2016,
+        "nome": "Recessão",
+        "descricao": "A recessão econômica elevou a razão despesa/PIB, tanto pelo crescimento relativo de despesas obrigatórias quanto pela fraqueza do denominador."
+      },
+      {
+        "ano": 2017,
+        "nome": "Alta previdenciária",
+        "descricao": "O gasto em proteção social continuou elevado, influenciado principalmente por aposentadorias, pensões e demais benefícios obrigatórios."
+      },
+      {
+        "ano": 2018,
+        "nome": "Seguro-desemprego",
+        "descricao": "O Tesouro apontou reversão da tendência de alta, principalmente pela redução dos gastos com seguro-desemprego, associada à diminuição no número de demissões."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A despesa com proteção social atingiu o pico da série, influenciada pelas medidas de enfrentamento à COVID-19, especialmente Auxílio Emergencial e Benefício Emergencial de Preservação do Emprego e da Renda."
+      },
+      {
+        "ano": 2021,
+        "nome": "Retirada emergencial",
+        "descricao": "A queda frente a 2020 refletiu a redução das despesas emergenciais da pandemia e a diminuição real de aposentadorias e pensões, pois o reajuste dos benefícios foi inferior à inflação."
+      },
+      {
+        "ano": 2022,
+        "nome": "Auxílio Brasil",
+        "descricao": "Houve elevação da subfunção Família e filhos, que passou de 0,4% para 1,2% do PIB entre 2021 e 2022, contemplando principalmente Bolsa Família e Auxílio Brasil."
+      },
+      {
+        "ano": 2023,
+        "nome": "Bolsa Família",
+        "descricao": "O aumento foi impulsionado pelo Programa Bolsa Família, pela retomada do Minha Casa Minha Vida e pelo crescimento dos pagamentos de sentenças judiciais previdenciárias."
+      },
+      {
+        "ano": 2024,
+        "nome": "Recuo relativo",
+        "descricao": "A função Proteção Social caiu de 16,75% para 16,53% do PIB, apesar de continuar sendo a maior função de despesa do governo geral brasileiro."
+      }
+    ],
+    "comparacao_paises": "O Brasil gasta proporção elevada do PIB em proteção social em comparação internacional. Em 2023, Proteção Social e Serviços Públicos Gerais somaram 28,10% do PIB no Brasil, contra 18,29% do PIB na média dos países analisados pelo relatório COFOG 2024. No boletim COFOG 2023, a despesa brasileira em Proteção Social ficou acima da média internacional selecionada, refletindo principalmente aposentadorias, pensões e benefícios sociais.",
+    "nivel_confiabilidade": "Alto para a série 2010-2024, pois os dados vêm de boletins oficiais do Tesouro Nacional, com metodologia COFOG compatível com FMI GFSM 2014 e fontes STN, SOF, IBGE e BCB. A principal ressalva é que os valores podem sofrer revisões anuais, e os anos anteriores a 2010 não foram incluídos por falta de série oficial consolidada e comparável para governo geral.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+      },
+      {
+        "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2023",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114"
+      },
+      {
+        "titulo": "Ministério da Fazenda - Relatório COFOG 2023",
+        "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/fevereiro/relatorio-traz-despesas-por-funcao-das-tres-esferas-de-governo-sob-otica-que-permite-comparacoes-internacionais"
+      },
+      {
+        "titulo": "Tesouro Nacional - Notícia COFOG 2024",
+        "url": "https://www.gov.br/tesouronacional/pt-br/noticias/brasil-amplia-gastos-em-saude-habitacao-e-educacao-em-2024-aponta-relatorio-cofog"
+      },
+      {
+        "titulo": "FMI - GFS Government Expenditures by Function",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "OCDE - Government Expenditure by Function (COFOG)",
+        "url": "https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/government-expenditure-by-function-cofog_d2b167d4.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 13.1
+      },
+      {
+        "ano": 2011,
+        "valor": 13.0
+      },
+      {
+        "ano": 2012,
+        "valor": 13.4
+      },
+      {
+        "ano": 2013,
+        "valor": 13.5
+      },
+      {
+        "ano": 2014,
+        "valor": 14.1
+      },
+      {
+        "ano": 2015,
+        "valor": 14.6
+      },
+      {
+        "ano": 2016,
+        "valor": 15.9
+      },
+      {
+        "ano": 2017,
+        "valor": 16.4
+      },
+      {
+        "ano": 2018,
+        "valor": 16.2
+      },
+      {
+        "ano": 2019,
+        "valor": 16.5
+      },
+      {
+        "ano": 2020,
+        "valor": 21.0
+      },
+      {
+        "ano": 2021,
+        "valor": 15.4
+      },
+      {
+        "ano": 2022,
+        "valor": 15.72
+      },
+      {
+        "ano": 2023,
+        "valor": 16.75
+      },
+      {
+        "ano": 2024,
+        "valor": 16.53
+      }
+    ],
+    "padrao": false
+  },
+  "gasto_servicos_publicos_gerais_pib": {
+    "label": "(FMI) Gasto em Serviços Públicos Gerais",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE para a publicação oficial brasileira COFOG",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral brasileiro na função COFOG Serviços Públicos Gerais como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam maior parcela do PIB destinada a serviços públicos gerais, incluindo administração geral, órgãos legislativos e executivos, assuntos fiscais e financeiros, relações exteriores, transferências gerais entre níveis de governo e transações da dívida pública. No Brasil, a série é fortemente influenciada pelos juros da dívida pública dentro da subfunção transações da dívida pública.",
+    "metodologia": "A métrica segue a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE/ONU e usada nas Estatísticas de Finanças Públicas do FMI. O numerador corresponde à despesa do governo geral na função GF01 - General public services. O denominador é o PIB nominal do mesmo ano. A série abaixo mantém apenas valores anuais oficiais divulgados para o governo geral brasileiro e expressos em percentual do PIB; valores ausentes, estimados ou não confirmados oficialmente não foram preenchidos.",
+    "historico_metodologia": "A COFOG é uma classificação funcional internacional padronizada. Para o Brasil, a apuração de despesa por função do governo geral teve aprimoramento metodológico relevante com o trabalho conjunto da STN, SOF e IBGE, permitindo consolidação das três esferas de governo e maior comparabilidade internacional. A disponibilidade pública anual validada para o governo geral brasileiro, nas fontes consultadas, está concentrada nos anos recentes; por isso a série não foi retropreenchida até 1994 sem base oficial anual verificável.",
+    "abrangencia": "Brasil, governo geral, abrangendo União, estados e municípios, com consolidação segundo a metodologia COFOG para comparação internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2022,
+        "nome": "Juros altos",
+        "descricao": "A função Serviços Públicos Gerais permaneceu elevada no Brasil, em grande parte pela relevância das transações da dívida pública e juros dentro da classificação COFOG."
+      },
+      {
+        "ano": 2023,
+        "nome": "Precatórios",
+        "descricao": "A despesa total do governo geral atingiu nível elevado em 2023, influenciada também pelo pagamento de precatórios; Serviços Públicos Gerais foi uma das maiores funções de despesa, atrás de Proteção Social."
+      },
+      {
+        "ano": 2024,
+        "nome": "Queda relativa",
+        "descricao": "A despesa em Serviços Públicos Gerais caiu de 11,35% para 11,08% do PIB entre 2023 e 2024, enquanto outras funções como Saúde, Educação e Habitação aumentaram."
+      }
+    ],
+    "comparacao_paises": "Na comparação internacional baseada em COFOG, o Brasil tende a aparecer com despesa muito alta em Serviços Públicos Gerais como proporção do PIB. Em análise com dados FMI/OCDE para 2011-2021, o Brasil registrou média de 10,9% do PIB nessa função, acima da mediana de outros países analisados, de 5,1%, principalmente pelo peso dos juros da dívida pública.",
+    "nivel_confiabilidade": "Alto para os anos publicados oficialmente em COFOG do governo geral brasileiro. A ressalva principal é que a série anual completa desde 1994 não foi incluída porque não há, nas fontes oficiais consultadas, valores anuais observados e verificáveis para todo o período no mesmo padrão metodológico.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Transparente - COFOG: Despesas por Função do Governo Geral - 2024",
+        "url": "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+      },
+      {
+        "titulo": "Tesouro Transparente - COFOG: Despesas por Função do Governo Geral - 2023",
+        "url": "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114"
+      },
+      {
+        "titulo": "DBnomics - IMF GFSCOFOG Dataset",
+        "url": "https: //db.nomics.world/IMF/GFSCOFOG"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2022,
+        "valor": 10.9
+      },
+      {
+        "ano": 2023,
+        "valor": 11.35
+      },
+      {
+        "ano": 2024,
+        "valor": 11.08
+      }
+    ]
+  },
+  "gasto_saude_pib": {
+    "label": "(OMS/WDI) Gasto Corrente em Saúde",
+    "unidade": "% do PIB",
+    "fonte": "Organização Mundial da Saúde - Global Health Expenditure Database, republicado pelo Banco Mundial - World Development Indicators (SH.XPD.CHEX.GD.ZS)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede o gasto corrente total em saúde no Brasil como proporção do PIB, incluindo bens e serviços de saúde consumidos no ano.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior da produção econômica anual foi direcionada ao consumo corrente de bens e serviços de saúde. O indicador não mede qualidade do sistema, eficiência, acesso, resultados de saúde nem inclui despesas de capital em saúde.",
+    "metodologia": "O indicador segue o System of Health Accounts 2011 (SHA 2011), usado pela OMS no Global Health Expenditure Database. Mede a despesa corrente em saúde como percentual do PIB. Inclui gastos de governo, seguros obrigatórios/contributivos, seguros privados voluntários, desembolso direto das famílias e outras fontes correntes. Exclui despesas de capital, como construção de unidades, máquinas, TI e estoques de vacinas para emergências ou surtos.",
+    "historico_metodologia": "A série internacional atual da OMS/WDI usa a estrutura SHA 2011 para contas de saúde. O Banco Mundial informa referência 2000-2024 para o indicador global, mas a página específica do Brasil consultada apresenta valores disponíveis de 2000 a 2023. Séries de contas de saúde podem ser revisadas quando a OMS, o Banco Mundial, o IBGE ou as contas nacionais atualizam metodologias, bases do PIB, classificações ou estimativas de gasto. Não foram incluídos anos sem valor observado disponível para o Brasil.",
+    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente pela metodologia da OMS/WDI. O indicador é de gasto corrente total em saúde, não apenas gasto público COFOG do governo.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "SHA 2011",
+        "descricao": "A série validada disponível na OMS/WDI começa em 2000, dentro da estrutura internacional de contas de saúde usada para comparabilidade global."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu o PIB e alterou a razão gasto em saúde/PIB, pois o denominador econômico caiu fortemente."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da recessão manteve pressão sobre a razão entre gastos correntes em saúde e PIB."
+      },
+      {
+        "ano": 2019,
+        "nome": "Pré-pandemia",
+        "descricao": "O IBGE registrou gasto em saúde equivalente a 9,6% do PIB em 2019, antes do choque da COVID-19."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou tanto o gasto em saúde quanto o PIB, elevando a relevância da saúde nas contas nacionais."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A reabertura econômica e a recomposição do consumo de bens e serviços de saúde influenciaram a proporção do gasto em saúde no PIB."
+      },
+      {
+        "ano": 2022,
+        "nome": "Normalização",
+        "descricao": "A OCDE informou que o consumo de bens e serviços de saúde correspondeu a 9,4% do PIB brasileiro em 2022, próximo da média da OCDE."
+      },
+      {
+        "ano": 2023,
+        "nome": "Valor recente",
+        "descricao": "O Banco Mundial/OMS apresenta 9,73% do PIB como valor mais recente disponível para o Brasil na série consultada."
+      }
+    ],
+    "comparacao_paises": "Em 2022, o Brasil ficou próximo da média da OCDE: 9,4% do PIB no Brasil contra 9,2% na média da OCDE. O percentual brasileiro ficou acima de México, Costa Rica e Colômbia, segundo a comparação da OCDE.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a fonte é a OMS Global Health Expenditure Database, republicada no World Development Indicators do Banco Mundial, com metodologia SHA 2011. A ressalva é que são contas nacionais de saúde sujeitas a revisões e que o indicador mede gasto corrente total, não exclusivamente gasto público COFOG.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Current health expenditure (% of GDP) - Brazil - SH.XPD.CHEX.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata SH.XPD.CHEX.GD.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.XPD.CHEX.GD.ZS"
+      },
+      {
+        "titulo": "OMS - Global Health Expenditure Database",
+        "url": "https://apps.who.int/nha/database"
+      },
+      {
+        "titulo": "OMS - Current health expenditure (CHE) as percentage of GDP",
+        "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-%28che%29-as-percentage-of-gross-domestic-product-%28gdp%29-%28-%29"
+      },
+      {
+        "titulo": "OCDE - Institutionalising Health Accounts in Brazil",
+        "url": "https://www.oecd.org/en/publications/institutionalising-health-accounts-in-brazil_b6d405f9-en/full-report/putting-brazilian-health-spending-data-into-an-international-context_443a3911.html"
+      },
+      {
+        "titulo": "IBGE - Expenditure on health in 2019 represented 9.6% of GDP",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/33486-expenditure-on-health-in-2019-represented-9-6-of-the-gdp"
+      },
+      {
+        "titulo": "IBGE - Affected by the pandemic, consumption of health goods and services dropped in 2020 but increased in 2021",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/39689-affected-by-the-pandemic-consumption-of-health-goods-and-services-dropped-by-4-4-in-2020-but-increased-by-13-3-in-2021"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 8.3
+      },
+      {
+        "ano": 2016,
+        "valor": 9.2
+      },
+      {
+        "ano": 2017,
+        "valor": 9.5
+      },
+      {
+        "ano": 2018,
+        "valor": 9.5
+      },
+      {
+        "ano": 2019,
+        "valor": 9.6
+      },
+      {
+        "ano": 2020,
+        "valor": 9.6
+      },
+      {
+        "ano": 2021,
+        "valor": 9.6
+      },
+      {
+        "ano": 2022,
+        "valor": 9.4
+      },
+      {
+        "ano": 2023,
+        "valor": 9.73
+      }
+    ]
+  },
+  "gasto_educacao_pib": {
+    "label": "(WDI/UNESCO) Gasto Público em Educação",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (SE.XPD.TOTL.GD.ZS), com dados da UNESCO Institute for Statistics (UIS)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral com educação, incluindo gastos correntes, de capital e transferências, como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam maior gasto público em educação em relação ao tamanho da economia. O indicador não mede qualidade do ensino, eficiência do gasto, resultados educacionais, aprendizagem, desigualdade educacional ou distribuição por etapa de ensino.",
+    "metodologia": "O indicador é calculado dividindo a despesa total do governo geral em educação pelo PIB e multiplicando por 100. A despesa inclui gastos correntes, gastos de capital e transferências em todos os níveis de educação, podendo incluir recursos de fontes internacionais repassados ao governo. Os dados de educação são coletados pela UNESCO Institute for Statistics a partir de respostas oficiais dos governos à pesquisa anual da UIS ou da coleta conjunta UNESCO-OECD-Eurostat; o PIB e agregados macroeconômicos podem ser alinhados com bases como o World Bank WDI e o IMF World Economic Outlook.",
+    "historico_metodologia": "A série WDI atual identifica a fonte como UNESCO UIS via API, com data de publicação 2026-02 e referência 1970-2025. A metodologia básica permaneceu estável: despesa do governo geral com educação como porcentagem do PIB. A fonte alerta que, em alguns países, os dados podem se referir apenas ao ministério da educação, excluindo despesas educacionais de outros ministérios. Também pode haver revisões quando governos atualizam respostas à UIS, contas nacionais, PIB ou classificações internacionais de educação. Para o Brasil, a série observada disponível na consulta oficial começa em 1995 e termina em 2022; anos sem valor observado, como 1994, 1996, 1997, 2003 e 2023-2025, foram excluídos.",
+    "abrangencia": "Brasil, governo geral quando disponível, cobrindo despesas públicas de educação em todos os níveis educacionais, com padronização internacional pelo World Development Indicators e UNESCO UIS.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2002,
+        "nome": "Mínimo da série",
+        "descricao": "A série WDI/UNESCO registra em 2002 o menor valor observado do período validado, 3,75% do PIB."
+      },
+      {
+        "ano": 2007,
+        "nome": "Expansão educacional",
+        "descricao": "A partir de 2007, a série passa a mostrar elevação contínua do gasto em educação como proporção do PIB, saindo de 4,97% em 2007 para 5,86% em 2012."
+      },
+      {
+        "ano": 2017,
+        "nome": "Máximo da série",
+        "descricao": "A série WDI/UNESCO registra em 2017 o maior valor observado do período validado, 6,32% do PIB."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "O período da pandemia de COVID-19 coincide com queda do indicador, de 5,96% do PIB em 2019 para 5,77% em 2020 e 5,50% em 2021."
+      },
+      {
+        "ano": 2022,
+        "nome": "Recomposição parcial",
+        "descricao": "Em 2022, o indicador subiu para 5,62% do PIB, mas permaneceu abaixo do pico de 2017."
+      }
+    ],
+    "comparacao_paises": "O Brasil ficou dentro da faixa de referência de 4% a 6% do PIB indicada pelo Education 2030 Framework for Action na maior parte da série validada. Em 2015-2018, ultrapassou ligeiramente 6% do PIB. Em comparação internacional, isso sugere esforço fiscal relativamente alto em educação como proporção do PIB, mas o indicador isolado não permite concluir superioridade em qualidade, aprendizagem ou eficiência do gasto.",
+    "nivel_confiabilidade": "Alto para comparação internacional anual, pois a série vem do World Development Indicators do Banco Mundial com fonte primária na UNESCO Institute for Statistics. A principal limitação é que há anos sem dado observado e possíveis revisões metodológicas ou de contas nacionais. Os valores abaixo mantêm apenas anos com observação disponível; não foram incluídas estimativas, interpolações ou projeções.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Government expenditure on education, total (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata SE.XPD.TOTL.GD.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.XPD.TOTL.GD.ZS"
+      },
+      {
+        "titulo": "UNESCO UIS - SDG 4 Country Profile Brazil",
+        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf"
+      },
+      {
+        "titulo": "Banco Mundial API - Download CSV SE.XPD.TOTL.GD.ZS",
+        "url": "https://api.worldbank.org/v2/en/indicator/SE.XPD.TOTL.GD.ZS?downloadformat=csv"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1995,
+        "valor": 4.57
+      },
+      {
+        "ano": 1998,
+        "valor": 4.76
+      },
+      {
+        "ano": 1999,
+        "valor": 3.8
+      },
+      {
+        "ano": 2000,
+        "valor": 3.95
+      },
+      {
+        "ano": 2001,
+        "valor": 3.84
+      },
+      {
+        "ano": 2002,
+        "valor": 3.75
+      },
+      {
+        "ano": 2004,
+        "valor": 3.97
+      },
+      {
+        "ano": 2005,
+        "valor": 4.48
+      },
+      {
+        "ano": 2006,
+        "valor": 4.87
+      },
+      {
+        "ano": 2007,
+        "valor": 4.97
+      },
+      {
+        "ano": 2008,
+        "valor": 5.27
+      },
+      {
+        "ano": 2009,
+        "valor": 5.46
+      },
+      {
+        "ano": 2010,
+        "valor": 5.65
+      },
+      {
+        "ano": 2011,
+        "valor": 5.74
+      },
+      {
+        "ano": 2012,
+        "valor": 5.86
+      },
+      {
+        "ano": 2013,
+        "valor": 5.84
+      },
+      {
+        "ano": 2014,
+        "valor": 5.95
+      },
+      {
+        "ano": 2015,
+        "valor": 6.24
+      },
+      {
+        "ano": 2016,
+        "valor": 6.31
+      },
+      {
+        "ano": 2017,
+        "valor": 6.32
+      },
+      {
+        "ano": 2018,
+        "valor": 6.09
+      },
+      {
+        "ano": 2019,
+        "valor": 5.96
+      },
+      {
+        "ano": 2020,
+        "valor": 5.77
+      },
+      {
+        "ano": 2021,
+        "valor": 5.497
+      },
+      {
+        "ano": 2022,
+        "valor": 5.6192
+      }
+    ]
+  },
+  "gasto_ordem_publica_seguranca_pib": {
+    "label": "(FMI) Gasto em Ordem Pública e Segurança",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Functions of Government (GFS-COFOG); Secretaria do Tesouro Nacional - COFOG Brasil",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral brasileiro com ordem pública e segurança, segundo a função COFOG 703, como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam maior gasto público em polícia, proteção contra incêndios, tribunais, prisões, pesquisa e desenvolvimento em ordem pública e segurança, e demais serviços classificados nessa função, em relação ao tamanho da economia. O indicador não mede eficiência, qualidade da segurança pública, criminalidade, violência ou resultados judiciais.",
+    "metodologia": "A série usa a classificação funcional COFOG, conforme o Manual de Estatísticas de Finanças Públicas do FMI (GFSM 2014), para identificar a função 703 - Public order and safety. Os valores foram extraídos da tabela oficial COFOG Brasil em % do PIB, considerando o governo geral consolidado, que agrega governo central, governos estaduais e municípios, com eliminação de fluxos intragovernamentais. Os valores da planilha original estão em fração do PIB e foram convertidos para porcentagem multiplicando por 100.",
+    "historico_metodologia": "A série oficial brasileira COFOG disponível na publicação consultada cobre 2010 a 2024; não há valores oficiais observados nessa publicação para 1994 a 2009, por isso esses anos não foram preenchidos. A metodologia segue GFSM 2014 e COFOG ONU/OCDE. Segundo a documentação da própria publicação, a fonte primária para estados, municípios e Distrito Federal a partir de 2014 é a base FINBRA/Siconfi; a partir de 2019, os dados de governos estaduais passaram a usar a Matriz de Saldos Contábeis; para municípios, a Matriz de Saldos Contábeis tornou-se a principal fonte em 2022. A publicação informa uso de fontes complementares e técnicas de extrapolação para municípios que não reportaram dados, o que melhora cobertura, mas reduz levemente a precisão em comparação com séries integralmente observadas.",
+    "abrangencia": "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme COFOG/GFSM 2014. Série oficial disponível: 2010 a 2024.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015-2016 reduziu o denominador PIB e coincidiu com aumento do gasto em ordem pública e segurança como proporção do PIB."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da contração econômica manteve pressão ascendente no indicador em relação ao PIB."
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao": "A pandemia afetou fortemente a atividade econômica e as finanças públicas, mas o indicador de ordem pública e segurança caiu levemente em relação a 2019."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura econômica",
+        "descricao": "A recuperação do PIB nominal e real após o choque da pandemia coincidiu com queda relevante do indicador como proporção do PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta recente",
+        "descricao": "O indicador voltou a subir em 2024, alcançando 2,9545% do PIB, maior valor desde 2020 na série validada."
+      }
+    ],
+    "comparacao_paises": "Em 2023, o Brasil registrou 2,8453% do PIB em ordem pública e segurança. Esse nível é superior ao gasto agregado da União Europeia nessa função em 2023, reportado pelo Eurostat como cerca de 1,7% do PIB, indicando peso relativamente alto da função no orçamento público brasileiro quando comparado a economias europeias consolidadas. A comparação deve ser feita com cautela, pois diferenças institucionais, federativas, contábeis e de classificação podem afetar a alocação funcional.",
+    "nivel_confiabilidade": "Alto. Os valores vêm de publicação oficial do Tesouro Nacional estruturada segundo GFSM 2014 e COFOG, compatível com o padrão do FMI. A confiabilidade não deve ser classificada como máxima porque a própria metodologia informa uso de fontes complementares e extrapolação para municípios sem reporte, além de possíveis revisões de classificação funcional e contas fiscais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Transparente - COFOG - Expenditure by Functions of the General Government - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+      },
+      {
+        "titulo": "Tesouro Nacional - Download da planilha COFOG 2024",
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753"
+      },
+      {
+        "titulo": "World Bank Data360 - IMF GFS-COFOG Dataset",
+        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG"
+      },
+      {
+        "titulo": "Eurostat - Government Expenditure by Function (COFOG)",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_by_function_%E2%80%93_COFOG"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 2.601926639932565
+      },
+      {
+        "ano": 2011,
+        "valor": 2.568247763368848
+      },
+      {
+        "ano": 2012,
+        "valor": 2.599581798371124
+      },
+      {
+        "ano": 2013,
+        "valor": 2.668421927742117
+      },
+      {
+        "ano": 2014,
+        "valor": 2.788594222317246
+      },
+      {
+        "ano": 2015,
+        "valor": 2.985178726795802
+      },
+      {
+        "ano": 2016,
+        "valor": 3.071447431357928
+      },
+      {
+        "ano": 2017,
+        "valor": 3.106219265127097
+      },
+      {
+        "ano": 2018,
+        "valor": 3.086976748689737
+      },
+      {
+        "ano": 2019,
+        "valor": 3.11628323754062
+      },
+      {
+        "ano": 2020,
+        "valor": 3.048932718599403
+      },
+      {
+        "ano": 2021,
+        "valor": 2.573255427024587
+      },
+      {
+        "ano": 2022,
+        "valor": 2.724235526745441
+      },
+      {
+        "ano": 2023,
+        "valor": 2.845299903993456
+      },
+      {
+        "ano": 2024,
+        "valor": 2.954500241156522
+      }
+    ]
+  },
+  "gasto_assuntos_economicos_pib": {
+    "label": "(FMI) Gasto em Assuntos Econômicos",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF, IBGE e BCB para a série brasileira do Governo Geral",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral brasileiro na função COFOG 704 - Assuntos Econômicos como percentual do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam maior proporção da economia destinada a funções públicas ligadas a transporte, agricultura, energia, indústria, comunicações, pesquisa econômica e demais políticas de apoio à atividade econômica. O indicador não mede eficiência, qualidade do gasto, impacto econômico ou retorno social dos recursos aplicados.",
+    "metodologia": "A métrica segue a Classificação das Funções de Governo (COFOG), metodologia internacional da OCDE/ONU usada no FMI GFS para classificar despesas públicas por finalidade. O numerador corresponde à despesa consolidada do Governo Geral na função 704 - Assuntos Econômicos. O denominador é o PIB nominal anual. Os valores foram mantidos apenas quando observados em publicação oficial brasileira compatível com GFS-COFOG, usando STN, SOF, IBGE e BCB. Não foram incluídos valores estimados nem extrapolações.",
+    "historico_metodologia": "A série brasileira de despesas por função do Governo Geral em padrão COFOG publicada pelo Tesouro Nacional cobre 2010 em diante nas edições consultadas. Não há valores oficiais COFOG-Governo Geral validados para 1994-2009 nas fontes consultadas; por isso esses anos não foram preenchidos. Os dados de 2022 e 2023 são marcados como preliminares na publicação oficial. Séries COFOG podem sofrer revisão por reclassificação funcional, consolidação entre esferas de governo, atualização de contas nacionais, revisão do PIB nominal ou aprimoramentos metodológicos de STN/SOF/IBGE/BCB.",
+    "abrangencia": "Brasil, Governo Geral consolidado, incluindo União, estados e municípios, em classificação funcional COFOG compatível com comparações internacionais do FMI GFS-COFOG.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2010,
+        "nome": "Investimento alto",
+        "descricao": "O nível elevado da função Assuntos Econômicos esteve associado principalmente ao peso de Transportes, subfunção mais relevante dentro da função."
+      },
+      {
+        "ano": 2014,
+        "nome": "Pico pré-crise",
+        "descricao": "A despesa em Assuntos Econômicos atingiu o maior valor da série validada, impulsionada sobretudo por gastos em Transportes e por maior participação de assuntos econômicos, comerciais e trabalhistas."
+      },
+      {
+        "ano": 2015,
+        "nome": "Ajuste fiscal",
+        "descricao": "A queda em relação a 2014 coincide com o início da recessão brasileira e com maior restrição fiscal, reduzindo o espaço para despesas econômicas e investimentos."
+      },
+      {
+        "ano": 2017,
+        "nome": "Pós-recessão",
+        "descricao": "A despesa caiu para patamar inferior a 2% do PIB, refletindo redução relevante da subfunção Transportes após a recessão de 2015-2016."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "Apesar do forte choque fiscal da COVID-19, a função Assuntos Econômicos caiu como proporção do PIB na série validada, enquanto outras funções, especialmente Proteção Social, absorveram maior parte da expansão fiscal."
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada transportes",
+        "descricao": "A despesa voltou a superar 2% do PIB, com aumento expressivo da subfunção Transportes em relação a 2021."
+      },
+      {
+        "ano": 2023,
+        "nome": "Estabilidade",
+        "descricao": "A despesa total em Assuntos Econômicos permaneceu em 2,21% do PIB, mantendo praticamente o mesmo nível de 2022."
+      }
+    ],
+    "comparacao_paises": "Em 2023, o Brasil gastou 2,21% do PIB em Assuntos Econômicos, abaixo da média internacional de 5,06% dos países analisados na publicação oficial brasileira. A diferença é explicada principalmente pelo menor gasto relativo em Transportes, em que o Brasil registrou 1,32% do PIB ante 2,24% na média dos países comparados.",
+    "nivel_confiabilidade": "Alto para 2010-2023, pois os valores vêm de publicação oficial do Tesouro Nacional em metodologia COFOG compatível com FMI GFS, usando STN, SOF, IBGE e BCB. A confiabilidade é menor para comparações de longo prazo anteriores a 2010 porque a série oficial brasileira validada em COFOG-Governo Geral não cobre 1994-2009 nas fontes consultadas. Valores preliminares podem ser revisados.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Nacional - COFOG - Despesas por Função do Governo Geral - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114?ano_selecionado=2024"
+      },
+      {
+        "titulo": "Tesouro Nacional - Relatório COFOG 2024",
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+      },
+      {
+        "titulo": "Tesouro Nacional - COFOG - Despesas por Função do Governo Geral - 2023",
+        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+      },
+      {
+        "titulo": "Data360 / Banco Mundial - IMF GFS-COFOG Dataset",
+        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 2.7
+      },
+      {
+        "ano": 2011,
+        "valor": 2.26
+      },
+      {
+        "ano": 2012,
+        "valor": 2.25
+      },
+      {
+        "ano": 2013,
+        "valor": 2.64
+      },
+      {
+        "ano": 2014,
+        "valor": 2.77
+      },
+      {
+        "ano": 2015,
+        "valor": 2.25
+      },
+      {
+        "ano": 2016,
+        "valor": 2.21
+      },
+      {
+        "ano": 2017,
+        "valor": 1.9
+      },
+      {
+        "ano": 2018,
+        "valor": 2.06
+      },
+      {
+        "ano": 2019,
+        "valor": 2.16
+      },
+      {
+        "ano": 2020,
+        "valor": 1.71
+      },
+      {
+        "ano": 2021,
+        "valor": 1.61
+      },
+      {
+        "ano": 2022,
+        "valor": 2.21
+      },
+      {
+        "ano": 2023,
+        "valor": 2.21
+      }
+    ],
+    "padrao": false
+  },
+  "gasto_defesa_pib": {
+    "label": "(SIPRI/WDI) Gasto Com Defesa",
+    "unidade": "% do PIB",
+    "fonte": "SIPRI Military Expenditure Database, via Banco Mundial - World Development Indicators (MS.MIL.XPND.GD.ZS)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa militar anual do Brasil como percentual do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam maior peso relativo dos gastos militares na economia nacional. O indicador não mede eficiência militar, qualidade do gasto, segurança pública, capacidade operacional nem prioridade orçamentária absoluta, pois países com PIBs diferentes podem ter percentuais semelhantes e volumes financeiros muito distintos.",
+    "metodologia": "A série usa o indicador MS.MIL.XPND.GD.ZS do World Development Indicators, cujo dado original vem da SIPRI Military Expenditure Database. A SIPRI calcula a despesa militar como parcela do PIB em ano-calendário, usando fontes abertas e uma definição ampla de gasto militar baseada na definição da OTAN, incluindo forças armadas, ministérios da defesa, forças paramilitares quando treinadas/equipadas para operações militares, pessoal, operações, manutenção, compras militares, pesquisa e desenvolvimento militar e assistência militar.",
+    "historico_metodologia": "A SIPRI informa que sua base contém séries consistentes e é atualizada anualmente, podendo revisar dados de anos anteriores. Os valores em participação do PIB são apresentados em ano-calendário. A série pode ser afetada por revisões de contas nacionais, revisões de PIB, reclassificação de despesas militares e atualização das fontes abertas utilizadas pela SIPRI. Para manter apenas dados observados disponíveis na fonte consultada, a série foi mantida de 1994 a 2024.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da SIPRI e publicação agregada no World Development Indicators do Banco Mundial.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2002,
+        "nome": "Alta relativa",
+        "descricao": "O indicador atingiu 1,8958% do PIB, um dos maiores valores da série recente após 1994. A fonte consultada não atribui uma causa oficial específica ao Brasil; portanto, a variação deve ser interpretada como mudança relativa entre gasto militar nominal e PIB."
+      },
+      {
+        "ano": 2010,
+        "nome": "Pico recente",
+        "descricao": "O indicador chegou a 1,5394% do PIB, maior nível entre 2005 e 2024. A fonte consultada não apresenta explicação causal oficial específica para o Brasil."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão brasileira",
+        "descricao": "A recessão econômica brasileira afetou o denominador PIB e o contexto fiscal do período, mas a fonte SIPRI/WDI não fornece decomposição causal oficial para a variação brasileira do indicador."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "Durante a pandemia de COVID-19, o indicador subiu para 1,3267% do PIB, parcialmente compatível com alterações no PIB e no orçamento público; a fonte consultada não fornece atribuição causal oficial específica para o Brasil."
+      },
+      {
+        "ano": 2024,
+        "nome": "Mínimo série",
+        "descricao": "O Brasil registrou 0,9728% do PIB em gasto militar, o menor valor da série validada desde 1994, enquanto a SIPRI registrou aumento global da despesa militar e carga militar mundial de 2,5% do PIB em 2024."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 0,9728% do PIB em gasto militar, abaixo da carga militar mundial de 2,5% do PIB informada pela SIPRI. Também ficou abaixo de grandes potências militares como Estados Unidos, China, Rússia, Alemanha, Índia, Reino Unido, França e Coreia do Sul em termos de proporção do PIB, segundo os dados internacionais da SIPRI/WDI para 2024.",
+    "nivel_confiabilidade": "Alto para comparação internacional anual, pois os valores vêm da SIPRI Military Expenditure Database e são republicados pelo World Development Indicators do Banco Mundial. A principal ressalva é que a SIPRI usa fontes abertas e pode revisar anos anteriores; além disso, a classificação de despesa militar pode diferir de estatísticas fiscais nacionais ou de dados COFOG do FMI GFS.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Military expenditure (% of GDP) - Brazil - MS.MIL.XPND.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS?locations=BR"
+      },
+      {
+        "titulo": "SIPRI - Military Expenditure Database",
+        "url": "https://www.sipri.org/databases/milex"
+      },
+      {
+        "titulo": "SIPRI - Trends in World Military Expenditure, 2024",
+        "url": "https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf"
+      },
+      {
+        "titulo": "World Bank DataBank - World Development Indicators",
+        "url": "https://databank.worldbank.org/source/world-development-indicators"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 2.016007789121
+      },
+      {
+        "ano": 1995,
+        "valor": 1.8621369803338
+      },
+      {
+        "ano": 1996,
+        "valor": 1.6548434995029
+      },
+      {
+        "ano": 1997,
+        "valor": 1.5776883155177
+      },
+      {
+        "ano": 1998,
+        "valor": 1.6622919197582
+      },
+      {
+        "ano": 1999,
+        "valor": 1.6454746665699
+      },
+      {
+        "ano": 2000,
+        "valor": 1.7307261471363
+      },
+      {
+        "ano": 2001,
+        "valor": 1.9518824453253
+      },
+      {
+        "ano": 2002,
+        "valor": 1.8957711991562
+      },
+      {
+        "ano": 2003,
+        "valor": 1.5034776355451
+      },
+      {
+        "ano": 2004,
+        "valor": 1.4612684089062
+      },
+      {
+        "ano": 2005,
+        "valor": 1.5240134627332
+      },
+      {
+        "ano": 2006,
+        "valor": 1.4810849563629
+      },
+      {
+        "ano": 2007,
+        "valor": 1.466292099929
+      },
+      {
+        "ano": 2008,
+        "valor": 1.4419240883772
+      },
+      {
+        "ano": 2009,
+        "valor": 1.5386256760121
+      },
+      {
+        "ano": 2010,
+        "valor": 1.5394069812836
+      },
+      {
+        "ano": 2011,
+        "valor": 1.4118511592452
+      },
+      {
+        "ano": 2012,
+        "valor": 1.3786564647044
+      },
+      {
+        "ano": 2013,
+        "valor": 1.3294460838256
+      },
+      {
+        "ano": 2014,
+        "valor": 1.330244423168
+      },
+      {
+        "ano": 2015,
+        "valor": 1.3655171539616
+      },
+      {
+        "ano": 2016,
+        "valor": 1.3479754129948
+      },
+      {
+        "ano": 2017,
+        "valor": 1.4140216679759
+      },
+      {
+        "ano": 2018,
+        "valor": 1.4696777235067
+      },
+      {
+        "ano": 2019,
+        "valor": 1.382797246388
+      },
+      {
+        "ano": 2020,
+        "valor": 1.3266602686055
+      },
+      {
+        "ano": 2021,
+        "valor": 1.1490376302614
+      },
+      {
+        "ano": 2022,
+        "valor": 1.0524008384595
+      },
+      {
+        "ano": 2023,
+        "valor": 1.0023753899013
+      },
+      {
+        "ano": 2024,
+        "valor": 0.9727745590407
+      }
+    ]
+  },
+  "gasto_habitacao_servicos_comunitarios_pib": {
+    "label": "(FMI) Gasto em Habitação e Serviços Comunitários",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Classification of the Functions of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE",
+    "cat": "Finanças Públicas",
+    "descricao": "Mede a despesa do governo geral brasileiro com Habitação e Serviços Comunitários, segundo a função COFOG 706, como proporção do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam maior peso das despesas públicas com habitação, desenvolvimento comunitário, abastecimento de água, iluminação pública e serviços comunitários no PIB. O indicador não mede qualidade, eficiência, cobertura dos serviços, déficit habitacional nem resultado social das políticas.",
+    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), padrão OCDE/ONU empregado nas estatísticas de finanças públicas segundo o GFSM 2014 do FMI. O numerador corresponde à despesa consolidada do governo geral brasileiro na função 706 - Habitação e serviços comunitários. O denominador é o PIB nominal anual. A cobertura do governo geral inclui União, Estados e Municípios, com consolidação entre esferas para evitar dupla contagem. Foram mantidos apenas valores oficiais observados publicados pelo Tesouro Nacional/STN, SOF e IBGE em relatórios COFOG.",
+    "historico_metodologia": "A série brasileira de despesas por função do governo geral no padrão COFOG está publicada oficialmente para 2010 em diante nas fontes consultadas. Não foram incluídos anos anteriores a 2010 porque não foi localizada, nas fontes oficiais públicas consultadas, série validada equivalente para governo geral, função COFOG 706, em % do PIB. Os valores de 2022 foram indicados como preliminares no relatório COFOG de 2022. A publicação de 2024 informa histórico disponível para 2022, 2023 e 2024 e segue GFSM 2014/FMI e COFOG OCDE/ONU.",
+    "abrangencia": "Brasil, governo geral consolidado: governo central, governos estaduais e governos municipais.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2014,
+        "nome": "Pico relativo",
+        "descricao": "O relatório COFOG registra 2014 como um dos anos de pico da série de Habitação e serviços comunitários entre 2010 e 2022."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pico relativo",
+        "descricao": "O relatório COFOG registra 2020 como um dos anos de pico da série, com gasto de 1,25% do PIB."
+      },
+      {
+        "ano": 2022,
+        "nome": "Pico relativo",
+        "descricao": "O relatório COFOG registra 2022 como um dos anos de pico da série, com gasto de 1,23% do PIB e R$ 123,669 bilhões correntes."
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta recente",
+        "descricao": "O relatório COFOG 2024 informa que Habitação e serviços comunitários avançou de 1,15% para 1,36% do PIB entre 2023 e 2024."
+      }
+    ],
+    "comparacao_paises": "Em 2021, o Brasil destinou cerca de 1,1% do PIB à função Habitação e serviços comunitários, acima da média das economias avançadas citada no relatório COFOG, de 0,6% do PIB. Na União Europeia, segundo Eurostat, o gasto geral nessa função foi de 1,2% do PIB em 2023, com variação relevante entre países.",
+    "nivel_confiabilidade": "Alto para os anos publicados, pois os valores vêm de estatísticas oficiais do governo geral brasileiro, compiladas por STN/SOF/IBGE segundo COFOG e GFSM 2014/FMI. A principal limitação é a cobertura histórica curta: não foram incluídos anos anteriores a 2010 por ausência de série oficial pública validada equivalente nas fontes consultadas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - GFS Government Expenditures by Function (GFS_COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+      },
+      {
+        "titulo": "Tesouro Nacional - Relatório COFOG 2024",
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+      },
+      {
+        "titulo": "Despesa por Função do Governo Geral - Resultados de 2023",
+        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+      },
+      {
+        "titulo": "Despesa por Função do Governo Geral - Resultados de 2022",
+        "url": "https://static.poder360.com.br/2024/01/tesouro-nacional-despesas-governo-tribunais-justica-25jan2024.pdf"
+      },
+      {
+        "titulo": "Eurostat - Government Expenditure on Housing and Community Amenities",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_housing_and_community_amenities"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 1.16
+      },
+      {
+        "ano": 2011,
+        "valor": 1.13
+      },
+      {
+        "ano": 2012,
+        "valor": 1.15
+      },
+      {
+        "ano": 2013,
+        "valor": 1.09
+      },
+      {
+        "ano": 2014,
+        "valor": 1.14
+      },
+      {
+        "ano": 2015,
+        "valor": 1.1
+      },
+      {
+        "ano": 2016,
+        "valor": 1.11
+      },
+      {
+        "ano": 2017,
+        "valor": 1.06
+      },
+      {
+        "ano": 2018,
+        "valor": 1.03
+      },
+      {
+        "ano": 2019,
+        "valor": 1.06
+      },
+      {
+        "ano": 2020,
+        "valor": 1.25
+      },
+      {
+        "ano": 2021,
+        "valor": 1.07
+      },
+      {
+        "ano": 2022,
+        "valor": 1.23
+      },
+      {
+        "ano": 2023,
+        "valor": 1.15
+      },
+      {
+        "ano": 2024,
+        "valor": 1.36
+      }
+    ]
+  },
+  "gasto_protecao_ambiental_pib": {
+    "label": "(FMI) Gasto em Proteção Ambiental",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function (COFOG); Tesouro Nacional/STN, SOF e IBGE",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do Governo Geral brasileiro com proteção ambiental em proporção do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam maior parcela da economia destinada pelo governo geral a proteção ambiental, incluindo gestão de resíduos, águas residuais, redução da poluição, proteção da biodiversidade e outras ações ambientais classificadas na função COFOG 705. O indicador não mede eficiência, qualidade do gasto, resultado ambiental efetivo nem todo gasto climático ou de sustentabilidade.",
+    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), função 705 - Proteção Ambiental, aplicada às estatísticas de finanças públicas do Governo Geral. A despesa é compilada conforme o Government Finance Statistics Manual 2014 (GFSM 2014), do FMI, e apresentada como percentual do PIB nominal do mesmo ano. Para o Brasil, os dados do Governo Geral são compilados por STN, SOF e IBGE e alinhados à metodologia COFOG/OECD/UN usada no GFS.",
+    "historico_metodologia": "A série brasileira de Governo Geral por COFOG divulgada oficialmente tem cobertura pública recente. A publicação do Tesouro Nacional informa que os dados são compilados segundo o GFSM 2014 e apresentados conforme a COFOG. Não foram encontrados dados oficiais completos e validados para 1994-2020 na fonte consultada. Por isso, a série preserva apenas anos com valores oficiais concretos disponíveis para o Brasil, sem interpolação, projeção ou estimativa.",
+    "abrangencia": "Brasil, Governo Geral, incluindo governo central, estados e municípios, conforme estatísticas fiscais brasileiras alinhadas à metodologia COFOG.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2023, o Brasil registrou 0,50% do PIB em gasto do Governo Geral com proteção ambiental. Esse valor ficou próximo da média da OCDE para a função ambiental em 2023, mas abaixo da média dos países OCDE-UE. Em comparação internacional de 2021 reportada pelo Tesouro com base em FMI e OCDE, o Brasil aparecia abaixo das economias avançadas, do G-20 e da média dos países selecionados, mas acima da média da América Latina.",
+    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm de estatísticas fiscais oficiais do Governo Geral brasileiro, compiladas por STN, SOF e IBGE segundo GFSM 2014 e COFOG. A limitação principal é a cobertura histórica curta: não foram incluídos anos anteriores sem dado oficial validado na fonte consultada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI - Government Finance Statistics: GFS Government Expenditures by Function (COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Nacional - COFOG: Expenditure by Functions of the General Government - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+      },
+      {
+        "titulo": "Gov.br - Despesa por Função do Governo Geral: Resultados de 2023",
+        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+      },
+      {
+        "titulo": "Tesouro Nacional - Despesa por Função do Governo Geral: Resultados de 2024",
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+      },
+      {
+        "titulo": "Tesouro Nacional - Estatísticas Fiscais do Governo Geral",
+        "url": "https://www.gov.br/tesouronacional/pt-br/estatisticas-fiscais-e-planejamento/estatisticas-fiscais-do-governo-geral"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2021,
+        "valor": 0.43
+      },
+      {
+        "ano": 2022,
+        "valor": 0.48
+      },
+      {
+        "ano": 2023,
+        "valor": 0.5
+      },
+      {
+        "ano": 2024,
+        "valor": 0.51
+      }
+    ]
+  },
+  "gasto_recreacao_cultura_religiao_pib": {
+    "label": "(FMI) Gasto em Recreação, Cultura e Religião",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional - COFOG, Expenditure by Functions of the General Government",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa do governo geral brasileiro em recreação, cultura e religião, segundo a classificação funcional COFOG, como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam maior gasto público nessa função em relação ao tamanho da economia. O indicador não mede qualidade, eficiência, acesso, impacto cultural, distribuição regional do gasto nem resultado social das políticas financiadas.",
+    "metodologia": "A série usa a classificação funcional COFOG, vinculada ao padrão internacional de estatísticas de finanças públicas do FMI. Foram usados os valores anuais observados para o governo geral, função COFOG 708 - Recreation, culture and religion, em proporção do PIB. Os valores da planilha oficial do Tesouro Nacional estão em razão do PIB e foram multiplicados por 100 para expressar a unidade como percentual do PIB.",
+    "historico_metodologia": "A metodologia segue o Government Finance Statistics Manual 2014 (GFSM 2014) do FMI e a Classification of the Functions of Government (COFOG), desenvolvida pela OCDE e publicada pela Divisão de Estatística das Nações Unidas. A publicação brasileira cobre governo central, estados e municípios e apresenta estatísticas do governo geral. Para esta série, a fonte oficial brasileira consultada disponibiliza valores anuais observados de 2010 a 2024; não foram encontrados valores oficiais observados e comparáveis para 1994-2009 na publicação consultada, portanto esses anos foram excluídos.",
+    "abrangencia": "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme a publicação COFOG do Tesouro Nacional e a metodologia GFSM 2014/FMI.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A forte contração econômica de 2015 coincide com queda relevante do gasto em recreação, cultura e religião em proporção do PIB."
+      },
+      {
+        "ano": 2017,
+        "nome": "Ajuste fiscal",
+        "descricao": "A série atinge um dos menores valores em 2017, após anos de restrição fiscal e redução relativa dessa função no orçamento do governo geral."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "Durante a pandemia de COVID-19, a proporção destinada a recreação, cultura e religião permaneceu baixa em relação ao período inicial da série."
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada",
+        "descricao": "A partir de 2022, o indicador volta a subir, recuperando parte da queda observada entre 2015 e 2021."
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta recente",
+        "descricao": "Em 2024, o gasto em recreação, cultura e religião alcança 0,402% do PIB, maior valor desde 2013 na série validada."
+      }
+    ],
+    "comparacao_paises": "A comparação internacional deve ser feita com cautela, pois a cobertura e a qualidade de reporte COFOG variam entre países. Como referência, a União Europeia registrou 1,2% do PIB em gasto de governo geral em recreação, cultura e religião em 2023; o Brasil registrou 0,338945% do PIB no mesmo ano, portanto abaixo desse agregado europeu.",
+    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm de publicação oficial do Tesouro Nacional compilada segundo GFSM 2014/FMI e COFOG. A limitação principal é a cobertura histórica: a publicação oficial consultada disponibiliza série comparável apenas de 2010 a 2024, não desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
+        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+      },
+      {
+        "titulo": "Tesouro Nacional - COFOG, Expenditure by Functions of the General Government - 2024",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+      },
+      {
+        "titulo": "Tesouro Nacional - Download da planilha COFOG 2024",
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753"
+      },
+      {
+        "titulo": "FMI - Government Finance Statistics Manual 2014",
+        "url": "https://www.imf.org/external/Pubs/FT/GFS/Manual/2014/gfsfinal.pdf"
+      },
+      {
+        "titulo": "Eurostat - Government expenditure on recreation, culture and religion",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_recreation,_culture_and_religion"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 0.417283
+      },
+      {
+        "ano": 2011,
+        "valor": 0.419991
+      },
+      {
+        "ano": 2012,
+        "valor": 0.417435
+      },
+      {
+        "ano": 2013,
+        "valor": 0.403159
+      },
+      {
+        "ano": 2014,
+        "valor": 0.376228
+      },
+      {
+        "ano": 2015,
+        "valor": 0.314066
+      },
+      {
+        "ano": 2016,
+        "valor": 0.283466
+      },
+      {
+        "ano": 2017,
+        "valor": 0.248744
+      },
+      {
+        "ano": 2018,
+        "valor": 0.256367
+      },
+      {
+        "ano": 2019,
+        "valor": 0.249856
+      },
+      {
+        "ano": 2020,
+        "valor": 0.248686
+      },
+      {
+        "ano": 2021,
+        "valor": 0.230728
+      },
+      {
+        "ano": 2022,
+        "valor": 0.277905
+      },
+      {
+        "ano": 2023,
+        "valor": 0.338945
+      },
+      {
+        "ano": 2024,
+        "valor": 0.402
+      }
+    ]
   },
   "custo_conformidade_horas": {
     "label": "(WDI) Tempo Gasto com Impostos",
