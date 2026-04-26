@@ -1,7 +1,6 @@
 {
     "pib_per_capita_ppp": {
         "label": "PIB per capita (PPP, US$ 2021)",
-        "cor": "#0ea5e9",
         "unidade": "US$ internacionais constantes de 2021 (PPP)",
         "fonte": "Banco Mundial - World Development Indicators (NY.GDP.PCAP.PP.KD)",
         "cat": "Economia",
