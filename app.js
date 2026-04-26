@@ -1,9 +1,6 @@
 const { useState, useEffect, useMemo, useCallback } = React;
 const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea, ReferenceLine, ReferenceDot } = Recharts;
 
-const PRES_ANOS = window.__MANDATOS__ || [];
-const CORES_CAT_NORMALIZADAS = window.__CATEGORIAS__ || {};
-
 // ── Helpers ──────────────────────────────────────────────────
 
 function tentarCorrigirMojibake(texto) {
@@ -15,10 +12,23 @@ function normalizarCategoria(cat) {
   return String(cat || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+const PRES_ANOS = window.__MANDATOS__ || [];
+
 function getCategoriaCor(cat) {
-  for (const chave of [normalizarCategoria(cat), normalizarCategoria(tentarCorrigirMojibake(cat))]) {
-    if (CORES_CAT_NORMALIZADAS[chave]) return CORES_CAT_NORMALIZADAS[chave];
+  const raw = window.__CATEGORIAS__ || {};
+  const search = normalizarCategoria(cat);
+  
+  // Search for the category by normalizing keys on the fly
+  for (const k in raw) {
+    if (normalizarCategoria(k) === search) return raw[k];
   }
+  
+  // Fallback for mojibake or other issues
+  const fixedSearch = normalizarCategoria(tentarCorrigirMojibake(cat));
+  for (const k in raw) {
+    if (normalizarCategoria(k) === fixedSearch) return raw[k];
+  }
+  
   return '#79c0ff';
 }
 
