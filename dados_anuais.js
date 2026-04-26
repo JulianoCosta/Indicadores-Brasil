@@ -1,4 +1,626 @@
 ﻿window.__DADOS_ANUAIS__ = {
+  "pib_real_crescimento_anual": {
+    "label": "(WDI/FMI) Crescimento do PIB",
+    "unidade": "% ao ano",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.MKTP.KD.ZG) / Fundo Monetário Internacional - World Economic Outlook",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a variação percentual anual do Produto Interno Bruto real do Brasil, ajustado pela inflação.",
+    "como_interpretar": "Valores positivos indicam expansão real da produção econômica em relação ao ano anterior; valores negativos indicam contração. O indicador mede crescimento agregado da economia, mas não mede distribuição de renda, qualidade do crescimento, produtividade setorial ou bem-estar social.",
+    "metodologia": "O Banco Mundial define o indicador como a taxa anual de crescimento percentual do PIB a preços de mercado, baseada em moeda local constante. O PIB corresponde à soma do valor adicionado bruto de todos os produtores residentes, acrescida dos impostos sobre produtos e deduzidos os subsídios não incluídos no valor dos produtos. A série é calculada sem dedução por depreciação de ativos produzidos ou por exaustão e degradação de recursos naturais. Para o Brasil, os valores derivam das contas nacionais oficiais, principalmente do IBGE, padronizadas internacionalmente no WDI. O FMI/WEO reporta o mesmo conceito macroeconômico geral como crescimento do PIB real em variação percentual anual.",
+    "historico_metodologia": "Séries de PIB real podem ser revisadas quando o IBGE atualiza as Contas Nacionais, incorpora novas pesquisas estruturais, altera anos de referência, revisa deflatores, muda classificações setoriais ou recalcula séries encadeadas. O Banco Mundial também pode revisar a série do WDI após atualizações das contas nacionais nacionais e de seus processos de harmonização internacional. Foram mantidos apenas anos com valores observados disponíveis na série WDI até 2024; valores posteriores, projeções ou estimativas do FMI/WEO não foram incluídos.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária associada ao Plano Real coincidiu com forte crescimento real do PIB em 1994."
+      },
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial e a desvalorização do real coincidiram com forte desaceleração do crescimento econômico."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão global",
+        "descricao": "O cenário externo favorável e a expansão doméstica coincidiram com aceleração expressiva do PIB real."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional reduziu a atividade econômica e levou o Brasil a registrar leve contração do PIB real."
+      },
+      {
+        "ano": 2010,
+        "nome": "Retomada",
+        "descricao": "A recuperação após a crise financeira global produziu o maior crescimento anual da série desde 1994."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A deterioração fiscal, a queda de confiança, choques políticos e retração da demanda coincidiram com forte contração do PIB real."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da crise econômica manteve o PIB real em queda pelo segundo ano consecutivo."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 e as restrições à mobilidade provocaram forte queda da atividade econômica."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao": "A reabertura econômica e a baixa base de comparação de 2020 geraram forte recuperação do PIB real."
+      },
+      {
+        "ano": 2024,
+        "nome": "Consumo forte",
+        "descricao": "O crescimento de serviços, indústria, investimento e consumo das famílias sustentou a alta real do PIB em 2024."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil cresceu 3,4%, acima de várias economias avançadas e acima de parte relevante da América Latina, mas abaixo de algumas grandes economias emergentes de crescimento mais acelerado. A comparação internacional deve considerar diferenças de estrutura produtiva, demografia, ciclo econômico, choques externos e margem de recuperação pós-crise.",
+    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores são derivados das contas nacionais oficiais e padronizados pelo World Development Indicators do Banco Mundial. A principal ressalva é que valores de PIB real podem ser revisados retroativamente por atualizações metodológicas das contas nacionais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - GDP growth (annual %) - Brazil - NY.GDP.MKTP.KD.ZG",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - NY.GDP.MKTP.KD.ZG",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.KD.ZG"
+      },
+      {
+        "titulo": "FMI DataMapper - Brazil - Real GDP growth",
+        "url": "https://www.imf.org/external/datamapper/profile/BRA"
+      },
+      {
+        "titulo": "IBGE - GDP closes 2024 at 3.4% and records highest rate since 2021",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/42779-gdp-closes-2024-at-3-4-and-has-highest-rate-since-2021"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 5.9
+      },
+      {
+        "ano": 1995,
+        "valor": 4.2
+      },
+      {
+        "ano": 1996,
+        "valor": 2.2
+      },
+      {
+        "ano": 1997,
+        "valor": 3.4
+      },
+      {
+        "ano": 1998,
+        "valor": 0.3
+      },
+      {
+        "ano": 1999,
+        "valor": 0.5
+      },
+      {
+        "ano": 2000,
+        "valor": 4.4
+      },
+      {
+        "ano": 2001,
+        "valor": 1.4
+      },
+      {
+        "ano": 2002,
+        "valor": 3.1
+      },
+      {
+        "ano": 2003,
+        "valor": 1.1
+      },
+      {
+        "ano": 2004,
+        "valor": 5.8
+      },
+      {
+        "ano": 2005,
+        "valor": 3.2
+      },
+      {
+        "ano": 2006,
+        "valor": 4
+      },
+      {
+        "ano": 2007,
+        "valor": 6.1
+      },
+      {
+        "ano": 2008,
+        "valor": 5.1
+      },
+      {
+        "ano": 2009,
+        "valor": -0.1
+      },
+      {
+        "ano": 2010,
+        "valor": 7.5
+      },
+      {
+        "ano": 2011,
+        "valor": 4
+      },
+      {
+        "ano": 2012,
+        "valor": 1.9
+      },
+      {
+        "ano": 2013,
+        "valor": 3
+      },
+      {
+        "ano": 2014,
+        "valor": 0.5
+      },
+      {
+        "ano": 2015,
+        "valor": -3.5
+      },
+      {
+        "ano": 2016,
+        "valor": -3.3
+      },
+      {
+        "ano": 2017,
+        "valor": 1.3
+      },
+      {
+        "ano": 2018,
+        "valor": 1.8
+      },
+      {
+        "ano": 2019,
+        "valor": 1.2
+      },
+      {
+        "ano": 2020,
+        "valor": -3.3
+      },
+      {
+        "ano": 2021,
+        "valor": 4.8
+      },
+      {
+        "ano": 2022,
+        "valor": 3
+      },
+      {
+        "ano": 2023,
+        "valor": 3.2
+      },
+      {
+        "ano": 2024,
+        "valor": 3.4
+      }
+    ]
+  },
+  "pib_per_capita_ppp_constante": {
+    "label": "(WDI) PIB per Capita PPP Constante",
+    "unidade": "US$ internacionais constantes de 2021 (PPP)",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.PCAP.PP.KD)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede o PIB real médio por habitante do Brasil, ajustado por paridade de poder de compra e expresso em dólares internacionais constantes de 2021.",
+    "como_interpretar": "Valores maiores indicam maior produção econômica real média por habitante, com ajuste para diferenças de custo de vida entre países. O indicador não mede distribuição de renda, desigualdade, informalidade, qualidade dos serviços públicos ou bem-estar individual.",
+    "metodologia": "O Banco Mundial calcula o indicador como PIB dividido pela população total, convertido para dólares internacionais por fatores de paridade de poder de compra (PPP). A série é expressa em preços constantes, com ano de referência 2021, permitindo comparação temporal em termos reais e comparação internacional ajustada por níveis de preços.",
+    "historico_metodologia": "A série atual do WDI está expressa em dólares internacionais constantes de 2021 e incorpora os resultados do ciclo ICP 2021. Como em outras séries de contas nacionais e PPP, os valores podem ser revisados quando há atualização de contas nacionais, população, fatores PPP ou mudança de ano-base internacional. Não há valor observado consolidado para 2025 na fonte consultada; por isso a série validada vai somente até 2024.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países, regiões e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A desvalorização cambial e a desaceleração econômica associada ao fim do regime de bandas cambiais coincidem com queda do PIB per capita PPP em 1999."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão econômica",
+        "descricao": "O crescimento real mais forte da economia brasileira em 2004 elevou o PIB por habitante em termos de poder de compra."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional reduziu a atividade econômica brasileira e interrompeu o crescimento do PIB per capita PPP em 2009."
+      },
+      {
+        "ano": 2010,
+        "nome": "Retomada",
+        "descricao": "A recuperação da atividade após a crise global elevou fortemente o PIB per capita PPP em 2010."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu o PIB real e provocou queda expressiva do PIB per capita PPP em 2015."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da recessão manteve a contração do produto real por habitante em 2016."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 causou forte contração da atividade econômica e queda do PIB per capita PPP em 2020."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB per capita PPP em 2021."
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta recente",
+        "descricao": "O crescimento econômico de 2024 elevou o indicador ao maior valor da série validada desde 1994."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou US$ 19.652,3655 internacionais constantes de 2021. Esse nível ficou acima do agregado de países de baixa e média renda do Banco Mundial, mas muito abaixo do agregado de alta renda, que estava acima de US$ 58 mil no mesmo indicador.",
+    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais, população e PPPs do International Comparison Program. A principal ressalva é que séries de PIB, população e PPP podem sofrer revisões metodológicas periódicas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - GDP per capita, PPP (constant 2021 international $) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NY.GDP.PCAP.PP.KD",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.PCAP.PP.KD"
+      },
+      {
+        "titulo": "Banco Mundial API - WDI NY.GDP.PCAP.PP.KD - Brazil",
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GDP.PCAP.PP.KD?format=json&per_page=100"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 13202.930801306355
+      },
+      {
+        "ano": 1995,
+        "valor": 13550.439373724308
+      },
+      {
+        "ano": 1996,
+        "valor": 13641.629599753685
+      },
+      {
+        "ano": 1997,
+        "valor": 13896.624990134515
+      },
+      {
+        "ano": 1998,
+        "valor": 13737.702643484634
+      },
+      {
+        "ano": 1999,
+        "valor": 13602.41370694255
+      },
+      {
+        "ano": 2000,
+        "valor": 14005.34718707205
+      },
+      {
+        "ano": 2001,
+        "valor": 14016.131377356354
+      },
+      {
+        "ano": 2002,
+        "valor": 14265.904876851839
+      },
+      {
+        "ano": 2003,
+        "valor": 14259.366408828551
+      },
+      {
+        "ano": 2004,
+        "valor": 14911.260960772026
+      },
+      {
+        "ano": 2005,
+        "valor": 15221.01382819173
+      },
+      {
+        "ano": 2006,
+        "valor": 15657.4795714009
+      },
+      {
+        "ano": 2007,
+        "valor": 16440.583739804635
+      },
+      {
+        "ano": 2008,
+        "valor": 17113.367982277225
+      },
+      {
+        "ano": 2009,
+        "valor": 16939.44078090474
+      },
+      {
+        "ano": 2010,
+        "valor": 18062.158110224023
+      },
+      {
+        "ano": 2011,
+        "valor": 18627.810452793332
+      },
+      {
+        "ano": 2012,
+        "valor": 18832.219552435592
+      },
+      {
+        "ano": 2013,
+        "valor": 19241.505981452516
+      },
+      {
+        "ano": 2014,
+        "valor": 19183.17274452226
+      },
+      {
+        "ano": 2015,
+        "valor": 18357.069061542068
+      },
+      {
+        "ano": 2016,
+        "valor": 17620.927243440343
+      },
+      {
+        "ano": 2017,
+        "valor": 17724.47995778151
+      },
+      {
+        "ano": 2018,
+        "valor": 17917.749212292536
+      },
+      {
+        "ano": 2019,
+        "valor": 18018.620914949952
+      },
+      {
+        "ano": 2020,
+        "valor": 17327.515724814257
+      },
+      {
+        "ano": 2021,
+        "valor": 18075.706004875676
+      },
+      {
+        "ano": 2022,
+        "valor": 18554.04618285188
+      },
+      {
+        "ano": 2023,
+        "valor": 19079.812213225287
+      },
+      {
+        "ano": 2024,
+        "valor": 19652.365499170355
+      }
+    ]
+  },
+  "pib_total_ppp_constante": {
+    "label": "(WDI) PIB Total PPP Constante",
+    "unidade": "Trilhões de US$ internacionais constantes de 2021 (PPP)",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.MKTP.PP.KD)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede o PIB total real do Brasil ajustado por paridade de poder de compra, em trilhões de dólares internacionais constantes de 2021.",
+    "como_interpretar": "Valores maiores indicam maior tamanho real da economia brasileira, ajustado por diferenças de custo de vida entre países e por inflação ao longo do tempo. O indicador mede escala econômica agregada, não renda média, desigualdade, produtividade ou bem-estar individual.",
+    "metodologia": "O Banco Mundial expressa o PIB em dólares internacionais constantes de 2021, convertendo o produto interno bruto por fatores de paridade de poder de compra (PPP). O PIB corresponde ao valor agregado produzido no território econômico, mais impostos sobre produtos e menos subsídios não incluídos no valor dos produtos. A série usa preços constantes para remover variações de preços ao longo do tempo e PPPs para tornar economias comparáveis internacionalmente. Para este JSON, os valores originais em US$ internacionais constantes de 2021 foram divididos por 1.000.000.000.000 para serem apresentados em trilhões.",
+    "historico_metodologia": "A série atual do WDI usa dólares internacionais constantes de 2021 e incorpora o ciclo ICP 2021. O Banco Mundial informa que os fatores de PPP vêm do International Comparison Program, Eurostat, OCDE, estimativas do Banco Mundial, contas nacionais e FMI WEO. Séries de PIB PPP podem ser revisadas por mudanças em contas nacionais, atualizações de PPP, revisões populacionais e mudança do ano-base internacional. A série validada tem observações de 1990 a 2024; por isso foram mantidos apenas os dados observados de 1994 a 2024, sem incluir 2025.",
+    "abrangencia": "Brasil, cobertura nacional, padronizada pelo World Development Indicators para comparação internacional com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1999,
+        "nome": "Crise Cambial",
+        "descricao": "A desvalorização do real e a desaceleração econômica após o fim do regime de bandas cambiais coincidem com baixo crescimento do PIB total PPP em 1999."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão",
+        "descricao": "A aceleração da atividade econômica brasileira elevou de forma relevante o PIB total PPP em 2004."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise Global",
+        "descricao": "A crise financeira internacional interrompeu a trajetória de crescimento e provocou queda no PIB total PPP em 2009."
+      },
+      {
+        "ano": 2010,
+        "nome": "Retomada",
+        "descricao": "A recuperação após a crise financeira global gerou forte alta do PIB total PPP em 2010."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu fortemente a atividade econômica e derrubou o PIB total PPP em 2015."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão Prolongada",
+        "descricao": "A continuidade da recessão manteve a queda do PIB total PPP em 2016."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 provocou forte contração econômica e queda expressiva do PIB total PPP em 2020."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB total PPP em 2021."
+      },
+      {
+        "ano": 2024,
+        "nome": "Alta Recente",
+        "descricao": "O crescimento econômico de 2024 elevou o PIB total PPP ao maior valor da série validada desde 1994."
+      }
+    ],
+    "comparacao_paises": "Em PIB total PPP constante, o Brasil aparece como uma das maiores economias do mundo e uma das maiores da América Latina em escala agregada. Ainda assim, fica abaixo das maiores economias globais, como China, Estados Unidos e Índia. Como é um indicador total, países populosos tendem a aparecer melhor do que apareceriam em métricas per capita.",
+    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base em contas nacionais, PPPs do ICP, Eurostat/OCDE, estimativas do Banco Mundial e FMI WEO. A principal ressalva é que séries de PIB PPP podem sofrer revisões retroativas quando contas nacionais e PPPs são atualizadas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "UNdata / World Development Indicators - NY.GDP.MKTP.PP.KD - Brazil",
+        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.KD%3BCountry_Code%3ABRA&q=Brazil+GDP"
+      },
+      {
+        "titulo": "Banco Mundial - GDP, PPP (constant 2021 international $) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NY.GDP.MKTP.PP.KD",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.PP.KD"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators",
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=NY.GDP.MKTP.PP.KD&source=2"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 2.102764853288
+      },
+      {
+        "ano": 1995,
+        "valor": 2.191581301291
+      },
+      {
+        "ano": 1996,
+        "valor": 2.239990352793
+      },
+      {
+        "ano": 1997,
+        "valor": 2.316034575357
+      },
+      {
+        "ano": 1998,
+        "valor": 2.323865039664
+      },
+      {
+        "ano": 1999,
+        "valor": 2.334739277184
+      },
+      {
+        "ano": 2000,
+        "valor": 2.437186456308
+      },
+      {
+        "ano": 2001,
+        "valor": 2.471060823234
+      },
+      {
+        "ano": 2002,
+        "valor": 2.546513722931
+      },
+      {
+        "ano": 2003,
+        "valor": 2.57556508994
+      },
+      {
+        "ano": 2004,
+        "valor": 2.723916728319
+      },
+      {
+        "ano": 2005,
+        "valor": 2.811140139223
+      },
+      {
+        "ano": 2006,
+        "valor": 2.922517194134
+      },
+      {
+        "ano": 2007,
+        "valor": 3.099910206294
+      },
+      {
+        "ano": 2008,
+        "valor": 3.257825690919
+      },
+      {
+        "ano": 2009,
+        "valor": 3.253726955164
+      },
+      {
+        "ano": 2010,
+        "valor": 3.498674867853
+      },
+      {
+        "ano": 2011,
+        "valor": 3.637727009276
+      },
+      {
+        "ano": 2012,
+        "valor": 3.707614146982
+      },
+      {
+        "ano": 2013,
+        "valor": 3.819021377397
+      },
+      {
+        "ano": 2014,
+        "valor": 3.838267554851
+      },
+      {
+        "ano": 2015,
+        "valor": 3.702171668947
+      },
+      {
+        "ano": 2016,
+        "valor": 3.580891601343
+      },
+      {
+        "ano": 2017,
+        "valor": 3.628262108191
+      },
+      {
+        "ano": 2018,
+        "valor": 3.692978213431
+      },
+      {
+        "ano": 2019,
+        "valor": 3.738061272458
+      },
+      {
+        "ano": 2020,
+        "valor": 3.615574020908
+      },
+      {
+        "ano": 2021,
+        "valor": 3.787769507579
+      },
+      {
+        "ano": 2022,
+        "valor": 3.90203493646
+      },
+      {
+        "ano": 2023,
+        "valor": 4.028525459883
+      },
+      {
+        "ano": 2024,
+        "valor": 4.166273441899
+      }
+    ]
+  },
   "pib_anual": {
     "label": "(IBGE/BCB) PIB",
     "unidade": "R$ trilhões correntes",
@@ -133,491 +755,848 @@
       { "ano": 2025, "valor": 12.7386 },
     ],
   },
-  "crescimento_pib": {
-    "label": "(WDI) Crescimento do PIB",
-    "unidade": "% anual",
-    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.MKTP.KD.ZG)",
+  "renda_nacional_bruta_per_capita": {
+    "label": "(WDI) Renda Nacional Bruta Per Capita",
+    "unidade": "US$ correntes por habitante, método Atlas",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GNP.PCAP.CD)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede a variação percentual anual do Produto Interno Bruto real do Brasil.",
-    "como_interpretar":
-      "Valores positivos indicam expansão real da economia em relação ao ano anterior; valores negativos indicam contração. O indicador mede crescimento agregado da produção, não distribuição de renda, qualidade de vida, informalidade ou sustentabilidade fiscal.",
-    "metodologia":
-      "O Banco Mundial define GDP growth (annual %) como a taxa anual de crescimento percentual do PIB a preços de mercado, baseada em moeda local constante. Os agregados são baseados em dólares constantes de 2015. O PIB representa a soma do valor adicionado bruto de todos os produtores residentes, acrescida de impostos sobre produtos e deduzidos subsídios não incluídos no valor dos produtos.",
-    "historico_metodologia":
-      "A série do WDI pode sofrer revisões quando as contas nacionais oficiais são atualizadas, quando há revisão de ano-base, mudanças metodológicas nacionais ou incorporação de novas informações estatísticas. A fonte do Banco Mundial informa série disponível para o Brasil de 1961 a 2024; não há valor observado oficial de 2025 no WDI consultado, portanto a série validada vai até 2024.",
-    "abrangencia":
-      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
-    "periodicidade": "Anual.",
-    "eventos_externos": [
-      {
-        "ano": 1994,
-        "nome": "Plano Real",
-        "descricao":
-          "A estabilização monetária associada ao Plano Real coincide com crescimento elevado do PIB em 1994.",
-      },
-      {
-        "ano": 1998,
-        "nome": "Crises externas",
-        "descricao":
-          "Crises financeiras internacionais no fim da década de 1990 coincidiram com forte desaceleração do crescimento brasileiro.",
-      },
-      {
-        "ano": 2004,
-        "nome": "Expansão econômica",
-        "descricao":
-          "O crescimento mais forte da economia brasileira em 2004 elevou a taxa anual do PIB para um dos maiores valores da série recente.",
-      },
-      {
-        "ano": 2009,
-        "nome": "Crise global",
-        "descricao":
-          "A crise financeira internacional de 2008-2009 coincidiu com contração leve do PIB brasileiro em 2009.",
-      },
-      {
-        "ano": 2010,
-        "nome": "Retomada",
-        "descricao":
-          "A recuperação após a crise global levou o crescimento do PIB brasileiro a 7,53% em 2010, o maior valor da série desde 1994.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Recessão",
-        "descricao": "A recessão brasileira provocou queda expressiva do PIB em 2015.",
-      },
-      {
-        "ano": 2016,
-        "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve o crescimento do PIB em valor negativo em 2016.",
-      },
-      {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou forte contração da atividade econômica brasileira em 2020.",
-      },
-      {
-        "ano": 2021,
-        "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a retomada da atividade elevaram o crescimento do PIB em 2021.",
-      },
-      {
-        "ano": 2024,
-        "nome": "Alta recente",
-        "descricao":
-          "O crescimento de 3,4% em 2024 manteve a economia brasileira em expansão pelo quarto ano consecutivo após a queda de 2020.",
-      },
-    ],
-    "comparacao_paises":
-      "Em 2024, o Brasil cresceu 3,4% ao ano, acima do agregado América Latina e Caribe, que registrou 2,5% no mesmo indicador segundo o WDI. Ainda assim, essa comparação deve ser lida com cautela, pois crescimento anual do PIB é volátil e depende do ciclo econômico, estrutura produtiva, população, choques externos e revisões das contas nacionais.",
-    "nivel_confiabilidade":
-      "Muito alto para uma série macroeconômica comparável internacionalmente, pois os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, National Statistical Organizations, bancos centrais, arquivos de contas nacionais, OCDE e estimativas técnicas do Banco Mundial quando aplicável. A principal ressalva é que séries de PIB podem ser revisadas periodicamente.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "Banco Mundial - GDP growth (annual %) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=BR",
-      },
-      {
-        "titulo": "Banco Mundial - GDP growth (annual %) - World Development Indicators",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
-      },
-      {
-        "titulo": "Banco Mundial DataBank - World Development Indicators - NY.GDP.MKTP.KD.ZG",
-        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GDP.MKTP.KD.ZG",
-      },
-      {
-        "titulo": "Banco Mundial - WDI Economy Theme",
-        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/economy.html",
-      },
-    ],
-    "dados": [
-      { "ano": 1994, "valor": 5.853985852 },
-      { "ano": 1995, "valor": 4.223793947 },
-      { "ano": 1996, "valor": 2.208864774 },
-      { "ano": 1997, "valor": 3.394846458 },
-      { "ano": 1998, "valor": 0.338098891 },
-      { "ano": 1999, "valor": 0.467937343 },
-      { "ano": 2000, "valor": 4.387949301 },
-      { "ano": 2001, "valor": 1.389896633 },
-      { "ano": 2002, "valor": 3.05346275 },
-      { "ano": 2003, "valor": 1.140828388 },
-      { "ano": 2004, "valor": 5.759965344 },
-      { "ano": 2005, "valor": 3.202131053 },
-      { "ano": 2006, "valor": 3.961988752 },
-      { "ano": 2007, "valor": 6.069870861 },
-      { "ano": 2008, "valor": 5.094195463 },
-      { "ano": 2009, "valor": -0.125812746 },
-      { "ano": 2010, "valor": 7.528225817 },
-      { "ano": 2011, "valor": 3.974423611 },
-      { "ano": 2012, "valor": 1.921150928 },
-      { "ano": 2013, "valor": 3.004846144 },
-      { "ano": 2014, "valor": 0.503955741 },
-      { "ano": 2015, "valor": -3.545763392 },
-      { "ano": 2016, "valor": -3.275916881 },
-      { "ano": 2017, "valor": 1.322869054 },
-      { "ano": 2018, "valor": 1.783666761 },
-      { "ano": 2019, "valor": 1.220777824 },
-      { "ano": 2020, "valor": -3.276758801 },
-      { "ano": 2021, "valor": 4.762604434 },
-      { "ano": 2022, "valor": 3.016693895 },
-      { "ano": 2023, "valor": 3.237414211 },
-      { "ano": 2024, "valor": 3.4 },
-    ],
-  },
-  "pib_real_pct": {
-    "label": "(IBGE) Crescimento do PIB real",
-    "unidade": "% ao ano (variação real)",
-    "fonte": "IBGE/Sistema de Contas Nacionais",
-    "cat": "Economia e Atividade",
-    "descricao":
-      "Mede a variação anual em volume do Produto Interno Bruto do Brasil, isto é, o crescimento da produção de bens e serviços finais descontado o efeito dos preços.",
-    "como_interpretar":
-      "Valores positivos indicam expansão real da atividade econômica em relação ao ano anterior; valores negativos indicam contração real do PIB.",
-    "metodologia":
-      "O indicador corresponde à variação em volume do PIB a preços de mercado, calculada pelo IBGE no Sistema de Contas Nacionais e no Sistema de Contas Nacionais Trimestrais, segundo as óticas da produção, despesa e renda, com encadeamento de índices de volume e ajuste dos resultados trimestrais aos totais anuais quando disponíveis.",
-    "historico_metodologia":
-      "A série do PIB brasileiro passa por revisões ordinárias e revisões metodológicas estruturais. A referência metodológica vigente usa o Sistema de Contas Nacionais referência 2010, compatível com recomendações internacionais do SNA 2008. O IBGE informa processo de reformulação do Sistema de Contas Nacionais com mudança do ano de referência de 2010 para 2021. Os anos mais recentes das Contas Nacionais Trimestrais são oficiais, mas sujeitos a revisão quando incorporados ao Sistema de Contas Nacionais anual.",
-    "abrangencia": "Brasil, território nacional.",
-    "periodicidade":
-      "Anual para o Sistema de Contas Nacionais; trimestral para o Sistema de Contas Nacionais Trimestrais, com acumulado no ano e acumulado em quatro trimestres.",
-    "eventos_externos": [
-      {
-        "ano": 1999,
-        "nome": "Câmbio flutuante",
-        "descricao":
-          "Mudança do regime cambial brasileiro em janeiro de 1999 após pressões externas e internas, seguida pela adoção do regime de metas de inflação, em contexto de baixo crescimento do PIB.",
-      },
-      {
-        "ano": 2009,
-        "nome": "Crise global",
-        "descricao":
-          "A crise financeira internacional de 2008-2009 afetou a demanda, o crédito e o comércio global, coincidindo com queda real do PIB brasileiro em 2009.",
-      },
-      {
-        "ano": 2010,
-        "nome": "Rebote pós-crise",
-        "descricao":
-          "Após a contração de 2009, a economia brasileira registrou forte recuperação em 2010, com a maior taxa anual da série recente.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Recessão doméstica",
-        "descricao":
-          "A economia entrou em recessão em 2015 e 2016, com queda do PIB em dois anos consecutivos, em contexto de deterioração fiscal, inflação elevada, juros altos e instabilidade política.",
-      },
-      {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao":
-          "A pandemia de COVID-19 provocou choque simultâneo de oferta e demanda, restrições à circulação e queda expressiva da atividade econômica.",
-      },
-      {
-        "ano": 2021,
-        "nome": "Reabertura",
-        "descricao":
-          "A reabertura de atividades e a base deprimida de 2020 contribuíram para forte crescimento real do PIB em 2021.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Agropecuária recorde",
-        "descricao":
-          "O crescimento de 2023 foi impulsionado principalmente pelo forte desempenho da agropecuária, conforme divulgado pelo IBGE no Sistema de Contas Nacionais.",
-      },
-      {
-        "ano": 2025,
-        "nome": "Agropecuária forte",
-        "descricao":
-          "O crescimento de 2025 foi sustentado por alta expressiva da agropecuária, com avanços também em serviços e indústria segundo as Contas Nacionais Trimestrais do IBGE.",
-      },
-    ],
-    "comparacao_paises":
-      "A série brasileira mostra crescimento real positivo em muitos anos, mas com forte volatilidade e desempenho de longo prazo inferior ao observado em economias emergentes asiáticas de alto crescimento, como China e Índia. Em comparação com economias avançadas, o Brasil tem maior volatilidade cíclica e menor estabilidade de crescimento.",
-    "nivel_confiabilidade":
-      "Muito alto para 1994-2023, por serem dados oficiais do IBGE já incorporados ou revisados no Sistema de Contas Nacionais. Alto para 2024-2025, por serem dados oficiais das Contas Nacionais Trimestrais, mas ainda sujeitos a revisões posteriores pelo próprio IBGE.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "IBGE - Sistema de Contas Nacionais: Brasil",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9052-sistema-de-contas-nacionais-brasil.html",
-      },
-      {
-        "titulo": "IBGE - Sistema de Contas Nacionais Trimestrais",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9300-contas-nacionais-trimestrais.html",
-      },
-      {
-        "titulo": "IBGE - Série histórica do PIB",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/7531a821326941965f1483c85caca11f.xls",
-      },
-      {
-        "titulo": "IBGE - PIB cresce 3,2% e totaliza R$ 10,9 trilhões em 2023",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/44973-pib-cresce-3-2-e-totaliza-r-10-9-trilhoes-em-2023",
-      },
-      {
-        "titulo": "IBGE - PIB cresce 3,4% em 2024 e fecha o ano em R$ 11,7 trilhões",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42774-pib-cresce-3-4-em-2024-e-fecha-o-ano-em-r-11-7-trilhoes",
-      },
-      {
-        "titulo": "IBGE - PIB cresce 2,3% em 2025 e fecha o ano em R$ 12,7 trilhões",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45968-pib-cresce-2-3-em-2025-e-fecha-o-ano-em-r-12-7-trilhoes",
-      },
-    ],
-    "dados": [
-      { "ano": 1994, "valor": 5.9 },
-      { "ano": 1995, "valor": 4.2 },
-      { "ano": 1996, "valor": 2.2 },
-      { "ano": 1997, "valor": 3.4 },
-      { "ano": 1998, "valor": 0.3 },
-      { "ano": 1999, "valor": 0.5 },
-      { "ano": 2000, "valor": 4.4 },
-      { "ano": 2001, "valor": 1.4 },
-      { "ano": 2002, "valor": 3.1 },
-      { "ano": 2003, "valor": 1.1 },
-      { "ano": 2004, "valor": 5.8 },
-      { "ano": 2005, "valor": 3.2 },
-      { "ano": 2006, "valor": 4 },
-      { "ano": 2007, "valor": 6.1 },
-      { "ano": 2008, "valor": 5.1 },
-      { "ano": 2009, "valor": -0.1 },
-      { "ano": 2010, "valor": 7.5 },
-      { "ano": 2011, "valor": 4 },
-      { "ano": 2012, "valor": 1.9 },
-      { "ano": 2013, "valor": 3 },
-      { "ano": 2014, "valor": 0.5 },
-      { "ano": 2015, "valor": -3.5 },
-      { "ano": 2016, "valor": -3.3 },
-      { "ano": 2017, "valor": 1.3 },
-      { "ano": 2018, "valor": 1.8 },
-      { "ano": 2019, "valor": 1.2 },
-      { "ano": 2020, "valor": -3.3 },
-      { "ano": 2021, "valor": 4.8 },
-      { "ano": 2022, "valor": 3 },
-      { "ano": 2023, "valor": 3.2 },
-      { "ano": 2024, "valor": 3.4 },
-      { "ano": 2025, "valor": 2.3 },
-    ],
-  },
-  "pib_per_capita_ppp": {
-    "label": "(WDI) PIB per capita por paridade de poder de compra",
-    "unidade": "US$ internacionais constantes de 2021 (PPP)",
-    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.PCAP.PP.KD)",
-    "cat": "Economia e Atividade",
-    "descricao":
-      "Mede o PIB real médio por habitante do Brasil, ajustado por paridade de poder de compra e expresso em dólares internacionais constantes de 2021.",
-    "como_interpretar":
-      "Valores maiores indicam maior produção econômica real média por habitante, ajustada por diferenças de custo de vida entre países. O indicador não mede distribuição de renda, desigualdade, informalidade, qualidade de vida ou bem-estar individual.",
-    "metodologia":
-      "O Banco Mundial calcula o indicador como PIB dividido pela população total, convertido para dólares internacionais por fatores de paridade de poder de compra (PPP). A série é expressa em preços constantes de 2021, permitindo comparação temporal em termos reais e comparação internacional ajustada por níveis de preços.",
-    "historico_metodologia":
-      "A série atual do WDI está expressa em dólares internacionais constantes de 2021 e incorpora os resultados do ciclo ICP 2021. Como em outras séries de contas nacionais e PPP, os valores podem ser revisados quando há atualização de contas nacionais, estimativas populacionais, fatores PPP ou mudança de ano-base internacional. Não foi incluído dado de 2025 porque a fonte oficial consultada não apresenta valor observado validado para esse ano no indicador NY.GDP.PCAP.PP.KD.",
-    "abrangencia":
-      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "descricao": "Mede a Renda Nacional Bruta per capita do Brasil em dólares correntes, convertida pelo método Atlas do Banco Mundial.",
+    "como_interpretar": "Valores maiores indicam maior renda nacional média por habitante em dólares correntes pelo método Atlas. O indicador é útil para comparação internacional de nível de renda e classificação de países por renda, mas não mede distribuição de renda, desigualdade, custo de vida interno ou bem-estar individual.",
+    "metodologia": "O Banco Mundial calcula a Renda Nacional Bruta como o PIB mais os recebimentos líquidos de renda primária do exterior. A RNB per capita é obtida pela divisão da RNB pela população de meio de ano. Para a série em dólares correntes pelo método Atlas, o Banco Mundial aplica uma taxa de câmbio Atlas suavizada para reduzir efeitos de flutuações cambiais de curto prazo.",
+    "historico_metodologia": "A série do WDI pode ser revisada quando há atualização de contas nacionais, população, renda líquida do exterior, taxas de câmbio ou procedimentos de harmonização internacional. O método Atlas é usado pelo Banco Mundial para suavizar variações cambiais e apoiar classificações por nível de renda. Não há valor observado para 2025 na fonte consultada; por isso a série validada termina em 2024.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao":
-          "A desvalorização cambial e a desaceleração econômica associada ao fim do regime de bandas cambiais coincidem com queda do PIB per capita PPP em 1999.",
+        "descricao": "A desvalorização do real após o fim do regime de bandas cambiais coincide com queda da RNB per capita em dólares pelo método Atlas."
       },
       {
-        "ano": 2004,
-        "nome": "Expansão econômica",
-        "descricao":
-          "O crescimento real mais forte da economia brasileira em 2004 elevou o PIB por habitante em termos de poder de compra.",
+        "ano": 2003,
+        "nome": "Retomada",
+        "descricao": "A recuperação econômica e a estabilização macroeconômica após a turbulência de 2002 coincidem com retomada da série."
+      },
+      {
+        "ano": 2008,
+        "nome": "Alta pré-crise",
+        "descricao": "O período de forte crescimento e valorização relativa da renda em dólares levou a RNB per capita a novo patamar antes dos efeitos plenos da crise financeira global."
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao":
-          "A crise financeira internacional reduziu a atividade econômica brasileira e interrompeu o crescimento do PIB per capita PPP em 2009.",
+        "descricao": "A crise financeira internacional reduziu a atividade econômica e desacelerou o avanço da RNB per capita em dólares."
       },
       {
-        "ano": 2010,
-        "nome": "Retomada",
-        "descricao": "A recuperação da atividade após a crise global elevou fortemente o PIB per capita PPP em 2010.",
+        "ano": 2011,
+        "nome": "Pico cambial",
+        "descricao": "A combinação de renda doméstica elevada e câmbio favorável levou a RNB per capita Atlas a um dos maiores valores da série."
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao":
-          "A recessão brasileira reduziu o PIB real e provocou queda expressiva do PIB per capita PPP em 2015.",
+        "descricao": "A recessão brasileira e a depreciação cambial reduziram fortemente a RNB per capita em dólares."
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve a contração do produto real por habitante em 2016.",
+        "descricao": "A continuidade da contração econômica manteve a queda do indicador."
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao":
-          "A pandemia de COVID-19 causou forte contração da atividade econômica e queda do PIB per capita PPP em 2020.",
+        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e contribuiu para nova redução da RNB per capita."
       },
       {
-        "ano": 2021,
+        "ano": 2023,
         "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB per capita PPP em 2021.",
+        "descricao": "A recuperação pós-pandemia e a melhora da atividade elevaram novamente a RNB per capita."
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "O crescimento econômico de 2024 elevou o indicador ao maior valor da série validada desde 1994.",
-      },
+        "descricao": "O indicador atingiu US$ 9.930, maior valor desde 2015, ainda abaixo do pico de 2013."
+      }
     ],
-    "comparacao_paises":
-      "Em 2024, o Brasil registrou US$ 19.652,3655 internacionais constantes de 2021. Esse nível ficou acima do agregado de países de baixa e média renda do Banco Mundial, mas muito abaixo do agregado de alta renda, que estava acima de US$ 58 mil no mesmo indicador.",
-    "nivel_confiabilidade":
-      "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais, população e PPPs do ICP. A ressalva é que séries de PIB, população e PPP podem sofrer revisões metodológicas periódicas.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
+    "comparacao_paises": "Em 2024, o Brasil registrou US$ 9.930 de RNB per capita pelo método Atlas, nível compatível com país de renda média alta na classificação do Banco Mundial. O valor ficou abaixo dos países de alta renda e acima da média típica de países de renda média baixa e baixa.",
+    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial. A principal ressalva é que contas nacionais, população, renda externa líquida e conversões cambiais podem sofrer revisões periódicas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - GDP per capita, PPP (constant 2021 international $) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD?locations=BR",
+        "titulo": "Banco Mundial - GNI per capita, Atlas method (current US$) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD?locations=BR"
       },
       {
-        "titulo": "World Bank API - NY.GDP.PCAP.PP.KD - Brazil",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GDP.PCAP.PP.KD?format=json&per_page=200",
+        "titulo": "Banco Mundial DataBank - World Development Indicators - NY.GNP.PCAP.CD",
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNP.PCAP.CD"
       },
       {
-        "titulo": "Banco Mundial DataBank - Metadata NY.GDP.PCAP.PP.KD",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.PCAP.PP.KD",
+        "titulo": "Banco Mundial API - NY.GNP.PCAP.CD - Brazil",
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GNP.PCAP.CD?format=json"
       },
       {
-        "titulo": "World Bank Data360 Metadata - WB_WDI_NY_GDP_PCAP_PP_KD",
-        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_NY_GDP_PCAP_PP_KD.pdf",
-      },
+        "titulo": "Banco Mundial - Metadata - GNI per capita, Atlas method",
+        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_NY_GNP_PCAP_CD.pdf"
+      }
     ],
     "dados": [
-      { "ano": 1994, "valor": 13202.930801306355 },
-      { "ano": 1995, "valor": 13550.439373724308 },
-      { "ano": 1996, "valor": 13641.629599753685 },
-      { "ano": 1997, "valor": 13896.624990134515 },
-      { "ano": 1998, "valor": 13737.702643484634 },
-      { "ano": 1999, "valor": 13602.41370694255 },
-      { "ano": 2000, "valor": 14005.34718707205 },
-      { "ano": 2001, "valor": 14016.131377356354 },
-      { "ano": 2002, "valor": 14265.904876851839 },
-      { "ano": 2003, "valor": 14259.366408828551 },
-      { "ano": 2004, "valor": 14911.260960772026 },
-      { "ano": 2005, "valor": 15221.01382819173 },
-      { "ano": 2006, "valor": 15657.4795714009 },
-      { "ano": 2007, "valor": 16440.583739804635 },
-      { "ano": 2008, "valor": 17113.367982277225 },
-      { "ano": 2009, "valor": 16939.44078090474 },
-      { "ano": 2010, "valor": 18062.158110224023 },
-      { "ano": 2011, "valor": 18627.810452793332 },
-      { "ano": 2012, "valor": 18832.219552435592 },
-      { "ano": 2013, "valor": 19241.505981452516 },
-      { "ano": 2014, "valor": 19183.17274452226 },
-      { "ano": 2015, "valor": 18357.069061542068 },
-      { "ano": 2016, "valor": 17620.927243440343 },
-      { "ano": 2017, "valor": 17724.47995778151 },
-      { "ano": 2018, "valor": 17917.749212292536 },
-      { "ano": 2019, "valor": 18018.620914949952 },
-      { "ano": 2020, "valor": 17327.515724814257 },
-      { "ano": 2021, "valor": 18075.706004875676 },
-      { "ano": 2022, "valor": 18554.04618285188 },
-      { "ano": 2023, "valor": 19079.812213225287 },
-      { "ano": 2024, "valor": 19652.365499170355 },
-    ],
-  },
-  "agro_pib_pct": {
-    "label": "Participação do Agronegócio no PIB",
-    "unidade": "% do PIB",
-    "fonte": "CEPEA (ESALQ/USP) / CNA",
-    "cat": "Economia e Atividade",
-    "descricao": "Participação do PIB-renda do agronegócio brasileiro no PIB nominal total do Brasil.",
-    "como_interpretar":
-      "Valores maiores indicam que a renda gerada pela cadeia do agronegócio representa parcela maior do PIB brasileiro. A métrica não mede apenas a agropecuária dentro da porteira; inclui insumos, produção primária, agroindústria e agrosserviços.",
-    "metodologia":
-      "Indicador calculado pelo CEPEA/ESALQ-USP em parceria com a CNA. O agronegócio é mensurado como cadeia econômica ligada à agropecuária, abrangendo insumos, segmento primário, agroindústria e agrosserviços. O foco divulgado nos relatórios CEPEA/CNA é o PIB-renda do agronegócio, que considera variações de volume e preços reais, deflacionados pelo deflator implícito do PIB nacional. A participação no PIB é obtida pela razão entre o PIB nominal do agronegócio e o PIB nominal do Brasil no mesmo ano.",
-    "historico_metodologia":
-      "A série oficial atualmente divulgada pelo CEPEA/CNA tem início em 1996. Os anos de 1994 e 1995 foram removidos por não constarem na série histórica oficial atual do CEPEA/CNA. A metodologia distingue PIB-renda do agronegócio de PIB-volume: o PIB-renda inclui efeitos de preços reais e, portanto, suas variações não são diretamente comparáveis às variações do PIB-volume divulgadas pelo IBGE. A série pode sofrer revisões quando o IBGE atualiza o Sistema de Contas Nacionais ou quando relatórios posteriores incorporam dados mais atualizados.",
-    "abrangencia":
-      "Brasil, abrangendo a cadeia nacional do agronegócio: insumos, produção agropecuária primária, agroindústria e agrosserviços, nos ramos agrícola e pecuário.",
-    "periodicidade":
-      "Trimestral nos relatórios de acompanhamento e anual para dados consolidados. Projeções parciais do ano corrente não foram incluídas.",
-    "eventos_externos": [
+      {
+        "ano": 1994,
+        "valor": 3030
+      },
+      {
+        "ano": 1995,
+        "valor": 3760
+      },
+      {
+        "ano": 1996,
+        "valor": 4350
+      },
+      {
+        "ano": 1997,
+        "valor": 5060
+      },
+      {
+        "ano": 1998,
+        "valor": 4920
+      },
+      {
+        "ano": 1999,
+        "valor": 4230
+      },
+      {
+        "ano": 2000,
+        "valor": 3950
+      },
+      {
+        "ano": 2001,
+        "valor": 3370
+      },
+      {
+        "ano": 2002,
+        "valor": 3120
+      },
+      {
+        "ano": 2003,
+        "valor": 3010
+      },
       {
         "ano": 2004,
-        "nome": "Pico pré-2021",
-        "descricao":
-          "O agronegócio alcançou participação elevada no PIB brasileiro em 2004, patamar citado pelo CEPEA/CNA como referência histórica anterior ao recorde de 2021.",
+        "valor": 3370
+      },
+      {
+        "ano": 2005,
+        "valor": 4030
+      },
+      {
+        "ano": 2006,
+        "valor": 4890
+      },
+      {
+        "ano": 2007,
+        "valor": 6240
+      },
+      {
+        "ano": 2008,
+        "valor": 7680
+      },
+      {
+        "ano": 2009,
+        "valor": 8400
+      },
+      {
+        "ano": 2010,
+        "valor": 9750
+      },
+      {
+        "ano": 2011,
+        "valor": 11210
+      },
+      {
+        "ano": 2012,
+        "valor": 12460
+      },
+      {
+        "ano": 2013,
+        "valor": 12950
+      },
+      {
+        "ano": 2014,
+        "valor": 12280
+      },
+      {
+        "ano": 2015,
+        "valor": 10330
+      },
+      {
+        "ano": 2016,
+        "valor": 9050
+      },
+      {
+        "ano": 2017,
+        "valor": 8830
+      },
+      {
+        "ano": 2018,
+        "valor": 9320
+      },
+      {
+        "ano": 2019,
+        "valor": 9410
       },
       {
         "ano": 2020,
-        "nome": "Choque pandêmico",
-        "descricao":
-          "O forte aumento da participação em 2020 ocorreu em contexto de pandemia, alta de preços agropecuários, desvalorização cambial, demanda por alimentos e exportações aquecidas, fatores apontados nos relatórios CEPEA/CNA.",
+        "valor": 8080
       },
       {
         "ano": 2021,
-        "nome": "Recorde agro",
-        "descricao":
-          "Em 2021, o setor alcançou 27,4% do PIB brasileiro, maior participação desde 2004, segundo CEPEA/CNA.",
+        "valor": 8060
       },
       {
         "ano": 2022,
-        "nome": "Recuo pós-recorde",
-        "descricao":
-          "Em 2022, a participação caiu em relação ao pico anterior, com queda do PIB do agronegócio associada especialmente à forte alta de custos com insumos e deterioração de margens ao longo das cadeias.",
+        "valor": 8440
+      },
+      {
+        "ano": 2023,
+        "valor": 9310
       },
       {
         "ano": 2024,
-        "nome": "Recuperação parcial",
-        "descricao":
-          "Em 2024, o PIB do agronegócio avançou 1,81% e a participação ficou em 23,2% do PIB brasileiro; o desempenho foi sustentado principalmente pela recuperação do ramo pecuário no segundo semestre, enquanto a agricultura foi pressionada por queda de preços e redução de produção em culturas relevantes.",
-      },
+        "valor": 9930
+      }
     ],
-    "comparacao_paises":
-      "A comparação internacional direta é limitada, porque o indicador CEPEA/CNA mede a cadeia ampla do agronegócio, não apenas o setor agropecuário primário usado nas Contas Nacionais de muitos países. Em geral, economias avançadas têm menor participação da agropecuária primária no PIB, mas essa comparação não é metodologicamente equivalente ao PIB-renda do agronegócio brasileiro calculado pelo CEPEA/CNA.",
-    "nivel_confiabilidade":
-      "Alto para os anos consolidados divulgados pelo CEPEA/CNA. A confiabilidade é menor para anos recentes ainda tratados como estimativas nos relatórios trimestrais; por isso, projeções de 2025 e estimativas parciais foram removidas. A série deve ser interpretada como indicador CEPEA/CNA de PIB-renda do agronegócio, não como participação da agropecuária primária no PIB do IBGE.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false
+  },
+  "formacao_bruta_capital_fixo_pib": {
+    "label": "(WDI) Formação Bruta de Capital Fixo",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (NE.GDI.FTOT.ZS)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a Formação Bruta de Capital Fixo do Brasil como proporção do Produto Interno Bruto, indicando a parcela da produção anual destinada à ampliação ou reposição de ativos fixos.",
+    "como_interpretar": "Valores maiores indicam maior esforço de investimento em ativos fixos, como máquinas, equipamentos, construções, infraestrutura e outros ativos produtivos. O indicador ajuda a avaliar a capacidade futura de produção, mas não mede sozinho a qualidade, eficiência, produtividade ou sustentabilidade dos investimentos.",
+    "metodologia": "O Banco Mundial calcula a série a partir de contas nacionais oficiais, expressando a formação bruta de capital fixo como percentual do PIB. A formação bruta de capital fixo inclui aquisições menos alienações de ativos fixos durante o período contábil, incluindo certos gastos em serviços que aumentam o valor de ativos não produzidos. As contas nacionais seguem padrões internacionais do System of National Accounts, em especial SNA 2008 ou SNA 1993, conforme a disponibilidade nacional.",
+    "historico_metodologia": "A série do WDI pode sofrer revisões quando o Brasil revisa suas contas nacionais, muda anos de referência, incorpora novas fontes administrativas ou atualiza procedimentos metodológicos do Sistema de Contas Nacionais. O IBGE informa que o Sistema de Contas Nacionais brasileiro segue o SNA 2008 e que passa por revisões periódicas; a edição de 2023 também destaca o processo de redesenho com mudança de referência de 2010 para 2021. Por isso, os valores devem ser tratados como a versão oficial disponível na consulta atual, não como série imutável.",
+    "abrangencia": "Brasil, cobertura nacional, série anual harmonizada internacionalmente pelo World Development Indicators para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1999,
+        "nome": "Crise Cambial",
+        "descricao": "A mudança do regime cambial e a desvalorização do real ocorreram em ambiente de forte incerteza macroeconômica, afetando decisões de investimento."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão Econômica",
+        "descricao": "A aceleração da atividade econômica brasileira a partir de 2004 coincidiu com recuperação gradual da taxa de investimento."
+      },
+      {
+        "ano": 2008,
+        "nome": "Pré-Crise",
+        "descricao": "O período imediatamente anterior à crise financeira global apresentou nível elevado de investimento em relação ao PIB."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise Global",
+        "descricao": "A crise financeira internacional afetou a atividade econômica, mas a taxa de investimento permaneceu relativamente alta no agregado anual."
+      },
+      {
+        "ano": 2010,
+        "nome": "Retomada",
+        "descricao": "A forte recuperação do PIB após a crise global coincidiu com alta da formação bruta de capital fixo."
+      },
+      {
+        "ano": 2014,
+        "nome": "Desaceleração",
+        "descricao": "A economia brasileira entrou em fase de desaceleração, seguida por queda expressiva da taxa de investimento nos anos seguintes."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu a formação bruta de capital fixo como proporção do PIB."
+      },
+      {
+        "ano": 2017,
+        "nome": "Piso Recente",
+        "descricao": "A taxa de investimento atingiu um dos menores níveis da série recente, refletindo a fraqueza acumulada do investimento após a recessão."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 elevou a incerteza e afetou a atividade econômica, com impactos setoriais relevantes sobre investimento."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A reabertura econômica e a retomada pós-pandemia coincidiram com elevação da taxa de investimento."
+      },
+      {
+        "ano": 2023,
+        "nome": "Queda FBCF",
+        "descricao": "A taxa de investimento recuou em relação a 2022, acompanhando retração da formação bruta de capital fixo no ano."
+      },
+      {
+        "ano": 2024,
+        "nome": "Recuperação Recente",
+        "descricao": "A formação bruta de capital fixo voltou a crescer no contexto de expansão do PIB brasileiro em 2024."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil ficou perto de 17% do PIB em formação bruta de capital fixo, abaixo da média mundial informada para o indicador pelo TheGlobalEconomy com base no Banco Mundial, em torno de 22,32% no mesmo ano. Isso sugere esforço de investimento relativamente baixo em comparação internacional, especialmente frente a economias asiáticas e emergentes com taxas de investimento estruturalmente mais altas.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e fontes reconhecidas. A limitação principal é que contas nacionais podem ser revisadas, e valores recentes podem sofrer ajustes em publicações futuras.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "PIB do Agronegócio Brasileiro - CEPEA/ESALQ-USP",
-        "url": "https://cepea.org.br/br/pib-do-agronegocio-brasileiro.aspx",
+        "titulo": "Banco Mundial - Gross fixed capital formation (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS?locations=BR"
       },
       {
-        "titulo": "Sumário Executivo PIB do Agronegócio - 4º trimestre de 2024 - CEPEA/CNA",
-        "url":
-          "https://www.cepea.org.br/upload/kceditor/files/PIB%20do%20Agroneg%C3%B3cio_Sum%C3%A1rio%20Executivo%204o%20tri%202024%20-%20SUM%C3%81RIO%20EXECUTIVO.pdf",
+        "titulo": "Banco Mundial DataBank - Metadata NE.GDI.FTOT.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.GDI.FTOT.ZS"
       },
       {
-        "titulo": "PIB do agronegócio fecha 2024 com crescimento de 1,81% - CNA",
-        "url": "https://www.cnabrasil.org.br/noticias/pib-do-agronegocio-fecha-2024-com-crescimento-de-1-81",
+        "titulo": "IBGE - Sistema de Contas Nacionais: Brasil 2023",
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/comercio/9052-sistema-de-contas-nacionais-brasil.html"
       },
       {
-        "titulo": "PIB do Agronegócio alcança participação de 26,6% no PIB brasileiro em 2020 - CNA",
-        "url":
-          "https://www.cnabrasil.org.br/publicacoes/pib-do-agronegocio-alcanca-participacao-de-26-6-no-pib-brasileiro-em-2020",
+        "titulo": "TheGlobalEconomy - Brazil Capital investment, percent of GDP",
+        "url": "https://www.theglobaleconomy.com/Brazil/capital_investment/"
       },
       {
-        "titulo": "PIB do agronegócio cresceu abaixo das projeções em 2021 - CEPEA/CNA",
-        "url": "https://www.cepea.org.br/upload/kceditor/files/Cepea_CNA_PIB_JAn_Dez_2021_Mar%C3%A7o2022.pdf",
-      },
-      {
-        "titulo": "Após alcançar patamar recorde em 2021, PIB do agronegócio recua em 2022 - CEPEA/CNA",
-        "url": "https://www.cepea.org.br/upload/kceditor/files/PIB-DO-AGRONEGOCIO-2022.17MAR2023%281%29.pdf",
-      },
+        "titulo": "Trading Economics - Brazil Gross Fixed Capital Formation (% of GDP), World Bank",
+        "url": "https://tradingeconomics.com/brazil/gross-fixed-capital-formation-percent-of-gdp-wb-data.html"
+      }
     ],
     "dados": [
-      { "ano": 2004, "valor": 27.53 },
-      { "ano": 2019, "valor": 20.5 },
-      { "ano": 2020, "valor": 26.6 },
-      { "ano": 2021, "valor": 27.4 },
-      { "ano": 2022, "valor": 24.8 },
-      { "ano": 2023, "valor": 23.5 },
-      { "ano": 2024, "valor": 23.2 },
+      {
+        "ano": 1994,
+        "valor": 16.0967
+      },
+      {
+        "ano": 1995,
+        "valor": 15.9385
+      },
+      {
+        "ano": 1996,
+        "valor": 16.4288
+      },
+      {
+        "ano": 1997,
+        "valor": 17.5243
+      },
+      {
+        "ano": 1998,
+        "valor": 18.99
+      },
+      {
+        "ano": 1999,
+        "valor": 17.3
+      },
+      {
+        "ano": 2000,
+        "valor": 17.4
+      },
+      {
+        "ano": 2001,
+        "valor": 16.1
+      },
+      {
+        "ano": 2002,
+        "valor": 16.6
+      },
+      {
+        "ano": 2003,
+        "valor": 15.3
+      },
+      {
+        "ano": 2004,
+        "valor": 17.3
+      },
+      {
+        "ano": 2005,
+        "valor": 17.1
+      },
+      {
+        "ano": 2006,
+        "valor": 17.2
+      },
+      {
+        "ano": 2007,
+        "valor": 18.0
+      },
+      {
+        "ano": 2008,
+        "valor": 19.4
+      },
+      {
+        "ano": 2009,
+        "valor": 19.1
+      },
+      {
+        "ano": 2010,
+        "valor": 20.5
+      },
+      {
+        "ano": 2011,
+        "valor": 20.6
+      },
+      {
+        "ano": 2012,
+        "valor": 20.7
+      },
+      {
+        "ano": 2013,
+        "valor": 20.9
+      },
+      {
+        "ano": 2014,
+        "valor": 19.9
+      },
+      {
+        "ano": 2015,
+        "valor": 17.8
+      },
+      {
+        "ano": 2016,
+        "valor": 15.5
+      },
+      {
+        "ano": 2017,
+        "valor": 14.63
+      },
+      {
+        "ano": 2018,
+        "valor": 15.1
+      },
+      {
+        "ano": 2019,
+        "valor": 15.3
+      },
+      {
+        "ano": 2020,
+        "valor": 16.4
+      },
+      {
+        "ano": 2021,
+        "valor": 18.99
+      },
+      {
+        "ano": 2022,
+        "valor": 17.8
+      },
+      {
+        "ano": 2023,
+        "valor": 16.5
+      },
+      {
+        "ano": 2024,
+        "valor": 17.03
+      }
+    ]
+  },
+  "poupanca_bruta_pib": {
+    "label": "(WDI) Poupança Bruta",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (NY.GNS.ICTR.ZS)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a poupança bruta nacional do Brasil como proporção do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior da renda nacional está sendo poupada em vez de consumida. O indicador ajuda a avaliar a capacidade interna de financiamento de investimento, mas não mede diretamente investimento, produtividade, bem-estar, distribuição de renda ou qualidade da poupança.",
+    "metodologia": "O Banco Mundial define a poupança bruta como a renda nacional bruta menos o consumo total, acrescida das transferências líquidas. O valor é expresso como percentual do PIB. A série do WDI é compilada a partir de estatísticas oficiais nacionais, contas nacionais, OCDE e estimativas do Banco Mundial quando aplicável.",
+    "historico_metodologia": "A série segue a metodologia internacional de contas nacionais usada no World Development Indicators. Os valores podem ser revisados quando o Brasil revisa suas Contas Nacionais, quando há atualização de séries históricas pelo IBGE, mudanças de referência metodológica do Sistema de Contas Nacionais ou incorporação de novas informações pelo Banco Mundial. A fonte do Banco Mundial informa dados anuais disponíveis para o Brasil de 1975 a 2024. Não foi incluído dado posterior a 2024 por não haver valor anual observado consolidado na fonte oficial consultada.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional pelo World Development Indicators para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária reduziu a hiperinflação e alterou o comportamento macroeconômico de renda, consumo e poupança no Brasil."
+      },
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial e a forte desvalorização do real coincidiram com queda relevante da poupança bruta como proporção do PIB."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão externa",
+        "descricao": "O crescimento econômico e o ambiente externo favorável, com alta de commodities, coincidiram com elevação da poupança bruta em relação ao PIB."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional reduziu a atividade econômica e afetou renda, consumo, investimento e poupança agregada."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015-2016 deteriorou a renda e a capacidade agregada de poupança."
+      },
+      {
+        "ano": 2019,
+        "nome": "Baixa poupança",
+        "descricao": "A poupança bruta atingiu um dos menores níveis da série recente, refletindo baixa geração de poupança nacional antes da pandemia."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 provocou forte contração da atividade e mudanças temporárias no consumo, renda e poupança agregada."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A retomada econômica pós-pandemia elevou temporariamente a poupança bruta em relação ao PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Desaceleração",
+        "descricao": "Apesar do crescimento do PIB em 2024, a taxa de poupança ficou abaixo da observada em 2023."
+      }
     ],
+    "comparacao_paises": "Em 2024, o Brasil registrou poupança bruta próxima de 14,5% do PIB, abaixo da média mundial informada por agregadores baseados no Banco Mundial e abaixo de economias com maior capacidade de poupança interna, como China e vários países do Leste Asiático. No ranking global de 2023 do TheGlobalEconomy, baseado no Banco Mundial, o Brasil aparece em posição baixa, com 14,98% do PIB.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial e é baseada em contas nacionais oficiais. A ressalva é que a série pode sofrer revisões históricas por atualizações do IBGE, do Sistema de Contas Nacionais e do próprio WDI.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Gross savings (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators - NY.GNS.ICTR.ZS",
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNS.ICTR.ZS"
+      },
+      {
+        "titulo": "Banco Mundial API - Indicator API Queries",
+        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries"
+      },
+      {
+        "titulo": "IBGE - PIB Cresce 3,4% em 2024 e Fecha o Ano em R$ 11,7 Trilhões",
+        "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42774-pib-cresce-3-4-em-2024-e-fecha-o-ano-em-r-11-7-trilhoes"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 21.2719
+      },
+      {
+        "ano": 1995,
+        "valor": 15.5411
+      },
+      {
+        "ano": 1996,
+        "valor": 14.0825
+      },
+      {
+        "ano": 1997,
+        "valor": 13.5782
+      },
+      {
+        "ano": 1998,
+        "valor": 13.0301
+      },
+      {
+        "ano": 1999,
+        "valor": 12.0568
+      },
+      {
+        "ano": 2000,
+        "valor": 13.9408
+      },
+      {
+        "ano": 2001,
+        "valor": 13.8113
+      },
+      {
+        "ano": 2002,
+        "valor": 15.161
+      },
+      {
+        "ano": 2003,
+        "valor": 16.4724
+      },
+      {
+        "ano": 2004,
+        "valor": 18.9671
+      },
+      {
+        "ano": 2005,
+        "valor": 17.7514
+      },
+      {
+        "ano": 2006,
+        "valor": 17.9876
+      },
+      {
+        "ano": 2007,
+        "valor": 17.7693
+      },
+      {
+        "ano": 2008,
+        "valor": 17.1569
+      },
+      {
+        "ano": 2009,
+        "valor": 14
+      },
+      {
+        "ano": 2010,
+        "valor": 18
+      },
+      {
+        "ano": 2011,
+        "valor": 17.6
+      },
+      {
+        "ano": 2012,
+        "valor": 15.2
+      },
+      {
+        "ano": 2013,
+        "valor": 17
+      },
+      {
+        "ano": 2014,
+        "valor": 16
+      },
+      {
+        "ano": 2015,
+        "valor": 14
+      },
+      {
+        "ano": 2016,
+        "valor": 13.5
+      },
+      {
+        "ano": 2017,
+        "valor": 14.3
+      },
+      {
+        "ano": 2018,
+        "valor": 14.5
+      },
+      {
+        "ano": 2019,
+        "valor": 12.25
+      },
+      {
+        "ano": 2020,
+        "valor": 14.7
+      },
+      {
+        "ano": 2021,
+        "valor": 17.4
+      },
+      {
+        "ano": 2022,
+        "valor": 15.9
+      },
+      {
+        "ano": 2023,
+        "valor": 14.98
+      },
+      {
+        "ano": 2024,
+        "valor": 14.47
+      }
+    ]
+  },
+  "valor_adicionado_industria_pib": {
+    "label": "(WDI) Valor Adicionado da Indústria",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (NV.IND.TOTL.ZS)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a participação do valor adicionado da indústria, incluindo construção, mineração, manufatura, eletricidade, água e gás, no PIB do Brasil.",
+    "como_interpretar": "Valores maiores indicam maior peso relativo da indústria no PIB. O indicador mede participação setorial, não necessariamente produtividade, sofisticação tecnológica, competitividade industrial ou bem-estar econômico.",
+    "metodologia": "O Banco Mundial expressa o valor adicionado da indústria como percentual do PIB. A indústria corresponde às divisões 05-43 da ISIC Rev.4, incluindo mineração, manufatura, construção, eletricidade, água e gás. Valor adicionado é calculado como o valor da produção menos o consumo intermediário de bens e serviços utilizados no processo produtivo.",
+    "historico_metodologia": "A série do WDI segue contas nacionais compiladas conforme padrões internacionais do System of National Accounts, com possíveis revisões decorrentes de atualização das contas nacionais, mudança de ano-base, revisões estatísticas nacionais, harmonização internacional e atualização da classificação industrial. O Banco Mundial informa cobertura de 1960 a 2024 para esta série; não há valor observado oficial de 2025 na consulta atual.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial e a desvalorização do real afetaram a composição nominal do PIB e a atividade econômica, influenciando a participação relativa da indústria."
+      },
+      {
+        "ano": 2001,
+        "nome": "Crise energética",
+        "descricao": "O racionamento de energia elétrica afetou a produção industrial e a atividade econômica brasileira."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional reduziu a atividade econômica e afetou segmentos industriais ligados a crédito, comércio e investimento."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu fortemente a atividade econômica, com impacto relevante sobre indústria e construção."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da recessão manteve retração da atividade industrial e da construção."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 provocou choque na atividade econômica, alterando a composição setorial do PIB."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao": "A recuperação parcial da atividade após a fase aguda da pandemia elevou a produção em vários setores, mas com efeitos distintos entre indústria, serviços e agropecuária."
+      },
+      {
+        "ano": 2024,
+        "nome": "Nova Indústria",
+        "descricao": "O lançamento da política Nova Indústria Brasil ocorreu em contexto de debate oficial sobre neoindustrialização, descarbonização e transformação produtiva."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 21,33% do PIB em valor adicionado da indústria, abaixo da média mundial divulgada para o mesmo indicador em bases comparativas do WDI. O país tem uma estrutura econômica mais concentrada em serviços do que em indústria, e fica abaixo de economias com forte peso de mineração, petróleo, gás, manufatura pesada ou construção no PIB.",
+    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, estatísticas nacionais e padronização internacional. A principal ressalva é que séries de contas nacionais podem sofrer revisões metodológicas e de ano-base.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Industry (including construction), value added (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NV.IND.TOTL.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.IND.TOTL.ZS"
+      },
+      {
+        "titulo": "Banco Mundial Data Catalog - World Development Indicators",
+        "url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 25.76
+      },
+      {
+        "ano": 1995,
+        "valor": 25.32
+      },
+      {
+        "ano": 1996,
+        "valor": 25.11
+      },
+      {
+        "ano": 1997,
+        "valor": 24.77
+      },
+      {
+        "ano": 1998,
+        "valor": 23.98
+      },
+      {
+        "ano": 1999,
+        "valor": 24.35
+      },
+      {
+        "ano": 2000,
+        "valor": 23.95
+      },
+      {
+        "ano": 2001,
+        "valor": 23.25
+      },
+      {
+        "ano": 2002,
+        "valor": 23.86
+      },
+      {
+        "ano": 2003,
+        "valor": 24.26
+      },
+      {
+        "ano": 2004,
+        "valor": 25.18
+      },
+      {
+        "ano": 2005,
+        "valor": 25.04
+      },
+      {
+        "ano": 2006,
+        "valor": 24.59
+      },
+      {
+        "ano": 2007,
+        "valor": 24.18
+      },
+      {
+        "ano": 2008,
+        "valor": 23.68
+      },
+      {
+        "ano": 2009,
+        "valor": 22.15
+      },
+      {
+        "ano": 2010,
+        "valor": 23.27
+      },
+      {
+        "ano": 2011,
+        "valor": 23.10
+      },
+      {
+        "ano": 2012,
+        "valor": 22.31
+      },
+      {
+        "ano": 2013,
+        "valor": 22.02
+      },
+      {
+        "ano": 2014,
+        "valor": 21.43
+      },
+      {
+        "ano": 2015,
+        "valor": 20.50
+      },
+      {
+        "ano": 2016,
+        "valor": 19.58
+      },
+      {
+        "ano": 2017,
+        "valor": 18.19
+      },
+      {
+        "ano": 2018,
+        "valor": 18.44
+      },
+      {
+        "ano": 2019,
+        "valor": 18.64
+      },
+      {
+        "ano": 2020,
+        "valor": 19.54
+      },
+      {
+        "ano": 2021,
+        "valor": 20.93
+      },
+      {
+        "ano": 2022,
+        "valor": 22.72
+      },
+      {
+        "ano": 2023,
+        "valor": 22.14
+      },
+      {
+        "ano": 2024,
+        "valor": 21.33
+      }
+    ]
   },
   "participacao_industria_pib": {
     "label": "(IBGE) Participação da Indústria no Valor Adicionado Bruto",
@@ -730,6 +1709,310 @@
       { "ano": 2022, "valor": 26.3 },
       { "ano": 2023, "valor": 25.4 },
     ],
+  },
+  "servicos_valor_adicionado_pib": {
+    "label": "(WDI) Valor Adicionado dos Serviços",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (NV.SRV.TOTL.ZS)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a participação do valor adicionado do setor de serviços no Produto Interno Bruto do Brasil.",
+    "como_interpretar": "Valores maiores indicam maior peso relativo dos serviços na estrutura produtiva do país. O indicador não mede produtividade, qualidade dos serviços, informalidade, sofisticação tecnológica nem bem-estar social; mede apenas a participação percentual do setor de serviços no PIB.",
+    "metodologia": "O Banco Mundial define serviços conforme as divisões 45 a 99 da ISIC Rev. 4, incluindo comércio, reparação de veículos, hotéis e restaurantes, transporte, armazenagem e comunicação, intermediação financeira, atividades imobiliárias, administração pública, defesa, seguridade social obrigatória, educação, saúde, serviços sociais, outros serviços comunitários, famílias empregadoras e organizações extraterritoriais. O valor adicionado é calculado como o valor da produção menos o consumo intermediário e expresso como percentual do PIB.",
+    "historico_metodologia": "A série do WDI é baseada em contas nacionais oficiais, arquivos de contas nacionais da OCDE, estimativas de equipes do Banco Mundial e classificação ISIC Rev. 4. Como em outras séries de contas nacionais, os valores podem ser revisados quando há atualização de contas nacionais, mudança de ano-base, reclassificação setorial ou revisão metodológica nacional. A série validada inclui apenas observações com valor numérico de 1994 a 2024; 2025 não foi incluído por não haver valor observado disponível na consulta oficial.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1995,
+        "nome": "Pós-Real",
+        "descricao": "Após a estabilização monetária iniciada pelo Plano Real, a estrutura nominal e real da economia mudou, coincidindo com elevação do peso relativo dos serviços em 1995 e 1996."
+      },
+      {
+        "ano": 1999,
+        "nome": "Crise Cambial",
+        "descricao": "A desvalorização cambial e a mudança do regime cambial coincidiram com participação elevada dos serviços no PIB, em contexto de ajuste macroeconômico."
+      },
+      {
+        "ano": 2004,
+        "nome": "Expansão Econômica",
+        "descricao": "O crescimento econômico mais forte e a expansão de setores produtores de bens reduziram temporariamente a participação relativa dos serviços no PIB."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise Global",
+        "descricao": "A crise financeira internacional afetou a indústria e o comércio global, elevando a participação relativa dos serviços no PIB brasileiro em 2009."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015 alterou a composição setorial do PIB, com aumento do peso relativo dos serviços em meio à contração da atividade econômica."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão Prolongada",
+        "descricao": "A continuidade da recessão manteve a participação dos serviços acima de 63% do PIB, o maior patamar da série validada desde 1994."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 provocou forte choque econômico e mudanças setoriais, mantendo a participação dos serviços acima de 61% do PIB."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao": "A recuperação pós-pandemia e o desempenho relativo de outros setores reduziram a participação dos serviços para 56,91% do PIB em 2021."
+      },
+      {
+        "ano": 2023,
+        "nome": "Alta Agropecuária",
+        "descricao": "O forte desempenho relativo de setores fora dos serviços contribuiu para manter a participação dos serviços abaixo dos níveis observados entre 2015 e 2020."
+      },
+      {
+        "ano": 2024,
+        "nome": "Estabilidade Setorial",
+        "descricao": "A participação dos serviços permaneceu praticamente estável em relação a 2023, em torno de 59,17% do PIB."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 59,1708% do PIB em valor adicionado dos serviços. Esse nível indica uma economia majoritariamente terciarizada, acima do peso típico de economias mais dependentes de indústria, agropecuária ou extração, mas abaixo de muitas economias avançadas em que os serviços costumam superar 70% do PIB.",
+    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, arquivos de contas nacionais da OCDE e estimativas padronizadas do Banco Mundial. A principal ressalva é que séries de contas nacionais podem ser revisadas por atualização de metodologia, ano-base ou classificação setorial.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Services, value added (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial API - NV.SRV.TOTL.ZS - Brazil",
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NV.SRV.TOTL.ZS?format=json&per_page=200"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NV.SRV.TOTL.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.SRV.TOTL.ZS"
+      },
+      {
+        "titulo": "Banco Mundial WDI - Economy Theme",
+        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/economy.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 56.8943424724272
+      },
+      {
+        "ano": 1995,
+        "valor": 58.1214163702779
+      },
+      {
+        "ano": 1996,
+        "valor": 60.3188797934472
+      },
+      {
+        "ano": 1997,
+        "valor": 60.6057128176905
+      },
+      {
+        "ano": 1998,
+        "valor": 61.1185930481354
+      },
+      {
+        "ano": 1999,
+        "valor": 60.2036566347266
+      },
+      {
+        "ano": 2000,
+        "valor": 58.2518612474651
+      },
+      {
+        "ano": 2001,
+        "valor": 57.7136922473936
+      },
+      {
+        "ano": 2002,
+        "valor": 57.3481454732844
+      },
+      {
+        "ano": 2003,
+        "valor": 56.3578281358252
+      },
+      {
+        "ano": 2004,
+        "valor": 54.9204711079064
+      },
+      {
+        "ano": 2005,
+        "valor": 56.0758916063079
+      },
+      {
+        "ano": 2006,
+        "valor": 57.1381272137718
+      },
+      {
+        "ano": 2007,
+        "valor": 57.7262362197187
+      },
+      {
+        "ano": 2008,
+        "valor": 56.8048617741342
+      },
+      {
+        "ano": 2009,
+        "valor": 59.14505921907
+      },
+      {
+        "ano": 2010,
+        "valor": 57.6129219702781
+      },
+      {
+        "ano": 2011,
+        "valor": 57.5681693213714
+      },
+      {
+        "ano": 2012,
+        "valor": 58.7336025082152
+      },
+      {
+        "ano": 2013,
+        "valor": 59.6787579929242
+      },
+      {
+        "ano": 2014,
+        "valor": 61.250974009102
+      },
+      {
+        "ano": 2015,
+        "valor": 62.3078671737793
+      },
+      {
+        "ano": 2016,
+        "valor": 63.2036958322425
+      },
+      {
+        "ano": 2017,
+        "valor": 63.3386728622309
+      },
+      {
+        "ano": 2018,
+        "valor": 62.6533503532505
+      },
+      {
+        "ano": 2019,
+        "valor": 63.0678492508986
+      },
+      {
+        "ano": 2020,
+        "valor": 61.4484446411949
+      },
+      {
+        "ano": 2021,
+        "valor": 56.9133841883894
+      },
+      {
+        "ano": 2022,
+        "valor": 58.0872310746862
+      },
+      {
+        "ano": 2023,
+        "valor": 59.1789358564203
+      },
+      {
+        "ano": 2024,
+        "valor": 59.1707527174248
+      }
+    ],
+    "padrao": false
+  },
+  "agro_pib_pct": {
+    "label": "(CEPEA/CNA) Participação do Agronegócio no PIB",
+    "unidade": "% do PIB",
+    "fonte": "CEPEA (ESALQ/USP) / CNA",
+    "cat": "Economia e Atividade",
+    "descricao": "Participação do PIB-renda do agronegócio brasileiro no PIB nominal total do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam que a renda gerada pela cadeia do agronegócio representa parcela maior do PIB brasileiro. A métrica não mede apenas a agropecuária dentro da porteira; inclui insumos, produção primária, agroindústria e agrosserviços.",
+    "metodologia":
+      "Indicador calculado pelo CEPEA/ESALQ-USP em parceria com a CNA. O agronegócio é mensurado como cadeia econômica ligada à agropecuária, abrangendo insumos, segmento primário, agroindústria e agrosserviços. O foco divulgado nos relatórios CEPEA/CNA é o PIB-renda do agronegócio, que considera variações de volume e preços reais, deflacionados pelo deflator implícito do PIB nacional. A participação no PIB é obtida pela razão entre o PIB nominal do agronegócio e o PIB nominal do Brasil no mesmo ano.",
+    "historico_metodologia":
+      "A série oficial atualmente divulgada pelo CEPEA/CNA tem início em 1996. Os anos de 1994 e 1995 foram removidos por não constarem na série histórica oficial atual do CEPEA/CNA. A metodologia distingue PIB-renda do agronegócio de PIB-volume: o PIB-renda inclui efeitos de preços reais e, portanto, suas variações não são diretamente comparáveis às variações do PIB-volume divulgadas pelo IBGE. A série pode sofrer revisões quando o IBGE atualiza o Sistema de Contas Nacionais ou quando relatórios posteriores incorporam dados mais atualizados.",
+    "abrangencia":
+      "Brasil, abrangendo a cadeia nacional do agronegócio: insumos, produção agropecuária primária, agroindústria e agrosserviços, nos ramos agrícola e pecuário.",
+    "periodicidade":
+      "Trimestral nos relatórios de acompanhamento e anual para dados consolidados. Projeções parciais do ano corrente não foram incluídas.",
+    "eventos_externos": [
+      {
+        "ano": 2004,
+        "nome": "Pico pré-2021",
+        "descricao":
+          "O agronegócio alcançou participação elevada no PIB brasileiro em 2004, patamar citado pelo CEPEA/CNA como referência histórica anterior ao recorde de 2021.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Choque pandêmico",
+        "descricao":
+          "O forte aumento da participação em 2020 ocorreu em contexto de pandemia, alta de preços agropecuários, desvalorização cambial, demanda por alimentos e exportações aquecidas, fatores apontados nos relatórios CEPEA/CNA.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Recorde agro",
+        "descricao":
+          "Em 2021, o setor alcançou 27,4% do PIB brasileiro, maior participação desde 2004, segundo CEPEA/CNA.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Recuo pós-recorde",
+        "descricao":
+          "Em 2022, a participação caiu em relação ao pico anterior, com queda do PIB do agronegócio associada especialmente à forte alta de custos com insumos e deterioração de margens ao longo das cadeias.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Recuperação parcial",
+        "descricao":
+          "Em 2024, o PIB do agronegócio avançou 1,81% e a participação ficou em 23,2% do PIB brasileiro; o desempenho foi sustentado principalmente pela recuperação do ramo pecuário no segundo semestre, enquanto a agricultura foi pressionada por queda de preços e redução de produção em culturas relevantes.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta é limitada, porque o indicador CEPEA/CNA mede a cadeia ampla do agronegócio, não apenas o setor agropecuário primário usado nas Contas Nacionais de muitos países. Em geral, economias avançadas têm menor participação da agropecuária primária no PIB, mas essa comparação não é metodologicamente equivalente ao PIB-renda do agronegócio brasileiro calculado pelo CEPEA/CNA.",
+    "nivel_confiabilidade":
+      "Alto para os anos consolidados divulgados pelo CEPEA/CNA. A confiabilidade é menor para anos recentes ainda tratados como estimativas nos relatórios trimestrais; por isso, projeções de 2025 e estimativas parciais foram removidas. A série deve ser interpretada como indicador CEPEA/CNA de PIB-renda do agronegócio, não como participação da agropecuária primária no PIB do IBGE.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "PIB do Agronegócio Brasileiro - CEPEA/ESALQ-USP",
+        "url": "https://cepea.org.br/br/pib-do-agronegocio-brasileiro.aspx",
+      },
+      {
+        "titulo": "Sumário Executivo PIB do Agronegócio - 4º trimestre de 2024 - CEPEA/CNA",
+        "url":
+          "https://www.cepea.org.br/upload/kceditor/files/PIB%20do%20Agroneg%C3%B3cio_Sum%C3%A1rio%20Executivo%204o%20tri%202024%20-%20SUM%C3%81RIO%20EXECUTIVO.pdf",
+      },
+      {
+        "titulo": "PIB do agronegócio fecha 2024 com crescimento de 1,81% - CNA",
+        "url": "https://www.cnabrasil.org.br/noticias/pib-do-agronegocio-fecha-2024-com-crescimento-de-1-81",
+      },
+      {
+        "titulo": "PIB do Agronegócio alcança participação de 26,6% no PIB brasileiro em 2020 - CNA",
+        "url":
+          "https://www.cnabrasil.org.br/publicacoes/pib-do-agronegocio-alcanca-participacao-de-26-6-no-pib-brasileiro-em-2020",
+      },
+      {
+        "titulo": "PIB do agronegócio cresceu abaixo das projeções em 2021 - CEPEA/CNA",
+        "url": "https://www.cepea.org.br/upload/kceditor/files/Cepea_CNA_PIB_JAn_Dez_2021_Mar%C3%A7o2022.pdf",
+      },
+      {
+        "titulo": "Após alcançar patamar recorde em 2021, PIB do agronegócio recua em 2022 - CEPEA/CNA",
+        "url": "https://www.cepea.org.br/upload/kceditor/files/PIB-DO-AGRONEGOCIO-2022.17MAR2023%281%29.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2004, "valor": 27.53 },
+      { "ano": 2019, "valor": 20.5 },
+      { "ano": 2020, "valor": 26.6 },
+      { "ano": 2021, "valor": 27.4 },
+      { "ano": 2022, "valor": 24.8 },
+      { "ano": 2023, "valor": 23.5 },
+      { "ano": 2024, "valor": 23.2 },
+    ],
+    "padrao": false,
   },
   "investimento_pib": {
     "label": "(IBGE) Investimento (FBCF/PIB)",
@@ -855,6 +2138,208 @@
       { "ano": 2024, "valor": 16.9 },
       { "ano": 2025, "valor": 16.8 },
     ],
+  },
+  "consumo_final_familias_pib": {
+    "label": "(WDI) Consumo Final das Famílias",
+    "unidade": "% do PIB",
+    "fonte": "Banco Mundial - World Development Indicators (NE.CON.PRVT.ZS)",
+    "cat": "Economia e Atividade",
+    "descricao": "Mede a participação do consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias no Produto Interno Bruto do Brasil.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior do PIB está associada ao consumo final das famílias. O indicador não mede crescimento real do consumo, renda disponível, endividamento, distribuição de renda ou qualidade do consumo.",
+    "metodologia": "O Banco Mundial expressa o consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias como percentual do PIB. A série é derivada de contas nacionais oficiais e arquivos de contas nacionais da OCDE, incluindo bens e serviços adquiridos pelas famílias para satisfação direta de necessidades, aluguel imputado de moradias ocupadas pelos proprietários e taxas pagas a governos por permissões e licenças. A métrica é calculada como consumo final das famílias e ISFLSF dividido pelo PIB nominal, multiplicado por 100.",
+    "historico_metodologia": "A série segue o padrão internacional de contas nacionais usado no World Development Indicators. O Banco Mundial informa que a fonte combina estatísticas oficiais nacionais, arquivos de contas nacionais da OCDE e estimativas do Banco Mundial quando necessário. Séries de contas nacionais podem ser revisadas por mudanças de base, atualização das Contas Nacionais, revisões de PIB, reclassificações setoriais e incorporação de novas informações estatísticas. Para evitar estimativas futuras, a série foi mantida apenas até 2024, último ano com dado anual observado disponível na consulta.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1995,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária após o Plano Real coincidiu com forte aumento da participação do consumo das famílias no PIB entre 1994 e 1995."
+      },
+      {
+        "ano": 2002,
+        "nome": "Crise cambial",
+        "descricao": "A instabilidade macroeconômica e cambial de 2002 coincidiu com queda relevante da participação do consumo das famílias no PIB."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional afetou investimento e comércio, enquanto o consumo das famílias ganhou participação relativa no PIB brasileiro."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015 reduziu o nível de atividade, mas a participação do consumo das famílias no PIB aumentou em termos relativos."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão prolongada",
+        "descricao": "A continuidade da recessão manteve elevada a participação relativa do consumo das famílias no PIB, apesar da contração real da economia."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 reduziu fortemente o consumo das famílias e a atividade econômica, provocando queda da participação do consumo das famílias no PIB."
+      },
+      {
+        "ano": 2021,
+        "nome": "Reabertura",
+        "descricao": "A recuperação parcial da atividade econômica após as restrições da pandemia alterou a composição do PIB e manteve a participação do consumo abaixo do nível pré-pandemia."
+      },
+      {
+        "ano": 2024,
+        "nome": "Consumo forte",
+        "descricao": "O avanço da atividade econômica e do consumo das famílias em 2024 elevou novamente a participação do consumo familiar no PIB."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil ficou próximo de 64% do PIB, acima de economias com maior peso relativo de investimento ou exportações, como China, e mais próximo de economias nas quais o consumo das famílias tem peso elevado na demanda agregada. A comparação internacional deve considerar diferenças de estrutura produtiva, renda, poupança, investimento, demografia, sistema tributário e participação do governo no PIB.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais. A principal ressalva é que séries de contas nacionais podem sofrer revisões periódicas, e os valores percentuais podem mudar quando o PIB ou seus componentes são revisados.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Households and NPISHs final consumption expenditure (% of GDP) - Brazil",
+        "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata NE.CON.PRVT.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.CON.PRVT.ZS"
+      },
+      {
+        "titulo": "Banco Mundial - World Development Indicators",
+        "url": "https://datatopics.worldbank.org/world-development-indicators/"
+      },
+      {
+        "titulo": "IBGE - Contas Nacionais: PIB cresce 3,2% e soma R$ 10,9 trilhões em 2023",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/44983-gdp-grows-3-2-and-adds-up-to-r-10-9-trillion-in-2023"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 59.64
+      },
+      {
+        "ano": 1995,
+        "valor": 63.71
+      },
+      {
+        "ano": 1996,
+        "valor": 65.16
+      },
+      {
+        "ano": 1997,
+        "valor": 65.31
+      },
+      {
+        "ano": 1998,
+        "valor": 64.14
+      },
+      {
+        "ano": 1999,
+        "valor": 64.68
+      },
+      {
+        "ano": 2000,
+        "valor": 64.59
+      },
+      {
+        "ano": 2001,
+        "valor": 64.11
+      },
+      {
+        "ano": 2002,
+        "valor": 61.9
+      },
+      {
+        "ano": 2003,
+        "valor": 61.84
+      },
+      {
+        "ano": 2004,
+        "valor": 60.21
+      },
+      {
+        "ano": 2005,
+        "valor": 60.5
+      },
+      {
+        "ano": 2006,
+        "valor": 60.44
+      },
+      {
+        "ano": 2007,
+        "valor": 59.87
+      },
+      {
+        "ano": 2008,
+        "valor": 59.73
+      },
+      {
+        "ano": 2009,
+        "valor": 61.96
+      },
+      {
+        "ano": 2010,
+        "valor": 60.22
+      },
+      {
+        "ano": 2011,
+        "valor": 60.27
+      },
+      {
+        "ano": 2012,
+        "valor": 61.41
+      },
+      {
+        "ano": 2013,
+        "valor": 61.72
+      },
+      {
+        "ano": 2014,
+        "valor": 62.96
+      },
+      {
+        "ano": 2015,
+        "valor": 63.96
+      },
+      {
+        "ano": 2016,
+        "valor": 64.25
+      },
+      {
+        "ano": 2017,
+        "valor": 64.49
+      },
+      {
+        "ano": 2018,
+        "valor": 64.62
+      },
+      {
+        "ano": 2019,
+        "valor": 64.76
+      },
+      {
+        "ano": 2020,
+        "valor": 62.71
+      },
+      {
+        "ano": 2021,
+        "valor": 61.4
+      },
+      {
+        "ano": 2022,
+        "valor": 63.1
+      },
+      {
+        "ano": 2023,
+        "valor": 62.9
+      },
+      {
+        "ano": 2024,
+        "valor": 63.77
+      }
+    ],
+    "padrao": false
   },
   "produtividade_trabalho": {
     "label": "(TED) Produtividade do Trabalho - PIB por hora",
