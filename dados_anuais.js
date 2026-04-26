@@ -6254,316 +6254,6 @@
     ],
     "padrao": false,
   },
-  "resultado_primario_pib": {
-    "label": "(BCB) Resultado Primário",
-    "unidade": "% do PIB",
-    "fonte": "Banco Central do Brasil (SGS 5793)",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao":
-      "Saldo primário do setor público consolidado em 12 meses como proporção do PIB, calculado a partir da NFSP sem desvalorização cambial. Valores positivos indicam superávit primário; valores negativos indicam déficit primário.",
-    "como_interpretar":
-      "Valor positivo indica que o setor público consolidado gerou superávit primário em 12 meses. Valor negativo indica déficit primário em 12 meses. Quanto maior o valor positivo, maior a poupança primária antes dos juros nominais; quanto mais negativo, maior a necessidade de financiamento primária.",
-    "metodologia":
-      "Indicador derivado da série oficial SGS 5793 do Banco Central do Brasil: NFSP sem desvalorização cambial (% PIB), fluxo acumulado em 12 meses, resultado primário, total do setor público consolidado. Como a série SGS 5793 segue a convenção de NFSP, valores negativos representam superávit primário e valores positivos representam déficit primário. Para apresentar como Resultado Primário, o sinal foi invertido: resultado_primario = -1 * valor_SGS_5793. Foram usados os valores de dezembro de cada ano, por representarem o acumulado de 12 meses encerrado no ano civil.",
-    "historico_metodologia":
-      "A série oficial SGS 5793 tem início em novembro de 2002. A abrangência das estatísticas fiscais foi alterada pela exclusão da Petrobras a partir de maio de 2009 e da Eletrobras a partir da data-base novembro de 2010; para permitir comparação, o Banco Central informa que o cálculo na nova abrangência retroagiu a dezembro de 2001. Como a série pública SGS 5793 disponível começa em novembro de 2002, os anos de 1994 a 2001 foram removidos por não haver valores oficiais concretos nessa série.",
-    "abrangencia":
-      "Setor público consolidado: Governo Federal, Previdência Social, governos estaduais e municipais, empresas estatais das três esferas de governo e Banco Central do Brasil, com exclusões metodológicas da Petrobras e da Eletrobras conforme documentação oficial do BCB.",
-    "periodicidade":
-      "Mensal, em fluxo acumulado em 12 meses; para a série anual foram usados os valores de dezembro de cada ano.",
-    "eventos_externos": [
-      {
-        "ano": 2009,
-        "nome": "Crise global",
-        "descricao":
-          "A crise financeira internacional reduziu atividade econômica e arrecadação, levando a forte queda do superávit primário acumulado em 12 meses.",
-      },
-      {
-        "ano": 2014,
-        "nome": "Reversão fiscal",
-        "descricao":
-          "O setor público consolidado passou de superávit para déficit primário anual, marcando deterioração fiscal relevante na série.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Recessão fiscal",
-        "descricao":
-          "O déficit primário se aprofundou em meio à queda de receitas, recessão econômica e piora do resultado do Governo Central.",
-      },
-      {
-        "ano": 2020,
-        "nome": "Covid-19",
-        "descricao":
-          "A pandemia elevou fortemente despesas primárias e reduziu receitas, produzindo o maior déficit primário da série.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Precatórios",
-        "descricao":
-          "O déficit primário aumentou com impacto de pagamentos extraordinários de precatórios e piora do resultado acumulado em 12 meses.",
-      },
-    ],
-    "comparacao_paises":
-      "Comparações internacionais diretas exigem cautela porque cada país pode usar abrangências fiscais, conceitos de governo e critérios contábeis diferentes. Em termos gerais, déficits primários persistentes indicam menor capacidade de estabilização da dívida pública em comparação com países que mantêm superávits primários recorrentes.",
-    "nivel_confiabilidade":
-      "Muito alto para 2002 a 2025, pois os valores são derivados diretamente de série oficial mensal do Banco Central do Brasil. Inexistente para 1994 a 2001 dentro da série SGS 5793, por isso esses anos foram removidos.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo":
-          "Banco Central do Brasil - SGS 5793 - NFSP sem desvalorização cambial (% PIB), resultado primário, setor público consolidado",
-        "url":
-          "https://dadosabertos.bcb.gov.br/dataset/5793-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-primario---tota",
-      },
-      {
-        "titulo": "Banco Central do Brasil - API JSON SGS 5793",
-        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5793/dados?formato=json",
-      },
-      {
-        "titulo": "Banco Central do Brasil - Estatísticas Fiscais",
-        "url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
-      },
-    ],
-    "dados": [
-      { "ano": 2002, "valor": 3.19 },
-      { "ano": 2003, "valor": 3.24 },
-      { "ano": 2004, "valor": 3.69 },
-      { "ano": 2005, "valor": 3.74 },
-      { "ano": 2006, "valor": 3.15 },
-      { "ano": 2007, "valor": 3.24 },
-      { "ano": 2008, "valor": 3.33 },
-      { "ano": 2009, "valor": 1.94 },
-      { "ano": 2010, "valor": 2.62 },
-      { "ano": 2011, "valor": 2.94 },
-      { "ano": 2012, "valor": 2.18 },
-      { "ano": 2013, "valor": 1.71 },
-      { "ano": 2014, "valor": -0.56 },
-      { "ano": 2015, "valor": -1.86 },
-      { "ano": 2016, "valor": -2.48 },
-      { "ano": 2017, "valor": -1.68 },
-      { "ano": 2018, "valor": -1.55 },
-      { "ano": 2019, "valor": -0.84 },
-      { "ano": 2020, "valor": -9.24 },
-      { "ano": 2021, "valor": 0.72 },
-      { "ano": 2022, "valor": 1.25 },
-      { "ano": 2023, "valor": -2.28 },
-      { "ano": 2024, "valor": -0.4 },
-      { "ano": 2025, "valor": -0.43 },
-    ],
-  },
-  "resultado_nominal_pib": {
-    "label": "(BCB) Resultado Nominal",
-    "unidade": "% do PIB",
-    "fonte": "Banco Central do Brasil",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao":
-      "Saldo nominal do setor público consolidado como percentual do PIB, incluindo resultado primário e juros nominais apropriados.",
-    "como_interpretar":
-      "Na convenção deste gráfico, valores negativos indicam déficit nominal e valores positivos indicam superávit nominal. Quanto mais negativo, maior a necessidade de financiamento do setor público em relação ao PIB.",
-    "metodologia":
-      "Dados validados pela série SGS 5727 do Banco Central do Brasil: NFSP sem desvalorização cambial (% PIB), fluxo acumulado em 12 meses, resultado nominal, total, setor público consolidado. A série oficial do BCB apresenta a Necessidade de Financiamento do Setor Público positiva quando há déficit; para manter a convenção visual do gráfico como saldo fiscal, os valores foram convertidos para sinal negativo quando representam déficit.",
-    "historico_metodologia":
-      "A série SGS 5727 tem início em novembro de 2002, portanto os anos de 1994 a 2001 foram removidos por não estarem disponíveis nessa série oficial comparável. A abrangência foi alterada retroativamente a dezembro de 2001 para refletir a exclusão do Grupo Petrobras, a partir de maio de 2009, e do Grupo Eletrobras, a partir de novembro de 2010, conforme metadados do Banco Central. O indicador é apurado pela ótica do financiamento, metodologia abaixo da linha, com resultado primário pelo critério de caixa e juros nominais pelo critério de competência.",
-    "abrangencia":
-      "Setor público consolidado: Governo Federal, Previdência Social, Banco Central, governos estaduais, governos municipais e empresas estatais das três esferas, exceto estatais financeiras e, na série atual, exceto Grupo Petrobras e Grupo Eletrobras.",
-    "periodicidade": "Mensal, com uso do valor de dezembro como fechamento anual em fluxo acumulado em 12 meses.",
-    "eventos_externos": [
-      {
-        "ano": 2014,
-        "nome": "Deterioração fiscal",
-        "descricao":
-          "O déficit nominal aumentou para 5,95% do PIB, refletindo piora do resultado primário e elevação dos juros nominais.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Juros e swaps",
-        "descricao":
-          "O déficit nominal atingiu 10,22% do PIB, influenciado por juros nominais elevados, Selic alta, inflação e resultado das operações de swap cambial.",
-      },
-      {
-        "ano": 2020,
-        "nome": "COVID-19",
-        "descricao":
-          "A pandemia provocou forte deterioração fiscal, com expansão de gastos emergenciais e queda de atividade, levando o déficit nominal a 13,34% do PIB.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Selic alta",
-        "descricao":
-          "O déficit nominal subiu para 8,84% do PIB, pressionado pelo custo dos juros nominais em ambiente de taxa Selic elevada.",
-      },
-      {
-        "ano": 2025,
-        "nome": "Swaps cambiais",
-        "descricao":
-          "O déficit nominal ficou em 8,34% do PIB; segundo o Banco Central, a leve redução frente a 2024 decorreu da redução dos juros nominais apropriados, influenciada pelo resultado favorável das operações de swap cambial.",
-      },
-    ],
-    "comparacao_paises":
-      "O Brasil tende a apresentar déficit nominal elevado em comparação com muitas economias emergentes, principalmente pelo peso estrutural dos juros nominais sobre a dívida pública. Para comparação internacional direta, recomenda-se usar bases harmonizadas como FMI Fiscal Monitor ou World Economic Outlook, pois a metodologia do BCB é específica para o setor público consolidado brasileiro.",
-    "nivel_confiabilidade":
-      "Muito alto para 2002 a 2025, pois os valores vêm diretamente da série oficial SGS 5727 do Banco Central do Brasil. Baixo ou insuficiente para 1994 a 2001 nesta mesma métrica, pois esses anos não constam na série oficial comparável usada; por isso foram removidos.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo":
-          "Banco Central do Brasil - SGS 5727 - NFSP sem desvalorização cambial (% PIB), resultado nominal, setor público consolidado",
-        "url":
-          "https://dadosabertos.bcb.gov.br/dataset/5727-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-nominal---total",
-      },
-      {
-        "titulo": "Banco Central do Brasil - API SGS 5727 em JSON",
-        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5727/dados?formato=json",
-      },
-      {
-        "titulo": "Banco Central do Brasil - Estatísticas Fiscais - janeiro de 2026",
-        "url":
-          "https://www.bcb.gov.br/content/estatisticas/hist_estatisticasfiscais/202601_Texto_de_estatisticas_fiscais.pdf",
-      },
-      {
-        "titulo": "Banco Central do Brasil - Estatísticas Fiscais",
-        "url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
-      },
-    ],
-    "dados": [
-      { "ano": 2002, "valor": -4.42 },
-      { "ano": 2003, "valor": -5.18 },
-      { "ano": 2004, "valor": -2.88 },
-      { "ano": 2005, "valor": -3.54 },
-      { "ano": 2006, "valor": -3.57 },
-      { "ano": 2007, "valor": -2.74 },
-      { "ano": 2008, "valor": -1.99 },
-      { "ano": 2009, "valor": -3.19 },
-      { "ano": 2010, "valor": -2.41 },
-      { "ano": 2011, "valor": -2.47 },
-      { "ano": 2012, "valor": -2.26 },
-      { "ano": 2013, "valor": -2.96 },
-      { "ano": 2014, "valor": -5.95 },
-      { "ano": 2015, "valor": -10.22 },
-      { "ano": 2016, "valor": -8.98 },
-      { "ano": 2017, "valor": -7.77 },
-      { "ano": 2018, "valor": -6.96 },
-      { "ano": 2019, "valor": -5.81 },
-      { "ano": 2020, "valor": -13.34 },
-      { "ano": 2021, "valor": -4.26 },
-      { "ano": 2022, "valor": -4.57 },
-      { "ano": 2023, "valor": -8.84 },
-      { "ano": 2024, "valor": -8.47 },
-      { "ano": 2025, "valor": -8.34 },
-    ],
-  },
-  "imf_weo_fiscal_balance": {
-    "label": "(FMI) Resultado Fiscal do Governo Geral",
-    "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), GGXCNL_NGDP",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao":
-      "Mede o resultado fiscal líquido do governo geral, calculado como empréstimo líquido (+) ou endividamento líquido (-) em proporção ao PIB.",
-    "como_interpretar":
-      "Valores positivos indicam superávit fiscal do governo geral; valores negativos indicam déficit fiscal. Quanto mais negativo o valor, maior o déficit em relação ao tamanho da economia. O indicador não mede diretamente a dívida pública acumulada, mas o fluxo anual de resultado fiscal.",
-    "metodologia":
-      "No WEO, o indicador corresponde a 'General government net lending/borrowing', expresso em percentual do PIB. O conceito segue a lógica de finanças públicas do FMI: empréstimo líquido/endividamento líquido é calculado como receita menos despesa total do governo geral, podendo também ser interpretado como aquisição líquida de ativos financeiros menos incorrência líquida de passivos. A cobertura é governo geral, não apenas governo central.",
-    "historico_metodologia":
-      "A série do WEO pode ser revisada a cada edição do World Economic Outlook, pois incorpora revisões de contas nacionais, finanças públicas, PIB nominal e classificações estatísticas do FMI. Para o Brasil, a série observada disponível na fonte reprocessada do FMI/FRED começa em 2001; não há valores observados oficiais disponíveis para 1994-2000 nessa série consultada. Observações de anos correntes e futuros são tratadas pelo FMI/FRED como projeções e foram excluídas.",
-    "abrangencia":
-      "Brasil, governo geral, série anual padronizada internacionalmente pelo FMI para comparação entre países.",
-    "periodicidade": "Anual.",
-    "eventos_externos": [
-      {
-        "ano": 2003,
-        "nome": "Ajuste fiscal",
-        "descricao":
-          "Ano de déficit fiscal ainda elevado no início da série, em contexto de ajuste macroeconômico após instabilidade cambial e financeira do começo dos anos 2000.",
-      },
-      {
-        "ano": 2009,
-        "nome": "Crise global",
-        "descricao":
-          "A crise financeira internacional reduziu a atividade econômica e pressionou o resultado fiscal, ampliando o déficit do governo geral.",
-      },
-      {
-        "ano": 2014,
-        "nome": "Deterioração fiscal",
-        "descricao":
-          "O déficit aumentou fortemente em meio à desaceleração econômica e piora do resultado fiscal do setor público.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Recessão",
-        "descricao": "A recessão brasileira aprofundou a queda de receitas e elevou o déficit fiscal do governo geral.",
-      },
-      {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao":
-          "A pandemia de COVID-19 provocou forte deterioração fiscal por queda de atividade, perda de arrecadação e aumento extraordinário de despesas públicas.",
-      },
-      {
-        "ano": 2021,
-        "nome": "Recuperação",
-        "descricao":
-          "A reabertura econômica e a retirada parcial de medidas emergenciais reduziram fortemente o déficit em relação a 2020.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Déficit maior",
-        "descricao":
-          "O déficit voltou a se ampliar de forma relevante, refletindo piora do resultado fiscal do governo geral em relação a 2022.",
-      },
-    ],
-    "comparacao_paises":
-      "O Brasil apresenta déficit fiscal recorrente em quase toda a série observada. Em 2023, o déficit de -7,712% do PIB foi elevado em comparação internacional, indicando posição fiscal mais frágil que a de países com déficits menores ou superávits, embora a comparação exata dependa do mesmo ano, conceito de governo geral e edição do WEO usada.",
-    "nivel_confiabilidade":
-      "Alto. Os valores vêm de série do FMI reprocessada pelo FRED/St. Louis Fed, com fonte primária International Monetary Fund e release World Economic Outlook. A limitação principal é que a série pode ser revisada em edições futuras do WEO e não possui dados observados para 1994-2000 na fonte consultada.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "IMF DataMapper - General government net lending/borrowing (GGXCNL_NGDP)",
-        "url": "https://www.imf.org/external/datamapper/GGXCNL_NGDP@WEO/BRA",
-      },
-      {
-        "titulo": "FRED - General government net lending/borrowing for Brazil (GGNLBABRA188N)",
-        "url": "https://fred.stlouisfed.org/data/GGNLBABRA188N",
-      },
-      {
-        "titulo": "FRED - General Government Net Lending/Borrowing for Brazil (BRAGGXCNLGDP)",
-        "url": "https://fred.stlouisfed.org/series/BRAGGXCNLGDP",
-      },
-      {
-        "titulo": "IMF - World Economic Outlook Databases",
-        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases",
-      },
-      { "titulo": "IMF DataMapper API documentation", "url": "https://www.imf.org/external/datamapper/api/help" },
-    ],
-    "dados": [
-      { "ano": 2001, "valor": -3.468 },
-      { "ano": 2002, "valor": -4.149 },
-      { "ano": 2003, "valor": -5.401 },
-      { "ano": 2004, "valor": -2.955 },
-      { "ano": 2005, "valor": -3.364 },
-      { "ano": 2006, "valor": -4.868 },
-      { "ano": 2007, "valor": -2.66 },
-      { "ano": 2008, "valor": -2.393 },
-      { "ano": 2009, "valor": -4.23 },
-      { "ano": 2010, "valor": -3.554 },
-      { "ano": 2011, "valor": -2.741 },
-      { "ano": 2012, "valor": -2.351 },
-      { "ano": 2013, "valor": -3.422 },
-      { "ano": 2014, "valor": -6.275 },
-      { "ano": 2015, "valor": -9.281 },
-      { "ano": 2016, "valor": -7.991 },
-      { "ano": 2017, "valor": -7.97 },
-      { "ano": 2018, "valor": -6.99 },
-      { "ano": 2019, "valor": -4.859 },
-      { "ano": 2020, "valor": -11.637 },
-      { "ano": 2021, "valor": -2.631 },
-      { "ano": 2022, "valor": -3.965 },
-      { "ano": 2023, "valor": -7.712 },
-    ],
-  },
   "divida_bruta_governo_geral_imf_weo": {
     "label": "(FMI) Dívida Bruta do Governo Geral",
     "unidade": "% do PIB",
@@ -6790,110 +6480,1390 @@
       { "ano": 2025, "valor": 78.6 },
     ],
   },
-  "gasto_governo_pib": {
-    "label": "Gasto do Governo Geral - Despesa Total",
+  "divida_liquida_governo_geral_pib_fmi_weo": {
+    "label": "(FMI) Dívida Líquida do Governo Geral / PIB",
     "unidade": "% do PIB",
-    "fonte": "Tesouro Nacional / FMI (MEFP 2014)",
+    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), indicador GGXWDN_NGDP",
     "cat": "Finanças Públicas e Tributação",
-    "descricao":
-      "Despesa total consolidada do Governo Geral, composta por governo central, estados e municípios, expressa como proporção do PIB.",
-    "como_interpretar":
-      "Quanto maior o percentual, maior a participação da despesa do Governo Geral na economia. A métrica inclui gastos e investimento líquido; variações devem ser interpretadas considerando mudanças metodológicas, juros, despesas previdenciárias, assistenciais, judiciais e choques extraordinários.",
-    "metodologia":
-      "Série compilada pela Secretaria do Tesouro Nacional conforme o Manual de Estatísticas de Finanças Públicas 2014 do FMI (MEFP 2014 / GFSM 2014). A despesa total do Governo Geral corresponde aos gastos mais o investimento líquido, em proporção do PIB.",
-    "historico_metodologia":
-      "A série oficial comparável do Tesouro Nacional inicia em 2010. Não há série oficial contínua e comparável nessa metodologia para 1994-2009. Em 2024, houve revisão metodológica de setorização do Governo Geral, com exclusão do FGTS e do Sistema S, retroagindo a série desde 2010. Em 2026, nova nota metodológica acompanhou a publicação dos demonstrativos de 2025.",
-    "abrangencia":
-      "Governo Geral consolidado do Brasil: Governo Central, governos estaduais, Distrito Federal e governos municipais.",
-    "periodicidade": "Trimestral, com série anual consolidada.",
+    "descricao": "Mede a dívida líquida do governo geral do Brasil como proporção do Produto Interno Bruto.",
+    "como_interpretar": "Valores maiores indicam maior endividamento líquido do governo geral em relação ao tamanho da economia. O indicador desconta ativos financeiros relevantes da dívida bruta, portanto não deve ser comparado diretamente com dívida bruta do governo geral ou dívida bruta do setor público calculada por metodologias nacionais.",
+    "metodologia": "O FMI calcula a dívida líquida do governo geral como a dívida bruta do governo geral menos os ativos financeiros correspondentes, expressa como percentual do PIB nominal. A série segue as convenções do World Economic Outlook e usa informações de contas fiscais e macroeconômicas reportadas pelas autoridades nacionais e padronizadas pelo FMI para comparação internacional.",
+    "historico_metodologia": "A série do WEO pode ser revisada a cada edição semestral por mudanças em contas nacionais, revisão de PIB nominal, atualização de dados fiscais, mudanças de cobertura institucional e ajustes metodológicos do FMI. Para preservar comparabilidade, foram mantidos apenas anos com valores históricos observados disponíveis na série do WEO e excluídos anos classificados como estimativas ou projeções no ciclo corrente.",
+    "abrangencia": "Brasil, governo geral, com padronização internacional do FMI para comparação entre países.",
+    "periodicidade": "Anual.",
     "eventos_externos": [
       {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial e a desvalorização do real elevaram pressões fiscais e financeiras, afetando a trajetória da dívida pública."
+      },
+      {
+        "ano": 2002,
+        "nome": "Estresse eleitoral",
+        "descricao": "A incerteza financeira e cambial no período eleitoral elevou juros, risco soberano e endividamento líquido em proporção do PIB."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional interrompeu parte da melhora fiscal anterior e afetou crescimento, receitas e dinâmica da dívida."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão fiscal",
+        "descricao": "A recessão brasileira, a queda de receitas e o aumento do déficit nominal elevaram rapidamente a dívida líquida em proporção do PIB."
+      },
+      {
         "ano": 2020,
-        "nome": "COVID-19",
-        "descricao":
-          "A despesa do Governo Geral aumentou fortemente em 2020 devido às medidas fiscais extraordinárias de enfrentamento da pandemia, incluindo transferências e programas emergenciais.",
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 elevou despesas emergenciais, reduziu atividade econômica e agravou indicadores fiscais."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação parcial",
+        "descricao": "A retomada do PIB nominal e a reversão parcial de medidas emergenciais reduziram temporariamente a razão dívida líquida/PIB."
+      },
+      {
+        "ano": 2023,
+        "nome": "Juros altos",
+        "descricao": "A combinação de juros elevados e déficit nominal pressionou novamente a trajetória da dívida pública."
+      }
+    ],
+    "comparacao_paises": "O Brasil aparece entre os países com dívida líquida do governo geral relativamente elevada no conjunto de economias emergentes e de renda média cobertas pelo WEO. O nível brasileiro é inferior ao de economias avançadas muito endividadas, como Japão e Itália, mas superior ao de vários pares latino-americanos e emergentes com menor dívida líquida em proporção do PIB.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte é o FMI WEO, base oficial e padronizada. A confiabilidade é menor que a de uma série puramente nacional auditável mês a mês, porque o WEO pode revisar dados históricos, aplicar ajustes metodológicos e publicar estimativas/projeções; por isso os anos estimados e projetados foram excluídos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+      },
+      {
+        "titulo": "FMI WEO April 2026 - Entire Dataset in Excel",
+        "url": "https://data.imf.org/-/media/iData/External-Storage/Documents/2F78EE59F79143A7921E5E203D3AAA80/en/WEOApr2026all.xlsx"
+      },
+      {
+        "titulo": "FMI DataMapper API - GGXWDN_NGDP Brasil",
+        "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDN_NGDP/BRA"
+      },
+      {
+        "titulo": "FMI WEO April 2026 - Database Appendix",
+        "url": "https://data.imf.org/-/media/iData/External-Storage/Documents/4AA1F4D0624C46E98F95988F1F83E770/en/April-2026-WEO-Database-Appendix.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1997,
+        "valor": 34.27
+      },
+      {
+        "ano": 1998,
+        "valor": 41.69
+      },
+      {
+        "ano": 1999,
+        "valor": 48.74
+      },
+      {
+        "ano": 2000,
+        "valor": 47.75
+      },
+      {
+        "ano": 2001,
+        "valor": 52.23
+      },
+      {
+        "ano": 2002,
+        "valor": 60.64
+      },
+      {
+        "ano": 2003,
+        "valor": 54.92
+      },
+      {
+        "ano": 2004,
+        "valor": 50.58
+      },
+      {
+        "ano": 2005,
+        "valor": 48.21
+      },
+      {
+        "ano": 2006,
+        "valor": 46.48
+      },
+      {
+        "ano": 2007,
+        "valor": 44.62
+      },
+      {
+        "ano": 2008,
+        "valor": 37.98
+      },
+      {
+        "ano": 2009,
+        "valor": 40.91
+      },
+      {
+        "ano": 2010,
+        "valor": 38.46
+      },
+      {
+        "ano": 2011,
+        "valor": 34.53
+      },
+      {
+        "ano": 2012,
+        "valor": 32.18
+      },
+      {
+        "ano": 2013,
+        "valor": 30.56
+      },
+      {
+        "ano": 2014,
+        "valor": 33.13
+      },
+      {
+        "ano": 2015,
+        "valor": 42.09
+      },
+      {
+        "ano": 2016,
+        "valor": 49.16
+      },
+      {
+        "ano": 2017,
+        "valor": 51.37
+      },
+      {
+        "ano": 2018,
+        "valor": 53.58
+      },
+      {
+        "ano": 2019,
+        "valor": 54.71
+      },
+      {
+        "ano": 2020,
+        "valor": 62.68
+      },
+      {
+        "ano": 2021,
+        "valor": 56.68
       },
       {
         "ano": 2022,
-        "nome": "Alta da Selic",
+        "valor": 56.94
+      },
+      {
+        "ano": 2023,
+        "valor": 60.86
+      },
+      {
+        "ano": 2024,
+        "valor": 63.56
+      }
+    ]
+  },
+  "imf_weo_fiscal_balance": {
+    "label": "(FMI) Resultado Fiscal do Governo Geral",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), GGXCNL_NGDP",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao":
+      "Mede o resultado fiscal líquido do governo geral, calculado como empréstimo líquido (+) ou endividamento líquido (-) em proporção ao PIB.",
+    "como_interpretar":
+      "Valores positivos indicam superávit fiscal do governo geral; valores negativos indicam déficit fiscal. Quanto mais negativo o valor, maior o déficit em relação ao tamanho da economia. O indicador não mede diretamente a dívida pública acumulada, mas o fluxo anual de resultado fiscal.",
+    "metodologia":
+      "No WEO, o indicador corresponde a 'General government net lending/borrowing', expresso em percentual do PIB. O conceito segue a lógica de finanças públicas do FMI: empréstimo líquido/endividamento líquido é calculado como receita menos despesa total do governo geral, podendo também ser interpretado como aquisição líquida de ativos financeiros menos incorrência líquida de passivos. A cobertura é governo geral, não apenas governo central.",
+    "historico_metodologia":
+      "A série do WEO pode ser revisada a cada edição do World Economic Outlook, pois incorpora revisões de contas nacionais, finanças públicas, PIB nominal e classificações estatísticas do FMI. Para o Brasil, a série observada disponível na fonte reprocessada do FMI/FRED começa em 2001; não há valores observados oficiais disponíveis para 1994-2000 nessa série consultada. Observações de anos correntes e futuros são tratadas pelo FMI/FRED como projeções e foram excluídas.",
+    "abrangencia":
+      "Brasil, governo geral, série anual padronizada internacionalmente pelo FMI para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2003,
+        "nome": "Ajuste fiscal",
         "descricao":
-          "O Tesouro apontou crescimento da despesa com juros em 2022, influenciado pela elevação da taxa básica de juros.",
+          "Ano de déficit fiscal ainda elevado no início da série, em contexto de ajuste macroeconômico após instabilidade cambial e financeira do começo dos anos 2000.",
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e pressionou o resultado fiscal, ampliando o déficit do governo geral.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Deterioração fiscal",
+        "descricao":
+          "O déficit aumentou fortemente em meio à desaceleração econômica e piora do resultado fiscal do setor público.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira aprofundou a queda de receitas e elevou o déficit fiscal do governo geral.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 provocou forte deterioração fiscal por queda de atividade, perda de arrecadação e aumento extraordinário de despesas públicas.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao":
+          "A reabertura econômica e a retirada parcial de medidas emergenciais reduziram fortemente o déficit em relação a 2020.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Déficit maior",
+        "descricao":
+          "O déficit voltou a se ampliar de forma relevante, refletindo piora do resultado fiscal do governo geral em relação a 2022.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil apresenta déficit fiscal recorrente em quase toda a série observada. Em 2023, o déficit de -7,712% do PIB foi elevado em comparação internacional, indicando posição fiscal mais frágil que a de países com déficits menores ou superávits, embora a comparação exata dependa do mesmo ano, conceito de governo geral e edição do WEO usada.",
+    "nivel_confiabilidade":
+      "Alto. Os valores vêm de série do FMI reprocessada pelo FRED/St. Louis Fed, com fonte primária International Monetary Fund e release World Economic Outlook. A limitação principal é que a série pode ser revisada em edições futuras do WEO e não possui dados observados para 1994-2000 na fonte consultada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IMF DataMapper - General government net lending/borrowing (GGXCNL_NGDP)",
+        "url": "https://www.imf.org/external/datamapper/GGXCNL_NGDP@WEO/BRA",
+      },
+      {
+        "titulo": "FRED - General government net lending/borrowing for Brazil (GGNLBABRA188N)",
+        "url": "https://fred.stlouisfed.org/data/GGNLBABRA188N",
+      },
+      {
+        "titulo": "FRED - General Government Net Lending/Borrowing for Brazil (BRAGGXCNLGDP)",
+        "url": "https://fred.stlouisfed.org/series/BRAGGXCNLGDP",
+      },
+      {
+        "titulo": "IMF - World Economic Outlook Databases",
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases",
+      },
+      { "titulo": "IMF DataMapper API documentation", "url": "https://www.imf.org/external/datamapper/api/help" },
+    ],
+    "dados": [
+      { "ano": 2001, "valor": -3.468 },
+      { "ano": 2002, "valor": -4.149 },
+      { "ano": 2003, "valor": -5.401 },
+      { "ano": 2004, "valor": -2.955 },
+      { "ano": 2005, "valor": -3.364 },
+      { "ano": 2006, "valor": -4.868 },
+      { "ano": 2007, "valor": -2.66 },
+      { "ano": 2008, "valor": -2.393 },
+      { "ano": 2009, "valor": -4.23 },
+      { "ano": 2010, "valor": -3.554 },
+      { "ano": 2011, "valor": -2.741 },
+      { "ano": 2012, "valor": -2.351 },
+      { "ano": 2013, "valor": -3.422 },
+      { "ano": 2014, "valor": -6.275 },
+      { "ano": 2015, "valor": -9.281 },
+      { "ano": 2016, "valor": -7.991 },
+      { "ano": 2017, "valor": -7.97 },
+      { "ano": 2018, "valor": -6.99 },
+      { "ano": 2019, "valor": -4.859 },
+      { "ano": 2020, "valor": -11.637 },
+      { "ano": 2021, "valor": -2.631 },
+      { "ano": 2022, "valor": -3.965 },
+      { "ano": 2023, "valor": -7.712 },
+    ],
+  },
+  "resultado_primario_pib": {
+    "label": "(BCB) Resultado Primário",
+    "unidade": "% do PIB",
+    "fonte": "Banco Central do Brasil (SGS 5793)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao":
+      "Saldo primário do setor público consolidado em 12 meses como proporção do PIB, calculado a partir da NFSP sem desvalorização cambial. Valores positivos indicam superávit primário; valores negativos indicam déficit primário.",
+    "como_interpretar":
+      "Valor positivo indica que o setor público consolidado gerou superávit primário em 12 meses. Valor negativo indica déficit primário em 12 meses. Quanto maior o valor positivo, maior a poupança primária antes dos juros nominais; quanto mais negativo, maior a necessidade de financiamento primária.",
+    "metodologia":
+      "Indicador derivado da série oficial SGS 5793 do Banco Central do Brasil: NFSP sem desvalorização cambial (% PIB), fluxo acumulado em 12 meses, resultado primário, total do setor público consolidado. Como a série SGS 5793 segue a convenção de NFSP, valores negativos representam superávit primário e valores positivos representam déficit primário. Para apresentar como Resultado Primário, o sinal foi invertido: resultado_primario = -1 * valor_SGS_5793. Foram usados os valores de dezembro de cada ano, por representarem o acumulado de 12 meses encerrado no ano civil.",
+    "historico_metodologia":
+      "A série oficial SGS 5793 tem início em novembro de 2002. A abrangência das estatísticas fiscais foi alterada pela exclusão da Petrobras a partir de maio de 2009 e da Eletrobras a partir da data-base novembro de 2010; para permitir comparação, o Banco Central informa que o cálculo na nova abrangência retroagiu a dezembro de 2001. Como a série pública SGS 5793 disponível começa em novembro de 2002, os anos de 1994 a 2001 foram removidos por não haver valores oficiais concretos nessa série.",
+    "abrangencia":
+      "Setor público consolidado: Governo Federal, Previdência Social, governos estaduais e municipais, empresas estatais das três esferas de governo e Banco Central do Brasil, com exclusões metodológicas da Petrobras e da Eletrobras conforme documentação oficial do BCB.",
+    "periodicidade":
+      "Mensal, em fluxo acumulado em 12 meses; para a série anual foram usados os valores de dezembro de cada ano.",
+    "eventos_externos": [
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao":
+          "A crise financeira internacional reduziu atividade econômica e arrecadação, levando a forte queda do superávit primário acumulado em 12 meses.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Reversão fiscal",
+        "descricao":
+          "O setor público consolidado passou de superávit para déficit primário anual, marcando deterioração fiscal relevante na série.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão fiscal",
+        "descricao":
+          "O déficit primário se aprofundou em meio à queda de receitas, recessão econômica e piora do resultado do Governo Central.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Covid-19",
+        "descricao":
+          "A pandemia elevou fortemente despesas primárias e reduziu receitas, produzindo o maior déficit primário da série.",
       },
       {
         "ano": 2023,
         "nome": "Precatórios",
         "descricao":
-          "A despesa de 2023 foi pressionada pelo crescimento de benefícios previdenciários e assistenciais e pelo pagamento extraordinário de passivos judiciais da União.",
-      },
-      {
-        "ano": 2024,
-        "nome": "Revisão EFP",
-        "descricao":
-          "A revisão metodológica de 2024 alterou a setorização do Governo Geral e retroagiu os dados desde 2010, impactando a comparabilidade com publicações anteriores.",
+          "O déficit primário aumentou com impacto de pagamentos extraordinários de precatórios e piora do resultado acumulado em 12 meses.",
       },
     ],
     "comparacao_paises":
-      "O Brasil apresenta despesa do Governo Geral em proporção do PIB elevada para uma economia emergente, próxima de níveis observados em economias avançadas em alguns anos. Comparações internacionais devem usar bases compatíveis, como FMI, OCDE e COFOG, pois diferenças de cobertura institucional e classificação funcional podem alterar a leitura.",
+      "Comparações internacionais diretas exigem cautela porque cada país pode usar abrangências fiscais, conceitos de governo e critérios contábeis diferentes. Em termos gerais, déficits primários persistentes indicam menor capacidade de estabilização da dívida pública em comparação com países que mantêm superávits primários recorrentes.",
     "nivel_confiabilidade":
-      "Alto para 2010-2025, pois os valores são publicados pelo Tesouro Nacional em metodologia MEFP 2014/GFSM 2014. Inexistente para 1994-2009 nessa série oficial comparável; por isso, esses anos foram removidos. Valores de 2025 foram mantidos por já constarem em publicação oficial de 4º trimestre de 2025, não como estimativa.",
+      "Muito alto para 2002 a 2025, pois os valores são derivados diretamente de série oficial mensal do Banco Central do Brasil. Inexistente para 1994 a 2001 dentro da série SGS 5793, por isso esses anos foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
         "titulo":
-          "Boletim Trimestral de Estatísticas Fiscais do Governo Geral - 2025 - 4º Trimestre - Tesouro Nacional",
+          "Banco Central do Brasil - SGS 5793 - NFSP sem desvalorização cambial (% PIB), resultado primário, setor público consolidado",
         "url":
-          "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2025/25",
+          "https://dadosabertos.bcb.gov.br/dataset/5793-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-primario---tota",
       },
       {
-        "titulo": "Estatísticas Fiscais do Governo Geral - Tesouro Nacional - 2025",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/54232",
+        "titulo": "Banco Central do Brasil - API JSON SGS 5793",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5793/dados?formato=json",
       },
       {
-        "titulo":
-          "Boletim Trimestral de Estatísticas Fiscais do Governo Geral - 2024 - 4º Trimestre - Tesouro Nacional",
-        "url":
-          "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2024/25",
+        "titulo": "Banco Central do Brasil - Estatísticas Fiscais",
+        "url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
       },
-      {
-        "titulo":
-          "Boletim Trimestral de Estatísticas Fiscais do Governo Geral - 2023 - 4º Trimestre - Tesouro Nacional",
-        "url":
-          "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2023/25",
-      },
-      {
-        "titulo":
-          "Boletim Trimestral de Estatísticas Fiscais do Governo Geral - 2022 - 4º Trimestre - Tesouro Nacional",
-        "url":
-          "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2022/25",
-      },
-      {
-        "titulo": "Revisão Metodológica das Estatísticas Fiscais do Governo Geral - Tesouro Nacional",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/22725",
-      },
-      { "titulo": "IMF DataMapper - Brazil", "url": "https://www.imf.org/external/datamapper/profile/BRA" },
     ],
     "dados": [
-      { "ano": 2010, "valor": 43 },
-      { "ano": 2011, "valor": 42.5 },
-      { "ano": 2012, "valor": 43.2 },
-      { "ano": 2013, "valor": 43.5 },
-      { "ano": 2014, "valor": 44.1 },
-      { "ano": 2015, "valor": 44.8 },
-      { "ano": 2016, "valor": 45.2 },
-      { "ano": 2017, "valor": 43.8 },
-      { "ano": 2018, "valor": 43.5 },
-      { "ano": 2019, "valor": 43.2 },
-      { "ano": 2020, "valor": 49.6 },
-      { "ano": 2021, "valor": 44.5 },
-      { "ano": 2022, "valor": 43.4 },
-      { "ano": 2023, "valor": 45.4 },
-      { "ano": 2024, "valor": 45.66 },
-      { "ano": 2025, "valor": 46.93 },
+      { "ano": 2002, "valor": 3.19 },
+      { "ano": 2003, "valor": 3.24 },
+      { "ano": 2004, "valor": 3.69 },
+      { "ano": 2005, "valor": 3.74 },
+      { "ano": 2006, "valor": 3.15 },
+      { "ano": 2007, "valor": 3.24 },
+      { "ano": 2008, "valor": 3.33 },
+      { "ano": 2009, "valor": 1.94 },
+      { "ano": 2010, "valor": 2.62 },
+      { "ano": 2011, "valor": 2.94 },
+      { "ano": 2012, "valor": 2.18 },
+      { "ano": 2013, "valor": 1.71 },
+      { "ano": 2014, "valor": -0.56 },
+      { "ano": 2015, "valor": -1.86 },
+      { "ano": 2016, "valor": -2.48 },
+      { "ano": 2017, "valor": -1.68 },
+      { "ano": 2018, "valor": -1.55 },
+      { "ano": 2019, "valor": -0.84 },
+      { "ano": 2020, "valor": -9.24 },
+      { "ano": 2021, "valor": 0.72 },
+      { "ano": 2022, "valor": 1.25 },
+      { "ano": 2023, "valor": -2.28 },
+      { "ano": 2024, "valor": -0.4 },
+      { "ano": 2025, "valor": -0.43 },
     ],
+  },
+  "resultado_nominal_pib": {
+    "label": "(BCB) Resultado Nominal",
+    "unidade": "% do PIB",
+    "fonte": "Banco Central do Brasil",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao":
+      "Saldo nominal do setor público consolidado como percentual do PIB, incluindo resultado primário e juros nominais apropriados.",
+    "como_interpretar":
+      "Na convenção deste gráfico, valores negativos indicam déficit nominal e valores positivos indicam superávit nominal. Quanto mais negativo, maior a necessidade de financiamento do setor público em relação ao PIB.",
+    "metodologia":
+      "Dados validados pela série SGS 5727 do Banco Central do Brasil: NFSP sem desvalorização cambial (% PIB), fluxo acumulado em 12 meses, resultado nominal, total, setor público consolidado. A série oficial do BCB apresenta a Necessidade de Financiamento do Setor Público positiva quando há déficit; para manter a convenção visual do gráfico como saldo fiscal, os valores foram convertidos para sinal negativo quando representam déficit.",
+    "historico_metodologia":
+      "A série SGS 5727 tem início em novembro de 2002, portanto os anos de 1994 a 2001 foram removidos por não estarem disponíveis nessa série oficial comparável. A abrangência foi alterada retroativamente a dezembro de 2001 para refletir a exclusão do Grupo Petrobras, a partir de maio de 2009, e do Grupo Eletrobras, a partir de novembro de 2010, conforme metadados do Banco Central. O indicador é apurado pela ótica do financiamento, metodologia abaixo da linha, com resultado primário pelo critério de caixa e juros nominais pelo critério de competência.",
+    "abrangencia":
+      "Setor público consolidado: Governo Federal, Previdência Social, Banco Central, governos estaduais, governos municipais e empresas estatais das três esferas, exceto estatais financeiras e, na série atual, exceto Grupo Petrobras e Grupo Eletrobras.",
+    "periodicidade": "Mensal, com uso do valor de dezembro como fechamento anual em fluxo acumulado em 12 meses.",
+    "eventos_externos": [
+      {
+        "ano": 2014,
+        "nome": "Deterioração fiscal",
+        "descricao":
+          "O déficit nominal aumentou para 5,95% do PIB, refletindo piora do resultado primário e elevação dos juros nominais.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Juros e swaps",
+        "descricao":
+          "O déficit nominal atingiu 10,22% do PIB, influenciado por juros nominais elevados, Selic alta, inflação e resultado das operações de swap cambial.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia provocou forte deterioração fiscal, com expansão de gastos emergenciais e queda de atividade, levando o déficit nominal a 13,34% do PIB.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Selic alta",
+        "descricao":
+          "O déficit nominal subiu para 8,84% do PIB, pressionado pelo custo dos juros nominais em ambiente de taxa Selic elevada.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Swaps cambiais",
+        "descricao":
+          "O déficit nominal ficou em 8,34% do PIB; segundo o Banco Central, a leve redução frente a 2024 decorreu da redução dos juros nominais apropriados, influenciada pelo resultado favorável das operações de swap cambial.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil tende a apresentar déficit nominal elevado em comparação com muitas economias emergentes, principalmente pelo peso estrutural dos juros nominais sobre a dívida pública. Para comparação internacional direta, recomenda-se usar bases harmonizadas como FMI Fiscal Monitor ou World Economic Outlook, pois a metodologia do BCB é específica para o setor público consolidado brasileiro.",
+    "nivel_confiabilidade":
+      "Muito alto para 2002 a 2025, pois os valores vêm diretamente da série oficial SGS 5727 do Banco Central do Brasil. Baixo ou insuficiente para 1994 a 2001 nesta mesma métrica, pois esses anos não constam na série oficial comparável usada; por isso foram removidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
     "padrao": false,
+    "fontes_links": [
+      {
+        "titulo":
+          "Banco Central do Brasil - SGS 5727 - NFSP sem desvalorização cambial (% PIB), resultado nominal, setor público consolidado",
+        "url":
+          "https://dadosabertos.bcb.gov.br/dataset/5727-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-nominal---total",
+      },
+      {
+        "titulo": "Banco Central do Brasil - API SGS 5727 em JSON",
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5727/dados?formato=json",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Estatísticas Fiscais - janeiro de 2026",
+        "url":
+          "https://www.bcb.gov.br/content/estatisticas/hist_estatisticasfiscais/202601_Texto_de_estatisticas_fiscais.pdf",
+      },
+      {
+        "titulo": "Banco Central do Brasil - Estatísticas Fiscais",
+        "url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
+      },
+    ],
+    "dados": [
+      { "ano": 2002, "valor": -4.42 },
+      { "ano": 2003, "valor": -5.18 },
+      { "ano": 2004, "valor": -2.88 },
+      { "ano": 2005, "valor": -3.54 },
+      { "ano": 2006, "valor": -3.57 },
+      { "ano": 2007, "valor": -2.74 },
+      { "ano": 2008, "valor": -1.99 },
+      { "ano": 2009, "valor": -3.19 },
+      { "ano": 2010, "valor": -2.41 },
+      { "ano": 2011, "valor": -2.47 },
+      { "ano": 2012, "valor": -2.26 },
+      { "ano": 2013, "valor": -2.96 },
+      { "ano": 2014, "valor": -5.95 },
+      { "ano": 2015, "valor": -10.22 },
+      { "ano": 2016, "valor": -8.98 },
+      { "ano": 2017, "valor": -7.77 },
+      { "ano": 2018, "valor": -6.96 },
+      { "ano": 2019, "valor": -5.81 },
+      { "ano": 2020, "valor": -13.34 },
+      { "ano": 2021, "valor": -4.26 },
+      { "ano": 2022, "valor": -4.57 },
+      { "ano": 2023, "valor": -8.84 },
+      { "ano": 2024, "valor": -8.47 },
+      { "ano": 2025, "valor": -8.34 },
+    ],
+  },
+  "receita_total_governo_pib": {
+    "label": "(FMI) Receita Total do Governo / PIB",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - World Economic Outlook (GGR_NGDP) / Government Finance Statistics",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a receita total do governo geral como proporção do PIB, incluindo impostos, contribuições sociais, transferências recebidas e outras receitas públicas.",
+    "como_interpretar": "Valores maiores indicam maior capacidade de arrecadação do governo em relação ao tamanho da economia. O indicador não mede qualidade do gasto público, eficiência tributária, carga tributária efetiva por faixa de renda nem sustentabilidade fiscal sozinho.",
+    "metodologia": "O FMI calcula o indicador como a receita total do governo geral dividida pelo PIB nominal do mesmo exercício fiscal, multiplicada por 100. A definição de receita segue o padrão de finanças públicas do FMI, incluindo tributos, contribuições sociais, grants e outras receitas. A unidade é percentual do PIB.",
+    "historico_metodologia": "A série GGR_NGDP do WEO segue conceitos padronizados de governo geral e pode ser revisada quando há atualização das contas nacionais, reclassificações fiscais, mudanças de cobertura institucional ou revisões do Government Finance Statistics Manual. Para evitar estimativas e projeções, foram mantidos apenas anos históricos consolidados disponíveis na série consultada; anos projetados ou sem dado histórico validável foram excluídos.",
+    "abrangencia": "Brasil, governo geral, abrangendo a receita pública consolidada em proporção ao PIB, conforme padronização internacional do FMI para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2014,
+        "nome": "Desaceleração",
+        "descricao": "A desaceleração da atividade econômica reduziu a base de arrecadação e coincidiu com queda relevante da receita total em proporção do PIB."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira afetou fortemente a arrecadação e coincidiu com a maior queda da série validada."
+      },
+      {
+        "ano": 2016,
+        "nome": "Ajuste parcial",
+        "descricao": "A recuperação parcial da razão receita/PIB ocorreu em meio a mudanças fiscais, inflação elevada e recomposição nominal de receitas."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 provocou choque econômico, queda de atividade e alterações temporárias na dinâmica fiscal."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A retomada econômica após o choque inicial da pandemia estabilizou a receita pública em proporção do PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Estabilidade",
+        "descricao": "A razão receita/PIB permaneceu próxima ao patamar dos anos imediatamente anteriores, indicando estabilidade relativa da arrecadação agregada."
+      }
+    ],
+    "comparacao_paises": "O Brasil aparece em faixa intermediária de receita pública em relação ao PIB: acima de muitos países emergentes com menor capacidade arrecadatória, mas geralmente abaixo de economias avançadas com Estados de bem-estar social mais amplos. A comparação deve considerar diferenças de cobertura institucional, federalismo, informalidade, estrutura tributária e metodologia fiscal.",
+    "nivel_confiabilidade": "Alto para comparação macrofiscal internacional, pois a série vem do FMI e segue conceitos padronizados de finanças públicas. A principal ressalva é que séries fiscais do governo geral podem sofrer revisões por mudanças de cobertura, reclassificação de receitas e atualização das contas nacionais. Anos não observados ou projetados foram excluídos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data - World Economic Outlook (WEO)",
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+      },
+      {
+        "titulo": "FMI DataMapper - Brazil",
+        "url": "https://www.imf.org/external/datamapper/profile/BRA"
+      },
+      {
+        "titulo": "FMI DataMapper API Documentation",
+        "url": "https://www.imf.org/external/datamapper/api/help"
+      },
+      {
+        "titulo": "FRED - General Government Revenue for Brazil, fonte original FMI",
+        "url": "https://fred.stlouisfed.org/series/BRAGGRGDP"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2011,
+        "valor": 35.1092059239
+      },
+      {
+        "ano": 2012,
+        "valor": 34.7038947879
+      },
+      {
+        "ano": 2013,
+        "valor": 34.4934822519
+      },
+      {
+        "ano": 2014,
+        "valor": 32.4950863064
+      },
+      {
+        "ano": 2015,
+        "valor": 28.2313849235
+      },
+      {
+        "ano": 2016,
+        "valor": 30.6677906311
+      },
+      {
+        "ano": 2017,
+        "valor": 30.5820850961
+      },
+      {
+        "ano": 2018,
+        "valor": 31.2600932218
+      },
+      {
+        "ano": 2019,
+        "valor": 30.7729028156
+      },
+      {
+        "ano": 2020,
+        "valor": 30.7391413658
+      },
+      {
+        "ano": 2021,
+        "valor": 30.5546932207
+      },
+      {
+        "ano": 2022,
+        "valor": 30.567330654
+      },
+      {
+        "ano": 2023,
+        "valor": 30.7002732277
+      },
+      {
+        "ano": 2024,
+        "valor": 30.6873230931
+      }
+    ]
+  },
+  "despesa_total_governo_pib": {
+    "label": "(FMI) Despesa Total do Governo / PIB",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO) / Government Finance Statistics (GFS)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa total do governo geral do Brasil como proporção do PIB no ano fiscal correspondente.",
+    "como_interpretar": "Valores maiores indicam maior participação das despesas do governo geral na economia. O indicador inclui despesas correntes, despesas de capital e juros pagos, quando aplicável à metodologia de governo geral. Não mede eficiência do gasto, qualidade dos serviços públicos, composição da despesa nem sustentabilidade fiscal isoladamente.",
+    "metodologia": "O FMI expressa a despesa total do governo geral como percentual do PIB correspondente ao ano fiscal. A série segue conceitos de finanças públicas usados no WEO e no GFS, com base em dados reportados por autoridades nacionais, missões do FMI e ajustes metodológicos de comparabilidade internacional. Foram mantidos apenas anos históricos com valores observados disponíveis publicamente, excluindo anos futuros ou marcados como projeções.",
+    "historico_metodologia": "A série do WEO é revisada a cada edição, podendo incorporar atualizações das contas nacionais, revisões fiscais, mudanças de cobertura institucional do governo geral, reclassificações entre despesas correntes e de capital e ajustes de consistência feitos pelo FMI. O próprio FAQ do WEO informa que dados históricos podem ser atualizados continuamente e que anos posteriores ao 'Latest Actual Annual Data' devem ser tratados como estimativas/projeções. Para evitar projeções, a série foi encerrada em 2024, último ano histórico disponível nas fontes consultadas.",
+    "abrangencia": "Brasil, governo geral, abrangendo os níveis de governo incluídos na definição consolidada usada pelo FMI para comparabilidade internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crise fiscal",
+        "descricao": "O aumento da despesa como proporção do PIB ocorreu em contexto de pressão cambial, juros elevados e deterioração fiscal anterior à mudança do regime cambial de 1999."
+      },
+      {
+        "ano": 2000,
+        "nome": "Ajuste fiscal",
+        "descricao": "A queda do indicador em 2000 coincide com o período posterior ao ajuste fiscal e à adoção de regras de responsabilidade fiscal no Brasil."
+      },
+      {
+        "ano": 2002,
+        "nome": "Choque eleitoral",
+        "descricao": "A elevação em 2002 ocorreu em ambiente de instabilidade financeira, alta de juros e aumento do custo fiscal associado à dívida pública."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional afetou a atividade econômica e elevou a razão despesa/PIB por queda do denominador e medidas anticíclicas."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015-2016 elevou a despesa como proporção do PIB em razão da contração da atividade econômica e da rigidez de gastos obrigatórios."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 ampliou gastos públicos emergenciais e reduziu a atividade econômica, pressionando a razão despesa/PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Consolidação fiscal",
+        "descricao": "O valor de 2024 mostra queda frente ao pico recente, em contexto de regras fiscais, contenção de despesas e normalização parcial após choques pandêmicos."
+      }
+    ],
+    "comparacao_paises": "O Brasil apresenta despesa total do governo como proporção do PIB em nível intermediário-alto para uma economia emergente: abaixo de economias avançadas europeias com Estados de bem-estar mais amplos, mas acima de muitas economias emergentes com menor cobertura previdenciária, social e federativa.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte primária é o FMI WEO/GFS. A principal ressalva é que séries fiscais do WEO podem ser revisadas e que a cobertura de governo geral depende da qualidade e abrangência dos dados nacionais reportados ao FMI.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+      },
+      {
+        "titulo": "FMI DataMapper - Brazil",
+        "url": "https://www.imf.org/external/datamapper/profile/BRA"
+      },
+      {
+        "titulo": "FRED / Federal Reserve Bank of St. Louis - General Government Total Expenditure for Brazil, fonte FMI",
+        "url": "https://fred.stlouisfed.org/series/BRAGGXGDP"
+      },
+      {
+        "titulo": "FMI WEO - Frequently Asked Questions",
+        "url": "https://data.imf.org/en/Datasets/WEO/Frequently-Asked-Questions"
+      },
+      {
+        "titulo": "FMI - World Economic Outlook Databases",
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1996,
+        "valor": 38.98
+      },
+      {
+        "ano": 1997,
+        "valor": 39.46
+      },
+      {
+        "ano": 1998,
+        "valor": 42.31
+      },
+      {
+        "ano": 1999,
+        "valor": 40.71
+      },
+      {
+        "ano": 2000,
+        "valor": 35.29
+      },
+      {
+        "ano": 2001,
+        "valor": 36.48
+      },
+      {
+        "ano": 2002,
+        "valor": 39.52
+      },
+      {
+        "ano": 2003,
+        "valor": 39.23
+      },
+      {
+        "ano": 2004,
+        "valor": 37.65
+      },
+      {
+        "ano": 2005,
+        "valor": 39.3
+      },
+      {
+        "ano": 2006,
+        "valor": 39.49
+      },
+      {
+        "ano": 2007,
+        "valor": 38.34
+      },
+      {
+        "ano": 2008,
+        "valor": 37.71
+      },
+      {
+        "ano": 2009,
+        "valor": 38.09
+      },
+      {
+        "ano": 2010,
+        "valor": 39.44
+      },
+      {
+        "ano": 2011,
+        "valor": 37.5761934289
+      },
+      {
+        "ano": 2012,
+        "valor": 37.2231414077
+      },
+      {
+        "ano": 2013,
+        "valor": 37.4487126748
+      },
+      {
+        "ano": 2014,
+        "valor": 38.5160104461
+      },
+      {
+        "ano": 2015,
+        "valor": 38.4852692611
+      },
+      {
+        "ano": 2016,
+        "valor": 39.6649059349
+      },
+      {
+        "ano": 2017,
+        "valor": 38.4770057609
+      },
+      {
+        "ano": 2018,
+        "valor": 38.4909950191
+      },
+      {
+        "ano": 2019,
+        "valor": 38.2982901838
+      },
+      {
+        "ano": 2020,
+        "valor": 37.6828226251
+      },
+      {
+        "ano": 2021,
+        "valor": 37.1091039795
+      },
+      {
+        "ano": 2022,
+        "valor": 36.9679814783
+      },
+      {
+        "ano": 2023,
+        "valor": 36.8398534184
+      },
+      {
+        "ano": 2024,
+        "valor": 36.4260913565
+      }
+    ]
+  },
+  "receita_tributaria_pib": {
+    "label": "(OCDE) Receita Tributária / PIB",
+    "unidade": "% do PIB",
+    "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean; Banco Mundial - World Development Indicators (GC.TAX.TOTL.GD.ZS) como referência metodológica complementar",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a receita tributária total do Brasil como proporção do PIB, segundo a metodologia internacional de estatísticas de receita da OCDE.",
+    "como_interpretar": "Valores maiores indicam maior arrecadação tributária em relação ao tamanho da economia. O indicador mede carga tributária agregada, não mede qualidade do gasto público, eficiência tributária, progressividade, informalidade, nem retorno social dos tributos.",
+    "metodologia": "A OCDE calcula o indicador como a razão entre a receita tributária total e o PIB nominal. Na metodologia da OCDE, tributos são pagamentos compulsórios e sem contraprestação direta ao governo geral, incluindo receitas líquidas de todos os níveis de governo. O WDI GC.TAX.TOTL.GD.ZS é usado apenas como referência complementar, pois sua definição é mais restrita e pode excluir a maior parte das contribuições sociais e, em muitos casos, refletir governo central, não a carga tributária total do governo geral.",
+    "historico_metodologia": "A série segue a metodologia da OCDE Revenue Statistics, aplicada à América Latina e Caribe em cooperação com CEPAL, CIAT e BID. A OCDE informa que a base compila estatísticas comparáveis de receita tributária desde 1990, mas os valores diretamente validados nas fontes oficiais consultadas para o Brasil estão disponíveis no recorte comparável de 2000 a 2023. Não foram incluídos valores de 1994 a 1999 nem 2024 porque não foram confirmados com segurança nas fontes oficiais consultadas para esta métrica ampla da OCDE.",
+    "abrangencia": "Brasil, governo geral, incluindo receitas tributárias líquidas dos diferentes níveis de governo segundo a classificação da OCDE.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Mínimo recente",
+        "descricao": "A OCDE informa que, desde 2000, o menor valor da razão receita tributária/PIB do Brasil foi 29,4% em 2000."
+      },
+      {
+        "ano": 2007,
+        "nome": "Pico pré-crise",
+        "descricao": "A OCDE informa que o maior valor da série brasileira desde 2000 foi 32,8% em 2007."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional coincidiu com queda da razão receita tributária/PIB no Brasil, refletindo desaceleração da atividade econômica e da arrecadação."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e a arrecadação, reduzindo a razão receita tributária/PIB em relação aos anos imediatamente anteriores."
+      },
+      {
+        "ano": 2023,
+        "nome": "Queda tributária",
+        "descricao": "A OCDE informa que a razão receita tributária/PIB do Brasil caiu de 32,5% em 2022 para 32,0% em 2023, em um contexto regional de desaceleração econômica e menor receita de imposto de renda associada a preços menores de recursos naturais não renováveis."
+      }
+    ],
+    "comparacao_paises": "Em 2023, o Brasil registrou 32,0% do PIB, acima da média da América Latina e Caribe de 21,3% em 10,7 pontos percentuais, e abaixo da média da OCDE de 33,9%. Entre os países latino-americanos e caribenhos comparados pela OCDE em 2023, o Brasil aparece entre os maiores níveis de receita tributária em relação ao PIB.",
+    "nivel_confiabilidade": "Alto para 2000-2023, pois os valores vêm de publicação oficial da OCDE, CEPAL, CIAT e BID, com metodologia padronizada internacionalmente. A precisão é limitada a uma casa decimal porque os valores foram validados a partir da publicação oficial resumida da OCDE para o Brasil; valores de 1994-1999 e 2024 não foram incluídos por não estarem seguramente confirmados nas fontes oficiais consultadas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "OCDE - Global Revenue Statistics Database",
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
+        "url": "https://doi.org/10.1787/7594fbdd-en"
+      },
+      {
+        "titulo": "Banco Mundial - Tax revenue (% of GDP) - GC.TAX.TOTL.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata GC.TAX.TOTL.GD.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.TAX.TOTL.GD.ZS"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 29.4
+      },
+      {
+        "ano": 2001,
+        "valor": 30.5
+      },
+      {
+        "ano": 2002,
+        "valor": 31.4
+      },
+      {
+        "ano": 2003,
+        "valor": 30.6
+      },
+      {
+        "ano": 2004,
+        "valor": 31.6
+      },
+      {
+        "ano": 2005,
+        "valor": 32.8
+      },
+      {
+        "ano": 2006,
+        "valor": 32.5
+      },
+      {
+        "ano": 2007,
+        "valor": 32.8
+      },
+      {
+        "ano": 2008,
+        "valor": 32.8
+      },
+      {
+        "ano": 2009,
+        "valor": 31.1
+      },
+      {
+        "ano": 2010,
+        "valor": 31.7
+      },
+      {
+        "ano": 2011,
+        "valor": 32.7
+      },
+      {
+        "ano": 2012,
+        "valor": 31.8
+      },
+      {
+        "ano": 2013,
+        "valor": 31.9
+      },
+      {
+        "ano": 2014,
+        "valor": 31.1
+      },
+      {
+        "ano": 2015,
+        "valor": 31.4
+      },
+      {
+        "ano": 2016,
+        "valor": 31.8
+      },
+      {
+        "ano": 2017,
+        "valor": 31.9
+      },
+      {
+        "ano": 2018,
+        "valor": 32.2
+      },
+      {
+        "ano": 2019,
+        "valor": 32.2
+      },
+      {
+        "ano": 2020,
+        "valor": 31.0
+      },
+      {
+        "ano": 2021,
+        "valor": 32.3
+      },
+      {
+        "ano": 2022,
+        "valor": 32.5
+      },
+      {
+        "ano": 2023,
+        "valor": 32.0
+      }
+    ]
+  },
+  "composicao_receita_tributaria_bens_servicos": {
+    "label": "(OCDE) Composição da Receita Tributária — Bens e Serviços",
+    "unidade": "% da receita tributária total",
+    "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a participação dos impostos sobre bens e serviços, categoria OCDE 5000, no total da receita tributária do Brasil.",
+    "como_interpretar": "Valores maiores indicam maior dependência relativa da arrecadação brasileira sobre tributação de consumo, bens e serviços. Valores menores indicam maior peso relativo de outras bases tributárias, como renda, lucros, contribuições sociais, propriedade, folha de pagamento ou outros tributos.",
+    "metodologia": "A OCDE classifica as receitas tributárias segundo sua base econômica. Para compatibilizar o atributo 'composição da receita tributária' com o schema de série única em 'valor: number', foi usada a categoria padronizada 5000, 'taxes on goods and services', expressa como percentual da receita tributária total do governo geral. O indicador é calculado como receita da categoria 5000 dividida pela receita tributária total, multiplicada por 100.",
+    "historico_metodologia": "A série segue a classificação de tributos da OCDE e o Interpretative Guide usado nas publicações Revenue Statistics. A metodologia considera impostos como pagamentos compulsórios e sem contrapartida direta ao governo geral; contribuições obrigatórias de seguridade social pagas ao governo geral são tratadas como tributos. Revisões podem ocorrer por atualização de contas nacionais, reclassificação de receitas, mudanças de cobertura institucional ou revisão dos dados reportados por autoridades nacionais. A edição de 2025 cobre dados observados até 2023; por isso não há valor validado para 2024 ou 2025 nesta série.",
+    "abrangencia": "Brasil, governo geral, receita tributária classificada conforme metodologia OCDE para comparação internacional com países da América Latina, Caribe, OCDE e demais economias do Global Revenue Statistics.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1999,
+        "nome": "Crise cambial",
+        "descricao": "A mudança do regime cambial e a desaceleração econômica afetaram a composição da arrecadação, com impacto relativo sobre bases de consumo, comércio e renda."
+      },
+      {
+        "ano": 2003,
+        "nome": "Reformas tributárias",
+        "descricao": "Mudanças tributárias federais e ajustes na arrecadação de contribuições influenciaram a distribuição relativa entre tributos sobre consumo, renda e contribuições sociais."
+      },
+      {
+        "ano": 2008,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional alterou a atividade econômica e a composição das bases tributárias, afetando a participação relativa dos tributos sobre bens e serviços."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu a atividade econômica e alterou a composição da arrecadação tributária entre consumo, renda, lucros e contribuições."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 reduziu a atividade econômica e afetou especialmente bases ligadas ao consumo e à circulação de bens e serviços."
+      },
+      {
+        "ano": 2023,
+        "nome": "Reforma consumo",
+        "descricao": "A aprovação da reforma da tributação sobre consumo no Brasil criou a transição para CBS e IBS, embora seus efeitos quantitativos principais ocorram apenas em anos posteriores à série observada."
+      }
+    ],
+    "comparacao_paises": "O Brasil mantém participação elevada de tributos sobre bens e serviços na receita tributária total. Esse perfil é mais próximo do padrão médio da América Latina e do Caribe, que depende mais da tributação sobre consumo, e difere do padrão médio da OCDE, onde impostos sobre renda, lucros e contribuições sociais têm peso relativo maior.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a série usa classificação harmonizada da OCDE e dados oficiais reportados por autoridades nacionais. A principal ressalva é que a composição tributária é multissérie por natureza; este JSON representa apenas a categoria OCDE 5000, impostos sobre bens e serviços, para manter compatibilidade com o campo numérico único 'valor'.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "OCDE - Global Revenue Statistics Database",
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+      },
+      {
+        "titulo": "OCDE Data Explorer - Brazil Tax Revenues",
+        "url": "https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&lc=en"
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
+        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html"
+      },
+      {
+        "titulo": "OCDE - OECD Classification of Taxes and Interpretative Guide",
+        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2024_33e226ae-en/full-report/component-10.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 47.8
+      },
+      {
+        "ano": 1995,
+        "valor": 47.1
+      },
+      {
+        "ano": 1996,
+        "valor": 46.7
+      },
+      {
+        "ano": 1997,
+        "valor": 46.2
+      },
+      {
+        "ano": 1998,
+        "valor": 45.9
+      },
+      {
+        "ano": 1999,
+        "valor": 46.5
+      },
+      {
+        "ano": 2000,
+        "valor": 45.8
+      },
+      {
+        "ano": 2001,
+        "valor": 45.4
+      },
+      {
+        "ano": 2002,
+        "valor": 45.1
+      },
+      {
+        "ano": 2003,
+        "valor": 44.3
+      },
+      {
+        "ano": 2004,
+        "valor": 43.9
+      },
+      {
+        "ano": 2005,
+        "valor": 43.5
+      },
+      {
+        "ano": 2006,
+        "valor": 43.2
+      },
+      {
+        "ano": 2007,
+        "valor": 42.9
+      },
+      {
+        "ano": 2008,
+        "valor": 42.5
+      },
+      {
+        "ano": 2009,
+        "valor": 43.1
+      },
+      {
+        "ano": 2010,
+        "valor": 42.4
+      },
+      {
+        "ano": 2011,
+        "valor": 42.1
+      },
+      {
+        "ano": 2012,
+        "valor": 41.8
+      },
+      {
+        "ano": 2013,
+        "valor": 41.5
+      },
+      {
+        "ano": 2014,
+        "valor": 41.1
+      },
+      {
+        "ano": 2015,
+        "valor": 40.8
+      },
+      {
+        "ano": 2016,
+        "valor": 40.6
+      },
+      {
+        "ano": 2017,
+        "valor": 40.2
+      },
+      {
+        "ano": 2018,
+        "valor": 39.9
+      },
+      {
+        "ano": 2019,
+        "valor": 39.7
+      },
+      {
+        "ano": 2020,
+        "valor": 39.2
+      },
+      {
+        "ano": 2021,
+        "valor": 39.5
+      },
+      {
+        "ano": 2022,
+        "valor": 39.1
+      },
+      {
+        "ano": 2023,
+        "valor": 38.8
+      }
+    ],
+    "padrao": false
+  },
+  "despesa_juros_receita": {
+    "label": "(WDI/FMI) Despesa Com Juros Sobre Receita",
+    "unidade": "% da receita do governo central",
+    "fonte": "Banco Mundial - World Development Indicators, com dados do FMI Government Finance Statistics Yearbook and data files",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede quanto os pagamentos de juros da dívida do governo central representam em relação à receita pública.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior da receita do governo é consumida por pagamentos de juros, reduzindo o espaço fiscal para despesas primárias, investimento público ou redução de déficit. O indicador não mede sozinho solvência fiscal, qualidade do gasto, composição da dívida ou sustentabilidade intertemporal.",
+    "metodologia": "O Banco Mundial reproduz a série GC.XPN.INTP.RV.ZS do World Development Indicators, baseada no FMI Government Finance Statistics. O numerador inclui pagamentos de juros sobre dívida pública, incluindo títulos, empréstimos de longo prazo e outros instrumentos de dívida, pagos a residentes e não residentes. O denominador é a receita do governo, definida como transações que aumentam o valor econômico líquido de uma unidade ou setor. O valor é expresso como percentual da receita.",
+    "historico_metodologia": "A série segue a estrutura do Government Finance Statistics do FMI. O manual GFS 2014, harmonizado com o SNA 2008, recomenda registro em competência e cobertura padronizada de fluxos fiscais. A própria documentação do WDI alerta que, para muitos países, dados de governo central podem não cobrir todas as unidades governamentais e que estatísticas fiscais podem ser incompletas, defasadas ou não totalmente comparáveis entre países. Para o Brasil, a série observada disponível no WDI para este indicador começa em 2010; não há valores observados de 1994 a 2009 na página oficial consultada.",
+    "abrangencia": "Brasil, governo central, conforme padronização do World Development Indicators/FMI GFS. A série não representa necessariamente o setor público consolidado nem o governo geral completo.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015 coincidiu com forte aumento da razão entre pagamentos de juros e receita, chegando ao maior valor da série observada."
+      },
+      {
+        "ano": 2016,
+        "nome": "Contração fiscal",
+        "descricao": "A continuidade da recessão e o elevado custo da dívida mantiveram a despesa com juros em patamar muito alto em relação à receita."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e as contas públicas; a série mostra queda relativa da razão juros/receita em 2020, em meio a mudanças excepcionais de receita, despesa e política monetária."
+      },
+      {
+        "ano": 2021,
+        "nome": "Alta Selic",
+        "descricao": "O início do ciclo de aperto monetário no Brasil aumentou gradualmente o custo de rolagem e carregamento da dívida, com reflexos posteriores sobre o peso dos juros."
+      },
+      {
+        "ano": 2023,
+        "nome": "Juros altos",
+        "descricao": "A manutenção de juros nominais elevados coincidiu com nova alta da razão entre despesa com juros e receita."
+      },
+      {
+        "ano": 2024,
+        "nome": "Patamar elevado",
+        "descricao": "Mesmo com leve queda frente a 2023, o indicador permaneceu elevado, acima de 30% da receita."
+      }
+    ],
+    "comparacao_paises": "O Brasil aparece entre países com carga de juros relativamente alta sobre a receita pública. Em 2024, o valor de 30,1% ficou muito acima do observado em economias avançadas com menor custo de dívida e também acima de muitos emergentes, indicando forte pressão fiscal por juros. A comparação exige cautela porque a série WDI/FMI pode variar em cobertura institucional, base contábil e abrangência fiscal entre países.",
+    "nivel_confiabilidade": "Alto para a série observada disponível no WDI/FMI GFS, por ser fonte oficial internacional e padronizada. A confiabilidade é menor para comparação internacional estrita, pois a própria documentação do WDI informa limitações de cobertura, consolidação, tempestividade e comparabilidade entre países. Valores ausentes de 1994 a 2009 foram excluídos, sem interpolação ou estimativa.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Interest payments (% of revenue) - Brazil - GC.XPN.INTP.RV.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata GC.XPN.INTP.RV.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.XPN.INTP.RV.ZS"
+      },
+      {
+        "titulo": "Banco Mundial - World Development Indicators DataBank",
+        "url": "https://databank.worldbank.org/source/world-development-indicators"
+      },
+      {
+        "titulo": "FMI - Government Finance Statistics",
+        "url": "https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA%3AGFS"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 24.16
+      },
+      {
+        "ano": 2011,
+        "valor": 26.01
+      },
+      {
+        "ano": 2012,
+        "valor": 23.17
+      },
+      {
+        "ano": 2013,
+        "valor": 24
+      },
+      {
+        "ano": 2014,
+        "valor": 26.93
+      },
+      {
+        "ano": 2015,
+        "valor": 39.91
+      },
+      {
+        "ano": 2016,
+        "valor": 37
+      },
+      {
+        "ano": 2017,
+        "valor": 35.9
+      },
+      {
+        "ano": 2018,
+        "valor": 34.1
+      },
+      {
+        "ano": 2019,
+        "valor": 27.4
+      },
+      {
+        "ano": 2020,
+        "valor": 25.5
+      },
+      {
+        "ano": 2021,
+        "valor": 27.1
+      },
+      {
+        "ano": 2022,
+        "valor": 28.9
+      },
+      {
+        "ano": 2023,
+        "valor": 30.8
+      },
+      {
+        "ano": 2024,
+        "valor": 30.1
+      }
+    ],
+    "padrao": false
+  },
+  "tributacao_indireta_total": {
+    "label": "(STN) Peso dos Impostos sobre Consumo",
+    "unidade": "% da arrecadação tributária total",
+    "fonte": "Tesouro Nacional (STN) / OCDE-CIAT Revenue Statistics LAC",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Participação dos impostos sobre bens e serviços na Carga Tributária Bruta total do Governo Geral.",
+    "como_interpretar":
+      "Quanto maior o percentual, maior a dependência da arrecadação tributária em impostos incidentes sobre consumo, produção, circulação, serviços, comércio exterior e operações financeiras. Percentuais elevados indicam maior peso relativo de tributos indiretos na estrutura tributária.",
+    "metodologia":
+      "Cálculo feito pela razão entre a arrecadação de 'Impostos sobre bens e serviços' e a 'Carga Tributária Bruta Total - Governo Geral', ambos em R$ milhões correntes, conforme a base oficial da STN. Fórmula: valor = (Impostos sobre bens e serviços / Carga Tributária Bruta Total do Governo Geral) * 100.",
+    "historico_metodologia":
+      "A série validada usa a base oficial da STN publicada em 2026 para a Carga Tributária Bruta do Governo Geral, seguindo o padrão GFSM 2014 do FMI. A STN informa que a série revisada exclui FGTS e Sistema S da carga tributária, classificando-os como pagamentos compulsórios não tributários. Por isso, foram mantidos apenas os anos disponíveis na base revisada da STN com valores anuais completos, de 2010 a 2024. O dado de 2025 foi removido por estar identificado pela própria STN como preliminar/estimativa.",
+    "abrangencia":
+      "Governo Geral: Governo Central, governos estaduais, Distrito Federal e governos municipais, em base consolidada nacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia reduziu a atividade econômica e afetou a arrecadação de impostos sobre bens e serviços, especialmente tributos ligados a produção, consumo e serviços.",
+      },
+      {
+        "ano": 2022,
+        "nome": "LC 194",
+        "descricao":
+          "A Lei Complementar 194/2022 reduziu a arrecadação de ICMS ao limitar a tributação estadual sobre combustíveis, energia elétrica, comunicações e transporte coletivo.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Efeito ICMS",
+        "descricao":
+          "A STN atribui parte relevante da queda da carga estadual em 2023 à continuidade dos efeitos da LC 194/2022 sobre o ICMS.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Reoneração",
+        "descricao":
+          "A STN aponta recomposição de desonerações sobre combustíveis, aumento de COFINS, IPI vinculado à importação, reoneração do ICMS sobre combustíveis e crescimento de vendas como fatores de alta dos impostos sobre bens e serviços.",
+      },
+    ],
+    "comparacao_paises":
+      "Segundo a OCDE, em 2023 os impostos sobre bens e serviços representaram quase metade da arrecadação tributária total média da América Latina e Caribe, enquanto na OCDE representaram 31,5% em 2022. O Brasil, pela base STN revisada, ficou em 41,45% em 2023 e 43,04% em 2024, acima da média da OCDE e abaixo da média regional latino-americana.",
+    "nivel_confiabilidade":
+      "Alto para 2010-2024, pois os valores foram recalculados diretamente a partir da base oficial da STN em R$ milhões correntes. Médio para comparações internacionais, pois a OCDE usa classificação harmonizada própria e a comparação deve ser interpretada como estrutural, não como reprodução exata da série STN. O ano de 2025 foi excluído por ser preliminar/estimativa.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Tesouro Transparente - Carga Tributária do Governo Geral 2025 - Base CTB GG.xlsx",
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/carga-tributaria-do-governo-geral/2025/114",
+      },
+      {
+        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,32% do PIB em 2024",
+        "url":
+          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-32-do-pib-em-2024",
+      },
+      {
+        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,40% do PIB em 2025",
+        "url":
+          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-40-do-pib-em-2025",
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html",
+      },
+      {
+        "titulo": "OCDE - Brazil Country Note 2025",
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_111c5149-en/brazil_f6a5cb34-en.html",
+      },
+    ],
+    "dados": [
+      { "ano": 2010, "valor": 48.73 },
+      { "ano": 2011, "valor": 47.4 },
+      { "ano": 2012, "valor": 47.76 },
+      { "ano": 2013, "valor": 47.33 },
+      { "ano": 2014, "valor": 46.75 },
+      { "ano": 2015, "valor": 46.68 },
+      { "ano": 2016, "valor": 45.31 },
+      { "ano": 2017, "valor": 46.21 },
+      { "ano": 2018, "valor": 46.69 },
+      { "ano": 2019, "valor": 45.77 },
+      { "ano": 2020, "valor": 45.04 },
+      { "ano": 2021, "valor": 45.68 },
+      { "ano": 2022, "valor": 42.22 },
+      { "ano": 2023, "valor": 41.45 },
+      { "ano": 2024, "valor": 43.04 },
+    ],
   },
   "carga_tributaria_pib": {
-    "label": "Carga tributária bruta",
+    "label": "(RFB) Carga tributária bruta",
     "unidade": "% do PIB",
     "fonte": "Receita Federal do Brasil (RFB); Secretaria do Tesouro Nacional (STN); IBGE",
     "cat": "Finanças Públicas e Tributação",
@@ -6996,97 +7966,6 @@
       { "ano": 2024, "valor": 32.32 },
     ],
     "padrao": false,
-  },
-  "tributacao_indireta_total": {
-    "label": "Peso dos Impostos sobre Consumo",
-    "unidade": "% da arrecadação tributária total",
-    "fonte": "Tesouro Nacional (STN) / OCDE-CIAT Revenue Statistics LAC",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao": "Participação dos impostos sobre bens e serviços na Carga Tributária Bruta total do Governo Geral.",
-    "como_interpretar":
-      "Quanto maior o percentual, maior a dependência da arrecadação tributária em impostos incidentes sobre consumo, produção, circulação, serviços, comércio exterior e operações financeiras. Percentuais elevados indicam maior peso relativo de tributos indiretos na estrutura tributária.",
-    "metodologia":
-      "Cálculo feito pela razão entre a arrecadação de 'Impostos sobre bens e serviços' e a 'Carga Tributária Bruta Total - Governo Geral', ambos em R$ milhões correntes, conforme a base oficial da STN. Fórmula: valor = (Impostos sobre bens e serviços / Carga Tributária Bruta Total do Governo Geral) * 100.",
-    "historico_metodologia":
-      "A série validada usa a base oficial da STN publicada em 2026 para a Carga Tributária Bruta do Governo Geral, seguindo o padrão GFSM 2014 do FMI. A STN informa que a série revisada exclui FGTS e Sistema S da carga tributária, classificando-os como pagamentos compulsórios não tributários. Por isso, foram mantidos apenas os anos disponíveis na base revisada da STN com valores anuais completos, de 2010 a 2024. O dado de 2025 foi removido por estar identificado pela própria STN como preliminar/estimativa.",
-    "abrangencia":
-      "Governo Geral: Governo Central, governos estaduais, Distrito Federal e governos municipais, em base consolidada nacional.",
-    "periodicidade": "Anual.",
-    "eventos_externos": [
-      {
-        "ano": 2020,
-        "nome": "COVID-19",
-        "descricao":
-          "A pandemia reduziu a atividade econômica e afetou a arrecadação de impostos sobre bens e serviços, especialmente tributos ligados a produção, consumo e serviços.",
-      },
-      {
-        "ano": 2022,
-        "nome": "LC 194",
-        "descricao":
-          "A Lei Complementar 194/2022 reduziu a arrecadação de ICMS ao limitar a tributação estadual sobre combustíveis, energia elétrica, comunicações e transporte coletivo.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Efeito ICMS",
-        "descricao":
-          "A STN atribui parte relevante da queda da carga estadual em 2023 à continuidade dos efeitos da LC 194/2022 sobre o ICMS.",
-      },
-      {
-        "ano": 2024,
-        "nome": "Reoneração",
-        "descricao":
-          "A STN aponta recomposição de desonerações sobre combustíveis, aumento de COFINS, IPI vinculado à importação, reoneração do ICMS sobre combustíveis e crescimento de vendas como fatores de alta dos impostos sobre bens e serviços.",
-      },
-    ],
-    "comparacao_paises":
-      "Segundo a OCDE, em 2023 os impostos sobre bens e serviços representaram quase metade da arrecadação tributária total média da América Latina e Caribe, enquanto na OCDE representaram 31,5% em 2022. O Brasil, pela base STN revisada, ficou em 41,45% em 2023 e 43,04% em 2024, acima da média da OCDE e abaixo da média regional latino-americana.",
-    "nivel_confiabilidade":
-      "Alto para 2010-2024, pois os valores foram recalculados diretamente a partir da base oficial da STN em R$ milhões correntes. Médio para comparações internacionais, pois a OCDE usa classificação harmonizada própria e a comparação deve ser interpretada como estrutural, não como reprodução exata da série STN. O ano de 2025 foi excluído por ser preliminar/estimativa.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "Tesouro Transparente - Carga Tributária do Governo Geral 2025 - Base CTB GG.xlsx",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/carga-tributaria-do-governo-geral/2025/114",
-      },
-      {
-        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,32% do PIB em 2024",
-        "url":
-          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-32-do-pib-em-2024",
-      },
-      {
-        "titulo": "STN - Carga Tributária Bruta do Governo Geral atinge 32,40% do PIB em 2025",
-        "url":
-          "https://www.gov.br/tesouronacional/pt-br/noticias/carga-tributaria-bruta-do-governo-geral-atinge-32-40-do-pib-em-2025",
-      },
-      {
-        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
-        "url":
-          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html",
-      },
-      {
-        "titulo": "OCDE - Brazil Country Note 2025",
-        "url":
-          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_111c5149-en/brazil_f6a5cb34-en.html",
-      },
-    ],
-    "dados": [
-      { "ano": 2010, "valor": 48.73 },
-      { "ano": 2011, "valor": 47.4 },
-      { "ano": 2012, "valor": 47.76 },
-      { "ano": 2013, "valor": 47.33 },
-      { "ano": 2014, "valor": 46.75 },
-      { "ano": 2015, "valor": 46.68 },
-      { "ano": 2016, "valor": 45.31 },
-      { "ano": 2017, "valor": 46.21 },
-      { "ano": 2018, "valor": 46.69 },
-      { "ano": 2019, "valor": 45.77 },
-      { "ano": 2020, "valor": 45.04 },
-      { "ano": 2021, "valor": 45.68 },
-      { "ano": 2022, "valor": 42.22 },
-      { "ano": 2023, "valor": 41.45 },
-      { "ano": 2024, "valor": 43.04 },
-    ],
   },
   "custo_conformidade_horas": {
     "label": "(WDI) Tempo Gasto com Impostos",
@@ -7236,69 +8115,6 @@
       { "ano": 2024, "valor": 30 },
       { "ano": 2025, "valor": 30 },
     ],
-  },
-  "irbes_br_pontos": {
-    "label": "(IBPT) Índice de Retorno de Bem-Estar à Sociedade (IRBES)",
-    "unidade": "pontos",
-    "fonte": "IBPT (Instituto Brasileiro de Planejamento e Tributação)",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao":
-      "Índice criado pelo IBPT para comparar, entre os 30 países com maior carga tributária, a relação entre arrecadação tributária sobre o PIB e desenvolvimento humano medido pelo IDH.",
-    "como_interpretar":
-      "Quanto maior o IRBES, melhor o retorno relativo dos tributos em bem-estar social. O ranking é ordenado em ordem decrescente: países com maior pontuação são interpretados como tendo melhor retorno social da arrecadação.",
-    "metodologia":
-      "O IRBES é calculado pelo IBPT a partir da combinação da carga tributária sobre o PIB, com peso de 15%, e do IDH, com peso de 85%. A carga tributária usada no estudo é obtida em bases da OCDE e o IDH em bases da ONU/PNUD. O universo comparado é restrito aos 30 países com maior carga tributária.",
-    "historico_metodologia":
-      "A série oficial disponível do IBPT começa em 2011; não há dados oficiais do IRBES para 1994 a 2010. A metodologia declarada nas edições consultadas mantém a estrutura geral de comparação entre carga tributária/PIB e IDH, com pesos de 15% e 85%, respectivamente. A seleção dos países depende dos 30 países com maior carga tributária em cada edição, o que pode alterar a composição do ranking ao longo do tempo.",
-    "abrangencia":
-      "Brasil comparado aos 30 países com maior carga tributária do mundo segundo o critério adotado pelo IBPT. O indicador não mede todos os países do mundo nem todos os determinantes de bem-estar; compara apenas carga tributária/PIB e IDH dentro desse grupo.",
-    "periodicidade":
-      "Publicação quase anual, com defasagem entre o ano-base dos dados de carga tributária/IDH e a data de publicação do estudo.",
-    "eventos_externos": [],
-    "comparacao_paises":
-      "Nas edições oficiais consultadas, o Brasil permanece na 30ª posição. Na 13ª edição, com dados de 2022, o Brasil teve IRBES de 142,35, enquanto a Irlanda liderou com 171,72. Na 14ª edição, com dados de 2023, o IBPT informa que o Brasil continuou em último lugar e que a Irlanda liderou pela sétima vez consecutiva.",
-    "nivel_confiabilidade":
-      "Médio-alto para os valores do IRBES explicitamente publicados pelo IBPT. A confiabilidade é menor do que a de uma série estatística governamental ou multilateral, porque o IRBES é um índice proprietário do IBPT, com metodologia sintética e forte dependência de escolhas de ponderação. Foram mantidos apenas valores diretamente publicados em estudo do IBPT; valores não localizados de forma explícita em fonte primária foram removidos.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "fontes_links": [
-      {
-        "titulo": "IBPT - Estudo IRBES 14ª Edição (dados 2023)",
-        "url": "https://ibpt.org.br/estudo-irbes-14a-edicao-idh-e-carga-tributaria-pib-dados-de-2023-maio-2025/",
-      },
-      {
-        "titulo": "IBPT - Brasil lidera ranking de pior retorno dos tributos",
-        "url":
-          "https://ibpt.org.br/brasil-lidera-ranking-de-pior-retorno-dos-tributos-a-populacao-entre-os-paises-com-maior-carga-tributaria/",
-      },
-      {
-        "titulo": "IBPT/Poder360 - Estudo sobre carga tributária/PIB x IDH, 13ª edição",
-        "url": "https://static.poder360.com.br/2024/05/ESTUDO-SOBRE-CARGA-TRIBUTARIA.docx-pff.pdf",
-      },
-      {
-        "titulo": "IBPT - Estudo sobre carga tributária/PIB x IDH 2023",
-        "url": "https://www.ibpt.org.br/estudo-sobre-carga-tributaria-pib-x-idh-2023/",
-      },
-      {
-        "titulo": "CFA - Carga Tributária: imposto alto, pouca entrega de serviços",
-        "url": "https://cfa.org.br/imposto-alto-pouca-entrega/",
-      },
-    ],
-    "dados": [
-      { "ano": 2011, "valor": 134.02 },
-      { "ano": 2012, "valor": 135.83 },
-      { "ano": 2012, "valor": 134.61 },
-      { "ano": 2013, "valor": 135.63 },
-      { "ano": 2014, "valor": 135.34 },
-      { "ano": 2015, "valor": 137.94 },
-      { "ano": 2017, "valor": 140.48 },
-      { "ano": 2018, "valor": 139.14 },
-      { "ano": 2019, "valor": 140.13 },
-      { "ano": 2020, "valor": 139.19 },
-      { "ano": 2022, "valor": 142.29 },
-      { "ano": 2023, "valor": 140.11 },
-      { "ano": 2024, "valor": 142.35 },
-    ],
-    "padrao": false,
   },
   "expectativa_vida_ao_nascer": {
     "label": "(WDI) Expectativa de Vida ao Nascer",
