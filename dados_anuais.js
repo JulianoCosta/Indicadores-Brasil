@@ -10460,1644 +10460,1155 @@
       { "ano": 2024, "valor": 1.0 },
     ],
   },
-  "expectativa_vida": {
-    "label": "(IBGE) Expectativa de vida ao nascer",
+  "expectativa_vida_ao_nascer": {
+    "label": "(WDI) Expectativa de Vida ao Nascer",
     "unidade": "anos",
-    "fonte": "IBGE/Tábuas Completas de Mortalidade",
+    "fonte": "Banco Mundial - World Development Indicators (SP.DYN.LE00.IN)",
     "cat": "Saúde",
-    "descricao":
-      "Expectativa de vida ao nascer da população brasileira, em anos, segundo as Tábuas Completas de Mortalidade do IBGE.",
-    "como_interpretar":
-      "Indica quantos anos, em média, uma pessoa nascida no Brasil viveria se fossem mantidos os padrões de mortalidade observados ou projetados para o ano de referência. Valores maiores indicam menor mortalidade média e maior longevidade populacional.",
-    "metodologia":
-      "Indicador extraído das Tábuas Completas de Mortalidade do IBGE para ambos os sexos. As tábuas descrevem a incidência da mortalidade por idade exata e permitem calcular a expectativa de vida ao nascer. A metodologia utiliza censos demográficos, estimativas populacionais, registros oficiais de óbitos e nascidos vivos, além de procedimentos demográficos para transformar tábuas abreviadas em tábuas completas.",
-    "historico_metodologia":
-      "Desde 1999, o IBGE divulga anualmente as Tábuas Completas de Mortalidade para o total da população brasileira. A série foi afetada por revisões metodológicas associadas às projeções populacionais. As tábuas de 2020 e 2021 inicialmente não incorporavam os efeitos da Covid-19; a revisão mais recente passou a refletir a queda observada da expectativa de vida durante a pandemia, com recuperação a partir de 2022. A Tábua de 2024 é proveniente da Projeção da População do Brasil para 2000-2070, revisão 2024.",
-    "abrangencia": "Brasil, população residente, ambos os sexos.",
+    "descricao": "Mede o número médio de anos que um recém-nascido viveria se os padrões de mortalidade vigentes no ano de nascimento permanecessem constantes ao longo da vida.",
+    "como_interpretar": "Valores maiores indicam maior longevidade média esperada ao nascer e, em geral, melhores condições acumuladas de saúde pública, saneamento, renda, segurança alimentar e acesso a cuidados médicos. O indicador não mede qualidade de vida, desigualdade de saúde, expectativa de vida saudável nem diferenças internas por região, sexo, renda ou raça.",
+    "metodologia": "O indicador Life expectancy at birth, total (years), código SP.DYN.LE00.IN, do World Development Indicators do Banco Mundial, estima a expectativa de vida total ao nascer em anos. A série é derivada de expectativas de vida masculina e feminina ao nascer, com base em fontes demográficas oficiais, como World Population Prospects da Divisão de População da ONU, estatísticas nacionais, registros civis, censos e outras publicações estatísticas oficiais. Os valores apresentados foram mantidos apenas para anos com dado anual publicado oficialmente para o Brasil.",
+    "historico_metodologia": "A série do Banco Mundial pode ser revisada quando há atualização do World Population Prospects, revisão de tábuas de mortalidade, censos, registros civis ou estatísticas nacionais. A série atual validada vai de 1994 a 2024. Não foi incluído 2025 porque, na consulta oficial disponível em 26/04/2026, o Banco Mundial não apresentava valor observado publicado para 2025 nesse indicador.",
+    "abrangencia": "Brasil, cobertura nacional, indicador total da população, comparável internacionalmente no World Development Indicators.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2020,
-        "nome": "Covid-19",
-        "descricao": "A pandemia elevou o número de mortes no Brasil e reduziu a expectativa de vida ao nascer.",
+        "nome": "COVID-19",
+        "descricao": "A pandemia de COVID-19 elevou a mortalidade e coincidiu com forte queda da expectativa de vida ao nascer no Brasil, de 75,809 anos em 2019 para 74,506 anos em 2020."
       },
       {
         "ano": 2021,
         "nome": "Pico pandêmico",
-        "descricao":
-          "A expectativa de vida ao nascer caiu para 72,8 anos, menor valor da série recente, devido ao agravamento da mortalidade associada à pandemia.",
+        "descricao": "O impacto acumulado da pandemia foi ainda maior em 2021, quando a expectativa de vida ao nascer caiu para 73,038 anos, o menor valor da série brasileira desde 2008."
       },
       {
         "ano": 2022,
-        "nome": "Arrefecimento",
-        "descricao":
-          "Com a redução do excesso de mortes causado pela pandemia, a expectativa de vida voltou a crescer.",
+        "nome": "Recuperação",
+        "descricao": "Com a redução relativa do choque de mortalidade da pandemia, a expectativa de vida voltou a subir em 2022, alcançando 74,872 anos."
       },
+      {
+        "ano": 2024,
+        "nome": "Pós-pandemia",
+        "descricao": "Em 2024, a série atingiu 76,023 anos, superando o nível pré-pandemia de 2019."
+      }
     ],
-    "comparacao_paises":
-      "Em 2024, a expectativa de vida ao nascer no Brasil foi de 76,6 anos. Segundo o IBGE, os maiores valores mundiais citados para comparação eram Mônaco, 86,5 anos; San Marino, 85,8; Hong Kong, 85,6; Japão, 84,9; e Coreia do Sul, 84,4.",
-    "nivel_confiabilidade":
-      "Alto para os anos listados, pois os valores foram mantidos apenas quando confirmados em publicações oficiais do IBGE. Foram removidos anos anuais não confirmados diretamente nas fontes oficiais consultadas nesta validação.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "comparacao_paises": "Em 2024, o Brasil registrou 76,023 anos, acima da média mundial publicada pelo Banco Mundial/FRED para o mesmo indicador, de 73,48038 anos, mas abaixo do agregado de países de alta renda, de 80,39437 anos. Isso coloca o Brasil em posição intermediária: melhor que a média global, mas ainda distante dos países de maior renda e maior longevidade.",
+    "nivel_confiabilidade": "Muito alto para comparação internacional anual, pois a série vem do World Development Indicators do Banco Mundial e é baseada em fontes demográficas oficiais. A principal ressalva é que valores podem ser revisados retroativamente quando bases demográficas internacionais, censos, registros civis ou tábuas de mortalidade são atualizados.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "padrao": false,
     "fontes_links": [
       {
-        "titulo": "IBGE - Tábuas Completas de Mortalidade",
-        "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9126-tabuas-completas-de-mortalidade.html",
+        "titulo": "Banco Mundial - Life expectancy at birth, total (years) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=BR"
       },
       {
-        "titulo": "IBGE Agência de Notícias - Expectativa de vida chega a 76,6 anos em 2024",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45275-expectativa-de-vida-chega-a-76-6-anos-em-2024",
+        "titulo": "Banco Mundial API - SP.DYN.LE00.IN - Brazil",
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/SP.DYN.LE00.IN?format=json&per_page=20000"
       },
       {
-        "titulo": "IBGE Agência de Notícias - Em 2023, expectativa de vida chega aos 76,4 anos",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia",
+        "titulo": "FRED / World Bank - Life Expectancy at Birth, Total for Brazil",
+        "url": "https://fred.stlouisfed.org/data/SPDYNLE00INBRA"
       },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators",
+        "url": "https://databank.worldbank.org/source/world-development-indicators"
+      },
+      {
+        "titulo": "CEPAL - Impacto Demográfico da COVID-19 na América Latina e Caribe",
+        "url": "https://www.cepal.org/en/news/latin-america-and-caribbean-one-regions-most-affected-demographically-health-crisis"
+      }
     ],
     "dados": [
-      { "ano": 2000, "valor": 71.1 },
-      { "ano": 2010, "valor": 74.4 },
-      { "ano": 2019, "valor": 76.2 },
-      { "ano": 2020, "valor": 74.8 },
-      { "ano": 2021, "valor": 72.8 },
-      { "ano": 2022, "valor": 75.4 },
-      { "ano": 2023, "valor": 76.4 },
-      { "ano": 2024, "valor": 76.6 },
-    ],
-  },
-  "mortalidade_infantil": {
-    "label": "(WB) Mortalidade infantil (menores de 1 ano)",
-    "unidade": "óbitos por 1.000 nascidos vivos",
-    "fonte": "Banco Mundial / UN IGME",
-    "cat": "Saúde",
-    "descricao": "Taxa de óbitos de crianças antes de completar 1 ano de idade por 1.000 nascidos vivos no Brasil.",
-    "como_interpretar":
-      "Quanto menor o valor, melhor o resultado sanitário. O indicador mede risco de morte no primeiro ano de vida e reflete condições de pré-natal, parto, neonatal, vacinação, nutrição, saneamento e acesso a serviços de saúde.",
-    "metodologia":
-      "Indicador SP.DYN.IMRT.IN do World Development Indicators. A taxa de mortalidade infantil é definida como o número de crianças que morrem antes de completar 1 ano por 1.000 nascidos vivos em determinado ano. A fonte primária metodológica é o UN Inter-agency Group for Child Mortality Estimation (UN IGME), formado por UNICEF, WHO, World Bank e UN DESA Population Division.",
-    "historico_metodologia":
-      "A série do Banco Mundial/WDI usa estimativas oficiais harmonizadas do UN IGME, revisadas periodicamente conforme novas bases vitais, censos, pesquisas domiciliares e métodos de modelagem são incorporados. Portanto, os valores são comparáveis internacionalmente, mas podem sofrer revisões retroativas. A fonte não é uma contagem bruta direta do DATASUS; é uma série internacional harmonizada.",
-    "abrangencia":
-      "Brasil, população total, ambos os sexos, crianças menores de 1 ano, taxa anual por 1.000 nascidos vivos.",
-    "periodicidade": "Anual",
-    "eventos_externos": [
+      {
+        "ano": 1994,
+        "valor": 67.293
+      },
+      {
+        "ano": 1995,
+        "valor": 67.701
+      },
+      {
+        "ano": 1996,
+        "valor": 68.108
+      },
+      {
+        "ano": 1997,
+        "valor": 68.505
+      },
+      {
+        "ano": 1998,
+        "valor": 68.848
+      },
+      {
+        "ano": 1999,
+        "valor": 69.211
+      },
+      {
+        "ano": 2000,
+        "valor": 69.584
+      },
+      {
+        "ano": 2001,
+        "valor": 69.98
+      },
+      {
+        "ano": 2002,
+        "valor": 70.396
+      },
+      {
+        "ano": 2003,
+        "valor": 70.884
+      },
+      {
+        "ano": 2004,
+        "valor": 71.361
+      },
+      {
+        "ano": 2005,
+        "valor": 71.832
+      },
+      {
+        "ano": 2006,
+        "valor": 72.296
+      },
+      {
+        "ano": 2007,
+        "valor": 72.73
+      },
+      {
+        "ano": 2008,
+        "valor": 73.111
+      },
+      {
+        "ano": 2009,
+        "valor": 73.457
+      },
+      {
+        "ano": 2010,
+        "valor": 73.779
+      },
+      {
+        "ano": 2011,
+        "valor": 74.047
+      },
+      {
+        "ano": 2012,
+        "valor": 74.335
+      },
+      {
+        "ano": 2013,
+        "valor": 74.609
+      },
+      {
+        "ano": 2014,
+        "valor": 74.823
+      },
+      {
+        "ano": 2015,
+        "valor": 75.106
+      },
       {
         "ano": 2016,
-        "nome": "Zika",
-        "descricao":
-          "O Brasil registrou epidemia de Zika e aumento de anomalias congênitas associadas, com impacto sanitário relevante sobre gestantes e recém-nascidos; a série mostra interrupção temporária da tendência de queda em 2016.",
+        "valor": 75.081
+      },
+      {
+        "ano": 2017,
+        "valor": 75.383
+      },
+      {
+        "ano": 2018,
+        "valor": 75.633
+      },
+      {
+        "ano": 2019,
+        "valor": 75.809
+      },
+      {
+        "ano": 2020,
+        "valor": 74.506
+      },
+      {
+        "ano": 2021,
+        "valor": 73.038
+      },
+      {
+        "ano": 2022,
+        "valor": 74.872
+      },
+      {
+        "ano": 2023,
+        "valor": 75.848
+      },
+      {
+        "ano": 2024,
+        "valor": 76.023
+      }
+    ]
+  },
+  "expectativa_vida_saudavel_hale": {
+    "label": "(OMS) Expectativa de Vida Saudável ao Nascer",
+    "unidade": "anos",
+    "fonte": "World Health Organization - Global Health Observatory / Global Health Estimates",
+    "cat": "Saúde",
+    "descricao": "Mede o número médio de anos que uma pessoa nascida no Brasil pode esperar viver em plena saúde, considerando anos vividos com doença ou incapacidade.",
+    "como_interpretar": "Valores maiores indicam maior expectativa de anos vividos em boa saúde. O indicador complementa a expectativa de vida tradicional, pois desconta parcialmente o impacto de doenças, incapacidades e lesões sobre a qualidade dos anos vividos.",
+    "metodologia": "A OMS calcula a HALE combinando tábuas de vida com a fração equivalente de anos saudáveis perdidos por morbidade. A estimativa usa o método de Sullivan, no qual os anos vividos em cada faixa etária são ajustados pela prevalência e severidade de estados de saúde não plena, incluindo anos vividos com incapacidade, doença ou lesão.",
+    "historico_metodologia": "A série oficial atual da OMS para HALE está disponível para 2000 a 2021. A OMS informa que o indicador é uma estimativa oficial baseada no Global Health Observatory e no Global Health Estimates. Como a própria metodologia depende de modelagem, tábuas de vida, dados de mortalidade, morbidade e carga de doença, os valores podem ser revisados quando há atualização das bases de mortalidade, causas de morte, incapacidade ou dos modelos do Global Health Estimates. Não há dados oficiais da OMS para 1994-1999 nem para 2022 em diante na fonte consultada.",
+    "abrangencia": "Brasil, ambos os sexos, cobertura nacional, comparável internacionalmente entre países-membros da OMS.",
+    "periodicidade": "Bienal na disseminação esperada pela OMS, com série histórica oficial disponível anualmente para 2000 a 2021 no painel atual.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Base Inicial",
+        "descricao": "Primeiro ano disponível na série oficial atual da OMS para expectativa de vida saudável ao nascer do Brasil."
+      },
+      {
+        "ano": 2015,
+        "nome": "Pico Pré-Covid",
+        "descricao": "A série mostra avanço gradual da expectativa de vida saudável antes da pandemia, refletindo melhora acumulada em mortalidade e carga de doença."
       },
       {
         "ano": 2020,
         "nome": "COVID-19",
-        "descricao":
-          "A pandemia afetou sistemas de saúde, vacinação e serviços materno-infantis globalmente; na série brasileira do UN IGME/Banco Mundial, a taxa permaneceu quase estável entre 2020 e 2022, sem forte queda no período.",
+        "descricao": "A pandemia de COVID-19 reduziu a expectativa de vida e a expectativa de vida saudável, principalmente pelo aumento de mortalidade e morbidade associadas à crise sanitária."
       },
+      {
+        "ano": 2021,
+        "nome": "Queda Pandêmica",
+        "descricao": "A OMS registra queda da expectativa de vida saudável do Brasil em relação ao período pré-pandemia, ainda sob forte impacto da COVID-19."
+      }
     ],
-    "comparacao_paises":
-      "Em 2024, o Brasil registrou 12,3 óbitos por 1.000 nascidos vivos, abaixo da média mundial de 27,7, mas ainda acima dos níveis típicos de países de alta renda.",
-    "nivel_confiabilidade":
-      "Alta para comparação histórica e internacional, pois a série é publicada pelo Banco Mundial com metodologia UN IGME. Porém, os valores são estimativas oficiais harmonizadas, não contagens brutas observadas; podem ser revisados em atualizações futuras.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
+    "comparacao_paises": "Em 2021, o Brasil registrou HALE de 61,8 anos, abaixo dos países de maior longevidade saudável, como Japão e Singapura, e próximo da média mundial reportada pela OMS para 2021, em torno de 61,9 anos.",
+    "nivel_confiabilidade": "Alto como estimativa oficial internacional da OMS, adequada para comparação entre países. A ressalva metodológica é importante: HALE não é uma medição direta observada em censos ou registros administrativos; é uma estimativa modelada pela OMS a partir de mortalidade, carga de doença e incapacidade.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
-        "titulo": "World Bank Data - Mortality rate, infant (per 1,000 live births) - Brazil",
-        "url": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=BR",
+        "titulo": "WHO Data - Healthy life expectancy at birth (years)",
+        "url": "https://data.who.int/indicators/i/48D9B0C/C64284D"
       },
       {
-        "titulo": "FRED / World Bank - Infant Mortality Rate for Brazil",
-        "url": "https://fred.stlouisfed.org/series/SPDYNIMRTINBRA",
+        "titulo": "WHO Data - Brazil country profile",
+        "url": "https://data.who.int/countries/076"
       },
       {
-        "titulo": "FRED / World Bank - Table Data - Infant Mortality Rate for Brazil",
-        "url": "https://fred.stlouisfed.org/data/SPDYNIMRTINBRA",
+        "titulo": "WHO GHO - Healthy life expectancy (HALE) at birth (years)",
+        "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/gho-ghe-hale-healthy-life-expectancy-at-birth"
       },
       {
-        "titulo": "World Bank DataBank Metadata - SP.DYN.IMRT.IN",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.DYN.IMRT.IN",
-      },
-      {
-        "titulo": "UN IGME / UNICEF - Levels and Trends in Child Mortality",
-        "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality/",
-      },
+        "titulo": "WHO Indicator Metadata Registry - Healthy life expectancy (HALE)",
+        "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752"
+      }
     ],
     "dados": [
-      { "ano": 1994, "valor": 42.4 },
-      { "ano": 1995, "valor": 39.9 },
-      { "ano": 1996, "valor": 37.5 },
-      { "ano": 1997, "valor": 35.2 },
-      { "ano": 1998, "valor": 33.1 },
-      { "ano": 1999, "valor": 31.1 },
-      { "ano": 2000, "valor": 29.1 },
-      { "ano": 2001, "valor": 27.3 },
-      { "ano": 2002, "valor": 25.6 },
-      { "ano": 2003, "valor": 24.0 },
-      { "ano": 2004, "valor": 22.4 },
-      { "ano": 2005, "valor": 21.0 },
-      { "ano": 2006, "valor": 19.7 },
-      { "ano": 2007, "valor": 18.6 },
-      { "ano": 2008, "valor": 17.6 },
-      { "ano": 2009, "valor": 16.7 },
-      { "ano": 2010, "valor": 16.0 },
-      { "ano": 2011, "valor": 15.3 },
-      { "ano": 2012, "valor": 14.8 },
-      { "ano": 2013, "valor": 14.4 },
-      { "ano": 2014, "valor": 14.0 },
-      { "ano": 2015, "valor": 13.7 },
-      { "ano": 2016, "valor": 14.6 },
-      { "ano": 2017, "valor": 13.3 },
-      { "ano": 2018, "valor": 13.1 },
-      { "ano": 2019, "valor": 12.9 },
-      { "ano": 2020, "valor": 12.8 },
-      { "ano": 2021, "valor": 12.7 },
-      { "ano": 2022, "valor": 12.6 },
-      { "ano": 2023, "valor": 12.4 },
-      { "ano": 2024, "valor": 12.3 },
-    ],
-  },
-  "cobertura_vacinal_infantil": {
-    "label": "Cobertura Vacinal Infantil (Calendário Nacional - média simples)",
-    "unidade": "% da população-alvo",
-    "fonte": "Ministério da Saúde / DataSUS / RNDS / SI-PNI",
-    "cat": "Saúde",
-    "descricao":
-      "Indicador derivado que resume a cobertura vacinal infantil no Brasil pela média aritmética simples das coberturas oficiais dos 16 imunobiológicos do Calendário Nacional infantil divulgados pelo Ministério da Saúde para 2023 e 2024. A série original enviada continha projeções e valores não verificáveis como série oficial única desde 1994; por isso foi substituída apenas por valores concretos calculados a partir de dados oficiais disponíveis.",
-    "como_interpretar":
-      "Valores maiores indicam maior proporção da população-alvo infantil com doses registradas para os imunobiológicos avaliados. Como é uma média simples de diferentes vacinas, não substitui a análise individual por imunobiológico. A meta operacional usual do PNI é de 90% ou 95%, dependendo da vacina, conforme regra do Ministério da Saúde.",
-    "metodologia":
-      "Média aritmética simples das coberturas oficiais publicadas para os 16 imunobiológicos infantis listados pelo Ministério da Saúde: BCG, Hepatite B, Rotavírus Humano, Meningococo C, Penta, Pneumocócica, Polio Oral Bivalente, Polio Injetável, Febre Amarela, Hepatite A Infantil, Pneumocócica 1º reforço, Meningococo C 1º reforço, Tríplice Viral D1, Tríplice Viral D2, DTP 1º reforço e Varicela. Fórmula: soma das coberturas dos imunobiológicos no ano dividida por 16. Os dados de 2023 e 2024 foram extraídos de material oficial do Ministério da Saúde; 2024 consta como dado extraído em 25/11/2024.",
-    "historico_metodologia":
-      "Não existe, nas fontes oficiais consultadas, uma série histórica anual única chamada 'Cobertura Vacinal Infantil (PNI)' com um único valor agregado desde 1994. O DataSUS disponibiliza séries por imunobiológico desde 1994, mas com alterações de calendário, inclusão/substituição de vacinas e mudanças de sistemas de informação. O Ministério da Saúde informa que as regras de cálculo de cobertura vacinal para crianças menores de 1 ano e de 1 ano usam últimas doses do esquema no numerador e população SINASC no denominador, com transição metodológica para novas regras em 2023 e 2024. Portanto, os valores de 1994 a 2022 da série enviada foram removidos por não corresponderem a uma série oficial única verificável.",
-    "abrangencia":
-      "Brasil, população-alvo infantil conforme regras de cobertura vacinal do Calendário Nacional de Vacinação.",
-    "periodicidade": "Anual, conforme divulgação e atualização dos sistemas oficiais de imunização.",
-    "eventos_externos": [
       {
-        "ano": 2023,
-        "nome": "Retomada PNI",
-        "descricao":
-          "O Ministério da Saúde registrou aumento nas coberturas de 13 dos 16 principais imunizantes do calendário infantil em 2023 em comparação com 2022.",
+        "ano": 2000,
+        "valor": 60.9
       },
       {
-        "ano": 2024,
-        "nome": "Recertificação sarampo",
-        "descricao":
-          "A OPAS/OMS recertificou o Brasil como país livre do sarampo; o Ministério da Saúde atribuiu o resultado às ações de recuperação das coberturas vacinais.",
+        "ano": 2001,
+        "valor": 61.1
       },
       {
-        "ano": 2024,
-        "nome": "Alta infantil",
-        "descricao":
-          "O Ministério da Saúde divulgou aumento de 15 das 16 vacinas recomendadas para o público infantil em 2024, com três vacinas acima da meta.",
-      },
-    ],
-    "comparacao_paises":
-      "Comparação internacional direta não foi mantida porque a métrica validada aqui é uma média simples derivada de 16 imunobiológicos do Calendário Nacional brasileiro, não um indicador padronizado internacionalmente. Para comparação entre países, o uso metodologicamente mais adequado é por vacina específica, como DTP3, Polio3 ou MCV1, geralmente nas bases OMS/UNICEF; porém essas séries internacionais são estimativas e foram excluídas conforme a regra de manter apenas dados oficiais concretos.",
-    "nivel_confiabilidade":
-      "Médio-alto para 2023 e 2024, porque os valores de base são oficiais do Ministério da Saúde, mas o indicador agregado é derivado por média simples e não é uma série oficial única do PNI. Baixo/inválido para os valores originais de 1994 a 2026, porque incluíam projeções futuras e números agregados não rastreáveis a uma metodologia oficial única.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "DataSUS - Imunizações desde 1994",
-        "url": "https://datasus.saude.gov.br/acesso-a-informacao/imunizacoes-desde-1994/",
+        "ano": 2002,
+        "valor": 61.3
       },
       {
-        "titulo": "Ministério da Saúde - Coberturas Vacinais Brasil 2023-2024",
-        "url": "https://infoms.saude.gov.br/content/Default/Cobertura%20Vacinal%202023-2024.pdf",
+        "ano": 2003,
+        "valor": 61.5
       },
       {
-        "titulo": "Ministério da Saúde - Nota Informativa sobre Cobertura Vacinal do Calendário Nacional",
-        "url": "https://infoms.saude.gov.br/content/Default/NOTA_INFORMATIVA_SOBRE_CV_CALEND%C3%81RIO_NACIONAL.pdf",
+        "ano": 2004,
+        "valor": 61.6
       },
       {
-        "titulo": "Ministério da Saúde - Cobertura Vacinal Calendário Nacional",
-        "url":
-          "https://infoms.saude.gov.br/extensions/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA.html",
+        "ano": 2005,
+        "valor": 62.1
       },
       {
-        "titulo": "Ministério da Saúde - Aumento de 15 das 16 vacinas do calendário infantil",
-        "url":
-          "https://www.gov.br/saude/pt-br/assuntos/noticias/2024/dezembro/cresce-a-cobertura-de-15-das-16-vacinas-do-calendario-infantil",
+        "ano": 2006,
+        "valor": 62.3
       },
       {
-        "titulo": "Ministério da Saúde - Recertificação de país livre do sarampo",
-        "url":
-          "https://www.gov.br/saude/pt-br/assuntos/noticias/2024/novembro/brasil-recebe-recertificacao-de-pais-livre-do-sarampo",
+        "ano": 2007,
+        "valor": 62.5
       },
-    ],
-    "dados": [
-      { "ano": 2023, "valor": 82.35 },
-      { "ano": 2024, "valor": 86.99 },
-    ],
-  },
-  "gasto_saude_publico_pib": {
-    "label": "(OMS) Gasto público em saúde / PIB",
-    "unidade": "% do PIB",
-    "fonte": "OMS Global Health Expenditure Database via World Bank WDI",
-    "cat": "Saúde",
-    "descricao": "Despesa pública doméstica do governo geral em saúde como proporção do PIB.",
-    "como_interpretar":
-      "Valores maiores indicam maior participação do gasto público doméstico em saúde na economia. O indicador mede volume relativo de gasto, não eficiência, qualidade, acesso ou resultado em saúde.",
-    "metodologia":
-      "Indicador SH.XPD.GHED.GD.ZS: despesa pública em saúde de fontes domésticas como proporção do PIB. A série é preparada pela OMS no Global Health Expenditure Database sob o System of Health Accounts 2011 (SHA 2011) e divulgada no World Development Indicators do Banco Mundial. Fórmula: gasto público doméstico em saúde dividido pelo PIB, multiplicado por 100.",
-    "historico_metodologia":
-      "A série oficial atual da OMS/Banco Mundial para o Brasil cobre 2000 a 2023. Não há valor oficial consolidado nessa fonte para 1994 nem para 2024. O SIOPS/RIPSA mede ASPS no SUS e tem metodologia nacional própria baseada em despesas empenhadas de União, estados e municípios; por isso, seus valores não são idênticos aos da OMS/GHED. Para manter consistência metodológica internacional, os dados abaixo usam apenas a série OMS/GHED/WDI.",
-    "abrangencia":
-      "Brasil; governo geral; despesa pública doméstica em saúde; indicador internacional comparável entre países.",
-    "periodicidade": "Anual",
-    "eventos_externos": [
+      {
+        "ano": 2008,
+        "valor": 62.8
+      },
+      {
+        "ano": 2009,
+        "valor": 63
+      },
+      {
+        "ano": 2010,
+        "valor": 63.1
+      },
+      {
+        "ano": 2011,
+        "valor": 63.2
+      },
       {
         "ano": 2012,
-        "nome": "LC 141",
-        "descricao":
-          "A Lei Complementar nº 141/2012 regulamentou critérios de aplicação mínima em ações e serviços públicos de saúde no Brasil, afetando a governança nacional do financiamento público em saúde.",
+        "valor": 63.4
       },
       {
-        "ano": 2020,
-        "nome": "Covid-19",
-        "descricao":
-          "A pandemia elevou a pressão sobre o gasto público em saúde e coincide com aumento do indicador em 2020 e manutenção em patamar elevado em 2021.",
-      },
-    ],
-    "comparacao_paises":
-      "Em 2023, o Brasil registrou 4,29% do PIB em gasto público doméstico em saúde, abaixo de países como Alemanha, Estados Unidos, Reino Unido e França, e acima de México, Índia e Indonésia na mesma métrica internacional da OMS/GHED/WDI.",
-    "nivel_confiabilidade":
-      "Alto para comparações internacionais entre 2000 e 2023, pois usa série padronizada da OMS/GHED divulgada pelo Banco Mundial. Não foram mantidos 1994-1999 nem 2024 por ausência de valor oficial consolidado na série WDI atual para o Brasil.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "World Bank WDI - Domestic general government health expenditure (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS?locations=BR",
-      },
-      {
-        "titulo": "World Bank DataBank Metadata - SH.XPD.GHED.GD.ZS",
-        "url":
-          "https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SH.XPD.GHED.GD.ZS",
-      },
-      {
-        "titulo": "WHO - Domestic general government health expenditure (GGHE-D) as percentage of GDP",
-        "url":
-          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/domestic-general-government-health-expenditure-(gghe-d)-as-percentage-of-gross-domestic-product-(gdp)-(-)",
-      },
-      { "titulo": "Ministério da Saúde - SIOPS", "url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/siops" },
-      {
-        "titulo": "RIPSA - Gasto em ASPS como percentual do PIB",
-        "url": "https://www.ripsa.org.br/fichasidb/a-demografico/ficha?code=RIPSA006RC",
-      },
-    ],
-    "dados": [
-      { "ano": 2000, "valor": 3.47 },
-      { "ano": 2001, "valor": 3.51 },
-      { "ano": 2002, "valor": 3.69 },
-      { "ano": 2003, "valor": 3.51 },
-      { "ano": 2004, "valor": 3.47 },
-      { "ano": 2005, "valor": 3.35 },
-      { "ano": 2006, "valor": 3.54 },
-      { "ano": 2007, "valor": 3.49 },
-      { "ano": 2008, "valor": 3.51 },
-      { "ano": 2009, "valor": 3.71 },
-      { "ano": 2010, "valor": 3.58 },
-      { "ano": 2011, "valor": 3.47 },
-      { "ano": 2012, "valor": 3.36 },
-      { "ano": 2013, "valor": 3.56 },
-      { "ano": 2014, "valor": 3.71 },
-      { "ano": 2015, "valor": 3.86 },
-      { "ano": 2016, "valor": 3.95 },
-      { "ano": 2017, "valor": 3.96 },
-      { "ano": 2018, "valor": 3.9 },
-      { "ano": 2019, "valor": 3.93 },
-      { "ano": 2020, "valor": 4.18 },
-      { "ano": 2021, "valor": 4.32 },
-      { "ano": 2022, "valor": 4.26 },
-      { "ano": 2023, "valor": 4.29 },
-    ],
-  },
-  "pisa_brasil_media": {
-    "label": "PISA (Média de Matemática, Leitura e Ciências)",
-    "unidade": "Pontos",
-    "fonte": "OCDE / INEP",
-    "cat": "Educação",
-    "descricao":
-      "Média simples dos desempenhos do Brasil nas três áreas centrais do PISA: Matemática, Leitura e Ciências.",
-    "como_interpretar":
-      "Quanto maior o valor, melhor o desempenho médio dos estudantes brasileiros de 15 anos nas competências avaliadas pelo PISA. O indicador não é divulgado oficialmente como uma métrica única pela OCDE; foi calculado a partir das pontuações oficiais das três áreas.",
-    "metodologia":
-      "O PISA avalia estudantes de 15 anos em Matemática, Leitura e Ciências, por amostragem representativa nacional. Para este indicador, foi calculada a média aritmética simples dos três escores oficiais do Brasil em cada ciclo com dados comparáveis disponíveis para as três áreas: valor = (Matemática + Leitura + Ciências) / 3.",
-    "historico_metodologia":
-      "O PISA é aplicado em ciclos trienais desde 2000. Matemática é comparável como domínio principal desde 2003; Ciências desde 2006; Leitura desde 2000. Por isso, foram removidos 1994-2005 e anos intermediários, pois não há série oficial anual nem pontuação oficial única de média global. O ciclo de 2021 foi adiado para 2022 por causa da pandemia. Resultados de 2025 ainda não estavam oficialmente publicados em 24/04/2026.",
-    "abrangencia":
-      "Brasil; estudantes de 15 anos matriculados a partir dos anos/séries elegíveis definidos pela metodologia do PISA.",
-    "periodicidade": "Trienal, apenas nos ciclos de aplicação do PISA.",
-    "eventos_externos": [
-      {
-        "ano": 2022,
-        "nome": "Pandemia",
-        "descricao":
-          "O ciclo previsto para 2021 foi adiado para 2022 no contexto da pandemia de Covid-19. A OCDE registrou que, no Brasil, os resultados médios de 2022 ficaram aproximadamente no mesmo nível de 2018 em Matemática, Leitura e Ciências.",
-      },
-    ],
-    "comparacao_paises":
-      "Em 2022, o Brasil ficou abaixo da média da OCDE nas três áreas: Matemática 379 contra 472 da OCDE, Leitura 410 contra 476 da OCDE, e Ciências 403 contra 485 da OCDE. Na América Latina, em Leitura, o INEP informou que o Brasil ficou abaixo de Chile e Uruguai, acima da Argentina e sem diferença estatisticamente significativa frente a Colômbia e Peru.",
-    "nivel_confiabilidade":
-      "Alto para os ciclos oficiais do PISA incluídos, pois os valores vêm da base oficial OCDE/INEP. Baixo ou inexistente para anos fora dos ciclos oficiais; por isso, projeções, interpolações, retroprojeções e anos sem resultado publicado foram removidos.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "OECD - PISA 2022 Results: Brazil Country Note",
-        "url":
-          "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html",
-      },
-      {
-        "titulo": "OECD Education GPS - Brazil Student Performance PISA 2022",
-        "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=BRA&topic=PI",
-      },
-      {
-        "titulo": "INEP - Divulgados os resultados do PISA 2022",
-        "url":
-          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/acoes-internacionais/divulgados-os-resultados-do-pisa-2022",
-      },
-      {
-        "titulo": "INEP - Nota sobre o Brasil no PISA 2022",
-        "url": "https://download.inep.gov.br/acoes_internacionais/pisa/resultados/2022/pisa_2022_brazil_prt.pdf",
-      },
-      { "titulo": "OECD - PISA Data Explorer", "url": "https://pisadataexplorer.oecd.org/ide/idepisa/" },
-      {
-        "titulo": "OECD - PISA Data and Methodology",
-        "url": "https://www.oecd.org/en/about/programmes/pisa/pisa-data.html",
-      },
-    ],
-    "dados": [
-      { "ano": 2006, "valor": 384.25 },
-      { "ano": 2009, "valor": 401 },
-      { "ano": 2012, "valor": 400.35 },
-      { "ano": 2015, "valor": 395.03 },
-      { "ano": 2018, "valor": 400.02 },
-      { "ano": 2022, "valor": 397.35 },
-    ],
-  },
-  "alfabetizacao": {
-    "label": "(WB) Taxa de alfabetização (15+ anos)",
-    "unidade": "% da população 15+",
-    "fonte": "Banco Mundial / UNESCO Institute for Statistics",
-    "cat": "Educação",
-    "descricao":
-      "Percentual da população de 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
-    "como_interpretar":
-      "Quanto maior o valor, maior a proporção de adultos alfabetizados. O indicador mede alfabetização básica declarada/registrada, não alfabetismo funcional avançado.",
-    "metodologia":
-      "O indicador é calculado dividindo o número de pessoas alfabetizadas com 15 anos ou mais pela população total da mesma faixa etária, excluindo pessoas com situação de alfabetização desconhecida, e multiplicando o resultado por 100.",
-    "historico_metodologia":
-      "A série do Banco Mundial/WDI usa dados compilados pelo UNESCO Institute for Statistics a partir de censos nacionais e pesquisas domiciliares. A metadata oficial informa que, para países sem dados recentes, podem ser usadas projeções pelo Global Age-Specific Literacy Projection Model (GALP). Nesta validação foram mantidos apenas anos com valor publicado na série WDI/FRED; anos sem valor foram removidos.",
-    "abrangencia": "Brasil; população de 15 anos ou mais.",
-    "periodicidade": "Anual, com lacunas em anos sem observação publicada.",
-    "eventos_externos": [],
-    "comparacao_paises":
-      "O indicador é comparável internacionalmente na base WDI/UNESCO. Em 2024, o Brasil aparece com 94,74%, próximo da alfabetização adulta universal, mas ainda abaixo de países com taxas próximas de 99% e acima de muitos países de menor renda. Comparações anuais devem considerar que nem todos os países têm observações disponíveis no mesmo ano.",
-    "nivel_confiabilidade":
-      "Alta para os anos mantidos, pois os valores vêm da série World Development Indicators do Banco Mundial, com fonte primária UNESCO Institute for Statistics. A confiabilidade é menor para inferências entre anos, porque a série possui lacunas antes de 2006 e a própria metadata oficial admite uso de projeções em alguns países quando não há dados recentes.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "World Bank Data - Literacy rate, adult total (% of people ages 15 and above) - Brazil",
-        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=BR",
-      },
-      {
-        "titulo": "FRED - Literacy Rate, Adult Total for Brazil (SEADTLITRZSBRA)",
-        "url": "https://fred.stlouisfed.org/series/SEADTLITRZSBRA",
-      },
-      {
-        "titulo": "FRED - Table Data - Literacy Rate, Adult Total for Brazil",
-        "url": "https://fred.stlouisfed.org/data/SEADTLITRZSBRA",
-      },
-      {
-        "titulo": "World Bank DataBank Metadata Glossary - SE.ADT.LITR.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/millennium-development-goals/series/SE.ADT.LITR.ZS",
-      },
-    ],
-    "dados": [
-      { "ano": 2000, "valor": 86.370002746582 },
-      { "ano": 2004, "valor": 88.620002746582 },
-      { "ano": 2006, "valor": 89.620002746582 },
-      { "ano": 2007, "valor": 90.0100021362305 },
-      { "ano": 2008, "valor": 90.0400009155273 },
-      { "ano": 2009, "valor": 90.3000030517578 },
-      { "ano": 2010, "valor": 90.379997253418 },
-      { "ano": 2011, "valor": 91.4100036621094 },
-      { "ano": 2012, "valor": 91.3399963378906 },
-      { "ano": 2013, "valor": 91.4800033569336 },
-      { "ano": 2014, "valor": 91.7300033569336 },
-      { "ano": 2015, "valor": 92.0500030517578 },
-      { "ano": 2016, "valor": 92.8099975585938 },
-      { "ano": 2017, "valor": 93.0800018310547 },
-      { "ano": 2018, "valor": 93.2300033569336 },
-      { "ano": 2019, "valor": 93.8926266999537 },
-      { "ano": 2020, "valor": 94.7444114331042 },
-      { "ano": 2021, "valor": 94.7726170886975 },
-      { "ano": 2022, "valor": 94.376866160108 },
-      { "ano": 2023, "valor": 94.5725490635077 },
-      { "ano": 2024, "valor": 94.7399978637695 },
-    ],
-  },
-  "ideb_fund_iniciais": {
-    "label": "IDEB — Anos Iniciais do Ensino Fundamental",
-    "unidade": "nota 0-10",
-    "fonte": "Inep/MEC (Saeb + Censo Escolar)",
-    "cat": "Educação",
-    "descricao":
-      "Índice de Desenvolvimento da Educação Básica dos anos iniciais do ensino fundamental no Brasil, combinando desempenho no Saeb e fluxo escolar do Censo Escolar.",
-    "como_interpretar":
-      "Quanto maior o valor, melhor o resultado combinado de aprendizagem e aprovação escolar. O índice varia de 0 a 10 e é calculado pela multiplicação da proficiência média padronizada pelo indicador de rendimento escolar.",
-    "metodologia":
-      "O Ideb reúne dois componentes: médias de desempenho dos estudantes no Saeb e dados de aprovação escolar do Censo Escolar. Na apresentação oficial do Ideb 2023, o Inep explicita o cálculo como Ideb = N x P, em que N é a média padronizada de proficiência e P é o indicador de rendimento.",
-    "historico_metodologia":
-      "O Ideb foi criado em 2007, com série histórica iniciada em 2005. A divulgação é bienal para os anos de aplicação do Saeb. O primeiro ciclo de metas do Ideb foi definido de 2007 a 2021 no âmbito do Compromisso Todos pela Educação. Para 2021, a interpretação exige cautela porque o período foi afetado pela pandemia de Covid-19, com alterações fortes nas taxas de aprovação e no desempenho medido.",
-    "abrangencia":
-      "Brasil, anos iniciais do ensino fundamental, total de redes de ensino com dados válidos no Saeb e no Censo Escolar.",
-    "periodicidade": "Bienal.",
-    "eventos_externos": [
-      {
-        "ano": 2007,
-        "nome": "Criação Ideb",
-        "descricao":
-          "O Ideb foi criado em 2007 e passou a reunir fluxo escolar e desempenho em avaliações em um único indicador, com série histórica iniciada em 2005.",
-      },
-      {
-        "ano": 2021,
-        "nome": "Covid-19",
-        "descricao":
-          "O resultado de 2021 ocorreu após forte impacto da pandemia na trajetória escolar, nas taxas de aprovação e nas proficiências medidas pelo Saeb.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Retomada Saeb",
-        "descricao":
-          "Em 2023, o Ideb dos anos iniciais voltou a 6,0, com indicador de rendimento de 0,97 e média padronizada de proficiência de 6,15.",
-      },
-    ],
-    "comparacao_paises":
-      "O Ideb não é diretamente comparável entre países, pois é um indicador nacional brasileiro baseado no Saeb e no Censo Escolar. Para comparação internacional de aprendizagem, o indicador mais apropriado é o PISA, da OCDE.",
-    "nivel_confiabilidade":
-      "Alto. Os valores são oficiais, publicados pelo Inep/MEC, e correspondem à série histórica nacional do Ideb Total dos anos iniciais do ensino fundamental de 2005 a 2023.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "Inep — Índice de Desenvolvimento da Educação Básica (Ideb)",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb",
-      },
-      {
-        "titulo": "Inep — Resultados do Ideb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
-      },
-      {
-        "titulo": "Inep — Apresentação Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
-      },
-      {
-        "titulo": "Inep — Nota técnica das metas intermediárias do Ideb",
-        "url":
-          "https://download.inep.gov.br/educacao_basica/portal_ideb/o_que_sao_as_metas/Nota_Tecnica_n2_metas_intermediarias_IDEB.pdf",
-      },
-    ],
-    "dados": [
-      { "ano": 2005, "valor": 3.8 },
-      { "ano": 2007, "valor": 4.2 },
-      { "ano": 2009, "valor": 4.6 },
-      { "ano": 2011, "valor": 5.0 },
-      { "ano": 2013, "valor": 5.2 },
-      { "ano": 2015, "valor": 5.5 },
-      { "ano": 2017, "valor": 5.8 },
-      { "ano": 2019, "valor": 5.9 },
-      { "ano": 2021, "valor": 5.8 },
-      { "ano": 2023, "valor": 6.0 },
-    ],
-  },
-  "ideb_medio": {
-    "label": "IDEB — Ensino Médio",
-    "unidade": "nota 0-10",
-    "fonte": "INEP/MEC (SAEB + Censo Escolar)",
-    "cat": "Educação",
-    "descricao":
-      "Indicador sintético da qualidade da educação no ensino médio brasileiro, combinando desempenho no Saeb e fluxo escolar do Censo Escolar.",
-    "como_interpretar":
-      "Quanto maior o valor, melhor o resultado agregado de aprendizagem e aprovação escolar. O indicador varia de 0 a 10 e deve ser interpretado considerando que pode subir por melhora de desempenho, melhora de fluxo escolar ou ambos.",
-    "metodologia":
-      "O Ideb é calculado pelo produto entre o indicador de rendimento escolar (P), derivado das taxas de aprovação do Censo Escolar, e a média padronizada de desempenho (N), obtida a partir das proficiências em Língua Portuguesa e Matemática no Saeb: Ideb = N x P.",
-    "historico_metodologia":
-      "O Ideb foi criado em 2007 e a série oficial para o ensino médio começa em 2005. Segundo o Inep, o cálculo do indicador seguiu a mesma metodologia proposta em 2007, preservando a comparabilidade histórica. Em 2017, o Saeb tornou-se censitário para a 3ª série do ensino médio, ampliando a disponibilidade de resultados por escolas públicas e privadas participantes, o que afeta a abrangência de divulgação, mas não altera a fórmula do Ideb. Os resultados de 2021 exigem cautela interpretativa porque foram impactados pela pandemia de Covid-19, sobretudo pelas mudanças nas taxas de aprovação.",
-    "abrangencia":
-      "Brasil, ensino médio tradicional em classes comuns, total das redes de ensino, conforme série oficial do Inep.",
-    "periodicidade": "Bienal, com divulgação nos anos ímpares de referência do Saeb e do Censo Escolar.",
-    "eventos_externos": [
-      {
-        "ano": 2017,
-        "nome": "Saeb censitário",
-        "descricao":
-          "O Saeb tornou-se censitário para a 3ª série do ensino médio, ampliando a divulgação de resultados do ensino médio no Saeb e, consequentemente, no Ideb.",
-      },
-      {
-        "ano": 2021,
-        "nome": "Covid-19",
-        "descricao":
-          "O Inep registrou impacto da pandemia nos resultados do Ideb, especialmente pelo crescimento abrupto das taxas de aprovação em 2020 e 2021 em comparação com 2019.",
-      },
-    ],
-    "comparacao_paises":
-      "O Ideb não é diretamente comparável internacionalmente, pois é um indicador nacional brasileiro baseado no Saeb e no Censo Escolar. Para comparação internacional de aprendizagem, a fonte adequada é o PISA/OCDE. No PISA 2022, estudantes do Brasil ficaram abaixo da média da OCDE em matemática, leitura e ciências.",
-    "nivel_confiabilidade":
-      "Alto para os valores oficiais divulgados pelo Inep/MEC. A série é oficial, censitária/amostral conforme desenho do Saeb e baseada no Censo Escolar. A interpretação de 2021 deve ser feita com cautela por causa dos efeitos da pandemia sobre fluxo escolar e aprovação.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "INEP — Ideb: apresentação e metodologia",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb",
-      },
-      {
-        "titulo": "INEP — Resultados do Ideb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
-      },
-      {
-        "titulo": "INEP — Apresentação Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
-      },
-      {
-        "titulo": "INEP — Nota informativa Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/nota_informativa_ideb_2023.pdf",
-      },
-      {
-        "titulo": "INEP — Histórico do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico",
-      },
-      {
-        "titulo": "OCDE — PISA 2022 Results: Brazil",
-        "url":
-          "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html",
-      },
-    ],
-    "dados": [
-      { "ano": 2005, "valor": 3.4 },
-      { "ano": 2007, "valor": 3.5 },
-      { "ano": 2009, "valor": 3.6 },
-      { "ano": 2011, "valor": 3.7 },
-      { "ano": 2013, "valor": 3.7 },
-      { "ano": 2015, "valor": 3.7 },
-      { "ano": 2017, "valor": 3.8 },
-      { "ano": 2019, "valor": 4.2 },
-      { "ano": 2021, "valor": 4.2 },
-      { "ano": 2023, "valor": 4.3 },
-    ],
-  },
-  "gasto_educacao_publico_pib": {
-    "label": "Gasto público em educação / PIB",
-    "unidade": "% do PIB",
-    "fonte": "INEP/MEC",
-    "cat": "Educação",
-    "descricao": "Percentual do investimento público total em educação em relação ao Produto Interno Bruto do Brasil.",
-    "como_interpretar":
-      "Valores maiores indicam maior proporção da produção econômica nacional destinada pelo setor público à educação. O indicador não mede, sozinho, qualidade, eficiência, equidade ou gasto por estudante.",
-    "metodologia":
-      "Indicador calculado pelo Inep segundo metodologia recomendada pela OCDE para comparação internacional. Considera o investimento público total em educação, incluindo pessoal ativo e encargos, ajuda financeira a estudantes, bolsas, financiamento estudantil, pesquisa e desenvolvimento, transferências ao setor privado, outras despesas correntes e de capital, além de estimativa de complemento da aposentadoria futura do pessoal ativo. O valor anual é dividido pelo PIB nominal do Brasil e expresso em percentual.",
-    "historico_metodologia":
-      "A série oficial disponível pelo Inep para este indicador cobre 2000 a 2021. O Inep informa que o percentual do investimento público em educação em relação ao PIB foi atualizado conforme novos valores do PIB divulgados pelo IBGE em março de 2007. Não foram mantidos anos anteriores a 2000 nem anos posteriores a 2021 por ausência de série oficial consolidada na fonte indicada.",
-    "abrangencia": "Brasil, setor público, todos os níveis de ensino, União, estados, Distrito Federal e municípios.",
-    "periodicidade":
-      "Anual, com divulgação dependente da consolidação das estatísticas educacionais, fiscais e do PIB.",
-    "eventos_externos": [
-      {
-        "ano": 2007,
-        "nome": "Fundeb",
-        "descricao":
-          "Entrada em vigor do Fundeb, ampliando o financiamento da educação básica e substituindo o Fundef.",
+        "ano": 2013,
+        "valor": 63.6
       },
       {
         "ano": 2014,
-        "nome": "PNE",
-        "descricao":
-          "Aprovação do Plano Nacional de Educação 2014-2024, que estabeleceu meta de ampliação do investimento público em educação em proporção ao PIB.",
+        "valor": 63.7
+      },
+      {
+        "ano": 2015,
+        "valor": 63.9
       },
       {
         "ano": 2016,
-        "nome": "Teto fiscal",
-        "descricao":
-          "A Emenda Constitucional nº 95 instituiu limite de crescimento das despesas primárias federais, afetando a trajetória potencial do gasto público.",
+        "valor": 64
+      },
+      {
+        "ano": 2017,
+        "valor": 63.9
+      },
+      {
+        "ano": 2018,
+        "valor": 64.3
+      },
+      {
+        "ano": 2019,
+        "valor": 64.5
       },
       {
         "ano": 2020,
-        "nome": "Covid-19",
-        "descricao":
-          "A pandemia alterou execução orçamentária, atividade econômica, funcionamento das redes de ensino e composição do gasto público.",
+        "valor": 62.4
       },
+      {
+        "ano": 2021,
+        "valor": 61.8
+      }
     ],
-    "comparacao_paises":
-      "O Inep afirma que seus indicadores financeiros educacionais seguem metodologia recomendada pela OCDE para permitir comparação internacional. Percentuais próximos entre países não implicam gasto por estudante equivalente, pois dependem do tamanho do PIB, da população em idade escolar, da estrutura federativa, dos níveis de ensino e do custo relativo dos serviços.",
-    "nivel_confiabilidade":
-      "Alto para 2000 a 2021, por serem dados oficiais publicados pelo Inep/MEC. Limitação: a própria série é uma estimativa estatística oficial de investimento público total e pode sofrer revisão metodológica ou revisão do PIB pelo IBGE.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
+    "padrao": false
+  },
+  "mortalidade_infantil_oms": {
+    "label": "(OMS) Mortalidade Infantil",
+    "unidade": "Óbitos de menores de 1 ano por 1.000 nascidos vivos",
+    "fonte": "World Health Organization / UN Inter-agency Group for Child Mortality Estimation",
+    "cat": "Saúde",
+    "descricao": "Mede a mortalidade infantil como o número/probabilidade de óbitos de crianças antes de completar 1 ano de idade, expresso por 1.000 nascidos vivos.",
+    "como_interpretar": "Valores menores indicam melhor sobrevivência infantil e, em geral, melhores condições sanitárias, socioeconômicas, pré-natais, neonatais e de atenção básica à saúde. O indicador não identifica sozinho as causas dos óbitos nem desigualdades regionais ou sociais internas.",
+    "metodologia": "A OMS define a taxa de mortalidade infantil como a probabilidade de uma criança nascida em determinado ano ou período morrer antes de completar 1 ano, expressa por 1.000 nascidos vivos. A série internacional é produzida pelo UN Inter-agency Group for Child Mortality Estimation, composto por UNICEF, OMS, Banco Mundial e Divisão de População da ONU, usando registros civis, censos, pesquisas domiciliares, tabelas de vida e métodos padronizados para comparabilidade entre países e anos.",
+    "historico_metodologia": "A fonte oficial informa que, para comparabilidade internacional, as taxas são estimadas/aprimoradas pelo UN IGME com metodologia padronizada e podem não coincidir exatamente com estatísticas nacionais oficiais. Portanto, a exigência de 'não incluir estimativas' é incompatível com a própria série internacional da OMS/UN IGME. Os valores abaixo são a série oficial internacional disponível para o indicador SP.DYN.IMRT.IN até 2024; não havia valor oficial de 2025 na série consultada.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2024, o Brasil registrou 12,3 óbitos infantis por 1.000 nascidos vivos. O valor ficou abaixo da média dos países de renda média, mas acima do agregado de países de alta renda, que registrou cerca de 4,2 por 1.000 nascidos vivos no mesmo ano.",
+    "nivel_confiabilidade": "Alto para comparação internacional oficial, pois a série é publicada no World Development Indicators e tem como fonte o UN Inter-agency Group for Child Mortality Estimation, com participação da OMS, UNICEF, Banco Mundial e ONU. A ressalva metodológica é relevante: os valores são estimativas oficiais padronizadas, não observações brutas puramente nacionais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "OMS - Infant mortality rate (between birth and 11 months per 1000 live births)",
+        "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/infant-mortality-rate-(probability-of-dying-between-birth-and-age-1-per-1000-live-births)"
+      },
+      {
+        "titulo": "World Bank - Mortality rate, infant (per 1,000 live births) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=BR"
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SP.DYN.IMRT.IN",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.DYN.IMRT.IN"
+      },
+      {
+        "titulo": "UN IGME - Child Mortality Estimates",
+        "url": "https://childmortality.org/"
+      },
+      {
+        "titulo": "FRED / World Bank - Infant Mortality Rate for Brazil",
+        "url": "https://fred.stlouisfed.org/series/SPDYNIMRTINBRA"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 42.4
+      },
+      {
+        "ano": 1995,
+        "valor": 39.9
+      },
+      {
+        "ano": 1996,
+        "valor": 37.5
+      },
+      {
+        "ano": 1997,
+        "valor": 35.2
+      },
+      {
+        "ano": 1998,
+        "valor": 33.1
+      },
+      {
+        "ano": 1999,
+        "valor": 31.1
+      },
+      {
+        "ano": 2000,
+        "valor": 29.1
+      },
+      {
+        "ano": 2001,
+        "valor": 27.3
+      },
+      {
+        "ano": 2002,
+        "valor": 25.6
+      },
+      {
+        "ano": 2003,
+        "valor": 24.0
+      },
+      {
+        "ano": 2004,
+        "valor": 22.4
+      },
+      {
+        "ano": 2005,
+        "valor": 21.0
+      },
+      {
+        "ano": 2006,
+        "valor": 19.7
+      },
+      {
+        "ano": 2007,
+        "valor": 18.6
+      },
+      {
+        "ano": 2008,
+        "valor": 17.6
+      },
+      {
+        "ano": 2009,
+        "valor": 16.7
+      },
+      {
+        "ano": 2010,
+        "valor": 16.0
+      },
+      {
+        "ano": 2011,
+        "valor": 15.3
+      },
+      {
+        "ano": 2012,
+        "valor": 14.8
+      },
+      {
+        "ano": 2013,
+        "valor": 14.4
+      },
+      {
+        "ano": 2014,
+        "valor": 14.0
+      },
+      {
+        "ano": 2015,
+        "valor": 13.7
+      },
+      {
+        "ano": 2016,
+        "valor": 14.6
+      },
+      {
+        "ano": 2017,
+        "valor": 13.3
+      },
+      {
+        "ano": 2018,
+        "valor": 13.1
+      },
+      {
+        "ano": 2019,
+        "valor": 12.9
+      },
+      {
+        "ano": 2020,
+        "valor": 12.8
+      },
+      {
+        "ano": 2021,
+        "valor": 12.7
+      },
+      {
+        "ano": 2022,
+        "valor": 12.6
+      },
+      {
+        "ano": 2023,
+        "valor": 12.4
+      },
+      {
+        "ano": 2024,
+        "valor": 12.3
+      }
+    ],
+    "padrao": false
+  },
+  "mortalidade_menores_5_anos_oms": {
+    "label": "(OMS) Mortalidade de Menores de 5 Anos",
+    "unidade": "mortes por 1.000 nascidos vivos",
+    "fonte": "World Health Organization / United Nations Inter-agency Group for Child Mortality Estimation (UN IGME)",
+    "cat": "Saúde",
+    "descricao": "Mede a probabilidade de uma criança nascida em determinado ano morrer antes de completar 5 anos de idade, expressa por 1.000 nascidos vivos.",
+    "como_interpretar": "Valores menores indicam melhor sobrevivência infantil e, em geral, melhores condições de saúde materno-infantil, vacinação, saneamento, nutrição e acesso a serviços de saúde. O indicador não identifica sozinho as causas específicas das mortes.",
+    "metodologia": "A OMS/UN IGME estima a mortalidade de menores de 5 anos a partir de registros civis, censos, pesquisas domiciliares e sistemas nacionais de informação. As fontes são harmonizadas e avaliadas por qualidade; quando necessário, modelos estatísticos são aplicados para produzir uma série anual comparável internacionalmente. O indicador corresponde à probabilidade de morte antes dos 5 anos por 1.000 nascidos vivos.",
+    "historico_metodologia": "A série oficial da OMS/UN IGME é publicada como estimativa oficial, não como contagem bruta observada. As estimativas são revisadas periodicamente quando novos registros, censos, pesquisas ou ajustes metodológicos ficam disponíveis. Portanto, a série pode mudar entre rodadas de publicação. Não há, na OMS/UN IGME, uma série anual global puramente observada e não estimada para todos os anos desde 1994.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises": "O Brasil apresenta mortalidade de menores de 5 anos abaixo da média mundial e muito abaixo dos níveis observados em países de baixa renda, mas ainda acima dos níveis típicos de países de alta renda, onde a mortalidade infantil e de menores de 5 anos costuma ser inferior a 5 mortes por 1.000 nascidos vivos.",
+    "nivel_confiabilidade": "Alto para comparação internacional oficial, pois a série é produzida pela OMS/UN IGME e usada pelo Banco Mundial no WDI e no monitoramento do ODS 3.2.1. A ressalva metodológica é essencial: os valores são estimativas oficiais modeladas, não medições brutas diretas ano a ano.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "padrao": false,
     "fontes_links": [
       {
-        "titulo": "Inep - Indicadores Financeiros Educacionais",
-        "url":
-          "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/indicadores-financeiros-educacionais",
+        "titulo": "WHO Data - Under-five mortality rate (per 1000 live births)",
+        "url": "https://data.who.int/indicators/i/E3CAF2B/2322814"
       },
       {
-        "titulo": "Inep - Percentual do investimento total em relação ao PIB, por nível de ensino - 2000 a 2021",
-        "url":
-          "https://download.inep.gov.br/informacoes_estatisticas/investimentos_publicos_em_educacao/indicadores_financeiros_educacionais/Investimento_pib_total.zip",
+        "titulo": "World Bank WDI - Mortality rate, under-5 (per 1,000 live births) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=BR"
       },
       {
-        "titulo": "Inep - Metodologia para o cálculo do indicador Investimento Público em Educação em relação ao PIB",
-        "url":
-          "https://download.inep.gov.br/informacoes_estatisticas/investimentos_publicos_em_educacao/artigos_publicacoes/metodologia_calculo_indicador_investimento_publico_educacao_PIB.pdf",
+        "titulo": "World Bank Metadata - SH.DYN.MORT",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.DYN.MORT"
       },
       {
-        "titulo": "Inep - Relatório do 5º ciclo de monitoramento das metas do PNE - 2024",
-        "url":
-          "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/relatorio_do_quinto_ciclo_de_monitoramento_das_metas_do_plano_nacional_de_educacao.pdf",
+        "titulo": "UN IGME - Child Mortality Estimates",
+        "url": "https://childmortality.org/"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 47.4
       },
-    ],
-    "dados": [
-      { "ano": 2000, "valor": 4.6 },
-      { "ano": 2001, "valor": 4.7 },
-      { "ano": 2002, "valor": 4.7 },
-      { "ano": 2003, "valor": 4.6 },
-      { "ano": 2004, "valor": 4.5 },
-      { "ano": 2005, "valor": 4.5 },
-      { "ano": 2006, "valor": 4.9 },
-      { "ano": 2007, "valor": 5.1 },
-      { "ano": 2008, "valor": 5.3 },
-      { "ano": 2009, "valor": 5.6 },
-      { "ano": 2010, "valor": 5.6 },
-      { "ano": 2011, "valor": 5.8 },
-      { "ano": 2012, "valor": 5.9 },
-      { "ano": 2013, "valor": 6 },
-      { "ano": 2014, "valor": 6 },
-      { "ano": 2015, "valor": 6.2 },
-      { "ano": 2016, "valor": 6.3 },
-      { "ano": 2017, "valor": 6.3 },
-      { "ano": 2018, "valor": 6.1 },
-      { "ano": 2019, "valor": 6 },
-      { "ano": 2020, "valor": 5.8 },
-      { "ano": 2021, "valor": 5.5 },
-    ],
+      {
+        "ano": 1995,
+        "valor": 44.9
+      },
+      {
+        "ano": 1996,
+        "valor": 42.6
+      },
+      {
+        "ano": 1997,
+        "valor": 40.4
+      },
+      {
+        "ano": 1998,
+        "valor": 38.3
+      },
+      {
+        "ano": 1999,
+        "valor": 36.3
+      },
+      {
+        "ano": 2000,
+        "valor": 34.5
+      },
+      {
+        "ano": 2001,
+        "valor": 32.9
+      },
+      {
+        "ano": 2002,
+        "valor": 31.3
+      },
+      {
+        "ano": 2003,
+        "valor": 29.8
+      },
+      {
+        "ano": 2004,
+        "valor": 28.4
+      },
+      {
+        "ano": 2005,
+        "valor": 27
+      },
+      {
+        "ano": 2006,
+        "valor": 25.7
+      },
+      {
+        "ano": 2007,
+        "valor": 24.5
+      },
+      {
+        "ano": 2008,
+        "valor": 23.4
+      },
+      {
+        "ano": 2009,
+        "valor": 22.4
+      },
+      {
+        "ano": 2010,
+        "valor": 21.4
+      },
+      {
+        "ano": 2011,
+        "valor": 20.5
+      },
+      {
+        "ano": 2012,
+        "valor": 19.6
+      },
+      {
+        "ano": 2013,
+        "valor": 18.7
+      },
+      {
+        "ano": 2014,
+        "valor": 17.8
+      },
+      {
+        "ano": 2015,
+        "valor": 16
+      },
+      {
+        "ano": 2016,
+        "valor": 16.8
+      },
+      {
+        "ano": 2017,
+        "valor": 15.4
+      },
+      {
+        "ano": 2018,
+        "valor": 15.2
+      },
+      {
+        "ano": 2019,
+        "valor": 15
+      },
+      {
+        "ano": 2020,
+        "valor": 14.9
+      },
+      {
+        "ano": 2021,
+        "valor": 14.7
+      },
+      {
+        "ano": 2022,
+        "valor": 14.6
+      },
+      {
+        "ano": 2023,
+        "valor": 14.4
+      },
+      {
+        "ano": 2024,
+        "valor": 14.2
+      }
+    ]
   },
-  "mvi_brasil_taxa": {
-    "label": "Taxa de MVI (por 100 mil hab.)",
-    "unidade": "mortes / 100k hab.",
-    "fonte": "FBSP / IPEA (Atlas da Violência)",
-    "cat": "Segurança",
-    "descricao":
-      "Mortes Violentas Intencionais. O declínio paulatino reflete transição demográfica e acordos de facções, mas mantém patamares absurdos e doentios se comparados à pacificidade civil das esferas europeias ou japonesas.",
-    "dados": [
-      { "ano": 1994, "valor": 20.3 },
-      { "ano": 1995, "valor": 22.1 },
-      { "ano": 1996, "valor": 22.8 },
-      { "ano": 1997, "valor": 23.4 },
-      { "ano": 1998, "valor": 24.1 },
-      { "ano": 1999, "valor": 25.2 },
-      { "ano": 2000, "valor": 26.7 },
-      { "ano": 2001, "valor": 27.5 },
-      { "ano": 2002, "valor": 28.1 },
-      { "ano": 2003, "valor": 28.9 },
-      { "ano": 2004, "valor": 26.5 },
-      { "ano": 2005, "valor": 25.4 },
-      { "ano": 2006, "valor": 25.0 },
-      { "ano": 2007, "valor": 24.1 },
-      { "ano": 2008, "valor": 25.2 },
-      { "ano": 2009, "valor": 25.8 },
-      { "ano": 2010, "valor": 26.2 },
-      { "ano": 2011, "valor": 26.1 },
-      { "ano": 2012, "valor": 27.3 },
-      { "ano": 2013, "valor": 27.2 },
-      { "ano": 2014, "valor": 28.4 },
-      { "ano": 2015, "valor": 28.1 },
-      { "ano": 2016, "valor": 29.9 },
-      { "ano": 2017, "valor": 30.9 },
-      { "ano": 2018, "valor": 27.6 },
-      { "ano": 2019, "valor": 22.7 },
-      { "ano": 2020, "valor": 23.6 },
-      { "ano": 2021, "valor": 22.3 },
-      { "ano": 2022, "valor": 21.7 },
-      { "ano": 2023, "valor": 20.3 },
-      { "ano": 2024, "valor": 19.5 },
-      { "ano": 2025, "valor": 18.8 },
-      { "ano": 2026, "valor": 18.2 },
+  "mortalidade_materna_oms": {
+    "label": "(OMS) Mortalidade Materna",
+    "unidade": "Óbitos maternos por 100.000 nascidos vivos",
+    "fonte": "World Health Organization - Global Health Observatory / WHO, UNICEF, UNFPA, World Bank Group and UNPD (MMEIG)",
+    "cat": "Saúde",
+    "descricao": "Mede a razão de mortalidade materna: mortes maternas relacionadas à gravidez, parto ou até 42 dias após o término da gestação, por 100.000 nascidos vivos.",
+    "como_interpretar": "Valores menores indicam menor risco de morte materna por nascido vivo e melhor desempenho relativo em saúde materna. A série deve ser interpretada como estimativa oficial internacional comparável, não como contagem direta bruta.",
+    "metodologia": "A razão de mortalidade materna é calculada como o número de mortes maternas dividido pelo número de nascidos vivos no mesmo período, multiplicado por 100.000. A série internacional da OMS/MMEIG ajusta os dados para sub-registro, má classificação e diferenças de qualidade dos sistemas nacionais, usando modelagem estatística para garantir comparabilidade entre países.",
+    "historico_metodologia": "A série oficial recente da OMS/MMEIG para países cobre 2000 a 2023 e é explicitamente classificada como estimativa. O Banco Mundial identifica o indicador SH.STA.MMRT como 'Maternal mortality ratio (modeled estimate, per 100,000 live births)'. Portanto, não existem valores OMS puros, observados e não estimados para toda a série desde 1994. Para manter fonte oficial OMS/MMEIG, foram incluídos apenas os anos disponíveis na base oficial mais recente, de 2000 a 2023.",
+    "abrangencia": "Brasil, cobertura nacional, em série internacional comparável da OMS/MMEIG.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao": "A pandemia de COVID-19 coincidiu com forte aumento da mortalidade materna estimada no Brasil, passando de 65 em 2019 para 85 em 2020."
+      },
+      {
+        "ano": 2021,
+        "nome": "Pico pandêmico",
+        "descricao": "O indicador atingiu 128 em 2021, maior valor da série 2000-2023, compatível com o impacto sanitário excepcional da pandemia."
+      },
+      {
+        "ano": 2023,
+        "nome": "Reversão parcial",
+        "descricao": "Após o pico pandêmico, o indicador caiu para 67 em 2023, próximo ao nível pré-pandemia observado em 2019."
+      }
     ],
+    "comparacao_paises": "Em 2023, o Brasil registrou 67 mortes maternas por 100.000 nascidos vivos na estimativa oficial OMS/MMEIG. Esse nível é muito superior ao de países de alta renda, mas inferior ao de muitos países de baixa renda e regiões com sistemas de saúde mais frágeis.",
+    "nivel_confiabilidade": "Alto para comparação internacional oficial, pois a série vem da OMS/MMEIG com participação de UNICEF, UNFPA, Banco Mundial e UNPD. A ressalva metodológica é relevante: os valores são estimativas oficiais modeladas, não medições observadas brutas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "WHO Data - Maternal mortality ratio (per 100 000 live births)",
+        "url": "https://data.who.int/indicators/i/C071DCB/AC597B1"
+      },
+      {
+        "titulo": "UNICEF Data - MMR country-level estimates 2000-2023, WHO/UNICEF/UNFPA/World Bank Group/UNPD (MMEIG)",
+        "url": "https://data.unicef.org/wp-content/uploads/2023/02/MMR-maternal-deaths-and-LTR_MMEIG-trends_2000-2023_Revised-2025-1.xlsx"
+      },
+      {
+        "titulo": "World Bank - Maternal mortality ratio (modeled estimate, per 100,000 live births) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=BR"
+      },
+      {
+        "titulo": "World Bank Metadata - SH.STA.MMRT",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.STA.MMRT"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 69
+      },
+      {
+        "ano": 2001,
+        "valor": 66
+      },
+      {
+        "ano": 2002,
+        "valor": 66
+      },
+      {
+        "ano": 2003,
+        "valor": 67
+      },
+      {
+        "ano": 2004,
+        "valor": 70
+      },
+      {
+        "ano": 2005,
+        "valor": 71
+      },
+      {
+        "ano": 2006,
+        "valor": 72
+      },
+      {
+        "ano": 2007,
+        "valor": 73
+      },
+      {
+        "ano": 2008,
+        "valor": 71
+      },
+      {
+        "ano": 2009,
+        "valor": 69
+      },
+      {
+        "ano": 2010,
+        "valor": 66
+      },
+      {
+        "ano": 2011,
+        "valor": 62
+      },
+      {
+        "ano": 2012,
+        "valor": 60
+      },
+      {
+        "ano": 2013,
+        "valor": 61
+      },
+      {
+        "ano": 2014,
+        "valor": 63
+      },
+      {
+        "ano": 2015,
+        "valor": 63
+      },
+      {
+        "ano": 2016,
+        "valor": 64
+      },
+      {
+        "ano": 2017,
+        "valor": 61
+      },
+      {
+        "ano": 2018,
+        "valor": 62
+      },
+      {
+        "ano": 2019,
+        "valor": 65
+      },
+      {
+        "ano": 2020,
+        "valor": 85
+      },
+      {
+        "ano": 2021,
+        "valor": 128
+      },
+      {
+        "ano": 2022,
+        "valor": 104
+      },
+      {
+        "ano": 2023,
+        "valor": 67
+      }
+    ],
+    "padrao": false
+  },
+  "oms_uhc_service_coverage_index": {
+    "label": "(OMS) Índice de Cobertura de Serviços UHC",
+    "unidade": "Índice de 0 a 100",
+    "fonte": "World Bank Data / Universal Health Coverage Dataset, World Health Organization (WHO)",
+    "cat": "Saúde",
+    "descricao": "Mede a cobertura de serviços essenciais de saúde por meio de um índice composto de indicadores traçadores de cobertura de serviços.",
+    "como_interpretar": "Valores maiores indicam maior cobertura de serviços essenciais de saúde. O índice varia de 0 a 100, em que 100 representa o maior nível de cobertura no indicador. O valor não deve ser lido como porcentagem direta da população plenamente coberta por todos os serviços essenciais.",
+    "metodologia": "O indicador UHC Service Coverage Index é uma métrica do ODS 3.8.1. A OMS calcula o índice combinando indicadores traçadores de cobertura de serviços essenciais nas áreas de saúde reprodutiva, materna, neonatal e infantil; doenças infecciosas; doenças não transmissíveis; e capacidade/acesso aos serviços. A série republicada pelo World Bank Data vem do Universal Health Coverage Dataset da World Health Organization (WHO).",
+    "historico_metodologia": "A série do World Bank Data para SH_UHC_SCI está disponível para 2000 a 2023 e usa como fonte o Universal Health Coverage Dataset da WHO. Em atualização recente do World Development Indicators, o indicador UHC Service Coverage Index foi revisado com atualização de indicadores traçadores e nova média geométrica ponderada por população, reduzindo a sobre-influência de tratamentos de doenças infecciosas e produzindo uma medida mais equilibrada de cobertura de serviços. Por isso, valores atuais podem diferir de versões antigas da série OMS/GHO.",
+    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente entre países e agregados regionais/econômicos do World Bank Data.",
+    "periodicidade": "Anual na série republicada pelo World Bank Data, com dados disponíveis de 2000 a 2023.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Base UHC",
+        "descricao": "Início da série anual disponível no World Bank Data para o Brasil, dentro do monitoramento global da cobertura universal de saúde."
+      },
+      {
+        "ano": 2015,
+        "nome": "Agenda ODS",
+        "descricao": "A adoção dos Objetivos de Desenvolvimento Sustentável consolidou o indicador 3.8.1 como métrica global para acompanhar a cobertura de serviços essenciais de saúde."
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao": "A pandemia afetou a continuidade e a capacidade de prestação de serviços de saúde, embora o índice sintético do Brasil tenha permanecido em patamar elevado na série republicada."
+      },
+      {
+        "ano": 2023,
+        "nome": "Alta recente",
+        "descricao": "O Brasil aparece com valor 84 em 2023, acima do agregado da América Latina e Caribe reportado pelo World Bank Data para o mesmo ano."
+      },
+      {
+        "ano": 2025,
+        "nome": "Revisão UHC",
+        "descricao": "O World Bank informou revisão metodológica do UHC Service Coverage Index, com atualização de indicadores traçadores e nova ponderação populacional."
+      }
+    ],
+    "comparacao_paises": "Em 2023, o Brasil registrou 84 no UHC Service Coverage Index, acima do agregado América Latina e Caribe, que aparece com 79 no World Bank Data. O valor brasileiro fica em patamar semelhante ao de alguns países de renda alta e média-alta, mas comparações devem considerar que o índice é composto e depende de indicadores traçadores, proxies e revisões metodológicas.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a série vem do World Bank Data e tem como fonte o Universal Health Coverage Dataset da World Health Organization (WHO). A ressalva é que o indicador é composto, usa proxies e estimativas oficiais, e pode sofrer revisões metodológicas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "padrao": false,
-  },
-  "mvci_brasil_taxa": {
-    "label": "Taxa de MVCI (por 100 mil hab.)",
-    "unidade": "mortes / 100k hab.",
-    "fonte": "IPEA (Atlas da Violência) / SIM-MS",
-    "cat": "Segurança",
-    "descricao":
-      "Mortes por Causas Indeterminadas. Mascara o sub-registro de homicídios pela debilidade crônica do Estado na perícia forense (falta de resolubilidade), muito longe do padrão civilizacional da Europa e América do Norte.",
-    "dados": [
-      { "ano": 1994, "valor": 4.1 },
-      { "ano": 1995, "valor": 4.3 },
-      { "ano": 1996, "valor": 4.5 },
-      { "ano": 1997, "valor": 4.2 },
-      { "ano": 1998, "valor": 4.6 },
-      { "ano": 1999, "valor": 4.8 },
-      { "ano": 2000, "valor": 5.1 },
-      { "ano": 2001, "valor": 5.4 },
-      { "ano": 2002, "valor": 5.2 },
-      { "ano": 2003, "valor": 5.0 },
-      { "ano": 2004, "valor": 4.8 },
-      { "ano": 2005, "valor": 4.9 },
-      { "ano": 2006, "valor": 4.7 },
-      { "ano": 2007, "valor": 4.5 },
-      { "ano": 2008, "valor": 4.8 },
-      { "ano": 2009, "valor": 5.0 },
-      { "ano": 2010, "valor": 4.9 },
-      { "ano": 2011, "valor": 5.1 },
-      { "ano": 2012, "valor": 5.3 },
-      { "ano": 2013, "valor": 5.5 },
-      { "ano": 2014, "valor": 5.8 },
-      { "ano": 2015, "valor": 6.1 },
-      { "ano": 2016, "valor": 6.4 },
-      { "ano": 2017, "valor": 6.2 },
-      { "ano": 2018, "valor": 6.8 },
-      { "ano": 2019, "valor": 7.4 },
-      { "ano": 2020, "valor": 7.9 },
-      { "ano": 2021, "valor": 8.2 },
-      { "ano": 2022, "valor": 8.5 },
-      { "ano": 2023, "valor": 8.1 },
-      { "ano": 2024, "valor": 7.8 },
-      { "ano": 2025, "valor": 7.5 },
-      { "ano": 2026, "valor": 7.3 },
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - UHC service coverage index - Brazil",
+        "url": "https://data.worldbank.org/indicator/SH_UHC_SCI?locations=BR"
+      },
+      {
+        "titulo": "World Bank Data - UHC service coverage index",
+        "url": "https://data.worldbank.org/indicator/SH_UHC_SCI"
+      },
+      {
+        "titulo": "World Bank Data360 - Universal Health Coverage Dataset",
+        "url": "https://data360.worldbank.org/en/dataset/WB_UHC"
+      },
+      {
+        "titulo": "WHO Data - UHC service coverage index",
+        "url": "https://data.who.int/indicators/i/3805B1E/9A706FD"
+      },
+      {
+        "titulo": "World Bank - WDI Quarterly Update: December 2025",
+        "url": "https://datatopics.worldbank.org/world-development-indicators/release-note/dec-2025.html"
+      }
     ],
-    "padrao": false,
-  },
-  "feminicidio_br_taxa": {
-    "label": "Taxa de Feminicídio (por 100 mil mulheres)",
-    "unidade": "mortes / 100k mulheres",
-    "fonte": "FBSP / Atlas da Violência / Ministério das Mulheres",
-    "cat": "Segurança",
-    "descricao":
-      "Mortes motivadas por gênero. A estabilidade reflete a tipificação legislativa recente, que obrigou o Estado a categorizar os dados antes diluídos, gerando visibilidade alinhada a movimentos ocidentais em combate ao machismo civil.",
     "dados": [
-      { "ano": 1994, "valor": 0.82 },
-      { "ano": 1995, "valor": 0.85 },
-      { "ano": 1996, "valor": 0.88 },
-      { "ano": 1997, "valor": 0.9 },
-      { "ano": 1998, "valor": 0.93 },
-      { "ano": 1999, "valor": 0.95 },
-      { "ano": 2000, "valor": 0.98 },
-      { "ano": 2001, "valor": 1.02 },
-      { "ano": 2002, "valor": 1.05 },
-      { "ano": 2003, "valor": 1.08 },
-      { "ano": 2004, "valor": 1.1 },
-      { "ano": 2005, "valor": 1.05 },
-      { "ano": 2006, "valor": 1.02 },
-      { "ano": 2007, "valor": 0.98 },
-      { "ano": 2008, "valor": 1.03 },
-      { "ano": 2009, "valor": 1.07 },
-      { "ano": 2010, "valor": 1.12 },
-      { "ano": 2011, "valor": 1.15 },
-      { "ano": 2012, "valor": 1.2 },
-      { "ano": 2013, "valor": 1.18 },
-      { "ano": 2014, "valor": 1.25 },
-      { "ano": 2015, "valor": 1.1 },
-      { "ano": 2016, "valor": 1.15 },
-      { "ano": 2017, "valor": 1.28 },
-      { "ano": 2018, "valor": 1.22 },
-      { "ano": 2019, "valor": 1.25 },
-      { "ano": 2020, "valor": 1.26 },
-      { "ano": 2021, "valor": 1.24 },
-      { "ano": 2022, "valor": 1.32 },
-      { "ano": 2023, "valor": 1.4 },
-      { "ano": 2024, "valor": 1.35 },
-      { "ano": 2025, "valor": 1.28 },
-      { "ano": 2026, "valor": 1.15 },
-    ],
-    "padrao": false,
+      {
+        "ano": 2015,
+        "valor": 71
+      },
+      {
+        "ano": 2016,
+        "valor": 83
+      },
+      {
+        "ano": 2017,
+        "valor": 83
+      },
+      {
+        "ano": 2018,
+        "valor": 83
+      },
+      {
+        "ano": 2019,
+        "valor": 83
+      },
+      {
+        "ano": 2020,
+        "valor": 84
+      },
+      {
+        "ano": 2021,
+        "valor": 84
+      },
+      {
+        "ano": 2022,
+        "valor": 83
+      },
+      {
+        "ano": 2023,
+        "valor": 84
+      }
+    ]
   },
-  "estupro_br_taxa": {
-    "label": "Taxa de Estupro (por 100 mil hab.)",
-    "unidade": "casos / 100k hab.",
-    "fonte": "FBSP / Anuário de Segurança Pública",
-    "cat": "Segurança",
-    "descricao":
-      "Infecção cruel de crimes contra a vulnerabilidade corporal. A alta contínua dos registros não reflete apenas aumento de casos, mas a coragem encorajada por movimentos globais no registro contra os ofensores, reduzindo subnotificação.",
+  "mortalidade_evitavel_tratavel": {
+    "label": "(OPAS/OMS) Mortalidade Prematura Potencialmente Evitável",
+    "unidade": "Mortes por 100.000 habitantes, taxa ajustada por idade",
+    "fonte": "Pan American Health Organization / World Health Organization - Health in the Americas",
+    "cat": "Saúde",
+    "descricao": "Mede a taxa ajustada de mortes prematuras potencialmente evitáveis, incluindo causas preveníveis por políticas públicas e prevenção primária e causas tratáveis por acesso oportuno e efetivo aos serviços de saúde.",
+    "como_interpretar": "Valores menores indicam menor mortalidade por causas consideradas potencialmente evitáveis. Reduções sugerem melhora combinada em prevenção, saúde pública, atenção primária, diagnóstico e tratamento. O indicador não mede sozinho a qualidade total do sistema de saúde, pois também é afetado por estrutura etária, fatores socioeconômicos, violência, prevalência de doenças e qualidade dos registros de mortalidade.",
+    "metodologia": "A OPAS/OMS apresenta a taxa ajustada de mortalidade prematura potencialmente evitável por 100.000 habitantes. O conceito combina mortalidade por causas preveníveis, que podem ser evitadas principalmente por políticas públicas e prevenção primária, e causas tratáveis, que podem ser evitadas por diagnóstico e tratamento oportunos e efetivos. A classificação segue a lógica internacional de mortalidade evitável/prevenível/tratável, com padronização por idade para permitir comparação temporal e internacional.",
+    "historico_metodologia": "A fonte oficial consultada apresenta valores comparáveis para 2000 e 2019 no perfil do Brasil em Health in the Americas. Não foram encontrados, na fonte oficial aberta da OPAS/OMS consultada, valores anuais completos de 1994 até hoje para este atributo específico. Por isso, a série abaixo mantém somente os anos explicitamente publicados e não inclui interpolação, extrapolação ou estimativas geradas por IA. A metodologia internacional de mortalidade evitável foi revisada em classificações OCDE/Eurostat, mas a página da OPAS/OMS consultada não informa quebra metodológica específica para a série do Brasil.",
+    "abrangencia": "Brasil, cobertura nacional, com comparação regional para as Américas publicada pela OPAS/OMS.",
+    "periodicidade": "Não identificada como série anual aberta na fonte consultada; valores oficiais publicados para 2000 e 2019 no perfil nacional.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2019, o Brasil registrou 249 mortes prematuras potencialmente evitáveis por 100.000 habitantes, taxa 9,8% maior que a média da Região das Américas. No mesmo ano, a taxa brasileira por causas preveníveis foi 149,4 por 100.000, 9% acima da média regional, e a taxa por causas tratáveis foi 99,6 por 100.000, acima da média regional de 89,6.",
+    "nivel_confiabilidade": "Alto para os anos publicados, pois os valores vêm de fonte oficial da OPAS/OMS. A principal limitação é a baixa granularidade temporal disponível na fonte aberta consultada: apenas 2000 e 2019 foram encontrados explicitamente para este indicador agregado no Brasil.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "PAHO/WHO - Brazil Country Profile - Health in the Americas",
+        "url": "https://hia.paho.org/en/node/139"
+      },
+      {
+        "titulo": "WHO - Global Health Observatory",
+        "url": "https://www.who.int/data/gho"
+      },
+      {
+        "titulo": "WHO - WHO Mortality Database",
+        "url": "https://www.who.int/data/data-collection-tools/who-mortality-database"
+      },
+      {
+        "titulo": "OECD - Avoidable mortality: Definitions, Sources and Methods",
+        "url": "https://stats.oecd.org/wbos/fileview2.aspx?IDFile=41dfcc30-110a-4b7a-ac94-d6b8874e27cd"
+      }
+    ],
     "dados": [
-      { "ano": 1994, "valor": 6.8 },
-      { "ano": 1995, "valor": 7.2 },
-      { "ano": 1996, "valor": 7.5 },
-      { "ano": 1997, "valor": 7.9 },
-      { "ano": 1998, "valor": 8.4 },
-      { "ano": 1999, "valor": 9.1 },
-      { "ano": 2000, "valor": 10.5 },
-      { "ano": 2001, "valor": 11.2 },
-      { "ano": 2002, "valor": 11.8 },
-      { "ano": 2003, "valor": 12.4 },
-      { "ano": 2004, "valor": 13.1 },
-      { "ano": 2005, "valor": 13.8 },
-      { "ano": 2006, "valor": 14.5 },
-      { "ano": 2007, "valor": 15.2 },
-      { "ano": 2008, "valor": 15.9 },
-      { "ano": 2009, "valor": 22.4 },
-      { "ano": 2010, "valor": 23.1 },
-      { "ano": 2011, "valor": 24.5 },
-      { "ano": 2012, "valor": 26.8 },
-      { "ano": 2013, "valor": 25.4 },
-      { "ano": 2014, "valor": 24.1 },
-      { "ano": 2015, "valor": 22.8 },
-      { "ano": 2016, "valor": 23.5 },
-      { "ano": 2017, "valor": 28.6 },
-      { "ano": 2018, "valor": 31.2 },
-      { "ano": 2019, "valor": 32.5 },
-      { "ano": 2020, "valor": 28.4 },
-      { "ano": 2021, "valor": 31.8 },
-      { "ano": 2022, "valor": 36.9 },
-      { "ano": 2023, "valor": 41.5 },
-      { "ano": 2024, "valor": 44.2 },
-      { "ano": 2025, "valor": 46.8 },
-      { "ano": 2026, "valor": 49.1 },
+      {
+        "ano": 2000,
+        "valor": 351.9
+      },
+      {
+        "ano": 2019,
+        "valor": 249
+      }
     ],
-    "padrao": false,
+    "padrao": false
   },
-  "estelionato_digital_taxa": {
-    "label": "Estelionato Digital (por 100k hab.)",
-    "unidade": "casos / 100k hab.",
-    "fonte": "FBSP / Anuário Brasileiro de Segurança Pública",
-    "cat": "Segurança",
-    "descricao":
-      "Explosão monumental com a popularização do PIX e transição do crime para as vias cibernéticas remotas. Representa a vulnerabilidade tecnológica civil sem o rastreamento estatal internacional de retaguarda imediata para coibir as fraudes.",
+  "cobertura_vacinal_essencial": {
+    "label": "(OMS) Cobertura Vacinal Essencial",
+    "unidade": "% de crianças de 12 a 23 meses",
+    "fonte": "World Health Organization (WHO) / United Nations Children's Fund (UNICEF) - WHO/UNICEF Estimates of National Immunization Coverage (WUENIC), via World Bank WDI SH.IMM.IDPT",
+    "cat": "Saúde",
+    "descricao": "Mede a proporção de crianças de 12 a 23 meses que receberam três doses da vacina contra difteria, tétano e coqueluche (DTP3), usada internacionalmente como indicador de cobertura vacinal infantil essencial.",
+    "como_interpretar": "Valores maiores indicam maior cobertura de imunização infantil básica. A OMS trata o aumento ao longo do tempo como progresso. Valores abaixo de 90% indicam cobertura insuficiente em relação a metas globais usuais de imunização.",
+    "metodologia": "O indicador corresponde ao percentual de crianças de 12 a 23 meses que receberam três doses de vacina contendo DTP. A série da OMS/UNICEF combina dados administrativos reportados por programas nacionais de imunização, pesquisas domiciliares e revisão técnica anual. No World Bank WDI, o indicador é publicado como SH.IMM.IDPT.",
+    "historico_metodologia": "A OMS/UNICEF revisa anualmente as estimativas WUENIC, incorporando dados administrativos, pesquisas domiciliares, revisões de denominadores populacionais e validações com países. A fonte informa que a qualidade depende dos dados empíricos disponíveis e que alguns anos podem ser revisados em atualizações posteriores. A série atual do Banco Mundial cobre 1980 a 2024; não há valor observado publicado para 2025.",
+    "abrangencia": "Brasil, cobertura nacional, crianças de 12 a 23 meses, com padronização internacional OMS/UNICEF e publicação no World Development Indicators do Banco Mundial.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "SIAPI",
+        "descricao": "Implementação inicial do Sistema de Informação para Avaliação do Programa de Imunizações, fortalecendo o registro da vacinação no Brasil."
+      },
+      {
+        "ano": 1998,
+        "nome": "Hepatite B",
+        "descricao": "Expansão da vacina contra hepatite B para menores de 1 ano, dentro do processo de ampliação do calendário de imunização infantil."
+      },
+      {
+        "ano": 2012,
+        "nome": "Pentavalente",
+        "descricao": "Substituição da DTP/Hib pela vacina pentavalente DTP/Hib/HepB e mudança no esquema de poliomielite para esquema sequencial IPV/OPV."
+      },
+      {
+        "ano": 2017,
+        "nome": "Desabastecimento",
+        "descricao": "A documentação WUENIC registra relato de desabastecimento de vacina por um mês em 2017 para alguns componentes do calendário infantil."
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao": "A pandemia de COVID-19 afetou serviços de rotina e foi associada a queda de vacinação infantil em estudos e comentários técnicos citados pela OMS/UNICEF."
+      },
+      {
+        "ano": 2023,
+        "nome": "Recuperação",
+        "descricao": "A cobertura DTP3 do Brasil subiu fortemente após o ponto baixo de 2021, atingindo 90% em 2023 e 91% em 2024 na série WDI/OMS/UNICEF."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 91% de cobertura DTP3, acima do valor global recente de DTP3 publicado pela OMS/UNICEF para 2022, mas ainda abaixo dos países com cobertura próxima de 95% a 99%.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a série vem da OMS/UNICEF e é republicada pelo World Bank WDI. Ressalva metodológica: a própria fonte classifica WUENIC como estimativas oficiais baseadas em dados administrativos, pesquisas e revisão técnica; portanto, não deve ser interpretada como contagem bruta administrativa sem ajuste.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "WHO Data - Diphtheria-tetanus-pertussis (DTP3) immunization coverage among 1 year olds (%)",
+        "url": "https://data.who.int/indicators/i/48D7D19/F8E084C"
+      },
+      {
+        "titulo": "World Bank Data - Immunization, DPT (% of children ages 12-23 months) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SH.IMM.IDPT?locations=BR"
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SH.IMM.IDPT",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.IMM.IDPT"
+      },
+      {
+        "titulo": "WHO Immunization Data Portal - Brazil DTP Vaccination Coverage",
+        "url": "https://immunizationdata.who.int/dashboard/regions/region-of-the-americas/BRA"
+      },
+      {
+        "titulo": "UNICEF - WHO and UNICEF Estimates of Immunization Coverage - Brazil",
+        "url": "https://data.unicef.org/wp-content/uploads/cp/immunisation/bra.pdf"
+      }
+    ],
     "dados": [
-      { "ano": 1994, "valor": 0.2 },
-      { "ano": 1995, "valor": 0.3 },
-      { "ano": 1996, "valor": 0.5 },
-      { "ano": 1997, "valor": 0.8 },
-      { "ano": 1998, "valor": 1.1 },
-      { "ano": 1999, "valor": 1.4 },
-      { "ano": 2000, "valor": 2.1 },
-      { "ano": 2001, "valor": 3.2 },
-      { "ano": 2002, "valor": 4.8 },
-      { "ano": 2003, "valor": 7.2 },
-      { "ano": 2004, "valor": 9.5 },
-      { "ano": 2005, "valor": 12.1 },
-      { "ano": 2006, "valor": 15.8 },
-      { "ano": 2007, "valor": 20.4 },
-      { "ano": 2008, "valor": 26.9 },
-      { "ano": 2009, "valor": 31.5 },
-      { "ano": 2010, "valor": 38.2 },
-      { "ano": 2011, "valor": 45.9 },
-      { "ano": 2012, "valor": 54.3 },
-      { "ano": 2013, "valor": 68.1 },
-      { "ano": 2014, "valor": 82.7 },
-      { "ano": 2015, "valor": 98.4 },
-      { "ano": 2016, "valor": 115.2 },
-      { "ano": 2017, "valor": 134.8 },
-      { "ano": 2018, "valor": 162.5 },
-      { "ano": 2019, "valor": 210.3 },
-      { "ano": 2020, "valor": 420.7 },
-      { "ano": 2021, "valor": 650.1 },
-      { "ano": 2022, "valor": 820.4 },
-      { "ano": 2023, "valor": 950.2 },
-      { "ano": 2024, "valor": 1120.8 },
-      { "ano": 2025, "valor": 1280.5 },
-      { "ano": 2026, "valor": 1450.2 },
+      {
+        "ano": 1994,
+        "valor": 81
+      },
+      {
+        "ano": 1995,
+        "valor": 81
+      },
+      {
+        "ano": 1996,
+        "valor": 91
+      },
+      {
+        "ano": 1997,
+        "valor": 94
+      },
+      {
+        "ano": 1998,
+        "valor": 94
+      },
+      {
+        "ano": 1999,
+        "valor": 94
+      },
+      {
+        "ano": 2000,
+        "valor": 98
+      },
+      {
+        "ano": 2001,
+        "valor": 99
+      },
+      {
+        "ano": 2002,
+        "valor": 99
+      },
+      {
+        "ano": 2003,
+        "valor": 99
+      },
+      {
+        "ano": 2004,
+        "valor": 99
+      },
+      {
+        "ano": 2005,
+        "valor": 99
+      },
+      {
+        "ano": 2006,
+        "valor": 99
+      },
+      {
+        "ano": 2007,
+        "valor": 99
+      },
+      {
+        "ano": 2008,
+        "valor": 99
+      },
+      {
+        "ano": 2009,
+        "valor": 99
+      },
+      {
+        "ano": 2010,
+        "valor": 99
+      },
+      {
+        "ano": 2011,
+        "valor": 99
+      },
+      {
+        "ano": 2012,
+        "valor": 95
+      },
+      {
+        "ano": 2013,
+        "valor": 97
+      },
+      {
+        "ano": 2014,
+        "valor": 93
+      },
+      {
+        "ano": 2015,
+        "valor": 96
+      },
+      {
+        "ano": 2016,
+        "valor": 89
+      },
+      {
+        "ano": 2017,
+        "valor": 83
+      },
+      {
+        "ano": 2018,
+        "valor": 87
+      },
+      {
+        "ano": 2019,
+        "valor": 70
+      },
+      {
+        "ano": 2020,
+        "valor": 77
+      },
+      {
+        "ano": 2021,
+        "valor": 68
+      },
+      {
+        "ano": 2022,
+        "valor": 77
+      },
+      {
+        "ano": 2023,
+        "valor": 90
+      },
+      {
+        "ano": 2024,
+        "valor": 91
+      }
     ],
-    "padrao": false,
-  },
-  "roubo_br_taxa": {
-    "label": "Taxa de Roubo (por 100 mil hab.)",
-    "unidade": "casos / 100k hab.",
-    "fonte": "FBSP / Anuário Brasileiro de Segurança Pública",
-    "cat": "Segurança",
-    "descricao":
-      "A apropriação urbana com violência (queda atual a ~355/100k). O declínio reflete a transição dos criminosos para o digital, envelhecimento demográfico e apropriação do mercado pelo crime organizado, mas mantém índice intolerável a países desenvolvidos.",
-    "dados": [
-      { "ano": 1994, "valor": 320.5 },
-      { "ano": 1995, "valor": 345.1 },
-      { "ano": 1996, "valor": 360.2 },
-      { "ano": 1997, "valor": 382.4 },
-      { "ano": 1998, "valor": 410.8 },
-      { "ano": 1999, "valor": 435.2 },
-      { "ano": 2000, "valor": 460.7 },
-      { "ano": 2001, "valor": 490.1 },
-      { "ano": 2002, "valor": 512.4 },
-      { "ano": 2003, "valor": 535.8 },
-      { "ano": 2004, "valor": 520.1 },
-      { "ano": 2005, "valor": 505.3 },
-      { "ano": 2006, "valor": 498.2 },
-      { "ano": 2007, "valor": 485.4 },
-      { "ano": 2008, "valor": 512.1 },
-      { "ano": 2009, "valor": 530.4 },
-      { "ano": 2010, "valor": 515.2 },
-      { "ano": 2011, "valor": 508.9 },
-      { "ano": 2012, "valor": 540.3 },
-      { "ano": 2013, "valor": 585.6 },
-      { "ano": 2014, "valor": 620.4 },
-      { "ano": 2015, "valor": 650.1 },
-      { "ano": 2016, "valor": 710.4 },
-      { "ano": 2017, "valor": 680.2 },
-      { "ano": 2018, "valor": 610.5 },
-      { "ano": 2019, "valor": 535.1 },
-      { "ano": 2020, "valor": 410.2 },
-      { "ano": 2021, "valor": 425.8 },
-      { "ano": 2022, "valor": 455.4 },
-      { "ano": 2023, "valor": 420.1 },
-      { "ano": 2024, "valor": 395.4 },
-      { "ano": 2025, "valor": 372.8 },
-      { "ano": 2026, "valor": 355.2 },
-    ],
-    "padrao": false,
-  },
-  "pop_carceraria_100k": {
-    "label": "População carcerária",
-    "unidade": "presos por 100 mil habitantes",
-    "fonte": "DEPEN/InfoPen — SISDEPEN (MJSP); World Prison Brief (ICPR)",
-    "cat": "Segurança",
-    "descricao":
-      "O depósito prisional. Subiu seis vezes desde os anos 90, tornando-se a 3ª maior do mundo (absoluto). Superlotação e prisões provisórias precárias dominam o cenário, expondo um sistema punitivo que retroalimenta o controle de facções nas margens da sociedade.",
-    "dados": [
-      { "ano": 1995, "valor": 95 },
-      { "ano": 2000, "valor": 133 },
-      { "ano": 2005, "valor": 183 },
-      { "ano": 2006, "valor": 196 },
-      { "ano": 2007, "valor": 208 },
-      { "ano": 2008, "valor": 227 },
-      { "ano": 2009, "valor": 242 },
-      { "ano": 2010, "valor": 259 },
-      { "ano": 2011, "valor": 275 },
-      { "ano": 2012, "valor": 289 },
-      { "ano": 2013, "valor": 301 },
-      { "ano": 2014, "valor": 306 },
-      { "ano": 2015, "valor": 318 },
-      { "ano": 2016, "valor": 326 },
-      { "ano": 2017, "valor": 353 },
-      { "ano": 2018, "valor": 359 },
-      { "ano": 2019, "valor": 367 },
-      { "ano": 2020, "valor": 357 },
-      { "ano": 2021, "valor": 362 },
-      { "ano": 2022, "valor": 381 },
-      { "ano": 2023, "valor": 395 },
-      { "ano": 2024, "valor": 400 },
-    ],
-    "padrao": false,
-  },
-  "desmatamento_amazonia_km2": {
-    "label": "Desmatamento Amazônia Legal (PRODES)",
-    "unidade": "km²/ano",
-    "fonte": "INPE/PRODES",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "Monitoramento termômetro da capacidade do Governo aplicar controle civil no território. Quedas em 2000s devido a restrições de crédito; picos refletem leniência a grileiros ilegais/mineração. Continua vital na percepção europeia global.",
-    "dados": [
-      { "ano": 1995, "valor": 29059 },
-      { "ano": 1996, "valor": 18161 },
-      { "ano": 1997, "valor": 13227 },
-      { "ano": 1998, "valor": 17383 },
-      { "ano": 1999, "valor": 17259 },
-      { "ano": 2000, "valor": 18226 },
-      { "ano": 2001, "valor": 18165 },
-      { "ano": 2002, "valor": 21651 },
-      { "ano": 2003, "valor": 25396 },
-      { "ano": 2004, "valor": 27772 },
-      { "ano": 2005, "valor": 19014 },
-      { "ano": 2006, "valor": 14286 },
-      { "ano": 2007, "valor": 11651 },
-      { "ano": 2008, "valor": 12911 },
-      { "ano": 2009, "valor": 7464 },
-      { "ano": 2010, "valor": 7000 },
-      { "ano": 2011, "valor": 6418 },
-      { "ano": 2012, "valor": 4571 },
-      { "ano": 2013, "valor": 5891 },
-      { "ano": 2014, "valor": 5012 },
-      { "ano": 2015, "valor": 6207 },
-      { "ano": 2016, "valor": 7893 },
-      { "ano": 2017, "valor": 6947 },
-      { "ano": 2018, "valor": 7536 },
-      { "ano": 2019, "valor": 10129 },
-      { "ano": 2020, "valor": 10851 },
-      { "ano": 2021, "valor": 13038 },
-      { "ano": 2022, "valor": 11594 },
-      { "ano": 2023, "valor": 9064 },
-      { "ano": 2024, "valor": 6520 },
-      { "ano": 2025, "valor": 5796 },
-    ],
-    "padrao": false,
-  },
-  "emissoes_gee_brasil": {
-    "label": "Emissões de Gases de Efeito Estufa (GEE)",
-    "unidade": "MtCO2e (GWP-AR6)",
-    "fonte": "SEEG / Observatório do Clima / MCTI",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "A métrica de Emissões de GEE mede o volume total de gases lançados na atmosfera que retêm calor, como Dióxido de Carbono (CO2), Metano (CH4) e Óxido Nitroso (N2O), todos convertidos para 'Dióxido de Carbono Equivalente' (CO2e) para padronizar o potencial de aquecimento. No Brasil, o perfil de emissões é 'atípico' comparado a países da OCDE: enquanto no mundo a energia é a principal fonte, aqui o setor de Mudança de Uso da Terra e Florestas (especialmente o desmatamento na Amazônia e Cerrado) historicamente responde por cerca de 50% do total. A série revela variações dramáticas: o pico absoluto ocorreu em 2004 (3.420 MtCO2e), ano de recorde de desmatamento; seguido por uma queda acentuada até 2012 devido à eficácia do PPCDAm. Após um repique crítico entre 2019 e 2021, as emissões voltaram a cair em 2023 devido ao controle ambiental. Conforme o SEEG, 'O Brasil é o único grande emissor que pode cortar suas emissões pela metade apenas parando de desmatar'. A precisão dos números é alta para energia e processos industriais, mas possui uma margem de incerteza no setor florestal devido à complexidade do cálculo da biomassa. Comparativamente, o Brasil é um dos 10 maiores emissores do mundo e líder isolado na América Latina. Enquanto a Europa reduz emissões via transição energética, o Brasil tem o potencial de ser 'carbono negativo' mais rápido se proteger suas florestas. A projeção de 1.810 MtCO2e para 2026 reflete a meta de alinhamento com a NDC (Contribuição Nacionalmente Determinada) e a tendência de queda sustentada do desmatamento observada no biênio anterior.",
-    "dados": [
-      { "ano": 1994, "valor": 1580 },
-      { "ano": 1995, "valor": 1720 },
-      { "ano": 1996, "valor": 1540 },
-      { "ano": 1997, "valor": 1590 },
-      { "ano": 1998, "valor": 1650 },
-      { "ano": 1999, "valor": 1680 },
-      { "ano": 2000, "valor": 1750 },
-      { "ano": 2001, "valor": 1820 },
-      { "ano": 2002, "valor": 2150 },
-      { "ano": 2003, "valor": 2750 },
-      { "ano": 2004, "valor": 3420 },
-      { "ano": 2005, "valor": 2850 },
-      { "ano": 2006, "valor": 2280 },
-      { "ano": 2007, "valor": 2140 },
-      { "ano": 2008, "valor": 2050 },
-      { "ano": 2009, "valor": 1750 },
-      { "ano": 2010, "valor": 1680 },
-      { "ano": 2011, "valor": 1720 },
-      { "ano": 2012, "valor": 1620 },
-      { "ano": 2013, "valor": 1780 },
-      { "ano": 2014, "valor": 1810 },
-      { "ano": 2015, "valor": 1840 },
-      { "ano": 2016, "valor": 1820 },
-      { "ano": 2017, "valor": 1850 },
-      { "ano": 2018, "valor": 1910 },
-      { "ano": 2019, "valor": 2180 },
-      { "ano": 2020, "valor": 2350 },
-      { "ano": 2021, "valor": 2420 },
-      { "ano": 2022, "valor": 2320 },
-      { "ano": 2023, "valor": 2050 },
-      { "ano": 2024, "valor": 1980 },
-      { "ano": 2025, "valor": 1890 },
-      { "ano": 2026, "valor": 1810 },
-    ],
-    "padrao": false,
-  },
-  "esgoto_tratado_pct": {
-    "label": "Esgoto Tratado (% água consumida)",
-    "unidade": "%",
-    "fonte": "SNIS / SINISA",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "Fracasso histórico de infraestrutura (~50% do consumo). O descarte cru gera surtos endêmicos. Países latinos como Chile resolveram a questão, e a Europa aproxima-se dos 95%+, meta exigida teoricamente pelo Novo Marco Legal no Brasil.",
-    "dados": [
-      { "ano": 1995, "valor": 20.2 },
-      { "ano": 2000, "valor": 24.6 },
-      { "ano": 2005, "valor": 31.2 },
-      { "ano": 2010, "valor": 37.9 },
-      { "ano": 2011, "valor": 37.5 },
-      { "ano": 2012, "valor": 38.7 },
-      { "ano": 2013, "valor": 39.0 },
-      { "ano": 2014, "valor": 40.8 },
-      { "ano": 2015, "valor": 42.7 },
-      { "ano": 2016, "valor": 44.9 },
-      { "ano": 2017, "valor": 46.0 },
-      { "ano": 2018, "valor": 46.3 },
-      { "ano": 2019, "valor": 49.1 },
-      { "ano": 2020, "valor": 50.8 },
-      { "ano": 2021, "valor": 51.2 },
-      { "ano": 2022, "valor": 52.2 },
-      { "ano": 2023, "valor": 51.8 },
-    ],
-    "padrao": false,
-  },
-  "focos_queimadas_brasil": {
-    "label": "Focos de Incêndio Brasil",
-    "unidade": "nº focos",
-    "fonte": "INPE / Programa Queimadas",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "Detecção satelital do INPE. Reflete manejo rústico pelo agronegócio que, com o clima atípico (El Niño), explode catastroficamente. Diferente de incêndios espontâneos no exterior, aqui são altamente motivados pela antropização de posseiros.",
-    "dados": [
-      { "ano": 1998, "valor": 90881 },
-      { "ano": 1999, "valor": 134608 },
-      { "ano": 2000, "valor": 99441 },
-      { "ano": 2001, "valor": 145604 },
-      { "ano": 2002, "valor": 359488 },
-      { "ano": 2003, "valor": 584939 },
-      { "ano": 2004, "valor": 1192363 },
-      { "ano": 2005, "valor": 928222 },
-      { "ano": 2006, "valor": 520012 },
-      { "ano": 2007, "valor": 393915 },
-      { "ano": 2008, "valor": 206198 },
-      { "ano": 2009, "valor": 161551 },
-      { "ano": 2010, "valor": 319383 },
-      { "ano": 2011, "valor": 114214 },
-      { "ano": 2012, "valor": 194197 },
-      { "ano": 2013, "valor": 137437 },
-      { "ano": 2014, "valor": 190404 },
-      { "ano": 2015, "valor": 216778 },
-      { "ano": 2016, "valor": 197632 },
-      { "ano": 2017, "valor": 272180 },
-      { "ano": 2018, "valor": 148771 },
-      { "ano": 2019, "valor": 197632 },
-      { "ano": 2020, "valor": 222797 },
-      { "ano": 2021, "valor": 184081 },
-      { "ano": 2022, "valor": 173898 },
-      { "ano": 2023, "valor": 189901 },
-      { "ano": 2024, "valor": 278299 },
-      { "ano": 2025, "valor": 139000 },
-    ],
-    "padrao": false,
-  },
-  "desastres_climaticos_registros": {
-    "label": "Desastres Climáticos (registros oficiais)",
-    "unidade": "nº registros/ano",
-    "fonte": "S2ID / SEDEC-MIDR / CEPED-UFSC",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "Calamidades municipais oficiais. O crescimento atesta o custo humano do avanço urbano em áreas de risco e eventos climáticos extremos. Cobram faturas brutais sem as reservas financeiras possuídas por nações asiáticas/europeias fortes.",
-    "dados": [
-      { "ano": 1995, "valor": 620 },
-      { "ano": 1996, "valor": 780 },
-      { "ano": 1997, "valor": 920 },
-      { "ano": 1998, "valor": 1050 },
-      { "ano": 1999, "valor": 850 },
-      { "ano": 2000, "valor": 1100 },
-      { "ano": 2001, "valor": 1250 },
-      { "ano": 2002, "valor": 1400 },
-      { "ano": 2003, "valor": 1680 },
-      { "ano": 2004, "valor": 1850 },
-      { "ano": 2005, "valor": 2100 },
-      { "ano": 2006, "valor": 1950 },
-      { "ano": 2007, "valor": 2400 },
-      { "ano": 2008, "valor": 2650 },
-      { "ano": 2009, "valor": 2800 },
-      { "ano": 2010, "valor": 3250 },
-      { "ano": 2011, "valor": 3100 },
-      { "ano": 2012, "valor": 3500 },
-      { "ano": 2013, "valor": 2850 },
-      { "ano": 2014, "valor": 2700 },
-      { "ano": 2015, "valor": 2900 },
-      { "ano": 2016, "valor": 3200 },
-      { "ano": 2017, "valor": 2500 },
-      { "ano": 2018, "valor": 2300 },
-      { "ano": 2019, "valor": 2700 },
-      { "ano": 2020, "valor": 3800 },
-      { "ano": 2021, "valor": 4100 },
-      { "ano": 2022, "valor": 4250 },
-      { "ano": 2023, "valor": 4150 },
-      { "ano": 2024, "valor": 4500 },
-      { "ano": 2025, "valor": 1493 },
-    ],
-    "padrao": false,
-  },
-  "perdas_distribuicao_agua_pct": {
-    "label": "Perdas na Distribuição de Água",
-    "unidade": "%",
-    "fonte": "SNIS / SINISA",
-    "cat": "Meio Ambiente",
-    "descricao":
-      "Desperdício de água potável por vazamentos/furtos (estagnado em ~37-40%). Anomalia num país hidro-potencial e comum na América Latina, distante do padrão de liderança da rede europeia, mantido nas rígidas faixas de 5-10%.",
-    "dados": [
-      { "ano": 1995, "valor": 45.6 },
-      { "ano": 2000, "valor": 40.4 },
-      { "ano": 2005, "valor": 40.3 },
-      { "ano": 2010, "valor": 38.8 },
-      { "ano": 2011, "valor": 38.8 },
-      { "ano": 2012, "valor": 36.9 },
-      { "ano": 2013, "valor": 37.0 },
-      { "ano": 2014, "valor": 36.7 },
-      { "ano": 2015, "valor": 36.7 },
-      { "ano": 2016, "valor": 38.1 },
-      { "ano": 2017, "valor": 38.3 },
-      { "ano": 2018, "valor": 38.5 },
-      { "ano": 2019, "valor": 39.2 },
-      { "ano": 2020, "valor": 40.1 },
-      { "ano": 2021, "valor": 39.3 },
-      { "ano": 2022, "valor": 37.8 },
-      { "ano": 2023, "valor": 37.5 },
-    ],
-    "padrao": false,
-  },
-  "pd_pib": {
-    "label": "Pesquisa & Desenvolvimento (P&D) / PIB",
-    "unidade": "% do PIB",
-    "fonte": "MCTI / UNESCO / Banco Mundial",
-    "cat": "Ciência e Tecnologia",
-    "descricao":
-      "A métrica P&D/PIB mede a intensidade do investimento nacional em conhecimento, somando gastos públicos e privados em pesquisa básica e aplicada. Ela funciona como um termômetro da prioridade dada à inovação para o crescimento de longo prazo. No Brasil, o índice atingiu seu ápice histórico em 2015 (1,34%), impulsionado pela expansão do FNDCT e incentivos da Lei do Bem, mas sofreu declínio acentuado entre 2016 e 2020 devido à crise fiscal e ao teto de gastos, que comprimiram orçamentos do CNPq e CAPES. A recuperação projetada para 1,28% em 2026 reflete a recomposição de fundos setoriais e o foco em transição energética e indústria 4.0. Em termos de precisão, os dados até 2022 são consolidados pelo MCTI; valores para 2024-2026 são projeções baseadas no PPA (Plano Plurianual) e metas de investimento em semicondutores. Comparativamente, o Brasil é o líder isolado na América Latina (onde a média é de ~0,6%), mas permanece muito abaixo da média da Europa (~2,2%) e de países semelhantes como a China (2,4%). Está em um abismo em relação aos líderes globais (Coreia do Sul e Israel), que investem mais de 4,5% do PIB. No mundo em geral, a média gira em torno de 2,6%, evidenciando que o Brasil ainda investe menos da metade do padrão das economias desenvolvidas.",
-    "dados": [
-      { "ano": 1994, "valor": 0.82 },
-      { "ano": 1995, "valor": 0.85 },
-      { "ano": 1996, "valor": 0.88 },
-      { "ano": 1997, "valor": 0.91 },
-      { "ano": 1998, "valor": 0.94 },
-      { "ano": 1999, "valor": 0.97 },
-      { "ano": 2000, "valor": 1.05 },
-      { "ano": 2001, "valor": 1.08 },
-      { "ano": 2002, "valor": 1.11 },
-      { "ano": 2003, "valor": 1.09 },
-      { "ano": 2004, "valor": 1.1 },
-      { "ano": 2005, "valor": 1.12 },
-      { "ano": 2006, "valor": 1.14 },
-      { "ano": 2007, "valor": 1.16 },
-      { "ano": 2008, "valor": 1.18 },
-      { "ano": 2009, "valor": 1.15 },
-      { "ano": 2010, "valor": 1.16 },
-      { "ano": 2011, "valor": 1.14 },
-      { "ano": 2012, "valor": 1.2 },
-      { "ano": 2013, "valor": 1.24 },
-      { "ano": 2014, "valor": 1.27 },
-      { "ano": 2015, "valor": 1.34 },
-      { "ano": 2016, "valor": 1.28 },
-      { "ano": 2017, "valor": 1.15 },
-      { "ano": 2018, "valor": 1.17 },
-      { "ano": 2019, "valor": 1.21 },
-      { "ano": 2020, "valor": 1.15 },
-      { "ano": 2021, "valor": 1.14 },
-      { "ano": 2022, "valor": 1.16 },
-      { "ano": 2023, "valor": 1.18 },
-      { "ano": 2024, "valor": 1.22 },
-      { "ano": 2025, "valor": 1.25 },
-      { "ano": 2026, "valor": 1.28 },
-    ],
-    "padrao": false,
-  },
-  "igi_brasil_score": {
-    "label": "Índice Global de Inovação (IGI)",
-    "unidade": "pontos (0-100)",
-    "fonte": "OMPI (WIPO) / Cornell / INSEAD",
-    "cat": "Ciência e Tecnologia",
-    "descricao":
-      "O IGI é o principal benchmark mundial para medir a capacidade e os resultados de inovação. Ele calcula a média entre dois sub índices: o de Insumos (Instituições, Capital Humano, Infraestrutura, Sofisticação de Mercado e Negócios) e o de Resultados (Produtos de Conhecimento, Tecnologia e Criatividade). No Brasil, o índice reflete uma trajetória de altos e baixos: o auge em 2011 (37,8 pontos) deveu-se ao boom de commodities e altos investimentos estatais em P&D; a queda acentuada entre 2014 e 2020 (mínima de 31,9) foi influenciada pela crise fiscal e cortes em bolsas de pesquisa (CNPq/CAPES). A recuperação recente (estimada em 36,4 para 2026) é impulsionada pela digitalização acelerada do governo (Gov.br) e o amadurecimento do ecossistema de startups (Unicórnios). Em termos de precisão, os dados até 2023 são consolidados pela OMPI; os valores de 2024-2026 são projeções baseadas em depósitos de patentes (PCT) e investimentos em Capital de Risco (ABVCAP). Comparativamente, o Brasil retomou em 2023 a liderança na América Latina (superando Chile e México), mas ainda performa abaixo da média europeia (~48 pts) e está distante do Top 10 global (~64 pts). No contexto BRICS, o Brasil se alinha à Índia, mas permanece atrás da China, que já opera em patamares de economias desenvolvidas.",
-    "dados": [
-      { "ano": 1994, "valor": 26.5 },
-      { "ano": 1995, "valor": 26.8 },
-      { "ano": 1996, "valor": 27.2 },
-      { "ano": 1997, "valor": 27.5 },
-      { "ano": 1998, "valor": 27.9 },
-      { "ano": 1999, "valor": 28.4 },
-      { "ano": 2000, "valor": 29.1 },
-      { "ano": 2001, "valor": 29.8 },
-      { "ano": 2002, "valor": 30.5 },
-      { "ano": 2003, "valor": 30.1 },
-      { "ano": 2004, "valor": 31.2 },
-      { "ano": 2005, "valor": 32.4 },
-      { "ano": 2006, "valor": 33.1 },
-      { "ano": 2007, "valor": 35.8 },
-      { "ano": 2008, "valor": 36.2 },
-      { "ano": 2009, "valor": 34.5 },
-      { "ano": 2010, "valor": 35.1 },
-      { "ano": 2011, "valor": 37.8 },
-      { "ano": 2012, "valor": 36.6 },
-      { "ano": 2013, "valor": 36.3 },
-      { "ano": 2014, "valor": 35.4 },
-      { "ano": 2015, "valor": 34.9 },
-      { "ano": 2016, "valor": 33.2 },
-      { "ano": 2017, "valor": 33.1 },
-      { "ano": 2018, "valor": 33.9 },
-      { "ano": 2019, "valor": 33.8 },
-      { "ano": 2020, "valor": 31.9 },
-      { "ano": 2021, "valor": 34.2 },
-      { "ano": 2022, "valor": 32.5 },
-      { "ano": 2023, "valor": 33.6 },
-      { "ano": 2024, "valor": 34.8 },
-      { "ano": 2025, "valor": 35.9 },
-      { "ano": 2026, "valor": 36.4 },
-    ],
-    "padrao": false,
-  },
-  "depositos_patentes_inpi": {
-    "label": "Depósitos de Patentes (INPI)",
-    "unidade": "pedidos",
-    "fonte": "INPI / OMPI (WIPO)",
-    "cat": "Ciência e Tecnologia",
-    "descricao":
-      "A métrica de Depósitos de Patentes reflete o total de pedidos de invenção e modelos de utilidade realizados no Instituto Nacional da Propriedade Industrial (INPI). Ela mede a produção de propriedade intelectual e a intenção de proteger inovações tecnológicas no mercado brasileiro. A trajetória do Brasil mostra um crescimento robusto até 2013 (pico de ~34 mil pedidos), impulsionado pela estabilidade econômica e pela Lei do Bem (2005). Contudo, a crise de 2014-2016 e a desindustrialização causaram uma queda expressiva, acentuada pela pandemia. Entre 2019 e 2022, o foco do INPI mudou para o combate ao 'Backlog' (atraso acumulado), reduzindo o tempo de exame de 10 para menos de 3 anos, o que influenciou a confiança do sistema. A recuperação projetada para 32.500 pedidos em 2026 deve-se ao Plano Mais Inovação e ao aumento de pedidos em biotecnologia e IA. Em termos de precisão, os dados até 2023 são consolidados; 2024-2026 são projeções baseadas no crescimento de pedidos via Tratado de Cooperação em Matéria de Patentes (PCT). Comparativamente, o Brasil lidera na América Latina (detendo cerca de 35% dos pedidos da região), mas está em um abismo em relação à Europa (~190 mil pedidos no EPO) e à China, que registra milhões de pedidos anuais. No mundo, o Brasil ocupa uma posição intermediária, destacando-se pela pesquisa acadêmica, mas ainda falhando em converter essa ciência em patentes comerciais no mesmo ritmo que países como Coreia do Sul ou EUA.",
-    "dados": [
-      { "ano": 1994, "valor": 16100 },
-      { "ano": 1995, "valor": 16500 },
-      { "ano": 1996, "valor": 17200 },
-      { "ano": 1997, "valor": 17900 },
-      { "ano": 1998, "valor": 18500 },
-      { "ano": 1999, "valor": 19200 },
-      { "ano": 2000, "valor": 20100 },
-      { "ano": 2001, "valor": 21300 },
-      { "ano": 2002, "valor": 22400 },
-      { "ano": 2003, "valor": 21800 },
-      { "ano": 2004, "valor": 23200 },
-      { "ano": 2005, "valor": 24500 },
-      { "ano": 2006, "valor": 25800 },
-      { "ano": 2007, "valor": 27100 },
-      { "ano": 2008, "valor": 28400 },
-      { "ano": 2009, "valor": 27200 },
-      { "ano": 2010, "valor": 28100 },
-      { "ano": 2011, "valor": 31900 },
-      { "ano": 2012, "valor": 33400 },
-      { "ano": 2013, "valor": 34000 },
-      { "ano": 2014, "valor": 33100 },
-      { "ano": 2015, "valor": 32800 },
-      { "ano": 2016, "valor": 31000 },
-      { "ano": 2017, "valor": 28600 },
-      { "ano": 2018, "valor": 27500 },
-      { "ano": 2019, "valor": 25400 },
-      { "ano": 2020, "valor": 27100 },
-      { "ano": 2021, "valor": 26900 },
-      { "ano": 2022, "valor": 27200 },
-      { "ano": 2023, "valor": 28500 },
-      { "ano": 2024, "valor": 29800 },
-      { "ano": 2025, "valor": 31200 },
-      { "ano": 2026, "valor": 32500 },
-    ],
-    "padrao": false,
-  },
-  "ibid_brasil": {
-    "label": "Índice Brasil de Inovação e Desenvolvimento (IBID)",
-    "unidade": "pontos (0-100)",
-    "fonte": "MCTI / CGEE / WIPO (Adaptação Nacional)",
-    "cat": "Ciência e Tecnologia",
-    "descricao":
-      "O IBID é uma métrica estrutural que avalia o ecossistema de inovação sob a ótica das especificidades brasileiras, medindo a capacidade do país de transformar investimentos em Ciência e Tecnologia em desenvolvimento socioeconômico. Ele funciona através da análise de 7 pilares: Instituições, Capital Humano, Infraestrutura, Sofisticação de Mercado, Sofisticação de Negócios, Conhecimento/Tecnologia e Resultados Criativos. A série histórica revela que as maiores variações positivas ocorreram entre 2005 e 2012, período de consolidação dos Fundos Setoriais e da Lei do Bem. Já a queda acentuada entre 2016 e 2021 foi influenciada pelo contingenciamento severo do FNDCT e a crise fiscal. A precisão dos dados de 1994 a 2022 baseia-se em retroprojeções de variáveis de P&D e produtividade industrial, enquanto os dados de 2023 a 2026 são fundamentados em métricas oficiais do MCTI e do Plano Mais Inovação. Comparativamente, o Brasil ocupa a 1ª posição na América Latina, superando Chile e México em volume de produção científica, mas possui um hiato de ~20 pontos em relação à média da Europa (~58 pts) e está muito distante dos líderes globais como Coreia do Sul (80+ pts). No contexto dos BRICS, o Brasil mantém paridade com a África do Sul, mas perde terreno para a Índia em sofisticação de mercado e está significativamente atrás da China em resultados de alta tecnologia. A projeção de 39.4 para 2026 reflete a recomposição integral dos fundos de inovação e o foco em 'missões' industriais de longo prazo.",
-    "dados": [
-      { "ano": 1994, "valor": 24.1 },
-      { "ano": 1995, "valor": 24.5 },
-      { "ano": 1996, "valor": 24.8 },
-      { "ano": 1997, "valor": 25.2 },
-      { "ano": 1998, "valor": 25.5 },
-      { "ano": 1999, "valor": 26.1 },
-      { "ano": 2000, "valor": 27.2 },
-      { "ano": 2001, "valor": 27.8 },
-      { "ano": 2002, "valor": 28.5 },
-      { "ano": 2003, "valor": 28.1 },
-      { "ano": 2004, "valor": 29.4 },
-      { "ano": 2005, "valor": 30.8 },
-      { "ano": 2006, "valor": 31.5 },
-      { "ano": 2007, "valor": 33.2 },
-      { "ano": 2008, "valor": 34.1 },
-      { "ano": 2009, "valor": 32.8 },
-      { "ano": 2010, "valor": 33.5 },
-      { "ano": 2011, "valor": 35.1 },
-      { "ano": 2012, "valor": 35.8 },
-      { "ano": 2013, "valor": 36.2 },
-      { "ano": 2014, "valor": 35.4 },
-      { "ano": 2015, "valor": 34.8 },
-      { "ano": 2016, "valor": 33.1 },
-      { "ano": 2017, "valor": 32.4 },
-      { "ano": 2018, "valor": 31.9 },
-      { "ano": 2019, "valor": 31.5 },
-      { "ano": 2020, "valor": 30.2 },
-      { "ano": 2021, "valor": 31.8 },
-      { "ano": 2022, "valor": 32.5 },
-      { "ano": 2023, "valor": 34.2 },
-      { "ano": 2024, "valor": 35.9 },
-      { "ano": 2025, "valor": 37.8 },
-      { "ano": 2026, "valor": 39.4 },
-    ],
-    "padrao": false,
-  },
-  "producao_cientifica_impacto": {
-    "label": "Impacto de Citação Normalizado (FWCI/CNCI)",
-    "unidade": "Índice (Mundial = 1.0)",
-    "fonte": "Clarivate (Web of Science) / SCImago (Elsevier)",
-    "cat": "Ciência e Tecnologia",
-    "descricao":
-      "O Impacto de Citação Normalizado (CNCI ou FWCI) é a métrica padrão-ouro para medir a qualidade e a influência da ciência produzida por um país. Diferente da contagem bruta de artigos, ela mede quantas vezes os trabalhos de pesquisadores brasileiros foram citados em comparação com a média mundial para o mesmo campo de conhecimento, ano e tipo de documento. Um valor de 1.0 representa a média global; valores acima indicam impacto superior ao esperado. No Brasil, o índice mostra um crescimento gradual desde 1994, impulsionado pela expansão das pós-graduações e colaborações internacionais. A maior variação negativa ocorreu entre 2016 e 2021, refletindo o 'Brain Drain' (fuga de cérebros) e o sucateamento de laboratórios devido à crise fiscal. A recuperação para 0.95 em 2026 é impulsionada pela retomada de editais internacionais e foco em pesquisas de alto impacto (IA, Clima e Vacinas). Em termos de precisão, os dados até 2023 são extraídos diretamente das bases Scopus e WoS; as projeções para 2024-2026 baseiam-se na tendência de crescimento do impacto de citações em acesso aberto. Comparativamente, o Brasil está acima da média da América Latina (0.80), mas permanece abaixo da média mundial (1.0) e significativamente distante da Europa (~1.20) e dos EUA (~1.45). No contexto dos BRICS, o Brasil supera a Rússia, mas perdeu a paridade com a China e a Índia, que já cruzaram a linha da média mundial nos últimos anos devido a investimentos massivos em qualidade editorial e visibilidade acadêmica.",
-    "dados": [
-      { "ano": 1994, "valor": 0.62 },
-      { "ano": 1995, "valor": 0.64 },
-      { "ano": 1996, "valor": 0.65 },
-      { "ano": 1997, "valor": 0.68 },
-      { "ano": 1998, "valor": 0.67 },
-      { "ano": 1999, "valor": 0.7 },
-      { "ano": 2000, "valor": 0.72 },
-      { "ano": 2001, "valor": 0.75 },
-      { "ano": 2002, "valor": 0.78 },
-      { "ano": 2003, "valor": 0.76 },
-      { "ano": 2004, "valor": 0.79 },
-      { "ano": 2005, "valor": 0.81 },
-      { "ano": 2006, "valor": 0.83 },
-      { "ano": 2007, "valor": 0.85 },
-      { "ano": 2008, "valor": 0.84 },
-      { "ano": 2009, "valor": 0.86 },
-      { "ano": 2010, "valor": 0.88 },
-      { "ano": 2011, "valor": 0.87 },
-      { "ano": 2012, "valor": 0.89 },
-      { "ano": 2013, "valor": 0.91 },
-      { "ano": 2014, "valor": 0.9 },
-      { "ano": 2015, "valor": 0.88 },
-      { "ano": 2016, "valor": 0.85 },
-      { "ano": 2017, "valor": 0.82 },
-      { "ano": 2018, "valor": 0.8 },
-      { "ano": 2019, "valor": 0.81 },
-      { "ano": 2020, "valor": 0.79 },
-      { "ano": 2021, "valor": 0.82 },
-      { "ano": 2022, "valor": 0.81 },
-      { "ano": 2023, "valor": 0.85 },
-      { "ano": 2024, "valor": 0.89 },
-      { "ano": 2025, "valor": 0.92 },
-      { "ano": 2026, "valor": 0.95 },
-    ],
-    "padrao": false,
-  },
-  "cpi_transparency": {
-    "label": "Índice de Percepção da Corrupção (CPI)",
-    "unidade": "índice 0-100 (100 = menor corrupção percebida)",
-    "fonte": "Transparency International",
-    "cat": "Corrupção",
-    "descricao":
-      "Índice de Percepção da Corrupção (Transparência Internacional). Patamares baixos (~34) revelam frustração profunda com retrocessos no controle judicial e político. Mantém-se num poço brutal contra as social-democracias ocidentais puras (Escandinávia).",
-    "dados": [
-      { "ano": 1995, "valor": 2.7 },
-      { "ano": 1996, "valor": 3 },
-      { "ano": 1997, "valor": 3.6 },
-      { "ano": 1998, "valor": 4 },
-      { "ano": 1999, "valor": 4.1 },
-      { "ano": 2000, "valor": 3.9 },
-      { "ano": 2001, "valor": 4 },
-      { "ano": 2002, "valor": 4 },
-      { "ano": 2003, "valor": 3.9 },
-      { "ano": 2004, "valor": 3.9 },
-      { "ano": 2005, "valor": 3.7 },
-      { "ano": 2006, "valor": 3.3 },
-      { "ano": 2007, "valor": 3.5 },
-      { "ano": 2008, "valor": 3.5 },
-      { "ano": 2009, "valor": 3.7 },
-      { "ano": 2010, "valor": 3.7 },
-      { "ano": 2011, "valor": 3.8 },
-      { "ano": 2012, "valor": 43 },
-      { "ano": 2013, "valor": 42 },
-      { "ano": 2014, "valor": 43 },
-      { "ano": 2015, "valor": 38 },
-      { "ano": 2016, "valor": 40 },
-      { "ano": 2017, "valor": 37 },
-      { "ano": 2018, "valor": 35 },
-      { "ano": 2019, "valor": 35 },
-      { "ano": 2020, "valor": 38 },
-      { "ano": 2021, "valor": 38 },
-      { "ano": 2022, "valor": 38 },
-      { "ano": 2023, "valor": 36 },
-      { "ano": 2024, "valor": 34 },
-      { "ano": 2025, "valor": 35 },
-    ],
-    "padrao": false,
-  },
-  "wgi_rule_of_law_br": {
-    "label": "WGI: Rule of Law (Estado de Direito)",
-    "unidade": "Percentil (0-100)",
-    "fonte": "Banco Mundial (Worldwide Governance Indicators)",
-    "cat": "Corrupção",
-    "descricao":
-      "Ranking de Estado de Direito (Banco Mundial). A instabilidade na margem do 40º percentil demonstra incapacidade em oferecer estabilidade contratual para capital global. Reflete o ambiente de insegurança jurídica latino-americano face ao Atlântico Norte.",
-    "dados": [
-      { "ano": 1996, "valor": 45.2 },
-      { "ano": 1998, "valor": 48.1 },
-      { "ano": 2000, "valor": 51.4 },
-      { "ano": 2002, "valor": 44.5 },
-      { "ano": 2003, "valor": 45.8 },
-      { "ano": 2004, "valor": 46.2 },
-      { "ano": 2005, "valor": 47.1 },
-      { "ano": 2006, "valor": 46.5 },
-      { "ano": 2007, "valor": 45.8 },
-      { "ano": 2008, "valor": 46.3 },
-      { "ano": 2009, "valor": 52.4 },
-      { "ano": 2010, "valor": 54.1 },
-      { "ano": 2011, "valor": 55.6 },
-      { "ano": 2012, "valor": 53.8 },
-      { "ano": 2013, "valor": 54.5 },
-      { "ano": 2014, "valor": 53.2 },
-      { "ano": 2015, "valor": 52.1 },
-      { "ano": 2016, "valor": 48.5 },
-      { "ano": 2017, "valor": 46.2 },
-      { "ano": 2018, "valor": 45.1 },
-      { "ano": 2019, "valor": 44.8 },
-      { "ano": 2020, "valor": 43.2 },
-      { "ano": 2021, "valor": 41.5 },
-      { "ano": 2022, "valor": 40.8 },
-      { "ano": 2023, "valor": 44.5 },
-      { "ano": 2024, "valor": 46.1 },
-      { "ano": 2025, "valor": 47.8 },
-      { "ano": 2026, "valor": 49.2 },
-    ],
-    "padrao": false,
-  },
-  "ccc_index_br": {
-    "label": "Capacidade de Combater a Corrupção (CCC)",
-    "unidade": "pontos (0-10)",
-    "fonte": "AS/COA / Control Risks",
-    "cat": "Corrupção",
-    "descricao":
-      "Eficácia das instituições no combate à corrupção. Variações atestam desmantelamentos e alterações legais visando afrouxamento penal. Diferente da Europa e EUA, imunes a reviravoltas diárias no balcão normativo político.",
-    "dados": [
-      { "ano": 1994, "valor": 5.4 },
-      { "ano": 1995, "valor": 5.5 },
-      { "ano": 1996, "valor": 5.45 },
-      { "ano": 1997, "valor": 5.3 },
-      { "ano": 1998, "valor": 5.25 },
-      { "ano": 1999, "valor": 5.6 },
-      { "ano": 2000, "valor": 5.8 },
-      { "ano": 2001, "valor": 5.95 },
-      { "ano": 2002, "valor": 6.1 },
-      { "ano": 2003, "valor": 6.25 },
-      { "ano": 2004, "valor": 6.4 },
-      { "ano": 2005, "valor": 6.15 },
-      { "ano": 2006, "valor": 6.3 },
-      { "ano": 2007, "valor": 6.5 },
-      { "ano": 2008, "valor": 6.65 },
-      { "ano": 2009, "valor": 6.8 },
-      { "ano": 2010, "valor": 6.95 },
-      { "ano": 2011, "valor": 7.1 },
-      { "ano": 2012, "valor": 7.25 },
-      { "ano": 2013, "valor": 7.4 },
-      { "ano": 2014, "valor": 7.6 },
-      { "ano": 2015, "valor": 7.85 },
-      { "ano": 2016, "valor": 7.5 },
-      { "ano": 2017, "valor": 7.2 },
-      { "ano": 2018, "valor": 7.05 },
-      { "ano": 2019, "valor": 6.66 },
-      { "ano": 2020, "valor": 5.52 },
-      { "ano": 2021, "valor": 5.07 },
-      { "ano": 2022, "valor": 4.76 },
-      { "ano": 2023, "valor": 4.83 },
-      { "ano": 2024, "valor": 4.95 },
-      { "ano": 2025, "valor": 5.12 },
-      { "ano": 2026, "valor": 5.35 },
-    ],
-    "padrao": false,
-  },
-  "ipi_index_br": {
-    "label": "Índice de Integridade Pública (IPI)",
-    "unidade": "pontos (1-10)",
-    "fonte": "ERCAS / Integrity-Index.org",
-    "cat": "Corrupção",
-    "descricao":
-      "Índice de Integridade Pública. Mede transparência online (Portais). Gerou avanço estrutural e irreversível no monitoramento orçamentário. O Brasil alinhou-se nesse quesito burocrático de ferramentas digitais do ocidente.",
-    "dados": [
-      { "ano": 1994, "valor": 5.12 },
-      { "ano": 1995, "valor": 5.18 },
-      { "ano": 1996, "valor": 5.25 },
-      { "ano": 1997, "valor": 5.2 },
-      { "ano": 1998, "valor": 5.15 },
-      { "ano": 1999, "valor": 5.3 },
-      { "ano": 2000, "valor": 5.45 },
-      { "ano": 2001, "valor": 5.52 },
-      { "ano": 2002, "valor": 5.4 },
-      { "ano": 2003, "valor": 5.58 },
-      { "ano": 2004, "valor": 5.65 },
-      { "ano": 2005, "valor": 5.42 },
-      { "ano": 2006, "valor": 5.6 },
-      { "ano": 2007, "valor": 5.75 },
-      { "ano": 2008, "valor": 5.82 },
-      { "ano": 2009, "valor": 6.1 },
-      { "ano": 2010, "valor": 6.25 },
-      { "ano": 2011, "valor": 6.38 },
-      { "ano": 2012, "valor": 6.45 },
-      { "ano": 2013, "valor": 6.52 },
-      { "ano": 2014, "valor": 6.4 },
-      { "ano": 2015, "valor": 6.28 },
-      { "ano": 2016, "valor": 6.15 },
-      { "ano": 2017, "valor": 6.05 },
-      { "ano": 2018, "valor": 5.92 },
-      { "ano": 2019, "valor": 5.8 },
-      { "ano": 2020, "valor": 5.72 },
-      { "ano": 2021, "valor": 5.65 },
-      { "ano": 2022, "valor": 5.58 },
-      { "ano": 2023, "valor": 6.15 },
-      { "ano": 2024, "valor": 6.42 },
-      { "ano": 2025, "valor": 6.68 },
-      { "ano": 2026, "valor": 6.85 },
-    ],
-    "padrao": false,
-  },
-  "heritage_freedom": {
-    "label": "Índice de Liberdade Econômica (Heritage)",
-    "unidade": "índice 0-100 (100 = maior liberdade econômica)",
-    "fonte": "Heritage Foundation — Index of Economic Freedom",
-    "cat": "Corrupção",
-    "descricao":
-      "Índice ideológico de Liberdade Econômica. Penaliza o Brasil (~50, 'não livre') pelas altas regulações trabalhistas e carga tributária. Na mesma régua, países nórdicos igualitários e ricos perdem pontos pelo alto gasto público.",
-    "dados": [
-      { "ano": 1995, "valor": 51.4 },
-      { "ano": 1996, "valor": 51.9 },
-      { "ano": 1997, "valor": 54.5 },
-      { "ano": 1998, "valor": 57.6 },
-      { "ano": 1999, "valor": 60.3 },
-      { "ano": 2000, "valor": 61.1 },
-      { "ano": 2001, "valor": 61.9 },
-      { "ano": 2002, "valor": 63.4 },
-      { "ano": 2003, "valor": 61.7 },
-      { "ano": 2004, "valor": 60.9 },
-      { "ano": 2005, "valor": 60.3 },
-      { "ano": 2006, "valor": 60.9 },
-      { "ano": 2007, "valor": 55.6 },
-      { "ano": 2008, "valor": 55.9 },
-      { "ano": 2009, "valor": 56.7 },
-      { "ano": 2010, "valor": 55.6 },
-      { "ano": 2011, "valor": 56.3 },
-      { "ano": 2012, "valor": 57.9 },
-      { "ano": 2013, "valor": 57.7 },
-      { "ano": 2014, "valor": 56.9 },
-      { "ano": 2015, "valor": 56.6 },
-      { "ano": 2016, "valor": 56.5 },
-      { "ano": 2017, "valor": 52.9 },
-      { "ano": 2018, "valor": 51.4 },
-      { "ano": 2019, "valor": 51.9 },
-      { "ano": 2020, "valor": 53.7 },
-      { "ano": 2021, "valor": 53.4 },
-      { "ano": 2022, "valor": 53.3 },
-      { "ano": 2023, "valor": 53.5 },
-      { "ano": 2024, "valor": 53.8 },
-      { "ano": 2025, "valor": 54.5 },
-    ],
-    "padrao": false,
-  },
+    "padrao": false
+  }
 };
