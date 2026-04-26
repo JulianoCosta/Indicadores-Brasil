@@ -11610,5 +11610,677 @@
       }
     ],
     "padrao": false
+  },
+  "pisa_media_leitura_matematica_ciencias": {
+    "label": "(OCDE) PISA - Leitura, Matemática e Ciências",
+    "unidade": "Pontos na escala PISA, média aritmética simples entre leitura, matemática e ciências",
+    "fonte": "OECD - Programme for International Student Assessment (PISA)",
+    "cat": "Educação",
+    "descricao": "Mede o desempenho médio de estudantes de 15 anos do Brasil no PISA, combinando leitura, matemática e ciências em uma média simples das três escalas oficiais.",
+    "como_interpretar": "Valores maiores indicam melhor desempenho médio dos estudantes brasileiros nas três áreas avaliadas pelo PISA. A escala é comparável internacionalmente, mas diferenças pequenas entre ciclos devem ser interpretadas com cautela por causa de erro amostral, mudanças de desenho da avaliação e incerteza estatística.",
+    "metodologia": "O PISA avalia amostras representativas de estudantes de 15 anos em leitura, matemática e ciências. Para este indicador composto, foram usados apenas ciclos em que as três áreas possuem série internacional comparável no relatório oficial da OCDE. O valor anual foi calculado como média aritmética simples das pontuações médias oficiais do Brasil em matemática, leitura e ciências: (matemática + leitura + ciências) / 3.",
+    "historico_metodologia": "O PISA começou em 2000, mas as séries de tendência plenamente destacadas pela OCDE começam em anos diferentes por domínio: leitura em 2000, matemática em 2003 e ciências em 2006. Por isso, este indicador composto usa apenas 2006 em diante, quando há dados comparáveis para os três domínios. Os ciclos ocorrem normalmente a cada três anos; o ciclo previsto para 2021 foi adiado para 2022 devido à pandemia de COVID-19. A OCDE alerta que tendências devem considerar erros-padrão, intervalos de confiança e possíveis efeitos de desenho amostral.",
+    "abrangencia": "Brasil, estudantes de 15 anos matriculados em instituições elegíveis, conforme desenho amostral internacional do PISA/OCDE.",
+    "periodicidade": "Trienal, com exceção do ciclo de 2022, adiado em relação ao calendário original por causa da pandemia.",
+    "eventos_externos": [
+      {
+        "ano": 2009,
+        "nome": "Alta relativa",
+        "descricao": "O Brasil atingiu seu melhor resultado composto aproximado da série, impulsionado por melhora em leitura, matemática e ciências em relação a 2006."
+      },
+      {
+        "ano": 2015,
+        "nome": "Queda educacional",
+        "descricao": "O resultado composto caiu em relação a 2012, principalmente por queda em matemática e ciências."
+      },
+      {
+        "ano": 2022,
+        "nome": "Pós-pandemia",
+        "descricao": "O ciclo de 2022 foi o primeiro grande ciclo PISA após interrupções educacionais da COVID-19; no Brasil, os resultados ficaram próximos aos de 2018 nas três áreas."
+      }
+    ],
+    "comparacao_paises": "Em 2022, o Brasil ficou abaixo da média da OCDE nas três áreas: matemática, leitura e ciências. A OCDE reporta para 2022 aproximadamente 379 pontos em matemática contra 472 na média OCDE, 410 em leitura contra 476 na média OCDE, e 403 em ciências contra 485 na média OCDE.",
+    "nivel_confiabilidade": "Alto. Os valores vêm do PISA/OCDE, avaliação internacional padronizada, com amostragem, metodologia e documentação técnica públicas. A limitação principal é que os resultados são estimativas amostrais, não medições censitárias, e devem ser interpretados junto com erros-padrão e intervalos de confiança.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "OECD - PISA 2022 Results, Volume I - Full Report",
+        "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i_53f23881-en/full-report.html"
+      },
+      {
+        "titulo": "OECD - PISA 2022 Results - Country Note Brazil",
+        "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html"
+      },
+      {
+        "titulo": "OECD - PISA 2022 Database",
+        "url": "https://www.oecd.org/en/data/datasets/pisa-2022-database.html"
+      },
+      {
+        "titulo": "OECD Education GPS - Brazil Student Performance PISA 2022",
+        "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=BRA&topic=PI&treshold=10"
+      },
+      {
+        "titulo": "INEP - Nota sobre o Brasil no PISA 2022",
+        "url": "https://download.inep.gov.br/acoes_internacionais/pisa/resultados/2022/pisa_2022_brazil_prt.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2006,
+        "valor": 384.3333333333333
+      },
+      {
+        "ano": 2009,
+        "valor": 401
+      },
+      {
+        "ano": 2012,
+        "valor": 401.6666666666667
+      },
+      {
+        "ano": 2015,
+        "valor": 395
+      },
+      {
+        "ano": 2018,
+        "valor": 400.3333333333333
+      },
+      {
+        "ano": 2022,
+        "valor": 397.3333333333333
+      }
+    ]
+  },
+  "timss_matematica_ciencias": {
+    "label": "(IEA) TIMSS Matemática e Ciências",
+    "unidade": "pontos na escala TIMSS",
+    "fonte": "International Association for the Evaluation of Educational Achievement - Trends in International Mathematics and Science Study",
+    "cat": "Educação",
+    "descricao": "Mede o desempenho médio de estudantes brasileiros em matemática e ciências no TIMSS, avaliação internacional padronizada da IEA aplicada no 4º e no 8º ano.",
+    "como_interpretar": "Valores maiores indicam maior proficiência média em matemática e ciências. A escala TIMSS usa média internacional de referência de 500 pontos e desvio-padrão de 100 pontos estabelecidos a partir da distribuição internacional original de 1995. O valor consolidado apresentado é uma média aritmética simples das quatro médias oficiais disponíveis para o Brasil em 2023: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano.",
+    "metodologia": "A IEA aplica testes padronizados de matemática e ciências a amostras representativas de estudantes do 4º e do 8º ano, usando desenho amostral probabilístico, matrizes de itens e escalas de proficiência comparáveis internacionalmente. Para este JSON, foram usados apenas os valores oficiais publicados para o Brasil no TIMSS 2023: matemática 4º ano = 400, ciências 4º ano = 425, matemática 8º ano = 378 e ciências 8º ano = 420. O valor anual consolidado em dados foi calculado como média aritmética simples desses quatro resultados oficiais: 405,75.",
+    "historico_metodologia": "O TIMSS ocorre em ciclos quadrienais desde 1995 e mede tendências de desempenho em matemática e ciências. A escala TIMSS foi estabelecida em 1995 com média de referência 500 e desvio-padrão 100. O Brasil divulgou resultados de sua primeira participação no TIMSS em 2023, portanto não há série histórica brasileira oficial anterior comparável para esse indicador. Como o valor consolidado combina domínios e anos escolares, ele deve ser interpretado como síntese descritiva dos resultados oficiais, não como uma escala composta oficial publicada pela IEA.",
+    "abrangencia": "Brasil, estudantes do 4º e do 8º ano do ensino fundamental, com amostras nacionais representativas e resultados comparáveis internacionalmente no TIMSS 2023.",
+    "periodicidade": "Quadrienal, conforme ciclos do TIMSS.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2023, o Brasil ficou abaixo da média internacional do TIMSS nos quatro resultados oficiais disponíveis: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano. No 4º ano, o Brasil registrou 400 pontos em matemática e 425 em ciências, contra média internacional de 503 em matemática e 494 em ciências. No 8º ano, registrou 378 pontos em matemática e 420 em ciências, contra média internacional de 478 em ambos os domínios.",
+    "nivel_confiabilidade": "Alto para os valores-base, pois são médias oficiais publicadas pelo Inep com base na IEA/TIMSS. Médio para o valor consolidado em dados, pois a média aritmética simples entre matemática, ciências, 4º ano e 8º ano é uma agregação derivada para visualização, não um indicador composto oficial publicado pela IEA.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IEA - TIMSS 2023 International Results",
+        "url": "https://timss2023.org/results/"
+      },
+      {
+        "titulo": "IEA - TIMSS 2023 Study Page",
+        "url": "https://www.iea.nl/studies/iea/timss/timss2023"
+      },
+      {
+        "titulo": "Inep - Resultados TIMSS 2023 Brasil",
+        "url": "https://download.inep.gov.br/areas_de_atuacao/avaliacao-e-exames-educacionais-timms/resultados-2023.pdf"
+      },
+      {
+        "titulo": "Inep - Brasil divulga resultados da primeira participação no TIMSS",
+        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/acoes-internacionais/brasil-divulga-resultados-da-primeira-participacao-no-timss"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2023,
+        "valor": 405.75
+      }
+    ]
+  },
+  "pirls_leitura": {
+    "label": "(IEA) PIRLS Leitura",
+    "unidade": "Pontuação média na escala PIRLS de compreensão leitora",
+    "fonte": "International Association for the Evaluation of Educational Achievement (IEA) - Progress in International Reading Literacy Study (PIRLS)",
+    "cat": "Educação",
+    "descricao": "Mede o desempenho médio dos estudantes do 4º ano do ensino fundamental em compreensão leitora no estudo internacional PIRLS.",
+    "como_interpretar": "Valores maiores indicam melhor desempenho médio em leitura. A escala PIRLS foi estabelecida em 2001 com média internacional de referência 500 e desvio-padrão 100. O indicador deve ser interpretado como desempenho educacional comparável internacionalmente para estudantes do 4º ano, não como taxa de alfabetização geral da população.",
+    "metodologia": "O PIRLS aplica testes cognitivos de leitura e questionários contextuais a amostras representativas de estudantes do 4º ano de escolarização. A avaliação mede dois propósitos principais de leitura: experiência literária e aquisição/uso de informação. Os resultados são estimados por modelagem psicométrica em escala internacional padronizada, seguindo diretrizes amostrais, tradução, aplicação, codificação e controle de qualidade definidos pela IEA e pelo TIMSS & PIRLS International Study Center.",
+    "historico_metodologia": "O PIRLS é realizado desde 2001 em ciclos quinquenais. A edição de 2021 foi o quinto ciclo do estudo e marcou uma transição internacional relevante para avaliação digital em parte dos países, embora o Brasil tenha aplicado testes e questionários em papel. A coleta de 2021 ocorreu durante a pandemia de COVID-19 e, segundo a IEA/Inep, enfrentou desafios operacionais, mas manteve padrões internacionais de qualidade. O Brasil participou pela primeira vez no PIRLS em 2021; portanto, não há série histórica brasileira oficial anterior a 2021 nesse indicador.",
+    "abrangencia": "Brasil, amostra nacional de escolas públicas e privadas, abrangendo estudantes do 4º ano do ensino fundamental, com comparabilidade internacional entre países e economias participantes do PIRLS 2021.",
+    "periodicidade": "Quinquenal.",
+    "eventos_externos": [
+      {
+        "ano": 2021,
+        "nome": "Pandemia",
+        "descricao": "A coleta do PIRLS 2021 ocorreu durante a pandemia de COVID-19, período citado pela IEA/Inep como contexto excepcional para a aplicação internacional da avaliação."
+      },
+      {
+        "ano": 2021,
+        "nome": "Estreia brasileira",
+        "descricao": "O PIRLS 2021 foi a primeira participação do Brasil no estudo, impossibilitando comparação histórica nacional com ciclos anteriores."
+      },
+      {
+        "ano": 2021,
+        "nome": "Aplicação em papel",
+        "descricao": "Embora o ciclo de 2021 tenha marcado a transição internacional para avaliação digital em vários países, o Brasil aplicou testes e questionários em papel."
+      }
+    ],
+    "comparacao_paises": "No PIRLS 2021, o Brasil obteve 419 pontos em compreensão leitora. O resultado foi significativamente inferior ao de 58 dos 65 países e regiões de referência participantes. O desempenho brasileiro não diferiu significativamente do Kosovo (421) e do Irã (413), e foi estatisticamente superior ao da Jordânia (381), Egito (378) e África do Sul (288).",
+    "nivel_confiabilidade": "Muito alto para comparação internacional do desempenho médio em leitura no 4º ano, pois os dados vêm da IEA/PIRLS e do relatório nacional do Inep, com amostragem, aplicação e escala padronizadas internacionalmente. A principal limitação é que, para o Brasil, existe apenas um ponto oficial disponível, pois a primeira participação brasileira ocorreu em 2021.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "IEA - PIRLS 2021",
+        "url": "https://www.iea.nl/studies/iea/pirls/2021"
+      },
+      {
+        "titulo": "PIRLS 2021 International Results in Reading",
+        "url": "https://pirls2021.org/results/"
+      },
+      {
+        "titulo": "Inep - PIRLS",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pirls"
+      },
+      {
+        "titulo": "Inep - Brasil no PIRLS 2021: Análise dos resultados da compreensão leitora dos estudantes do 4º ano do ensino fundamental",
+        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/brasil-no-pirls-2021-analise-dos-resultados-da-compreensao-leitora-dos-estudantes-do-4o-ano-do-ensino-fundamental"
+      },
+      {
+        "titulo": "Inep - Brasil no PIRLS 2021: Sumário Executivo",
+        "url": "https://download.inep.gov.br/pirls/2021/brasil_sumario_executivo.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2021,
+        "valor": 419
+      }
+    ]
+  },
+  "lays_banco_mundial": {
+    "label": "(WB) Anos de Escolaridade Ajustados pela Aprendizagem",
+    "unidade": "anos",
+    "fonte": "World Bank - Human Capital Index (HCI) Database",
+    "cat": "Educação",
+    "descricao": "Mede quantos anos de escolaridade efetiva uma criança pode esperar completar até os 18 anos, ajustando os anos esperados de escola pela aprendizagem medida em testes harmonizados.",
+    "como_interpretar": "Valores maiores indicam maior quantidade de escolaridade efetivamente convertida em aprendizagem. O indicador combina acesso à escola e desempenho educacional; não mede diretamente desigualdade interna, qualidade curricular, financiamento educacional ou distribuição regional dos resultados.",
+    "metodologia": "O Banco Mundial calcula os Learning-Adjusted Years of School multiplicando os anos esperados de escolaridade pela razão entre a pontuação harmonizada de testes do país e o parâmetro internacional de referência de aprendizagem avançada. A métrica integra o componente educacional do Human Capital Index e busca converter quantidade de escolarização em anos equivalentes de aprendizagem efetiva.",
+    "historico_metodologia": "O indicador foi desenvolvido no contexto do Human Capital Project do Banco Mundial e incorporado ao Human Capital Index. A base do HCI foi lançada em 2018 e teve atualização relevante em 2020. A própria documentação do Banco Mundial informa que os dados da atualização de 2020 representam a situação pré-COVID-19. Como a série oficial do HCI não possui valores anuais contínuos desde 1994 para o Brasil, foram mantidos apenas os anos publicados na fonte oficial, sem interpolação, projeção ou preenchimento artificial.",
+    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente na base Human Capital Index do Banco Mundial.",
+    "periodicidade": "Irregular. A base do Human Capital Index publica valores para anos selecionados, não uma série anual contínua.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2020, o Brasil registrou cerca de 7,87 anos de escolaridade ajustados pela aprendizagem. Isso significa que os anos esperados de escola no país são substancialmente reduzidos quando ajustados pelo desempenho em aprendizagem. O Brasil fica abaixo de economias com sistemas educacionais de alto desempenho, que superam 10 anos de escolaridade ajustada, e acima de muitos países de baixa renda com menor acesso e menor desempenho educacional.",
+    "nivel_confiabilidade": "Alto para comparação internacional em anos publicados pelo Banco Mundial, pois os valores vêm da base oficial Human Capital Index. A principal limitação é que o indicador não possui série anual contínua e depende da disponibilidade e harmonização de testes internacionais de aprendizagem, o que pode gerar revisões quando a base é atualizada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "World Bank Human Capital Data Portal - Learning-Adjusted Years of School",
+        "url": "https://humancapital.worldbank.org/en/indicator/HD_HCIP_LAYS"
+      },
+      {
+        "titulo": "World Bank DataBank - Human Capital Index - HD.HCI.LAYS",
+        "url": "https://databank.worldbank.org/data/reports.aspx?series=HD.HCI.LAYS&source=3698"
+      },
+      {
+        "titulo": "World Bank - Human Capital Index 2020 Update - Brazil Brief",
+        "url": "https://databankfiles.worldbank.org/public/ddpext_download/hci/HCI_2pager_BRA.pdf"
+      },
+      {
+        "titulo": "World Bank - Human Capital Index 2020 Update: Human Capital in the Time of COVID-19",
+        "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/456901600111156873/the-human-capital-index-2020-update-human-capital-in-the-time-of-covid-19"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 7.65
+      },
+      {
+        "ano": 2017,
+        "valor": 7.63
+      },
+      {
+        "ano": 2018,
+        "valor": 7.77
+      },
+      {
+        "ano": 2020,
+        "valor": 7.87
+      }
+    ]
+  },
+  "taxa_conclusao_primario_ods_4_1_2": {
+    "label": "(UNESCO/UIS) Taxa de Conclusão do Primário",
+    "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do primário",
+    "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
+    "cat": "Educação",
+    "descricao": "Mede a proporção de crianças que concluíram o ensino primário dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
+    "como_interpretar": "Valores mais altos indicam maior proporção da população-alvo que concluiu o ensino primário. Valor próximo de 100% indica conclusão quase universal. Valores menores indicam atraso escolar, abandono, repetência, entrada tardia ou combinação desses fatores.",
+    "metodologia": "O indicador ODS 4.1.2 para o primário é calculado como a porcentagem da população de uma coorte de crianças, com idade entre 3 e 5 anos acima da idade oficial de ingresso no último ano do primário, que concluiu esse nível. A fonte metodológica oficial da UNESCO/UIS define a taxa como o número de pessoas no grupo etário relevante que completaram o último ano do nível educacional dividido pela população total do mesmo grupo etário, multiplicado por 100. As principais fontes são censos populacionais e pesquisas domiciliares, com mapeamento dos níveis educacionais para a ISCED.",
+    "historico_metodologia": "A metodologia oficial do ODS 4.1.2 usa dados de censos populacionais e pesquisas domiciliares, não séries administrativas anuais completas. Por isso, para o Brasil, a base oficial da UNESCO/UIS disponível no perfil ODS 4 apresenta observações pontuais, não uma série anual contínua desde 1994. Não foram incluídas interpolações, extrapolações nem estimativas geradas por modelo. A comparabilidade pode ser afetada por mudanças em pesquisas domiciliares, mapeamentos ISCED, duração oficial dos níveis de ensino e disponibilidade de microdados por idade.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da UNESCO/UIS para o monitoramento do ODS 4.1.2 no nível primário.",
+    "periodicidade": "Irregular, conforme disponibilidade de censos populacionais e pesquisas domiciliares harmonizadas pela UNESCO/UIS.",
+    "eventos_externos": [],
+    "comparacao_paises": "Segundo o perfil ODS 4 da UNESCO/UIS para o Brasil, a conclusão do primário atingiu 99,0% em 2024, indicando desempenho próximo à universalização e mais favorável do que os níveis fundamental II e médio no próprio país.",
+    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
+        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS - Metadata SDG Indicator 4.1.2",
+        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.1.2.pdf"
+      },
+      {
+        "titulo": "UN Statistics Division - SDG Metadata 4.1.2",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-01-02.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS Data Browser",
+        "url": "https://databrowser.uis.unesco.org/"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2015,
+        "valor": 93.2
+      },
+      {
+        "ano": 2021,
+        "valor": 97.5
+      },
+      {
+        "ano": 2024,
+        "valor": 99.0
+      }
+    ]
+  },
+  "taxa_conclusao_fundamental_ii_ods_4_1_2": {
+    "label": "(UNESCO/UIS) Taxa de Conclusão do Fundamental II",
+    "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do fundamental II",
+    "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
+    "cat": "Educação",
+    "descricao": "Mede a proporção de adolescentes que concluíram o ensino fundamental II dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
+    "como_interpretar": "Valores mais altos indicam maior proporção da população-alvo que concluiu o fundamental II. Valores menores indicam gargalos de progressão escolar, abandono, repetência, entrada tardia ou não conclusão do nível no grupo etário esperado.",
+    "metodologia": "O indicador ODS 4.1.2 para o fundamental II é calculado como a porcentagem da população de uma coorte de adolescentes, com idade entre 3 e 5 anos acima da idade oficial de ingresso no último ano do fundamental II, que concluiu esse nível. A fonte metodológica oficial da UNESCO/UIS define a taxa como o número de pessoas no grupo etário relevante que completaram o último ano do nível educacional dividido pela população total do mesmo grupo etário, multiplicado por 100. As principais fontes são censos populacionais e pesquisas domiciliares, com mapeamento dos níveis educacionais para a ISCED.",
+    "historico_metodologia": "A metodologia oficial do ODS 4.1.2 usa dados de censos populacionais e pesquisas domiciliares, não séries administrativas anuais completas. Por isso, para o Brasil, a base oficial da UNESCO/UIS disponível no perfil ODS 4 apresenta observações pontuais, não uma série anual contínua desde 1994. Não foram incluídas interpolações, extrapolações nem estimativas geradas por modelo. A comparabilidade pode ser afetada por mudanças em pesquisas domiciliares, mapeamentos ISCED, duração oficial dos níveis de ensino e disponibilidade de microdados por idade.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da UNESCO/UIS para o monitoramento do ODS 4.1.2 no nível fundamental II.",
+    "periodicidade": "Irregular, conforme disponibilidade de censos populacionais e pesquisas domiciliares harmonizadas pela UNESCO/UIS.",
+    "eventos_externos": [],
+    "comparacao_paises": "Segundo o perfil ODS 4 da UNESCO/UIS para o Brasil, a conclusão do fundamental II foi de 86,2% em 2024, abaixo da conclusão do primário, mas acima da conclusão do ensino médio no próprio país, indicando perda de continuidade ao longo da trajetória escolar.",
+    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
+        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS - Metadata SDG Indicator 4.1.2",
+        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.1.2.pdf"
+      },
+      {
+        "titulo": "UN Statistics Division - SDG Metadata 4.1.2",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-01-02.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS Data Browser",
+        "url": "https://databrowser.uis.unesco.org/"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2015,
+        "valor": 82.7
+      },
+      {
+        "ano": 2021,
+        "valor": 82.5
+      },
+      {
+        "ano": 2024,
+        "valor": 86.2
+      }
+    ]
+  },
+  "taxa_conclusao_medio_ods_4_1_2": {
+    "label": "(UNESCO/UIS) Taxa de Conclusão do Médio",
+    "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do médio",
+    "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
+    "cat": "Educação",
+    "descricao": "Mede a proporção de jovens que concluíram o ensino médio dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
+    "como_interpretar": "Valores mais altos indicam maior proporção da população-alvo que concluiu o ensino médio. Valores menores indicam maior perda educacional acumulada até o fim da educação básica, incluindo atraso escolar, abandono, repetência, entrada tardia ou não conclusão do nível.",
+    "metodologia": "O indicador ODS 4.1.2 para o ensino médio é calculado como a porcentagem da população de uma coorte de jovens, com idade entre 3 e 5 anos acima da idade oficial de ingresso no último ano do ensino médio, que concluiu esse nível. A fonte metodológica oficial da UNESCO/UIS define a taxa como o número de pessoas no grupo etário relevante que completaram o último ano do nível educacional dividido pela população total do mesmo grupo etário, multiplicado por 100. As principais fontes são censos populacionais e pesquisas domiciliares, com mapeamento dos níveis educacionais para a ISCED.",
+    "historico_metodologia": "A metodologia oficial do ODS 4.1.2 usa dados de censos populacionais e pesquisas domiciliares, não séries administrativas anuais completas. Por isso, para o Brasil, a base oficial da UNESCO/UIS disponível no perfil ODS 4 apresenta observações pontuais, não uma série anual contínua desde 1994. Não foram incluídas interpolações, extrapolações nem estimativas geradas por modelo. A comparabilidade pode ser afetada por mudanças em pesquisas domiciliares, mapeamentos ISCED, duração oficial dos níveis de ensino e disponibilidade de microdados por idade.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da UNESCO/UIS para o monitoramento do ODS 4.1.2 no nível médio.",
+    "periodicidade": "Irregular, conforme disponibilidade de censos populacionais e pesquisas domiciliares harmonizadas pela UNESCO/UIS.",
+    "eventos_externos": [],
+    "comparacao_paises": "Segundo o perfil ODS 4 da UNESCO/UIS para o Brasil, a conclusão do ensino médio foi de 68,7% em 2024, abaixo dos níveis primário e fundamental II no próprio país, mostrando que o maior gargalo de conclusão ocorre no fim da educação básica.",
+    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
+        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS - Metadata SDG Indicator 4.1.2",
+        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.1.2.pdf"
+      },
+      {
+        "titulo": "UN Statistics Division - SDG Metadata 4.1.2",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-01-02.pdf"
+      },
+      {
+        "titulo": "UNESCO/UIS Data Browser",
+        "url": "https://databrowser.uis.unesco.org/"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2015,
+        "valor": 63.3
+      },
+      {
+        "ano": 2021,
+        "valor": 63.9
+      },
+      {
+        "ano": 2024,
+        "valor": 68.7
+      }
+    ]
+  },
+  "taxa_criancas_fora_da_escola_uis": {
+    "label": "(UNESCO/UIS) Taxa de Crianças Fora da Escola",
+    "unidade": "% da população em idade oficial do ensino primário",
+    "fonte": "UNESCO Institute for Statistics (UIS), via World Bank Data / World Development Indicators (SE.PRM.UNER.ZS)",
+    "cat": "Educação",
+    "descricao": "Mede a porcentagem de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no ensino secundário.",
+    "como_interpretar": "Valores menores indicam maior inclusão escolar na idade primária. Valor igual a 0% indicaria que todas as crianças em idade oficial do ensino primário estão matriculadas no ensino primário ou secundário. O indicador não mede aprendizagem, frequência efetiva, abandono ao longo do ano, distorção idade-série ou qualidade da educação.",
+    "metodologia": "O indicador é calculado como a quantidade de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no secundário, dividida pela população total na idade oficial do ensino primário, multiplicada por 100. Crianças na idade oficial do ensino primário matriculadas apenas na educação pré-primária são consideradas fora da escola para este indicador. A série é compilada pela UNESCO/UIS a partir de dados administrativos educacionais e população escolar estimada, disseminada também pelo World Bank Data / World Development Indicators.",
+    "historico_metodologia": "A UNESCO/UIS passou por mudanças relevantes de disseminação e atualização de base, incluindo a migração para o novo UIS Data Browser e atualizações periódicas dos arquivos em massa. A série brasileira disponível na fonte consultada possui lacunas antes de 2012 para esta definição específica; portanto, foram mantidos apenas anos com observações concretas disponíveis na série oficial. Valores de anos sem dado oficial observado entre 1994 e 2026 não foram interpolados nem estimados.",
+    "abrangencia": "Brasil, cobertura nacional, crianças em idade oficial do ensino primário, ambos os sexos.",
+    "periodicidade": "Anual, conforme disponibilidade de envio e validação dos dados nacionais pela UNESCO/UIS.",
+    "eventos_externos": [
+      {
+        "ano": 2012,
+        "nome": "Maior valor",
+        "descricao": "Primeiro ano disponível da série validada e maior taxa registrada no período observado, segundo a série UNESCO/UIS via World Bank/CEIC."
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao": "A pandemia de COVID-19 afetou o funcionamento escolar e a mensuração educacional, podendo impactar matrícula e permanência escolar no período."
+      },
+      {
+        "ano": 2021,
+        "nome": "Pico pandêmico",
+        "descricao": "A série mostra elevação relevante em 2021, ano ainda fortemente afetado por interrupções educacionais associadas à pandemia."
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada",
+        "descricao": "A taxa caiu em 2022 em relação a 2021, coincidindo com a retomada mais ampla das atividades presenciais e normalização parcial do sistema educacional."
+      },
+      {
+        "ano": 2024,
+        "nome": "Menor valor",
+        "descricao": "A série atualizada indica queda para 2,187% em 2024, menor valor recente localizado na fonte consultada."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil aparece com taxa de crianças fora da escola no ensino primário de 2,187%, abaixo da mediana global aproximada informada pelo World Bank/WDI para países com dados no mesmo indicador, mas acima de países com taxas próximas de zero, como Japão, Reino Unido, Lituânia, França e Polônia.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a série é da UNESCO/UIS e redistribuída pelo World Bank Data / World Development Indicators. A principal limitação é a cobertura temporal: há observações oficiais disponíveis apenas para parte do período solicitado; anos sem valor observado não foram preenchidos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Children out of school (% of primary school age) - SE.PRM.UNER.ZS",
+        "url": "https://data.worldbank.org/indicator/SE.PRM.UNER.ZS?locations=BR"
+      },
+      {
+        "titulo": "UNESCO/UIS Data Browser",
+        "url": "https://databrowser.uis.unesco.org/"
+      },
+      {
+        "titulo": "UNESCO/UIS API Documentation",
+        "url": "https://api.uis.unesco.org/api/public/documentation/"
+      },
+      {
+        "titulo": "CEIC / World Bank WDI - Brazil Social Education Statistics",
+        "url": "https://www.ceicdata.com/en/brazil/social-education-statistics"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2012,
+        "valor": 5.82
+      },
+      {
+        "ano": 2013,
+        "valor": 3.95
+      },
+      {
+        "ano": 2021,
+        "valor": 5.23
+      },
+      {
+        "ano": 2022,
+        "valor": 3.984
+      },
+      {
+        "ano": 2024,
+        "valor": 2.187
+      }
+    ],
+    "padrao": false
+  },
+  "taxa_alfabetizacao_jovens_adultos": {
+    "label": "(UIS) Taxa de Alfabetização de Jovens e Adultos",
+    "unidade": "% da população com 15 anos ou mais",
+    "fonte": "UNESCO Institute for Statistics (UIS), via World Bank - World Development Indicators (SE.ADT.LITR.ZS)",
+    "cat": "Educação",
+    "descricao": "Mede a proporção da população brasileira com 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
+    "como_interpretar": "Valores maiores indicam maior proporção de jovens e adultos alfabetizados. O indicador mede alfabetização básica declarada ou aferida por censos e pesquisas domiciliares, mas não mede proficiência leitora avançada, qualidade da educação, compreensão textual complexa nem desempenho escolar.",
+    "metodologia": "A taxa é calculada dividindo-se o número de pessoas alfabetizadas com 15 anos ou mais pela população total da mesma faixa etária, excluindo pessoas com condição de alfabetização desconhecida, e multiplicando o resultado por 100. A série internacional é compilada pelo UNESCO Institute for Statistics a partir de censos nacionais e pesquisas domiciliares, com padronização pelo World Development Indicators.",
+    "historico_metodologia": "A metodologia internacional do UIS define alfabetização como a capacidade de ler e escrever, com compreensão, uma declaração curta e simples sobre a vida cotidiana. A fonte informa que, em alguns países, podem existir diferenças de definição, método de coleta, uso de autodeclaração, inferência por escolaridade ou testes diretos. Para o Brasil, os valores recentes são compatíveis com a série de educação da PNAD Contínua/IBGE iniciada em 2016. Não foram incluídos anos sem valor publicado na série consultada.",
+    "abrangencia": "Brasil, cobertura nacional, população residente com 15 anos ou mais.",
+    "periodicidade": "Anual, conforme disponibilidade de censos e pesquisas domiciliares nacionais compiladas pelo UIS/WDI.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Censo 2000",
+        "descricao": "O valor de 2000 coincide com ano censitário brasileiro, uma das bases nacionais usadas para medir alfabetização da população."
+      },
+      {
+        "ano": 2004,
+        "nome": "Queda PNAD",
+        "descricao": "Segundo o IBGE, a taxa de analfabetismo medida pela PNAD caiu de 11,5% em 2004 para 8,0% em 2015, movimento compatível com alta gradual da alfabetização adulta."
+      },
+      {
+        "ano": 2016,
+        "nome": "PNAD Contínua",
+        "descricao": "A série recente de indicadores educacionais do IBGE passa a ser acompanhada pela PNAD Contínua, permitindo atualização anual mais regular da alfabetização da população de 15 anos ou mais."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou fortemente a educação brasileira, mas a alfabetização de adultos variou pouco no curto prazo por ser um indicador de estoque populacional acumulado."
+      },
+      {
+        "ano": 2024,
+        "nome": "Mínimo histórico",
+        "descricao": "O IBGE informou que, em 2024, o analfabetismo da população com 15 anos ou mais caiu para 5,3%, o menor nível da série da PNAD Contínua iniciada em 2016."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 94,74% de alfabetização da população com 15 anos ou mais. É um patamar alto em comparação com países de baixa renda, mas ainda abaixo de países com alfabetização praticamente universal, próximos de 99% ou 100%. Comparações internacionais devem ser feitas com cautela porque o UIS informa diferenças nacionais de definição e coleta.",
+    "nivel_confiabilidade": "Alto para comparação internacional, pois a série vem do UNESCO Institute for Statistics e é redistribuída pelo World Bank WDI/FRED. A ressalva metodológica é que alfabetização pode ser medida por autodeclaração, censos, pesquisas domiciliares ou testes diretos, e a própria fonte alerta que definições e métodos podem variar entre países.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Literacy rate, adult total (% of people ages 15 and above) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=BR"
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SE.ADT.LITR.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/millennium-development-goals/series/SE.ADT.LITR.ZS"
+      },
+      {
+        "titulo": "FRED - Literacy Rate, Adult Total for Brazil (SEADTLITRZSBRA)",
+        "url": "https://fred.stlouisfed.org/series/SEADTLITRZSBRA"
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Education indicators advance in 2024",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/43730-education-indicators-advance-in-2024-but-school-failure-increases"
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Literacy transforms youth and adult lives in Brazil",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/16523-alfabetizacao-transforma-a-vida-de-jovens-e-adultos-pelo-brasil-3"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 86.370002746582
+      },
+      {
+        "ano": 2004,
+        "valor": 88.620002746582
+      },
+      {
+        "ano": 2006,
+        "valor": 89.620002746582
+      },
+      {
+        "ano": 2007,
+        "valor": 90.0100021362305
+      },
+      {
+        "ano": 2008,
+        "valor": 90.0400009155273
+      },
+      {
+        "ano": 2009,
+        "valor": 90.3000030517578
+      },
+      {
+        "ano": 2010,
+        "valor": 90.379997253418
+      },
+      {
+        "ano": 2011,
+        "valor": 91.4100036621094
+      },
+      {
+        "ano": 2012,
+        "valor": 91.3399963378906
+      },
+      {
+        "ano": 2013,
+        "valor": 91.4800033569336
+      },
+      {
+        "ano": 2014,
+        "valor": 91.7300033569336
+      },
+      {
+        "ano": 2015,
+        "valor": 92.0500030517578
+      },
+      {
+        "ano": 2016,
+        "valor": 92.8099975585938
+      },
+      {
+        "ano": 2017,
+        "valor": 93.0800018310547
+      },
+      {
+        "ano": 2018,
+        "valor": 93.2300033569336
+      },
+      {
+        "ano": 2019,
+        "valor": 93.8926266999537
+      },
+      {
+        "ano": 2020,
+        "valor": 94.7444114331042
+      },
+      {
+        "ano": 2021,
+        "valor": 94.7726170886975
+      },
+      {
+        "ano": 2022,
+        "valor": 94.376866160108
+      },
+      {
+        "ano": 2023,
+        "valor": 94.5725490635077
+      },
+      {
+        "ano": 2024,
+        "valor": 94.7399978637695
+      }
+    ],
+    "padrao": false
+  },
+  "participacao_educacao_infantil_organizada": {
+    "label": "(UNESCO/UIS) Participação em Educação Infantil Organizada",
+    "unidade": "Percentual (%)",
+    "fonte": "UNESCO Institute for Statistics (UIS) / United Nations Global SDG Database - SE_PRE_PARTN",
+    "cat": "Educação",
+    "descricao": "Mede a proporção de crianças, um ano antes da idade oficial de entrada no ensino primário, que participam de algum programa organizado de aprendizagem.",
+    "como_interpretar": "Valores maiores indicam maior participação das crianças em educação organizada imediatamente antes da entrada oficial no ensino primário. Valores próximos de 100% indicam cobertura quase universal. O indicador não mede qualidade da educação infantil, aprendizagem efetiva, carga horária, infraestrutura ou desigualdades internas.",
+    "metodologia": "O indicador ODS 4.2.2 é calculado como o número de crianças na idade-alvo que participam de programas organizados de aprendizagem, incluindo educação infantil e ensino primário quando aplicável, dividido pela população total da mesma idade, multiplicado por 100. A idade-alvo corresponde a um ano antes da idade oficial de entrada no ensino primário em cada país. A fonte principal é administrativa; quando derivado de pesquisas domiciliares, matrícula/participação e população são coletadas na mesma operação estatística.",
+    "historico_metodologia": "A definição internacional do ODS 4.2.2 foi padronizada pela ONU/UNESCO-UIS como 'participation rate in organized learning (one year before the official primary entry age), by sex'. A atualização metodológica oficial consultada é de 29/07/2024. A série pode sofrer revisões quando há atualização de dados nacionais, reprocessamento pelo UIS, revisão de população por idade simples ou mudança de fonte entre registros administrativos e pesquisas domiciliares. Dados de 2020 podem ter comparabilidade afetada por restrições da pandemia, mudanças de coleta e não resposta em pesquisas domiciliares.",
+    "abrangencia": "Brasil, cobertura nacional, ambos os sexos, indicador ODS 4.2.2 comparável internacionalmente.",
+    "periodicidade": "Anual, conforme disponibilidade de dados nacionais processados pelo UIS/ONU.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A documentação oficial do UIS alerta que dados coletados por pesquisas em 2020 podem ter comparabilidade afetada por restrições de mobilidade, entrevistas telefônicas, mudanças amostrais, maior não resposta e questionários adaptados."
+      }
+    ],
+    "comparacao_paises": "O Brasil aparece acima da média regional da América Latina e Caribe nos materiais recentes do Banco Mundial/Human Capital Data Portal, com participação elevada em aprendizagem organizada antes da entrada no ensino primário. A comparação internacional deve ser feita com cautela porque a idade oficial de entrada no primário varia por país e a fonte pode alternar entre dados administrativos e pesquisas domiciliares.",
+    "nivel_confiabilidade": "Alto para comparação internacional do ODS 4.2.2, por ser indicador oficial monitorado pelo UNESCO Institute for Statistics e pela base global dos ODS da ONU. A principal limitação é a disponibilidade irregular de observações anuais e possíveis revisões posteriores da série. Mantive apenas valores observados disponíveis nas fontes oficiais consultadas, sem interpolação, projeção ou imputação própria.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "UNSD - SDG Metadata Indicator 4.2.2",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-02-02.pdf"
+      },
+      {
+        "titulo": "UNESCO UIS - Metadata 4.2.2",
+        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.2.2.pdf"
+      },
+      {
+        "titulo": "UNESCO UIS Data Browser - Bulk Data Download",
+        "url": "https://databrowser.uis.unesco.org/resources/bulk"
+      },
+      {
+        "titulo": "UNSD - Global SDG Database Indicator 4.2.2",
+        "url": "https://unstats.un.org/sdgs/indicators/database/?indicator=4.2.2"
+      },
+      {
+        "titulo": "World Bank Human Capital Data Portal - Participation rate in organized learning",
+        "url": "https://humancapital.worldbank.org/en/indicator/WB_HCP_ORG_LEARNING"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2015,
+        "valor": 91
+      },
+      {
+        "ano": 2018,
+        "valor": 95
+      }
+    ],
+    "padrao": false
   }
 };
