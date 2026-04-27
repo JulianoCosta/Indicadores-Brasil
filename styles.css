@@ -342,7 +342,7 @@ h1 {
 /* Categoria */
 .cat-label {
   font-size: 14.5px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-strong);
   background: #ffffff;
   border: 1px solid var(--border-muted);
