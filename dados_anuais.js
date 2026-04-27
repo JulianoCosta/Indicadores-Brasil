@@ -7619,6 +7619,133 @@
     ],
     "padrao": false
   },
+  "impostos_comercio_exterior_receita": {
+    "label": "(WDI/FMI) Receita Tributária - Comércio Exterior",
+    "unidade": "% da receita total",
+    "fonte": "Banco Mundial - World Development Indicators (GC.TAX.INTT.RV.ZS), com dados do Government Finance Statistics Yearbook e arquivos de dados do Fundo Monetário Internacional (FMI)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a participação dos impostos sobre comércio exterior na receita total do governo brasileiro.",
+    "como_interpretar": "Valores maiores indicam maior dependência relativa da receita pública em impostos associados ao comércio internacional. Valores menores indicam que a arrecadação depende mais de outras bases tributárias, como renda, consumo doméstico, contribuições sociais e outros tributos.",
+    "metodologia": "O indicador corresponde aos impostos sobre comércio internacional divididos pela receita total do governo, multiplicado por 100. A categoria inclui impostos que se tornam devidos quando bens cruzam a fronteira nacional ou aduaneira, além de certas transações de serviços entre residentes e não residentes, conforme classificação do FMI/GFS usada pelo World Development Indicators.",
+    "historico_metodologia": "A série brasileira disponível no World Development Indicators para este indicador cobre 2010 a 2024. Não foram incluídos anos anteriores a 2010 porque não há valores oficiais disponíveis para o Brasil nessa série consultada. Como o indicador é baseado no FMI/GFS e republicado pelo Banco Mundial/WDI, os valores podem ser revisados quando houver atualização dos arquivos fiscais nacionais, reclassificações metodológicas ou revisão das contas do governo.",
+    "abrangencia": "Brasil, governo geral conforme disponibilidade e padronização internacional do FMI/GFS no World Development Indicators.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2013,
+        "nome": "Alta relativa",
+        "descricao": "O indicador atingiu nível elevado dentro da série recente, refletindo maior peso relativo dos tributos de comércio exterior na receita total."
+      },
+      {
+        "ano": 2016,
+        "nome": "Mínimo recente",
+        "descricao": "O indicador atingiu o menor valor da série validada, em contexto de recessão econômica e queda relativa da participação desses tributos na receita total."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou comércio, atividade econômica e composição da arrecadação, coincidindo com alta relativa do indicador."
+      },
+      {
+        "ano": 2021,
+        "nome": "Recuperação",
+        "descricao": "A recuperação econômica e a normalização parcial do comércio exterior coincidiram com o maior valor da série validada."
+      },
+      {
+        "ano": 2024,
+        "nome": "Remessa Conforme",
+        "descricao": "A tributação de importações de pequeno valor e a alta das importações contribuíram para aumento da arrecadação associada ao comércio exterior."
+      }
+    ],
+    "comparacao_paises": "O Brasil apresenta baixa dependência relativa de impostos sobre comércio exterior quando comparado a economias em desenvolvimento mais dependentes de tarifas de importação e exportação. Em 2024, o valor brasileiro foi 2,487% da receita total, abaixo de países onde tarifas aduaneiras têm peso fiscal estruturalmente maior.",
+    "nivel_confiabilidade": "Alto. A fonte estatística é o World Development Indicators do Banco Mundial, baseado no Government Finance Statistics Yearbook e arquivos de dados do FMI. A principal limitação é a cobertura temporal: para o Brasil, a série oficial disponível neste indicador começa em 2010, não em 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Taxes on international trade (% of revenue) - Brazil",
+        "url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS?locations=BR"
+      },
+      {
+        "titulo": "World Integrated Trade Solution - Brazil Taxes on international trade (% of revenue)",
+        "url": "https://wits.worldbank.org/countryprofile/en/country/BRA/startyear/2010/endyear/2024/indicator/GC-TAX-INTT-RV-ZS"
+      },
+      {
+        "titulo": "FMI - Government Finance Statistics",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:GFS"
+      },
+      {
+        "titulo": "Banco Mundial - World Development Indicators",
+        "url": "https://databank.worldbank.org/source/world-development-indicators"
+      },
+      {
+        "titulo": "OECD - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
+        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_8d545468-en.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 2.09
+      },
+      {
+        "ano": 2011,
+        "valor": 2.34
+      },
+      {
+        "ano": 2012,
+        "valor": 2.45
+      },
+      {
+        "ano": 2013,
+        "valor": 2.73
+      },
+      {
+        "ano": 2014,
+        "valor": 2.65
+      },
+      {
+        "ano": 2015,
+        "valor": 2.52
+      },
+      {
+        "ano": 2016,
+        "valor": 1.916
+      },
+      {
+        "ano": 2017,
+        "valor": 2.01
+      },
+      {
+        "ano": 2018,
+        "valor": 2.3
+      },
+      {
+        "ano": 2019,
+        "valor": 2.27
+      },
+      {
+        "ano": 2020,
+        "valor": 2.71
+      },
+      {
+        "ano": 2021,
+        "valor": 2.793
+      },
+      {
+        "ano": 2022,
+        "valor": 2.17
+      },
+      {
+        "ano": 2023,
+        "valor": 2.106
+      },
+      {
+        "ano": 2024,
+        "valor": 2.487
+      }
+    ]
+  },
   "contribuicoes_sociais_pib": {
     "label": "(OCDE) Receitas - Contribuições Sociais",
     "unidade": "% do PIB",
