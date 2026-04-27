@@ -68,6 +68,19 @@ function LegendMandatos() {
   );
 }
 
+function formatarValorIndicador(valor) {
+  if (valor == null || Number.isNaN(valor)) return "Sem valor";
+  const abs = Math.abs(valor);
+  const casas = abs >= 100 ? 0 : abs >= 10 ? 1 : 2;
+  return new Intl.NumberFormat('pt-BR', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: casas
+  }).format(valor);
+}
+
+const ANO_MINIMO = 1995;
+const ANO_MAXIMO = 2026;
+
 // ── AppAnual ─────────────────────────────────────────────────
 
 function AppAnual() {
@@ -76,8 +89,8 @@ function AppAnual() {
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
   const [selecionados, setSelecionados] = useState([]);
-  const [anoIni, setAnoIni] = useState(1995);
-  const [anoFim, setAnoFim] = useState(2026);
+  const [anoIni, setAnoIni] = useState(ANO_MINIMO);
+  const [anoFim, setAnoFim] = useState(ANO_MAXIMO);
   const [menuAberto, setMenuAberto] = useState(false);
 
   useEffect(() => {
@@ -115,20 +128,47 @@ function AppAnual() {
     setSelecionados(prev => prev.includes(k) ? prev.filter(x => x !== k) : [k, ...prev]);
   }, []);
 
+  const limparSelecao = useCallback(() => {
+    setSelecionados([]);
+  }, []);
+
+  const anosDisponiveis = useMemo(() => {
+    const anos = [];
+    for (let ano = ANO_MINIMO; ano <= ANO_MAXIMO; ano += 1) {
+      anos.push(ano);
+    }
+    return anos;
+  }, []);
+
+  const aoMudarAnoInicial = useCallback(valor => {
+    const proximoInicio = Math.min(Number(valor), anoFim);
+    setAnoIni(proximoInicio);
+  }, [anoFim]);
+
+  const aoMudarAnoFinal = useCallback(valor => {
+    const proximoFim = Math.max(Number(valor), anoIni);
+    setAnoFim(proximoFim);
+  }, [anoIni]);
+
   if (loading) return <div className="empty-state" style={{ marginTop: 48 }}>Carregando dados anuais...</div>;
-  if (erro) return <div className="empty-state" style={{ color: '#f85149' }}>Erro: {erro}</div>;
+  if (erro) return <div className="empty-state" style={{ color: '#cf222e' }}>Erro: {erro}</div>;
 
   const totalValidadas = meta ? Object.values(meta).filter(v => v.validacao).length : 0;
 
   return (
     <div className="app-layout">
       <header>
-        <div>
+        <div className="header-intro">
           <h1>Brasil 1995-2026</h1>
           <div className="subtitle">Explorador de indicadores anuais e contexto presidencial</div>
         </div>
-        <div className="subtitle">
-          {selecionados.length} indicador{selecionados.length === 1 ? "" : "es"} selecionado{selecionados.length === 1 ? "" : "s"}
+        <div className="header-actions">
+          <div className="subtitle">
+            {selecionados.length} indicador{selecionados.length === 1 ? "" : "es"} selecionado{selecionados.length === 1 ? "" : "s"}
+          </div>
+          <button type="button" className="action-btn action-btn--header" onClick={limparSelecao} disabled={selecionados.length === 0}>
+            Limpar seleção
+          </button>
         </div>
       </header>
 
@@ -139,13 +179,26 @@ function AppAnual() {
 
           {/* Filtro de período */}
           <div className="sidebar-date-range">
-            <div className="sidebar-date-group">
-              <label>Início</label>
-              <input type="number" min="1994" max={anoFim} value={anoIni} onChange={e => setAnoIni(+e.target.value)} />
-            </div>
-            <div className="sidebar-date-group">
-              <label>Fim</label>
-              <input type="number" min={anoIni} max="2026" value={anoFim} onChange={e => setAnoFim(+e.target.value)} />
+            <div className="sidebar-date-header">
+              <label>Período</label>
+              <div className="sidebar-date-values">
+                <label className="sidebar-date-field">
+                  <span>Inicial</span>
+                  <select value={anoIni} onChange={e => aoMudarAnoInicial(e.target.value)} aria-label="Ano inicial">
+                    {anosDisponiveis.filter(ano => ano <= anoFim).map(ano => (
+                      <option key={`inicio-${ano}`} value={ano}>{ano}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="sidebar-date-field">
+                  <span>Final</span>
+                  <select value={anoFim} onChange={e => aoMudarAnoFinal(e.target.value)} aria-label="Ano final">
+                    {anosDisponiveis.filter(ano => ano >= anoIni).map(ano => (
+                      <option key={`fim-${ano}`} value={ano}>{ano}</option>
+                    ))}
+                  </select>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -173,10 +226,10 @@ function AppAnual() {
                       onClick={e => { e.preventDefault(); toggle(k); }}
                     >
                       <span className="ind-dot" style={{ backgroundColor: getCategoriaCor(cat) }} />
-                      <span className="ind-label">{meta[k].label}</span>
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }} title="Indicador Validado">
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
+                      <span className="ind-content">
+                        <span className="ind-label">{meta[k].label}</span>
+                        {meta[k].fonte_sigla && <span className="ind-source-badge">{meta[k].fonte_sigla}</span>}
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -219,6 +272,7 @@ function AppAnual() {
 function GraficoAnual({ dados, info, cor, anoIni, anoFim }) {
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
   const comDados = dados.filter(d => d.valor != null);
+  const ultimoDado = comDados.length ? comDados[comDados.length - 1] : null;
   const [expandido, setExpandido] = React.useState(false);
   const [eventoAtivo, setEventoAtivo] = React.useState(null);
   const [exibirAviso, setExibirAviso] = React.useState(false);
@@ -304,15 +358,24 @@ ${JSON.stringify(info, null, 2)}`;
   return (
     <div className="chart-box">
       {/* Cabeçalho */}
-      <div className="chart-title" style={{ color: cor }}>
-        <div className="chart-title__left">
-          {info.label}
-          {info.validacao && (
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" title="Validado">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-          )}
+      <div className="chart-head">
+        <div className="chart-title" style={{ color: cor }}>
+          <div className="chart-title__left">
+            {info.label}
+            {info.validacao && (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a7f37" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" title="Validado">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            )}
+          </div>
         </div>
+        {ultimoDado && (
+          <div className="chart-last-line">
+            <span className="chart-last-line__label">Último valor:</span>
+            <strong className="chart-last-line__value">{formatarValorIndicador(ultimoDado.valor)}</strong>
+            <span className="chart-last-line__year">({ultimoDado.ano})</span>
+          </div>
+        )}
       </div>
 
       {/* Unidade / Fonte */}
@@ -400,7 +463,7 @@ ${JSON.stringify(info, null, 2)}`;
       {/* Detalhe do evento selecionado */}
       {eventoAtivo && (
         <div className="event-detail">
-          <button className="event-detail__close" onClick={() => setEventoAtivo(null)}>✕</button>
+          <button className="event-detail__close" onClick={() => setEventoAtivo(null)}>×</button>
           <div className="event-detail__title">{eventoAtivo.ano || eventoAtivo.data}: {eventoAtivo.nome}</div>
           <div className="event-detail__desc">{eventoAtivo.descricao}</div>
         </div>
@@ -411,21 +474,23 @@ ${JSON.stringify(info, null, 2)}`;
         {fixedFields.map(renderField)}
 
         {/* Ações */}
-        {info.validacao && (
+        {(info.validacao || temExtras) && (
           <div className="chart-actions">
-            <button onClick={copiarParaIA} className="export-btn" title="Exportar para validação em IA">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-              </svg>
-              <span>Validar indicador com IA</span>
-            </button>
+            {info.validacao && (
+              <button onClick={copiarParaIA} className="action-btn" title="Exportar para validação em IA">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                </svg>
+                <span>Validar indicador com IA</span>
+              </button>
+            )}
           </div>
         )}
 
         {temExtras && (
-          <button className="expand-btn" onClick={() => setExpandido(!expandido)}>
-            {expandido ? 'Ver menos' : 'Ver metadados completos'}
+          <button className="action-btn" onClick={() => setExpandido(!expandido)}>
+            <span>{expandido ? 'Ver menos' : 'Ver metadados completos'}</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={"expand-btn__icon" + (expandido ? " rotated" : "")}>
               <polyline points="6 9 12 15 18 9" />
             </svg>

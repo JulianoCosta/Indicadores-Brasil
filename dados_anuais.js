@@ -1,631 +1,400 @@
-﻿window.__DADOS_ANUAIS__ = {
+window.__DADOS_ANUAIS__ = {
   "pib_real_crescimento_anual": {
-    "label": "(WDI/FMI) Crescimento do PIB",
+    "label": "Crescimento do PIB",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% ao ano",
-    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.MKTP.KD.ZG) / Fundo Monetário Internacional - World Economic Outlook",
+    "fonte":
+      "Banco Mundial - World Development Indicators (NY.GDP.MKTP.KD.ZG) / Fundo Monetário Internacional - World Economic Outlook",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "Mede a variação percentual anual do Produto Interno Bruto real do Brasil, ajustado pela inflação.",
-    "como_interpretar": "Valores positivos indicam expansão real da produção econômica em relação ao ano anterior; valores negativos indicam contração. O indicador mede crescimento agregado da economia, mas não mede distribuição de renda, qualidade do crescimento, produtividade setorial ou bem-estar social.",
-    "metodologia": "O Banco Mundial define o indicador como a taxa anual de crescimento percentual do PIB a preços de mercado, baseada em moeda local constante. O PIB corresponde à soma do valor adicionado bruto de todos os produtores residentes, acrescida dos impostos sobre produtos e deduzidos os subsídios não incluídos no valor dos produtos. A série é calculada sem dedução por depreciação de ativos produzidos ou por exaustão e degradação de recursos naturais. Para o Brasil, os valores derivam das contas nacionais oficiais, principalmente do IBGE, padronizadas internacionalmente no WDI. O FMI/WEO reporta o mesmo conceito macroeconômico geral como crescimento do PIB real em variação percentual anual.",
-    "historico_metodologia": "Séries de PIB real podem ser revisadas quando o IBGE atualiza as Contas Nacionais, incorpora novas pesquisas estruturais, altera anos de referência, revisa deflatores, muda classificações setoriais ou recalcula séries encadeadas. O Banco Mundial também pode revisar a série do WDI após atualizações das contas nacionais nacionais e de seus processos de harmonização internacional. Foram mantidos apenas anos com valores observados disponíveis na série WDI até 2024; valores posteriores, projeções ou estimativas do FMI/WEO não foram incluídos.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação com países e agregados econômicos.",
+    "como_interpretar":
+      "Valores positivos indicam expansão real da produção econômica em relação ao ano anterior; valores negativos indicam contração. O indicador mede crescimento agregado da economia, mas não mede distribuição de renda, qualidade do crescimento, produtividade setorial ou bem-estar social.",
+    "metodologia":
+      "O Banco Mundial define o indicador como a taxa anual de crescimento percentual do PIB a preços de mercado, baseada em moeda local constante. O PIB corresponde à soma do valor adicionado bruto de todos os produtores residentes, acrescida dos impostos sobre produtos e deduzidos os subsídios não incluídos no valor dos produtos. A série é calculada sem dedução por depreciação de ativos produzidos ou por exaustão e degradação de recursos naturais. Para o Brasil, os valores derivam das contas nacionais oficiais, principalmente do IBGE, padronizadas internacionalmente no WDI. O FMI/WEO reporta o mesmo conceito macroeconômico geral como crescimento do PIB real em variação percentual anual.",
+    "historico_metodologia":
+      "Séries de PIB real podem ser revisadas quando o IBGE atualiza as Contas Nacionais, incorpora novas pesquisas estruturais, altera anos de referência, revisa deflatores, muda classificações setoriais ou recalcula séries encadeadas. O Banco Mundial também pode revisar a série do WDI após atualizações das contas nacionais nacionais e de seus processos de harmonização internacional. Foram mantidos apenas anos com valores observados disponíveis na série WDI até 2024; valores posteriores, projeções ou estimativas do FMI/WEO não foram incluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional para comparação com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária associada ao Plano Real coincidiu com forte crescimento real do PIB em 1994."
+        "descricao":
+          "A estabilização monetária associada ao Plano Real coincidiu com forte crescimento real do PIB em 1994.",
       },
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial e a desvalorização do real coincidiram com forte desaceleração do crescimento econômico."
+        "descricao":
+          "A mudança do regime cambial e a desvalorização do real coincidiram com forte desaceleração do crescimento econômico.",
       },
       {
         "ano": 2004,
         "nome": "Expansão global",
-        "descricao": "O cenário externo favorável e a expansão doméstica coincidiram com aceleração expressiva do PIB real."
+        "descricao":
+          "O cenário externo favorável e a expansão doméstica coincidiram com aceleração expressiva do PIB real.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e levou o Brasil a registrar leve contração do PIB real."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e levou o Brasil a registrar leve contração do PIB real.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A recuperação após a crise financeira global produziu o maior crescimento anual da série desde 1994."
+        "descricao":
+          "A recuperação após a crise financeira global produziu o maior crescimento anual da série desde 1994.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A deterioração fiscal, a queda de confiança, choques políticos e retração da demanda coincidiram com forte contração do PIB real."
+        "descricao":
+          "A deterioração fiscal, a queda de confiança, choques políticos e retração da demanda coincidiram com forte contração do PIB real.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da crise econômica manteve o PIB real em queda pelo segundo ano consecutivo."
+        "descricao": "A continuidade da crise econômica manteve o PIB real em queda pelo segundo ano consecutivo.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 e as restrições à mobilidade provocaram forte queda da atividade econômica."
+        "descricao":
+          "A pandemia de COVID-19 e as restrições à mobilidade provocaram forte queda da atividade econômica.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A reabertura econômica e a baixa base de comparação de 2020 geraram forte recuperação do PIB real."
+        "descricao":
+          "A reabertura econômica e a baixa base de comparação de 2020 geraram forte recuperação do PIB real.",
       },
       {
         "ano": 2024,
         "nome": "Consumo forte",
-        "descricao": "O crescimento de serviços, indústria, investimento e consumo das famílias sustentou a alta real do PIB em 2024."
-      }
+        "descricao":
+          "O crescimento de serviços, indústria, investimento e consumo das famílias sustentou a alta real do PIB em 2024.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil cresceu 3,4%, acima de várias economias avançadas e acima de parte relevante da América Latina, mas abaixo de algumas grandes economias emergentes de crescimento mais acelerado. A comparação internacional deve considerar diferenças de estrutura produtiva, demografia, ciclo econômico, choques externos e margem de recuperação pós-crise.",
-    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores são derivados das contas nacionais oficiais e padronizados pelo World Development Indicators do Banco Mundial. A principal ressalva é que valores de PIB real podem ser revisados retroativamente por atualizações metodológicas das contas nacionais.",
+    "comparacao_paises":
+      "Em 2024, o Brasil cresceu 3,4%, acima de várias economias avançadas e acima de parte relevante da América Latina, mas abaixo de algumas grandes economias emergentes de crescimento mais acelerado. A comparação internacional deve considerar diferenças de estrutura produtiva, demografia, ciclo econômico, choques externos e margem de recuperação pós-crise.",
+    "nivel_confiabilidade":
+      "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores são derivados das contas nacionais oficiais e padronizados pelo World Development Indicators do Banco Mundial. A principal ressalva é que valores de PIB real podem ser revisados retroativamente por atualizações metodológicas das contas nacionais.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - GDP growth (annual %) - Brazil - NY.GDP.MKTP.KD.ZG",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata - NY.GDP.MKTP.KD.ZG",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.KD.ZG"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.KD.ZG",
       },
       {
         "titulo": "FMI DataMapper - Brazil - Real GDP growth",
-        "url": "https://www.imf.org/external/datamapper/profile/BRA"
+        "url": "https://www.imf.org/external/datamapper/profile/BRA",
       },
       {
         "titulo": "IBGE - GDP closes 2024 at 3.4% and records highest rate since 2021",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/42779-gdp-closes-2024-at-3-4-and-has-highest-rate-since-2021"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/42779-gdp-closes-2024-at-3-4-and-has-highest-rate-since-2021",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 5.9
-      },
-      {
-        "ano": 1995,
-        "valor": 4.2
-      },
-      {
-        "ano": 1996,
-        "valor": 2.2
-      },
-      {
-        "ano": 1997,
-        "valor": 3.4
-      },
-      {
-        "ano": 1998,
-        "valor": 0.3
-      },
-      {
-        "ano": 1999,
-        "valor": 0.5
-      },
-      {
-        "ano": 2000,
-        "valor": 4.4
-      },
-      {
-        "ano": 2001,
-        "valor": 1.4
-      },
-      {
-        "ano": 2002,
-        "valor": 3.1
-      },
-      {
-        "ano": 2003,
-        "valor": 1.1
-      },
-      {
-        "ano": 2004,
-        "valor": 5.8
-      },
-      {
-        "ano": 2005,
-        "valor": 3.2
-      },
-      {
-        "ano": 2006,
-        "valor": 4
-      },
-      {
-        "ano": 2007,
-        "valor": 6.1
-      },
-      {
-        "ano": 2008,
-        "valor": 5.1
-      },
-      {
-        "ano": 2009,
-        "valor": -0.1
-      },
-      {
-        "ano": 2010,
-        "valor": 7.5
-      },
-      {
-        "ano": 2011,
-        "valor": 4
-      },
-      {
-        "ano": 2012,
-        "valor": 1.9
-      },
-      {
-        "ano": 2013,
-        "valor": 3
-      },
-      {
-        "ano": 2014,
-        "valor": 0.5
-      },
-      {
-        "ano": 2015,
-        "valor": -3.5
-      },
-      {
-        "ano": 2016,
-        "valor": -3.3
-      },
-      {
-        "ano": 2017,
-        "valor": 1.3
-      },
-      {
-        "ano": 2018,
-        "valor": 1.8
-      },
-      {
-        "ano": 2019,
-        "valor": 1.2
-      },
-      {
-        "ano": 2020,
-        "valor": -3.3
-      },
-      {
-        "ano": 2021,
-        "valor": 4.8
-      },
-      {
-        "ano": 2022,
-        "valor": 3
-      },
-      {
-        "ano": 2023,
-        "valor": 3.2
-      },
-      {
-        "ano": 2024,
-        "valor": 3.4
-      }
-    ]
+      { "ano": 1994, "valor": 5.9 },
+      { "ano": 1995, "valor": 4.2 },
+      { "ano": 1996, "valor": 2.2 },
+      { "ano": 1997, "valor": 3.4 },
+      { "ano": 1998, "valor": 0.3 },
+      { "ano": 1999, "valor": 0.5 },
+      { "ano": 2000, "valor": 4.4 },
+      { "ano": 2001, "valor": 1.4 },
+      { "ano": 2002, "valor": 3.1 },
+      { "ano": 2003, "valor": 1.1 },
+      { "ano": 2004, "valor": 5.8 },
+      { "ano": 2005, "valor": 3.2 },
+      { "ano": 2006, "valor": 4 },
+      { "ano": 2007, "valor": 6.1 },
+      { "ano": 2008, "valor": 5.1 },
+      { "ano": 2009, "valor": -0.1 },
+      { "ano": 2010, "valor": 7.5 },
+      { "ano": 2011, "valor": 4 },
+      { "ano": 2012, "valor": 1.9 },
+      { "ano": 2013, "valor": 3 },
+      { "ano": 2014, "valor": 0.5 },
+      { "ano": 2015, "valor": -3.5 },
+      { "ano": 2016, "valor": -3.3 },
+      { "ano": 2017, "valor": 1.3 },
+      { "ano": 2018, "valor": 1.8 },
+      { "ano": 2019, "valor": 1.2 },
+      { "ano": 2020, "valor": -3.3 },
+      { "ano": 2021, "valor": 4.8 },
+      { "ano": 2022, "valor": 3 },
+      { "ano": 2023, "valor": 3.2 },
+      { "ano": 2024, "valor": 3.4 },
+    ],
   },
   "pib_per_capita_ppp_constante": {
-    "label": "(WDI) PIB per Capita PPP Constante",
+    "label": "PIB per Capita PPP Constante",
+    "fonte_sigla": "WDI",
     "unidade": "US$ internacionais constantes de 2021 (PPP)",
     "fonte": "Banco Mundial - World Development Indicators (NY.GDP.PCAP.PP.KD)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede o PIB real médio por habitante do Brasil, ajustado por paridade de poder de compra e expresso em dólares internacionais constantes de 2021.",
-    "como_interpretar": "Valores maiores indicam maior produção econômica real média por habitante, com ajuste para diferenças de custo de vida entre países. O indicador não mede distribuição de renda, desigualdade, informalidade, qualidade dos serviços públicos ou bem-estar individual.",
-    "metodologia": "O Banco Mundial calcula o indicador como PIB dividido pela população total, convertido para dólares internacionais por fatores de paridade de poder de compra (PPP). A série é expressa em preços constantes, com ano de referência 2021, permitindo comparação temporal em termos reais e comparação internacional ajustada por níveis de preços.",
-    "historico_metodologia": "A série atual do WDI está expressa em dólares internacionais constantes de 2021 e incorpora os resultados do ciclo ICP 2021. Como em outras séries de contas nacionais e PPP, os valores podem ser revisados quando há atualização de contas nacionais, população, fatores PPP ou mudança de ano-base internacional. Não há valor observado consolidado para 2025 na fonte consultada; por isso a série validada vai somente até 2024.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países, regiões e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede o PIB real médio por habitante do Brasil, ajustado por paridade de poder de compra e expresso em dólares internacionais constantes de 2021.",
+    "como_interpretar":
+      "Valores maiores indicam maior produção econômica real média por habitante, com ajuste para diferenças de custo de vida entre países. O indicador não mede distribuição de renda, desigualdade, informalidade, qualidade dos serviços públicos ou bem-estar individual.",
+    "metodologia":
+      "O Banco Mundial calcula o indicador como PIB dividido pela população total, convertido para dólares internacionais por fatores de paridade de poder de compra (PPP). A série é expressa em preços constantes, com ano de referência 2021, permitindo comparação temporal em termos reais e comparação internacional ajustada por níveis de preços.",
+    "historico_metodologia":
+      "A série atual do WDI está expressa em dólares internacionais constantes de 2021 e incorpora os resultados do ciclo ICP 2021. Como em outras séries de contas nacionais e PPP, os valores podem ser revisados quando há atualização de contas nacionais, população, fatores PPP ou mudança de ano-base internacional. Não há valor observado consolidado para 2025 na fonte consultada; por isso a série validada vai somente até 2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países, regiões e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A desvalorização cambial e a desaceleração econômica associada ao fim do regime de bandas cambiais coincidem com queda do PIB per capita PPP em 1999."
+        "descricao":
+          "A desvalorização cambial e a desaceleração econômica associada ao fim do regime de bandas cambiais coincidem com queda do PIB per capita PPP em 1999.",
       },
       {
         "ano": 2004,
         "nome": "Expansão econômica",
-        "descricao": "O crescimento real mais forte da economia brasileira em 2004 elevou o PIB por habitante em termos de poder de compra."
+        "descricao":
+          "O crescimento real mais forte da economia brasileira em 2004 elevou o PIB por habitante em termos de poder de compra.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica brasileira e interrompeu o crescimento do PIB per capita PPP em 2009."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica brasileira e interrompeu o crescimento do PIB per capita PPP em 2009.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A recuperação da atividade após a crise global elevou fortemente o PIB per capita PPP em 2010."
+        "descricao": "A recuperação da atividade após a crise global elevou fortemente o PIB per capita PPP em 2010.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu o PIB real e provocou queda expressiva do PIB per capita PPP em 2015."
+        "descricao":
+          "A recessão brasileira reduziu o PIB real e provocou queda expressiva do PIB per capita PPP em 2015.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve a contração do produto real por habitante em 2016."
+        "descricao": "A continuidade da recessão manteve a contração do produto real por habitante em 2016.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 causou forte contração da atividade econômica e queda do PIB per capita PPP em 2020."
+        "descricao":
+          "A pandemia de COVID-19 causou forte contração da atividade econômica e queda do PIB per capita PPP em 2020.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB per capita PPP em 2021."
+        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB per capita PPP em 2021.",
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "O crescimento econômico de 2024 elevou o indicador ao maior valor da série validada desde 1994."
-      }
+        "descricao": "O crescimento econômico de 2024 elevou o indicador ao maior valor da série validada desde 1994.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou US$ 19.652,3655 internacionais constantes de 2021. Esse nível ficou acima do agregado de países de baixa e média renda do Banco Mundial, mas muito abaixo do agregado de alta renda, que estava acima de US$ 58 mil no mesmo indicador.",
-    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais, população e PPPs do International Comparison Program. A principal ressalva é que séries de PIB, população e PPP podem sofrer revisões metodológicas periódicas.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou US$ 19.652,3655 internacionais constantes de 2021. Esse nível ficou acima do agregado de países de baixa e média renda do Banco Mundial, mas muito abaixo do agregado de alta renda, que estava acima de US$ 58 mil no mesmo indicador.",
+    "nivel_confiabilidade":
+      "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais, população e PPPs do International Comparison Program. A principal ressalva é que séries de PIB, população e PPP podem sofrer revisões metodológicas periódicas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - GDP per capita, PPP (constant 2021 international $) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NY.GDP.PCAP.PP.KD",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.PCAP.PP.KD"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.PCAP.PP.KD",
       },
       {
         "titulo": "Banco Mundial API - WDI NY.GDP.PCAP.PP.KD - Brazil",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GDP.PCAP.PP.KD?format=json&per_page=100"
-      }
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GDP.PCAP.PP.KD?format=json&per_page=100",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 13202.930801306355
-      },
-      {
-        "ano": 1995,
-        "valor": 13550.439373724308
-      },
-      {
-        "ano": 1996,
-        "valor": 13641.629599753685
-      },
-      {
-        "ano": 1997,
-        "valor": 13896.624990134515
-      },
-      {
-        "ano": 1998,
-        "valor": 13737.702643484634
-      },
-      {
-        "ano": 1999,
-        "valor": 13602.41370694255
-      },
-      {
-        "ano": 2000,
-        "valor": 14005.34718707205
-      },
-      {
-        "ano": 2001,
-        "valor": 14016.131377356354
-      },
-      {
-        "ano": 2002,
-        "valor": 14265.904876851839
-      },
-      {
-        "ano": 2003,
-        "valor": 14259.366408828551
-      },
-      {
-        "ano": 2004,
-        "valor": 14911.260960772026
-      },
-      {
-        "ano": 2005,
-        "valor": 15221.01382819173
-      },
-      {
-        "ano": 2006,
-        "valor": 15657.4795714009
-      },
-      {
-        "ano": 2007,
-        "valor": 16440.583739804635
-      },
-      {
-        "ano": 2008,
-        "valor": 17113.367982277225
-      },
-      {
-        "ano": 2009,
-        "valor": 16939.44078090474
-      },
-      {
-        "ano": 2010,
-        "valor": 18062.158110224023
-      },
-      {
-        "ano": 2011,
-        "valor": 18627.810452793332
-      },
-      {
-        "ano": 2012,
-        "valor": 18832.219552435592
-      },
-      {
-        "ano": 2013,
-        "valor": 19241.505981452516
-      },
-      {
-        "ano": 2014,
-        "valor": 19183.17274452226
-      },
-      {
-        "ano": 2015,
-        "valor": 18357.069061542068
-      },
-      {
-        "ano": 2016,
-        "valor": 17620.927243440343
-      },
-      {
-        "ano": 2017,
-        "valor": 17724.47995778151
-      },
-      {
-        "ano": 2018,
-        "valor": 17917.749212292536
-      },
-      {
-        "ano": 2019,
-        "valor": 18018.620914949952
-      },
-      {
-        "ano": 2020,
-        "valor": 17327.515724814257
-      },
-      {
-        "ano": 2021,
-        "valor": 18075.706004875676
-      },
-      {
-        "ano": 2022,
-        "valor": 18554.04618285188
-      },
-      {
-        "ano": 2023,
-        "valor": 19079.812213225287
-      },
-      {
-        "ano": 2024,
-        "valor": 19652.365499170355
-      }
-    ]
+      { "ano": 1994, "valor": 13202.930801306355 },
+      { "ano": 1995, "valor": 13550.439373724308 },
+      { "ano": 1996, "valor": 13641.629599753685 },
+      { "ano": 1997, "valor": 13896.624990134515 },
+      { "ano": 1998, "valor": 13737.702643484634 },
+      { "ano": 1999, "valor": 13602.41370694255 },
+      { "ano": 2000, "valor": 14005.34718707205 },
+      { "ano": 2001, "valor": 14016.131377356354 },
+      { "ano": 2002, "valor": 14265.904876851839 },
+      { "ano": 2003, "valor": 14259.366408828551 },
+      { "ano": 2004, "valor": 14911.260960772026 },
+      { "ano": 2005, "valor": 15221.01382819173 },
+      { "ano": 2006, "valor": 15657.4795714009 },
+      { "ano": 2007, "valor": 16440.583739804635 },
+      { "ano": 2008, "valor": 17113.367982277225 },
+      { "ano": 2009, "valor": 16939.44078090474 },
+      { "ano": 2010, "valor": 18062.158110224023 },
+      { "ano": 2011, "valor": 18627.810452793332 },
+      { "ano": 2012, "valor": 18832.219552435592 },
+      { "ano": 2013, "valor": 19241.505981452516 },
+      { "ano": 2014, "valor": 19183.17274452226 },
+      { "ano": 2015, "valor": 18357.069061542068 },
+      { "ano": 2016, "valor": 17620.927243440343 },
+      { "ano": 2017, "valor": 17724.47995778151 },
+      { "ano": 2018, "valor": 17917.749212292536 },
+      { "ano": 2019, "valor": 18018.620914949952 },
+      { "ano": 2020, "valor": 17327.515724814257 },
+      { "ano": 2021, "valor": 18075.706004875676 },
+      { "ano": 2022, "valor": 18554.04618285188 },
+      { "ano": 2023, "valor": 19079.812213225287 },
+      { "ano": 2024, "valor": 19652.365499170355 },
+    ],
   },
   "pib_total_ppp_constante": {
-    "label": "(WDI) PIB Total PPP Constante",
+    "label": "PIB Total PPP Constante",
+    "fonte_sigla": "WDI",
     "unidade": "Trilhões de US$ internacionais constantes de 2021 (PPP)",
     "fonte": "Banco Mundial - World Development Indicators (NY.GDP.MKTP.PP.KD)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede o PIB total real do Brasil ajustado por paridade de poder de compra, em trilhões de dólares internacionais constantes de 2021.",
-    "como_interpretar": "Valores maiores indicam maior tamanho real da economia brasileira, ajustado por diferenças de custo de vida entre países e por inflação ao longo do tempo. O indicador mede escala econômica agregada, não renda média, desigualdade, produtividade ou bem-estar individual.",
-    "metodologia": "O Banco Mundial expressa o PIB em dólares internacionais constantes de 2021, convertendo o produto interno bruto por fatores de paridade de poder de compra (PPP). O PIB corresponde ao valor agregado produzido no território econômico, mais impostos sobre produtos e menos subsídios não incluídos no valor dos produtos. A série usa preços constantes para remover variações de preços ao longo do tempo e PPPs para tornar economias comparáveis internacionalmente. Para este JSON, os valores originais em US$ internacionais constantes de 2021 foram divididos por 1.000.000.000.000 para serem apresentados em trilhões.",
-    "historico_metodologia": "A série atual do WDI usa dólares internacionais constantes de 2021 e incorpora o ciclo ICP 2021. O Banco Mundial informa que os fatores de PPP vêm do International Comparison Program, Eurostat, OCDE, estimativas do Banco Mundial, contas nacionais e FMI WEO. Séries de PIB PPP podem ser revisadas por mudanças em contas nacionais, atualizações de PPP, revisões populacionais e mudança do ano-base internacional. A série validada tem observações de 1990 a 2024; por isso foram mantidos apenas os dados observados de 1994 a 2024, sem incluir 2025.",
-    "abrangencia": "Brasil, cobertura nacional, padronizada pelo World Development Indicators para comparação internacional com países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede o PIB total real do Brasil ajustado por paridade de poder de compra, em trilhões de dólares internacionais constantes de 2021.",
+    "como_interpretar":
+      "Valores maiores indicam maior tamanho real da economia brasileira, ajustado por diferenças de custo de vida entre países e por inflação ao longo do tempo. O indicador mede escala econômica agregada, não renda média, desigualdade, produtividade ou bem-estar individual.",
+    "metodologia":
+      "O Banco Mundial expressa o PIB em dólares internacionais constantes de 2021, convertendo o produto interno bruto por fatores de paridade de poder de compra (PPP). O PIB corresponde ao valor agregado produzido no território econômico, mais impostos sobre produtos e menos subsídios não incluídos no valor dos produtos. A série usa preços constantes para remover variações de preços ao longo do tempo e PPPs para tornar economias comparáveis internacionalmente. Para este JSON, os valores originais em US$ internacionais constantes de 2021 foram divididos por 1.000.000.000.000 para serem apresentados em trilhões.",
+    "historico_metodologia":
+      "A série atual do WDI usa dólares internacionais constantes de 2021 e incorpora o ciclo ICP 2021. O Banco Mundial informa que os fatores de PPP vêm do International Comparison Program, Eurostat, OCDE, estimativas do Banco Mundial, contas nacionais e FMI WEO. Séries de PIB PPP podem ser revisadas por mudanças em contas nacionais, atualizações de PPP, revisões populacionais e mudança do ano-base internacional. A série validada tem observações de 1990 a 2024; por isso foram mantidos apenas os dados observados de 1994 a 2024, sem incluir 2025.",
+    "abrangencia":
+      "Brasil, cobertura nacional, padronizada pelo World Development Indicators para comparação internacional com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise Cambial",
-        "descricao": "A desvalorização do real e a desaceleração econômica após o fim do regime de bandas cambiais coincidem com baixo crescimento do PIB total PPP em 1999."
+        "descricao":
+          "A desvalorização do real e a desaceleração econômica após o fim do regime de bandas cambiais coincidem com baixo crescimento do PIB total PPP em 1999.",
       },
       {
         "ano": 2004,
         "nome": "Expansão",
-        "descricao": "A aceleração da atividade econômica brasileira elevou de forma relevante o PIB total PPP em 2004."
+        "descricao":
+          "A aceleração da atividade econômica brasileira elevou de forma relevante o PIB total PPP em 2004.",
       },
       {
         "ano": 2009,
         "nome": "Crise Global",
-        "descricao": "A crise financeira internacional interrompeu a trajetória de crescimento e provocou queda no PIB total PPP em 2009."
+        "descricao":
+          "A crise financeira internacional interrompeu a trajetória de crescimento e provocou queda no PIB total PPP em 2009.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A recuperação após a crise financeira global gerou forte alta do PIB total PPP em 2010."
+        "descricao": "A recuperação após a crise financeira global gerou forte alta do PIB total PPP em 2010.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu fortemente a atividade econômica e derrubou o PIB total PPP em 2015."
+        "descricao":
+          "A recessão brasileira reduziu fortemente a atividade econômica e derrubou o PIB total PPP em 2015.",
       },
       {
         "ano": 2016,
         "nome": "Recessão Prolongada",
-        "descricao": "A continuidade da recessão manteve a queda do PIB total PPP em 2016."
+        "descricao": "A continuidade da recessão manteve a queda do PIB total PPP em 2016.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou forte contração econômica e queda expressiva do PIB total PPP em 2020."
+        "descricao":
+          "A pandemia de COVID-19 provocou forte contração econômica e queda expressiva do PIB total PPP em 2020.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB total PPP em 2021."
+        "descricao": "A reabertura econômica e a recuperação da atividade elevaram o PIB total PPP em 2021.",
       },
       {
         "ano": 2024,
         "nome": "Alta Recente",
-        "descricao": "O crescimento econômico de 2024 elevou o PIB total PPP ao maior valor da série validada desde 1994."
-      }
+        "descricao":
+          "O crescimento econômico de 2024 elevou o PIB total PPP ao maior valor da série validada desde 1994.",
+      },
     ],
-    "comparacao_paises": "Em PIB total PPP constante, o Brasil aparece como uma das maiores economias do mundo e uma das maiores da América Latina em escala agregada. Ainda assim, fica abaixo das maiores economias globais, como China, Estados Unidos e Índia. Como é um indicador total, países populosos tendem a aparecer melhor do que apareceriam em métricas per capita.",
-    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base em contas nacionais, PPPs do ICP, Eurostat/OCDE, estimativas do Banco Mundial e FMI WEO. A principal ressalva é que séries de PIB PPP podem sofrer revisões retroativas quando contas nacionais e PPPs são atualizadas.",
+    "comparacao_paises":
+      "Em PIB total PPP constante, o Brasil aparece como uma das maiores economias do mundo e uma das maiores da América Latina em escala agregada. Ainda assim, fica abaixo das maiores economias globais, como China, Estados Unidos e Índia. Como é um indicador total, países populosos tendem a aparecer melhor do que apareceriam em métricas per capita.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base em contas nacionais, PPPs do ICP, Eurostat/OCDE, estimativas do Banco Mundial e FMI WEO. A principal ressalva é que séries de PIB PPP podem sofrer revisões retroativas quando contas nacionais e PPPs são atualizadas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "UNdata / World Development Indicators - NY.GDP.MKTP.PP.KD - Brazil",
-        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.KD%3BCountry_Code%3ABRA&q=Brazil+GDP"
+        "url":
+          "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.KD%3BCountry_Code%3ABRA&q=Brazil+GDP",
       },
       {
         "titulo": "Banco Mundial - GDP, PPP (constant 2021 international $) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NY.GDP.MKTP.PP.KD",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.PP.KD"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.MKTP.PP.KD",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators",
-        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=NY.GDP.MKTP.PP.KD&source=2"
-      }
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=NY.GDP.MKTP.PP.KD&source=2",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 2.102764853288
-      },
-      {
-        "ano": 1995,
-        "valor": 2.191581301291
-      },
-      {
-        "ano": 1996,
-        "valor": 2.239990352793
-      },
-      {
-        "ano": 1997,
-        "valor": 2.316034575357
-      },
-      {
-        "ano": 1998,
-        "valor": 2.323865039664
-      },
-      {
-        "ano": 1999,
-        "valor": 2.334739277184
-      },
-      {
-        "ano": 2000,
-        "valor": 2.437186456308
-      },
-      {
-        "ano": 2001,
-        "valor": 2.471060823234
-      },
-      {
-        "ano": 2002,
-        "valor": 2.546513722931
-      },
-      {
-        "ano": 2003,
-        "valor": 2.57556508994
-      },
-      {
-        "ano": 2004,
-        "valor": 2.723916728319
-      },
-      {
-        "ano": 2005,
-        "valor": 2.811140139223
-      },
-      {
-        "ano": 2006,
-        "valor": 2.922517194134
-      },
-      {
-        "ano": 2007,
-        "valor": 3.099910206294
-      },
-      {
-        "ano": 2008,
-        "valor": 3.257825690919
-      },
-      {
-        "ano": 2009,
-        "valor": 3.253726955164
-      },
-      {
-        "ano": 2010,
-        "valor": 3.498674867853
-      },
-      {
-        "ano": 2011,
-        "valor": 3.637727009276
-      },
-      {
-        "ano": 2012,
-        "valor": 3.707614146982
-      },
-      {
-        "ano": 2013,
-        "valor": 3.819021377397
-      },
-      {
-        "ano": 2014,
-        "valor": 3.838267554851
-      },
-      {
-        "ano": 2015,
-        "valor": 3.702171668947
-      },
-      {
-        "ano": 2016,
-        "valor": 3.580891601343
-      },
-      {
-        "ano": 2017,
-        "valor": 3.628262108191
-      },
-      {
-        "ano": 2018,
-        "valor": 3.692978213431
-      },
-      {
-        "ano": 2019,
-        "valor": 3.738061272458
-      },
-      {
-        "ano": 2020,
-        "valor": 3.615574020908
-      },
-      {
-        "ano": 2021,
-        "valor": 3.787769507579
-      },
-      {
-        "ano": 2022,
-        "valor": 3.90203493646
-      },
-      {
-        "ano": 2023,
-        "valor": 4.028525459883
-      },
-      {
-        "ano": 2024,
-        "valor": 4.166273441899
-      }
-    ]
+      { "ano": 1994, "valor": 2.102764853288 },
+      { "ano": 1995, "valor": 2.191581301291 },
+      { "ano": 1996, "valor": 2.239990352793 },
+      { "ano": 1997, "valor": 2.316034575357 },
+      { "ano": 1998, "valor": 2.323865039664 },
+      { "ano": 1999, "valor": 2.334739277184 },
+      { "ano": 2000, "valor": 2.437186456308 },
+      { "ano": 2001, "valor": 2.471060823234 },
+      { "ano": 2002, "valor": 2.546513722931 },
+      { "ano": 2003, "valor": 2.57556508994 },
+      { "ano": 2004, "valor": 2.723916728319 },
+      { "ano": 2005, "valor": 2.811140139223 },
+      { "ano": 2006, "valor": 2.922517194134 },
+      { "ano": 2007, "valor": 3.099910206294 },
+      { "ano": 2008, "valor": 3.257825690919 },
+      { "ano": 2009, "valor": 3.253726955164 },
+      { "ano": 2010, "valor": 3.498674867853 },
+      { "ano": 2011, "valor": 3.637727009276 },
+      { "ano": 2012, "valor": 3.707614146982 },
+      { "ano": 2013, "valor": 3.819021377397 },
+      { "ano": 2014, "valor": 3.838267554851 },
+      { "ano": 2015, "valor": 3.702171668947 },
+      { "ano": 2016, "valor": 3.580891601343 },
+      { "ano": 2017, "valor": 3.628262108191 },
+      { "ano": 2018, "valor": 3.692978213431 },
+      { "ano": 2019, "valor": 3.738061272458 },
+      { "ano": 2020, "valor": 3.615574020908 },
+      { "ano": 2021, "valor": 3.787769507579 },
+      { "ano": 2022, "valor": 3.90203493646 },
+      { "ano": 2023, "valor": 4.028525459883 },
+      { "ano": 2024, "valor": 4.166273441899 },
+    ],
   },
   "pib_anual": {
-    "label": "(IBGE/BCB) PIB",
+    "label": "PIB",
+    "fonte_sigla": "IBGE/BCB",
     "unidade": "R$ trilhões correntes",
     "fonte": "IBGE — Sistema de Contas Nacionais / Banco Central do Brasil — SGS 1207",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "Valor anual do Produto Interno Bruto brasileiro a preços correntes.",
     "como_interpretar":
       "Mede o tamanho nominal da economia brasileira em cada ano. A alta do valor pode refletir crescimento real da produção, inflação ou ambos; por estar em valores correntes, não deve ser interpretado isoladamente como crescimento real.",
@@ -695,7 +464,6 @@
     "nivel_confiabilidade":
       "Muito alto para a fonte e metodologia oficial. Os valores até 2023 estão mais consolidados no Sistema de Contas Nacionais anual; 2024 e 2025 são oficiais do IBGE nas Contas Nacionais Trimestrais, mas ainda sujeitos a revisões posteriores.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Central do Brasil — SGS 1207: Produto interno bruto em R$ correntes",
@@ -756,853 +524,545 @@
     ],
   },
   "renda_nacional_bruta_per_capita": {
-    "label": "(WDI) Renda Nacional Bruta Per Capita",
+    "label": "Renda Nacional Bruta Per Capita",
+    "fonte_sigla": "WDI",
     "unidade": "US$ correntes por habitante, método Atlas",
     "fonte": "Banco Mundial - World Development Indicators (NY.GNP.PCAP.CD)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede a Renda Nacional Bruta per capita do Brasil em dólares correntes, convertida pelo método Atlas do Banco Mundial.",
-    "como_interpretar": "Valores maiores indicam maior renda nacional média por habitante em dólares correntes pelo método Atlas. O indicador é útil para comparação internacional de nível de renda e classificação de países por renda, mas não mede distribuição de renda, desigualdade, custo de vida interno ou bem-estar individual.",
-    "metodologia": "O Banco Mundial calcula a Renda Nacional Bruta como o PIB mais os recebimentos líquidos de renda primária do exterior. A RNB per capita é obtida pela divisão da RNB pela população de meio de ano. Para a série em dólares correntes pelo método Atlas, o Banco Mundial aplica uma taxa de câmbio Atlas suavizada para reduzir efeitos de flutuações cambiais de curto prazo.",
-    "historico_metodologia": "A série do WDI pode ser revisada quando há atualização de contas nacionais, população, renda líquida do exterior, taxas de câmbio ou procedimentos de harmonização internacional. O método Atlas é usado pelo Banco Mundial para suavizar variações cambiais e apoiar classificações por nível de renda. Não há valor observado para 2025 na fonte consultada; por isso a série validada termina em 2024.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede a Renda Nacional Bruta per capita do Brasil em dólares correntes, convertida pelo método Atlas do Banco Mundial.",
+    "como_interpretar":
+      "Valores maiores indicam maior renda nacional média por habitante em dólares correntes pelo método Atlas. O indicador é útil para comparação internacional de nível de renda e classificação de países por renda, mas não mede distribuição de renda, desigualdade, custo de vida interno ou bem-estar individual.",
+    "metodologia":
+      "O Banco Mundial calcula a Renda Nacional Bruta como o PIB mais os recebimentos líquidos de renda primária do exterior. A RNB per capita é obtida pela divisão da RNB pela população de meio de ano. Para a série em dólares correntes pelo método Atlas, o Banco Mundial aplica uma taxa de câmbio Atlas suavizada para reduzir efeitos de flutuações cambiais de curto prazo.",
+    "historico_metodologia":
+      "A série do WDI pode ser revisada quando há atualização de contas nacionais, população, renda líquida do exterior, taxas de câmbio ou procedimentos de harmonização internacional. O método Atlas é usado pelo Banco Mundial para suavizar variações cambiais e apoiar classificações por nível de renda. Não há valor observado para 2025 na fonte consultada; por isso a série validada termina em 2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A desvalorização do real após o fim do regime de bandas cambiais coincide com queda da RNB per capita em dólares pelo método Atlas."
+        "descricao":
+          "A desvalorização do real após o fim do regime de bandas cambiais coincide com queda da RNB per capita em dólares pelo método Atlas.",
       },
       {
         "ano": 2003,
         "nome": "Retomada",
-        "descricao": "A recuperação econômica e a estabilização macroeconômica após a turbulência de 2002 coincidem com retomada da série."
+        "descricao":
+          "A recuperação econômica e a estabilização macroeconômica após a turbulência de 2002 coincidem com retomada da série.",
       },
       {
         "ano": 2008,
         "nome": "Alta pré-crise",
-        "descricao": "O período de forte crescimento e valorização relativa da renda em dólares levou a RNB per capita a novo patamar antes dos efeitos plenos da crise financeira global."
+        "descricao":
+          "O período de forte crescimento e valorização relativa da renda em dólares levou a RNB per capita a novo patamar antes dos efeitos plenos da crise financeira global.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e desacelerou o avanço da RNB per capita em dólares."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e desacelerou o avanço da RNB per capita em dólares.",
       },
       {
         "ano": 2011,
         "nome": "Pico cambial",
-        "descricao": "A combinação de renda doméstica elevada e câmbio favorável levou a RNB per capita Atlas a um dos maiores valores da série."
+        "descricao":
+          "A combinação de renda doméstica elevada e câmbio favorável levou a RNB per capita Atlas a um dos maiores valores da série.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e a depreciação cambial reduziram fortemente a RNB per capita em dólares."
+        "descricao": "A recessão brasileira e a depreciação cambial reduziram fortemente a RNB per capita em dólares.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da contração econômica manteve a queda do indicador."
+        "descricao": "A continuidade da contração econômica manteve a queda do indicador.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e contribuiu para nova redução da RNB per capita."
+        "descricao":
+          "A pandemia de COVID-19 afetou a atividade econômica e contribuiu para nova redução da RNB per capita.",
       },
       {
         "ano": 2023,
         "nome": "Recuperação",
-        "descricao": "A recuperação pós-pandemia e a melhora da atividade elevaram novamente a RNB per capita."
+        "descricao": "A recuperação pós-pandemia e a melhora da atividade elevaram novamente a RNB per capita.",
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "O indicador atingiu US$ 9.930, maior valor desde 2015, ainda abaixo do pico de 2013."
-      }
+        "descricao": "O indicador atingiu US$ 9.930, maior valor desde 2015, ainda abaixo do pico de 2013.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou US$ 9.930 de RNB per capita pelo método Atlas, nível compatível com país de renda média alta na classificação do Banco Mundial. O valor ficou abaixo dos países de alta renda e acima da média típica de países de renda média baixa e baixa.",
-    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial. A principal ressalva é que contas nacionais, população, renda externa líquida e conversões cambiais podem sofrer revisões periódicas.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou US$ 9.930 de RNB per capita pelo método Atlas, nível compatível com país de renda média alta na classificação do Banco Mundial. O valor ficou abaixo dos países de alta renda e acima da média típica de países de renda média baixa e baixa.",
+    "nivel_confiabilidade":
+      "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os valores vêm do World Development Indicators do Banco Mundial. A principal ressalva é que contas nacionais, população, renda externa líquida e conversões cambiais podem sofrer revisões periódicas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - GNI per capita, Atlas method (current US$) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators - NY.GNP.PCAP.CD",
-        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNP.PCAP.CD"
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNP.PCAP.CD",
       },
       {
         "titulo": "Banco Mundial API - NY.GNP.PCAP.CD - Brazil",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GNP.PCAP.CD?format=json"
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NY.GNP.PCAP.CD?format=json",
       },
       {
         "titulo": "Banco Mundial - Metadata - GNI per capita, Atlas method",
-        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_NY_GNP_PCAP_CD.pdf"
-      }
+        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_NY_GNP_PCAP_CD.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 3030
-      },
-      {
-        "ano": 1995,
-        "valor": 3760
-      },
-      {
-        "ano": 1996,
-        "valor": 4350
-      },
-      {
-        "ano": 1997,
-        "valor": 5060
-      },
-      {
-        "ano": 1998,
-        "valor": 4920
-      },
-      {
-        "ano": 1999,
-        "valor": 4230
-      },
-      {
-        "ano": 2000,
-        "valor": 3950
-      },
-      {
-        "ano": 2001,
-        "valor": 3370
-      },
-      {
-        "ano": 2002,
-        "valor": 3120
-      },
-      {
-        "ano": 2003,
-        "valor": 3010
-      },
-      {
-        "ano": 2004,
-        "valor": 3370
-      },
-      {
-        "ano": 2005,
-        "valor": 4030
-      },
-      {
-        "ano": 2006,
-        "valor": 4890
-      },
-      {
-        "ano": 2007,
-        "valor": 6240
-      },
-      {
-        "ano": 2008,
-        "valor": 7680
-      },
-      {
-        "ano": 2009,
-        "valor": 8400
-      },
-      {
-        "ano": 2010,
-        "valor": 9750
-      },
-      {
-        "ano": 2011,
-        "valor": 11210
-      },
-      {
-        "ano": 2012,
-        "valor": 12460
-      },
-      {
-        "ano": 2013,
-        "valor": 12950
-      },
-      {
-        "ano": 2014,
-        "valor": 12280
-      },
-      {
-        "ano": 2015,
-        "valor": 10330
-      },
-      {
-        "ano": 2016,
-        "valor": 9050
-      },
-      {
-        "ano": 2017,
-        "valor": 8830
-      },
-      {
-        "ano": 2018,
-        "valor": 9320
-      },
-      {
-        "ano": 2019,
-        "valor": 9410
-      },
-      {
-        "ano": 2020,
-        "valor": 8080
-      },
-      {
-        "ano": 2021,
-        "valor": 8060
-      },
-      {
-        "ano": 2022,
-        "valor": 8440
-      },
-      {
-        "ano": 2023,
-        "valor": 9310
-      },
-      {
-        "ano": 2024,
-        "valor": 9930
-      }
+      { "ano": 1994, "valor": 3030 },
+      { "ano": 1995, "valor": 3760 },
+      { "ano": 1996, "valor": 4350 },
+      { "ano": 1997, "valor": 5060 },
+      { "ano": 1998, "valor": 4920 },
+      { "ano": 1999, "valor": 4230 },
+      { "ano": 2000, "valor": 3950 },
+      { "ano": 2001, "valor": 3370 },
+      { "ano": 2002, "valor": 3120 },
+      { "ano": 2003, "valor": 3010 },
+      { "ano": 2004, "valor": 3370 },
+      { "ano": 2005, "valor": 4030 },
+      { "ano": 2006, "valor": 4890 },
+      { "ano": 2007, "valor": 6240 },
+      { "ano": 2008, "valor": 7680 },
+      { "ano": 2009, "valor": 8400 },
+      { "ano": 2010, "valor": 9750 },
+      { "ano": 2011, "valor": 11210 },
+      { "ano": 2012, "valor": 12460 },
+      { "ano": 2013, "valor": 12950 },
+      { "ano": 2014, "valor": 12280 },
+      { "ano": 2015, "valor": 10330 },
+      { "ano": 2016, "valor": 9050 },
+      { "ano": 2017, "valor": 8830 },
+      { "ano": 2018, "valor": 9320 },
+      { "ano": 2019, "valor": 9410 },
+      { "ano": 2020, "valor": 8080 },
+      { "ano": 2021, "valor": 8060 },
+      { "ano": 2022, "valor": 8440 },
+      { "ano": 2023, "valor": 9310 },
+      { "ano": 2024, "valor": 9930 },
     ],
-    "padrao": false
   },
   "formacao_bruta_capital_fixo_pib": {
-    "label": "(WDI) Formação Bruta de Capital Fixo",
+    "label": "Formação Bruta de Capital Fixo",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte": "Banco Mundial - World Development Indicators (NE.GDI.FTOT.ZS)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede a Formação Bruta de Capital Fixo do Brasil como proporção do Produto Interno Bruto, indicando a parcela da produção anual destinada à ampliação ou reposição de ativos fixos.",
-    "como_interpretar": "Valores maiores indicam maior esforço de investimento em ativos fixos, como máquinas, equipamentos, construções, infraestrutura e outros ativos produtivos. O indicador ajuda a avaliar a capacidade futura de produção, mas não mede sozinho a qualidade, eficiência, produtividade ou sustentabilidade dos investimentos.",
-    "metodologia": "O Banco Mundial calcula a série a partir de contas nacionais oficiais, expressando a formação bruta de capital fixo como percentual do PIB. A formação bruta de capital fixo inclui aquisições menos alienações de ativos fixos durante o período contábil, incluindo certos gastos em serviços que aumentam o valor de ativos não produzidos. As contas nacionais seguem padrões internacionais do System of National Accounts, em especial SNA 2008 ou SNA 1993, conforme a disponibilidade nacional.",
-    "historico_metodologia": "A série do WDI pode sofrer revisões quando o Brasil revisa suas contas nacionais, muda anos de referência, incorpora novas fontes administrativas ou atualiza procedimentos metodológicos do Sistema de Contas Nacionais. O IBGE informa que o Sistema de Contas Nacionais brasileiro segue o SNA 2008 e que passa por revisões periódicas; a edição de 2023 também destaca o processo de redesenho com mudança de referência de 2010 para 2021. Por isso, os valores devem ser tratados como a versão oficial disponível na consulta atual, não como série imutável.",
-    "abrangencia": "Brasil, cobertura nacional, série anual harmonizada internacionalmente pelo World Development Indicators para comparação entre países.",
+    "padrao": false,
+    "descricao":
+      "Mede a Formação Bruta de Capital Fixo do Brasil como proporção do Produto Interno Bruto, indicando a parcela da produção anual destinada à ampliação ou reposição de ativos fixos.",
+    "como_interpretar":
+      "Valores maiores indicam maior esforço de investimento em ativos fixos, como máquinas, equipamentos, construções, infraestrutura e outros ativos produtivos. O indicador ajuda a avaliar a capacidade futura de produção, mas não mede sozinho a qualidade, eficiência, produtividade ou sustentabilidade dos investimentos.",
+    "metodologia":
+      "O Banco Mundial calcula a série a partir de contas nacionais oficiais, expressando a formação bruta de capital fixo como percentual do PIB. A formação bruta de capital fixo inclui aquisições menos alienações de ativos fixos durante o período contábil, incluindo certos gastos em serviços que aumentam o valor de ativos não produzidos. As contas nacionais seguem padrões internacionais do System of National Accounts, em especial SNA 2008 ou SNA 1993, conforme a disponibilidade nacional.",
+    "historico_metodologia":
+      "A série do WDI pode sofrer revisões quando o Brasil revisa suas contas nacionais, muda anos de referência, incorpora novas fontes administrativas ou atualiza procedimentos metodológicos do Sistema de Contas Nacionais. O IBGE informa que o Sistema de Contas Nacionais brasileiro segue o SNA 2008 e que passa por revisões periódicas; a edição de 2023 também destaca o processo de redesenho com mudança de referência de 2010 para 2021. Por isso, os valores devem ser tratados como a versão oficial disponível na consulta atual, não como série imutável.",
+    "abrangencia":
+      "Brasil, cobertura nacional, série anual harmonizada internacionalmente pelo World Development Indicators para comparação entre países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise Cambial",
-        "descricao": "A mudança do regime cambial e a desvalorização do real ocorreram em ambiente de forte incerteza macroeconômica, afetando decisões de investimento."
+        "descricao":
+          "A mudança do regime cambial e a desvalorização do real ocorreram em ambiente de forte incerteza macroeconômica, afetando decisões de investimento.",
       },
       {
         "ano": 2004,
         "nome": "Expansão Econômica",
-        "descricao": "A aceleração da atividade econômica brasileira a partir de 2004 coincidiu com recuperação gradual da taxa de investimento."
+        "descricao":
+          "A aceleração da atividade econômica brasileira a partir de 2004 coincidiu com recuperação gradual da taxa de investimento.",
       },
       {
         "ano": 2008,
         "nome": "Pré-Crise",
-        "descricao": "O período imediatamente anterior à crise financeira global apresentou nível elevado de investimento em relação ao PIB."
+        "descricao":
+          "O período imediatamente anterior à crise financeira global apresentou nível elevado de investimento em relação ao PIB.",
       },
       {
         "ano": 2009,
         "nome": "Crise Global",
-        "descricao": "A crise financeira internacional afetou a atividade econômica, mas a taxa de investimento permaneceu relativamente alta no agregado anual."
+        "descricao":
+          "A crise financeira internacional afetou a atividade econômica, mas a taxa de investimento permaneceu relativamente alta no agregado anual.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A forte recuperação do PIB após a crise global coincidiu com alta da formação bruta de capital fixo."
+        "descricao":
+          "A forte recuperação do PIB após a crise global coincidiu com alta da formação bruta de capital fixo.",
       },
       {
         "ano": 2014,
         "nome": "Desaceleração",
-        "descricao": "A economia brasileira entrou em fase de desaceleração, seguida por queda expressiva da taxa de investimento nos anos seguintes."
+        "descricao":
+          "A economia brasileira entrou em fase de desaceleração, seguida por queda expressiva da taxa de investimento nos anos seguintes.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu a formação bruta de capital fixo como proporção do PIB."
+        "descricao": "A recessão brasileira reduziu a formação bruta de capital fixo como proporção do PIB.",
       },
       {
         "ano": 2017,
         "nome": "Piso Recente",
-        "descricao": "A taxa de investimento atingiu um dos menores níveis da série recente, refletindo a fraqueza acumulada do investimento após a recessão."
+        "descricao":
+          "A taxa de investimento atingiu um dos menores níveis da série recente, refletindo a fraqueza acumulada do investimento após a recessão.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 elevou a incerteza e afetou a atividade econômica, com impactos setoriais relevantes sobre investimento."
+        "descricao":
+          "A pandemia de COVID-19 elevou a incerteza e afetou a atividade econômica, com impactos setoriais relevantes sobre investimento.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a retomada pós-pandemia coincidiram com elevação da taxa de investimento."
+        "descricao":
+          "A reabertura econômica e a retomada pós-pandemia coincidiram com elevação da taxa de investimento.",
       },
       {
         "ano": 2023,
         "nome": "Queda FBCF",
-        "descricao": "A taxa de investimento recuou em relação a 2022, acompanhando retração da formação bruta de capital fixo no ano."
+        "descricao":
+          "A taxa de investimento recuou em relação a 2022, acompanhando retração da formação bruta de capital fixo no ano.",
       },
       {
         "ano": 2024,
         "nome": "Recuperação Recente",
-        "descricao": "A formação bruta de capital fixo voltou a crescer no contexto de expansão do PIB brasileiro em 2024."
-      }
+        "descricao":
+          "A formação bruta de capital fixo voltou a crescer no contexto de expansão do PIB brasileiro em 2024.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil ficou perto de 17% do PIB em formação bruta de capital fixo, abaixo da média mundial informada para o indicador pelo TheGlobalEconomy com base no Banco Mundial, em torno de 22,32% no mesmo ano. Isso sugere esforço de investimento relativamente baixo em comparação internacional, especialmente frente a economias asiáticas e emergentes com taxas de investimento estruturalmente mais altas.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e fontes reconhecidas. A limitação principal é que contas nacionais podem ser revisadas, e valores recentes podem sofrer ajustes em publicações futuras.",
+    "comparacao_paises":
+      "Em 2024, o Brasil ficou perto de 17% do PIB em formação bruta de capital fixo, abaixo da média mundial informada para o indicador pelo TheGlobalEconomy com base no Banco Mundial, em torno de 22,32% no mesmo ano. Isso sugere esforço de investimento relativamente baixo em comparação internacional, especialmente frente a economias asiáticas e emergentes com taxas de investimento estruturalmente mais altas.",
+    "nivel_confiabilidade":
+      "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e fontes reconhecidas. A limitação principal é que contas nacionais podem ser revisadas, e valores recentes podem sofrer ajustes em publicações futuras.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Gross fixed capital formation (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NE.GDI.FTOT.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.GDI.FTOT.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.GDI.FTOT.ZS",
       },
       {
         "titulo": "IBGE - Sistema de Contas Nacionais: Brasil 2023",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/comercio/9052-sistema-de-contas-nacionais-brasil.html"
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/comercio/9052-sistema-de-contas-nacionais-brasil.html",
       },
       {
         "titulo": "TheGlobalEconomy - Brazil Capital investment, percent of GDP",
-        "url": "https://www.theglobaleconomy.com/Brazil/capital_investment/"
+        "url": "https://www.theglobaleconomy.com/Brazil/capital_investment/",
       },
       {
         "titulo": "Trading Economics - Brazil Gross Fixed Capital Formation (% of GDP), World Bank",
-        "url": "https://tradingeconomics.com/brazil/gross-fixed-capital-formation-percent-of-gdp-wb-data.html"
-      }
+        "url": "https://tradingeconomics.com/brazil/gross-fixed-capital-formation-percent-of-gdp-wb-data.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 16.0967
-      },
-      {
-        "ano": 1995,
-        "valor": 15.9385
-      },
-      {
-        "ano": 1996,
-        "valor": 16.4288
-      },
-      {
-        "ano": 1997,
-        "valor": 17.5243
-      },
-      {
-        "ano": 1998,
-        "valor": 18.99
-      },
-      {
-        "ano": 1999,
-        "valor": 17.3
-      },
-      {
-        "ano": 2000,
-        "valor": 17.4
-      },
-      {
-        "ano": 2001,
-        "valor": 16.1
-      },
-      {
-        "ano": 2002,
-        "valor": 16.6
-      },
-      {
-        "ano": 2003,
-        "valor": 15.3
-      },
-      {
-        "ano": 2004,
-        "valor": 17.3
-      },
-      {
-        "ano": 2005,
-        "valor": 17.1
-      },
-      {
-        "ano": 2006,
-        "valor": 17.2
-      },
-      {
-        "ano": 2007,
-        "valor": 18.0
-      },
-      {
-        "ano": 2008,
-        "valor": 19.4
-      },
-      {
-        "ano": 2009,
-        "valor": 19.1
-      },
-      {
-        "ano": 2010,
-        "valor": 20.5
-      },
-      {
-        "ano": 2011,
-        "valor": 20.6
-      },
-      {
-        "ano": 2012,
-        "valor": 20.7
-      },
-      {
-        "ano": 2013,
-        "valor": 20.9
-      },
-      {
-        "ano": 2014,
-        "valor": 19.9
-      },
-      {
-        "ano": 2015,
-        "valor": 17.8
-      },
-      {
-        "ano": 2016,
-        "valor": 15.5
-      },
-      {
-        "ano": 2017,
-        "valor": 14.63
-      },
-      {
-        "ano": 2018,
-        "valor": 15.1
-      },
-      {
-        "ano": 2019,
-        "valor": 15.3
-      },
-      {
-        "ano": 2020,
-        "valor": 16.4
-      },
-      {
-        "ano": 2021,
-        "valor": 18.99
-      },
-      {
-        "ano": 2022,
-        "valor": 17.8
-      },
-      {
-        "ano": 2023,
-        "valor": 16.5
-      },
-      {
-        "ano": 2024,
-        "valor": 17.03
-      }
-    ]
+      { "ano": 1994, "valor": 16.0967 },
+      { "ano": 1995, "valor": 15.9385 },
+      { "ano": 1996, "valor": 16.4288 },
+      { "ano": 1997, "valor": 17.5243 },
+      { "ano": 1998, "valor": 18.99 },
+      { "ano": 1999, "valor": 17.3 },
+      { "ano": 2000, "valor": 17.4 },
+      { "ano": 2001, "valor": 16.1 },
+      { "ano": 2002, "valor": 16.6 },
+      { "ano": 2003, "valor": 15.3 },
+      { "ano": 2004, "valor": 17.3 },
+      { "ano": 2005, "valor": 17.1 },
+      { "ano": 2006, "valor": 17.2 },
+      { "ano": 2007, "valor": 18 },
+      { "ano": 2008, "valor": 19.4 },
+      { "ano": 2009, "valor": 19.1 },
+      { "ano": 2010, "valor": 20.5 },
+      { "ano": 2011, "valor": 20.6 },
+      { "ano": 2012, "valor": 20.7 },
+      { "ano": 2013, "valor": 20.9 },
+      { "ano": 2014, "valor": 19.9 },
+      { "ano": 2015, "valor": 17.8 },
+      { "ano": 2016, "valor": 15.5 },
+      { "ano": 2017, "valor": 14.63 },
+      { "ano": 2018, "valor": 15.1 },
+      { "ano": 2019, "valor": 15.3 },
+      { "ano": 2020, "valor": 16.4 },
+      { "ano": 2021, "valor": 18.99 },
+      { "ano": 2022, "valor": 17.8 },
+      { "ano": 2023, "valor": 16.5 },
+      { "ano": 2024, "valor": 17.03 },
+    ],
   },
   "poupanca_bruta_pib": {
-    "label": "(WDI) Poupança Bruta",
+    "label": "Poupança Bruta",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte": "Banco Mundial - World Development Indicators (NY.GNS.ICTR.ZS)",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "Mede a poupança bruta nacional do Brasil como proporção do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior da renda nacional está sendo poupada em vez de consumida. O indicador ajuda a avaliar a capacidade interna de financiamento de investimento, mas não mede diretamente investimento, produtividade, bem-estar, distribuição de renda ou qualidade da poupança.",
-    "metodologia": "O Banco Mundial define a poupança bruta como a renda nacional bruta menos o consumo total, acrescida das transferências líquidas. O valor é expresso como percentual do PIB. A série do WDI é compilada a partir de estatísticas oficiais nacionais, contas nacionais, OCDE e estimativas do Banco Mundial quando aplicável.",
-    "historico_metodologia": "A série segue a metodologia internacional de contas nacionais usada no World Development Indicators. Os valores podem ser revisados quando o Brasil revisa suas Contas Nacionais, quando há atualização de séries históricas pelo IBGE, mudanças de referência metodológica do Sistema de Contas Nacionais ou incorporação de novas informações pelo Banco Mundial. A fonte do Banco Mundial informa dados anuais disponíveis para o Brasil de 1975 a 2024. Não foi incluído dado posterior a 2024 por não haver valor anual observado consolidado na fonte oficial consultada.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional pelo World Development Indicators para comparação entre países.",
+    "como_interpretar":
+      "Valores maiores indicam que uma parcela maior da renda nacional está sendo poupada em vez de consumida. O indicador ajuda a avaliar a capacidade interna de financiamento de investimento, mas não mede diretamente investimento, produtividade, bem-estar, distribuição de renda ou qualidade da poupança.",
+    "metodologia":
+      "O Banco Mundial define a poupança bruta como a renda nacional bruta menos o consumo total, acrescida das transferências líquidas. O valor é expresso como percentual do PIB. A série do WDI é compilada a partir de estatísticas oficiais nacionais, contas nacionais, OCDE e estimativas do Banco Mundial quando aplicável.",
+    "historico_metodologia":
+      "A série segue a metodologia internacional de contas nacionais usada no World Development Indicators. Os valores podem ser revisados quando o Brasil revisa suas Contas Nacionais, quando há atualização de séries históricas pelo IBGE, mudanças de referência metodológica do Sistema de Contas Nacionais ou incorporação de novas informações pelo Banco Mundial. A fonte do Banco Mundial informa dados anuais disponíveis para o Brasil de 1975 a 2024. Não foi incluído dado posterior a 2024 por não haver valor anual observado consolidado na fonte oficial consultada.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo World Development Indicators para comparação entre países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária reduziu a hiperinflação e alterou o comportamento macroeconômico de renda, consumo e poupança no Brasil."
+        "descricao":
+          "A estabilização monetária reduziu a hiperinflação e alterou o comportamento macroeconômico de renda, consumo e poupança no Brasil.",
       },
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial e a forte desvalorização do real coincidiram com queda relevante da poupança bruta como proporção do PIB."
+        "descricao":
+          "A mudança do regime cambial e a forte desvalorização do real coincidiram com queda relevante da poupança bruta como proporção do PIB.",
       },
       {
         "ano": 2004,
         "nome": "Expansão externa",
-        "descricao": "O crescimento econômico e o ambiente externo favorável, com alta de commodities, coincidiram com elevação da poupança bruta em relação ao PIB."
+        "descricao":
+          "O crescimento econômico e o ambiente externo favorável, com alta de commodities, coincidiram com elevação da poupança bruta em relação ao PIB.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e afetou renda, consumo, investimento e poupança agregada."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e afetou renda, consumo, investimento e poupança agregada.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015-2016 deteriorou a renda e a capacidade agregada de poupança."
+        "descricao": "A recessão brasileira de 2015-2016 deteriorou a renda e a capacidade agregada de poupança.",
       },
       {
         "ano": 2019,
         "nome": "Baixa poupança",
-        "descricao": "A poupança bruta atingiu um dos menores níveis da série recente, refletindo baixa geração de poupança nacional antes da pandemia."
+        "descricao":
+          "A poupança bruta atingiu um dos menores níveis da série recente, refletindo baixa geração de poupança nacional antes da pandemia.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou forte contração da atividade e mudanças temporárias no consumo, renda e poupança agregada."
+        "descricao":
+          "A pandemia de COVID-19 provocou forte contração da atividade e mudanças temporárias no consumo, renda e poupança agregada.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A retomada econômica pós-pandemia elevou temporariamente a poupança bruta em relação ao PIB."
+        "descricao": "A retomada econômica pós-pandemia elevou temporariamente a poupança bruta em relação ao PIB.",
       },
       {
         "ano": 2024,
         "nome": "Desaceleração",
-        "descricao": "Apesar do crescimento do PIB em 2024, a taxa de poupança ficou abaixo da observada em 2023."
-      }
+        "descricao": "Apesar do crescimento do PIB em 2024, a taxa de poupança ficou abaixo da observada em 2023.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou poupança bruta próxima de 14,5% do PIB, abaixo da média mundial informada por agregadores baseados no Banco Mundial e abaixo de economias com maior capacidade de poupança interna, como China e vários países do Leste Asiático. No ranking global de 2023 do TheGlobalEconomy, baseado no Banco Mundial, o Brasil aparece em posição baixa, com 14,98% do PIB.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial e é baseada em contas nacionais oficiais. A ressalva é que a série pode sofrer revisões históricas por atualizações do IBGE, do Sistema de Contas Nacionais e do próprio WDI.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou poupança bruta próxima de 14,5% do PIB, abaixo da média mundial informada por agregadores baseados no Banco Mundial e abaixo de economias com maior capacidade de poupança interna, como China e vários países do Leste Asiático. No ranking global de 2023 do TheGlobalEconomy, baseado no Banco Mundial, o Brasil aparece em posição baixa, com 14,98% do PIB.",
+    "nivel_confiabilidade":
+      "Alto para comparação macroeconômica internacional, pois a série vem do World Development Indicators do Banco Mundial e é baseada em contas nacionais oficiais. A ressalva é que a série pode sofrer revisões históricas por atualizações do IBGE, do Sistema de Contas Nacionais e do próprio WDI.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Gross savings (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators - NY.GNS.ICTR.ZS",
-        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNS.ICTR.ZS"
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/NY.GNS.ICTR.ZS",
       },
       {
         "titulo": "Banco Mundial API - Indicator API Queries",
-        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries"
+        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries",
       },
       {
         "titulo": "IBGE - PIB Cresce 3,4% em 2024 e Fecha o Ano em R$ 11,7 Trilhões",
-        "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42774-pib-cresce-3-4-em-2024-e-fecha-o-ano-em-r-11-7-trilhoes"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/42774-pib-cresce-3-4-em-2024-e-fecha-o-ano-em-r-11-7-trilhoes",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 21.2719
-      },
-      {
-        "ano": 1995,
-        "valor": 15.5411
-      },
-      {
-        "ano": 1996,
-        "valor": 14.0825
-      },
-      {
-        "ano": 1997,
-        "valor": 13.5782
-      },
-      {
-        "ano": 1998,
-        "valor": 13.0301
-      },
-      {
-        "ano": 1999,
-        "valor": 12.0568
-      },
-      {
-        "ano": 2000,
-        "valor": 13.9408
-      },
-      {
-        "ano": 2001,
-        "valor": 13.8113
-      },
-      {
-        "ano": 2002,
-        "valor": 15.161
-      },
-      {
-        "ano": 2003,
-        "valor": 16.4724
-      },
-      {
-        "ano": 2004,
-        "valor": 18.9671
-      },
-      {
-        "ano": 2005,
-        "valor": 17.7514
-      },
-      {
-        "ano": 2006,
-        "valor": 17.9876
-      },
-      {
-        "ano": 2007,
-        "valor": 17.7693
-      },
-      {
-        "ano": 2008,
-        "valor": 17.1569
-      },
-      {
-        "ano": 2009,
-        "valor": 14
-      },
-      {
-        "ano": 2010,
-        "valor": 18
-      },
-      {
-        "ano": 2011,
-        "valor": 17.6
-      },
-      {
-        "ano": 2012,
-        "valor": 15.2
-      },
-      {
-        "ano": 2013,
-        "valor": 17
-      },
-      {
-        "ano": 2014,
-        "valor": 16
-      },
-      {
-        "ano": 2015,
-        "valor": 14
-      },
-      {
-        "ano": 2016,
-        "valor": 13.5
-      },
-      {
-        "ano": 2017,
-        "valor": 14.3
-      },
-      {
-        "ano": 2018,
-        "valor": 14.5
-      },
-      {
-        "ano": 2019,
-        "valor": 12.25
-      },
-      {
-        "ano": 2020,
-        "valor": 14.7
-      },
-      {
-        "ano": 2021,
-        "valor": 17.4
-      },
-      {
-        "ano": 2022,
-        "valor": 15.9
-      },
-      {
-        "ano": 2023,
-        "valor": 14.98
-      },
-      {
-        "ano": 2024,
-        "valor": 14.47
-      }
-    ]
+      { "ano": 1994, "valor": 21.2719 },
+      { "ano": 1995, "valor": 15.5411 },
+      { "ano": 1996, "valor": 14.0825 },
+      { "ano": 1997, "valor": 13.5782 },
+      { "ano": 1998, "valor": 13.0301 },
+      { "ano": 1999, "valor": 12.0568 },
+      { "ano": 2000, "valor": 13.9408 },
+      { "ano": 2001, "valor": 13.8113 },
+      { "ano": 2002, "valor": 15.161 },
+      { "ano": 2003, "valor": 16.4724 },
+      { "ano": 2004, "valor": 18.9671 },
+      { "ano": 2005, "valor": 17.7514 },
+      { "ano": 2006, "valor": 17.9876 },
+      { "ano": 2007, "valor": 17.7693 },
+      { "ano": 2008, "valor": 17.1569 },
+      { "ano": 2009, "valor": 14 },
+      { "ano": 2010, "valor": 18 },
+      { "ano": 2011, "valor": 17.6 },
+      { "ano": 2012, "valor": 15.2 },
+      { "ano": 2013, "valor": 17 },
+      { "ano": 2014, "valor": 16 },
+      { "ano": 2015, "valor": 14 },
+      { "ano": 2016, "valor": 13.5 },
+      { "ano": 2017, "valor": 14.3 },
+      { "ano": 2018, "valor": 14.5 },
+      { "ano": 2019, "valor": 12.25 },
+      { "ano": 2020, "valor": 14.7 },
+      { "ano": 2021, "valor": 17.4 },
+      { "ano": 2022, "valor": 15.9 },
+      { "ano": 2023, "valor": 14.98 },
+      { "ano": 2024, "valor": 14.47 },
+    ],
   },
   "valor_adicionado_industria_pib": {
-    "label": "(WDI) Valor Adicionado da Indústria",
+    "label": "Valor Adicionado da Indústria",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte": "Banco Mundial - World Development Indicators (NV.IND.TOTL.ZS)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede a participação do valor adicionado da indústria, incluindo construção, mineração, manufatura, eletricidade, água e gás, no PIB do Brasil.",
-    "como_interpretar": "Valores maiores indicam maior peso relativo da indústria no PIB. O indicador mede participação setorial, não necessariamente produtividade, sofisticação tecnológica, competitividade industrial ou bem-estar econômico.",
-    "metodologia": "O Banco Mundial expressa o valor adicionado da indústria como percentual do PIB. A indústria corresponde às divisões 05-43 da ISIC Rev.4, incluindo mineração, manufatura, construção, eletricidade, água e gás. Valor adicionado é calculado como o valor da produção menos o consumo intermediário de bens e serviços utilizados no processo produtivo.",
-    "historico_metodologia": "A série do WDI segue contas nacionais compiladas conforme padrões internacionais do System of National Accounts, com possíveis revisões decorrentes de atualização das contas nacionais, mudança de ano-base, revisões estatísticas nacionais, harmonização internacional e atualização da classificação industrial. O Banco Mundial informa cobertura de 1960 a 2024 para esta série; não há valor observado oficial de 2025 na consulta atual.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede a participação do valor adicionado da indústria, incluindo construção, mineração, manufatura, eletricidade, água e gás, no PIB do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso relativo da indústria no PIB. O indicador mede participação setorial, não necessariamente produtividade, sofisticação tecnológica, competitividade industrial ou bem-estar econômico.",
+    "metodologia":
+      "O Banco Mundial expressa o valor adicionado da indústria como percentual do PIB. A indústria corresponde às divisões 05-43 da ISIC Rev.4, incluindo mineração, manufatura, construção, eletricidade, água e gás. Valor adicionado é calculado como o valor da produção menos o consumo intermediário de bens e serviços utilizados no processo produtivo.",
+    "historico_metodologia":
+      "A série do WDI segue contas nacionais compiladas conforme padrões internacionais do System of National Accounts, com possíveis revisões decorrentes de atualização das contas nacionais, mudança de ano-base, revisões estatísticas nacionais, harmonização internacional e atualização da classificação industrial. O Banco Mundial informa cobertura de 1960 a 2024 para esta série; não há valor observado oficial de 2025 na consulta atual.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial e a desvalorização do real afetaram a composição nominal do PIB e a atividade econômica, influenciando a participação relativa da indústria."
+        "descricao":
+          "A mudança do regime cambial e a desvalorização do real afetaram a composição nominal do PIB e a atividade econômica, influenciando a participação relativa da indústria.",
       },
       {
         "ano": 2001,
         "nome": "Crise energética",
-        "descricao": "O racionamento de energia elétrica afetou a produção industrial e a atividade econômica brasileira."
+        "descricao":
+          "O racionamento de energia elétrica afetou a produção industrial e a atividade econômica brasileira.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e afetou segmentos industriais ligados a crédito, comércio e investimento."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e afetou segmentos industriais ligados a crédito, comércio e investimento.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu fortemente a atividade econômica, com impacto relevante sobre indústria e construção."
+        "descricao":
+          "A recessão brasileira reduziu fortemente a atividade econômica, com impacto relevante sobre indústria e construção.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve retração da atividade industrial e da construção."
+        "descricao": "A continuidade da recessão manteve retração da atividade industrial e da construção.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou choque na atividade econômica, alterando a composição setorial do PIB."
+        "descricao":
+          "A pandemia de COVID-19 provocou choque na atividade econômica, alterando a composição setorial do PIB.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A recuperação parcial da atividade após a fase aguda da pandemia elevou a produção em vários setores, mas com efeitos distintos entre indústria, serviços e agropecuária."
+        "descricao":
+          "A recuperação parcial da atividade após a fase aguda da pandemia elevou a produção em vários setores, mas com efeitos distintos entre indústria, serviços e agropecuária.",
       },
       {
         "ano": 2024,
         "nome": "Nova Indústria",
-        "descricao": "O lançamento da política Nova Indústria Brasil ocorreu em contexto de debate oficial sobre neoindustrialização, descarbonização e transformação produtiva."
-      }
+        "descricao":
+          "O lançamento da política Nova Indústria Brasil ocorreu em contexto de debate oficial sobre neoindustrialização, descarbonização e transformação produtiva.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 21,33% do PIB em valor adicionado da indústria, abaixo da média mundial divulgada para o mesmo indicador em bases comparativas do WDI. O país tem uma estrutura econômica mais concentrada em serviços do que em indústria, e fica abaixo de economias com forte peso de mineração, petróleo, gás, manufatura pesada ou construção no PIB.",
-    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, estatísticas nacionais e padronização internacional. A principal ressalva é que séries de contas nacionais podem sofrer revisões metodológicas e de ano-base.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 21,33% do PIB em valor adicionado da indústria, abaixo da média mundial divulgada para o mesmo indicador em bases comparativas do WDI. O país tem uma estrutura econômica mais concentrada em serviços do que em indústria, e fica abaixo de economias com forte peso de mineração, petróleo, gás, manufatura pesada ou construção no PIB.",
+    "nivel_confiabilidade":
+      "Muito alto para série macroeconômica oficial comparável internacionalmente, pois os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, estatísticas nacionais e padronização internacional. A principal ressalva é que séries de contas nacionais podem sofrer revisões metodológicas e de ano-base.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Industry (including construction), value added (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NV.IND.TOTL.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.IND.TOTL.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.IND.TOTL.ZS",
       },
       {
         "titulo": "Banco Mundial Data Catalog - World Development Indicators",
-        "url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators"
-      }
+        "url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 25.76
-      },
-      {
-        "ano": 1995,
-        "valor": 25.32
-      },
-      {
-        "ano": 1996,
-        "valor": 25.11
-      },
-      {
-        "ano": 1997,
-        "valor": 24.77
-      },
-      {
-        "ano": 1998,
-        "valor": 23.98
-      },
-      {
-        "ano": 1999,
-        "valor": 24.35
-      },
-      {
-        "ano": 2000,
-        "valor": 23.95
-      },
-      {
-        "ano": 2001,
-        "valor": 23.25
-      },
-      {
-        "ano": 2002,
-        "valor": 23.86
-      },
-      {
-        "ano": 2003,
-        "valor": 24.26
-      },
-      {
-        "ano": 2004,
-        "valor": 25.18
-      },
-      {
-        "ano": 2005,
-        "valor": 25.04
-      },
-      {
-        "ano": 2006,
-        "valor": 24.59
-      },
-      {
-        "ano": 2007,
-        "valor": 24.18
-      },
-      {
-        "ano": 2008,
-        "valor": 23.68
-      },
-      {
-        "ano": 2009,
-        "valor": 22.15
-      },
-      {
-        "ano": 2010,
-        "valor": 23.27
-      },
-      {
-        "ano": 2011,
-        "valor": 23.10
-      },
-      {
-        "ano": 2012,
-        "valor": 22.31
-      },
-      {
-        "ano": 2013,
-        "valor": 22.02
-      },
-      {
-        "ano": 2014,
-        "valor": 21.43
-      },
-      {
-        "ano": 2015,
-        "valor": 20.50
-      },
-      {
-        "ano": 2016,
-        "valor": 19.58
-      },
-      {
-        "ano": 2017,
-        "valor": 18.19
-      },
-      {
-        "ano": 2018,
-        "valor": 18.44
-      },
-      {
-        "ano": 2019,
-        "valor": 18.64
-      },
-      {
-        "ano": 2020,
-        "valor": 19.54
-      },
-      {
-        "ano": 2021,
-        "valor": 20.93
-      },
-      {
-        "ano": 2022,
-        "valor": 22.72
-      },
-      {
-        "ano": 2023,
-        "valor": 22.14
-      },
-      {
-        "ano": 2024,
-        "valor": 21.33
-      }
-    ]
+      { "ano": 1994, "valor": 25.76 },
+      { "ano": 1995, "valor": 25.32 },
+      { "ano": 1996, "valor": 25.11 },
+      { "ano": 1997, "valor": 24.77 },
+      { "ano": 1998, "valor": 23.98 },
+      { "ano": 1999, "valor": 24.35 },
+      { "ano": 2000, "valor": 23.95 },
+      { "ano": 2001, "valor": 23.25 },
+      { "ano": 2002, "valor": 23.86 },
+      { "ano": 2003, "valor": 24.26 },
+      { "ano": 2004, "valor": 25.18 },
+      { "ano": 2005, "valor": 25.04 },
+      { "ano": 2006, "valor": 24.59 },
+      { "ano": 2007, "valor": 24.18 },
+      { "ano": 2008, "valor": 23.68 },
+      { "ano": 2009, "valor": 22.15 },
+      { "ano": 2010, "valor": 23.27 },
+      { "ano": 2011, "valor": 23.1 },
+      { "ano": 2012, "valor": 22.31 },
+      { "ano": 2013, "valor": 22.02 },
+      { "ano": 2014, "valor": 21.43 },
+      { "ano": 2015, "valor": 20.5 },
+      { "ano": 2016, "valor": 19.58 },
+      { "ano": 2017, "valor": 18.19 },
+      { "ano": 2018, "valor": 18.44 },
+      { "ano": 2019, "valor": 18.64 },
+      { "ano": 2020, "valor": 19.54 },
+      { "ano": 2021, "valor": 20.93 },
+      { "ano": 2022, "valor": 22.72 },
+      { "ano": 2023, "valor": 22.14 },
+      { "ano": 2024, "valor": 21.33 },
+    ],
   },
   "participacao_industria_pib": {
-    "label": "(IBGE) Participação da Indústria no Valor Adicionado Bruto",
+    "label": "Participação da Indústria no Valor Adicionado Bruto",
+    "fonte_sigla": "IBGE",
     "unidade": "%",
     "fonte": "IBGE / SCN",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao":
       "Participação do Valor Adicionado Bruto a preços básicos gerado pela indústria no Valor Adicionado Bruto total da economia.",
     "como_interpretar":
@@ -1658,7 +1118,6 @@
     "nivel_confiabilidade":
       "Alto para 2000-2023: dados oficiais do IBGE no Sistema de Contas Nacionais, Tabela 13.1. Valores de 2024 foram removidos por serem de Contas Nacionais Trimestrais/preliminares e sujeitos a revisão no SCN anual.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IBGE - Sistema de Contas Nacionais: Brasil 2023",
@@ -1711,222 +1170,148 @@
     ],
   },
   "servicos_valor_adicionado_pib": {
-    "label": "(WDI) Valor Adicionado dos Serviços",
+    "label": "Valor Adicionado dos Serviços",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte": "Banco Mundial - World Development Indicators (NV.SRV.TOTL.ZS)",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "Mede a participação do valor adicionado do setor de serviços no Produto Interno Bruto do Brasil.",
-    "como_interpretar": "Valores maiores indicam maior peso relativo dos serviços na estrutura produtiva do país. O indicador não mede produtividade, qualidade dos serviços, informalidade, sofisticação tecnológica nem bem-estar social; mede apenas a participação percentual do setor de serviços no PIB.",
-    "metodologia": "O Banco Mundial define serviços conforme as divisões 45 a 99 da ISIC Rev. 4, incluindo comércio, reparação de veículos, hotéis e restaurantes, transporte, armazenagem e comunicação, intermediação financeira, atividades imobiliárias, administração pública, defesa, seguridade social obrigatória, educação, saúde, serviços sociais, outros serviços comunitários, famílias empregadoras e organizações extraterritoriais. O valor adicionado é calculado como o valor da produção menos o consumo intermediário e expresso como percentual do PIB.",
-    "historico_metodologia": "A série do WDI é baseada em contas nacionais oficiais, arquivos de contas nacionais da OCDE, estimativas de equipes do Banco Mundial e classificação ISIC Rev. 4. Como em outras séries de contas nacionais, os valores podem ser revisados quando há atualização de contas nacionais, mudança de ano-base, reclassificação setorial ou revisão metodológica nacional. A série validada inclui apenas observações com valor numérico de 1994 a 2024; 2025 não foi incluído por não haver valor observado disponível na consulta oficial.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso relativo dos serviços na estrutura produtiva do país. O indicador não mede produtividade, qualidade dos serviços, informalidade, sofisticação tecnológica nem bem-estar social; mede apenas a participação percentual do setor de serviços no PIB.",
+    "metodologia":
+      "O Banco Mundial define serviços conforme as divisões 45 a 99 da ISIC Rev. 4, incluindo comércio, reparação de veículos, hotéis e restaurantes, transporte, armazenagem e comunicação, intermediação financeira, atividades imobiliárias, administração pública, defesa, seguridade social obrigatória, educação, saúde, serviços sociais, outros serviços comunitários, famílias empregadoras e organizações extraterritoriais. O valor adicionado é calculado como o valor da produção menos o consumo intermediário e expresso como percentual do PIB.",
+    "historico_metodologia":
+      "A série do WDI é baseada em contas nacionais oficiais, arquivos de contas nacionais da OCDE, estimativas de equipes do Banco Mundial e classificação ISIC Rev. 4. Como em outras séries de contas nacionais, os valores podem ser revisados quando há atualização de contas nacionais, mudança de ano-base, reclassificação setorial ou revisão metodológica nacional. A série validada inclui apenas observações com valor numérico de 1994 a 2024; 2025 não foi incluído por não haver valor observado disponível na consulta oficial.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "Pós-Real",
-        "descricao": "Após a estabilização monetária iniciada pelo Plano Real, a estrutura nominal e real da economia mudou, coincidindo com elevação do peso relativo dos serviços em 1995 e 1996."
+        "descricao":
+          "Após a estabilização monetária iniciada pelo Plano Real, a estrutura nominal e real da economia mudou, coincidindo com elevação do peso relativo dos serviços em 1995 e 1996.",
       },
       {
         "ano": 1999,
         "nome": "Crise Cambial",
-        "descricao": "A desvalorização cambial e a mudança do regime cambial coincidiram com participação elevada dos serviços no PIB, em contexto de ajuste macroeconômico."
+        "descricao":
+          "A desvalorização cambial e a mudança do regime cambial coincidiram com participação elevada dos serviços no PIB, em contexto de ajuste macroeconômico.",
       },
       {
         "ano": 2004,
         "nome": "Expansão Econômica",
-        "descricao": "O crescimento econômico mais forte e a expansão de setores produtores de bens reduziram temporariamente a participação relativa dos serviços no PIB."
+        "descricao":
+          "O crescimento econômico mais forte e a expansão de setores produtores de bens reduziram temporariamente a participação relativa dos serviços no PIB.",
       },
       {
         "ano": 2009,
         "nome": "Crise Global",
-        "descricao": "A crise financeira internacional afetou a indústria e o comércio global, elevando a participação relativa dos serviços no PIB brasileiro em 2009."
+        "descricao":
+          "A crise financeira internacional afetou a indústria e o comércio global, elevando a participação relativa dos serviços no PIB brasileiro em 2009.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015 alterou a composição setorial do PIB, com aumento do peso relativo dos serviços em meio à contração da atividade econômica."
+        "descricao":
+          "A recessão brasileira de 2015 alterou a composição setorial do PIB, com aumento do peso relativo dos serviços em meio à contração da atividade econômica.",
       },
       {
         "ano": 2016,
         "nome": "Recessão Prolongada",
-        "descricao": "A continuidade da recessão manteve a participação dos serviços acima de 63% do PIB, o maior patamar da série validada desde 1994."
+        "descricao":
+          "A continuidade da recessão manteve a participação dos serviços acima de 63% do PIB, o maior patamar da série validada desde 1994.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou forte choque econômico e mudanças setoriais, mantendo a participação dos serviços acima de 61% do PIB."
+        "descricao":
+          "A pandemia de COVID-19 provocou forte choque econômico e mudanças setoriais, mantendo a participação dos serviços acima de 61% do PIB.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A recuperação pós-pandemia e o desempenho relativo de outros setores reduziram a participação dos serviços para 56,91% do PIB em 2021."
+        "descricao":
+          "A recuperação pós-pandemia e o desempenho relativo de outros setores reduziram a participação dos serviços para 56,91% do PIB em 2021.",
       },
       {
         "ano": 2023,
         "nome": "Alta Agropecuária",
-        "descricao": "O forte desempenho relativo de setores fora dos serviços contribuiu para manter a participação dos serviços abaixo dos níveis observados entre 2015 e 2020."
+        "descricao":
+          "O forte desempenho relativo de setores fora dos serviços contribuiu para manter a participação dos serviços abaixo dos níveis observados entre 2015 e 2020.",
       },
       {
         "ano": 2024,
         "nome": "Estabilidade Setorial",
-        "descricao": "A participação dos serviços permaneceu praticamente estável em relação a 2023, em torno de 59,17% do PIB."
-      }
+        "descricao":
+          "A participação dos serviços permaneceu praticamente estável em relação a 2023, em torno de 59,17% do PIB.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 59,1708% do PIB em valor adicionado dos serviços. Esse nível indica uma economia majoritariamente terciarizada, acima do peso típico de economias mais dependentes de indústria, agropecuária ou extração, mas abaixo de muitas economias avançadas em que os serviços costumam superar 70% do PIB.",
-    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, arquivos de contas nacionais da OCDE e estimativas padronizadas do Banco Mundial. A principal ressalva é que séries de contas nacionais podem ser revisadas por atualização de metodologia, ano-base ou classificação setorial.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 59,1708% do PIB em valor adicionado dos serviços. Esse nível indica uma economia majoritariamente terciarizada, acima do peso típico de economias mais dependentes de indústria, agropecuária ou extração, mas abaixo de muitas economias avançadas em que os serviços costumam superar 70% do PIB.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais, arquivos de contas nacionais da OCDE e estimativas padronizadas do Banco Mundial. A principal ressalva é que séries de contas nacionais podem ser revisadas por atualização de metodologia, ano-base ou classificação setorial.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Services, value added (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial API - NV.SRV.TOTL.ZS - Brazil",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NV.SRV.TOTL.ZS?format=json&per_page=200"
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/NV.SRV.TOTL.ZS?format=json&per_page=200",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NV.SRV.TOTL.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.SRV.TOTL.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.SRV.TOTL.ZS",
       },
       {
         "titulo": "Banco Mundial WDI - Economy Theme",
-        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/economy.html"
-      }
+        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/economy.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 56.8943424724272
-      },
-      {
-        "ano": 1995,
-        "valor": 58.1214163702779
-      },
-      {
-        "ano": 1996,
-        "valor": 60.3188797934472
-      },
-      {
-        "ano": 1997,
-        "valor": 60.6057128176905
-      },
-      {
-        "ano": 1998,
-        "valor": 61.1185930481354
-      },
-      {
-        "ano": 1999,
-        "valor": 60.2036566347266
-      },
-      {
-        "ano": 2000,
-        "valor": 58.2518612474651
-      },
-      {
-        "ano": 2001,
-        "valor": 57.7136922473936
-      },
-      {
-        "ano": 2002,
-        "valor": 57.3481454732844
-      },
-      {
-        "ano": 2003,
-        "valor": 56.3578281358252
-      },
-      {
-        "ano": 2004,
-        "valor": 54.9204711079064
-      },
-      {
-        "ano": 2005,
-        "valor": 56.0758916063079
-      },
-      {
-        "ano": 2006,
-        "valor": 57.1381272137718
-      },
-      {
-        "ano": 2007,
-        "valor": 57.7262362197187
-      },
-      {
-        "ano": 2008,
-        "valor": 56.8048617741342
-      },
-      {
-        "ano": 2009,
-        "valor": 59.14505921907
-      },
-      {
-        "ano": 2010,
-        "valor": 57.6129219702781
-      },
-      {
-        "ano": 2011,
-        "valor": 57.5681693213714
-      },
-      {
-        "ano": 2012,
-        "valor": 58.7336025082152
-      },
-      {
-        "ano": 2013,
-        "valor": 59.6787579929242
-      },
-      {
-        "ano": 2014,
-        "valor": 61.250974009102
-      },
-      {
-        "ano": 2015,
-        "valor": 62.3078671737793
-      },
-      {
-        "ano": 2016,
-        "valor": 63.2036958322425
-      },
-      {
-        "ano": 2017,
-        "valor": 63.3386728622309
-      },
-      {
-        "ano": 2018,
-        "valor": 62.6533503532505
-      },
-      {
-        "ano": 2019,
-        "valor": 63.0678492508986
-      },
-      {
-        "ano": 2020,
-        "valor": 61.4484446411949
-      },
-      {
-        "ano": 2021,
-        "valor": 56.9133841883894
-      },
-      {
-        "ano": 2022,
-        "valor": 58.0872310746862
-      },
-      {
-        "ano": 2023,
-        "valor": 59.1789358564203
-      },
-      {
-        "ano": 2024,
-        "valor": 59.1707527174248
-      }
+      { "ano": 1994, "valor": 56.8943424724272 },
+      { "ano": 1995, "valor": 58.1214163702779 },
+      { "ano": 1996, "valor": 60.3188797934472 },
+      { "ano": 1997, "valor": 60.6057128176905 },
+      { "ano": 1998, "valor": 61.1185930481354 },
+      { "ano": 1999, "valor": 60.2036566347266 },
+      { "ano": 2000, "valor": 58.2518612474651 },
+      { "ano": 2001, "valor": 57.7136922473936 },
+      { "ano": 2002, "valor": 57.3481454732844 },
+      { "ano": 2003, "valor": 56.3578281358252 },
+      { "ano": 2004, "valor": 54.9204711079064 },
+      { "ano": 2005, "valor": 56.0758916063079 },
+      { "ano": 2006, "valor": 57.1381272137718 },
+      { "ano": 2007, "valor": 57.7262362197187 },
+      { "ano": 2008, "valor": 56.8048617741342 },
+      { "ano": 2009, "valor": 59.14505921907 },
+      { "ano": 2010, "valor": 57.6129219702781 },
+      { "ano": 2011, "valor": 57.5681693213714 },
+      { "ano": 2012, "valor": 58.7336025082152 },
+      { "ano": 2013, "valor": 59.6787579929242 },
+      { "ano": 2014, "valor": 61.250974009102 },
+      { "ano": 2015, "valor": 62.3078671737793 },
+      { "ano": 2016, "valor": 63.2036958322425 },
+      { "ano": 2017, "valor": 63.3386728622309 },
+      { "ano": 2018, "valor": 62.6533503532505 },
+      { "ano": 2019, "valor": 63.0678492508986 },
+      { "ano": 2020, "valor": 61.4484446411949 },
+      { "ano": 2021, "valor": 56.9133841883894 },
+      { "ano": 2022, "valor": 58.0872310746862 },
+      { "ano": 2023, "valor": 59.1789358564203 },
+      { "ano": 2024, "valor": 59.1707527174248 },
     ],
-    "padrao": false
   },
   "agro_pib_pct": {
-    "label": "(CEPEA/CNA) Participação do Agronegócio no PIB",
+    "label": "Participação do Agronegócio no PIB",
+    "fonte_sigla": "CEPEA/CNA",
     "unidade": "% do PIB",
     "fonte": "CEPEA (ESALQ/USP) / CNA",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "Participação do PIB-renda do agronegócio brasileiro no PIB nominal total do Brasil.",
     "como_interpretar":
       "Valores maiores indicam que a renda gerada pela cadeia do agronegócio representa parcela maior do PIB brasileiro. A métrica não mede apenas a agropecuária dentro da porteira; inclui insumos, produção primária, agroindústria e agrosserviços.",
@@ -2012,13 +1397,14 @@
       { "ano": 2023, "valor": 23.5 },
       { "ano": 2024, "valor": 23.2 },
     ],
-    "padrao": false,
   },
   "investimento_pib": {
-    "label": "(IBGE) Investimento (FBCF/PIB)",
+    "label": "Investimento (FBCF/PIB)",
+    "fonte_sigla": "IBGE",
     "unidade": "% do PIB",
     "fonte": "IBGE / Sistema de Contas Nacionais; IBGE / Contas Nacionais Trimestrais",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao":
       "Participação da Formação Bruta de Capital Fixo no PIB, medindo a parcela da produção nacional destinada a investimento em ativos fixos.",
     "como_interpretar":
@@ -2078,7 +1464,6 @@
     "nivel_confiabilidade":
       "Alto para 1995-2023, pois os valores vêm da Tabela 7 do Sistema de Contas Nacionais do IBGE. Alto, mas sujeito a revisão, para 2024-2025, pois os valores vêm das Contas Nacionais Trimestrais oficiais do IBGE. O ano de 1994 foi removido por não integrar a série atual comparável do IBGE iniciada em 1995.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo":
@@ -2140,212 +1525,138 @@
     ],
   },
   "consumo_final_familias_pib": {
-    "label": "(WDI) Consumo Final das Famílias",
+    "label": "Consumo Final das Famílias",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte": "Banco Mundial - World Development Indicators (NE.CON.PRVT.ZS)",
     "cat": "Economia e Atividade",
-    "descricao": "Mede a participação do consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias no Produto Interno Bruto do Brasil.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior do PIB está associada ao consumo final das famílias. O indicador não mede crescimento real do consumo, renda disponível, endividamento, distribuição de renda ou qualidade do consumo.",
-    "metodologia": "O Banco Mundial expressa o consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias como percentual do PIB. A série é derivada de contas nacionais oficiais e arquivos de contas nacionais da OCDE, incluindo bens e serviços adquiridos pelas famílias para satisfação direta de necessidades, aluguel imputado de moradias ocupadas pelos proprietários e taxas pagas a governos por permissões e licenças. A métrica é calculada como consumo final das famílias e ISFLSF dividido pelo PIB nominal, multiplicado por 100.",
-    "historico_metodologia": "A série segue o padrão internacional de contas nacionais usado no World Development Indicators. O Banco Mundial informa que a fonte combina estatísticas oficiais nacionais, arquivos de contas nacionais da OCDE e estimativas do Banco Mundial quando necessário. Séries de contas nacionais podem ser revisadas por mudanças de base, atualização das Contas Nacionais, revisões de PIB, reclassificações setoriais e incorporação de novas informações estatísticas. Para evitar estimativas futuras, a série foi mantida apenas até 2024, último ano com dado anual observado disponível na consulta.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede a participação do consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias no Produto Interno Bruto do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam que uma parcela maior do PIB está associada ao consumo final das famílias. O indicador não mede crescimento real do consumo, renda disponível, endividamento, distribuição de renda ou qualidade do consumo.",
+    "metodologia":
+      "O Banco Mundial expressa o consumo final das famílias e das instituições sem fins lucrativos a serviço das famílias como percentual do PIB. A série é derivada de contas nacionais oficiais e arquivos de contas nacionais da OCDE, incluindo bens e serviços adquiridos pelas famílias para satisfação direta de necessidades, aluguel imputado de moradias ocupadas pelos proprietários e taxas pagas a governos por permissões e licenças. A métrica é calculada como consumo final das famílias e ISFLSF dividido pelo PIB nominal, multiplicado por 100.",
+    "historico_metodologia":
+      "A série segue o padrão internacional de contas nacionais usado no World Development Indicators. O Banco Mundial informa que a fonte combina estatísticas oficiais nacionais, arquivos de contas nacionais da OCDE e estimativas do Banco Mundial quando necessário. Séries de contas nacionais podem ser revisadas por mudanças de base, atualização das Contas Nacionais, revisões de PIB, reclassificações setoriais e incorporação de novas informações estatísticas. Para evitar estimativas futuras, a série foi mantida apenas até 2024, último ano com dado anual observado disponível na consulta.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação entre países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária após o Plano Real coincidiu com forte aumento da participação do consumo das famílias no PIB entre 1994 e 1995."
+        "descricao":
+          "A estabilização monetária após o Plano Real coincidiu com forte aumento da participação do consumo das famílias no PIB entre 1994 e 1995.",
       },
       {
         "ano": 2002,
         "nome": "Crise cambial",
-        "descricao": "A instabilidade macroeconômica e cambial de 2002 coincidiu com queda relevante da participação do consumo das famílias no PIB."
+        "descricao":
+          "A instabilidade macroeconômica e cambial de 2002 coincidiu com queda relevante da participação do consumo das famílias no PIB.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional afetou investimento e comércio, enquanto o consumo das famílias ganhou participação relativa no PIB brasileiro."
+        "descricao":
+          "A crise financeira internacional afetou investimento e comércio, enquanto o consumo das famílias ganhou participação relativa no PIB brasileiro.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015 reduziu o nível de atividade, mas a participação do consumo das famílias no PIB aumentou em termos relativos."
+        "descricao":
+          "A recessão brasileira de 2015 reduziu o nível de atividade, mas a participação do consumo das famílias no PIB aumentou em termos relativos.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve elevada a participação relativa do consumo das famílias no PIB, apesar da contração real da economia."
+        "descricao":
+          "A continuidade da recessão manteve elevada a participação relativa do consumo das famílias no PIB, apesar da contração real da economia.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 reduziu fortemente o consumo das famílias e a atividade econômica, provocando queda da participação do consumo das famílias no PIB."
+        "descricao":
+          "A pandemia de COVID-19 reduziu fortemente o consumo das famílias e a atividade econômica, provocando queda da participação do consumo das famílias no PIB.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A recuperação parcial da atividade econômica após as restrições da pandemia alterou a composição do PIB e manteve a participação do consumo abaixo do nível pré-pandemia."
+        "descricao":
+          "A recuperação parcial da atividade econômica após as restrições da pandemia alterou a composição do PIB e manteve a participação do consumo abaixo do nível pré-pandemia.",
       },
       {
         "ano": 2024,
         "nome": "Consumo forte",
-        "descricao": "O avanço da atividade econômica e do consumo das famílias em 2024 elevou novamente a participação do consumo familiar no PIB."
-      }
+        "descricao":
+          "O avanço da atividade econômica e do consumo das famílias em 2024 elevou novamente a participação do consumo familiar no PIB.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil ficou próximo de 64% do PIB, acima de economias com maior peso relativo de investimento ou exportações, como China, e mais próximo de economias nas quais o consumo das famílias tem peso elevado na demanda agregada. A comparação internacional deve considerar diferenças de estrutura produtiva, renda, poupança, investimento, demografia, sistema tributário e participação do governo no PIB.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais. A principal ressalva é que séries de contas nacionais podem sofrer revisões periódicas, e os valores percentuais podem mudar quando o PIB ou seus componentes são revisados.",
+    "comparacao_paises":
+      "Em 2024, o Brasil ficou próximo de 64% do PIB, acima de economias com maior peso relativo de investimento ou exportações, como China, e mais próximo de economias nas quais o consumo das famílias tem peso elevado na demanda agregada. A comparação internacional deve considerar diferenças de estrutura produtiva, renda, poupança, investimento, demografia, sistema tributário e participação do governo no PIB.",
+    "nivel_confiabilidade":
+      "Alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais. A principal ressalva é que séries de contas nacionais podem sofrer revisões periódicas, e os valores percentuais podem mudar quando o PIB ou seus componentes são revisados.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Households and NPISHs final consumption expenditure (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NE.CON.PRVT.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.CON.PRVT.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NE.CON.PRVT.ZS",
       },
       {
         "titulo": "Banco Mundial - World Development Indicators",
-        "url": "https://datatopics.worldbank.org/world-development-indicators/"
+        "url": "https://datatopics.worldbank.org/world-development-indicators/",
       },
       {
         "titulo": "IBGE - Contas Nacionais: PIB cresce 3,2% e soma R$ 10,9 trilhões em 2023",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/44983-gdp-grows-3-2-and-adds-up-to-r-10-9-trillion-in-2023"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/44983-gdp-grows-3-2-and-adds-up-to-r-10-9-trillion-in-2023",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 59.64
-      },
-      {
-        "ano": 1995,
-        "valor": 63.71
-      },
-      {
-        "ano": 1996,
-        "valor": 65.16
-      },
-      {
-        "ano": 1997,
-        "valor": 65.31
-      },
-      {
-        "ano": 1998,
-        "valor": 64.14
-      },
-      {
-        "ano": 1999,
-        "valor": 64.68
-      },
-      {
-        "ano": 2000,
-        "valor": 64.59
-      },
-      {
-        "ano": 2001,
-        "valor": 64.11
-      },
-      {
-        "ano": 2002,
-        "valor": 61.9
-      },
-      {
-        "ano": 2003,
-        "valor": 61.84
-      },
-      {
-        "ano": 2004,
-        "valor": 60.21
-      },
-      {
-        "ano": 2005,
-        "valor": 60.5
-      },
-      {
-        "ano": 2006,
-        "valor": 60.44
-      },
-      {
-        "ano": 2007,
-        "valor": 59.87
-      },
-      {
-        "ano": 2008,
-        "valor": 59.73
-      },
-      {
-        "ano": 2009,
-        "valor": 61.96
-      },
-      {
-        "ano": 2010,
-        "valor": 60.22
-      },
-      {
-        "ano": 2011,
-        "valor": 60.27
-      },
-      {
-        "ano": 2012,
-        "valor": 61.41
-      },
-      {
-        "ano": 2013,
-        "valor": 61.72
-      },
-      {
-        "ano": 2014,
-        "valor": 62.96
-      },
-      {
-        "ano": 2015,
-        "valor": 63.96
-      },
-      {
-        "ano": 2016,
-        "valor": 64.25
-      },
-      {
-        "ano": 2017,
-        "valor": 64.49
-      },
-      {
-        "ano": 2018,
-        "valor": 64.62
-      },
-      {
-        "ano": 2019,
-        "valor": 64.76
-      },
-      {
-        "ano": 2020,
-        "valor": 62.71
-      },
-      {
-        "ano": 2021,
-        "valor": 61.4
-      },
-      {
-        "ano": 2022,
-        "valor": 63.1
-      },
-      {
-        "ano": 2023,
-        "valor": 62.9
-      },
-      {
-        "ano": 2024,
-        "valor": 63.77
-      }
+      { "ano": 1994, "valor": 59.64 },
+      { "ano": 1995, "valor": 63.71 },
+      { "ano": 1996, "valor": 65.16 },
+      { "ano": 1997, "valor": 65.31 },
+      { "ano": 1998, "valor": 64.14 },
+      { "ano": 1999, "valor": 64.68 },
+      { "ano": 2000, "valor": 64.59 },
+      { "ano": 2001, "valor": 64.11 },
+      { "ano": 2002, "valor": 61.9 },
+      { "ano": 2003, "valor": 61.84 },
+      { "ano": 2004, "valor": 60.21 },
+      { "ano": 2005, "valor": 60.5 },
+      { "ano": 2006, "valor": 60.44 },
+      { "ano": 2007, "valor": 59.87 },
+      { "ano": 2008, "valor": 59.73 },
+      { "ano": 2009, "valor": 61.96 },
+      { "ano": 2010, "valor": 60.22 },
+      { "ano": 2011, "valor": 60.27 },
+      { "ano": 2012, "valor": 61.41 },
+      { "ano": 2013, "valor": 61.72 },
+      { "ano": 2014, "valor": 62.96 },
+      { "ano": 2015, "valor": 63.96 },
+      { "ano": 2016, "valor": 64.25 },
+      { "ano": 2017, "valor": 64.49 },
+      { "ano": 2018, "valor": 64.62 },
+      { "ano": 2019, "valor": 64.76 },
+      { "ano": 2020, "valor": 62.71 },
+      { "ano": 2021, "valor": 61.4 },
+      { "ano": 2022, "valor": 63.1 },
+      { "ano": 2023, "valor": 62.9 },
+      { "ano": 2024, "valor": 63.77 },
     ],
-    "padrao": false
   },
   "produtividade_trabalho": {
-    "label": "(TED) Produtividade do Trabalho - PIB por hora",
+    "label": "Produtividade do Trabalho - PIB por hora",
+    "fonte_sigla": "TED",
     "unidade": "US$ internacionais PPC, preços constantes, por hora trabalhada",
     "fonte": "The Conference Board Total Economy Database (TED)",
     "cat": "Economia e Atividade",
+    "padrao": false,
     "descricao": "PIB real gerado por hora trabalhada na economia total.",
     "como_interpretar":
       "Valores mais altos indicam maior produto gerado por hora trabalhada. A série deve ser interpretada como medida agregada de eficiência econômica, não como produtividade individual dos trabalhadores.",
@@ -2393,7 +1704,6 @@
     "nivel_confiabilidade":
       "MÉDIO para os valores anuais até 2023: a fonte é reconhecida e combina contas nacionais, PPCs e horas trabalhadas, mas a série está sujeita a revisões retroativas e parte das horas trabalhadas pode depender de estimativas. BAIXO para 2024 e 2025, removidos por serem respectivamente estimativa e previsão segundo a própria TED.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "The Conference Board Total Economy Database",
@@ -2447,11 +1757,13 @@
     ],
   },
   "taxa_desemprego": {
-    "label": "(WDI/OIT) Taxa de Desemprego",
+    "label": "Taxa de Desemprego",
+    "fonte_sigla": "WDI/OIT",
     "unidade": "% da força de trabalho total",
     "fonte":
       "Banco Mundial - World Development Indicators / Organização Internacional do Trabalho - ILOSTAT Labour Force Statistics",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Mede a proporção da força de trabalho total que está sem trabalho, disponível para trabalhar e procurando emprego.",
     "como_interpretar":
@@ -2521,7 +1833,6 @@
     "nivel_confiabilidade":
       "Alto para monitoramento anual e comparação internacional, pois a série é publicada pelo Banco Mundial com fonte na OIT/ILOSTAT. A ressalva principal é a comparabilidade histórica: mudanças nas pesquisas nacionais de trabalho e diferenças metodológicas entre países podem afetar comparações finas, especialmente antes e depois de 2012 no Brasil.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Unemployment, total (% of total labor force) (national estimate) - Brazil",
@@ -2574,10 +1885,12 @@
     ],
   },
   "desemprego_pnadc": {
-    "label": "(IBGE) Desemprego - PNAD Contínua Anual",
+    "label": "Desemprego - PNAD Contínua Anual",
+    "fonte_sigla": "IBGE",
     "unidade": "% da força de trabalho",
     "fonte": "IBGE/PNAD Contínua Anual - SIDRA tabela 4562",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Taxa anual de desocupação das pessoas de 14 anos ou mais de idade no Brasil, medida pela PNAD Contínua.",
     "como_interpretar":
@@ -2603,7 +1916,6 @@
     "nivel_confiabilidade":
       "Alto para a série oficial brasileira de 2012 a 2025. Não há dado PNAD Contínua anual comparável para 1994-2011. O valor de 2026 foi removido por não haver ano completo divulgado oficialmente.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IBGE - PNAD Contínua: estatísticas e notas técnicas",
@@ -2649,11 +1961,13 @@
     ],
   },
   "razao_emprego_populacao": {
-    "label": "(WDI/OIT) Razão Emprego-População",
+    "label": "Razão Emprego-População",
+    "fonte_sigla": "WDI/OIT",
     "unidade": "% da população de 15 anos ou mais",
     "fonte":
       "Banco Mundial - World Development Indicators / Organização Internacional do Trabalho - Labour Force Statistics Database (SL.EMP.TOTL.SP.NE.ZS)",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao": "Mede a proporção da população brasileira de 15 anos ou mais que está empregada.",
     "como_interpretar":
       "Valores maiores indicam que uma parcela maior da população em idade ativa está empregada. O indicador não mede qualidade do emprego, informalidade, renda, subocupação, produtividade ou estabilidade do trabalho.",
@@ -2725,14 +2039,15 @@
       { "ano": 2024, "valor": 58.9 },
       { "ano": 2025, "valor": 59.5 },
     ],
-    "padrao": false,
   },
   "participacao_forca_trabalho_banco_mundial_oit": {
-    "label": "(WDI/OIT) Participação Na Força De Trabalho",
+    "label": "Participação Na Força De Trabalho",
+    "fonte_sigla": "WDI/OIT",
     "unidade": "% da população de 15 anos ou mais",
     "fonte":
       "Banco Mundial - World Development Indicators / International Labour Organization - ILOSTAT, ILO Modelled Estimates",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Mede a proporção da população brasileira de 15 anos ou mais que está economicamente ativa, incluindo pessoas ocupadas e pessoas desocupadas procurando trabalho.",
     "como_interpretar":
@@ -2833,14 +2148,15 @@
       { "ano": 2024, "valor": 63.339 },
       { "ano": 2025, "valor": 63.139 },
     ],
-    "padrao": false,
   },
   "desemprego_juvenil_banco_mundial_oit": {
-    "label": "(WDI/OIT) Desemprego Juvenil",
+    "label": "Desemprego Juvenil",
+    "fonte_sigla": "WDI/OIT",
     "unidade": "% da força de trabalho de 15 a 24 anos",
     "fonte":
       "Banco Mundial - World Development Indicators / Organização Internacional do Trabalho - ILOSTAT (SL.UEM.1524.NE.ZS)",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Mede a proporção da força de trabalho jovem, de 15 a 24 anos, que está sem trabalho, disponível para trabalhar e procurando emprego.",
     "como_interpretar":
@@ -2924,13 +2240,14 @@
       { "ano": 2024, "valor": 15.7 },
       { "ano": 2025, "valor": 13.6 },
     ],
-    "padrao": false,
   },
   "jovens_nem_nem": {
     "label": "Jovens Nem-Nem (15-29 anos)",
+    "fonte_sigla": "IBGE/OIT/IDADOS",
     "unidade": "% da população da faixa etária",
     "fonte": "IBGE (PNAD Contínua) / OIT / IDADOS",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "A métrica de Jovens 'Nem-Nem' (do inglês NEET - Neither in Education, Employment, or Training) mede o percentual de jovens entre 15 e 29 anos que não estão ocupados no mercado de trabalho e nem frequentando instituições de ensino ou qualificação técnica. Ela funciona como um indicador de vulnerabilidade social e desperdício de capital humano. No Brasil, as maiores variações ocorreram após a crise de 2015-2016, quando o desemprego juvenil saltou, e em 2020, com a pandemia, que atingiu o pico histórico de 25,8% devido ao fechamento de escolas e retração do setor de serviços. A queda projetada para 20,8% em 2026 reflete a recuperação do mercado de trabalho e programas de incentivo ao primeiro emprego, embora o abandono escolar pós-pandemia ainda seja um entrave. Em termos de precisão, os dados de 1994 a 2011 baseiam-se na PNAD anual (harmonizada); de 2012 em diante, na PNAD Contínua; e 2024-2026 são projeções baseadas no CAGED e tendências demográficas. Comparativamente, o Brasil apresenta taxas superiores a países como México (~18%) e está muito distante da Europa, onde a média gira em torno de 11% (com exceção de Itália e Grécia). Na América Latina, o Brasil situa-se próximo à média regional de 21%. Globalmente, o país enfrenta o desafio de que a maioria dessa população é composta por mulheres (com responsabilidades de cuidado) e jovens de baixa renda, evidenciando que a métrica mede não apenas falta de opção, mas barreiras estruturais de gênero e classe.",
     "dados": [
@@ -2968,13 +2285,14 @@
       { "ano": 2025, "valor": 21.1 },
       { "ano": 2026, "valor": 20.8 },
     ],
-    "padrao": false,
   },
   "emprego_informal": {
-    "label": "(OIT) Emprego Informal",
+    "label": "Emprego Informal",
+    "fonte_sigla": "OIT",
     "unidade": "% do emprego total",
     "fonte": "Organização Internacional do Trabalho - ILOSTAT, Indicador ODS 8.3.1 (SDG_B831_SEX_ECO_RT_A)",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao": "Mede a proporção de pessoas ocupadas em empregos informais no total de pessoas ocupadas.",
     "como_interpretar":
       "Valores maiores indicam maior participação de trabalhadores em empregos sem arranjos formais, proteção legal ou proteção social associada ao trabalho. Valores menores indicam maior formalização relativa do mercado de trabalho.",
@@ -2991,7 +2309,6 @@
     "nivel_confiabilidade":
       "Alto para o valor apresentado, pois vem do ILOSTAT/OIT e é tratado como dado nacional, não como estimativa modelada. A série histórica completa desde 1994 não foi preenchida porque a fonte pública validada para a versão atual do indicador não apresenta valores observados contínuos para todo o período solicitado sem mistura metodológica com séries antigas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "ILOSTAT - Perfil do Brasil", "url": "https://ilostat.ilo.org/data/country-profiles/bra/" },
       {
@@ -3013,9 +2330,11 @@
   },
   "taxa_informalidade": {
     "label": "Taxa de Informalidade",
+    "fonte_sigla": "IBGE/OIT/IPEA",
     "unidade": "% da população ocupada",
     "fonte": "IBGE (PNAD Contínua) / OIT / IPEA",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "A Taxa de Informalidade mede o percentual de trabalhadores que não possuem carteira assinada, trabalhadores domésticos sem carteira, empregadores e conta-própria sem CNPJ, e trabalhadores familiares auxiliares. Ela funciona como um termômetro da precarização do mercado de trabalho e da capacidade do Estado de arrecadar previdência. No Brasil, a série mostra uma queda sustentada entre 2003 e 2014, impulsionada pelo crescimento econômico e políticas de formalização (como o MEI). No entanto, as crises de 2015-2016 e a reforma trabalhista de 2017 alteraram a dinâmica, com a informalidade voltando a crescer como estratégia de sobrevivência. O evento mais marcante foi a pandemia de 2020: a taxa caiu artificialmente para 38,0% não por melhoria, mas porque os informais foram os primeiros a perder o emprego, 'desaparecendo' da conta. A recuperação para 38,5% em 2026 reflete a consolidação de novas formas de trabalho (gig economy) e a resistência estrutural à formalização. A precisão é alta a partir de 2012 (PNAD Contínua); dados anteriores são harmonizados pelo IPEA. Comparativamente, o Brasil está melhor que a média da América Latina (~50%), mas em um abismo em relação à Europa (~10-15%). No mundo, a informalidade brasileira é considerada alta para um país de renda média, evidenciando o 'custo Brasil' e a rigidez do sistema tributário sobre a folha.",
     "dados": [
@@ -3053,13 +2372,14 @@
       { "ano": 2025, "valor": 38.7 },
       { "ano": 2026, "valor": 38.5 },
     ],
-    "padrao": false,
   },
   "caged_saldo": {
-    "label": "(MTE) Saldo anual de empregos formais",
+    "label": "Saldo anual de empregos formais",
+    "fonte_sigla": "MTE",
     "unidade": "postos de trabalho (saldo anual)",
     "fonte": "Ministério do Trabalho e Emprego — Caged/Novo Caged",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Saldo anual entre admissões e desligamentos de vínculos formais celetistas no Brasil, conforme Caged/Novo Caged.",
     "como_interpretar":
@@ -3095,7 +2415,6 @@
     "nivel_confiabilidade":
       "Alta para 2002-2025, pois os valores foram substituídos pelos dados oficiais publicados pelo Ministério do Trabalho e Emprego. Baixa/inadequada para os valores originais informados: eles não representavam saldo anual de empregos formais, tinham casas decimais e eram incompatíveis com a unidade da métrica. A referência original ao BCB SGS 28763 também era inadequada para saldo anual, pois a série 28763 é usada como estoque de empregos formais, não como saldo anual.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Ministério do Trabalho e Emprego — Apresentação Novo Caged dezembro de 2025",
@@ -3138,10 +2457,12 @@
     ],
   },
   "salario_min_nominal": {
-    "label": "(BCB) Salário mínimo nominal",
+    "label": "Salário mínimo nominal",
+    "fonte_sigla": "BCB",
     "unidade": "R$ correntes",
     "fonte": "Legislação federal; Banco Central do Brasil - SGS série 1619",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao": "Valor nominal legal do salário mínimo nacional em reais correntes.",
     "como_interpretar":
       "Indica o piso legal nominal mensal vigente no Brasil. A série não mede poder de compra; para isso é necessário deflacionar os valores por índice de preços, como INPC ou IPCA.",
@@ -3192,7 +2513,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores são nominais, legais e verificáveis em legislação federal e na série oficial SGS 1619 do Banco Central. A principal ressalva é metodológica: a fonte SGS é mensal, enquanto esta série anual usa o valor vigente em dezembro de cada ano.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Central do Brasil - Metadados SGS série 1619: Salário mínimo",
@@ -3252,10 +2572,12 @@
     ],
   },
   "salario_min_real_idx": {
-    "label": "(BCB) Salário mínimo real (poder de compra)",
+    "label": "Salário mínimo real (poder de compra)",
+    "fonte_sigla": "BCB",
     "unidade": "Índice (base 1994=100)",
     "fonte": "Banco Central do Brasil/SGS série 1619; INPC/IBGE via SGS série 188",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Índice do salário mínimo nacional nominal corrigido pela inflação medida pelo INPC, com base 1994=100.",
     "como_interpretar":
@@ -3306,7 +2628,6 @@
     "nivel_confiabilidade":
       "Alto para a metodologia declarada. Os valores originais foram corrigidos porque estavam mais compatíveis com deflação por IPCA do que por INPC. Os novos valores usam INPC/IBGE como deflator, conforme a fonte declarada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Central do Brasil - Metadados SGS série 1619: Salário mínimo",
@@ -3375,10 +2696,12 @@
     ],
   },
   "indice_gini_pip": {
-    "label": "(WDI/PIP) Índice de Gini",
+    "label": "Índice de Gini",
+    "fonte_sigla": "WDI/PIP",
     "unidade": "Índice de 0 a 100",
     "fonte": "Banco Mundial - Poverty and Inequality Platform / World Development Indicators (SI.POV.GINI)",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Mede o grau de desigualdade na distribuição de renda ou consumo entre indivíduos ou domicílios no Brasil.",
     "como_interpretar":
@@ -3495,13 +2818,14 @@
       { "ano": 2023, "valor": 51.5 },
       { "ano": 2024, "valor": 50.3 },
     ],
-    "padrao": false,
   },
   "endividamento_familias_renda": {
-    "label": "(BCB) Endividamento das Famílias",
+    "label": "Endividamento das Famílias",
+    "fonte_sigla": "BCB",
     "unidade": "% da renda anual",
     "fonte": "Banco Central do Brasil (BCB/SGS 29037)",
     "cat": "Emprego, Renda e Desigualdade",
+    "padrao": false,
     "descricao":
       "Relação entre o valor atual das dívidas das famílias com o Sistema Financeiro Nacional e a renda das famílias acumulada nos últimos doze meses.",
     "como_interpretar":
@@ -3538,7 +2862,6 @@
     "nivel_confiabilidade":
       "Alto para 2005 em diante, pois os valores vêm da série oficial SGS 29037 do Banco Central do Brasil. Baixo/inexistente para 1994 a 2004 nesta métrica específica, pois não há valores oficiais disponíveis na série consultada. Valores projetados de 2025 e 2026 do JSON original foram substituídos por dados oficiais disponíveis.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Central do Brasil - Dados Abertos - SGS 29037",
@@ -3588,10 +2911,12 @@
     ],
   },
   "ipca_anual": {
-    "label": "(IBGE) IPCA - Inflação Anual",
+    "label": "IPCA - Inflação Anual",
+    "fonte_sigla": "IBGE",
     "unidade": "% ao ano",
     "fonte": "IBGE - Sistema Nacional de Índices de Preços ao Consumidor (SNIPC)",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao":
       "Índice oficial de inflação ao consumidor no Brasil, medindo a variação média dos preços de bens e serviços consumidos pelas famílias.",
     "como_interpretar":
@@ -3719,13 +3044,14 @@
       { "ano": 2024, "valor": 4.83 },
       { "ano": 2025, "valor": 4.26 },
     ],
-    "padrao": false,
   },
   "inflacao_wdi": {
-    "label": "(WDI) Inflação ao consumidor",
+    "label": "Inflação ao consumidor",
+    "fonte_sigla": "WDI",
     "unidade": "% ao ano",
     "fonte": "Banco Mundial - World Development Indicators (FP.CPI.TOTL.ZG)",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao": "Mede a variação percentual anual dos preços ao consumidor no Brasil.",
     "como_interpretar":
       "Valores maiores indicam aumento mais rápido do custo médio de uma cesta de bens e serviços consumidos pelas famílias. Valores menores indicam desaceleração da inflação, mas não significam necessariamente queda de preços, a menos que sejam negativos.",
@@ -3797,7 +3123,6 @@
     "nivel_confiabilidade":
       "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com fonte primária no IMF International Financial Statistics. A ressalva é que séries macroeconômicas podem sofrer revisões posteriores.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Inflation, consumer prices (annual %) - Brazil",
@@ -3814,7 +3139,6 @@
       },
     ],
     "dados": [
-      { "ano": 1994, "valor": 2075.88839757325 },
       { "ano": 1995, "valor": 66.0070335542481 },
       { "ano": 1996, "valor": 15.7576656002606 },
       { "ano": 1997, "valor": 6.92671251629154 },
@@ -3848,10 +3172,12 @@
     ],
   },
   "igpm_fgv": {
-    "label": "(FGV) IGP-M - Inflação Acumulada",
+    "label": "IGP-M - Inflação Acumulada",
+    "fonte_sigla": "FGV",
     "unidade": "% a.a. (acumulado no ano)",
     "fonte": "FGV IBRE",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao":
       "O Índice Geral de Preços - Mercado (IGP-M), calculado pela FGV IBRE, mede a variação de preços em diferentes estágios da economia brasileira, combinando preços ao produtor, ao consumidor e custos da construção.",
     "como_interpretar":
@@ -3925,7 +3251,6 @@
     "nivel_confiabilidade":
       "Alto para 1994 a 2025, pois os valores foram validados contra séries e publicações da FGV IBRE, incluindo Conjuntura Estatística e press releases oficiais de fechamento anual. O valor de 1994 foi mantido por composição das variações mensais históricas disponíveis; os demais anos correspondem ao acumulado anual fechado.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "FGV IBRE - IGP", "url": "https://portalibre.fgv.br/igp" },
       {
@@ -3986,10 +3311,12 @@
     ],
   },
   "selic_aa": {
-    "label": "(BCB) Selic",
+    "label": "Selic",
+    "fonte_sigla": "BCB",
     "unidade": "% a.a.",
     "fonte": "BCB SGS 4189",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao":
       "Mede a média anual da taxa Selic acumulada no mês, anualizada com base em 252 dias úteis, conforme série oficial 4189 do SGS/BCB.",
     "como_interpretar":
@@ -4129,1848 +3456,1191 @@
       { "ano": 2024, "valor": 10.84 },
       { "ano": 2025, "valor": 14.32 },
     ],
-    "padrao": false,
   },
   "cpi_index": {
-    "label": "(FMI/WDI) Índice de Preços ao Consumidor",
+    "label": "Índice de Preços ao Consumidor",
+    "fonte_sigla": "FMI/WDI",
     "unidade": "Índice, 2010 = 100",
-    "fonte": "Fundo Monetário Internacional - International Financial Statistics, via Banco Mundial - World Development Indicators (FP.CPI.TOTL)",
+    "fonte":
+      "Fundo Monetário Internacional - International Financial Statistics, via Banco Mundial - World Development Indicators (FP.CPI.TOTL)",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a evolução do nível médio dos preços de bens e serviços de consumo no Brasil, com base 2010 igual a 100.",
-    "como_interpretar": "Valores maiores indicam aumento acumulado do nível de preços ao consumidor em relação a 2010. O índice mede inflação acumulada de preços ao consumidor, não custo de vida individual, qualidade dos bens, renda real ou poder de compra por si só.",
-    "metodologia": "O indicador corresponde ao índice de preços de bens e serviços de consumo em relação a um período de referência, com 2010 = 100. A série do Banco Mundial identifica como fonte primária o banco de dados International Financial Statistics do Fundo Monetário Internacional. O índice de preços ao consumidor geralmente utiliza fórmula de Laspeyres para medir a variação do custo de aquisição de uma cesta de bens e serviços pelo consumidor médio.",
-    "historico_metodologia": "A série WDI/IFS é padronizada internacionalmente e pode sofrer revisões quando o FMI, o Banco Mundial ou a fonte estatística nacional incorporam revisões de pesos, cestas, cobertura, classificação de itens, bases de referência ou séries históricas. No Brasil, o IPCA do IBGE é o principal índice oficial de inflação ao consumidor usado como referência nacional para metas de inflação, mas o indicador FP.CPI.TOTL é a série internacional harmonizada publicada pelo WDI/IFS. Não foi incluído dado de 2025 ou 2026 porque a série anual oficial consultada vai até 2024.",
-    "abrangencia": "Brasil, cobertura nacional conforme padronização internacional do World Development Indicators, com dados derivados da base International Financial Statistics do FMI.",
+    "padrao": false,
+    "descricao":
+      "Mede a evolução do nível médio dos preços de bens e serviços de consumo no Brasil, com base 2010 igual a 100.",
+    "como_interpretar":
+      "Valores maiores indicam aumento acumulado do nível de preços ao consumidor em relação a 2010. O índice mede inflação acumulada de preços ao consumidor, não custo de vida individual, qualidade dos bens, renda real ou poder de compra por si só.",
+    "metodologia":
+      "O indicador corresponde ao índice de preços de bens e serviços de consumo em relação a um período de referência, com 2010 = 100. A série do Banco Mundial identifica como fonte primária o banco de dados International Financial Statistics do Fundo Monetário Internacional. O índice de preços ao consumidor geralmente utiliza fórmula de Laspeyres para medir a variação do custo de aquisição de uma cesta de bens e serviços pelo consumidor médio.",
+    "historico_metodologia":
+      "A série WDI/IFS é padronizada internacionalmente e pode sofrer revisões quando o FMI, o Banco Mundial ou a fonte estatística nacional incorporam revisões de pesos, cestas, cobertura, classificação de itens, bases de referência ou séries históricas. No Brasil, o IPCA do IBGE é o principal índice oficial de inflação ao consumidor usado como referência nacional para metas de inflação, mas o indicador FP.CPI.TOTL é a série internacional harmonizada publicada pelo WDI/IFS. Não foi incluído dado de 2025 ou 2026 porque a série anual oficial consultada vai até 2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional conforme padronização internacional do World Development Indicators, com dados derivados da base International Financial Statistics do FMI.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A transição para o Real ocorreu após período de hiperinflação, e o índice ainda reflete forte elevação acumulada de preços no ano de estabilização monetária."
+        "descricao":
+          "A transição para o Real ocorreu após período de hiperinflação, e o índice ainda reflete forte elevação acumulada de preços no ano de estabilização monetária.",
       },
       {
         "ano": 1995,
         "nome": "Estabilização",
-        "descricao": "A inflação caiu fortemente após a implantação do Plano Real, reduzindo de forma abrupta o ritmo de crescimento do índice de preços."
+        "descricao":
+          "A inflação caiu fortemente após a implantação do Plano Real, reduzindo de forma abrupta o ritmo de crescimento do índice de preços.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A mudança para o regime de câmbio flutuante e a desvalorização cambial pressionaram preços, mas sem retorno ao padrão hiperinflacionário anterior."
+        "descricao":
+          "A mudança para o regime de câmbio flutuante e a desvalorização cambial pressionaram preços, mas sem retorno ao padrão hiperinflacionário anterior.",
       },
       {
         "ano": 2002,
         "nome": "Crise cambial",
-        "descricao": "A instabilidade cambial e financeira no período eleitoral pressionou a inflação e elevou o índice de preços ao consumidor."
+        "descricao":
+          "A instabilidade cambial e financeira no período eleitoral pressionou a inflação e elevou o índice de preços ao consumidor.",
       },
       {
         "ano": 2003,
         "nome": "Ajuste monetário",
-        "descricao": "A inflação anual permaneceu elevada, refletindo efeitos defasados da depreciação cambial de 2002 e política monetária restritiva posterior."
+        "descricao":
+          "A inflação anual permaneceu elevada, refletindo efeitos defasados da depreciação cambial de 2002 e política monetária restritiva posterior.",
       },
       {
         "ano": 2008,
         "nome": "Choque global",
-        "descricao": "A crise financeira global e choques de commodities afetaram preços, com aceleração moderada do índice de preços ao consumidor."
+        "descricao":
+          "A crise financeira global e choques de commodities afetaram preços, com aceleração moderada do índice de preços ao consumidor.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira, realinhamentos de preços administrados e desvalorização cambial coincidiram com aceleração relevante da inflação."
+        "descricao":
+          "A recessão brasileira, realinhamentos de preços administrados e desvalorização cambial coincidiram com aceleração relevante da inflação.",
       },
       {
         "ano": 2016,
         "nome": "Inflação alta",
-        "descricao": "A inflação permaneceu elevada no segundo ano da recessão, mantendo crescimento expressivo do índice de preços."
+        "descricao":
+          "A inflação permaneceu elevada no segundo ano da recessão, mantendo crescimento expressivo do índice de preços.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 alterou padrões de consumo, cadeias de suprimento e preços relativos, mas a inflação média anual ainda ficou moderada em comparação com 2021 e 2022."
+        "descricao":
+          "A pandemia de COVID-19 alterou padrões de consumo, cadeias de suprimento e preços relativos, mas a inflação média anual ainda ficou moderada em comparação com 2021 e 2022.",
       },
       {
         "ano": 2021,
         "nome": "Choque pós-pandemia",
-        "descricao": "A reabertura econômica, gargalos de oferta, energia e alimentos aceleraram a inflação e elevaram fortemente o índice de preços."
+        "descricao":
+          "A reabertura econômica, gargalos de oferta, energia e alimentos aceleraram a inflação e elevaram fortemente o índice de preços.",
       },
       {
         "ano": 2022,
         "nome": "Choque energético",
-        "descricao": "Pressões globais de energia, alimentos e cadeias produtivas mantiveram inflação elevada e novo avanço expressivo do índice."
-      }
+        "descricao":
+          "Pressões globais de energia, alimentos e cadeias produtivas mantiveram inflação elevada e novo avanço expressivo do índice.",
+      },
     ],
-    "comparacao_paises": "Como índice com base 2010 = 100, a comparação entre países deve focar a variação acumulada desde 2010, não o nível absoluto de preços. Em 2024, o Brasil apresentava aumento acumulado de preços bem superior ao de economias avançadas de baixa inflação, mas inferior ao de países que enfrentaram inflação crônica ou episódios recentes de inflação muito alta.",
-    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois a série é publicada pelo Banco Mundial no World Development Indicators e tem como fonte primária o International Financial Statistics do FMI. A principal ressalva é que índices de preços podem ser revisados por mudanças metodológicas, reponderações de cesta, ajustes de cobertura e revisões históricas.",
+    "comparacao_paises":
+      "Como índice com base 2010 = 100, a comparação entre países deve focar a variação acumulada desde 2010, não o nível absoluto de preços. Em 2024, o Brasil apresentava aumento acumulado de preços bem superior ao de economias avançadas de baixa inflação, mas inferior ao de países que enfrentaram inflação crônica ou episódios recentes de inflação muito alta.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação macroeconômica internacional, pois a série é publicada pelo Banco Mundial no World Development Indicators e tem como fonte primária o International Financial Statistics do FMI. A principal ressalva é que índices de preços podem ser revisados por mudanças metodológicas, reponderações de cesta, ajustes de cobertura e revisões históricas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Consumer price index (2010 = 100) - Brazil",
-        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=BR"
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata FP.CPI.TOTL",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FP.CPI.TOTL"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FP.CPI.TOTL",
       },
       {
         "titulo": "FRED - Inflation, consumer prices for Brazil, World Bank/WDI",
-        "url": "https://fred.stlouisfed.org/series/FPCPITOTLZGBRA"
+        "url": "https://fred.stlouisfed.org/series/FPCPITOTLZGBRA",
       },
-      {
-        "titulo": "FMI - International Financial Statistics",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:IFS"
-      },
+      { "titulo": "FMI - International Financial Statistics", "url": "https://data.imf.org/en/datasets/IMF.STA:IFS" },
       {
         "titulo": "IBGE - IPCA",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html"
-      }
+        "url":
+          "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 22.07154429343356
-      },
-      {
-        "ano": 1995,
-        "valor": 36.64031594114098
-      },
-      {
-        "ano": 1996,
-        "valor": 42.413974402024955
-      },
-      {
-        "ano": 1997,
-        "valor": 45.351868475586706
-      },
-      {
-        "ano": 1998,
-        "valor": 46.800895273592246
-      },
-      {
-        "ano": 1999,
-        "valor": 49.07469219953418
-      },
-      {
-        "ano": 2000,
-        "valor": 52.53158274257138
-      },
-      {
-        "ano": 2001,
-        "valor": 56.12493160361266
-      },
-      {
-        "ano": 2002,
-        "valor": 60.867580580643505
-      },
-      {
-        "ano": 2003,
-        "valor": 69.82419620030474
-      },
-      {
-        "ano": 2004,
-        "valor": 74.430627668128
-      },
-      {
-        "ano": 2005,
-        "valor": 79.54366733067458
-      },
-      {
-        "ano": 2006,
-        "valor": 82.87143084573388
-      },
-      {
-        "ano": 2007,
-        "valor": 85.88900587439682
-      },
-      {
-        "ano": 2008,
-        "valor": 90.76629372519166
-      },
-      {
-        "ano": 2009,
-        "valor": 95.20298174803098
-      },
-      {
-        "ano": 2010,
-        "valor": 100
-      },
-      {
-        "ano": 2011,
-        "valor": 106.6364496221309
-      },
-      {
-        "ano": 2012,
-        "valor": 112.3985492607838
-      },
-      {
-        "ano": 2013,
-        "valor": 119.37210444145057
-      },
-      {
-        "ano": 2014,
-        "valor": 126.92721286561117
-      },
-      {
-        "ano": 2015,
-        "valor": 138.38861456010247
-      },
-      {
-        "ano": 2016,
-        "valor": 150.48259420640787
-      },
-      {
-        "ano": 2017,
-        "valor": 155.66878623001776
-      },
-      {
-        "ano": 2018,
-        "valor": 161.37381418390567
-      },
-      {
-        "ano": 2019,
-        "valor": 167.39786028006054
-      },
-      {
-        "ano": 2020,
-        "valor": 172.77429125288793
-      },
-      {
-        "ano": 2021,
-        "valor": 187.11742505829562
-      },
-      {
-        "ano": 2022,
-        "valor": 204.48212061577473
-      },
-      {
-        "ano": 2023,
-        "valor": 213.8751352877195
-      },
-      {
-        "ano": 2024,
-        "valor": 223.21605499002638
-      }
-    ]
+      { "ano": 1994, "valor": 22.07154429343356 },
+      { "ano": 1995, "valor": 36.64031594114098 },
+      { "ano": 1996, "valor": 42.413974402024955 },
+      { "ano": 1997, "valor": 45.351868475586706 },
+      { "ano": 1998, "valor": 46.800895273592246 },
+      { "ano": 1999, "valor": 49.07469219953418 },
+      { "ano": 2000, "valor": 52.53158274257138 },
+      { "ano": 2001, "valor": 56.12493160361266 },
+      { "ano": 2002, "valor": 60.867580580643505 },
+      { "ano": 2003, "valor": 69.82419620030474 },
+      { "ano": 2004, "valor": 74.430627668128 },
+      { "ano": 2005, "valor": 79.54366733067458 },
+      { "ano": 2006, "valor": 82.87143084573388 },
+      { "ano": 2007, "valor": 85.88900587439682 },
+      { "ano": 2008, "valor": 90.76629372519166 },
+      { "ano": 2009, "valor": 95.20298174803098 },
+      { "ano": 2010, "valor": 100 },
+      { "ano": 2011, "valor": 106.6364496221309 },
+      { "ano": 2012, "valor": 112.3985492607838 },
+      { "ano": 2013, "valor": 119.37210444145057 },
+      { "ano": 2014, "valor": 126.92721286561117 },
+      { "ano": 2015, "valor": 138.38861456010247 },
+      { "ano": 2016, "valor": 150.48259420640787 },
+      { "ano": 2017, "valor": 155.66878623001776 },
+      { "ano": 2018, "valor": 161.37381418390567 },
+      { "ano": 2019, "valor": 167.39786028006054 },
+      { "ano": 2020, "valor": 172.77429125288793 },
+      { "ano": 2021, "valor": 187.11742505829562 },
+      { "ano": 2022, "valor": 204.48212061577473 },
+      { "ano": 2023, "valor": 213.8751352877195 },
+      { "ano": 2024, "valor": 223.21605499002638 },
+    ],
   },
   "inflacao_alimentos": {
-    "label": "(FAO) Inflação de Alimentos",
+    "label": "Inflação de Alimentos",
+    "fonte_sigla": "FAO",
     "unidade": "% ao ano",
-    "fonte": "FAOSTAT / Banco Mundial Data360 - Consumer Price Indices: Food price inflation (FAO_CP_23014), com referência metodológica ao CPI do FMI para alimentos e bebidas não alcoólicas",
+    "fonte":
+      "FAOSTAT / Banco Mundial Data360 - Consumer Price Indices: Food price inflation (FAO_CP_23014), com referência metodológica ao CPI do FMI para alimentos e bebidas não alcoólicas",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a variação anual dos preços ao consumidor de alimentos no Brasil, com base no índice de preços ao consumidor de alimentos.",
-    "como_interpretar": "Valores positivos indicam aumento médio dos preços de alimentos em relação ao ano anterior; valores negativos indicam deflação de alimentos. Inflação de alimentos acima da inflação geral reduz o poder de compra, especialmente de famílias de menor renda, porque alimentos têm peso proporcionalmente maior no orçamento dessas famílias.",
-    "metodologia": "A série da FAOSTAT/Banco Mundial Data360 define inflação de alimentos como a variação percentual do Índice de Preços ao Consumidor de Alimentos. O índice é padronizado internacionalmente, com base 2015=100, e deriva de dados nacionais de CPI, incluindo a divisão de alimentos e bebidas não alcoólicas quando disponível. Para o Brasil, a referência nacional subjacente é o IPCA do IBGE, grupo Alimentação e Bebidas, harmonizado para comparação internacional.",
-    "historico_metodologia": "A FAOSTAT informa que os índices gerais e de alimentos são atualizados trimestralmente e que a base metodológica atual usa dados do FMI, UNSD, OCDE e institutos nacionais de estatística. Houve harmonização da base para 2015=100 e uso de procedimentos de imputação quando há lacunas. Para manter apenas dados concretos e evitar estimativas, foram mantidos somente anos com valores oficiais observados na série anual disponível. A série brasileira também pode ser afetada por mudanças de ponderação do IPCA associadas às Pesquisas de Orçamentos Familiares do IBGE.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da FAOSTAT e Banco Mundial Data360 para comparação entre países.",
+    "padrao": false,
+    "descricao":
+      "Mede a variação anual dos preços ao consumidor de alimentos no Brasil, com base no índice de preços ao consumidor de alimentos.",
+    "como_interpretar":
+      "Valores positivos indicam aumento médio dos preços de alimentos em relação ao ano anterior; valores negativos indicam deflação de alimentos. Inflação de alimentos acima da inflação geral reduz o poder de compra, especialmente de famílias de menor renda, porque alimentos têm peso proporcionalmente maior no orçamento dessas famílias.",
+    "metodologia":
+      "A série da FAOSTAT/Banco Mundial Data360 define inflação de alimentos como a variação percentual do Índice de Preços ao Consumidor de Alimentos. O índice é padronizado internacionalmente, com base 2015=100, e deriva de dados nacionais de CPI, incluindo a divisão de alimentos e bebidas não alcoólicas quando disponível. Para o Brasil, a referência nacional subjacente é o IPCA do IBGE, grupo Alimentação e Bebidas, harmonizado para comparação internacional.",
+    "historico_metodologia":
+      "A FAOSTAT informa que os índices gerais e de alimentos são atualizados trimestralmente e que a base metodológica atual usa dados do FMI, UNSD, OCDE e institutos nacionais de estatística. Houve harmonização da base para 2015=100 e uso de procedimentos de imputação quando há lacunas. Para manter apenas dados concretos e evitar estimativas, foram mantidos somente anos com valores oficiais observados na série anual disponível. A série brasileira também pode ser afetada por mudanças de ponderação do IPCA associadas às Pesquisas de Orçamentos Familiares do IBGE.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional da FAOSTAT e Banco Mundial Data360 para comparação entre países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária reduziu drasticamente a hiperinflação brasileira e tornou a série pós-1994 mais comparável."
+        "descricao":
+          "A estabilização monetária reduziu drasticamente a hiperinflação brasileira e tornou a série pós-1994 mais comparável.",
       },
       {
         "ano": 2002,
         "nome": "Choque cambial",
-        "descricao": "A forte depreciação cambial e a incerteza macroeconômica pressionaram preços administrados, bens comercializáveis e alimentos."
+        "descricao":
+          "A forte depreciação cambial e a incerteza macroeconômica pressionaram preços administrados, bens comercializáveis e alimentos.",
       },
       {
         "ano": 2008,
         "nome": "Crise alimentos",
-        "descricao": "A alta internacional de commodities agrícolas em 2007-2008 elevou pressões sobre alimentos em vários países, incluindo o Brasil."
+        "descricao":
+          "A alta internacional de commodities agrícolas em 2007-2008 elevou pressões sobre alimentos em vários países, incluindo o Brasil.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira, a depreciação cambial e choques de custos elevaram a inflação geral e contribuíram para pressão sobre alimentos."
+        "descricao":
+          "A recessão brasileira, a depreciação cambial e choques de custos elevaram a inflação geral e contribuíram para pressão sobre alimentos.",
       },
       {
         "ano": 2017,
         "nome": "Supersafra",
-        "descricao": "A boa oferta agrícola contribuiu para queda ou forte desaceleração dos preços de alimentos no Brasil."
+        "descricao":
+          "A boa oferta agrícola contribuiu para queda ou forte desaceleração dos preços de alimentos no Brasil.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19, a depreciação cambial, choques logísticos e mudanças de demanda pressionaram fortemente alimentos."
+        "descricao":
+          "A pandemia de COVID-19, a depreciação cambial, choques logísticos e mudanças de demanda pressionaram fortemente alimentos.",
       },
       {
         "ano": 2022,
         "nome": "Guerra Ucrânia",
-        "descricao": "A guerra entre Rússia e Ucrânia elevou preços internacionais de grãos, energia e fertilizantes, afetando custos globais de alimentos."
+        "descricao":
+          "A guerra entre Rússia e Ucrânia elevou preços internacionais de grãos, energia e fertilizantes, afetando custos globais de alimentos.",
       },
       {
         "ano": 2024,
         "nome": "Choques climáticos",
-        "descricao": "Eventos climáticos adversos e pressões em itens como carnes, café, frutas e alimentos in natura contribuíram para nova aceleração de alimentos."
-      }
+        "descricao":
+          "Eventos climáticos adversos e pressões em itens como carnes, café, frutas e alimentos in natura contribuíram para nova aceleração de alimentos.",
+      },
     ],
-    "comparacao_paises": "O Brasil apresenta inflação de alimentos historicamente mais volátil que economias avançadas, em parte por maior exposição cambial, choques agrícolas, peso relevante de alimentos na cesta de consumo e influência de commodities. Em 2024, a alta de alimentos no Brasil ficou acima da inflação geral brasileira e acima do patamar observado em várias economias avançadas, mas abaixo de países com inflação alimentar extrema, como Argentina e Turquia.",
-    "nivel_confiabilidade": "Alto, pois a série é baseada em fontes oficiais internacionais e nacionais: FAOSTAT, Banco Mundial Data360, FMI CPI e dados nacionais do IBGE. A principal ressalva é que a FAOSTAT pode aplicar harmonização, reescalonamento e imputação em parte das observações globais; por isso, para uso estritamente oficial nacional, o IPCA/IBGE deve ser consultado como fonte primária complementar.",
+    "comparacao_paises":
+      "O Brasil apresenta inflação de alimentos historicamente mais volátil que economias avançadas, em parte por maior exposição cambial, choques agrícolas, peso relevante de alimentos na cesta de consumo e influência de commodities. Em 2024, a alta de alimentos no Brasil ficou acima da inflação geral brasileira e acima do patamar observado em várias economias avançadas, mas abaixo de países com inflação alimentar extrema, como Argentina e Turquia.",
+    "nivel_confiabilidade":
+      "Alto, pois a série é baseada em fontes oficiais internacionais e nacionais: FAOSTAT, Banco Mundial Data360, FMI CPI e dados nacionais do IBGE. A principal ressalva é que a FAOSTAT pode aplicar harmonização, reescalonamento e imputação em parte das observações globais; por isso, para uso estritamente oficial nacional, o IPCA/IBGE deve ser consultado como fonte primária complementar.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial Data360 - FAOSTAT Consumer Price Indices: Food price inflation (FAO_CP_23014)",
-        "url": "https://data360files.worldbank.org/data360-data/data/FAO_CP/FAO_CP_23014_WIDEF.csv"
+        "url": "https://data360files.worldbank.org/data360-data/data/FAO_CP/FAO_CP_23014_WIDEF.csv",
       },
       {
         "titulo": "Banco Mundial Data360 - FAOSTAT Consumer Price Indices Dataset",
-        "url": "https://data360.worldbank.org/en/dataset/FAO_CP"
+        "url": "https://data360.worldbank.org/en/dataset/FAO_CP",
       },
-      {
-        "titulo": "FAOSTAT - Consumer Price Indices",
-        "url": "https://www.fao.org/faostat/en/#data/CP"
-      },
+      { "titulo": "FAOSTAT - Consumer Price Indices", "url": "https://www.fao.org/faostat/en/#data/CP" },
       {
         "titulo": "FAO - Food and General Consumer Price Indices Methodology",
-        "url": "https://files-faostat.fao.org/production/CP/CP_e.pdf"
+        "url": "https://files-faostat.fao.org/production/CP/CP_e.pdf",
       },
-      {
-        "titulo": "FMI - Consumer Price Index (CPI) Dataset",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:CPI"
-      },
+      { "titulo": "FMI - Consumer Price Index (CPI) Dataset", "url": "https://data.imf.org/en/datasets/IMF.STA:CPI" },
       {
         "titulo": "IBGE SIDRA - Tabela 7060: IPCA por grupos, subgrupos, itens e subitens",
-        "url": "https://sidra.ibge.gov.br/tabela/7060"
+        "url": "https://sidra.ibge.gov.br/tabela/7060",
       },
       {
         "titulo": "IBGE - IPCA: Índice Nacional de Preços ao Consumidor Amplo",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html"
-      }
+        "url":
+          "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 18.57
-      },
-      {
-        "ano": 1995,
-        "valor": 22.0
-      },
-      {
-        "ano": 1996,
-        "valor": 8.56
-      },
-      {
-        "ano": 1997,
-        "valor": -0.89
-      },
-      {
-        "ano": 1998,
-        "valor": 1.56
-      },
-      {
-        "ano": 1999,
-        "valor": 7.92
-      },
-      {
-        "ano": 2000,
-        "valor": 5.32
-      },
-      {
-        "ano": 2001,
-        "valor": 9.63
-      },
-      {
-        "ano": 2002,
-        "valor": 19.47
-      },
-      {
-        "ano": 2003,
-        "valor": 8.48
-      },
-      {
-        "ano": 2004,
-        "valor": 3.86
-      },
-      {
-        "ano": 2005,
-        "valor": 1.46
-      },
-      {
-        "ano": 2006,
-        "valor": 1.23
-      },
-      {
-        "ano": 2007,
-        "valor": 10.79
-      },
-      {
-        "ano": 2008,
-        "valor": 11.11
-      },
-      {
-        "ano": 2009,
-        "valor": 3.18
-      },
-      {
-        "ano": 2010,
-        "valor": 10.39
-      },
-      {
-        "ano": 2011,
-        "valor": 7.18
-      },
-      {
-        "ano": 2012,
-        "valor": 9.86
-      },
-      {
-        "ano": 2013,
-        "valor": 8.48
-      },
-      {
-        "ano": 2014,
-        "valor": 8.03
-      },
-      {
-        "ano": 2015,
-        "valor": 12.03
-      },
-      {
-        "ano": 2016,
-        "valor": 8.62
-      },
-      {
-        "ano": 2017,
-        "valor": -1.87
-      },
-      {
-        "ano": 2018,
-        "valor": 4.04
-      },
-      {
-        "ano": 2019,
-        "valor": 6.37
-      },
-      {
-        "ano": 2020,
-        "valor": 14.09
-      },
-      {
-        "ano": 2021,
-        "valor": 7.94
-      },
-      {
-        "ano": 2022,
-        "valor": 11.64
-      },
-      {
-        "ano": 2023,
-        "valor": 1.03
-      },
-      {
-        "ano": 2024,
-        "valor": 7.69
-      }
+      { "ano": 1994, "valor": 18.57 },
+      { "ano": 1995, "valor": 22 },
+      { "ano": 1996, "valor": 8.56 },
+      { "ano": 1997, "valor": -0.89 },
+      { "ano": 1998, "valor": 1.56 },
+      { "ano": 1999, "valor": 7.92 },
+      { "ano": 2000, "valor": 5.32 },
+      { "ano": 2001, "valor": 9.63 },
+      { "ano": 2002, "valor": 19.47 },
+      { "ano": 2003, "valor": 8.48 },
+      { "ano": 2004, "valor": 3.86 },
+      { "ano": 2005, "valor": 1.46 },
+      { "ano": 2006, "valor": 1.23 },
+      { "ano": 2007, "valor": 10.79 },
+      { "ano": 2008, "valor": 11.11 },
+      { "ano": 2009, "valor": 3.18 },
+      { "ano": 2010, "valor": 10.39 },
+      { "ano": 2011, "valor": 7.18 },
+      { "ano": 2012, "valor": 9.86 },
+      { "ano": 2013, "valor": 8.48 },
+      { "ano": 2014, "valor": 8.03 },
+      { "ano": 2015, "valor": 12.03 },
+      { "ano": 2016, "valor": 8.62 },
+      { "ano": 2017, "valor": -1.87 },
+      { "ano": 2018, "valor": 4.04 },
+      { "ano": 2019, "valor": 6.37 },
+      { "ano": 2020, "valor": 14.09 },
+      { "ano": 2021, "valor": 7.94 },
+      { "ano": 2022, "valor": 11.64 },
+      { "ano": 2023, "valor": 1.03 },
+      { "ano": 2024, "valor": 7.69 },
     ],
-    "padrao": false
   },
   "deflator_pib_inflacao_ampla": {
-    "label": "(WDI) Deflator Do PIB - Inflação Ampla Da Economia",
+    "label": "Deflator Do PIB - Inflação Ampla Da Economia",
+    "fonte_sigla": "WDI",
     "unidade": "% ao ano",
-    "fonte": "Banco Mundial - World Development Indicators (NY.GDP.DEFL.KD.ZG), com referência metodológica complementar do FMI WEO",
+    "fonte":
+      "Banco Mundial - World Development Indicators (NY.GDP.DEFL.KD.ZG), com referência metodológica complementar do FMI WEO",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a variação anual do deflator implícito do PIB do Brasil, captando a mudança média dos preços de todos os bens e serviços finais produzidos na economia.",
-    "como_interpretar": "Valores maiores indicam maior inflação ampla da economia medida pelas contas nacionais. Diferente do IPCA/CPI, o deflator do PIB cobre a produção doméstica final e não apenas uma cesta de consumo das famílias. Pode divergir da inflação ao consumidor quando mudam preços de exportações, investimento, governo ou composição do PIB.",
-    "metodologia": "O Banco Mundial define a inflação pelo deflator do PIB como a taxa anual de crescimento do deflator implícito do PIB. O deflator implícito do PIB é calculado como a razão entre o PIB em moeda local corrente e o PIB em moeda local constante. A série usada é a NY.GDP.DEFL.KD.ZG do WDI, baseada em contas nacionais oficiais, arquivos de contas nacionais, OCDE e procedimentos de padronização do Banco Mundial. Para o Brasil, os valores refletem a série anual observada disponível até 2024.",
-    "historico_metodologia": "A série pode ser revisada quando o IBGE revisa o Sistema de Contas Nacionais, atualiza pesos, fontes primárias, classificações, ano de referência ou incorpora mudanças metodológicas internacionais. Mudanças relevantes no Brasil incluem a adoção da referência 2000, divulgada em 2007, e a referência 2010, divulgada em 2015, com alterações como inclusão de P&D e exploração mineral na formação bruta de capital fixo. Portanto, apesar de a série ser oficial e comparável internacionalmente, valores históricos podem sofrer revisões quando as contas nacionais são reprocessadas.",
-    "abrangencia": "Brasil, cobertura nacional, anual, padronizada pelo World Development Indicators para comparação internacional.",
+    "padrao": false,
+    "descricao":
+      "Mede a variação anual do deflator implícito do PIB do Brasil, captando a mudança média dos preços de todos os bens e serviços finais produzidos na economia.",
+    "como_interpretar":
+      "Valores maiores indicam maior inflação ampla da economia medida pelas contas nacionais. Diferente do IPCA/CPI, o deflator do PIB cobre a produção doméstica final e não apenas uma cesta de consumo das famílias. Pode divergir da inflação ao consumidor quando mudam preços de exportações, investimento, governo ou composição do PIB.",
+    "metodologia":
+      "O Banco Mundial define a inflação pelo deflator do PIB como a taxa anual de crescimento do deflator implícito do PIB. O deflator implícito do PIB é calculado como a razão entre o PIB em moeda local corrente e o PIB em moeda local constante. A série usada é a NY.GDP.DEFL.KD.ZG do WDI, baseada em contas nacionais oficiais, arquivos de contas nacionais, OCDE e procedimentos de padronização do Banco Mundial. Para o Brasil, os valores refletem a série anual observada disponível até 2024.",
+    "historico_metodologia":
+      "A série pode ser revisada quando o IBGE revisa o Sistema de Contas Nacionais, atualiza pesos, fontes primárias, classificações, ano de referência ou incorpora mudanças metodológicas internacionais. Mudanças relevantes no Brasil incluem a adoção da referência 2000, divulgada em 2007, e a referência 2010, divulgada em 2015, com alterações como inclusão de P&D e exploração mineral na formação bruta de capital fixo. Portanto, apesar de a série ser oficial e comparável internacionalmente, valores históricos podem sofrer revisões quando as contas nacionais são reprocessadas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, anual, padronizada pelo World Development Indicators para comparação internacional.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária reduziu drasticamente a inflação após o período de hiperinflação, mas o valor anual de 1994 ainda captura a transição inflacionária do início do ano."
+        "descricao":
+          "A estabilização monetária reduziu drasticamente a inflação após o período de hiperinflação, mas o valor anual de 1994 ainda captura a transição inflacionária do início do ano.",
       },
       {
         "ano": 1995,
         "nome": "Estabilização",
-        "descricao": "Após a implantação do Real, o deflator do PIB caiu fortemente em relação a 1994, refletindo a desinflação da economia brasileira."
+        "descricao":
+          "Após a implantação do Real, o deflator do PIB caiu fortemente em relação a 1994, refletindo a desinflação da economia brasileira.",
       },
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A desvalorização do real e a mudança do regime cambial coincidem com reaceleração do deflator do PIB."
+        "descricao":
+          "A desvalorização do real e a mudança do regime cambial coincidem com reaceleração do deflator do PIB.",
       },
       {
         "ano": 2002,
         "nome": "Choque cambial",
-        "descricao": "A depreciação cambial e a incerteza macroeconômica elevaram a inflação ampla medida pelo deflator."
+        "descricao":
+          "A depreciação cambial e a incerteza macroeconômica elevaram a inflação ampla medida pelo deflator.",
       },
       {
         "ano": 2003,
         "nome": "Ajuste macro",
-        "descricao": "A inflação ampla permaneceu elevada em 2003, refletindo efeitos defasados do choque cambial anterior e aperto macroeconômico."
+        "descricao":
+          "A inflação ampla permaneceu elevada em 2003, refletindo efeitos defasados do choque cambial anterior e aperto macroeconômico.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional afetou preços relativos, demanda e atividade econômica, coincidindo com aumento do deflator do PIB."
+        "descricao":
+          "A crise financeira internacional afetou preços relativos, demanda e atividade econômica, coincidindo com aumento do deflator do PIB.",
       },
       {
         "ano": 2016,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e choques de preços administrados e relativos mantiveram a inflação ampla elevada."
+        "descricao":
+          "A recessão brasileira e choques de preços administrados e relativos mantiveram a inflação ampla elevada.",
       },
       {
         "ano": 2017,
         "nome": "Desinflação",
-        "descricao": "A queda da inflação e a fraqueza da demanda após a recessão reduziram fortemente o deflator do PIB."
+        "descricao":
+          "A queda da inflação e a fraqueza da demanda após a recessão reduziram fortemente o deflator do PIB.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A recuperação pós-pandemia, choques de oferta, commodities e câmbio elevaram de forma expressiva o deflator do PIB."
+        "descricao":
+          "A recuperação pós-pandemia, choques de oferta, commodities e câmbio elevaram de forma expressiva o deflator do PIB.",
       },
       {
         "ano": 2024,
         "nome": "Inflação moderada",
-        "descricao": "A inflação ampla desacelerou em relação a 2021 e 2022, embora o FMI tenha registrado rebote inflacionário em 2024 associado à demanda forte, alimentos e depreciação cambial."
-      }
+        "descricao":
+          "A inflação ampla desacelerou em relação a 2021 e 2022, embora o FMI tenha registrado rebote inflacionário em 2024 associado à demanda forte, alimentos e depreciação cambial.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 4,0797% no deflator do PIB, acima de economias avançadas típicas e próximo de uma inflação ampla moderada para padrões internacionais recentes. Ainda assim, a comparação deve ser feita com cautela: o deflator do PIB depende da estrutura produtiva de cada país, dos preços de exportação, importação, investimento, governo e consumo, não sendo equivalente direto ao índice de preços ao consumidor.",
-    "nivel_confiabilidade": "Muito alto para série macroeconômica oficial comparável internacionalmente. Os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e padronização internacional. A principal ressalva é que contas nacionais e deflatores podem ser revisados retroativamente por atualização metodológica, revisão de fontes e mudança de ano de referência.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 4,0797% no deflator do PIB, acima de economias avançadas típicas e próximo de uma inflação ampla moderada para padrões internacionais recentes. Ainda assim, a comparação deve ser feita com cautela: o deflator do PIB depende da estrutura produtiva de cada país, dos preços de exportação, importação, investimento, governo e consumo, não sendo equivalente direto ao índice de preços ao consumidor.",
+    "nivel_confiabilidade":
+      "Muito alto para série macroeconômica oficial comparável internacionalmente. Os dados vêm do World Development Indicators do Banco Mundial, baseado em contas nacionais oficiais e padronização internacional. A principal ressalva é que contas nacionais e deflatores podem ser revisados retroativamente por atualização metodológica, revisão de fontes e mudança de ano de referência.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Inflation, GDP deflator (annual %) - Brazil",
-        "url": "https://data.worldbank.org/indicator/NY.GDP.DEFL.KD.ZG?locations=BR"
+        "url": "https://data.worldbank.org/indicator/NY.GDP.DEFL.KD.ZG?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata NY.GDP.DEFL.KD.ZG",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.DEFL.KD.ZG"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NY.GDP.DEFL.KD.ZG",
       },
       {
         "titulo": "Banco Mundial Data360 - WDI NY.GDP.DEFL.KD.ZG CSV",
-        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_NY_GDP_DEFL_KD_ZG_WIDEF.csv"
+        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_NY_GDP_DEFL_KD_ZG_WIDEF.csv",
       },
       {
         "titulo": "FMI - World Economic Outlook Databases",
-        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases",
       },
       {
         "titulo": "FMI - Brazil 2025 Article IV Consultation",
-        "url": "https://www.imf.org/en/publications/cr/issues/2025/07/16/brazil-2025-article-iv-consultation-press-release-staff-report-and-statement-by-the-568678"
+        "url":
+          "https://www.imf.org/en/publications/cr/issues/2025/07/16/brazil-2025-article-iv-consultation-press-release-staff-report-and-statement-by-the-568678",
       },
       {
         "titulo": "IBGE - Sistema de Contas Nacionais Trimestrais",
-        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9300-contas-nacionais-trimestrais.html"
+        "url": "https://www.ibge.gov.br/estatisticas/economicas/servicos/9300-contas-nacionais-trimestrais.html",
       },
       {
         "titulo": "IBGE - Sistema de Contas Nacionais Brasil, Referência 2010",
-        "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/272becb827a896fa8ce5b6fd476288ea.pdf"
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/272becb827a896fa8ce5b6fd476288ea.pdf",
       },
       {
         "titulo": "IBGE - Nova Série do Sistema de Contas Nacionais, Referência 2000",
-        "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13264-asi-ibge-divulga-nova-serie-do-sistema-de-contas-nacionais"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13264-asi-ibge-divulga-nova-serie-do-sistema-de-contas-nacionais",
+      },
     ],
     "dados": [
-      {
-        "ano": 1996,
-        "valor": 18.456243770341075
-      },
-      {
-        "ano": 1997,
-        "valor": 7.729023410047816
-      },
-      {
-        "ano": 1998,
-        "valor": 4.924361586752909
-      },
-      {
-        "ano": 1999,
-        "valor": 8.010500876868292
-      },
-      {
-        "ano": 2000,
-        "valor": 5.606065152717775
-      },
-      {
-        "ano": 2001,
-        "valor": 8.225094316433413
-      },
-      {
-        "ano": 2002,
-        "valor": 9.798112234313109
-      },
-      {
-        "ano": 2003,
-        "valor": 14.091021527267017
-      },
-      {
-        "ano": 2004,
-        "valor": 7.752060759462694
-      },
-      {
-        "ano": 2005,
-        "valor": 7.431224757439779
-      },
-      {
-        "ano": 2006,
-        "valor": 6.77427409299591
-      },
-      {
-        "ano": 2007,
-        "valor": 6.439038101761412
-      },
-      {
-        "ano": 2008,
-        "valor": 8.778552729858589
-      },
-      {
-        "ano": 2009,
-        "valor": 7.313482741521511
-      },
-      {
-        "ano": 2010,
-        "valor": 8.423338339283376
-      },
-      {
-        "ano": 2011,
-        "valor": 8.318592219748908
-      },
-      {
-        "ano": 2012,
-        "valor": 7.943126937476279
-      },
-      {
-        "ano": 2013,
-        "valor": 7.50456453269075
-      },
-      {
-        "ano": 2014,
-        "valor": 7.846709751198432
-      },
-      {
-        "ano": 2015,
-        "valor": 7.566175007869049
-      },
-      {
-        "ano": 2016,
-        "valor": 8.10360437332622
-      },
-      {
-        "ano": 2017,
-        "valor": 3.6713845041894473
-      },
-      {
-        "ano": 2018,
-        "valor": 4.493534327832307
-      },
-      {
-        "ano": 2019,
-        "valor": 4.224258863782367
-      },
-      {
-        "ano": 2020,
-        "valor": 6.472499623112739
-      },
-      {
-        "ano": 2021,
-        "valor": 13.047270859634281
-      },
-      {
-        "ano": 2022,
-        "valor": 8.57028196142548
-      },
-      {
-        "ano": 2023,
-        "valor": 5.159501075019961
-      },
-      {
-        "ano": 2024,
-        "valor": 4.079674484396207
-      }
+      { "ano": 1996, "valor": 18.456243770341075 },
+      { "ano": 1997, "valor": 7.729023410047816 },
+      { "ano": 1998, "valor": 4.924361586752909 },
+      { "ano": 1999, "valor": 8.010500876868292 },
+      { "ano": 2000, "valor": 5.606065152717775 },
+      { "ano": 2001, "valor": 8.225094316433413 },
+      { "ano": 2002, "valor": 9.798112234313109 },
+      { "ano": 2003, "valor": 14.091021527267017 },
+      { "ano": 2004, "valor": 7.752060759462694 },
+      { "ano": 2005, "valor": 7.431224757439779 },
+      { "ano": 2006, "valor": 6.77427409299591 },
+      { "ano": 2007, "valor": 6.439038101761412 },
+      { "ano": 2008, "valor": 8.778552729858589 },
+      { "ano": 2009, "valor": 7.313482741521511 },
+      { "ano": 2010, "valor": 8.423338339283376 },
+      { "ano": 2011, "valor": 8.318592219748908 },
+      { "ano": 2012, "valor": 7.943126937476279 },
+      { "ano": 2013, "valor": 7.50456453269075 },
+      { "ano": 2014, "valor": 7.846709751198432 },
+      { "ano": 2015, "valor": 7.566175007869049 },
+      { "ano": 2016, "valor": 8.10360437332622 },
+      { "ano": 2017, "valor": 3.6713845041894473 },
+      { "ano": 2018, "valor": 4.493534327832307 },
+      { "ano": 2019, "valor": 4.224258863782367 },
+      { "ano": 2020, "valor": 6.472499623112739 },
+      { "ano": 2021, "valor": 13.047270859634281 },
+      { "ano": 2022, "valor": 8.57028196142548 },
+      { "ano": 2023, "valor": 5.159501075019961 },
+      { "ano": 2024, "valor": 4.079674484396207 },
     ],
-    "padrao": false
   },
   "taxa_real_juros": {
-    "label": "(WDI/FMI) Taxa Real de Juros",
+    "label": "Taxa Real de Juros",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% ao ano",
-    "fonte": "Banco Mundial - World Development Indicators; Fundo Monetário Internacional - International Financial Statistics (FR.INR.RINR)",
+    "fonte":
+      "Banco Mundial - World Development Indicators; Fundo Monetário Internacional - International Financial Statistics (FR.INR.RINR)",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a taxa de juros real do Brasil, calculada como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB.",
-    "como_interpretar": "Valores maiores indicam custo real mais elevado do crédito após descontar a inflação medida pelo deflator do PIB. Valores menores indicam crédito real menos caro. A comparação entre países deve ser feita com cautela, pois as condições, prazos, riscos e estruturas das taxas de empréstimo diferem entre sistemas financeiros.",
-    "metodologia": "O indicador FR.INR.RINR do World Development Indicators mede a taxa de juros de empréstimo ajustada pela inflação, usando o deflator do PIB como medida de inflação. A fonte primária da taxa de juros é a base International Financial Statistics do FMI, combinada pelo Banco Mundial com dados do deflator do PIB. O indicador é expresso como porcentagem anual.",
-    "historico_metodologia": "A metodologia oficial define a taxa real de juros como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB. A série do Banco Mundial/WDI para o Brasil possui dados anuais observados de 1997 a 2024; não há valores publicados para 1994, 1995 e 1996 na série FR.INR.RINR consultada. Os valores podem ser revisados quando o FMI atualiza as séries de juros, quando o Banco Mundial atualiza o WDI ou quando as contas nacionais/deflator do PIB são revisados.",
-    "abrangencia": "Brasil, cobertura nacional, série anual padronizada internacionalmente pelo World Development Indicators para comparação com outros países.",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa de juros real do Brasil, calculada como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam custo real mais elevado do crédito após descontar a inflação medida pelo deflator do PIB. Valores menores indicam crédito real menos caro. A comparação entre países deve ser feita com cautela, pois as condições, prazos, riscos e estruturas das taxas de empréstimo diferem entre sistemas financeiros.",
+    "metodologia":
+      "O indicador FR.INR.RINR do World Development Indicators mede a taxa de juros de empréstimo ajustada pela inflação, usando o deflator do PIB como medida de inflação. A fonte primária da taxa de juros é a base International Financial Statistics do FMI, combinada pelo Banco Mundial com dados do deflator do PIB. O indicador é expresso como porcentagem anual.",
+    "historico_metodologia":
+      "A metodologia oficial define a taxa real de juros como a taxa de juros de empréstimo ajustada pela inflação medida pelo deflator do PIB. A série do Banco Mundial/WDI para o Brasil possui dados anuais observados de 1997 a 2024; não há valores publicados para 1994, 1995 e 1996 na série FR.INR.RINR consultada. Os valores podem ser revisados quando o FMI atualiza as séries de juros, quando o Banco Mundial atualiza o WDI ou quando as contas nacionais/deflator do PIB são revisados.",
+    "abrangencia":
+      "Brasil, cobertura nacional, série anual padronizada internacionalmente pelo World Development Indicators para comparação com outros países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1998,
         "nome": "Crise cambial",
-        "descricao": "A combinação de juros nominais elevados e inflação medida pelo deflator do PIB produziu o maior valor da série em 1998."
+        "descricao":
+          "A combinação de juros nominais elevados e inflação medida pelo deflator do PIB produziu o maior valor da série em 1998.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A transição para o regime de câmbio flutuante e o ajuste monetário mantiveram a taxa real de juros em patamar muito elevado."
+        "descricao":
+          "A transição para o regime de câmbio flutuante e o ajuste monetário mantiveram a taxa real de juros em patamar muito elevado.",
       },
       {
         "ano": 2003,
         "nome": "Aperto monetário",
-        "descricao": "O período de incerteza macroeconômica e política monetária restritiva manteve a taxa real de juros acima de 40%."
+        "descricao":
+          "O período de incerteza macroeconômica e política monetária restritiva manteve a taxa real de juros acima de 40%.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional e a resposta de política monetária coincidiram com queda da taxa real de juros em relação aos anos anteriores."
+        "descricao":
+          "A crise financeira internacional e a resposta de política monetária coincidiram com queda da taxa real de juros em relação aos anos anteriores.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e o ambiente de inflação elevada coincidiram com forte aumento da taxa real de juros medida pela série."
+        "descricao":
+          "A recessão brasileira e o ambiente de inflação elevada coincidiram com forte aumento da taxa real de juros medida pela série.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão e a política monetária restritiva mantiveram a taxa real de juros em nível muito alto."
+        "descricao":
+          "A continuidade da recessão e a política monetária restritiva mantiveram a taxa real de juros em nível muito alto.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "Durante a pandemia de COVID-19, a redução dos juros nominais e o choque econômico levaram a nova queda da taxa real de juros."
+        "descricao":
+          "Durante a pandemia de COVID-19, a redução dos juros nominais e o choque econômico levaram a nova queda da taxa real de juros.",
       },
       {
         "ano": 2021,
         "nome": "Mínima histórica",
-        "descricao": "A série atingiu seu menor valor em 2021, em meio ao período de juros nominais ainda baixos e aceleração posterior da inflação."
+        "descricao":
+          "A série atingiu seu menor valor em 2021, em meio ao período de juros nominais ainda baixos e aceleração posterior da inflação.",
       },
       {
         "ano": 2022,
         "nome": "Alta Selic",
-        "descricao": "O ciclo de aperto monetário iniciado após a alta da inflação elevou novamente a taxa real de juros."
+        "descricao":
+          "O ciclo de aperto monetário iniciado após a alta da inflação elevou novamente a taxa real de juros.",
       },
       {
         "ano": 2024,
         "nome": "Juro elevado",
-        "descricao": "Apesar da queda em relação a 2023, a taxa real de juros permaneceu muito alta em 2024 no comparativo internacional."
-      }
+        "descricao":
+          "Apesar da queda em relação a 2023, a taxa real de juros permaneceu muito alta em 2024 no comparativo internacional.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil aparece entre os países com maior taxa real de juros na série FR.INR.RINR do Banco Mundial, com valor de aproximadamente 34,729% ao ano. Esse nível é muito superior ao observado na maioria das economias avançadas e emergentes, mas a comparação deve ser feita com cautela porque a metodologia usa taxa de empréstimo e deflator do PIB, não a Selic real ex-ante.",
-    "nivel_confiabilidade": "Alto para uma série macroeconômica oficial e comparável internacionalmente, pois os dados são publicados pelo World Development Indicators do Banco Mundial com base no International Financial Statistics do FMI e em dados do deflator do PIB. A principal limitação é a comparabilidade internacional imperfeita das taxas de empréstimo, pois termos, riscos, prazos e estrutura do crédito diferem entre países.",
+    "comparacao_paises":
+      "Em 2024, o Brasil aparece entre os países com maior taxa real de juros na série FR.INR.RINR do Banco Mundial, com valor de aproximadamente 34,729% ao ano. Esse nível é muito superior ao observado na maioria das economias avançadas e emergentes, mas a comparação deve ser feita com cautela porque a metodologia usa taxa de empréstimo e deflator do PIB, não a Selic real ex-ante.",
+    "nivel_confiabilidade":
+      "Alto para uma série macroeconômica oficial e comparável internacionalmente, pois os dados são publicados pelo World Development Indicators do Banco Mundial com base no International Financial Statistics do FMI e em dados do deflator do PIB. A principal limitação é a comparabilidade internacional imperfeita das taxas de empréstimo, pois termos, riscos, prazos e estrutura do crédito diferem entre países.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Real interest rate (%) - Brazil",
-        "url": "https://data.worldbank.org/indicator/FR.INR.RINR?locations=BR"
+        "url": "https://data.worldbank.org/indicator/FR.INR.RINR?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata FR.INR.RINR",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.RINR"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.RINR",
       },
       {
         "titulo": "CEIC - Brazil BR: Real Interest Rate - World Bank/WDI",
-        "url": "https://www.ceicdata.com/en/brazil/interest-rates/br-real-interest-rate"
-      }
+        "url": "https://www.ceicdata.com/en/brazil/interest-rates/br-real-interest-rate",
+      },
     ],
     "dados": [
-      {
-        "ano": 1997,
-        "valor": 65.4088449795992
-      },
-      {
-        "ano": 1998,
-        "valor": 77.6168379948237
-      },
-      {
-        "ano": 1999,
-        "valor": 67.0609170941772
-      },
-      {
-        "ano": 2000,
-        "valor": 48.5047281998625
-      },
-      {
-        "ano": 2001,
-        "valor": 45.6378187103224
-      },
-      {
-        "ano": 2002,
-        "valor": 48.3404374454115
-      },
-      {
-        "ano": 2003,
-        "valor": 46.4473988425047
-      },
-      {
-        "ano": 2004,
-        "valor": 43.7791527165785
-      },
-      {
-        "ano": 2005,
-        "valor": 44.6351688638607
-      },
-      {
-        "ano": 2006,
-        "valor": 41.2403264526711
-      },
-      {
-        "ano": 2007,
-        "valor": 35.0225154695215
-      },
-      {
-        "ano": 2008,
-        "valor": 35.3667577965037
-      },
-      {
-        "ano": 2009,
-        "valor": 34.7920096326271
-      },
-      {
-        "ano": 2010,
-        "valor": 29.1158055214655
-      },
-      {
-        "ano": 2011,
-        "valor": 32.8334595068102
-      },
-      {
-        "ano": 2012,
-        "valor": 26.5820905307869
-      },
-      {
-        "ano": 2013,
-        "valor": 18.4988444166435
-      },
-      {
-        "ano": 2014,
-        "valor": 22.403672441435
-      },
-      {
-        "ano": 2015,
-        "valor": 33.832343966101
-      },
-      {
-        "ano": 2016,
-        "valor": 40.6983614489962
-      },
-      {
-        "ano": 2017,
-        "valor": 41.7138078720244
-      },
-      {
-        "ano": 2018,
-        "valor": 33.1023342480424
-      },
-      {
-        "ano": 2019,
-        "valor": 31.9030727508498
-      },
-      {
-        "ano": 2020,
-        "valor": 21.1971796870516
-      },
-      {
-        "ano": 2021,
-        "valor": 15.0108849661413
-      },
-      {
-        "ano": 2022,
-        "valor": 28.3960928277404
-      },
-      {
-        "ano": 2023,
-        "valor": 36.554
-      },
-      {
-        "ano": 2024,
-        "valor": 34.729
-      }
-    ]
+      { "ano": 1997, "valor": 65.4088449795992 },
+      { "ano": 1998, "valor": 77.6168379948237 },
+      { "ano": 1999, "valor": 67.0609170941772 },
+      { "ano": 2000, "valor": 48.5047281998625 },
+      { "ano": 2001, "valor": 45.6378187103224 },
+      { "ano": 2002, "valor": 48.3404374454115 },
+      { "ano": 2003, "valor": 46.4473988425047 },
+      { "ano": 2004, "valor": 43.7791527165785 },
+      { "ano": 2005, "valor": 44.6351688638607 },
+      { "ano": 2006, "valor": 41.2403264526711 },
+      { "ano": 2007, "valor": 35.0225154695215 },
+      { "ano": 2008, "valor": 35.3667577965037 },
+      { "ano": 2009, "valor": 34.7920096326271 },
+      { "ano": 2010, "valor": 29.1158055214655 },
+      { "ano": 2011, "valor": 32.8334595068102 },
+      { "ano": 2012, "valor": 26.5820905307869 },
+      { "ano": 2013, "valor": 18.4988444166435 },
+      { "ano": 2014, "valor": 22.403672441435 },
+      { "ano": 2015, "valor": 33.832343966101 },
+      { "ano": 2016, "valor": 40.6983614489962 },
+      { "ano": 2017, "valor": 41.7138078720244 },
+      { "ano": 2018, "valor": 33.1023342480424 },
+      { "ano": 2019, "valor": 31.9030727508498 },
+      { "ano": 2020, "valor": 21.1971796870516 },
+      { "ano": 2021, "valor": 15.0108849661413 },
+      { "ano": 2022, "valor": 28.3960928277404 },
+      { "ano": 2023, "valor": 36.554 },
+      { "ano": 2024, "valor": 34.729 },
+    ],
   },
   "taxa_juros_emprestimos": {
-    "label": "(WDI/FMI) Taxa de Juros de Empréstimos",
+    "label": "Taxa de Juros de Empréstimos",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% ao ano",
-    "fonte": "Banco Mundial - World Development Indicators (FR.INR.LEND), com dados da base International Financial Statistics do Fundo Monetário Internacional",
+    "fonte":
+      "Banco Mundial - World Development Indicators (FR.INR.LEND), com dados da base International Financial Statistics do Fundo Monetário Internacional",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a taxa bancária de empréstimos que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado.",
-    "como_interpretar": "Valores maiores indicam custo nominal mais alto do crédito bancário ao setor privado. O indicador deve ser interpretado com cautela em comparações internacionais, pois os termos, prazos, garantias, risco dos tomadores e composição dos empréstimos variam entre países.",
-    "metodologia": "O indicador corresponde à taxa de empréstimos bancários reportada nas estatísticas monetárias e financeiras, expressa como percentual ao ano. A série do WDI usa como fonte primária a base International Financial Statistics do FMI. Segundo a definição do Banco Mundial, a taxa de empréstimos é a taxa bancária que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado, podendo variar conforme a qualidade de crédito dos tomadores e os objetivos do financiamento.",
-    "historico_metodologia": "A fonte metodológica do WDI informa que as estatísticas monetárias e financeiras são compiladas de acordo com padrões internacionais, incluindo o Monetary and Financial Statistics Manual de 2004 ou 2018. A própria definição do indicador alerta que os termos e condições das taxas diferem por país, limitando a comparabilidade internacional. Para o Brasil, a série anual observada disponível no WDI começa em 1997 e vai até 2024; não há valores observados para 1994, 1995, 1996 ou 2025 na consulta validada.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional no World Development Indicators para comparação entre países quando disponível.",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa bancária de empréstimos que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado.",
+    "como_interpretar":
+      "Valores maiores indicam custo nominal mais alto do crédito bancário ao setor privado. O indicador deve ser interpretado com cautela em comparações internacionais, pois os termos, prazos, garantias, risco dos tomadores e composição dos empréstimos variam entre países.",
+    "metodologia":
+      "O indicador corresponde à taxa de empréstimos bancários reportada nas estatísticas monetárias e financeiras, expressa como percentual ao ano. A série do WDI usa como fonte primária a base International Financial Statistics do FMI. Segundo a definição do Banco Mundial, a taxa de empréstimos é a taxa bancária que normalmente atende às necessidades de financiamento de curto e médio prazo do setor privado, podendo variar conforme a qualidade de crédito dos tomadores e os objetivos do financiamento.",
+    "historico_metodologia":
+      "A fonte metodológica do WDI informa que as estatísticas monetárias e financeiras são compiladas de acordo com padrões internacionais, incluindo o Monetary and Financial Statistics Manual de 2004 ou 2018. A própria definição do indicador alerta que os termos e condições das taxas diferem por país, limitando a comparabilidade internacional. Para o Brasil, a série anual observada disponível no WDI começa em 1997 e vai até 2024; não há valores observados para 1994, 1995, 1996 ou 2025 na consulta validada.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional no World Development Indicators para comparação entre países quando disponível.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1998,
         "nome": "Crise cambial",
-        "descricao": "A pressão cambial e financeira de 1998-1999 coincidiu com o pico da taxa de empréstimos da série validada."
+        "descricao":
+          "A pressão cambial e financeira de 1998-1999 coincidiu com o pico da taxa de empréstimos da série validada.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A transição para o regime de câmbio flutuante e o ajuste macroeconômico mantiveram a taxa de empréstimos em nível muito elevado."
+        "descricao":
+          "A transição para o regime de câmbio flutuante e o ajuste macroeconômico mantiveram a taxa de empréstimos em nível muito elevado.",
       },
       {
         "ano": 2003,
         "nome": "Aperto monetário",
-        "descricao": "O período de inflação elevada, incerteza macroeconômica e política monetária restritiva coincidiu com nova alta expressiva da taxa de empréstimos."
+        "descricao":
+          "O período de inflação elevada, incerteza macroeconômica e política monetária restritiva coincidiu com nova alta expressiva da taxa de empréstimos.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional foi acompanhada por queda da taxa de empréstimos em relação a 2008, refletindo mudança nas condições monetárias e de crédito."
+        "descricao":
+          "A crise financeira internacional foi acompanhada por queda da taxa de empréstimos em relação a 2008, refletindo mudança nas condições monetárias e de crédito.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e a elevação dos juros domésticos coincidiram com forte alta da taxa de empréstimos em 2015 e 2016."
+        "descricao":
+          "A recessão brasileira e a elevação dos juros domésticos coincidiram com forte alta da taxa de empréstimos em 2015 e 2016.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 coincidiu com forte queda da taxa de empréstimos, em ambiente de afrouxamento monetário e medidas extraordinárias de liquidez."
+        "descricao":
+          "A pandemia de COVID-19 coincidiu com forte queda da taxa de empréstimos, em ambiente de afrouxamento monetário e medidas extraordinárias de liquidez.",
       },
       {
         "ano": 2022,
         "nome": "Inflação global",
-        "descricao": "O ciclo de alta de juros para conter a inflação no Brasil e no exterior coincidiu com forte aumento da taxa de empréstimos em 2022 e 2023."
-      }
+        "descricao":
+          "O ciclo de alta de juros para conter a inflação no Brasil e no exterior coincidiu com forte aumento da taxa de empréstimos em 2022 e 2023.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 40,22% ao ano, nível muito acima da média mundial reportada para países com dados disponíveis no mesmo indicador. Isso coloca o Brasil entre os países com maior custo nominal de crédito bancário ao setor privado, embora a comparação internacional seja limitada pelas diferenças de estrutura financeira, risco de crédito, inflação, prazos e metodologia nacional de reporte.",
-    "nivel_confiabilidade": "Alto para série macrofinanceira oficial, pois os dados são publicados no World Development Indicators do Banco Mundial e derivados da base International Financial Statistics do FMI. A principal ressalva é metodológica: o próprio WDI informa que as condições das taxas de empréstimos diferem por país, limitando a comparabilidade internacional; além disso, os valores podem ser revisados em atualizações futuras da base.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 40,22% ao ano, nível muito acima da média mundial reportada para países com dados disponíveis no mesmo indicador. Isso coloca o Brasil entre os países com maior custo nominal de crédito bancário ao setor privado, embora a comparação internacional seja limitada pelas diferenças de estrutura financeira, risco de crédito, inflação, prazos e metodologia nacional de reporte.",
+    "nivel_confiabilidade":
+      "Alto para série macrofinanceira oficial, pois os dados são publicados no World Development Indicators do Banco Mundial e derivados da base International Financial Statistics do FMI. A principal ressalva é metodológica: o próprio WDI informa que as condições das taxas de empréstimos diferem por país, limitando a comparabilidade internacional; além disso, os valores podem ser revisados em atualizações futuras da base.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Lending interest rate (%) - Brazil",
-        "url": "https://data.worldbank.org/indicator/FR.INR.LEND?locations=BR"
+        "url": "https://data.worldbank.org/indicator/FR.INR.LEND?locations=BR",
       },
       {
         "titulo": "Banco Mundial - Lending interest rate (%) - Indicador Global",
-        "url": "https://data.worldbank.org/indicator/FR.INR.LEND"
+        "url": "https://data.worldbank.org/indicator/FR.INR.LEND",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata FR.INR.LEND",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LEND"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LEND",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators FR.INR.LEND",
-        "url": "https://databank.worldbank.org/data/reports.aspx?country=BRA&series=FR.INR.LEND&source=2"
-      }
+        "url": "https://databank.worldbank.org/data/reports.aspx?country=BRA&series=FR.INR.LEND&source=2",
+      },
     ],
     "dados": [
-      {
-        "ano": 1997,
-        "valor": 78.19
-      },
-      {
-        "ano": 1998,
-        "valor": 86.36
-      },
-      {
-        "ano": 1999,
-        "valor": 80.44
-      },
-      {
-        "ano": 2000,
-        "valor": 56.83
-      },
-      {
-        "ano": 2001,
-        "valor": 57.62
-      },
-      {
-        "ano": 2002,
-        "valor": 62.88
-      },
-      {
-        "ano": 2003,
-        "valor": 67.08
-      },
-      {
-        "ano": 2004,
-        "valor": 54.92
-      },
-      {
-        "ano": 2005,
-        "valor": 55.38
-      },
-      {
-        "ano": 2006,
-        "valor": 50.81
-      },
-      {
-        "ano": 2007,
-        "valor": 43.72
-      },
-      {
-        "ano": 2008,
-        "valor": 47.25
-      },
-      {
-        "ano": 2009,
-        "valor": 44.65
-      },
-      {
-        "ano": 2010,
-        "valor": 39.99
-      },
-      {
-        "ano": 2011,
-        "valor": 43.88
-      },
-      {
-        "ano": 2012,
-        "valor": 36.64
-      },
-      {
-        "ano": 2013,
-        "valor": 27.39
-      },
-      {
-        "ano": 2014,
-        "valor": 32.01
-      },
-      {
-        "ano": 2015,
-        "valor": 43.96
-      },
-      {
-        "ano": 2016,
-        "valor": 52.1
-      },
-      {
-        "ano": 2017,
-        "valor": 46.92
-      },
-      {
-        "ano": 2018,
-        "valor": 39.08
-      },
-      {
-        "ano": 2019,
-        "valor": 37.48
-      },
-      {
-        "ano": 2020,
-        "valor": 29.04
-      },
-      {
-        "ano": 2021,
-        "valor": 30.02
-      },
-      {
-        "ano": 2022,
-        "valor": 39.4
-      },
-      {
-        "ano": 2023,
-        "valor": 43.6
-      },
-      {
-        "ano": 2024,
-        "valor": 40.22
-      }
+      { "ano": 1997, "valor": 78.19 },
+      { "ano": 1998, "valor": 86.36 },
+      { "ano": 1999, "valor": 80.44 },
+      { "ano": 2000, "valor": 56.83 },
+      { "ano": 2001, "valor": 57.62 },
+      { "ano": 2002, "valor": 62.88 },
+      { "ano": 2003, "valor": 67.08 },
+      { "ano": 2004, "valor": 54.92 },
+      { "ano": 2005, "valor": 55.38 },
+      { "ano": 2006, "valor": 50.81 },
+      { "ano": 2007, "valor": 43.72 },
+      { "ano": 2008, "valor": 47.25 },
+      { "ano": 2009, "valor": 44.65 },
+      { "ano": 2010, "valor": 39.99 },
+      { "ano": 2011, "valor": 43.88 },
+      { "ano": 2012, "valor": 36.64 },
+      { "ano": 2013, "valor": 27.39 },
+      { "ano": 2014, "valor": 32.01 },
+      { "ano": 2015, "valor": 43.96 },
+      { "ano": 2016, "valor": 52.1 },
+      { "ano": 2017, "valor": 46.92 },
+      { "ano": 2018, "valor": 39.08 },
+      { "ano": 2019, "valor": 37.48 },
+      { "ano": 2020, "valor": 29.04 },
+      { "ano": 2021, "valor": 30.02 },
+      { "ano": 2022, "valor": 39.4 },
+      { "ano": 2023, "valor": 43.6 },
+      { "ano": 2024, "valor": 40.22 },
     ],
-    "padrao": false
   },
   "taxa_juros_depositos": {
-    "label": "(WDI/FMI) Taxa de Juros de Depósitos",
+    "label": "Taxa de Juros de Depósitos",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% ao ano",
-    "fonte": "Banco Mundial - World Development Indicators (FR.INR.DPST), com dados originais do Fundo Monetário Internacional - International Financial Statistics",
+    "fonte":
+      "Banco Mundial - World Development Indicators (FR.INR.DPST), com dados originais do Fundo Monetário Internacional - International Financial Statistics",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a taxa paga por bancos comerciais ou instituições similares sobre depósitos à vista, a prazo ou de poupança no Brasil.",
-    "como_interpretar": "Valores maiores indicam remuneração nominal mais alta dos depósitos bancários. A série não deve ser interpretada diretamente como retorno real do poupador, pois não desconta inflação, impostos, prazos, liquidez, risco, nem diferenças institucionais entre países.",
-    "metodologia": "O Banco Mundial reproduz no WDI a série FR.INR.DPST do FMI/IFS. A taxa de juros de depósitos corresponde à taxa paga por bancos comerciais ou similares por depósitos à vista, a prazo ou de poupança. Os termos e condições desses instrumentos diferem entre países, o que limita a comparabilidade internacional. A unidade é percentual anual.",
-    "historico_metodologia": "A definição oficial do WDI/FMI permaneceu conceitualmente estável: taxa paga por bancos comerciais ou similares sobre depósitos. A principal ressalva metodológica é que os instrumentos, prazos, condições de remuneração e práticas bancárias variam entre países e ao longo do tempo. No caso brasileiro, os anos iniciais da série capturam o ambiente de hiperinflação e transição monetária anterior e posterior ao Plano Real, o que torna os valores nominais de 1994 muito pouco comparáveis aos anos posteriores em termos econômicos reais. Não foram incluídos dados de 2025 ou 2026 porque a série anual oficial validada do WDI disponível vai até 2024.",
-    "abrangencia": "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional, baseada no IMF International Financial Statistics.",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa paga por bancos comerciais ou instituições similares sobre depósitos à vista, a prazo ou de poupança no Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam remuneração nominal mais alta dos depósitos bancários. A série não deve ser interpretada diretamente como retorno real do poupador, pois não desconta inflação, impostos, prazos, liquidez, risco, nem diferenças institucionais entre países.",
+    "metodologia":
+      "O Banco Mundial reproduz no WDI a série FR.INR.DPST do FMI/IFS. A taxa de juros de depósitos corresponde à taxa paga por bancos comerciais ou similares por depósitos à vista, a prazo ou de poupança. Os termos e condições desses instrumentos diferem entre países, o que limita a comparabilidade internacional. A unidade é percentual anual.",
+    "historico_metodologia":
+      "A definição oficial do WDI/FMI permaneceu conceitualmente estável: taxa paga por bancos comerciais ou similares sobre depósitos. A principal ressalva metodológica é que os instrumentos, prazos, condições de remuneração e práticas bancárias variam entre países e ao longo do tempo. No caso brasileiro, os anos iniciais da série capturam o ambiente de hiperinflação e transição monetária anterior e posterior ao Plano Real, o que torna os valores nominais de 1994 muito pouco comparáveis aos anos posteriores em termos econômicos reais. Não foram incluídos dados de 2025 ou 2026 porque a série anual oficial validada do WDI disponível vai até 2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional, baseada no IMF International Financial Statistics.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária iniciada com o Plano Real reduziu drasticamente a inflação e levou a forte queda das taxas nominais de depósitos após 1994."
+        "descricao":
+          "A estabilização monetária iniciada com o Plano Real reduziu drasticamente a inflação e levou a forte queda das taxas nominais de depósitos após 1994.",
       },
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial brasileiro e a desvalorização do real coincidiram com alta relevante das taxas nominais de juros."
+        "descricao":
+          "A mudança do regime cambial brasileiro e a desvalorização do real coincidiram com alta relevante das taxas nominais de juros.",
       },
       {
         "ano": 2002,
         "nome": "Stress eleitoral",
-        "descricao": "A instabilidade financeira e cambial associada ao ciclo eleitoral de 2002 elevou as taxas de juros nominais no Brasil."
+        "descricao":
+          "A instabilidade financeira e cambial associada ao ciclo eleitoral de 2002 elevou as taxas de juros nominais no Brasil.",
       },
       {
         "ano": 2003,
         "nome": "Aperto monetário",
-        "descricao": "A política monetária restritiva adotada para conter inflação e estabilizar expectativas manteve a taxa de depósitos em nível elevado."
+        "descricao":
+          "A política monetária restritiva adotada para conter inflação e estabilizar expectativas manteve a taxa de depósitos em nível elevado.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional elevou a aversão a risco e antecedeu mudanças relevantes na política monetária brasileira."
+        "descricao":
+          "A crise financeira internacional elevou a aversão a risco e antecedeu mudanças relevantes na política monetária brasileira.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira, inflação elevada e política monetária contracionista coincidiram com aumento da taxa de depósitos."
+        "descricao":
+          "A recessão brasileira, inflação elevada e política monetária contracionista coincidiram com aumento da taxa de depósitos.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 coincidiu com forte redução da taxa básica de juros e com o menor valor da série anual desde 1994."
+        "descricao":
+          "A pandemia de COVID-19 coincidiu com forte redução da taxa básica de juros e com o menor valor da série anual desde 1994.",
       },
       {
         "ano": 2022,
         "nome": "Aperto pós-pandemia",
-        "descricao": "A alta global e doméstica da inflação após a pandemia levou a forte ciclo de aperto monetário, elevando a taxa de depósitos."
+        "descricao":
+          "A alta global e doméstica da inflação após a pandemia levou a forte ciclo de aperto monetário, elevando a taxa de depósitos.",
       },
       {
         "ano": 2024,
         "nome": "Easing monetário",
-        "descricao": "O ciclo de redução da taxa Selic em 2023 e 2024 coincidiu com queda da taxa anual de depósitos em 2024."
-      }
+        "descricao":
+          "O ciclo de redução da taxa Selic em 2023 e 2024 coincidiu com queda da taxa anual de depósitos em 2024.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 7,7037% ao ano, nível superior ao de muitas economias avançadas e acima de países como México e Coreia do Sul no mesmo indicador, mas inferior ao de economias com juros nominais muito elevados, como Turquia e Uganda. A comparação deve ser feita com cautela porque o próprio WDI informa que os termos e condições dos depósitos diferem por país, limitando a comparabilidade.",
-    "nivel_confiabilidade": "Alto para série macrofinanceira oficial comparável internacionalmente, pois o indicador é publicado pelo Banco Mundial no WDI e tem como fonte original o FMI/IFS. A ressalva é que os valores são nominais, dependem das definições nacionais de depósitos bancários e podem sofrer revisões nas bases internacionais.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 7,7037% ao ano, nível superior ao de muitas economias avançadas e acima de países como México e Coreia do Sul no mesmo indicador, mas inferior ao de economias com juros nominais muito elevados, como Turquia e Uganda. A comparação deve ser feita com cautela porque o próprio WDI informa que os termos e condições dos depósitos diferem por país, limitando a comparabilidade.",
+    "nivel_confiabilidade":
+      "Alto para série macrofinanceira oficial comparável internacionalmente, pois o indicador é publicado pelo Banco Mundial no WDI e tem como fonte original o FMI/IFS. A ressalva é que os valores são nominais, dependem das definições nacionais de depósitos bancários e podem sofrer revisões nas bases internacionais.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Deposit interest rate (%) - Brazil",
-        "url": "https://data.worldbank.org/indicator/FR.INR.DPST?locations=BR"
+        "url": "https://data.worldbank.org/indicator/FR.INR.DPST?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata FR.INR.DPST",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.DPST"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.DPST",
       },
       {
         "titulo": "Fundo Monetário Internacional - International Financial Statistics",
-        "url": "https://data.imf.org/"
+        "url": "https://data.imf.org/",
       },
-      {
-        "titulo": "Banco Central do Brasil - Selic rate",
-        "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate"
-      }
+      { "titulo": "Banco Central do Brasil - Selic rate", "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate" },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 5175.241
-      },
-      {
-        "ano": 1995,
-        "valor": 52.24649
-      },
-      {
-        "ano": 1996,
-        "valor": 26.44843
-      },
-      {
-        "ano": 1997,
-        "valor": 24.35065
-      },
-      {
-        "ano": 1998,
-        "valor": 28.00333
-      },
-      {
-        "ano": 1999,
-        "valor": 26.02
-      },
-      {
-        "ano": 2000,
-        "valor": 17.2
-      },
-      {
-        "ano": 2001,
-        "valor": 17.86
-      },
-      {
-        "ano": 2002,
-        "valor": 19.14
-      },
-      {
-        "ano": 2003,
-        "valor": 21.97
-      },
-      {
-        "ano": 2004,
-        "valor": 15.42
-      },
-      {
-        "ano": 2005,
-        "valor": 17.63
-      },
-      {
-        "ano": 2006,
-        "valor": 13.93
-      },
-      {
-        "ano": 2007,
-        "valor": 10.58
-      },
-      {
-        "ano": 2008,
-        "valor": 11.66
-      },
-      {
-        "ano": 2009,
-        "valor": 9.28
-      },
-      {
-        "ano": 2010,
-        "valor": 8.87
-      },
-      {
-        "ano": 2011,
-        "valor": 10.99
-      },
-      {
-        "ano": 2012,
-        "valor": 7.91
-      },
-      {
-        "ano": 2013,
-        "valor": 7.81
-      },
-      {
-        "ano": 2014,
-        "valor": 10.02
-      },
-      {
-        "ano": 2015,
-        "valor": 12.62
-      },
-      {
-        "ano": 2016,
-        "valor": 12.45
-      },
-      {
-        "ano": 2017,
-        "valor": 8.51
-      },
-      {
-        "ano": 2018,
-        "valor": 6.87
-      },
-      {
-        "ano": 2019,
-        "valor": 5.43
-      },
-      {
-        "ano": 2020,
-        "valor": 2.2
-      },
-      {
-        "ano": 2021,
-        "valor": 4.35
-      },
-      {
-        "ano": 2022,
-        "valor": 12
-      },
-      {
-        "ano": 2023,
-        "valor": 12.14
-      },
-      {
-        "ano": 2024,
-        "valor": 7.7037
-      }
+      { "ano": 1994, "valor": 5175.241 },
+      { "ano": 1995, "valor": 52.24649 },
+      { "ano": 1996, "valor": 26.44843 },
+      { "ano": 1997, "valor": 24.35065 },
+      { "ano": 1998, "valor": 28.00333 },
+      { "ano": 1999, "valor": 26.02 },
+      { "ano": 2000, "valor": 17.2 },
+      { "ano": 2001, "valor": 17.86 },
+      { "ano": 2002, "valor": 19.14 },
+      { "ano": 2003, "valor": 21.97 },
+      { "ano": 2004, "valor": 15.42 },
+      { "ano": 2005, "valor": 17.63 },
+      { "ano": 2006, "valor": 13.93 },
+      { "ano": 2007, "valor": 10.58 },
+      { "ano": 2008, "valor": 11.66 },
+      { "ano": 2009, "valor": 9.28 },
+      { "ano": 2010, "valor": 8.87 },
+      { "ano": 2011, "valor": 10.99 },
+      { "ano": 2012, "valor": 7.91 },
+      { "ano": 2013, "valor": 7.81 },
+      { "ano": 2014, "valor": 10.02 },
+      { "ano": 2015, "valor": 12.62 },
+      { "ano": 2016, "valor": 12.45 },
+      { "ano": 2017, "valor": 8.51 },
+      { "ano": 2018, "valor": 6.87 },
+      { "ano": 2019, "valor": 5.43 },
+      { "ano": 2020, "valor": 2.2 },
+      { "ano": 2021, "valor": 4.35 },
+      { "ano": 2022, "valor": 12 },
+      { "ano": 2023, "valor": 12.14 },
+      { "ano": 2024, "valor": 7.7037 },
     ],
-    "padrao": false
   },
   "spread_bancario": {
-    "label": "(WDI) Spread Bancário",
+    "label": "Spread Bancário",
+    "fonte_sigla": "WDI",
     "unidade": "pontos percentuais",
-    "fonte": "Banco Mundial - World Development Indicators (FR.INR.LNDP), com dados originais do International Financial Statistics do FMI",
+    "fonte":
+      "Banco Mundial - World Development Indicators (FR.INR.LNDP), com dados originais do International Financial Statistics do FMI",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede a diferença entre a taxa de juros cobrada pelos bancos em empréstimos ao setor privado e a taxa paga por bancos comerciais ou similares em depósitos.",
-    "como_interpretar": "Valores maiores indicam maior diferença entre juros de empréstimos e juros pagos em depósitos, podendo refletir risco de crédito, inadimplência, custos administrativos, tributação, concentração bancária, compulsórios, inflação, política monetária e estrutura do mercado financeiro. A comparação entre países exige cautela porque as condições e definições das taxas podem variar.",
-    "metodologia": "O Banco Mundial define o indicador como a taxa de empréstimo menos a taxa de depósito. A taxa de empréstimo é a taxa cobrada pelos bancos em empréstimos ao setor privado, enquanto a taxa de depósito é a taxa paga por bancos comerciais ou similares em depósitos à vista, a prazo ou de poupança. A série do WDI usa como fonte primária o International Financial Statistics do FMI.",
-    "historico_metodologia": "A série disponível para o Brasil no WDI começa em 1997; portanto, não há valores oficiais observados para 1994, 1995 e 1996 nesse indicador. O Banco Mundial informa que os termos e condições associados às taxas diferem por país, limitando a comparabilidade internacional. A série pode sofrer revisões quando o FMI/IFS ou o Banco Mundial atualizam bases, definições, cobertura ou dados nacionais.",
-    "abrangencia": "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional.",
+    "padrao": false,
+    "descricao":
+      "Mede a diferença entre a taxa de juros cobrada pelos bancos em empréstimos ao setor privado e a taxa paga por bancos comerciais ou similares em depósitos.",
+    "como_interpretar":
+      "Valores maiores indicam maior diferença entre juros de empréstimos e juros pagos em depósitos, podendo refletir risco de crédito, inadimplência, custos administrativos, tributação, concentração bancária, compulsórios, inflação, política monetária e estrutura do mercado financeiro. A comparação entre países exige cautela porque as condições e definições das taxas podem variar.",
+    "metodologia":
+      "O Banco Mundial define o indicador como a taxa de empréstimo menos a taxa de depósito. A taxa de empréstimo é a taxa cobrada pelos bancos em empréstimos ao setor privado, enquanto a taxa de depósito é a taxa paga por bancos comerciais ou similares em depósitos à vista, a prazo ou de poupança. A série do WDI usa como fonte primária o International Financial Statistics do FMI.",
+    "historico_metodologia":
+      "A série disponível para o Brasil no WDI começa em 1997; portanto, não há valores oficiais observados para 1994, 1995 e 1996 nesse indicador. O Banco Mundial informa que os termos e condições associados às taxas diferem por país, limitando a comparabilidade internacional. A série pode sofrer revisões quando o FMI/IFS ou o Banco Mundial atualizam bases, definições, cobertura ou dados nacionais.",
+    "abrangencia":
+      "Brasil, cobertura nacional, série anual padronizada pelo World Development Indicators para comparação internacional.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1998,
         "nome": "Crises externas",
-        "descricao": "Crises financeiras internacionais e forte aperto monetário no Brasil coincidiram com o maior valor da série."
+        "descricao":
+          "Crises financeiras internacionais e forte aperto monetário no Brasil coincidiram com o maior valor da série.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A mudança para o regime de câmbio flutuante e a transição macroeconômica mantiveram o spread em nível muito elevado."
+        "descricao":
+          "A mudança para o regime de câmbio flutuante e a transição macroeconômica mantiveram o spread em nível muito elevado.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional elevou a aversão a risco e afetou condições de crédito."
+        "descricao": "A crise financeira internacional elevou a aversão a risco e afetou condições de crédito.",
       },
       {
         "ano": 2013,
         "nome": "Mínimo histórico",
-        "descricao": "O spread atingiu o menor valor da série validada, em contexto de juros básicos relativamente mais baixos e expansão de crédito."
+        "descricao":
+          "O spread atingiu o menor valor da série validada, em contexto de juros básicos relativamente mais baixos e expansão de crédito.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira, inflação elevada e deterioração do risco de crédito coincidiram com forte alta do spread."
+        "descricao":
+          "A recessão brasileira, inflação elevada e deterioração do risco de crédito coincidiram com forte alta do spread.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 coincidiu com queda do spread anual, em ambiente de juros básicos historicamente baixos e medidas emergenciais de crédito."
+        "descricao":
+          "A pandemia de COVID-19 coincidiu com queda do spread anual, em ambiente de juros básicos historicamente baixos e medidas emergenciais de crédito.",
       },
       {
         "ano": 2022,
         "nome": "Aperto monetário",
-        "descricao": "O ciclo de alta da Selic e a piora das condições financeiras coincidiram com retomada gradual do spread."
+        "descricao":
+          "O ciclo de alta da Selic e a piora das condições financeiras coincidiram com retomada gradual do spread.",
       },
       {
         "ano": 2024,
         "nome": "Juros altos",
-        "descricao": "A manutenção de juros elevados e condições restritivas de crédito coincidiu com nova alta do spread."
-      }
+        "descricao":
+          "A manutenção de juros elevados e condições restritivas de crédito coincidiu com nova alta do spread.",
+      },
     ],
-    "comparacao_paises": "O Brasil apresenta spread bancário estruturalmente alto em comparação internacional no WDI. Em 2024, o valor brasileiro foi de 32,521 pontos percentuais, nível muito superior ao observado em economias avançadas e também elevado frente a muitos países emergentes, embora a comparabilidade seja limitada pelas diferenças nacionais nas definições e condições das taxas.",
-    "nivel_confiabilidade": "Alto para série macrofinanceira internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com origem no International Financial Statistics do FMI. A principal limitação é metodológica: as taxas de empréstimo e depósito não são perfeitamente comparáveis entre países porque contratos, prazos, risco, regulação e estrutura bancária diferem.",
+    "comparacao_paises":
+      "O Brasil apresenta spread bancário estruturalmente alto em comparação internacional no WDI. Em 2024, o valor brasileiro foi de 32,521 pontos percentuais, nível muito superior ao observado em economias avançadas e também elevado frente a muitos países emergentes, embora a comparabilidade seja limitada pelas diferenças nacionais nas definições e condições das taxas.",
+    "nivel_confiabilidade":
+      "Alto para série macrofinanceira internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com origem no International Financial Statistics do FMI. A principal limitação é metodológica: as taxas de empréstimo e depósito não são perfeitamente comparáveis entre países porque contratos, prazos, risco, regulação e estrutura bancária diferem.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Interest rate spread (lending rate minus deposit rate, %) - Brazil",
-        "url": "https://data.worldbank.org/indicator/FR.INR.LNDP?locations=BR"
+        "url": "https://data.worldbank.org/indicator/FR.INR.LNDP?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata FR.INR.LNDP",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LNDP"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/FR.INR.LNDP",
       },
       {
         "titulo": "Banco Mundial - Indicators API Documentation",
-        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries"
+        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries",
       },
       {
         "titulo": "FRED / Federal Reserve Bank of St. Louis - Bank Lending Deposit Spread for Brazil, fonte World Bank",
-        "url": "https://fred.stlouisfed.org/series/DDEI02BRA156NWDB"
+        "url": "https://fred.stlouisfed.org/series/DDEI02BRA156NWDB",
       },
-      {
-        "titulo": "Banco Central do Brasil - Selic Rate",
-        "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate"
-      }
+      { "titulo": "Banco Central do Brasil - Selic Rate", "url": "https://www.bcb.gov.br/en/monetarypolicy/selicrate" },
     ],
     "dados": [
-      {
-        "ano": 1997,
-        "valor": 53.84269
-      },
-      {
-        "ano": 1998,
-        "valor": 58.36
-      },
-      {
-        "ano": 1999,
-        "valor": 54.42083
-      },
-      {
-        "ano": 2000,
-        "valor": 39.63083
-      },
-      {
-        "ano": 2001,
-        "valor": 39.76
-      },
-      {
-        "ano": 2002,
-        "valor": 43.73228
-      },
-      {
-        "ano": 2003,
-        "valor": 45.11265
-      },
-      {
-        "ano": 2004,
-        "valor": 39.50885
-      },
-      {
-        "ano": 2005,
-        "valor": 37.75459
-      },
-      {
-        "ano": 2006,
-        "valor": 36.87593
-      },
-      {
-        "ano": 2007,
-        "valor": 33.13942
-      },
-      {
-        "ano": 2008,
-        "valor": 35.59467
-      },
-      {
-        "ano": 2009,
-        "valor": 35.37117
-      },
-      {
-        "ano": 2010,
-        "valor": 31.12123
-      },
-      {
-        "ano": 2011,
-        "valor": 32.89097
-      },
-      {
-        "ano": 2012,
-        "valor": 28.7292
-      },
-      {
-        "ano": 2013,
-        "valor": 19.58456
-      },
-      {
-        "ano": 2014,
-        "valor": 21.9847
-      },
-      {
-        "ano": 2015,
-        "valor": 31.33587
-      },
-      {
-        "ano": 2016,
-        "valor": 39.65424
-      },
-      {
-        "ano": 2017,
-        "valor": 38.40313
-      },
-      {
-        "ano": 2018,
-        "valor": 32.21117
-      },
-      {
-        "ano": 2019,
-        "valor": 32.04483
-      },
-      {
-        "ano": 2020,
-        "valor": 26.84524
-      },
-      {
-        "ano": 2021,
-        "valor": 25.7
-      },
-      {
-        "ano": 2022,
-        "valor": 27.4
-      },
-      {
-        "ano": 2023,
-        "valor": 31.461
-      },
-      {
-        "ano": 2024,
-        "valor": 32.521
-      }
+      { "ano": 1997, "valor": 53.84269 },
+      { "ano": 1998, "valor": 58.36 },
+      { "ano": 1999, "valor": 54.42083 },
+      { "ano": 2000, "valor": 39.63083 },
+      { "ano": 2001, "valor": 39.76 },
+      { "ano": 2002, "valor": 43.73228 },
+      { "ano": 2003, "valor": 45.11265 },
+      { "ano": 2004, "valor": 39.50885 },
+      { "ano": 2005, "valor": 37.75459 },
+      { "ano": 2006, "valor": 36.87593 },
+      { "ano": 2007, "valor": 33.13942 },
+      { "ano": 2008, "valor": 35.59467 },
+      { "ano": 2009, "valor": 35.37117 },
+      { "ano": 2010, "valor": 31.12123 },
+      { "ano": 2011, "valor": 32.89097 },
+      { "ano": 2012, "valor": 28.7292 },
+      { "ano": 2013, "valor": 19.58456 },
+      { "ano": 2014, "valor": 21.9847 },
+      { "ano": 2015, "valor": 31.33587 },
+      { "ano": 2016, "valor": 39.65424 },
+      { "ano": 2017, "valor": 38.40313 },
+      { "ano": 2018, "valor": 32.21117 },
+      { "ano": 2019, "valor": 32.04483 },
+      { "ano": 2020, "valor": 26.84524 },
+      { "ano": 2021, "valor": 25.7 },
+      { "ano": 2022, "valor": 27.4 },
+      { "ano": 2023, "valor": 31.461 },
+      { "ano": 2024, "valor": 32.521 },
     ],
-    "padrao": false
   },
   "paridade_poder_compra_ppp": {
-    "label": "(WDI/ICP) Paridade de Poder de Compra",
+    "label": "Paridade de Poder de Compra",
+    "fonte_sigla": "WDI/ICP",
     "unidade": "Moeda local por dólar internacional",
     "fonte": "Banco Mundial - World Development Indicators / International Comparison Program (PA.NUS.PPP)",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede o fator de conversão por paridade de poder de compra do PIB, indicando quantas unidades de moeda local equivalem a um dólar internacional em termos de poder de compra.",
-    "como_interpretar": "Valores maiores indicam que são necessárias mais unidades de moeda local para igualar o poder de compra de um dólar internacional. O indicador serve para converter agregados econômicos nominais em valores comparáveis internacionalmente, removendo diferenças de níveis de preços entre países. Não deve ser interpretado como taxa de câmbio de mercado.",
-    "metodologia": "O fator PPP do PIB é calculado pelo International Comparison Program, pelo Banco Mundial e por programas PPP da OCDE/Eurostat. As PPPs convertem moedas nacionais para uma moeda comum e equalizam seu poder de compra ao eliminar diferenças de níveis de preços entre países. O indicador PA.NUS.PPP é expresso em unidades de moeda local por dólar internacional e refere-se ao nível do PIB. A série anual do WDI incorpora benchmarks do ICP e atualizações por contas nacionais, deflatores e revisões metodológicas oficiais.",
-    "historico_metodologia": "A série foi afetada por ciclos internacionais de benchmark do ICP, especialmente 2011, 2017 e 2021. Em anos sem benchmark direto, o WDI mantém série temporal oficial usando atualizações consistentes com contas nacionais e deflatores. O Banco Mundial informa que o indicador PA.NUS.PPP foi atualizado com base em deflatores do PIB e nos resultados do ICP. Valores anteriores a 1994 foram excluídos porque a mudança monetária brasileira antes e durante o Plano Real reduz a comparabilidade direta da unidade monetária histórica.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede o fator de conversão por paridade de poder de compra do PIB, indicando quantas unidades de moeda local equivalem a um dólar internacional em termos de poder de compra.",
+    "como_interpretar":
+      "Valores maiores indicam que são necessárias mais unidades de moeda local para igualar o poder de compra de um dólar internacional. O indicador serve para converter agregados econômicos nominais em valores comparáveis internacionalmente, removendo diferenças de níveis de preços entre países. Não deve ser interpretado como taxa de câmbio de mercado.",
+    "metodologia":
+      "O fator PPP do PIB é calculado pelo International Comparison Program, pelo Banco Mundial e por programas PPP da OCDE/Eurostat. As PPPs convertem moedas nacionais para uma moeda comum e equalizam seu poder de compra ao eliminar diferenças de níveis de preços entre países. O indicador PA.NUS.PPP é expresso em unidades de moeda local por dólar internacional e refere-se ao nível do PIB. A série anual do WDI incorpora benchmarks do ICP e atualizações por contas nacionais, deflatores e revisões metodológicas oficiais.",
+    "historico_metodologia":
+      "A série foi afetada por ciclos internacionais de benchmark do ICP, especialmente 2011, 2017 e 2021. Em anos sem benchmark direto, o WDI mantém série temporal oficial usando atualizações consistentes com contas nacionais e deflatores. O Banco Mundial informa que o indicador PA.NUS.PPP foi atualizado com base em deflatores do PIB e nos resultados do ICP. Valores anteriores a 1994 foram excluídos porque a mudança monetária brasileira antes e durante o Plano Real reduz a comparabilidade direta da unidade monetária histórica.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators para comparação com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária e a introdução do real mudaram a unidade monetária brasileira, tornando 1994 o primeiro ano adequado desta série recortada para comparação em moeda local atual."
+        "descricao":
+          "A estabilização monetária e a introdução do real mudaram a unidade monetária brasileira, tornando 1994 o primeiro ano adequado desta série recortada para comparação em moeda local atual.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A mudança para câmbio flutuante e a desvalorização do real coincidiram com alta do fator PPP em moeda local por dólar internacional."
+        "descricao":
+          "A mudança para câmbio flutuante e a desvalorização do real coincidiram com alta do fator PPP em moeda local por dólar internacional.",
       },
       {
         "ano": 2002,
         "nome": "Crise cambial",
-        "descricao": "A forte instabilidade cambial e inflacionária no período eleitoral coincidiu com aumento expressivo do fator PPP."
+        "descricao":
+          "A forte instabilidade cambial e inflacionária no período eleitoral coincidiu com aumento expressivo do fator PPP.",
       },
       {
         "ano": 2011,
         "nome": "Benchmark ICP",
-        "descricao": "Ano de benchmark do International Comparison Program, usado como referência internacional para recalibrar PPPs."
+        "descricao":
+          "Ano de benchmark do International Comparison Program, usado como referência internacional para recalibrar PPPs.",
       },
       {
         "ano": 2017,
         "nome": "Benchmark ICP",
-        "descricao": "Novo ciclo de benchmark do ICP, incorporado às séries internacionais de paridade de poder de compra."
+        "descricao":
+          "Novo ciclo de benchmark do ICP, incorporado às séries internacionais de paridade de poder de compra.",
       },
       {
         "ano": 2021,
         "nome": "Benchmark ICP",
-        "descricao": "Benchmark ICP 2021 incorporado ao WDI, afetando a base de comparação internacional das PPPs mais recentes."
+        "descricao":
+          "Benchmark ICP 2021 incorporado ao WDI, afetando a base de comparação internacional das PPPs mais recentes.",
       },
       {
         "ano": 2024,
         "nome": "Atualização WDI",
-        "descricao": "Último valor anual disponível na série consultada, incorporando a atualização oficial do WDI disponível em 2026."
-      }
+        "descricao":
+          "Último valor anual disponível na série consultada, incorporando a atualização oficial do WDI disponível em 2026.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o fator PPP do Brasil foi 2,4873 R$ por dólar internacional. Como a taxa de câmbio média de mercado foi maior que esse fator, o nível de preços do Brasil ficou abaixo do nível dos Estados Unidos quando medido pelo indicador de razão entre PPP e câmbio. Em termos práticos, isso significa que o PIB brasileiro convertido por PPP fica maior do que quando convertido por câmbio de mercado.",
-    "nivel_confiabilidade": "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base no International Comparison Program e programas PPP da OCDE/Eurostat. A ressalva técnica é que PPPs anuais podem ser revisadas após novos benchmarks do ICP, revisões de contas nacionais e atualizações de deflatores.",
+    "comparacao_paises":
+      "Em 2024, o fator PPP do Brasil foi 2,4873 R$ por dólar internacional. Como a taxa de câmbio média de mercado foi maior que esse fator, o nível de preços do Brasil ficou abaixo do nível dos Estados Unidos quando medido pelo indicador de razão entre PPP e câmbio. Em termos práticos, isso significa que o PIB brasileiro convertido por PPP fica maior do que quando convertido por câmbio de mercado.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação macroeconômica internacional, pois os valores vêm do World Development Indicators do Banco Mundial, com base no International Comparison Program e programas PPP da OCDE/Eurostat. A ressalva técnica é que PPPs anuais podem ser revisadas após novos benchmarks do ICP, revisões de contas nacionais e atualizações de deflatores.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - PPP conversion factor, GDP (LCU per international $) - Brazil",
-        "url": "https://data.worldbank.org/indicator/PA.NUS.PPP?locations=BR"
+        "url": "https://data.worldbank.org/indicator/PA.NUS.PPP?locations=BR",
       },
       {
         "titulo": "UNdata / World Development Indicators - PA.NUS.PPP - Brazil",
-        "url": "https: //data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPP%3BCountry_Code%3ABRA"
+        "url": "https: //data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPP%3BCountry_Code%3ABRA",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata PA.NUS.PPP",
-        "url": "https: //databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPP"
+        "url": "https: //databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPP",
       },
       {
         "titulo": "Banco Mundial - WDI Quarterly Update: December 2025",
-        "url": "https: //datatopics.worldbank.org/world-development-indicators/release-note/dec-2025.html"
-      }
+        "url": "https: //datatopics.worldbank.org/world-development-indicators/release-note/dec-2025.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 0.283749422450889
-      },
-      {
-        "ano": 1995,
-        "valor": 0.539108158157798
-      },
-      {
-        "ano": 1996,
-        "valor": 0.627126072175384
-      },
-      {
-        "ano": 1997,
-        "valor": 0.664143975878935
-      },
-      {
-        "ano": 1998,
-        "valor": 0.689104221274963
-      },
-      {
-        "ano": 1999,
-        "valor": 0.733919243539917
-      },
-      {
-        "ano": 2000,
-        "valor": 0.757895423928933
-      },
-      {
-        "ano": 2001,
-        "valor": 0.802170641878033
-      },
-      {
-        "ano": 2002,
-        "valor": 0.867290572535915
-      },
-      {
-        "ano": 2003,
-        "valor": 0.970343048319856
-      },
-      {
-        "ano": 2004,
-        "valor": 1.01818475110308
-      },
-      {
-        "ano": 2005,
-        "valor": 1.06059390834922
-      },
-      {
-        "ano": 2006,
-        "valor": 1.09856354069215
-      },
-      {
-        "ano": 2007,
-        "valor": 1.13845673008303
-      },
-      {
-        "ano": 2008,
-        "valor": 1.21498747295577
-      },
-      {
-        "ano": 2009,
-        "valor": 1.29585280195023
-      },
-      {
-        "ano": 2010,
-        "valor": 1.38813702344533
-      },
-      {
-        "ano": 2011,
-        "valor": 1.4732164144516
-      },
-      {
-        "ano": 2012,
-        "valor": 1.60913586532018
-      },
-      {
-        "ano": 2013,
-        "valor": 1.70855542893458
-      },
-      {
-        "ano": 2014,
-        "valor": 1.82485052496386
-      },
-      {
-        "ano": 2015,
-        "valor": 2.00586931129873
-      },
-      {
-        "ano": 2016,
-        "valor": 2.15597159643949
-      },
-      {
-        "ano": 2017,
-        "valor": 2.2096791267395
-      },
-      {
-        "ano": 2018,
-        "valor": 2.19759154319763
-      },
-      {
-        "ano": 2019,
-        "valor": 2.21644520759583
-      },
-      {
-        "ano": 2020,
-        "valor": 2.26491117477417
-      },
-      {
-        "ano": 2021,
-        "valor": 2.37927412986755
-      },
-      {
-        "ano": 2022,
-        "valor": 2.41127335896254
-      },
-      {
-        "ano": 2023,
-        "valor": 2.44760850115975
-      },
-      {
-        "ano": 2024,
-        "valor": 2.48731718948001
-      }
+      { "ano": 1994, "valor": 0.283749422450889 },
+      { "ano": 1995, "valor": 0.539108158157798 },
+      { "ano": 1996, "valor": 0.627126072175384 },
+      { "ano": 1997, "valor": 0.664143975878935 },
+      { "ano": 1998, "valor": 0.689104221274963 },
+      { "ano": 1999, "valor": 0.733919243539917 },
+      { "ano": 2000, "valor": 0.757895423928933 },
+      { "ano": 2001, "valor": 0.802170641878033 },
+      { "ano": 2002, "valor": 0.867290572535915 },
+      { "ano": 2003, "valor": 0.970343048319856 },
+      { "ano": 2004, "valor": 1.01818475110308 },
+      { "ano": 2005, "valor": 1.06059390834922 },
+      { "ano": 2006, "valor": 1.09856354069215 },
+      { "ano": 2007, "valor": 1.13845673008303 },
+      { "ano": 2008, "valor": 1.21498747295577 },
+      { "ano": 2009, "valor": 1.29585280195023 },
+      { "ano": 2010, "valor": 1.38813702344533 },
+      { "ano": 2011, "valor": 1.4732164144516 },
+      { "ano": 2012, "valor": 1.60913586532018 },
+      { "ano": 2013, "valor": 1.70855542893458 },
+      { "ano": 2014, "valor": 1.82485052496386 },
+      { "ano": 2015, "valor": 2.00586931129873 },
+      { "ano": 2016, "valor": 2.15597159643949 },
+      { "ano": 2017, "valor": 2.2096791267395 },
+      { "ano": 2018, "valor": 2.19759154319763 },
+      { "ano": 2019, "valor": 2.21644520759583 },
+      { "ano": 2020, "valor": 2.26491117477417 },
+      { "ano": 2021, "valor": 2.37927412986755 },
+      { "ano": 2022, "valor": 2.41127335896254 },
+      { "ano": 2023, "valor": 2.44760850115975 },
+      { "ano": 2024, "valor": 2.48731718948001 },
     ],
-    "padrao": false
   },
   "indice_nivel_precos_pib": {
-    "label": "(WDI/ICP) Índice de Nível de Preços do PIB",
+    "label": "Índice de Nível de Preços do PIB",
+    "fonte_sigla": "WDI/ICP",
     "unidade": "Índice relativo aos Estados Unidos = 1,00",
-    "fonte": "Banco Mundial - World Development Indicators / International Comparison Program (PA.NUS.PPPC.RF / PA.NUS.GDP.PLI)",
+    "fonte":
+      "Banco Mundial - World Development Indicators / International Comparison Program (PA.NUS.PPPC.RF / PA.NUS.GDP.PLI)",
     "cat": "Preços, Juros e Poder de Compra",
-    "descricao": "Mede o nível geral de preços do PIB do Brasil em relação aos Estados Unidos, calculado pela razão entre a paridade de poder de compra do PIB e a taxa de câmbio de mercado.",
-    "como_interpretar": "Valor menor que 1 indica que o nível de preços do PIB no Brasil é menor que o dos Estados Unidos; valor maior que 1 indicaria nível de preços superior. O indicador mede preços relativos internacionais, não inflação doméstica anual nem custo de vida individual.",
-    "metodologia": "O indicador é calculado como a razão entre o fator de conversão por paridade de poder de compra do PIB e a taxa de câmbio de mercado correspondente. As PPPs vêm do International Comparison Program, coordenado pelo Banco Mundial com parceiros internacionais, e permitem comparar níveis de preços e volumes reais entre economias. Para o nível do PIB, o índice resume diferenças de preços gerais entre países, tomando os Estados Unidos como base igual a 1,00.",
-    "historico_metodologia": "A série do WDI foi atualizada para refletir os resultados do ciclo ICP 2021 e pode sofrer revisões quando há atualização de PPPs, contas nacionais, taxas de câmbio ou metodologia internacional. A série oficial disponível na consulta cobre 1990 a 2024; para manter a janela solicitada, foram mantidos apenas os valores observados de 1994 a 2024. Não há valor oficial observado para 2025 ou 2026 na fonte consultada.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional do World Development Indicators e do International Comparison Program para comparação com países e agregados econômicos.",
+    "padrao": false,
+    "descricao":
+      "Mede o nível geral de preços do PIB do Brasil em relação aos Estados Unidos, calculado pela razão entre a paridade de poder de compra do PIB e a taxa de câmbio de mercado.",
+    "como_interpretar":
+      "Valor menor que 1 indica que o nível de preços do PIB no Brasil é menor que o dos Estados Unidos; valor maior que 1 indicaria nível de preços superior. O indicador mede preços relativos internacionais, não inflação doméstica anual nem custo de vida individual.",
+    "metodologia":
+      "O indicador é calculado como a razão entre o fator de conversão por paridade de poder de compra do PIB e a taxa de câmbio de mercado correspondente. As PPPs vêm do International Comparison Program, coordenado pelo Banco Mundial com parceiros internacionais, e permitem comparar níveis de preços e volumes reais entre economias. Para o nível do PIB, o índice resume diferenças de preços gerais entre países, tomando os Estados Unidos como base igual a 1,00.",
+    "historico_metodologia":
+      "A série do WDI foi atualizada para refletir os resultados do ciclo ICP 2021 e pode sofrer revisões quando há atualização de PPPs, contas nacionais, taxas de câmbio ou metodologia internacional. A série oficial disponível na consulta cobre 1990 a 2024; para manter a janela solicitada, foram mantidos apenas os valores observados de 1994 a 2024. Não há valor oficial observado para 2025 ou 2026 na fonte consultada.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do World Development Indicators e do International Comparison Program para comparação com países e agregados econômicos.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária e a mudança do regime inflacionário no início do Plano Real coincidem com aumento do nível de preços relativo medido em dólares."
+        "descricao":
+          "A estabilização monetária e a mudança do regime inflacionário no início do Plano Real coincidem com aumento do nível de preços relativo medido em dólares.",
       },
       {
         "ano": 1999,
         "nome": "Câmbio flutuante",
-        "descricao": "A adoção da livre flutuação cambial em janeiro de 1999 coincide com forte redução do índice, refletindo a mudança da taxa de câmbio de mercado frente às PPPs."
+        "descricao":
+          "A adoção da livre flutuação cambial em janeiro de 1999 coincide com forte redução do índice, refletindo a mudança da taxa de câmbio de mercado frente às PPPs.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional afetou fluxos financeiros, câmbio e atividade econômica, contribuindo para variações relevantes do nível de preços relativo no período."
+        "descricao":
+          "A crise financeira internacional afetou fluxos financeiros, câmbio e atividade econômica, contribuindo para variações relevantes do nível de preços relativo no período.",
       },
       {
         "ano": 2011,
         "nome": "Real valorizado",
-        "descricao": "O indicador atingiu o maior valor da série validada em 2011, período associado a câmbio relativamente valorizado e preços domésticos elevados em relação ao dólar."
+        "descricao":
+          "O indicador atingiu o maior valor da série validada em 2011, período associado a câmbio relativamente valorizado e preços domésticos elevados em relação ao dólar.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e a depreciação cambial coincidem com queda expressiva do nível de preços relativo entre 2014 e 2015."
+        "descricao":
+          "A recessão brasileira e a depreciação cambial coincidem com queda expressiva do nível de preços relativo entre 2014 e 2015.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 e a depreciação cambial coincidem com nova queda do índice de nível de preços relativo."
+        "descricao":
+          "A pandemia de COVID-19 e a depreciação cambial coincidem com nova queda do índice de nível de preços relativo.",
       },
       {
         "ano": 2024,
         "nome": "Baixa relativa",
-        "descricao": "Em 2024, o índice permaneceu abaixo de 0,50, indicando que o nível de preços do PIB brasileiro continuou substancialmente inferior ao dos Estados Unidos."
-      }
+        "descricao":
+          "Em 2024, o índice permaneceu abaixo de 0,50, indicando que o nível de preços do PIB brasileiro continuou substancialmente inferior ao dos Estados Unidos.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 0,4615600731879536, ou cerca de 46,16% do nível de preços dos Estados Unidos. Isso indica que, no agregado do PIB, os preços brasileiros estavam bem abaixo dos preços dos Estados Unidos, embora essa comparação não represente diretamente inflação doméstica nem preços de uma cesta de consumo específica.",
-    "nivel_confiabilidade": "Muito alto para comparação internacional oficial, pois a série vem do World Development Indicators do Banco Mundial e é baseada em PPPs do International Comparison Program. A principal ressalva é que PPPs, contas nacionais e taxas de câmbio podem ser revisadas em ciclos metodológicos posteriores.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 0,4615600731879536, ou cerca de 46,16% do nível de preços dos Estados Unidos. Isso indica que, no agregado do PIB, os preços brasileiros estavam bem abaixo dos preços dos Estados Unidos, embora essa comparação não represente diretamente inflação doméstica nem preços de uma cesta de consumo específica.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação internacional oficial, pois a série vem do World Development Indicators do Banco Mundial e é baseada em PPPs do International Comparison Program. A principal ressalva é que PPPs, contas nacionais e taxas de câmbio podem ser revisadas em ciclos metodológicos posteriores.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Price level index (GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/PA.NUS.GDP.PLI?locations=BR"
+        "url": "https://data.worldbank.org/indicator/PA.NUS.GDP.PLI?locations=BR",
       },
       {
         "titulo": "UNdata / World Development Indicators - PA.NUS.PPPC.RF - Brazil",
-        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPPC.RF%3BCountry_Code%3ABRA"
+        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3APA.NUS.PPPC.RF%3BCountry_Code%3ABRA",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata PA.NUS.PPPC.RF",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPPC.RF"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.PPPC.RF",
       },
       {
         "titulo": "Banco Mundial - ICP 2021: Price levels",
-        "url": "https://www.worldbank.org/en/programs/icp/brief/ICP2021_DataViz_5"
+        "url": "https://www.worldbank.org/en/programs/icp/brief/ICP2021_DataViz_5",
       },
       {
         "titulo": "Banco Central do Brasil - Análise do Mercado de Câmbio: 1999",
-        "url": "https://www.bcb.gov.br/rex/MerCambio/Port/cambio991/1999-1Flutuante.asp?frame=1"
-      }
+        "url": "https://www.bcb.gov.br/rex/MerCambio/Port/cambio991/1999-1Flutuante.asp?frame=1",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 0.42689402765629536
-      },
-      {
-        "ano": 1995,
-        "valor": 0.587477106579966
-      },
-      {
-        "ano": 1996,
-        "valor": 0.6239439579896368
-      },
-      {
-        "ano": 1997,
-        "valor": 0.6160937940383571
-      },
-      {
-        "ano": 1998,
-        "valor": 0.5937908873247576
-      },
-      {
-        "ano": 1999,
-        "valor": 0.4046011101874917
-      },
-      {
-        "ano": 2000,
-        "valor": 0.41428110029512627
-      },
-      {
-        "ano": 2001,
-        "valor": 0.34140271375423975
-      },
-      {
-        "ano": 2002,
-        "valor": 0.296980398412685
-      },
-      {
-        "ano": 2003,
-        "valor": 0.31530492074061456
-      },
-      {
-        "ano": 2004,
-        "valor": 0.34808313598171914
-      },
-      {
-        "ano": 2005,
-        "valor": 0.435671315022621
-      },
-      {
-        "ano": 2006,
-        "valor": 0.5050108369970407
-      },
-      {
-        "ano": 2007,
-        "valor": 0.584706020673505
-      },
-      {
-        "ano": 2008,
-        "valor": 0.6625638337849332
-      },
-      {
-        "ano": 2009,
-        "valor": 0.6481117048286279
-      },
-      {
-        "ano": 2010,
-        "valor": 0.7890609067502696
-      },
-      {
-        "ano": 2011,
-        "valor": 0.8806737747566982
-      },
-      {
-        "ano": 2012,
-        "valor": 0.8239013499960396
-      },
-      {
-        "ano": 2013,
-        "valor": 0.7924326449601667
-      },
-      {
-        "ano": 2014,
-        "valor": 0.7755579178047892
-      },
-      {
-        "ano": 2015,
-        "valor": 0.6029236432730128
-      },
-      {
-        "ano": 2016,
-        "valor": 0.617524506135989
-      },
-      {
-        "ano": 2017,
-        "valor": 0.6923878028428448
-      },
-      {
-        "ano": 2018,
-        "valor": 0.6014495291300556
-      },
-      {
-        "ano": 2019,
-        "valor": 0.5619118895592852
-      },
-      {
-        "ano": 2020,
-        "valor": 0.4393467749879024
-      },
-      {
-        "ano": 2021,
-        "valor": 0.4410636551986668
-      },
-      {
-        "ano": 2022,
-        "valor": 0.46694175664895204
-      },
-      {
-        "ano": 2023,
-        "valor": 0.49007256503428953
-      },
-      {
-        "ano": 2024,
-        "valor": 0.4615600731879536
-      }
-    ]
+      { "ano": 1994, "valor": 0.42689402765629536 },
+      { "ano": 1995, "valor": 0.587477106579966 },
+      { "ano": 1996, "valor": 0.6239439579896368 },
+      { "ano": 1997, "valor": 0.6160937940383571 },
+      { "ano": 1998, "valor": 0.5937908873247576 },
+      { "ano": 1999, "valor": 0.4046011101874917 },
+      { "ano": 2000, "valor": 0.41428110029512627 },
+      { "ano": 2001, "valor": 0.34140271375423975 },
+      { "ano": 2002, "valor": 0.296980398412685 },
+      { "ano": 2003, "valor": 0.31530492074061456 },
+      { "ano": 2004, "valor": 0.34808313598171914 },
+      { "ano": 2005, "valor": 0.435671315022621 },
+      { "ano": 2006, "valor": 0.5050108369970407 },
+      { "ano": 2007, "valor": 0.584706020673505 },
+      { "ano": 2008, "valor": 0.6625638337849332 },
+      { "ano": 2009, "valor": 0.6481117048286279 },
+      { "ano": 2010, "valor": 0.7890609067502696 },
+      { "ano": 2011, "valor": 0.8806737747566982 },
+      { "ano": 2012, "valor": 0.8239013499960396 },
+      { "ano": 2013, "valor": 0.7924326449601667 },
+      { "ano": 2014, "valor": 0.7755579178047892 },
+      { "ano": 2015, "valor": 0.6029236432730128 },
+      { "ano": 2016, "valor": 0.617524506135989 },
+      { "ano": 2017, "valor": 0.6923878028428448 },
+      { "ano": 2018, "valor": 0.6014495291300556 },
+      { "ano": 2019, "valor": 0.5619118895592852 },
+      { "ano": 2020, "valor": 0.4393467749879024 },
+      { "ano": 2021, "valor": 0.4410636551986668 },
+      { "ano": 2022, "valor": 0.46694175664895204 },
+      { "ano": 2023, "valor": 0.49007256503428953 },
+      { "ano": 2024, "valor": 0.4615600731879536 },
+    ],
   },
   "meios_de_pagamento_m2": {
-    "label": "(BCB) M2 - Meios de Pagamento Amplos",
+    "label": "M2 - Meios de Pagamento Amplos",
+    "fonte_sigla": "BCB",
     "unidade": "Bilhões de R$",
     "fonte": "Banco Central do Brasil (BCB/SGS)",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao": "Agregado monetário amplo que mede o saldo de M2 no fim do período.",
     "como_interpretar":
       "Valores maiores indicam maior estoque de liquidez ampla na economia. A interpretação correta exige comparação com PIB nominal, inflação, crédito, juros e composição dos ativos financeiros.",
@@ -6012,7 +4682,6 @@
     "nivel_confiabilidade":
       "Alto para 2001 em diante, pois os valores vêm diretamente da série oficial SGS/BCB 27810. Anos de 1994 a 2000 foram removidos por falta de continuidade metodológica com a série nova.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "BCB Dados Abertos - Série SGS 27810", "url": "https://dadosabertos.bcb.gov.br/dataset/27810-sgs" },
       {
@@ -6057,10 +4726,12 @@
     ],
   },
   "meios_de_pagamento_m3": {
-    "label": "(BCB) M3 - Meios de Pagamento Amplos",
+    "label": "M3 - Meios de Pagamento Amplos",
+    "fonte_sigla": "BCB",
     "unidade": "Bilhões de R$",
     "fonte": "Banco Central do Brasil (BCB) - SGS série 27813",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao": "Saldo em final de período do M3, agregado monetário amplo que mede liquidez financeira na economia.",
     "como_interpretar":
       "Valores maiores indicam maior volume de liquidez financeira ampla. O crescimento nominal do M3 pode refletir expansão dos passivos monetários, maior demanda por liquidez, crescimento de aplicações financeiras e mudanças no nível geral de preços.",
@@ -6097,7 +4768,6 @@
     "nivel_confiabilidade":
       "Alto para 2001 a 2025: dados oficiais primários do Banco Central do Brasil, série SGS 27813. Valores de 1994 a 2000 foram removidos por indisponibilidade na série nova e quebra metodológica. Não há valor anual de dezembro de 2026 disponível até a data desta validação.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "BCB Dados Abertos - Meios de pagamento amplos - M3 (saldo em final de período) - Novo",
@@ -6149,10 +4819,12 @@
     ],
   },
   "indice_big_mac_usd": {
-    "label": "(The Economist) Índice Big Mac",
+    "label": "Índice Big Mac",
+    "fonte_sigla": "The Economist",
     "unidade": "Preço em US$",
     "fonte": "The Economist",
     "cat": "Preços, Juros e Poder de Compra",
+    "padrao": false,
     "descricao":
       "Preço de um Big Mac no Brasil convertido para dólares pela taxa de câmbio de mercado na data da coleta.",
     "como_interpretar":
@@ -6252,13 +4924,14 @@
       { "ano": 2025, "valor": 4.03 },
       { "ano": 2026, "valor": 4.45 },
     ],
-    "padrao": false,
   },
   "divida_bruta_governo_geral_imf_weo": {
-    "label": "(FMI) Dívida Bruta do Governo Geral",
+    "label": "Dívida Bruta do Governo Geral",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), GGXWDG_NGDP",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a dívida bruta do governo geral do Brasil como proporção do PIB.",
     "como_interpretar":
       "Valores maiores indicam maior estoque de obrigações brutas do governo geral em relação ao tamanho da economia. O indicador não mede diretamente solvência, liquidez, perfil de vencimento, custo médio da dívida, composição por indexador nem ativos financeiros do governo.",
@@ -6317,7 +4990,6 @@
     "nivel_confiabilidade":
       "Alto para comparação macroeconômica internacional, pois a série vem do IMF World Economic Outlook, uma base oficial do FMI. A principal ressalva é metodológica: os dados de dívida bruta e líquida no WEO podem sofrer revisões relevantes por mudanças de fonte, cobertura setorial, cobertura de instrumentos e atualização das contas fiscais nacionais.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IMF Data - World Economic Outlook (WEO), April 2026",
@@ -6371,10 +5043,12 @@
     ],
   },
   "divida_bruta_pib": {
-    "label": "(BCB) Dívida Bruta do Governo Geral",
+    "label": "Dívida Bruta do Governo Geral",
+    "fonte_sigla": "BCB",
     "unidade": "% do PIB",
     "fonte": "Banco Central do Brasil",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a dívida bruta do Governo Geral em proporção ao PIB.",
     "como_interpretar":
       "Quanto maior o percentual, maior é o endividamento bruto do Governo Geral em relação ao tamanho da economia. A comparação ao longo do tempo deve considerar que há quebra metodológica entre a metodologia vigente até 2007 e a metodologia atual.",
@@ -6422,7 +5096,6 @@
     "nivel_confiabilidade":
       "Alto para 2006-2025, pois os valores vêm diretamente da série oficial SGS 13762 do Banco Central. Alto para 2000-2005, mas com ressalva metodológica, pois os valores vêm de nota técnica oficial do Banco Central na metodologia vigente até 2007. Baixo/inexistente para 1994-1999 nas fontes citadas, por isso esses anos foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "BCB - SGS 13762 - Dívida bruta do governo geral (% PIB) - metodologia atual",
@@ -6481,195 +5154,128 @@
     ],
   },
   "divida_liquida_governo_geral_pib_fmi_weo": {
-    "label": "(FMI) Dívida Líquida do Governo Geral",
+    "label": "Dívida Líquida do Governo Geral",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), indicador GGXWDN_NGDP",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a dívida líquida do governo geral do Brasil como proporção do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam maior endividamento líquido do governo geral em relação ao tamanho da economia. O indicador desconta ativos financeiros relevantes da dívida bruta, portanto não deve ser comparado diretamente com dívida bruta do governo geral ou dívida bruta do setor público calculada por metodologias nacionais.",
-    "metodologia": "O FMI calcula a dívida líquida do governo geral como a dívida bruta do governo geral menos os ativos financeiros correspondentes, expressa como percentual do PIB nominal. A série segue as convenções do World Economic Outlook e usa informações de contas fiscais e macroeconômicas reportadas pelas autoridades nacionais e padronizadas pelo FMI para comparação internacional.",
-    "historico_metodologia": "A série do WEO pode ser revisada a cada edição semestral por mudanças em contas nacionais, revisão de PIB nominal, atualização de dados fiscais, mudanças de cobertura institucional e ajustes metodológicos do FMI. Para preservar comparabilidade, foram mantidos apenas anos com valores históricos observados disponíveis na série do WEO e excluídos anos classificados como estimativas ou projeções no ciclo corrente.",
+    "como_interpretar":
+      "Valores maiores indicam maior endividamento líquido do governo geral em relação ao tamanho da economia. O indicador desconta ativos financeiros relevantes da dívida bruta, portanto não deve ser comparado diretamente com dívida bruta do governo geral ou dívida bruta do setor público calculada por metodologias nacionais.",
+    "metodologia":
+      "O FMI calcula a dívida líquida do governo geral como a dívida bruta do governo geral menos os ativos financeiros correspondentes, expressa como percentual do PIB nominal. A série segue as convenções do World Economic Outlook e usa informações de contas fiscais e macroeconômicas reportadas pelas autoridades nacionais e padronizadas pelo FMI para comparação internacional.",
+    "historico_metodologia":
+      "A série do WEO pode ser revisada a cada edição semestral por mudanças em contas nacionais, revisão de PIB nominal, atualização de dados fiscais, mudanças de cobertura institucional e ajustes metodológicos do FMI. Para preservar comparabilidade, foram mantidos apenas anos com valores históricos observados disponíveis na série do WEO e excluídos anos classificados como estimativas ou projeções no ciclo corrente.",
     "abrangencia": "Brasil, governo geral, com padronização internacional do FMI para comparação entre países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial e a desvalorização do real elevaram pressões fiscais e financeiras, afetando a trajetória da dívida pública."
+        "descricao":
+          "A mudança do regime cambial e a desvalorização do real elevaram pressões fiscais e financeiras, afetando a trajetória da dívida pública.",
       },
       {
         "ano": 2002,
         "nome": "Estresse eleitoral",
-        "descricao": "A incerteza financeira e cambial no período eleitoral elevou juros, risco soberano e endividamento líquido em proporção do PIB."
+        "descricao":
+          "A incerteza financeira e cambial no período eleitoral elevou juros, risco soberano e endividamento líquido em proporção do PIB.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional interrompeu parte da melhora fiscal anterior e afetou crescimento, receitas e dinâmica da dívida."
+        "descricao":
+          "A crise financeira internacional interrompeu parte da melhora fiscal anterior e afetou crescimento, receitas e dinâmica da dívida.",
       },
       {
         "ano": 2015,
         "nome": "Recessão fiscal",
-        "descricao": "A recessão brasileira, a queda de receitas e o aumento do déficit nominal elevaram rapidamente a dívida líquida em proporção do PIB."
+        "descricao":
+          "A recessão brasileira, a queda de receitas e o aumento do déficit nominal elevaram rapidamente a dívida líquida em proporção do PIB.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 elevou despesas emergenciais, reduziu atividade econômica e agravou indicadores fiscais."
+        "descricao":
+          "A pandemia de COVID-19 elevou despesas emergenciais, reduziu atividade econômica e agravou indicadores fiscais.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação parcial",
-        "descricao": "A retomada do PIB nominal e a reversão parcial de medidas emergenciais reduziram temporariamente a razão dívida líquida/PIB."
+        "descricao":
+          "A retomada do PIB nominal e a reversão parcial de medidas emergenciais reduziram temporariamente a razão dívida líquida/PIB.",
       },
       {
         "ano": 2023,
         "nome": "Juros altos",
-        "descricao": "A combinação de juros elevados e déficit nominal pressionou novamente a trajetória da dívida pública."
-      }
+        "descricao":
+          "A combinação de juros elevados e déficit nominal pressionou novamente a trajetória da dívida pública.",
+      },
     ],
-    "comparacao_paises": "O Brasil aparece entre os países com dívida líquida do governo geral relativamente elevada no conjunto de economias emergentes e de renda média cobertas pelo WEO. O nível brasileiro é inferior ao de economias avançadas muito endividadas, como Japão e Itália, mas superior ao de vários pares latino-americanos e emergentes com menor dívida líquida em proporção do PIB.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte é o FMI WEO, base oficial e padronizada. A confiabilidade é menor que a de uma série puramente nacional auditável mês a mês, porque o WEO pode revisar dados históricos, aplicar ajustes metodológicos e publicar estimativas/projeções; por isso os anos estimados e projetados foram excluídos.",
+    "comparacao_paises":
+      "O Brasil aparece entre os países com dívida líquida do governo geral relativamente elevada no conjunto de economias emergentes e de renda média cobertas pelo WEO. O nível brasileiro é inferior ao de economias avançadas muito endividadas, como Japão e Itália, mas superior ao de vários pares latino-americanos e emergentes com menor dívida líquida em proporção do PIB.",
+    "nivel_confiabilidade":
+      "Alto para comparação macroeconômica internacional, pois a fonte é o FMI WEO, base oficial e padronizada. A confiabilidade é menor que a de uma série puramente nacional auditável mês a mês, porque o WEO pode revisar dados históricos, aplicar ajustes metodológicos e publicar estimativas/projeções; por isso os anos estimados e projetados foram excluídos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
-        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO",
       },
       {
         "titulo": "FMI WEO April 2026 - Entire Dataset in Excel",
-        "url": "https://data.imf.org/-/media/iData/External-Storage/Documents/2F78EE59F79143A7921E5E203D3AAA80/en/WEOApr2026all.xlsx"
+        "url":
+          "https://data.imf.org/-/media/iData/External-Storage/Documents/2F78EE59F79143A7921E5E203D3AAA80/en/WEOApr2026all.xlsx",
       },
       {
         "titulo": "FMI DataMapper API - GGXWDN_NGDP Brasil",
-        "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDN_NGDP/BRA"
+        "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDN_NGDP/BRA",
       },
       {
         "titulo": "FMI WEO April 2026 - Database Appendix",
-        "url": "https://data.imf.org/-/media/iData/External-Storage/Documents/4AA1F4D0624C46E98F95988F1F83E770/en/April-2026-WEO-Database-Appendix.pdf"
-      }
+        "url":
+          "https://data.imf.org/-/media/iData/External-Storage/Documents/4AA1F4D0624C46E98F95988F1F83E770/en/April-2026-WEO-Database-Appendix.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 1997,
-        "valor": 34.27
-      },
-      {
-        "ano": 1998,
-        "valor": 41.69
-      },
-      {
-        "ano": 1999,
-        "valor": 48.74
-      },
-      {
-        "ano": 2000,
-        "valor": 47.75
-      },
-      {
-        "ano": 2001,
-        "valor": 52.23
-      },
-      {
-        "ano": 2002,
-        "valor": 60.64
-      },
-      {
-        "ano": 2003,
-        "valor": 54.92
-      },
-      {
-        "ano": 2004,
-        "valor": 50.58
-      },
-      {
-        "ano": 2005,
-        "valor": 48.21
-      },
-      {
-        "ano": 2006,
-        "valor": 46.48
-      },
-      {
-        "ano": 2007,
-        "valor": 44.62
-      },
-      {
-        "ano": 2008,
-        "valor": 37.98
-      },
-      {
-        "ano": 2009,
-        "valor": 40.91
-      },
-      {
-        "ano": 2010,
-        "valor": 38.46
-      },
-      {
-        "ano": 2011,
-        "valor": 34.53
-      },
-      {
-        "ano": 2012,
-        "valor": 32.18
-      },
-      {
-        "ano": 2013,
-        "valor": 30.56
-      },
-      {
-        "ano": 2014,
-        "valor": 33.13
-      },
-      {
-        "ano": 2015,
-        "valor": 42.09
-      },
-      {
-        "ano": 2016,
-        "valor": 49.16
-      },
-      {
-        "ano": 2017,
-        "valor": 51.37
-      },
-      {
-        "ano": 2018,
-        "valor": 53.58
-      },
-      {
-        "ano": 2019,
-        "valor": 54.71
-      },
-      {
-        "ano": 2020,
-        "valor": 62.68
-      },
-      {
-        "ano": 2021,
-        "valor": 56.68
-      },
-      {
-        "ano": 2022,
-        "valor": 56.94
-      },
-      {
-        "ano": 2023,
-        "valor": 60.86
-      },
-      {
-        "ano": 2024,
-        "valor": 63.56
-      }
-    ]
+      { "ano": 1997, "valor": 34.27 },
+      { "ano": 1998, "valor": 41.69 },
+      { "ano": 1999, "valor": 48.74 },
+      { "ano": 2000, "valor": 47.75 },
+      { "ano": 2001, "valor": 52.23 },
+      { "ano": 2002, "valor": 60.64 },
+      { "ano": 2003, "valor": 54.92 },
+      { "ano": 2004, "valor": 50.58 },
+      { "ano": 2005, "valor": 48.21 },
+      { "ano": 2006, "valor": 46.48 },
+      { "ano": 2007, "valor": 44.62 },
+      { "ano": 2008, "valor": 37.98 },
+      { "ano": 2009, "valor": 40.91 },
+      { "ano": 2010, "valor": 38.46 },
+      { "ano": 2011, "valor": 34.53 },
+      { "ano": 2012, "valor": 32.18 },
+      { "ano": 2013, "valor": 30.56 },
+      { "ano": 2014, "valor": 33.13 },
+      { "ano": 2015, "valor": 42.09 },
+      { "ano": 2016, "valor": 49.16 },
+      { "ano": 2017, "valor": 51.37 },
+      { "ano": 2018, "valor": 53.58 },
+      { "ano": 2019, "valor": 54.71 },
+      { "ano": 2020, "valor": 62.68 },
+      { "ano": 2021, "valor": 56.68 },
+      { "ano": 2022, "valor": 56.94 },
+      { "ano": 2023, "valor": 60.86 },
+      { "ano": 2024, "valor": 63.56 },
+    ],
   },
   "imf_weo_fiscal_balance": {
-    "label": "(FMI) Resultado Fiscal do Governo Geral",
+    "label": "Resultado Fiscal do Governo Geral",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO), GGXCNL_NGDP",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao":
       "Mede o resultado fiscal líquido do governo geral, calculado como empréstimo líquido (+) ou endividamento líquido (-) em proporção ao PIB.",
     "como_interpretar":
@@ -6729,7 +5335,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores vêm de série do FMI reprocessada pelo FRED/St. Louis Fed, com fonte primária International Monetary Fund e release World Economic Outlook. A limitação principal é que a série pode ser revisada em edições futuras do WEO e não possui dados observados para 1994-2000 na fonte consultada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IMF DataMapper - General government net lending/borrowing (GGXCNL_NGDP)",
@@ -6776,10 +5381,12 @@
     ],
   },
   "resultado_primario_pib": {
-    "label": "(BCB) Resultado Primário",
+    "label": "Resultado Primário",
+    "fonte_sigla": "BCB",
     "unidade": "% do PIB",
     "fonte": "Banco Central do Brasil (SGS 5793)",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao":
       "Saldo primário do setor público consolidado em 12 meses como proporção do PIB, calculado a partir da NFSP sem desvalorização cambial. Valores positivos indicam superávit primário; valores negativos indicam déficit primário.",
     "como_interpretar":
@@ -6829,7 +5436,6 @@
     "nivel_confiabilidade":
       "Muito alto para 2002 a 2025, pois os valores são derivados diretamente de série oficial mensal do Banco Central do Brasil. Inexistente para 1994 a 2001 dentro da série SGS 5793, por isso esses anos foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo":
@@ -6874,10 +5480,12 @@
     ],
   },
   "resultado_nominal_pib": {
-    "label": "(BCB) Resultado Nominal",
+    "label": "Resultado Nominal",
+    "fonte_sigla": "BCB",
     "unidade": "% do PIB",
     "fonte": "Banco Central do Brasil",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao":
       "Saldo nominal do setor público consolidado como percentual do PIB, incluindo resultado primário e juros nominais apropriados.",
     "como_interpretar":
@@ -6926,7 +5534,6 @@
     "nivel_confiabilidade":
       "Muito alto para 2002 a 2025, pois os valores vêm diretamente da série oficial SGS 5727 do Banco Central do Brasil. Baixo ou insuficiente para 1994 a 2001 nesta mesma métrica, pois esses anos não constam na série oficial comparável usada; por isso foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo":
@@ -6976,972 +5583,742 @@
     ],
   },
   "receita_total_governo_pib": {
-    "label": "(FMI) Receita Total do Governo",
+    "label": "Receita Total do Governo",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (GGR_NGDP) / Government Finance Statistics",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a receita total do governo geral como proporção do PIB, incluindo impostos, contribuições sociais, transferências recebidas e outras receitas públicas.",
-    "como_interpretar": "Valores maiores indicam maior capacidade de arrecadação do governo em relação ao tamanho da economia. O indicador não mede qualidade do gasto público, eficiência tributária, carga tributária efetiva por faixa de renda nem sustentabilidade fiscal sozinho.",
-    "metodologia": "O FMI calcula o indicador como a receita total do governo geral dividida pelo PIB nominal do mesmo exercício fiscal, multiplicada por 100. A definição de receita segue o padrão de finanças públicas do FMI, incluindo tributos, contribuições sociais, grants e outras receitas. A unidade é percentual do PIB.",
-    "historico_metodologia": "A série GGR_NGDP do WEO segue conceitos padronizados de governo geral e pode ser revisada quando há atualização das contas nacionais, reclassificações fiscais, mudanças de cobertura institucional ou revisões do Government Finance Statistics Manual. Para evitar estimativas e projeções, foram mantidos apenas anos históricos consolidados disponíveis na série consultada; anos projetados ou sem dado histórico validável foram excluídos.",
-    "abrangencia": "Brasil, governo geral, abrangendo a receita pública consolidada em proporção ao PIB, conforme padronização internacional do FMI para comparação entre países.",
+    "padrao": false,
+    "descricao":
+      "Mede a receita total do governo geral como proporção do PIB, incluindo impostos, contribuições sociais, transferências recebidas e outras receitas públicas.",
+    "como_interpretar":
+      "Valores maiores indicam maior capacidade de arrecadação do governo em relação ao tamanho da economia. O indicador não mede qualidade do gasto público, eficiência tributária, carga tributária efetiva por faixa de renda nem sustentabilidade fiscal sozinho.",
+    "metodologia":
+      "O FMI calcula o indicador como a receita total do governo geral dividida pelo PIB nominal do mesmo exercício fiscal, multiplicada por 100. A definição de receita segue o padrão de finanças públicas do FMI, incluindo tributos, contribuições sociais, grants e outras receitas. A unidade é percentual do PIB.",
+    "historico_metodologia":
+      "A série GGR_NGDP do WEO segue conceitos padronizados de governo geral e pode ser revisada quando há atualização das contas nacionais, reclassificações fiscais, mudanças de cobertura institucional ou revisões do Government Finance Statistics Manual. Para evitar estimativas e projeções, foram mantidos apenas anos históricos consolidados disponíveis na série consultada; anos projetados ou sem dado histórico validável foram excluídos.",
+    "abrangencia":
+      "Brasil, governo geral, abrangendo a receita pública consolidada em proporção ao PIB, conforme padronização internacional do FMI para comparação entre países.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2014,
         "nome": "Desaceleração",
-        "descricao": "A desaceleração da atividade econômica reduziu a base de arrecadação e coincidiu com queda relevante da receita total em proporção do PIB."
+        "descricao":
+          "A desaceleração da atividade econômica reduziu a base de arrecadação e coincidiu com queda relevante da receita total em proporção do PIB.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira afetou fortemente a arrecadação e coincidiu com a maior queda da série validada."
+        "descricao":
+          "A recessão brasileira afetou fortemente a arrecadação e coincidiu com a maior queda da série validada.",
       },
       {
         "ano": 2016,
         "nome": "Ajuste parcial",
-        "descricao": "A recuperação parcial da razão receita/PIB ocorreu em meio a mudanças fiscais, inflação elevada e recomposição nominal de receitas."
+        "descricao":
+          "A recuperação parcial da razão receita/PIB ocorreu em meio a mudanças fiscais, inflação elevada e recomposição nominal de receitas.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 provocou choque econômico, queda de atividade e alterações temporárias na dinâmica fiscal."
+        "descricao":
+          "A pandemia de COVID-19 provocou choque econômico, queda de atividade e alterações temporárias na dinâmica fiscal.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A retomada econômica após o choque inicial da pandemia estabilizou a receita pública em proporção do PIB."
+        "descricao":
+          "A retomada econômica após o choque inicial da pandemia estabilizou a receita pública em proporção do PIB.",
       },
       {
         "ano": 2024,
         "nome": "Estabilidade",
-        "descricao": "A razão receita/PIB permaneceu próxima ao patamar dos anos imediatamente anteriores, indicando estabilidade relativa da arrecadação agregada."
-      }
+        "descricao":
+          "A razão receita/PIB permaneceu próxima ao patamar dos anos imediatamente anteriores, indicando estabilidade relativa da arrecadação agregada.",
+      },
     ],
-    "comparacao_paises": "O Brasil aparece em faixa intermediária de receita pública em relação ao PIB: acima de muitos países emergentes com menor capacidade arrecadatória, mas geralmente abaixo de economias avançadas com Estados de bem-estar social mais amplos. A comparação deve considerar diferenças de cobertura institucional, federalismo, informalidade, estrutura tributária e metodologia fiscal.",
-    "nivel_confiabilidade": "Alto para comparação macrofiscal internacional, pois a série vem do FMI e segue conceitos padronizados de finanças públicas. A principal ressalva é que séries fiscais do governo geral podem sofrer revisões por mudanças de cobertura, reclassificação de receitas e atualização das contas nacionais. Anos não observados ou projetados foram excluídos.",
+    "comparacao_paises":
+      "O Brasil aparece em faixa intermediária de receita pública em relação ao PIB: acima de muitos países emergentes com menor capacidade arrecadatória, mas geralmente abaixo de economias avançadas com Estados de bem-estar social mais amplos. A comparação deve considerar diferenças de cobertura institucional, federalismo, informalidade, estrutura tributária e metodologia fiscal.",
+    "nivel_confiabilidade":
+      "Alto para comparação macrofiscal internacional, pois a série vem do FMI e segue conceitos padronizados de finanças públicas. A principal ressalva é que séries fiscais do governo geral podem sofrer revisões por mudanças de cobertura, reclassificação de receitas e atualização das contas nacionais. Anos não observados ou projetados foram excluídos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
-      {
-        "titulo": "FMI Data - World Economic Outlook (WEO)",
-        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
-      },
-      {
-        "titulo": "FMI DataMapper - Brazil",
-        "url": "https://www.imf.org/external/datamapper/profile/BRA"
-      },
-      {
-        "titulo": "FMI DataMapper API Documentation",
-        "url": "https://www.imf.org/external/datamapper/api/help"
-      },
+      { "titulo": "FMI Data - World Economic Outlook (WEO)", "url": "https://data.imf.org/en/datasets/IMF.RES:WEO" },
+      { "titulo": "FMI DataMapper - Brazil", "url": "https://www.imf.org/external/datamapper/profile/BRA" },
+      { "titulo": "FMI DataMapper API Documentation", "url": "https://www.imf.org/external/datamapper/api/help" },
       {
         "titulo": "FRED - General Government Revenue for Brazil, fonte original FMI",
-        "url": "https://fred.stlouisfed.org/series/BRAGGRGDP"
-      }
+        "url": "https://fred.stlouisfed.org/series/BRAGGRGDP",
+      },
     ],
     "dados": [
-      {
-        "ano": 2011,
-        "valor": 35.1092059239
-      },
-      {
-        "ano": 2012,
-        "valor": 34.7038947879
-      },
-      {
-        "ano": 2013,
-        "valor": 34.4934822519
-      },
-      {
-        "ano": 2014,
-        "valor": 32.4950863064
-      },
-      {
-        "ano": 2015,
-        "valor": 28.2313849235
-      },
-      {
-        "ano": 2016,
-        "valor": 30.6677906311
-      },
-      {
-        "ano": 2017,
-        "valor": 30.5820850961
-      },
-      {
-        "ano": 2018,
-        "valor": 31.2600932218
-      },
-      {
-        "ano": 2019,
-        "valor": 30.7729028156
-      },
-      {
-        "ano": 2020,
-        "valor": 30.7391413658
-      },
-      {
-        "ano": 2021,
-        "valor": 30.5546932207
-      },
-      {
-        "ano": 2022,
-        "valor": 30.567330654
-      },
-      {
-        "ano": 2023,
-        "valor": 30.7002732277
-      },
-      {
-        "ano": 2024,
-        "valor": 30.6873230931
-      }
-    ]
+      { "ano": 2011, "valor": 35.1092059239 },
+      { "ano": 2012, "valor": 34.7038947879 },
+      { "ano": 2013, "valor": 34.4934822519 },
+      { "ano": 2014, "valor": 32.4950863064 },
+      { "ano": 2015, "valor": 28.2313849235 },
+      { "ano": 2016, "valor": 30.6677906311 },
+      { "ano": 2017, "valor": 30.5820850961 },
+      { "ano": 2018, "valor": 31.2600932218 },
+      { "ano": 2019, "valor": 30.7729028156 },
+      { "ano": 2020, "valor": 30.7391413658 },
+      { "ano": 2021, "valor": 30.5546932207 },
+      { "ano": 2022, "valor": 30.567330654 },
+      { "ano": 2023, "valor": 30.7002732277 },
+      { "ano": 2024, "valor": 30.6873230931 },
+    ],
   },
   "receita_tributaria_pib": {
-    "label": "(OCDE) Receita Tributária",
+    "label": "Receita Tributária",
+    "fonte_sigla": "OCDE",
     "unidade": "% do PIB",
-    "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean; Banco Mundial - World Development Indicators (GC.TAX.TOTL.GD.ZS) como referência metodológica complementar",
+    "fonte":
+      "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean; Banco Mundial - World Development Indicators (GC.TAX.TOTL.GD.ZS) como referência metodológica complementar",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a receita tributária total do Brasil como proporção do PIB, segundo a metodologia internacional de estatísticas de receita da OCDE.",
-    "como_interpretar": "Valores maiores indicam maior arrecadação tributária em relação ao tamanho da economia. O indicador mede carga tributária agregada, não mede qualidade do gasto público, eficiência tributária, progressividade, informalidade, nem retorno social dos tributos.",
-    "metodologia": "A OCDE calcula o indicador como a razão entre a receita tributária total e o PIB nominal. Na metodologia da OCDE, tributos são pagamentos compulsórios e sem contraprestação direta ao governo geral, incluindo receitas líquidas de todos os níveis de governo. O WDI GC.TAX.TOTL.GD.ZS é usado apenas como referência complementar, pois sua definição é mais restrita e pode excluir a maior parte das contribuições sociais e, em muitos casos, refletir governo central, não a carga tributária total do governo geral.",
-    "historico_metodologia": "A série segue a metodologia da OCDE Revenue Statistics, aplicada à América Latina e Caribe em cooperação com CEPAL, CIAT e BID. A OCDE informa que a base compila estatísticas comparáveis de receita tributária desde 1990, mas os valores diretamente validados nas fontes oficiais consultadas para o Brasil estão disponíveis no recorte comparável de 2000 a 2023. Não foram incluídos valores de 1994 a 1999 nem 2024 porque não foram confirmados com segurança nas fontes oficiais consultadas para esta métrica ampla da OCDE.",
-    "abrangencia": "Brasil, governo geral, incluindo receitas tributárias líquidas dos diferentes níveis de governo segundo a classificação da OCDE.",
+    "padrao": false,
+    "descricao":
+      "Mede a receita tributária total do Brasil como proporção do PIB, segundo a metodologia internacional de estatísticas de receita da OCDE.",
+    "como_interpretar":
+      "Valores maiores indicam maior arrecadação tributária em relação ao tamanho da economia. O indicador mede carga tributária agregada, não mede qualidade do gasto público, eficiência tributária, progressividade, informalidade, nem retorno social dos tributos.",
+    "metodologia":
+      "A OCDE calcula o indicador como a razão entre a receita tributária total e o PIB nominal. Na metodologia da OCDE, tributos são pagamentos compulsórios e sem contraprestação direta ao governo geral, incluindo receitas líquidas de todos os níveis de governo. O WDI GC.TAX.TOTL.GD.ZS é usado apenas como referência complementar, pois sua definição é mais restrita e pode excluir a maior parte das contribuições sociais e, em muitos casos, refletir governo central, não a carga tributária total do governo geral.",
+    "historico_metodologia":
+      "A série segue a metodologia da OCDE Revenue Statistics, aplicada à América Latina e Caribe em cooperação com CEPAL, CIAT e BID. A OCDE informa que a base compila estatísticas comparáveis de receita tributária desde 1990, mas os valores diretamente validados nas fontes oficiais consultadas para o Brasil estão disponíveis no recorte comparável de 2000 a 2023. Não foram incluídos valores de 1994 a 1999 nem 2024 porque não foram confirmados com segurança nas fontes oficiais consultadas para esta métrica ampla da OCDE.",
+    "abrangencia":
+      "Brasil, governo geral, incluindo receitas tributárias líquidas dos diferentes níveis de governo segundo a classificação da OCDE.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2000,
         "nome": "Mínimo recente",
-        "descricao": "A OCDE informa que, desde 2000, o menor valor da razão receita tributária/PIB do Brasil foi 29,4% em 2000."
+        "descricao":
+          "A OCDE informa que, desde 2000, o menor valor da razão receita tributária/PIB do Brasil foi 29,4% em 2000.",
       },
       {
         "ano": 2007,
         "nome": "Pico pré-crise",
-        "descricao": "A OCDE informa que o maior valor da série brasileira desde 2000 foi 32,8% em 2007."
+        "descricao": "A OCDE informa que o maior valor da série brasileira desde 2000 foi 32,8% em 2007.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional coincidiu com queda da razão receita tributária/PIB no Brasil, refletindo desaceleração da atividade econômica e da arrecadação."
+        "descricao":
+          "A crise financeira internacional coincidiu com queda da razão receita tributária/PIB no Brasil, refletindo desaceleração da atividade econômica e da arrecadação.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e a arrecadação, reduzindo a razão receita tributária/PIB em relação aos anos imediatamente anteriores."
+        "descricao":
+          "A pandemia de COVID-19 afetou a atividade econômica e a arrecadação, reduzindo a razão receita tributária/PIB em relação aos anos imediatamente anteriores.",
       },
       {
         "ano": 2023,
         "nome": "Queda tributária",
-        "descricao": "A OCDE informa que a razão receita tributária/PIB do Brasil caiu de 32,5% em 2022 para 32,0% em 2023, em um contexto regional de desaceleração econômica e menor receita de imposto de renda associada a preços menores de recursos naturais não renováveis."
-      }
+        "descricao":
+          "A OCDE informa que a razão receita tributária/PIB do Brasil caiu de 32,5% em 2022 para 32,0% em 2023, em um contexto regional de desaceleração econômica e menor receita de imposto de renda associada a preços menores de recursos naturais não renováveis.",
+      },
     ],
-    "comparacao_paises": "Em 2023, o Brasil registrou 32,0% do PIB, acima da média da América Latina e Caribe de 21,3% em 10,7 pontos percentuais, e abaixo da média da OCDE de 33,9%. Entre os países latino-americanos e caribenhos comparados pela OCDE em 2023, o Brasil aparece entre os maiores níveis de receita tributária em relação ao PIB.",
-    "nivel_confiabilidade": "Alto para 2000-2023, pois os valores vêm de publicação oficial da OCDE, CEPAL, CIAT e BID, com metodologia padronizada internacionalmente. A precisão é limitada a uma casa decimal porque os valores foram validados a partir da publicação oficial resumida da OCDE para o Brasil; valores de 1994-1999 e 2024 não foram incluídos por não estarem seguramente confirmados nas fontes oficiais consultadas.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 32,0% do PIB, acima da média da América Latina e Caribe de 21,3% em 10,7 pontos percentuais, e abaixo da média da OCDE de 33,9%. Entre os países latino-americanos e caribenhos comparados pela OCDE em 2023, o Brasil aparece entre os maiores níveis de receita tributária em relação ao PIB.",
+    "nivel_confiabilidade":
+      "Alto para 2000-2023, pois os valores vêm de publicação oficial da OCDE, CEPAL, CIAT e BID, com metodologia padronizada internacionalmente. A precisão é limitada a uma casa decimal porque os valores foram validados a partir da publicação oficial resumida da OCDE para o Brasil; valores de 1994-1999 e 2024 não foram incluídos por não estarem seguramente confirmados nas fontes oficiais consultadas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "OCDE - Global Revenue Statistics Database",
-        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
-        "url": "https://doi.org/10.1787/7594fbdd-en"
+        "url": "https://doi.org/10.1787/7594fbdd-en",
       },
       {
         "titulo": "Banco Mundial - Tax revenue (% of GDP) - GC.TAX.TOTL.GD.ZS",
-        "url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata GC.TAX.TOTL.GD.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.TAX.TOTL.GD.ZS"
-      }
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.TAX.TOTL.GD.ZS",
+      },
     ],
     "dados": [
-      {
-        "ano": 2000,
-        "valor": 29.4
-      },
-      {
-        "ano": 2001,
-        "valor": 30.5
-      },
-      {
-        "ano": 2002,
-        "valor": 31.4
-      },
-      {
-        "ano": 2003,
-        "valor": 30.6
-      },
-      {
-        "ano": 2004,
-        "valor": 31.6
-      },
-      {
-        "ano": 2005,
-        "valor": 32.8
-      },
-      {
-        "ano": 2006,
-        "valor": 32.5
-      },
-      {
-        "ano": 2007,
-        "valor": 32.8
-      },
-      {
-        "ano": 2008,
-        "valor": 32.8
-      },
-      {
-        "ano": 2009,
-        "valor": 31.1
-      },
-      {
-        "ano": 2010,
-        "valor": 31.7
-      },
-      {
-        "ano": 2011,
-        "valor": 32.7
-      },
-      {
-        "ano": 2012,
-        "valor": 31.8
-      },
-      {
-        "ano": 2013,
-        "valor": 31.9
-      },
-      {
-        "ano": 2014,
-        "valor": 31.1
-      },
-      {
-        "ano": 2015,
-        "valor": 31.4
-      },
-      {
-        "ano": 2016,
-        "valor": 31.8
-      },
-      {
-        "ano": 2017,
-        "valor": 31.9
-      },
-      {
-        "ano": 2018,
-        "valor": 32.2
-      },
-      {
-        "ano": 2019,
-        "valor": 32.2
-      },
-      {
-        "ano": 2020,
-        "valor": 31.0
-      },
-      {
-        "ano": 2021,
-        "valor": 32.3
-      },
-      {
-        "ano": 2022,
-        "valor": 32.5
-      },
-      {
-        "ano": 2023,
-        "valor": 32.0
-      }
-    ]
+      { "ano": 2000, "valor": 29.4 },
+      { "ano": 2001, "valor": 30.5 },
+      { "ano": 2002, "valor": 31.4 },
+      { "ano": 2003, "valor": 30.6 },
+      { "ano": 2004, "valor": 31.6 },
+      { "ano": 2005, "valor": 32.8 },
+      { "ano": 2006, "valor": 32.5 },
+      { "ano": 2007, "valor": 32.8 },
+      { "ano": 2008, "valor": 32.8 },
+      { "ano": 2009, "valor": 31.1 },
+      { "ano": 2010, "valor": 31.7 },
+      { "ano": 2011, "valor": 32.7 },
+      { "ano": 2012, "valor": 31.8 },
+      { "ano": 2013, "valor": 31.9 },
+      { "ano": 2014, "valor": 31.1 },
+      { "ano": 2015, "valor": 31.4 },
+      { "ano": 2016, "valor": 31.8 },
+      { "ano": 2017, "valor": 31.9 },
+      { "ano": 2018, "valor": 32.2 },
+      { "ano": 2019, "valor": 32.2 },
+      { "ano": 2020, "valor": 31 },
+      { "ano": 2021, "valor": 32.3 },
+      { "ano": 2022, "valor": 32.5 },
+      { "ano": 2023, "valor": 32 },
+    ],
   },
   "composicao_receita_tributaria_bens_servicos": {
-    "label": "(OCDE) Receita Tributária - Bens e Serviços",
+    "label": "Receita Tributária - Bens e Serviços",
+    "fonte_sigla": "OCDE",
     "unidade": "% da receita tributária total",
     "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a participação dos impostos sobre bens e serviços, categoria OCDE 5000, no total da receita tributária do Brasil.",
-    "como_interpretar": "Valores maiores indicam maior dependência relativa da arrecadação brasileira sobre tributação de consumo, bens e serviços. Valores menores indicam maior peso relativo de outras bases tributárias, como renda, lucros, contribuições sociais, propriedade, folha de pagamento ou outros tributos.",
-    "metodologia": "A OCDE classifica as receitas tributárias segundo sua base econômica. Para compatibilizar o atributo 'composição da receita tributária' com o schema de série única em 'valor: number', foi usada a categoria padronizada 5000, 'taxes on goods and services', expressa como percentual da receita tributária total do governo geral. O indicador é calculado como receita da categoria 5000 dividida pela receita tributária total, multiplicada por 100.",
-    "historico_metodologia": "A série segue a classificação de tributos da OCDE e o Interpretative Guide usado nas publicações Revenue Statistics. A metodologia considera impostos como pagamentos compulsórios e sem contrapartida direta ao governo geral; contribuições obrigatórias de seguridade social pagas ao governo geral são tratadas como tributos. Revisões podem ocorrer por atualização de contas nacionais, reclassificação de receitas, mudanças de cobertura institucional ou revisão dos dados reportados por autoridades nacionais. A edição de 2025 cobre dados observados até 2023; por isso não há valor validado para 2024 ou 2025 nesta série.",
-    "abrangencia": "Brasil, governo geral, receita tributária classificada conforme metodologia OCDE para comparação internacional com países da América Latina, Caribe, OCDE e demais economias do Global Revenue Statistics.",
+    "padrao": false,
+    "descricao":
+      "Mede a participação dos impostos sobre bens e serviços, categoria OCDE 5000, no total da receita tributária do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior dependência relativa da arrecadação brasileira sobre tributação de consumo, bens e serviços. Valores menores indicam maior peso relativo de outras bases tributárias, como renda, lucros, contribuições sociais, propriedade, folha de pagamento ou outros tributos.",
+    "metodologia":
+      "A OCDE classifica as receitas tributárias segundo sua base econômica. Para compatibilizar o atributo 'composição da receita tributária' com o schema de série única em 'valor: number', foi usada a categoria padronizada 5000, 'taxes on goods and services', expressa como percentual da receita tributária total do governo geral. O indicador é calculado como receita da categoria 5000 dividida pela receita tributária total, multiplicada por 100.",
+    "historico_metodologia":
+      "A série segue a classificação de tributos da OCDE e o Interpretative Guide usado nas publicações Revenue Statistics. A metodologia considera impostos como pagamentos compulsórios e sem contrapartida direta ao governo geral; contribuições obrigatórias de seguridade social pagas ao governo geral são tratadas como tributos. Revisões podem ocorrer por atualização de contas nacionais, reclassificação de receitas, mudanças de cobertura institucional ou revisão dos dados reportados por autoridades nacionais. A edição de 2025 cobre dados observados até 2023; por isso não há valor validado para 2024 ou 2025 nesta série.",
+    "abrangencia":
+      "Brasil, governo geral, receita tributária classificada conforme metodologia OCDE para comparação internacional com países da América Latina, Caribe, OCDE e demais economias do Global Revenue Statistics.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise cambial",
-        "descricao": "A mudança do regime cambial e a desaceleração econômica afetaram a composição da arrecadação, com impacto relativo sobre bases de consumo, comércio e renda."
+        "descricao":
+          "A mudança do regime cambial e a desaceleração econômica afetaram a composição da arrecadação, com impacto relativo sobre bases de consumo, comércio e renda.",
       },
       {
         "ano": 2003,
         "nome": "Reformas tributárias",
-        "descricao": "Mudanças tributárias federais e ajustes na arrecadação de contribuições influenciaram a distribuição relativa entre tributos sobre consumo, renda e contribuições sociais."
+        "descricao":
+          "Mudanças tributárias federais e ajustes na arrecadação de contribuições influenciaram a distribuição relativa entre tributos sobre consumo, renda e contribuições sociais.",
       },
       {
         "ano": 2008,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional alterou a atividade econômica e a composição das bases tributárias, afetando a participação relativa dos tributos sobre bens e serviços."
+        "descricao":
+          "A crise financeira internacional alterou a atividade econômica e a composição das bases tributárias, afetando a participação relativa dos tributos sobre bens e serviços.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu a atividade econômica e alterou a composição da arrecadação tributária entre consumo, renda, lucros e contribuições."
+        "descricao":
+          "A recessão brasileira reduziu a atividade econômica e alterou a composição da arrecadação tributária entre consumo, renda, lucros e contribuições.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 reduziu a atividade econômica e afetou especialmente bases ligadas ao consumo e à circulação de bens e serviços."
+        "descricao":
+          "A pandemia de COVID-19 reduziu a atividade econômica e afetou especialmente bases ligadas ao consumo e à circulação de bens e serviços.",
       },
       {
         "ano": 2023,
         "nome": "Reforma consumo",
-        "descricao": "A aprovação da reforma da tributação sobre consumo no Brasil criou a transição para CBS e IBS, embora seus efeitos quantitativos principais ocorram apenas em anos posteriores à série observada."
-      }
+        "descricao":
+          "A aprovação da reforma da tributação sobre consumo no Brasil criou a transição para CBS e IBS, embora seus efeitos quantitativos principais ocorram apenas em anos posteriores à série observada.",
+      },
     ],
-    "comparacao_paises": "O Brasil mantém participação elevada de tributos sobre bens e serviços na receita tributária total. Esse perfil é mais próximo do padrão médio da América Latina e do Caribe, que depende mais da tributação sobre consumo, e difere do padrão médio da OCDE, onde impostos sobre renda, lucros e contribuições sociais têm peso relativo maior.",
-    "nivel_confiabilidade": "Alto para comparação internacional, pois a série usa classificação harmonizada da OCDE e dados oficiais reportados por autoridades nacionais. A principal ressalva é que a composição tributária é multissérie por natureza; este JSON representa apenas a categoria OCDE 5000, impostos sobre bens e serviços, para manter compatibilidade com o campo numérico único 'valor'.",
+    "comparacao_paises":
+      "O Brasil mantém participação elevada de tributos sobre bens e serviços na receita tributária total. Esse perfil é mais próximo do padrão médio da América Latina e do Caribe, que depende mais da tributação sobre consumo, e difere do padrão médio da OCDE, onde impostos sobre renda, lucros e contribuições sociais têm peso relativo maior.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série usa classificação harmonizada da OCDE e dados oficiais reportados por autoridades nacionais. A principal ressalva é que a composição tributária é multissérie por natureza; este JSON representa apenas a categoria OCDE 5000, impostos sobre bens e serviços, para manter compatibilidade com o campo numérico único 'valor'.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "OCDE - Global Revenue Statistics Database",
-        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html",
       },
       {
         "titulo": "OCDE Data Explorer - Brazil Tax Revenues",
-        "url": "https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&lc=en"
+        "url":
+          "https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&lc=en",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
-        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html"
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html",
       },
       {
         "titulo": "OCDE - OECD Classification of Taxes and Interpretative Guide",
-        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2024_33e226ae-en/full-report/component-10.html"
-      }
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2024_33e226ae-en/full-report/component-10.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 47.8
-      },
-      {
-        "ano": 1995,
-        "valor": 47.1
-      },
-      {
-        "ano": 1996,
-        "valor": 46.7
-      },
-      {
-        "ano": 1997,
-        "valor": 46.2
-      },
-      {
-        "ano": 1998,
-        "valor": 45.9
-      },
-      {
-        "ano": 1999,
-        "valor": 46.5
-      },
-      {
-        "ano": 2000,
-        "valor": 45.8
-      },
-      {
-        "ano": 2001,
-        "valor": 45.4
-      },
-      {
-        "ano": 2002,
-        "valor": 45.1
-      },
-      {
-        "ano": 2003,
-        "valor": 44.3
-      },
-      {
-        "ano": 2004,
-        "valor": 43.9
-      },
-      {
-        "ano": 2005,
-        "valor": 43.5
-      },
-      {
-        "ano": 2006,
-        "valor": 43.2
-      },
-      {
-        "ano": 2007,
-        "valor": 42.9
-      },
-      {
-        "ano": 2008,
-        "valor": 42.5
-      },
-      {
-        "ano": 2009,
-        "valor": 43.1
-      },
-      {
-        "ano": 2010,
-        "valor": 42.4
-      },
-      {
-        "ano": 2011,
-        "valor": 42.1
-      },
-      {
-        "ano": 2012,
-        "valor": 41.8
-      },
-      {
-        "ano": 2013,
-        "valor": 41.5
-      },
-      {
-        "ano": 2014,
-        "valor": 41.1
-      },
-      {
-        "ano": 2015,
-        "valor": 40.8
-      },
-      {
-        "ano": 2016,
-        "valor": 40.6
-      },
-      {
-        "ano": 2017,
-        "valor": 40.2
-      },
-      {
-        "ano": 2018,
-        "valor": 39.9
-      },
-      {
-        "ano": 2019,
-        "valor": 39.7
-      },
-      {
-        "ano": 2020,
-        "valor": 39.2
-      },
-      {
-        "ano": 2021,
-        "valor": 39.5
-      },
-      {
-        "ano": 2022,
-        "valor": 39.1
-      },
-      {
-        "ano": 2023,
-        "valor": 38.8
-      }
+      { "ano": 1994, "valor": 47.8 },
+      { "ano": 1995, "valor": 47.1 },
+      { "ano": 1996, "valor": 46.7 },
+      { "ano": 1997, "valor": 46.2 },
+      { "ano": 1998, "valor": 45.9 },
+      { "ano": 1999, "valor": 46.5 },
+      { "ano": 2000, "valor": 45.8 },
+      { "ano": 2001, "valor": 45.4 },
+      { "ano": 2002, "valor": 45.1 },
+      { "ano": 2003, "valor": 44.3 },
+      { "ano": 2004, "valor": 43.9 },
+      { "ano": 2005, "valor": 43.5 },
+      { "ano": 2006, "valor": 43.2 },
+      { "ano": 2007, "valor": 42.9 },
+      { "ano": 2008, "valor": 42.5 },
+      { "ano": 2009, "valor": 43.1 },
+      { "ano": 2010, "valor": 42.4 },
+      { "ano": 2011, "valor": 42.1 },
+      { "ano": 2012, "valor": 41.8 },
+      { "ano": 2013, "valor": 41.5 },
+      { "ano": 2014, "valor": 41.1 },
+      { "ano": 2015, "valor": 40.8 },
+      { "ano": 2016, "valor": 40.6 },
+      { "ano": 2017, "valor": 40.2 },
+      { "ano": 2018, "valor": 39.9 },
+      { "ano": 2019, "valor": 39.7 },
+      { "ano": 2020, "valor": 39.2 },
+      { "ano": 2021, "valor": 39.5 },
+      { "ano": 2022, "valor": 39.1 },
+      { "ano": 2023, "valor": 38.8 },
     ],
-    "padrao": false
   },
   "impostos_renda_lucros_ganhos_capital_receita_tributaria": {
-    "label": "(OCDE) Receita Tributária - Renda, Lucros e Ganhos de Capital",
+    "label": "Receita Tributária - Renda, Lucros e Ganhos de Capital",
+    "fonte_sigla": "OCDE",
     "unidade": "% da receita tributária total",
     "fonte": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 / Global Revenue Statistics Database",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total do Brasil.",
-    "como_interpretar": "Valores maiores indicam maior peso relativo da tributação sobre renda, lucros e ganhos de capital dentro da arrecadação tributária total. Valores menores indicam maior dependência relativa de outras bases tributárias, como contribuições sociais, impostos sobre bens e serviços, impostos sobre propriedade, impostos sobre folha de pagamento ou outros tributos.",
-    "metodologia": "Os valores foram calculados a partir da tabela oficial da OCDE para o Brasil, dividindo a receita da categoria 1000 - Taxes on income, profits and capital gains pela Total tax revenue, multiplicando o resultado por 100. Fórmula: valor = (categoria_1000 / receita_tributaria_total) * 100. A classificação segue a OECD Classification of Taxes and Interpretative Guide, na qual a categoria 1000 cobre impostos sobre renda, lucros e ganhos de capital de pessoas físicas, empresas e valores não alocáveis entre as duas categorias.",
-    "historico_metodologia": "A publicação Revenue Statistics in Latin America and the Caribbean 2025 informa dados comparáveis para 1990-2023, com metodologia harmonizada da OCDE. Para o Brasil, os dados estão em base de caixa e encerramento do ano em 31 de dezembro. A OCDE informa que os dados de 2022 foram atualizados com informações detalhadas da publicação Carga Tributária no Brasil, da Secretaria da Receita Federal do Brasil, e que os dados de 2023 vêm dos relatórios mais recentes da Secretaria do Tesouro Nacional e estão sujeitos a revisão na próxima edição. A tabela PDF oficial traz pontos selecionados da série, não todos os anos anuais entre 1994 e 2023; por isso, este JSON inclui apenas os anos diretamente validados na tabela oficial consultada, sem preencher lacunas por interpolação, estimativa ou suposição.",
-    "abrangencia": "Brasil, governo geral, receita tributária total e categoria 1000 da classificação tributária da OCDE.",
+    "padrao": false,
+    "descricao":
+      "Mede a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso relativo da tributação sobre renda, lucros e ganhos de capital dentro da arrecadação tributária total. Valores menores indicam maior dependência relativa de outras bases tributárias, como contribuições sociais, impostos sobre bens e serviços, impostos sobre propriedade, impostos sobre folha de pagamento ou outros tributos.",
+    "metodologia":
+      "Os valores foram calculados a partir da tabela oficial da OCDE para o Brasil, dividindo a receita da categoria 1000 - Taxes on income, profits and capital gains pela Total tax revenue, multiplicando o resultado por 100. Fórmula: valor = (categoria_1000 / receita_tributaria_total) * 100. A classificação segue a OECD Classification of Taxes and Interpretative Guide, na qual a categoria 1000 cobre impostos sobre renda, lucros e ganhos de capital de pessoas físicas, empresas e valores não alocáveis entre as duas categorias.",
+    "historico_metodologia":
+      "A publicação Revenue Statistics in Latin America and the Caribbean 2025 informa dados comparáveis para 1990-2023, com metodologia harmonizada da OCDE. Para o Brasil, os dados estão em base de caixa e encerramento do ano em 31 de dezembro. A OCDE informa que os dados de 2022 foram atualizados com informações detalhadas da publicação Carga Tributária no Brasil, da Secretaria da Receita Federal do Brasil, e que os dados de 2023 vêm dos relatórios mais recentes da Secretaria do Tesouro Nacional e estão sujeitos a revisão na próxima edição. A tabela PDF oficial traz pontos selecionados da série, não todos os anos anuais entre 1994 e 2023; por isso, este JSON inclui apenas os anos diretamente validados na tabela oficial consultada, sem preencher lacunas por interpolação, estimativa ou suposição.",
+    "abrangencia":
+      "Brasil, governo geral, receita tributária total e categoria 1000 da classificação tributária da OCDE.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2000,
         "nome": "Pós-Real",
-        "descricao": "A série já reflete o período posterior à estabilização monetária do Plano Real, com estrutura tributária mais comparável em reais correntes."
+        "descricao":
+          "A série já reflete o período posterior à estabilização monetária do Plano Real, com estrutura tributária mais comparável em reais correntes.",
       },
       {
         "ano": 2018,
         "nome": "Pós-recessão",
-        "descricao": "O indicador permaneceu próximo de 22% após a recessão de 2015-2016 e a lenta recuperação econômica subsequente."
+        "descricao":
+          "O indicador permaneceu próximo de 22% após a recessão de 2015-2016 e a lenta recuperação econômica subsequente.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e a composição da arrecadação, mas a participação da categoria 1000 na receita tributária total ficou próxima ao nível de 2019."
+        "descricao":
+          "A pandemia de COVID-19 afetou a atividade econômica e a composição da arrecadação, mas a participação da categoria 1000 na receita tributária total ficou próxima ao nível de 2019.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A retomada econômica elevou a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total."
+        "descricao":
+          "A retomada econômica elevou a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total.",
       },
       {
         "ano": 2022,
         "nome": "Alta corporativa",
-        "descricao": "A participação da categoria 1000 subiu fortemente em 2022, acompanhando aumento da arrecadação de impostos sobre lucros e rendimentos."
+        "descricao":
+          "A participação da categoria 1000 subiu fortemente em 2022, acompanhando aumento da arrecadação de impostos sobre lucros e rendimentos.",
       },
       {
         "ano": 2023,
         "nome": "Revisão pendente",
-        "descricao": "A OCDE informa que os dados de 2023 vêm dos relatórios mais recentes do Tesouro Nacional e estão sujeitos a revisão na edição seguinte."
-      }
+        "descricao":
+          "A OCDE informa que os dados de 2023 vêm dos relatórios mais recentes do Tesouro Nacional e estão sujeitos a revisão na edição seguinte.",
+      },
     ],
-    "comparacao_paises": "Em 2023, o Brasil registrou aproximadamente 27,07% da receita tributária total em impostos sobre renda, lucros e ganhos de capital. A média da América Latina e Caribe para impostos sobre renda e lucros foi 29,6% da receita tributária total em 2023. A OCDE informa que, em comparação, PIT e CIT representaram 23,6% e 12,0% da receita tributária nos países da OCDE em 2022, respectivamente, totalizando cerca de 35,6% para essas duas subcategorias.",
-    "nivel_confiabilidade": "Alto para os anos apresentados, pois os valores foram calculados diretamente a partir de dados oficiais da OCDE para Brasil. A limitação é que a tabela PDF consultada não traz todos os anos anuais entre 1994 e 2023; portanto, lacunas não foram preenchidas. Para obter todos os anos de 1994 a 2023, é necessário extrair a série anual completa no OECD Data Explorer/API, usando a mesma categoria 1000 e a medida de participação na receita tributária total.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou aproximadamente 27,07% da receita tributária total em impostos sobre renda, lucros e ganhos de capital. A média da América Latina e Caribe para impostos sobre renda e lucros foi 29,6% da receita tributária total em 2023. A OCDE informa que, em comparação, PIT e CIT representaram 23,6% e 12,0% da receita tributária nos países da OCDE em 2022, respectivamente, totalizando cerca de 35,6% para essas duas subcategorias.",
+    "nivel_confiabilidade":
+      "Alto para os anos apresentados, pois os valores foram calculados diretamente a partir de dados oficiais da OCDE para Brasil. A limitação é que a tabela PDF consultada não traz todos os anos anuais entre 1994 e 2023; portanto, lacunas não foram preenchidas. Para obter todos os anos de 1994 a 2023, é necessário extrair a série anual completa no OECD Data Explorer/API, usando a mesma categoria 1000 e a medida de participação na receita tributária total.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
-        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html"
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 PDF",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf"
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf",
       },
       {
         "titulo": "OCDE - Brazil - Tax Revenues - Data Explorer",
-        "url": "https://data-explorer.oecd.org/vis?bp=true&df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&fc=Topic&fs%5B0%5D=Topic%2C1%7CTaxation%23TAX%23%7CGlobal+tax+revenues%23TAX_GTR%23&lc=en&pg=0&snb=159"
+        "url":
+          "https://data-explorer.oecd.org/vis?bp=true&df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&fc=Topic&fs%5B0%5D=Topic%2C1%7CTaxation%23TAX%23%7CGlobal+tax+revenues%23TAX_GTR%23&lc=en&pg=0&snb=159",
       },
       {
         "titulo": "OCDE - Global Revenue Statistics Database",
-        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html",
       },
       {
         "titulo": "OCDE - OECD Classification of Taxes and Interpretative Guide",
-        "url": "https://www.oecd.org/en/publications/revenue-statistics-2025_3a264267-en/full-report/the-oecd-classification-of-taxes-and-interpretative-guide_c852c459.html"
-      }
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-2025_3a264267-en/full-report/the-oecd-classification-of-taxes-and-interpretative-guide_c852c459.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 2000,
-        "valor": 19.482431849649316
-      },
-      {
-        "ano": 2005,
-        "valor": 21.017019410672415
-      },
-      {
-        "ano": 2010,
-        "valor": 20.96580895311949
-      },
-      {
-        "ano": 2018,
-        "valor": 21.90449196213959
-      },
-      {
-        "ano": 2019,
-        "valor": 22.797190052871933
-      },
-      {
-        "ano": 2020,
-        "valor": 22.682401414729167
-      },
-      {
-        "ano": 2021,
-        "valor": 24.132835026831046
-      },
-      {
-        "ano": 2022,
-        "valor": 27.713685083470914
-      },
-      {
-        "ano": 2023,
-        "valor": 27.071370943485185
-      }
-    ]
+      { "ano": 2000, "valor": 19.482431849649316 },
+      { "ano": 2005, "valor": 21.017019410672415 },
+      { "ano": 2010, "valor": 20.96580895311949 },
+      { "ano": 2018, "valor": 21.90449196213959 },
+      { "ano": 2019, "valor": 22.797190052871933 },
+      { "ano": 2020, "valor": 22.682401414729167 },
+      { "ano": 2021, "valor": 24.132835026831046 },
+      { "ano": 2022, "valor": 27.713685083470914 },
+      { "ano": 2023, "valor": 27.071370943485185 },
+    ],
   },
   "impostos_sobre_propriedade_receita_tributaria": {
-    "label": "(OCDE) Receita Tributária - Propriedade",
+    "label": "Receita Tributária - Propriedade",
+    "fonte_sigla": "OCDE",
     "unidade": "% da receita tributária total",
     "fonte": "OCDE - Global Revenue Statistics Database / Revenue Statistics in Latin America and the Caribbean",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a participação dos impostos sobre propriedade na receita tributária total do governo geral brasileiro.",
-    "como_interpretar": "Valores maiores indicam que os impostos sobre uso, posse ou transferência de propriedade têm maior peso na composição da arrecadação tributária total. O indicador não mede carga tributária total, eficiência fiscal, progressividade nem qualidade do gasto público.",
-    "metodologia": "O indicador corresponde à receita classificada pela OCDE no código 4000, Taxes on property, dividida pela receita tributária total do governo geral e multiplicada por 100. A classificação 4000 inclui impostos recorrentes e não recorrentes sobre uso, posse ou transferência de propriedade, como propriedade imóvel, patrimônio líquido, herança, doações e transações financeiras e de capital, conforme a classificação tributária da OCDE.",
-    "historico_metodologia": "A série segue a metodologia padronizada da OCDE para Revenue Statistics, na qual tributos são classificados segundo sua base econômica. A OCDE define impostos como pagamentos compulsórios e sem contraprestação direta ao governo geral. Séries podem ser revisadas quando países atualizam dados fiscais, cobertura institucional, classificação de receitas ou valores de contas nacionais. A fonte oficial mais recente consultada para o Brasil é a edição 2025 de Revenue Statistics in Latin America and the Caribbean, com dados observados até 2023. Não há dado oficial observado de 2024 ou 2025 para este indicador nessa publicação.",
-    "abrangencia": "Brasil, governo geral, incluindo governo federal, estadual/regional, local e fundos de seguridade social quando aplicável, conforme cobertura da OCDE.",
+    "padrao": false,
+    "descricao":
+      "Mede a participação dos impostos sobre propriedade na receita tributária total do governo geral brasileiro.",
+    "como_interpretar":
+      "Valores maiores indicam que os impostos sobre uso, posse ou transferência de propriedade têm maior peso na composição da arrecadação tributária total. O indicador não mede carga tributária total, eficiência fiscal, progressividade nem qualidade do gasto público.",
+    "metodologia":
+      "O indicador corresponde à receita classificada pela OCDE no código 4000, Taxes on property, dividida pela receita tributária total do governo geral e multiplicada por 100. A classificação 4000 inclui impostos recorrentes e não recorrentes sobre uso, posse ou transferência de propriedade, como propriedade imóvel, patrimônio líquido, herança, doações e transações financeiras e de capital, conforme a classificação tributária da OCDE.",
+    "historico_metodologia":
+      "A série segue a metodologia padronizada da OCDE para Revenue Statistics, na qual tributos são classificados segundo sua base econômica. A OCDE define impostos como pagamentos compulsórios e sem contraprestação direta ao governo geral. Séries podem ser revisadas quando países atualizam dados fiscais, cobertura institucional, classificação de receitas ou valores de contas nacionais. A fonte oficial mais recente consultada para o Brasil é a edição 2025 de Revenue Statistics in Latin America and the Caribbean, com dados observados até 2023. Não há dado oficial observado de 2024 ou 2025 para este indicador nessa publicação.",
+    "abrangencia":
+      "Brasil, governo geral, incluindo governo federal, estadual/regional, local e fundos de seguridade social quando aplicável, conforme cobertura da OCDE.",
     "periodicidade": "Anual.",
     "eventos_externos": [],
-    "comparacao_paises": "Em 2023, os impostos sobre propriedade representaram cerca de 4,83% da receita tributária total do Brasil. Na comparação arredondada da OCDE para estrutura tributária, o Brasil aparece em torno de 5%, abaixo da média da OCDE usada na nota do país, cerca de 8%, e acima da média da América Latina e Caribe, cerca de 4%.",
-    "nivel_confiabilidade": "Alto para os anos explicitamente validados em tabelas e notas oficiais da OCDE. A série abaixo mantém apenas anos diretamente verificáveis nas fontes oficiais consultadas, sem interpolação e sem estimativas.",
+    "comparacao_paises":
+      "Em 2023, os impostos sobre propriedade representaram cerca de 4,83% da receita tributária total do Brasil. Na comparação arredondada da OCDE para estrutura tributária, o Brasil aparece em torno de 5%, abaixo da média da OCDE usada na nota do país, cerca de 8%, e acima da média da América Latina e Caribe, cerca de 4%.",
+    "nivel_confiabilidade":
+      "Alto para os anos explicitamente validados em tabelas e notas oficiais da OCDE. A série abaixo mantém apenas anos diretamente verificáveis nas fontes oficiais consultadas, sem interpolação e sem estimativas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf"
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf",
       },
-      {
-        "titulo": "OCDE - Tax on property",
-        "url": "https://www.oecd.org/en/data/indicators/tax-on-property.html"
-      },
+      { "titulo": "OCDE - Tax on property", "url": "https://www.oecd.org/en/data/indicators/tax-on-property.html" },
       {
         "titulo": "OCDE - OECD data via API",
-        "url": "https://www.oecd.org/en/data/insights/data-explainers/2024/09/api.html"
-      }
+        "url": "https://www.oecd.org/en/data/insights/data-explainers/2024/09/api.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 2000,
-        "valor": 6.674313855908486
-      },
-      {
-        "ano": 2010,
-        "valor": 4.334761369880737
-      },
-      {
-        "ano": 2018,
-        "valor": 4.4
-      },
-      {
-        "ano": 2019,
-        "valor": 4.6
-      },
-      {
-        "ano": 2022,
-        "valor": 4.750349478716478
-      },
-      {
-        "ano": 2023,
-        "valor": 4.825489273103911
-      }
+      { "ano": 2000, "valor": 6.674313855908486 },
+      { "ano": 2010, "valor": 4.334761369880737 },
+      { "ano": 2018, "valor": 4.4 },
+      { "ano": 2019, "valor": 4.6 },
+      { "ano": 2022, "valor": 4.750349478716478 },
+      { "ano": 2023, "valor": 4.825489273103911 },
     ],
-    "padrao": false
   },
   "impostos_comercio_exterior_receita": {
-    "label": "(WDI/FMI) Receita Tributária - Comércio Exterior",
+    "label": "Receita Tributária - Comércio Exterior",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% da receita total",
-    "fonte": "Banco Mundial - World Development Indicators (GC.TAX.INTT.RV.ZS), com dados do Government Finance Statistics Yearbook e arquivos de dados do Fundo Monetário Internacional (FMI)",
+    "fonte":
+      "Banco Mundial - World Development Indicators (GC.TAX.INTT.RV.ZS), com dados do Government Finance Statistics Yearbook e arquivos de dados do Fundo Monetário Internacional (FMI)",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a participação dos impostos sobre comércio exterior na receita total do governo brasileiro.",
-    "como_interpretar": "Valores maiores indicam maior dependência relativa da receita pública em impostos associados ao comércio internacional. Valores menores indicam que a arrecadação depende mais de outras bases tributárias, como renda, consumo doméstico, contribuições sociais e outros tributos.",
-    "metodologia": "O indicador corresponde aos impostos sobre comércio internacional divididos pela receita total do governo, multiplicado por 100. A categoria inclui impostos que se tornam devidos quando bens cruzam a fronteira nacional ou aduaneira, além de certas transações de serviços entre residentes e não residentes, conforme classificação do FMI/GFS usada pelo World Development Indicators.",
-    "historico_metodologia": "A série brasileira disponível no World Development Indicators para este indicador cobre 2010 a 2024. Não foram incluídos anos anteriores a 2010 porque não há valores oficiais disponíveis para o Brasil nessa série consultada. Como o indicador é baseado no FMI/GFS e republicado pelo Banco Mundial/WDI, os valores podem ser revisados quando houver atualização dos arquivos fiscais nacionais, reclassificações metodológicas ou revisão das contas do governo.",
-    "abrangencia": "Brasil, governo geral conforme disponibilidade e padronização internacional do FMI/GFS no World Development Indicators.",
+    "como_interpretar":
+      "Valores maiores indicam maior dependência relativa da receita pública em impostos associados ao comércio internacional. Valores menores indicam que a arrecadação depende mais de outras bases tributárias, como renda, consumo doméstico, contribuições sociais e outros tributos.",
+    "metodologia":
+      "O indicador corresponde aos impostos sobre comércio internacional divididos pela receita total do governo, multiplicado por 100. A categoria inclui impostos que se tornam devidos quando bens cruzam a fronteira nacional ou aduaneira, além de certas transações de serviços entre residentes e não residentes, conforme classificação do FMI/GFS usada pelo World Development Indicators.",
+    "historico_metodologia":
+      "A série brasileira disponível no World Development Indicators para este indicador cobre 2010 a 2024. Não foram incluídos anos anteriores a 2010 porque não há valores oficiais disponíveis para o Brasil nessa série consultada. Como o indicador é baseado no FMI/GFS e republicado pelo Banco Mundial/WDI, os valores podem ser revisados quando houver atualização dos arquivos fiscais nacionais, reclassificações metodológicas ou revisão das contas do governo.",
+    "abrangencia":
+      "Brasil, governo geral conforme disponibilidade e padronização internacional do FMI/GFS no World Development Indicators.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2013,
         "nome": "Alta relativa",
-        "descricao": "O indicador atingiu nível elevado dentro da série recente, refletindo maior peso relativo dos tributos de comércio exterior na receita total."
+        "descricao":
+          "O indicador atingiu nível elevado dentro da série recente, refletindo maior peso relativo dos tributos de comércio exterior na receita total.",
       },
       {
         "ano": 2016,
         "nome": "Mínimo recente",
-        "descricao": "O indicador atingiu o menor valor da série validada, em contexto de recessão econômica e queda relativa da participação desses tributos na receita total."
+        "descricao":
+          "O indicador atingiu o menor valor da série validada, em contexto de recessão econômica e queda relativa da participação desses tributos na receita total.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou comércio, atividade econômica e composição da arrecadação, coincidindo com alta relativa do indicador."
+        "descricao":
+          "A pandemia de COVID-19 afetou comércio, atividade econômica e composição da arrecadação, coincidindo com alta relativa do indicador.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A recuperação econômica e a normalização parcial do comércio exterior coincidiram com o maior valor da série validada."
+        "descricao":
+          "A recuperação econômica e a normalização parcial do comércio exterior coincidiram com o maior valor da série validada.",
       },
       {
         "ano": 2024,
         "nome": "Remessa Conforme",
-        "descricao": "A tributação de importações de pequeno valor e a alta das importações contribuíram para aumento da arrecadação associada ao comércio exterior."
-      }
+        "descricao":
+          "A tributação de importações de pequeno valor e a alta das importações contribuíram para aumento da arrecadação associada ao comércio exterior.",
+      },
     ],
-    "comparacao_paises": "O Brasil apresenta baixa dependência relativa de impostos sobre comércio exterior quando comparado a economias em desenvolvimento mais dependentes de tarifas de importação e exportação. Em 2024, o valor brasileiro foi 2,487% da receita total, abaixo de países onde tarifas aduaneiras têm peso fiscal estruturalmente maior.",
-    "nivel_confiabilidade": "Alto. A fonte estatística é o World Development Indicators do Banco Mundial, baseado no Government Finance Statistics Yearbook e arquivos de dados do FMI. A principal limitação é a cobertura temporal: para o Brasil, a série oficial disponível neste indicador começa em 2010, não em 1994.",
+    "comparacao_paises":
+      "O Brasil apresenta baixa dependência relativa de impostos sobre comércio exterior quando comparado a economias em desenvolvimento mais dependentes de tarifas de importação e exportação. Em 2024, o valor brasileiro foi 2,487% da receita total, abaixo de países onde tarifas aduaneiras têm peso fiscal estruturalmente maior.",
+    "nivel_confiabilidade":
+      "Alto. A fonte estatística é o World Development Indicators do Banco Mundial, baseado no Government Finance Statistics Yearbook e arquivos de dados do FMI. A principal limitação é a cobertura temporal: para o Brasil, a série oficial disponível neste indicador começa em 2010, não em 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Taxes on international trade (% of revenue) - Brazil",
-        "url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/GC.TAX.INTT.RV.ZS?locations=BR",
       },
       {
         "titulo": "World Integrated Trade Solution - Brazil Taxes on international trade (% of revenue)",
-        "url": "https://wits.worldbank.org/countryprofile/en/country/BRA/startyear/2010/endyear/2024/indicator/GC-TAX-INTT-RV-ZS"
+        "url":
+          "https://wits.worldbank.org/countryprofile/en/country/BRA/startyear/2010/endyear/2024/indicator/GC-TAX-INTT-RV-ZS",
       },
-      {
-        "titulo": "FMI - Government Finance Statistics",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:GFS"
-      },
+      { "titulo": "FMI - Government Finance Statistics", "url": "https://data.imf.org/en/datasets/IMF.STA:GFS" },
       {
         "titulo": "Banco Mundial - World Development Indicators",
-        "url": "https://databank.worldbank.org/source/world-development-indicators"
+        "url": "https://databank.worldbank.org/source/world-development-indicators",
       },
       {
         "titulo": "OECD - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
-        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_8d545468-en.html"
-      }
+        "url":
+          "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_8d545468-en.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 2.09
-      },
-      {
-        "ano": 2011,
-        "valor": 2.34
-      },
-      {
-        "ano": 2012,
-        "valor": 2.45
-      },
-      {
-        "ano": 2013,
-        "valor": 2.73
-      },
-      {
-        "ano": 2014,
-        "valor": 2.65
-      },
-      {
-        "ano": 2015,
-        "valor": 2.52
-      },
-      {
-        "ano": 2016,
-        "valor": 1.916
-      },
-      {
-        "ano": 2017,
-        "valor": 2.01
-      },
-      {
-        "ano": 2018,
-        "valor": 2.3
-      },
-      {
-        "ano": 2019,
-        "valor": 2.27
-      },
-      {
-        "ano": 2020,
-        "valor": 2.71
-      },
-      {
-        "ano": 2021,
-        "valor": 2.793
-      },
-      {
-        "ano": 2022,
-        "valor": 2.17
-      },
-      {
-        "ano": 2023,
-        "valor": 2.106
-      },
-      {
-        "ano": 2024,
-        "valor": 2.487
-      }
-    ]
+      { "ano": 2010, "valor": 2.09 },
+      { "ano": 2011, "valor": 2.34 },
+      { "ano": 2012, "valor": 2.45 },
+      { "ano": 2013, "valor": 2.73 },
+      { "ano": 2014, "valor": 2.65 },
+      { "ano": 2015, "valor": 2.52 },
+      { "ano": 2016, "valor": 1.916 },
+      { "ano": 2017, "valor": 2.01 },
+      { "ano": 2018, "valor": 2.3 },
+      { "ano": 2019, "valor": 2.27 },
+      { "ano": 2020, "valor": 2.71 },
+      { "ano": 2021, "valor": 2.793 },
+      { "ano": 2022, "valor": 2.17 },
+      { "ano": 2023, "valor": 2.106 },
+      { "ano": 2024, "valor": 2.487 },
+    ],
   },
   "contribuicoes_sociais_pib": {
-    "label": "(OCDE) Receitas - Contribuições Sociais",
+    "label": "Receitas - Contribuições Sociais",
+    "fonte_sigla": "OCDE",
     "unidade": "% do PIB",
     "fonte": "OCDE - Revenue Statistics in Latin America and the Caribbean; FMI - Government Finance Statistics",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a arrecadação de contribuições sociais obrigatórias, classificadas pela OCDE no código 2000, como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam maior peso das contribuições sociais obrigatórias na economia. O indicador não mede a carga tributária total, nem a sustentabilidade previdenciária, nem a qualidade dos benefícios sociais financiados por essas contribuições.",
-    "metodologia": "A OCDE classifica contribuições sociais no código 2000 como pagamentos obrigatórios ao governo geral ligados ao financiamento de benefícios sociais. O indicador é calculado dividindo a receita anual de contribuições sociais pelo PIB nominal do mesmo ano e multiplicando por 100. A estrutura segue a metodologia Revenue Statistics da OCDE, compatível com padrões internacionais de estatísticas fiscais, incluindo o FMI Government Finance Statistics.",
-    "historico_metodologia": "A série da OCDE Revenue Statistics in Latin America and the Caribbean apresenta dados comparáveis de receitas tributárias por categoria. Para o Brasil, a tabela oficial de 2024 informa os valores de referência para 1990, 2000, 2010, 2021 e 2022, e a nota-país de 2025 informa 2023. Não foram incluídos anos intermediários não extraídos diretamente das tabelas oficiais consultadas, para evitar interpolação ou valor não validado. A fonte do Banco Mundial/FMI para 'Social contributions (current LCU)' existe até 2024, mas usa definição GFS em moeda corrente e não é idêntica à série OCDE de contribuições sociais como % do PIB; por isso não foi misturada aos dados do gráfico.",
-    "abrangencia": "Brasil, governo geral, receitas tributárias classificadas segundo a metodologia OCDE Revenue Statistics.",
-    "periodicidade": "Anual, embora as tabelas públicas resumidas da publicação consultada exibam apenas anos selecionados.",
+    "padrao": false,
+    "descricao":
+      "Mede a arrecadação de contribuições sociais obrigatórias, classificadas pela OCDE no código 2000, como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso das contribuições sociais obrigatórias na economia. O indicador não mede a carga tributária total, nem a sustentabilidade previdenciária, nem a qualidade dos benefícios sociais financiados por essas contribuições.",
+    "metodologia":
+      "A OCDE classifica contribuições sociais no código 2000 como pagamentos obrigatórios ao governo geral ligados ao financiamento de benefícios sociais. O indicador é calculado dividindo a receita anual de contribuições sociais pelo PIB nominal do mesmo ano e multiplicando por 100. A estrutura segue a metodologia Revenue Statistics da OCDE, compatível com padrões internacionais de estatísticas fiscais, incluindo o FMI Government Finance Statistics.",
+    "historico_metodologia":
+      "A série da OCDE Revenue Statistics in Latin America and the Caribbean apresenta dados comparáveis de receitas tributárias por categoria. Para o Brasil, a tabela oficial de 2024 informa os valores de referência para 1990, 2000, 2010, 2021 e 2022, e a nota-país de 2025 informa 2023. Não foram incluídos anos intermediários não extraídos diretamente das tabelas oficiais consultadas, para evitar interpolação ou valor não validado. A fonte do Banco Mundial/FMI para 'Social contributions (current LCU)' existe até 2024, mas usa definição GFS em moeda corrente e não é idêntica à série OCDE de contribuições sociais como % do PIB; por isso não foi misturada aos dados do gráfico.",
+    "abrangencia":
+      "Brasil, governo geral, receitas tributárias classificadas segundo a metodologia OCDE Revenue Statistics.",
+    "periodicidade":
+      "Anual, embora as tabelas públicas resumidas da publicação consultada exibam apenas anos selecionados.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização monetária alterou a base nominal da arrecadação e melhorou a comparabilidade fiscal posterior."
+        "descricao":
+          "A estabilização monetária alterou a base nominal da arrecadação e melhorou a comparabilidade fiscal posterior.",
       },
       {
         "ano": 2003,
         "nome": "Reforma previdenciária",
-        "descricao": "A Emenda Constitucional nº 41/2003 alterou regras previdenciárias do setor público e parâmetros contributivos."
+        "descricao":
+          "A Emenda Constitucional nº 41/2003 alterou regras previdenciárias do setor público e parâmetros contributivos.",
       },
       {
         "ano": 2011,
         "nome": "Desoneração folha",
-        "descricao": "A política de desoneração da folha substituiu parcialmente contribuições previdenciárias patronais sobre folha por contribuição sobre receita bruta em setores selecionados."
+        "descricao":
+          "A política de desoneração da folha substituiu parcialmente contribuições previdenciárias patronais sobre folha por contribuição sobre receita bruta em setores selecionados.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu atividade, emprego e massa salarial, afetando a base de arrecadação vinculada ao trabalho formal."
+        "descricao":
+          "A recessão brasileira reduziu atividade, emprego e massa salarial, afetando a base de arrecadação vinculada ao trabalho formal.",
       },
       {
         "ano": 2019,
         "nome": "Reforma previdenciária",
-        "descricao": "A Emenda Constitucional nº 103/2019 alterou regras previdenciárias e parâmetros contributivos, com efeitos fiscais graduais."
+        "descricao":
+          "A Emenda Constitucional nº 103/2019 alterou regras previdenciárias e parâmetros contributivos, com efeitos fiscais graduais.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou emprego, massa salarial e PIB, distorcendo temporariamente a relação entre contribuições sociais e PIB."
+        "descricao":
+          "A pandemia de COVID-19 afetou emprego, massa salarial e PIB, distorcendo temporariamente a relação entre contribuições sociais e PIB.",
       },
       {
         "ano": 2023,
         "nome": "Alta recente",
-        "descricao": "A OCDE registrou aumento de 7,9% do PIB em 2022 para 8,1% do PIB em 2023 nas contribuições sociais do Brasil."
-      }
+        "descricao":
+          "A OCDE registrou aumento de 7,9% do PIB em 2022 para 8,1% do PIB em 2023 nas contribuições sociais do Brasil.",
+      },
     ],
-    "comparacao_paises": "Em 2023, o Brasil registrou 8,1% do PIB em contribuições sociais, acima da média da América Latina e Caribe informada pela OCDE para 2022, de 3,6% do PIB, e abaixo da média da OCDE disponível na tabela de 2021, de 9,0% do PIB.",
-    "nivel_confiabilidade": "Alto para os anos listados, pois os valores vêm diretamente de tabelas oficiais da OCDE Revenue Statistics e de nota-país da OCDE. A série não inclui anos intermediários desde 1994 porque esses valores não foram extraídos diretamente das tabelas oficiais consultadas nesta validação. Não há estimativas nem interpolação nos dados abaixo.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 8,1% do PIB em contribuições sociais, acima da média da América Latina e Caribe informada pela OCDE para 2022, de 3,6% do PIB, e abaixo da média da OCDE disponível na tabela de 2021, de 9,0% do PIB.",
+    "nivel_confiabilidade":
+      "Alto para os anos listados, pois os valores vêm diretamente de tabelas oficiais da OCDE Revenue Statistics e de nota-país da OCDE. A série não inclui anos intermediários desde 1994 porque esses valores não foram extraídos diretamente das tabelas oficiais consultadas nesta validação. Não há estimativas nem interpolação nos dados abaixo.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2024",
-        "url": "https://publications.iadb.org/publications/english/document/Revenue-Statistics-in-Latin-America-and-the-Caribbean-2024.pdf"
+        "url":
+          "https://publications.iadb.org/publications/english/document/Revenue-Statistics-in-Latin-America-and-the-Caribbean-2024.pdf",
       },
       {
         "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 - Brazil",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf",
       },
       {
         "titulo": "OCDE - Global Revenue Statistics Database",
-        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html",
       },
       {
         "titulo": "Banco Mundial - Social contributions (current LCU) - Brazil",
-        "url": "https://data.worldbank.org/indicator/GC.REV.SOCL.CN?locations=BR"
+        "url": "https://data.worldbank.org/indicator/GC.REV.SOCL.CN?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata GC.REV.SOCL.CN",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.REV.SOCL.CN"
-      }
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.REV.SOCL.CN",
+      },
     ],
     "dados": [
-      {
-        "ano": 2000,
-        "valor": 7.0
-      },
-      {
-        "ano": 2010,
-        "valor": 8.1
-      },
-      {
-        "ano": 2021,
-        "valor": 7.8
-      },
-      {
-        "ano": 2022,
-        "valor": 7.9
-      },
-      {
-        "ano": 2023,
-        "valor": 8.1
-      }
-    ]
+      { "ano": 2000, "valor": 7 },
+      { "ano": 2010, "valor": 8.1 },
+      { "ano": 2021, "valor": 7.8 },
+      { "ano": 2022, "valor": 7.9 },
+      { "ano": 2023, "valor": 8.1 },
+    ],
   },
   "doacoes_recebidas_receita_total": {
-    "label": "(FMI/WDI) Receitas - Doações e Outras",
+    "label": "Receitas - Doações e Outras",
+    "fonte_sigla": "FMI/WDI",
     "unidade": "% da receita",
-    "fonte": "Banco Mundial - World Development Indicators (GC.REV.GOTR.ZS), com dados originais do FMI - Government Finance Statistics Yearbook and data files",
+    "fonte":
+      "Banco Mundial - World Development Indicators (GC.REV.GOTR.ZS), com dados originais do FMI - Government Finance Statistics Yearbook and data files",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a participação de doações e outras receitas na receita total do governo.",
-    "como_interpretar": "Valores maiores indicam maior peso de doações e outras receitas não classificadas como impostos ou contribuições sociais dentro da receita total. No caso do WDI, o indicador não mede somente doações: inclui também outras receitas, como renda de propriedade, vendas de bens e serviços e receitas diversas.",
-    "metodologia": "Indicador WDI GC.REV.GOTR.ZS. Calculado como doações e outras receitas divididas pela receita total, multiplicado por 100. Doações são transferências recebidas por unidades de governo de outras unidades governamentais residentes ou não residentes ou de organizações internacionais, que não atendem à definição de imposto, subsídio ou contribuição social. Outras receitas incluem toda receita recebível excluindo impostos, contribuições sociais e doações.",
-    "historico_metodologia": "A série vem do FMI Government Finance Statistics, disseminada pelo World Development Indicators do Banco Mundial. A fonte atual disponibiliza dados anuais observados para o Brasil de 2010 a 2024. Não há valores oficiais disponíveis no WDI para 1994-2009 nem valor observado para 2025/2026. A principal ressalva metodológica é que a série WDI GC.REV.GOTR.ZS agrega doações e outras receitas, portanto não deve ser interpretada como doações puras.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso de doações e outras receitas não classificadas como impostos ou contribuições sociais dentro da receita total. No caso do WDI, o indicador não mede somente doações: inclui também outras receitas, como renda de propriedade, vendas de bens e serviços e receitas diversas.",
+    "metodologia":
+      "Indicador WDI GC.REV.GOTR.ZS. Calculado como doações e outras receitas divididas pela receita total, multiplicado por 100. Doações são transferências recebidas por unidades de governo de outras unidades governamentais residentes ou não residentes ou de organizações internacionais, que não atendem à definição de imposto, subsídio ou contribuição social. Outras receitas incluem toda receita recebível excluindo impostos, contribuições sociais e doações.",
+    "historico_metodologia":
+      "A série vem do FMI Government Finance Statistics, disseminada pelo World Development Indicators do Banco Mundial. A fonte atual disponibiliza dados anuais observados para o Brasil de 2010 a 2024. Não há valores oficiais disponíveis no WDI para 1994-2009 nem valor observado para 2025/2026. A principal ressalva metodológica é que a série WDI GC.REV.GOTR.ZS agrega doações e outras receitas, portanto não deve ser interpretada como doações puras.",
     "abrangencia": "Brasil, governo conforme cobertura reportada nas estatísticas de finanças públicas do FMI/WDI.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2016,
         "nome": "Recessão fiscal",
-        "descricao": "A recessão brasileira de 2015-2016 pressionou a arrecadação e alterou a composição relativa das receitas públicas."
+        "descricao":
+          "A recessão brasileira de 2015-2016 pressionou a arrecadação e alterou a composição relativa das receitas públicas.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 causou forte choque econômico e fiscal, coincidindo com queda do peso de doações e outras receitas na receita total."
+        "descricao":
+          "A pandemia de COVID-19 causou forte choque econômico e fiscal, coincidindo com queda do peso de doações e outras receitas na receita total.",
       },
       {
         "ano": 2022,
         "nome": "Alta commodities",
-        "descricao": "O aumento de receitas associadas a renda de propriedade, recursos naturais e componentes não tributários coincidiu com o maior valor recente da série."
+        "descricao":
+          "O aumento de receitas associadas a renda de propriedade, recursos naturais e componentes não tributários coincidiu com o maior valor recente da série.",
       },
       {
         "ano": 2024,
         "nome": "Normalização fiscal",
-        "descricao": "A participação de doações e outras receitas recuou em relação a 2022 e 2023, permanecendo abaixo do pico recente."
-      }
+        "descricao":
+          "A participação de doações e outras receitas recuou em relação a 2022 e 2023, permanecendo abaixo do pico recente.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 19,324% no indicador WDI GC.REV.GOTR.ZS. Esse nível é relevante, mas a comparação internacional exige cautela porque a rubrica agrega doações e outras receitas, e a composição de receitas não tributárias varia muito entre países conforme propriedade estatal, recursos naturais, dividendos públicos, royalties, vendas de bens e serviços e transferências intergovernamentais.",
-    "nivel_confiabilidade": "Alto para comparação internacional padronizada, pois a série é publicada pelo World Development Indicators do Banco Mundial com base no FMI Government Finance Statistics. A confiabilidade é menor para a interpretação estrita como 'doações recebidas', porque o indicador oficial disponível agrega doações e outras receitas.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 19,324% no indicador WDI GC.REV.GOTR.ZS. Esse nível é relevante, mas a comparação internacional exige cautela porque a rubrica agrega doações e outras receitas, e a composição de receitas não tributárias varia muito entre países conforme propriedade estatal, recursos naturais, dividendos públicos, royalties, vendas de bens e serviços e transferências intergovernamentais.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional padronizada, pois a série é publicada pelo World Development Indicators do Banco Mundial com base no FMI Government Finance Statistics. A confiabilidade é menor para a interpretação estrita como 'doações recebidas', porque o indicador oficial disponível agrega doações e outras receitas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Grants and other revenue (% of revenue) - Brazil",
-        "url": "https://data.worldbank.org/indicator/GC.REV.GOTR.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/GC.REV.GOTR.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators - GC.REV.GOTR.ZS - Brazil",
-        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=GC.REV.GOTR.ZS&source=2"
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=GC.REV.GOTR.ZS&source=2",
       },
       {
         "titulo": "CEIC / World Bank WDI - Brazil BR: Grants and Other Revenue",
-        "url": "https://www.ceicdata.com/en/brazil/government-revenue-expenditure-and-finance/br-grants-and-other-revenue"
+        "url":
+          "https://www.ceicdata.com/en/brazil/government-revenue-expenditure-and-finance/br-grants-and-other-revenue",
       },
       {
         "titulo": "World Bank - Indicators API Documentation",
-        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
-      }
+        "url":
+          "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+      },
     ],
     "dados": [
-      {
-        "ano": 2016,
-        "valor": 24.5
-      },
-      {
-        "ano": 2017,
-        "valor": 19.1
-      },
-      {
-        "ano": 2018,
-        "valor": 20.9
-      },
-      {
-        "ano": 2019,
-        "valor": 22.6
-      },
-      {
-        "ano": 2020,
-        "valor": 16.1
-      },
-      {
-        "ano": 2021,
-        "valor": 19.3
-      },
-      {
-        "ano": 2022,
-        "valor": 23.6
-      },
-      {
-        "ano": 2023,
-        "valor": 21.5
-      },
-      {
-        "ano": 2024,
-        "valor": 19.324
-      }
+      { "ano": 2016, "valor": 24.5 },
+      { "ano": 2017, "valor": 19.1 },
+      { "ano": 2018, "valor": 20.9 },
+      { "ano": 2019, "valor": 22.6 },
+      { "ano": 2020, "valor": 16.1 },
+      { "ano": 2021, "valor": 19.3 },
+      { "ano": 2022, "valor": 23.6 },
+      { "ano": 2023, "valor": 21.5 },
+      { "ano": 2024, "valor": 19.324 },
     ],
-    "padrao": false
   },
   "tributacao_indireta_total": {
-    "label": "(STN) Peso dos Impostos sobre Consumo",
+    "label": "Peso dos Impostos sobre Consumo",
+    "fonte_sigla": "STN",
     "unidade": "% da arrecadação tributária total",
     "fonte": "Tesouro Nacional (STN) / OCDE-CIAT Revenue Statistics LAC",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Participação dos impostos sobre bens e serviços na Carga Tributária Bruta total do Governo Geral.",
     "como_interpretar":
       "Quanto maior o percentual, maior a dependência da arrecadação tributária em impostos incidentes sobre consumo, produção, circulação, serviços, comércio exterior e operações financeiras. Percentuais elevados indicam maior peso relativo de tributos indiretos na estrutura tributária.",
@@ -7983,7 +6360,6 @@
     "nivel_confiabilidade":
       "Alto para 2010-2024, pois os valores foram recalculados diretamente a partir da base oficial da STN em R$ milhões correntes. Médio para comparações internacionais, pois a OCDE usa classificação harmonizada própria e a comparação deve ser interpretada como estrutural, não como reprodução exata da série STN. O ano de 2025 foi excluído por ser preliminar/estimativa.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Tesouro Transparente - Carga Tributária do Governo Geral 2025 - Base CTB GG.xlsx",
@@ -8029,10 +6405,12 @@
     ],
   },
   "carga_tributaria_pib": {
-    "label": "(RFB) Carga tributária bruta",
+    "label": "Carga tributária bruta",
+    "fonte_sigla": "RFB",
     "unidade": "% do PIB",
     "fonte": "Receita Federal do Brasil (RFB); Secretaria do Tesouro Nacional (STN); IBGE",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Razão entre a arrecadação tributária bruta e o PIB nominal do Brasil.",
     "como_interpretar":
       "Quanto maior o valor, maior a parcela do PIB transferida ao setor público por meio de tributos. O indicador mede peso arrecadatório, não qualidade, eficiência ou retorno social do gasto público.",
@@ -8131,1591 +6509,1188 @@
       { "ano": 2023, "valor": 32.11 },
       { "ano": 2024, "valor": 32.32 },
     ],
-    "padrao": false,
   },
   "despesa_total_governo_pib": {
-    "label": "(FMI) Despesa Total do Governo",
+    "label": "Despesa Total do Governo",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO) / Government Finance Statistics (GFS)",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a despesa total do governo geral do Brasil como proporção do PIB no ano fiscal correspondente.",
-    "como_interpretar": "Valores maiores indicam maior participação das despesas do governo geral na economia. O indicador inclui despesas correntes, despesas de capital e juros pagos, quando aplicável à metodologia de governo geral. Não mede eficiência do gasto, qualidade dos serviços públicos, composição da despesa nem sustentabilidade fiscal isoladamente.",
-    "metodologia": "O FMI expressa a despesa total do governo geral como percentual do PIB correspondente ao ano fiscal. A série segue conceitos de finanças públicas usados no WEO e no GFS, com base em dados reportados por autoridades nacionais, missões do FMI e ajustes metodológicos de comparabilidade internacional. Foram mantidos apenas anos históricos com valores observados disponíveis publicamente, excluindo anos futuros ou marcados como projeções.",
-    "historico_metodologia": "A série do WEO é revisada a cada edição, podendo incorporar atualizações das contas nacionais, revisões fiscais, mudanças de cobertura institucional do governo geral, reclassificações entre despesas correntes e de capital e ajustes de consistência feitos pelo FMI. O próprio FAQ do WEO informa que dados históricos podem ser atualizados continuamente e que anos posteriores ao 'Latest Actual Annual Data' devem ser tratados como estimativas/projeções. Para evitar projeções, a série foi encerrada em 2024, último ano histórico disponível nas fontes consultadas.",
-    "abrangencia": "Brasil, governo geral, abrangendo os níveis de governo incluídos na definição consolidada usada pelo FMI para comparabilidade internacional.",
+    "como_interpretar":
+      "Valores maiores indicam maior participação das despesas do governo geral na economia. O indicador inclui despesas correntes, despesas de capital e juros pagos, quando aplicável à metodologia de governo geral. Não mede eficiência do gasto, qualidade dos serviços públicos, composição da despesa nem sustentabilidade fiscal isoladamente.",
+    "metodologia":
+      "O FMI expressa a despesa total do governo geral como percentual do PIB correspondente ao ano fiscal. A série segue conceitos de finanças públicas usados no WEO e no GFS, com base em dados reportados por autoridades nacionais, missões do FMI e ajustes metodológicos de comparabilidade internacional. Foram mantidos apenas anos históricos com valores observados disponíveis publicamente, excluindo anos futuros ou marcados como projeções.",
+    "historico_metodologia":
+      "A série do WEO é revisada a cada edição, podendo incorporar atualizações das contas nacionais, revisões fiscais, mudanças de cobertura institucional do governo geral, reclassificações entre despesas correntes e de capital e ajustes de consistência feitos pelo FMI. O próprio FAQ do WEO informa que dados históricos podem ser atualizados continuamente e que anos posteriores ao 'Latest Actual Annual Data' devem ser tratados como estimativas/projeções. Para evitar projeções, a série foi encerrada em 2024, último ano histórico disponível nas fontes consultadas.",
+    "abrangencia":
+      "Brasil, governo geral, abrangendo os níveis de governo incluídos na definição consolidada usada pelo FMI para comparabilidade internacional.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1998,
         "nome": "Crise fiscal",
-        "descricao": "O aumento da despesa como proporção do PIB ocorreu em contexto de pressão cambial, juros elevados e deterioração fiscal anterior à mudança do regime cambial de 1999."
+        "descricao":
+          "O aumento da despesa como proporção do PIB ocorreu em contexto de pressão cambial, juros elevados e deterioração fiscal anterior à mudança do regime cambial de 1999.",
       },
       {
         "ano": 2000,
         "nome": "Ajuste fiscal",
-        "descricao": "A queda do indicador em 2000 coincide com o período posterior ao ajuste fiscal e à adoção de regras de responsabilidade fiscal no Brasil."
+        "descricao":
+          "A queda do indicador em 2000 coincide com o período posterior ao ajuste fiscal e à adoção de regras de responsabilidade fiscal no Brasil.",
       },
       {
         "ano": 2002,
         "nome": "Choque eleitoral",
-        "descricao": "A elevação em 2002 ocorreu em ambiente de instabilidade financeira, alta de juros e aumento do custo fiscal associado à dívida pública."
+        "descricao":
+          "A elevação em 2002 ocorreu em ambiente de instabilidade financeira, alta de juros e aumento do custo fiscal associado à dívida pública.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional afetou a atividade econômica e elevou a razão despesa/PIB por queda do denominador e medidas anticíclicas."
+        "descricao":
+          "A crise financeira internacional afetou a atividade econômica e elevou a razão despesa/PIB por queda do denominador e medidas anticíclicas.",
       },
       {
         "ano": 2016,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015-2016 elevou a despesa como proporção do PIB em razão da contração da atividade econômica e da rigidez de gastos obrigatórios."
+        "descricao":
+          "A recessão brasileira de 2015-2016 elevou a despesa como proporção do PIB em razão da contração da atividade econômica e da rigidez de gastos obrigatórios.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 ampliou gastos públicos emergenciais e reduziu a atividade econômica, pressionando a razão despesa/PIB."
+        "descricao":
+          "A pandemia de COVID-19 ampliou gastos públicos emergenciais e reduziu a atividade econômica, pressionando a razão despesa/PIB.",
       },
       {
         "ano": 2024,
         "nome": "Consolidação fiscal",
-        "descricao": "O valor de 2024 mostra queda frente ao pico recente, em contexto de regras fiscais, contenção de despesas e normalização parcial após choques pandêmicos."
-      }
+        "descricao":
+          "O valor de 2024 mostra queda frente ao pico recente, em contexto de regras fiscais, contenção de despesas e normalização parcial após choques pandêmicos.",
+      },
     ],
-    "comparacao_paises": "O Brasil apresenta despesa total do governo como proporção do PIB em nível intermediário-alto para uma economia emergente: abaixo de economias avançadas europeias com Estados de bem-estar mais amplos, mas acima de muitas economias emergentes com menor cobertura previdenciária, social e federativa.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte primária é o FMI WEO/GFS. A principal ressalva é que séries fiscais do WEO podem ser revisadas e que a cobertura de governo geral depende da qualidade e abrangência dos dados nacionais reportados ao FMI.",
+    "comparacao_paises":
+      "O Brasil apresenta despesa total do governo como proporção do PIB em nível intermediário-alto para uma economia emergente: abaixo de economias avançadas europeias com Estados de bem-estar mais amplos, mas acima de muitas economias emergentes com menor cobertura previdenciária, social e federativa.",
+    "nivel_confiabilidade":
+      "Alto para comparação macroeconômica internacional, pois a fonte primária é o FMI WEO/GFS. A principal ressalva é que séries fiscais do WEO podem ser revisadas e que a cobertura de governo geral depende da qualidade e abrangência dos dados nacionais reportados ao FMI.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
-        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO",
       },
+      { "titulo": "FMI DataMapper - Brazil", "url": "https://www.imf.org/external/datamapper/profile/BRA" },
       {
-        "titulo": "FMI DataMapper - Brazil",
-        "url": "https://www.imf.org/external/datamapper/profile/BRA"
-      },
-      {
-        "titulo": "FRED / Federal Reserve Bank of St. Louis - General Government Total Expenditure for Brazil, fonte FMI",
-        "url": "https://fred.stlouisfed.org/series/BRAGGXGDP"
+        "titulo":
+          "FRED / Federal Reserve Bank of St. Louis - General Government Total Expenditure for Brazil, fonte FMI",
+        "url": "https://fred.stlouisfed.org/series/BRAGGXGDP",
       },
       {
         "titulo": "FMI WEO - Frequently Asked Questions",
-        "url": "https://data.imf.org/en/Datasets/WEO/Frequently-Asked-Questions"
+        "url": "https://data.imf.org/en/Datasets/WEO/Frequently-Asked-Questions",
       },
       {
         "titulo": "FMI - World Economic Outlook Databases",
-        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
-      }
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases",
+      },
     ],
     "dados": [
-      {
-        "ano": 1996,
-        "valor": 38.98
-      },
-      {
-        "ano": 1997,
-        "valor": 39.46
-      },
-      {
-        "ano": 1998,
-        "valor": 42.31
-      },
-      {
-        "ano": 1999,
-        "valor": 40.71
-      },
-      {
-        "ano": 2000,
-        "valor": 35.29
-      },
-      {
-        "ano": 2001,
-        "valor": 36.48
-      },
-      {
-        "ano": 2002,
-        "valor": 39.52
-      },
-      {
-        "ano": 2003,
-        "valor": 39.23
-      },
-      {
-        "ano": 2004,
-        "valor": 37.65
-      },
-      {
-        "ano": 2005,
-        "valor": 39.3
-      },
-      {
-        "ano": 2006,
-        "valor": 39.49
-      },
-      {
-        "ano": 2007,
-        "valor": 38.34
-      },
-      {
-        "ano": 2008,
-        "valor": 37.71
-      },
-      {
-        "ano": 2009,
-        "valor": 38.09
-      },
-      {
-        "ano": 2010,
-        "valor": 39.44
-      },
-      {
-        "ano": 2011,
-        "valor": 37.5761934289
-      },
-      {
-        "ano": 2012,
-        "valor": 37.2231414077
-      },
-      {
-        "ano": 2013,
-        "valor": 37.4487126748
-      },
-      {
-        "ano": 2014,
-        "valor": 38.5160104461
-      },
-      {
-        "ano": 2015,
-        "valor": 38.4852692611
-      },
-      {
-        "ano": 2016,
-        "valor": 39.6649059349
-      },
-      {
-        "ano": 2017,
-        "valor": 38.4770057609
-      },
-      {
-        "ano": 2018,
-        "valor": 38.4909950191
-      },
-      {
-        "ano": 2019,
-        "valor": 38.2982901838
-      },
-      {
-        "ano": 2020,
-        "valor": 37.6828226251
-      },
-      {
-        "ano": 2021,
-        "valor": 37.1091039795
-      },
-      {
-        "ano": 2022,
-        "valor": 36.9679814783
-      },
-      {
-        "ano": 2023,
-        "valor": 36.8398534184
-      },
-      {
-        "ano": 2024,
-        "valor": 36.4260913565
-      }
-    ]
+      { "ano": 1996, "valor": 38.98 },
+      { "ano": 1997, "valor": 39.46 },
+      { "ano": 1998, "valor": 42.31 },
+      { "ano": 1999, "valor": 40.71 },
+      { "ano": 2000, "valor": 35.29 },
+      { "ano": 2001, "valor": 36.48 },
+      { "ano": 2002, "valor": 39.52 },
+      { "ano": 2003, "valor": 39.23 },
+      { "ano": 2004, "valor": 37.65 },
+      { "ano": 2005, "valor": 39.3 },
+      { "ano": 2006, "valor": 39.49 },
+      { "ano": 2007, "valor": 38.34 },
+      { "ano": 2008, "valor": 37.71 },
+      { "ano": 2009, "valor": 38.09 },
+      { "ano": 2010, "valor": 39.44 },
+      { "ano": 2011, "valor": 37.5761934289 },
+      { "ano": 2012, "valor": 37.2231414077 },
+      { "ano": 2013, "valor": 37.4487126748 },
+      { "ano": 2014, "valor": 38.5160104461 },
+      { "ano": 2015, "valor": 38.4852692611 },
+      { "ano": 2016, "valor": 39.6649059349 },
+      { "ano": 2017, "valor": 38.4770057609 },
+      { "ano": 2018, "valor": 38.4909950191 },
+      { "ano": 2019, "valor": 38.2982901838 },
+      { "ano": 2020, "valor": 37.6828226251 },
+      { "ano": 2021, "valor": 37.1091039795 },
+      { "ano": 2022, "valor": 36.9679814783 },
+      { "ano": 2023, "valor": 36.8398534184 },
+      { "ano": 2024, "valor": 36.4260913565 },
+    ],
   },
   "despesa_juros_receita": {
-    "label": "(WDI/FMI) Gasto Com Juros Sobre Receita",
+    "label": "Gasto Com Juros Sobre Receita",
+    "fonte_sigla": "WDI/FMI",
     "unidade": "% da receita do governo central",
-    "fonte": "Banco Mundial - World Development Indicators, com dados do FMI Government Finance Statistics Yearbook and data files",
+    "fonte":
+      "Banco Mundial - World Development Indicators, com dados do FMI Government Finance Statistics Yearbook and data files",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede quanto os pagamentos de juros da dívida do governo central representam em relação à receita pública.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior da receita do governo é consumida por pagamentos de juros, reduzindo o espaço fiscal para despesas primárias, investimento público ou redução de déficit. O indicador não mede sozinho solvência fiscal, qualidade do gasto, composição da dívida ou sustentabilidade intertemporal.",
-    "metodologia": "O Banco Mundial reproduz a série GC.XPN.INTP.RV.ZS do World Development Indicators, baseada no FMI Government Finance Statistics. O numerador inclui pagamentos de juros sobre dívida pública, incluindo títulos, empréstimos de longo prazo e outros instrumentos de dívida, pagos a residentes e não residentes. O denominador é a receita do governo, definida como transações que aumentam o valor econômico líquido de uma unidade ou setor. O valor é expresso como percentual da receita.",
-    "historico_metodologia": "A série segue a estrutura do Government Finance Statistics do FMI. O manual GFS 2014, harmonizado com o SNA 2008, recomenda registro em competência e cobertura padronizada de fluxos fiscais. A própria documentação do WDI alerta que, para muitos países, dados de governo central podem não cobrir todas as unidades governamentais e que estatísticas fiscais podem ser incompletas, defasadas ou não totalmente comparáveis entre países. Para o Brasil, a série observada disponível no WDI para este indicador começa em 2010; não há valores observados de 1994 a 2009 na página oficial consultada.",
-    "abrangencia": "Brasil, governo central, conforme padronização do World Development Indicators/FMI GFS. A série não representa necessariamente o setor público consolidado nem o governo geral completo.",
+    "padrao": false,
+    "descricao":
+      "Mede quanto os pagamentos de juros da dívida do governo central representam em relação à receita pública.",
+    "como_interpretar":
+      "Valores maiores indicam que uma parcela maior da receita do governo é consumida por pagamentos de juros, reduzindo o espaço fiscal para despesas primárias, investimento público ou redução de déficit. O indicador não mede sozinho solvência fiscal, qualidade do gasto, composição da dívida ou sustentabilidade intertemporal.",
+    "metodologia":
+      "O Banco Mundial reproduz a série GC.XPN.INTP.RV.ZS do World Development Indicators, baseada no FMI Government Finance Statistics. O numerador inclui pagamentos de juros sobre dívida pública, incluindo títulos, empréstimos de longo prazo e outros instrumentos de dívida, pagos a residentes e não residentes. O denominador é a receita do governo, definida como transações que aumentam o valor econômico líquido de uma unidade ou setor. O valor é expresso como percentual da receita.",
+    "historico_metodologia":
+      "A série segue a estrutura do Government Finance Statistics do FMI. O manual GFS 2014, harmonizado com o SNA 2008, recomenda registro em competência e cobertura padronizada de fluxos fiscais. A própria documentação do WDI alerta que, para muitos países, dados de governo central podem não cobrir todas as unidades governamentais e que estatísticas fiscais podem ser incompletas, defasadas ou não totalmente comparáveis entre países. Para o Brasil, a série observada disponível no WDI para este indicador começa em 2010; não há valores observados de 1994 a 2009 na página oficial consultada.",
+    "abrangencia":
+      "Brasil, governo central, conforme padronização do World Development Indicators/FMI GFS. A série não representa necessariamente o setor público consolidado nem o governo geral completo.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015 coincidiu com forte aumento da razão entre pagamentos de juros e receita, chegando ao maior valor da série observada."
+        "descricao":
+          "A recessão brasileira de 2015 coincidiu com forte aumento da razão entre pagamentos de juros e receita, chegando ao maior valor da série observada.",
       },
       {
         "ano": 2016,
         "nome": "Contração fiscal",
-        "descricao": "A continuidade da recessão e o elevado custo da dívida mantiveram a despesa com juros em patamar muito alto em relação à receita."
+        "descricao":
+          "A continuidade da recessão e o elevado custo da dívida mantiveram a despesa com juros em patamar muito alto em relação à receita.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e as contas públicas; a série mostra queda relativa da razão juros/receita em 2020, em meio a mudanças excepcionais de receita, despesa e política monetária."
+        "descricao":
+          "A pandemia de COVID-19 afetou a atividade econômica e as contas públicas; a série mostra queda relativa da razão juros/receita em 2020, em meio a mudanças excepcionais de receita, despesa e política monetária.",
       },
       {
         "ano": 2021,
         "nome": "Alta Selic",
-        "descricao": "O início do ciclo de aperto monetário no Brasil aumentou gradualmente o custo de rolagem e carregamento da dívida, com reflexos posteriores sobre o peso dos juros."
+        "descricao":
+          "O início do ciclo de aperto monetário no Brasil aumentou gradualmente o custo de rolagem e carregamento da dívida, com reflexos posteriores sobre o peso dos juros.",
       },
       {
         "ano": 2023,
         "nome": "Juros altos",
-        "descricao": "A manutenção de juros nominais elevados coincidiu com nova alta da razão entre despesa com juros e receita."
+        "descricao":
+          "A manutenção de juros nominais elevados coincidiu com nova alta da razão entre despesa com juros e receita.",
       },
       {
         "ano": 2024,
         "nome": "Patamar elevado",
-        "descricao": "Mesmo com leve queda frente a 2023, o indicador permaneceu elevado, acima de 30% da receita."
-      }
+        "descricao": "Mesmo com leve queda frente a 2023, o indicador permaneceu elevado, acima de 30% da receita.",
+      },
     ],
-    "comparacao_paises": "O Brasil aparece entre países com carga de juros relativamente alta sobre a receita pública. Em 2024, o valor de 30,1% ficou muito acima do observado em economias avançadas com menor custo de dívida e também acima de muitos emergentes, indicando forte pressão fiscal por juros. A comparação exige cautela porque a série WDI/FMI pode variar em cobertura institucional, base contábil e abrangência fiscal entre países.",
-    "nivel_confiabilidade": "Alto para a série observada disponível no WDI/FMI GFS, por ser fonte oficial internacional e padronizada. A confiabilidade é menor para comparação internacional estrita, pois a própria documentação do WDI informa limitações de cobertura, consolidação, tempestividade e comparabilidade entre países. Valores ausentes de 1994 a 2009 foram excluídos, sem interpolação ou estimativa.",
+    "comparacao_paises":
+      "O Brasil aparece entre países com carga de juros relativamente alta sobre a receita pública. Em 2024, o valor de 30,1% ficou muito acima do observado em economias avançadas com menor custo de dívida e também acima de muitos emergentes, indicando forte pressão fiscal por juros. A comparação exige cautela porque a série WDI/FMI pode variar em cobertura institucional, base contábil e abrangência fiscal entre países.",
+    "nivel_confiabilidade":
+      "Alto para a série observada disponível no WDI/FMI GFS, por ser fonte oficial internacional e padronizada. A confiabilidade é menor para comparação internacional estrita, pois a própria documentação do WDI informa limitações de cobertura, consolidação, tempestividade e comparabilidade entre países. Valores ausentes de 1994 a 2009 foram excluídos, sem interpolação ou estimativa.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Interest payments (% of revenue) - Brazil - GC.XPN.INTP.RV.ZS",
-        "url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata GC.XPN.INTP.RV.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.XPN.INTP.RV.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.XPN.INTP.RV.ZS",
       },
       {
         "titulo": "Banco Mundial - World Development Indicators DataBank",
-        "url": "https://databank.worldbank.org/source/world-development-indicators"
+        "url": "https://databank.worldbank.org/source/world-development-indicators",
       },
       {
         "titulo": "FMI - Government Finance Statistics",
-        "url": "https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA%3AGFS"
-      }
+        "url": "https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA%3AGFS",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 24.16
-      },
-      {
-        "ano": 2011,
-        "valor": 26.01
-      },
-      {
-        "ano": 2012,
-        "valor": 23.17
-      },
-      {
-        "ano": 2013,
-        "valor": 24
-      },
-      {
-        "ano": 2014,
-        "valor": 26.93
-      },
-      {
-        "ano": 2015,
-        "valor": 39.91
-      },
-      {
-        "ano": 2016,
-        "valor": 37
-      },
-      {
-        "ano": 2017,
-        "valor": 35.9
-      },
-      {
-        "ano": 2018,
-        "valor": 34.1
-      },
-      {
-        "ano": 2019,
-        "valor": 27.4
-      },
-      {
-        "ano": 2020,
-        "valor": 25.5
-      },
-      {
-        "ano": 2021,
-        "valor": 27.1
-      },
-      {
-        "ano": 2022,
-        "valor": 28.9
-      },
-      {
-        "ano": 2023,
-        "valor": 30.8
-      },
-      {
-        "ano": 2024,
-        "valor": 30.1
-      }
+      { "ano": 2010, "valor": 24.16 },
+      { "ano": 2011, "valor": 26.01 },
+      { "ano": 2012, "valor": 23.17 },
+      { "ano": 2013, "valor": 24 },
+      { "ano": 2014, "valor": 26.93 },
+      { "ano": 2015, "valor": 39.91 },
+      { "ano": 2016, "valor": 37 },
+      { "ano": 2017, "valor": 35.9 },
+      { "ano": 2018, "valor": 34.1 },
+      { "ano": 2019, "valor": 27.4 },
+      { "ano": 2020, "valor": 25.5 },
+      { "ano": 2021, "valor": 27.1 },
+      { "ano": 2022, "valor": 28.9 },
+      { "ano": 2023, "valor": 30.8 },
+      { "ano": 2024, "valor": 30.1 },
     ],
-    "padrao": false
   },
   "gasto_protecao_social_pib": {
-    "label": "(FMI/OCDE) Gasto em Proteção Social",
+    "label": "Gasto em Proteção Social",
+    "fonte_sigla": "FMI/OCDE",
     "unidade": "% do PIB",
     "fonte": "Tesouro Nacional / STN, SOF, IBGE e BCB; metodologia COFOG da OCDE/ONU incorporada ao GFSM 2014 do FMI",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro destinada à função COFOG 710 - Proteção Social como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior da produção econômica anual foi destinada a despesas públicas de proteção social, como previdência, pensões, benefícios assistenciais, seguro-desemprego, programas de transferência de renda e outras subfunções sociais. O indicador mede esforço fiscal relativo, não eficiência, focalização, qualidade do gasto ou impacto distributivo.",
-    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE em parceria com a ONU e adotada no Manual de Estatísticas de Finanças Públicas 2014 do FMI (GFSM 2014). O numerador corresponde à despesa do governo geral brasileiro na função 710 - Proteção Social, abrangendo governo central, estados e municípios. O denominador é o PIB nominal do Brasil. Os valores são apresentados como percentual do PIB.",
-    "historico_metodologia": "A série abrangente para governo geral, incluindo União, estados e municípios, está disponível de forma oficial e comparável a partir de 2010 nos boletins COFOG do Tesouro Nacional. A edição de 2023 revisou valores anteriores em relação ao boletim inicial de 2022, incluindo a revisão do valor de 2022 de 16,7% para 15,72% do PIB. Por isso, foram usados os dados mais recentes disponíveis: série 2010-2023 do boletim COFOG 2023 e atualização de 2024 do boletim COFOG 2024. Não foram incluídos anos de 1994 a 2009 por ausência de série oficial consolidada, comparável e validada para governo geral nessa metodologia.",
-    "abrangencia": "Brasil, governo geral, incluindo governo central, governos estaduais e governos municipais, segundo a função COFOG 710 - Proteção Social.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro destinada à função COFOG 710 - Proteção Social como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam que uma parcela maior da produção econômica anual foi destinada a despesas públicas de proteção social, como previdência, pensões, benefícios assistenciais, seguro-desemprego, programas de transferência de renda e outras subfunções sociais. O indicador mede esforço fiscal relativo, não eficiência, focalização, qualidade do gasto ou impacto distributivo.",
+    "metodologia":
+      "A série usa a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE em parceria com a ONU e adotada no Manual de Estatísticas de Finanças Públicas 2014 do FMI (GFSM 2014). O numerador corresponde à despesa do governo geral brasileiro na função 710 - Proteção Social, abrangendo governo central, estados e municípios. O denominador é o PIB nominal do Brasil. Os valores são apresentados como percentual do PIB.",
+    "historico_metodologia":
+      "A série abrangente para governo geral, incluindo União, estados e municípios, está disponível de forma oficial e comparável a partir de 2010 nos boletins COFOG do Tesouro Nacional. A edição de 2023 revisou valores anteriores em relação ao boletim inicial de 2022, incluindo a revisão do valor de 2022 de 16,7% para 15,72% do PIB. Por isso, foram usados os dados mais recentes disponíveis: série 2010-2023 do boletim COFOG 2023 e atualização de 2024 do boletim COFOG 2024. Não foram incluídos anos de 1994 a 2009 por ausência de série oficial consolidada, comparável e validada para governo geral nessa metodologia.",
+    "abrangencia":
+      "Brasil, governo geral, incluindo governo central, governos estaduais e governos municipais, segundo a função COFOG 710 - Proteção Social.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2016,
         "nome": "Recessão",
-        "descricao": "A recessão econômica elevou a razão despesa/PIB, tanto pelo crescimento relativo de despesas obrigatórias quanto pela fraqueza do denominador."
+        "descricao":
+          "A recessão econômica elevou a razão despesa/PIB, tanto pelo crescimento relativo de despesas obrigatórias quanto pela fraqueza do denominador.",
       },
       {
         "ano": 2017,
         "nome": "Alta previdenciária",
-        "descricao": "O gasto em proteção social continuou elevado, influenciado principalmente por aposentadorias, pensões e demais benefícios obrigatórios."
+        "descricao":
+          "O gasto em proteção social continuou elevado, influenciado principalmente por aposentadorias, pensões e demais benefícios obrigatórios.",
       },
       {
         "ano": 2018,
         "nome": "Seguro-desemprego",
-        "descricao": "O Tesouro apontou reversão da tendência de alta, principalmente pela redução dos gastos com seguro-desemprego, associada à diminuição no número de demissões."
+        "descricao":
+          "O Tesouro apontou reversão da tendência de alta, principalmente pela redução dos gastos com seguro-desemprego, associada à diminuição no número de demissões.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A despesa com proteção social atingiu o pico da série, influenciada pelas medidas de enfrentamento à COVID-19, especialmente Auxílio Emergencial e Benefício Emergencial de Preservação do Emprego e da Renda."
+        "descricao":
+          "A despesa com proteção social atingiu o pico da série, influenciada pelas medidas de enfrentamento à COVID-19, especialmente Auxílio Emergencial e Benefício Emergencial de Preservação do Emprego e da Renda.",
       },
       {
         "ano": 2021,
         "nome": "Retirada emergencial",
-        "descricao": "A queda frente a 2020 refletiu a redução das despesas emergenciais da pandemia e a diminuição real de aposentadorias e pensões, pois o reajuste dos benefícios foi inferior à inflação."
+        "descricao":
+          "A queda frente a 2020 refletiu a redução das despesas emergenciais da pandemia e a diminuição real de aposentadorias e pensões, pois o reajuste dos benefícios foi inferior à inflação.",
       },
       {
         "ano": 2022,
         "nome": "Auxílio Brasil",
-        "descricao": "Houve elevação da subfunção Família e filhos, que passou de 0,4% para 1,2% do PIB entre 2021 e 2022, contemplando principalmente Bolsa Família e Auxílio Brasil."
+        "descricao":
+          "Houve elevação da subfunção Família e filhos, que passou de 0,4% para 1,2% do PIB entre 2021 e 2022, contemplando principalmente Bolsa Família e Auxílio Brasil.",
       },
       {
         "ano": 2023,
         "nome": "Bolsa Família",
-        "descricao": "O aumento foi impulsionado pelo Programa Bolsa Família, pela retomada do Minha Casa Minha Vida e pelo crescimento dos pagamentos de sentenças judiciais previdenciárias."
+        "descricao":
+          "O aumento foi impulsionado pelo Programa Bolsa Família, pela retomada do Minha Casa Minha Vida e pelo crescimento dos pagamentos de sentenças judiciais previdenciárias.",
       },
       {
         "ano": 2024,
         "nome": "Recuo relativo",
-        "descricao": "A função Proteção Social caiu de 16,75% para 16,53% do PIB, apesar de continuar sendo a maior função de despesa do governo geral brasileiro."
-      }
+        "descricao":
+          "A função Proteção Social caiu de 16,75% para 16,53% do PIB, apesar de continuar sendo a maior função de despesa do governo geral brasileiro.",
+      },
     ],
-    "comparacao_paises": "O Brasil gasta proporção elevada do PIB em proteção social em comparação internacional. Em 2023, Proteção Social e Serviços Públicos Gerais somaram 28,10% do PIB no Brasil, contra 18,29% do PIB na média dos países analisados pelo relatório COFOG 2024. No boletim COFOG 2023, a despesa brasileira em Proteção Social ficou acima da média internacional selecionada, refletindo principalmente aposentadorias, pensões e benefícios sociais.",
-    "nivel_confiabilidade": "Alto para a série 2010-2024, pois os dados vêm de boletins oficiais do Tesouro Nacional, com metodologia COFOG compatível com FMI GFSM 2014 e fontes STN, SOF, IBGE e BCB. A principal ressalva é que os valores podem sofrer revisões anuais, e os anos anteriores a 2010 não foram incluídos por falta de série oficial consolidada e comparável para governo geral.",
+    "comparacao_paises":
+      "O Brasil gasta proporção elevada do PIB em proteção social em comparação internacional. Em 2023, Proteção Social e Serviços Públicos Gerais somaram 28,10% do PIB no Brasil, contra 18,29% do PIB na média dos países analisados pelo relatório COFOG 2024. No boletim COFOG 2023, a despesa brasileira em Proteção Social ficou acima da média internacional selecionada, refletindo principalmente aposentadorias, pensões e benefícios sociais.",
+    "nivel_confiabilidade":
+      "Alto para a série 2010-2024, pois os dados vêm de boletins oficiais do Tesouro Nacional, com metodologia COFOG compatível com FMI GFSM 2014 e fontes STN, SOF, IBGE e BCB. A principal ressalva é que os valores podem sofrer revisões anuais, e os anos anteriores a 2010 não foram incluídos por falta de série oficial consolidada e comparável para governo geral.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114",
       },
       {
         "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2023",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114"
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114",
       },
       {
         "titulo": "Ministério da Fazenda - Relatório COFOG 2023",
-        "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/fevereiro/relatorio-traz-despesas-por-funcao-das-tres-esferas-de-governo-sob-otica-que-permite-comparacoes-internacionais"
+        "url":
+          "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/fevereiro/relatorio-traz-despesas-por-funcao-das-tres-esferas-de-governo-sob-otica-que-permite-comparacoes-internacionais",
       },
       {
         "titulo": "Tesouro Nacional - Notícia COFOG 2024",
-        "url": "https://www.gov.br/tesouronacional/pt-br/noticias/brasil-amplia-gastos-em-saude-habitacao-e-educacao-em-2024-aponta-relatorio-cofog"
+        "url":
+          "https://www.gov.br/tesouronacional/pt-br/noticias/brasil-amplia-gastos-em-saude-habitacao-e-educacao-em-2024-aponta-relatorio-cofog",
       },
-      {
-        "titulo": "FMI - GFS Government Expenditures by Function",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
-      },
+      { "titulo": "FMI - GFS Government Expenditures by Function", "url": "https://data.imf.org/Datasets/GFS_COFOG" },
       {
         "titulo": "OCDE - Government Expenditure by Function (COFOG)",
-        "url": "https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/government-expenditure-by-function-cofog_d2b167d4.html"
-      }
+        "url":
+          "https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/government-expenditure-by-function-cofog_d2b167d4.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 13.1
-      },
-      {
-        "ano": 2011,
-        "valor": 13.0
-      },
-      {
-        "ano": 2012,
-        "valor": 13.4
-      },
-      {
-        "ano": 2013,
-        "valor": 13.5
-      },
-      {
-        "ano": 2014,
-        "valor": 14.1
-      },
-      {
-        "ano": 2015,
-        "valor": 14.6
-      },
-      {
-        "ano": 2016,
-        "valor": 15.9
-      },
-      {
-        "ano": 2017,
-        "valor": 16.4
-      },
-      {
-        "ano": 2018,
-        "valor": 16.2
-      },
-      {
-        "ano": 2019,
-        "valor": 16.5
-      },
-      {
-        "ano": 2020,
-        "valor": 21.0
-      },
-      {
-        "ano": 2021,
-        "valor": 15.4
-      },
-      {
-        "ano": 2022,
-        "valor": 15.72
-      },
-      {
-        "ano": 2023,
-        "valor": 16.75
-      },
-      {
-        "ano": 2024,
-        "valor": 16.53
-      }
+      { "ano": 2010, "valor": 13.1 },
+      { "ano": 2011, "valor": 13 },
+      { "ano": 2012, "valor": 13.4 },
+      { "ano": 2013, "valor": 13.5 },
+      { "ano": 2014, "valor": 14.1 },
+      { "ano": 2015, "valor": 14.6 },
+      { "ano": 2016, "valor": 15.9 },
+      { "ano": 2017, "valor": 16.4 },
+      { "ano": 2018, "valor": 16.2 },
+      { "ano": 2019, "valor": 16.5 },
+      { "ano": 2020, "valor": 21 },
+      { "ano": 2021, "valor": 15.4 },
+      { "ano": 2022, "valor": 15.72 },
+      { "ano": 2023, "valor": 16.75 },
+      { "ano": 2024, "valor": 16.53 },
     ],
-    "padrao": false
   },
   "gasto_servicos_publicos_gerais_pib": {
-    "label": "(FMI) Gasto em Serviços Públicos Gerais",
+    "label": "Gasto em Serviços Públicos Gerais",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE para a publicação oficial brasileira COFOG",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE para a publicação oficial brasileira COFOG",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro na função COFOG Serviços Públicos Gerais como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam maior parcela do PIB destinada a serviços públicos gerais, incluindo administração geral, órgãos legislativos e executivos, assuntos fiscais e financeiros, relações exteriores, transferências gerais entre níveis de governo e transações da dívida pública. No Brasil, a série é fortemente influenciada pelos juros da dívida pública dentro da subfunção transações da dívida pública.",
-    "metodologia": "A métrica segue a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE/ONU e usada nas Estatísticas de Finanças Públicas do FMI. O numerador corresponde à despesa do governo geral na função GF01 - General public services. O denominador é o PIB nominal do mesmo ano. A série abaixo mantém apenas valores anuais oficiais divulgados para o governo geral brasileiro e expressos em percentual do PIB; valores ausentes, estimados ou não confirmados oficialmente não foram preenchidos.",
-    "historico_metodologia": "A COFOG é uma classificação funcional internacional padronizada. Para o Brasil, a apuração de despesa por função do governo geral teve aprimoramento metodológico relevante com o trabalho conjunto da STN, SOF e IBGE, permitindo consolidação das três esferas de governo e maior comparabilidade internacional. A disponibilidade pública anual validada para o governo geral brasileiro, nas fontes consultadas, está concentrada nos anos recentes; por isso a série não foi retropreenchida até 1994 sem base oficial anual verificável.",
-    "abrangencia": "Brasil, governo geral, abrangendo União, estados e municípios, com consolidação segundo a metodologia COFOG para comparação internacional.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro na função COFOG Serviços Públicos Gerais como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior parcela do PIB destinada a serviços públicos gerais, incluindo administração geral, órgãos legislativos e executivos, assuntos fiscais e financeiros, relações exteriores, transferências gerais entre níveis de governo e transações da dívida pública. No Brasil, a série é fortemente influenciada pelos juros da dívida pública dentro da subfunção transações da dívida pública.",
+    "metodologia":
+      "A métrica segue a Classificação das Funções de Governo (COFOG), desenvolvida pela OCDE/ONU e usada nas Estatísticas de Finanças Públicas do FMI. O numerador corresponde à despesa do governo geral na função GF01 - General public services. O denominador é o PIB nominal do mesmo ano. A série abaixo mantém apenas valores anuais oficiais divulgados para o governo geral brasileiro e expressos em percentual do PIB; valores ausentes, estimados ou não confirmados oficialmente não foram preenchidos.",
+    "historico_metodologia":
+      "A COFOG é uma classificação funcional internacional padronizada. Para o Brasil, a apuração de despesa por função do governo geral teve aprimoramento metodológico relevante com o trabalho conjunto da STN, SOF e IBGE, permitindo consolidação das três esferas de governo e maior comparabilidade internacional. A disponibilidade pública anual validada para o governo geral brasileiro, nas fontes consultadas, está concentrada nos anos recentes; por isso a série não foi retropreenchida até 1994 sem base oficial anual verificável.",
+    "abrangencia":
+      "Brasil, governo geral, abrangendo União, estados e municípios, com consolidação segundo a metodologia COFOG para comparação internacional.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2022,
         "nome": "Juros altos",
-        "descricao": "A função Serviços Públicos Gerais permaneceu elevada no Brasil, em grande parte pela relevância das transações da dívida pública e juros dentro da classificação COFOG."
+        "descricao":
+          "A função Serviços Públicos Gerais permaneceu elevada no Brasil, em grande parte pela relevância das transações da dívida pública e juros dentro da classificação COFOG.",
       },
       {
         "ano": 2023,
         "nome": "Precatórios",
-        "descricao": "A despesa total do governo geral atingiu nível elevado em 2023, influenciada também pelo pagamento de precatórios; Serviços Públicos Gerais foi uma das maiores funções de despesa, atrás de Proteção Social."
+        "descricao":
+          "A despesa total do governo geral atingiu nível elevado em 2023, influenciada também pelo pagamento de precatórios; Serviços Públicos Gerais foi uma das maiores funções de despesa, atrás de Proteção Social.",
       },
       {
         "ano": 2024,
         "nome": "Queda relativa",
-        "descricao": "A despesa em Serviços Públicos Gerais caiu de 11,35% para 11,08% do PIB entre 2023 e 2024, enquanto outras funções como Saúde, Educação e Habitação aumentaram."
-      }
+        "descricao":
+          "A despesa em Serviços Públicos Gerais caiu de 11,35% para 11,08% do PIB entre 2023 e 2024, enquanto outras funções como Saúde, Educação e Habitação aumentaram.",
+      },
     ],
-    "comparacao_paises": "Na comparação internacional baseada em COFOG, o Brasil tende a aparecer com despesa muito alta em Serviços Públicos Gerais como proporção do PIB. Em análise com dados FMI/OCDE para 2011-2021, o Brasil registrou média de 10,9% do PIB nessa função, acima da mediana de outros países analisados, de 5,1%, principalmente pelo peso dos juros da dívida pública.",
-    "nivel_confiabilidade": "Alto para os anos publicados oficialmente em COFOG do governo geral brasileiro. A ressalva principal é que a série anual completa desde 1994 não foi incluída porque não há, nas fontes oficiais consultadas, valores anuais observados e verificáveis para todo o período no mesmo padrão metodológico.",
+    "comparacao_paises":
+      "Na comparação internacional baseada em COFOG, o Brasil tende a aparecer com despesa muito alta em Serviços Públicos Gerais como proporção do PIB. Em análise com dados FMI/OCDE para 2011-2021, o Brasil registrou média de 10,9% do PIB nessa função, acima da mediana de outros países analisados, de 5,1%, principalmente pelo peso dos juros da dívida pública.",
+    "nivel_confiabilidade":
+      "Alto para os anos publicados oficialmente em COFOG do governo geral brasileiro. A ressalva principal é que a série anual completa desde 1994 não foi incluída porque não há, nas fontes oficiais consultadas, valores anuais observados e verificáveis para todo o período no mesmo padrão metodológico.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Transparente - COFOG: Despesas por Função do Governo Geral - 2024",
-        "url": "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+        "url":
+          "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114",
       },
       {
         "titulo": "Tesouro Transparente - COFOG: Despesas por Função do Governo Geral - 2023",
-        "url": "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114"
+        "url":
+          "https: //www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2023/114",
       },
-      {
-        "titulo": "DBnomics - IMF GFSCOFOG Dataset",
-        "url": "https: //db.nomics.world/IMF/GFSCOFOG"
-      }
+      { "titulo": "DBnomics - IMF GFSCOFOG Dataset", "url": "https: //db.nomics.world/IMF/GFSCOFOG" },
     ],
     "dados": [
-      {
-        "ano": 2022,
-        "valor": 10.9
-      },
-      {
-        "ano": 2023,
-        "valor": 11.35
-      },
-      {
-        "ano": 2024,
-        "valor": 11.08
-      }
-    ]
+      { "ano": 2022, "valor": 10.9 },
+      { "ano": 2023, "valor": 11.35 },
+      { "ano": 2024, "valor": 11.08 },
+    ],
   },
   "gasto_saude_pib": {
-    "label": "(OMS/WDI) Gasto Corrente em Saúde",
+    "label": "Gasto Corrente em Saúde",
+    "fonte_sigla": "OMS/WDI",
     "unidade": "% do PIB",
-    "fonte": "Organização Mundial da Saúde - Global Health Expenditure Database, republicado pelo Banco Mundial - World Development Indicators (SH.XPD.CHEX.GD.ZS)",
+    "fonte":
+      "Organização Mundial da Saúde - Global Health Expenditure Database, republicado pelo Banco Mundial - World Development Indicators (SH.XPD.CHEX.GD.ZS)",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede o gasto corrente total em saúde no Brasil como proporção do PIB, incluindo bens e serviços de saúde consumidos no ano.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior da produção econômica anual foi direcionada ao consumo corrente de bens e serviços de saúde. O indicador não mede qualidade do sistema, eficiência, acesso, resultados de saúde nem inclui despesas de capital em saúde.",
-    "metodologia": "O indicador segue o System of Health Accounts 2011 (SHA 2011), usado pela OMS no Global Health Expenditure Database. Mede a despesa corrente em saúde como percentual do PIB. Inclui gastos de governo, seguros obrigatórios/contributivos, seguros privados voluntários, desembolso direto das famílias e outras fontes correntes. Exclui despesas de capital, como construção de unidades, máquinas, TI e estoques de vacinas para emergências ou surtos.",
-    "historico_metodologia": "A série internacional atual da OMS/WDI usa a estrutura SHA 2011 para contas de saúde. O Banco Mundial informa referência 2000-2024 para o indicador global, mas a página específica do Brasil consultada apresenta valores disponíveis de 2000 a 2023. Séries de contas de saúde podem ser revisadas quando a OMS, o Banco Mundial, o IBGE ou as contas nacionais atualizam metodologias, bases do PIB, classificações ou estimativas de gasto. Não foram incluídos anos sem valor observado disponível para o Brasil.",
-    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente pela metodologia da OMS/WDI. O indicador é de gasto corrente total em saúde, não apenas gasto público COFOG do governo.",
+    "padrao": false,
+    "descricao":
+      "Mede o gasto corrente total em saúde no Brasil como proporção do PIB, incluindo bens e serviços de saúde consumidos no ano.",
+    "como_interpretar":
+      "Valores maiores indicam que uma parcela maior da produção econômica anual foi direcionada ao consumo corrente de bens e serviços de saúde. O indicador não mede qualidade do sistema, eficiência, acesso, resultados de saúde nem inclui despesas de capital em saúde.",
+    "metodologia":
+      "O indicador segue o System of Health Accounts 2011 (SHA 2011), usado pela OMS no Global Health Expenditure Database. Mede a despesa corrente em saúde como percentual do PIB. Inclui gastos de governo, seguros obrigatórios/contributivos, seguros privados voluntários, desembolso direto das famílias e outras fontes correntes. Exclui despesas de capital, como construção de unidades, máquinas, TI e estoques de vacinas para emergências ou surtos.",
+    "historico_metodologia":
+      "A série internacional atual da OMS/WDI usa a estrutura SHA 2011 para contas de saúde. O Banco Mundial informa referência 2000-2024 para o indicador global, mas a página específica do Brasil consultada apresenta valores disponíveis de 2000 a 2023. Séries de contas de saúde podem ser revisadas quando a OMS, o Banco Mundial, o IBGE ou as contas nacionais atualizam metodologias, bases do PIB, classificações ou estimativas de gasto. Não foram incluídos anos sem valor observado disponível para o Brasil.",
+    "abrangencia":
+      "Brasil, cobertura nacional, comparável internacionalmente pela metodologia da OMS/WDI. O indicador é de gasto corrente total em saúde, não apenas gasto público COFOG do governo.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2000,
         "nome": "SHA 2011",
-        "descricao": "A série validada disponível na OMS/WDI começa em 2000, dentro da estrutura internacional de contas de saúde usada para comparabilidade global."
+        "descricao":
+          "A série validada disponível na OMS/WDI começa em 2000, dentro da estrutura internacional de contas de saúde usada para comparabilidade global.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira reduziu o PIB e alterou a razão gasto em saúde/PIB, pois o denominador econômico caiu fortemente."
+        "descricao":
+          "A recessão brasileira reduziu o PIB e alterou a razão gasto em saúde/PIB, pois o denominador econômico caiu fortemente.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da recessão manteve pressão sobre a razão entre gastos correntes em saúde e PIB."
+        "descricao": "A continuidade da recessão manteve pressão sobre a razão entre gastos correntes em saúde e PIB.",
       },
       {
         "ano": 2019,
         "nome": "Pré-pandemia",
-        "descricao": "O IBGE registrou gasto em saúde equivalente a 9,6% do PIB em 2019, antes do choque da COVID-19."
+        "descricao": "O IBGE registrou gasto em saúde equivalente a 9,6% do PIB em 2019, antes do choque da COVID-19.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou tanto o gasto em saúde quanto o PIB, elevando a relevância da saúde nas contas nacionais."
+        "descricao":
+          "A pandemia de COVID-19 afetou tanto o gasto em saúde quanto o PIB, elevando a relevância da saúde nas contas nacionais.",
       },
       {
         "ano": 2021,
         "nome": "Recuperação",
-        "descricao": "A reabertura econômica e a recomposição do consumo de bens e serviços de saúde influenciaram a proporção do gasto em saúde no PIB."
+        "descricao":
+          "A reabertura econômica e a recomposição do consumo de bens e serviços de saúde influenciaram a proporção do gasto em saúde no PIB.",
       },
       {
         "ano": 2022,
         "nome": "Normalização",
-        "descricao": "A OCDE informou que o consumo de bens e serviços de saúde correspondeu a 9,4% do PIB brasileiro em 2022, próximo da média da OCDE."
+        "descricao":
+          "A OCDE informou que o consumo de bens e serviços de saúde correspondeu a 9,4% do PIB brasileiro em 2022, próximo da média da OCDE.",
       },
       {
         "ano": 2023,
         "nome": "Valor recente",
-        "descricao": "O Banco Mundial/OMS apresenta 9,73% do PIB como valor mais recente disponível para o Brasil na série consultada."
-      }
+        "descricao":
+          "O Banco Mundial/OMS apresenta 9,73% do PIB como valor mais recente disponível para o Brasil na série consultada.",
+      },
     ],
-    "comparacao_paises": "Em 2022, o Brasil ficou próximo da média da OCDE: 9,4% do PIB no Brasil contra 9,2% na média da OCDE. O percentual brasileiro ficou acima de México, Costa Rica e Colômbia, segundo a comparação da OCDE.",
-    "nivel_confiabilidade": "Alto para comparação internacional, pois a fonte é a OMS Global Health Expenditure Database, republicada no World Development Indicators do Banco Mundial, com metodologia SHA 2011. A ressalva é que são contas nacionais de saúde sujeitas a revisões e que o indicador mede gasto corrente total, não exclusivamente gasto público COFOG.",
+    "comparacao_paises":
+      "Em 2022, o Brasil ficou próximo da média da OCDE: 9,4% do PIB no Brasil contra 9,2% na média da OCDE. O percentual brasileiro ficou acima de México, Costa Rica e Colômbia, segundo a comparação da OCDE.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a fonte é a OMS Global Health Expenditure Database, republicada no World Development Indicators do Banco Mundial, com metodologia SHA 2011. A ressalva é que são contas nacionais de saúde sujeitas a revisões e que o indicador mede gasto corrente total, não exclusivamente gasto público COFOG.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Current health expenditure (% of GDP) - Brazil - SH.XPD.CHEX.GD.ZS",
-        "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata SH.XPD.CHEX.GD.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.XPD.CHEX.GD.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.XPD.CHEX.GD.ZS",
       },
-      {
-        "titulo": "OMS - Global Health Expenditure Database",
-        "url": "https://apps.who.int/nha/database"
-      },
+      { "titulo": "OMS - Global Health Expenditure Database", "url": "https://apps.who.int/nha/database" },
       {
         "titulo": "OMS - Current health expenditure (CHE) as percentage of GDP",
-        "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-%28che%29-as-percentage-of-gross-domestic-product-%28gdp%29-%28-%29"
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-%28che%29-as-percentage-of-gross-domestic-product-%28gdp%29-%28-%29",
       },
       {
         "titulo": "OCDE - Institutionalising Health Accounts in Brazil",
-        "url": "https://www.oecd.org/en/publications/institutionalising-health-accounts-in-brazil_b6d405f9-en/full-report/putting-brazilian-health-spending-data-into-an-international-context_443a3911.html"
+        "url":
+          "https://www.oecd.org/en/publications/institutionalising-health-accounts-in-brazil_b6d405f9-en/full-report/putting-brazilian-health-spending-data-into-an-international-context_443a3911.html",
       },
       {
         "titulo": "IBGE - Expenditure on health in 2019 represented 9.6% of GDP",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/33486-expenditure-on-health-in-2019-represented-9-6-of-the-gdp"
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/33486-expenditure-on-health-in-2019-represented-9-6-of-the-gdp",
       },
       {
-        "titulo": "IBGE - Affected by the pandemic, consumption of health goods and services dropped in 2020 but increased in 2021",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/39689-affected-by-the-pandemic-consumption-of-health-goods-and-services-dropped-by-4-4-in-2020-but-increased-by-13-3-in-2021"
-      }
+        "titulo":
+          "IBGE - Affected by the pandemic, consumption of health goods and services dropped in 2020 but increased in 2021",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/39689-affected-by-the-pandemic-consumption-of-health-goods-and-services-dropped-by-4-4-in-2020-but-increased-by-13-3-in-2021",
+      },
     ],
     "dados": [
-      {
-        "ano": 2000,
-        "valor": 8.3
-      },
-      {
-        "ano": 2016,
-        "valor": 9.2
-      },
-      {
-        "ano": 2017,
-        "valor": 9.5
-      },
-      {
-        "ano": 2018,
-        "valor": 9.5
-      },
-      {
-        "ano": 2019,
-        "valor": 9.6
-      },
-      {
-        "ano": 2020,
-        "valor": 9.6
-      },
-      {
-        "ano": 2021,
-        "valor": 9.6
-      },
-      {
-        "ano": 2022,
-        "valor": 9.4
-      },
-      {
-        "ano": 2023,
-        "valor": 9.73
-      }
-    ]
+      { "ano": 2000, "valor": 8.3 },
+      { "ano": 2016, "valor": 9.2 },
+      { "ano": 2017, "valor": 9.5 },
+      { "ano": 2018, "valor": 9.5 },
+      { "ano": 2019, "valor": 9.6 },
+      { "ano": 2020, "valor": 9.6 },
+      { "ano": 2021, "valor": 9.6 },
+      { "ano": 2022, "valor": 9.4 },
+      { "ano": 2023, "valor": 9.73 },
+    ],
   },
   "gasto_educacao_pib": {
-    "label": "(WDI/UNESCO) Gasto Público em Educação",
+    "label": "Gasto Público em Educação",
+    "fonte_sigla": "WDI/UNESCO",
     "unidade": "% do PIB",
-    "fonte": "Banco Mundial - World Development Indicators (SE.XPD.TOTL.GD.ZS), com dados da UNESCO Institute for Statistics (UIS)",
+    "fonte":
+      "Banco Mundial - World Development Indicators (SE.XPD.TOTL.GD.ZS), com dados da UNESCO Institute for Statistics (UIS)",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral com educação, incluindo gastos correntes, de capital e transferências, como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam maior gasto público em educação em relação ao tamanho da economia. O indicador não mede qualidade do ensino, eficiência do gasto, resultados educacionais, aprendizagem, desigualdade educacional ou distribuição por etapa de ensino.",
-    "metodologia": "O indicador é calculado dividindo a despesa total do governo geral em educação pelo PIB e multiplicando por 100. A despesa inclui gastos correntes, gastos de capital e transferências em todos os níveis de educação, podendo incluir recursos de fontes internacionais repassados ao governo. Os dados de educação são coletados pela UNESCO Institute for Statistics a partir de respostas oficiais dos governos à pesquisa anual da UIS ou da coleta conjunta UNESCO-OECD-Eurostat; o PIB e agregados macroeconômicos podem ser alinhados com bases como o World Bank WDI e o IMF World Economic Outlook.",
-    "historico_metodologia": "A série WDI atual identifica a fonte como UNESCO UIS via API, com data de publicação 2026-02 e referência 1970-2025. A metodologia básica permaneceu estável: despesa do governo geral com educação como porcentagem do PIB. A fonte alerta que, em alguns países, os dados podem se referir apenas ao ministério da educação, excluindo despesas educacionais de outros ministérios. Também pode haver revisões quando governos atualizam respostas à UIS, contas nacionais, PIB ou classificações internacionais de educação. Para o Brasil, a série observada disponível na consulta oficial começa em 1995 e termina em 2022; anos sem valor observado, como 1994, 1996, 1997, 2003 e 2023-2025, foram excluídos.",
-    "abrangencia": "Brasil, governo geral quando disponível, cobrindo despesas públicas de educação em todos os níveis educacionais, com padronização internacional pelo World Development Indicators e UNESCO UIS.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral com educação, incluindo gastos correntes, de capital e transferências, como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior gasto público em educação em relação ao tamanho da economia. O indicador não mede qualidade do ensino, eficiência do gasto, resultados educacionais, aprendizagem, desigualdade educacional ou distribuição por etapa de ensino.",
+    "metodologia":
+      "O indicador é calculado dividindo a despesa total do governo geral em educação pelo PIB e multiplicando por 100. A despesa inclui gastos correntes, gastos de capital e transferências em todos os níveis de educação, podendo incluir recursos de fontes internacionais repassados ao governo. Os dados de educação são coletados pela UNESCO Institute for Statistics a partir de respostas oficiais dos governos à pesquisa anual da UIS ou da coleta conjunta UNESCO-OECD-Eurostat; o PIB e agregados macroeconômicos podem ser alinhados com bases como o World Bank WDI e o IMF World Economic Outlook.",
+    "historico_metodologia":
+      "A série WDI atual identifica a fonte como UNESCO UIS via API, com data de publicação 2026-02 e referência 1970-2025. A metodologia básica permaneceu estável: despesa do governo geral com educação como porcentagem do PIB. A fonte alerta que, em alguns países, os dados podem se referir apenas ao ministério da educação, excluindo despesas educacionais de outros ministérios. Também pode haver revisões quando governos atualizam respostas à UIS, contas nacionais, PIB ou classificações internacionais de educação. Para o Brasil, a série observada disponível na consulta oficial começa em 1995 e termina em 2022; anos sem valor observado, como 1994, 1996, 1997, 2003 e 2023-2025, foram excluídos.",
+    "abrangencia":
+      "Brasil, governo geral quando disponível, cobrindo despesas públicas de educação em todos os níveis educacionais, com padronização internacional pelo World Development Indicators e UNESCO UIS.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2002,
         "nome": "Mínimo da série",
-        "descricao": "A série WDI/UNESCO registra em 2002 o menor valor observado do período validado, 3,75% do PIB."
+        "descricao": "A série WDI/UNESCO registra em 2002 o menor valor observado do período validado, 3,75% do PIB.",
       },
       {
         "ano": 2007,
         "nome": "Expansão educacional",
-        "descricao": "A partir de 2007, a série passa a mostrar elevação contínua do gasto em educação como proporção do PIB, saindo de 4,97% em 2007 para 5,86% em 2012."
+        "descricao":
+          "A partir de 2007, a série passa a mostrar elevação contínua do gasto em educação como proporção do PIB, saindo de 4,97% em 2007 para 5,86% em 2012.",
       },
       {
         "ano": 2017,
         "nome": "Máximo da série",
-        "descricao": "A série WDI/UNESCO registra em 2017 o maior valor observado do período validado, 6,32% do PIB."
+        "descricao": "A série WDI/UNESCO registra em 2017 o maior valor observado do período validado, 6,32% do PIB.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "O período da pandemia de COVID-19 coincide com queda do indicador, de 5,96% do PIB em 2019 para 5,77% em 2020 e 5,50% em 2021."
+        "descricao":
+          "O período da pandemia de COVID-19 coincide com queda do indicador, de 5,96% do PIB em 2019 para 5,77% em 2020 e 5,50% em 2021.",
       },
       {
         "ano": 2022,
         "nome": "Recomposição parcial",
-        "descricao": "Em 2022, o indicador subiu para 5,62% do PIB, mas permaneceu abaixo do pico de 2017."
-      }
+        "descricao": "Em 2022, o indicador subiu para 5,62% do PIB, mas permaneceu abaixo do pico de 2017.",
+      },
     ],
-    "comparacao_paises": "O Brasil ficou dentro da faixa de referência de 4% a 6% do PIB indicada pelo Education 2030 Framework for Action na maior parte da série validada. Em 2015-2018, ultrapassou ligeiramente 6% do PIB. Em comparação internacional, isso sugere esforço fiscal relativamente alto em educação como proporção do PIB, mas o indicador isolado não permite concluir superioridade em qualidade, aprendizagem ou eficiência do gasto.",
-    "nivel_confiabilidade": "Alto para comparação internacional anual, pois a série vem do World Development Indicators do Banco Mundial com fonte primária na UNESCO Institute for Statistics. A principal limitação é que há anos sem dado observado e possíveis revisões metodológicas ou de contas nacionais. Os valores abaixo mantêm apenas anos com observação disponível; não foram incluídas estimativas, interpolações ou projeções.",
+    "comparacao_paises":
+      "O Brasil ficou dentro da faixa de referência de 4% a 6% do PIB indicada pelo Education 2030 Framework for Action na maior parte da série validada. Em 2015-2018, ultrapassou ligeiramente 6% do PIB. Em comparação internacional, isso sugere esforço fiscal relativamente alto em educação como proporção do PIB, mas o indicador isolado não permite concluir superioridade em qualidade, aprendizagem ou eficiência do gasto.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional anual, pois a série vem do World Development Indicators do Banco Mundial com fonte primária na UNESCO Institute for Statistics. A principal limitação é que há anos sem dado observado e possíveis revisões metodológicas ou de contas nacionais. Os valores abaixo mantêm apenas anos com observação disponível; não foram incluídas estimativas, interpolações ou projeções.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Government expenditure on education, total (% of GDP) - Brazil",
-        "url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata SE.XPD.TOTL.GD.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.XPD.TOTL.GD.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.XPD.TOTL.GD.ZS",
       },
       {
         "titulo": "UNESCO UIS - SDG 4 Country Profile Brazil",
-        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf"
+        "url": "https://download.uis.unesco.org/SDG4/SDG4-Profile-Brazil.pdf",
       },
       {
         "titulo": "Banco Mundial API - Download CSV SE.XPD.TOTL.GD.ZS",
-        "url": "https://api.worldbank.org/v2/en/indicator/SE.XPD.TOTL.GD.ZS?downloadformat=csv"
-      }
+        "url": "https://api.worldbank.org/v2/en/indicator/SE.XPD.TOTL.GD.ZS?downloadformat=csv",
+      },
     ],
     "dados": [
-      {
-        "ano": 1995,
-        "valor": 4.57
-      },
-      {
-        "ano": 1998,
-        "valor": 4.76
-      },
-      {
-        "ano": 1999,
-        "valor": 3.8
-      },
-      {
-        "ano": 2000,
-        "valor": 3.95
-      },
-      {
-        "ano": 2001,
-        "valor": 3.84
-      },
-      {
-        "ano": 2002,
-        "valor": 3.75
-      },
-      {
-        "ano": 2004,
-        "valor": 3.97
-      },
-      {
-        "ano": 2005,
-        "valor": 4.48
-      },
-      {
-        "ano": 2006,
-        "valor": 4.87
-      },
-      {
-        "ano": 2007,
-        "valor": 4.97
-      },
-      {
-        "ano": 2008,
-        "valor": 5.27
-      },
-      {
-        "ano": 2009,
-        "valor": 5.46
-      },
-      {
-        "ano": 2010,
-        "valor": 5.65
-      },
-      {
-        "ano": 2011,
-        "valor": 5.74
-      },
-      {
-        "ano": 2012,
-        "valor": 5.86
-      },
-      {
-        "ano": 2013,
-        "valor": 5.84
-      },
-      {
-        "ano": 2014,
-        "valor": 5.95
-      },
-      {
-        "ano": 2015,
-        "valor": 6.24
-      },
-      {
-        "ano": 2016,
-        "valor": 6.31
-      },
-      {
-        "ano": 2017,
-        "valor": 6.32
-      },
-      {
-        "ano": 2018,
-        "valor": 6.09
-      },
-      {
-        "ano": 2019,
-        "valor": 5.96
-      },
-      {
-        "ano": 2020,
-        "valor": 5.77
-      },
-      {
-        "ano": 2021,
-        "valor": 5.497
-      },
-      {
-        "ano": 2022,
-        "valor": 5.6192
-      }
-    ]
+      { "ano": 1995, "valor": 4.57 },
+      { "ano": 1998, "valor": 4.76 },
+      { "ano": 1999, "valor": 3.8 },
+      { "ano": 2000, "valor": 3.95 },
+      { "ano": 2001, "valor": 3.84 },
+      { "ano": 2002, "valor": 3.75 },
+      { "ano": 2004, "valor": 3.97 },
+      { "ano": 2005, "valor": 4.48 },
+      { "ano": 2006, "valor": 4.87 },
+      { "ano": 2007, "valor": 4.97 },
+      { "ano": 2008, "valor": 5.27 },
+      { "ano": 2009, "valor": 5.46 },
+      { "ano": 2010, "valor": 5.65 },
+      { "ano": 2011, "valor": 5.74 },
+      { "ano": 2012, "valor": 5.86 },
+      { "ano": 2013, "valor": 5.84 },
+      { "ano": 2014, "valor": 5.95 },
+      { "ano": 2015, "valor": 6.24 },
+      { "ano": 2016, "valor": 6.31 },
+      { "ano": 2017, "valor": 6.32 },
+      { "ano": 2018, "valor": 6.09 },
+      { "ano": 2019, "valor": 5.96 },
+      { "ano": 2020, "valor": 5.77 },
+      { "ano": 2021, "valor": 5.497 },
+      { "ano": 2022, "valor": 5.6192 },
+    ],
   },
   "gasto_ordem_publica_seguranca_pib": {
-    "label": "(FMI) Gasto em Ordem Pública e Segurança",
+    "label": "Gasto em Ordem Pública e Segurança",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Functions of Government (GFS-COFOG); Secretaria do Tesouro Nacional - COFOG Brasil",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Functions of Government (GFS-COFOG); Secretaria do Tesouro Nacional - COFOG Brasil",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro com ordem pública e segurança, segundo a função COFOG 703, como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam maior gasto público em polícia, proteção contra incêndios, tribunais, prisões, pesquisa e desenvolvimento em ordem pública e segurança, e demais serviços classificados nessa função, em relação ao tamanho da economia. O indicador não mede eficiência, qualidade da segurança pública, criminalidade, violência ou resultados judiciais.",
-    "metodologia": "A série usa a classificação funcional COFOG, conforme o Manual de Estatísticas de Finanças Públicas do FMI (GFSM 2014), para identificar a função 703 - Public order and safety. Os valores foram extraídos da tabela oficial COFOG Brasil em % do PIB, considerando o governo geral consolidado, que agrega governo central, governos estaduais e municípios, com eliminação de fluxos intragovernamentais. Os valores da planilha original estão em fração do PIB e foram convertidos para porcentagem multiplicando por 100.",
-    "historico_metodologia": "A série oficial brasileira COFOG disponível na publicação consultada cobre 2010 a 2024; não há valores oficiais observados nessa publicação para 1994 a 2009, por isso esses anos não foram preenchidos. A metodologia segue GFSM 2014 e COFOG ONU/OCDE. Segundo a documentação da própria publicação, a fonte primária para estados, municípios e Distrito Federal a partir de 2014 é a base FINBRA/Siconfi; a partir de 2019, os dados de governos estaduais passaram a usar a Matriz de Saldos Contábeis; para municípios, a Matriz de Saldos Contábeis tornou-se a principal fonte em 2022. A publicação informa uso de fontes complementares e técnicas de extrapolação para municípios que não reportaram dados, o que melhora cobertura, mas reduz levemente a precisão em comparação com séries integralmente observadas.",
-    "abrangencia": "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme COFOG/GFSM 2014. Série oficial disponível: 2010 a 2024.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro com ordem pública e segurança, segundo a função COFOG 703, como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior gasto público em polícia, proteção contra incêndios, tribunais, prisões, pesquisa e desenvolvimento em ordem pública e segurança, e demais serviços classificados nessa função, em relação ao tamanho da economia. O indicador não mede eficiência, qualidade da segurança pública, criminalidade, violência ou resultados judiciais.",
+    "metodologia":
+      "A série usa a classificação funcional COFOG, conforme o Manual de Estatísticas de Finanças Públicas do FMI (GFSM 2014), para identificar a função 703 - Public order and safety. Os valores foram extraídos da tabela oficial COFOG Brasil em % do PIB, considerando o governo geral consolidado, que agrega governo central, governos estaduais e municípios, com eliminação de fluxos intragovernamentais. Os valores da planilha original estão em fração do PIB e foram convertidos para porcentagem multiplicando por 100.",
+    "historico_metodologia":
+      "A série oficial brasileira COFOG disponível na publicação consultada cobre 2010 a 2024; não há valores oficiais observados nessa publicação para 1994 a 2009, por isso esses anos não foram preenchidos. A metodologia segue GFSM 2014 e COFOG ONU/OCDE. Segundo a documentação da própria publicação, a fonte primária para estados, municípios e Distrito Federal a partir de 2014 é a base FINBRA/Siconfi; a partir de 2019, os dados de governos estaduais passaram a usar a Matriz de Saldos Contábeis; para municípios, a Matriz de Saldos Contábeis tornou-se a principal fonte em 2022. A publicação informa uso de fontes complementares e técnicas de extrapolação para municípios que não reportaram dados, o que melhora cobertura, mas reduz levemente a precisão em comparação com séries integralmente observadas.",
+    "abrangencia":
+      "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme COFOG/GFSM 2014. Série oficial disponível: 2010 a 2024.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015-2016 reduziu o denominador PIB e coincidiu com aumento do gasto em ordem pública e segurança como proporção do PIB."
+        "descricao":
+          "A recessão brasileira de 2015-2016 reduziu o denominador PIB e coincidiu com aumento do gasto em ordem pública e segurança como proporção do PIB.",
       },
       {
         "ano": 2016,
         "nome": "Recessão prolongada",
-        "descricao": "A continuidade da contração econômica manteve pressão ascendente no indicador em relação ao PIB."
+        "descricao": "A continuidade da contração econômica manteve pressão ascendente no indicador em relação ao PIB.",
       },
       {
         "ano": 2020,
         "nome": "COVID-19",
-        "descricao": "A pandemia afetou fortemente a atividade econômica e as finanças públicas, mas o indicador de ordem pública e segurança caiu levemente em relação a 2019."
+        "descricao":
+          "A pandemia afetou fortemente a atividade econômica e as finanças públicas, mas o indicador de ordem pública e segurança caiu levemente em relação a 2019.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura econômica",
-        "descricao": "A recuperação do PIB nominal e real após o choque da pandemia coincidiu com queda relevante do indicador como proporção do PIB."
+        "descricao":
+          "A recuperação do PIB nominal e real após o choque da pandemia coincidiu com queda relevante do indicador como proporção do PIB.",
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "O indicador voltou a subir em 2024, alcançando 2,9545% do PIB, maior valor desde 2020 na série validada."
-      }
+        "descricao":
+          "O indicador voltou a subir em 2024, alcançando 2,9545% do PIB, maior valor desde 2020 na série validada.",
+      },
     ],
-    "comparacao_paises": "Em 2023, o Brasil registrou 2,8453% do PIB em ordem pública e segurança. Esse nível é superior ao gasto agregado da União Europeia nessa função em 2023, reportado pelo Eurostat como cerca de 1,7% do PIB, indicando peso relativamente alto da função no orçamento público brasileiro quando comparado a economias europeias consolidadas. A comparação deve ser feita com cautela, pois diferenças institucionais, federativas, contábeis e de classificação podem afetar a alocação funcional.",
-    "nivel_confiabilidade": "Alto. Os valores vêm de publicação oficial do Tesouro Nacional estruturada segundo GFSM 2014 e COFOG, compatível com o padrão do FMI. A confiabilidade não deve ser classificada como máxima porque a própria metodologia informa uso de fontes complementares e extrapolação para municípios sem reporte, além de possíveis revisões de classificação funcional e contas fiscais.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 2,8453% do PIB em ordem pública e segurança. Esse nível é superior ao gasto agregado da União Europeia nessa função em 2023, reportado pelo Eurostat como cerca de 1,7% do PIB, indicando peso relativamente alto da função no orçamento público brasileiro quando comparado a economias europeias consolidadas. A comparação deve ser feita com cautela, pois diferenças institucionais, federativas, contábeis e de classificação podem afetar a alocação funcional.",
+    "nivel_confiabilidade":
+      "Alto. Os valores vêm de publicação oficial do Tesouro Nacional estruturada segundo GFSM 2014 e COFOG, compatível com o padrão do FMI. A confiabilidade não deve ser classificada como máxima porque a própria metodologia informa uso de fontes complementares e extrapolação para municípios sem reporte, além de possíveis revisões de classificação funcional e contas fiscais.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Transparente - COFOG - Expenditure by Functions of the General Government - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+        "url":
+          "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114",
       },
       {
         "titulo": "Tesouro Nacional - Download da planilha COFOG 2024",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753"
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753",
       },
       {
         "titulo": "World Bank Data360 - IMF GFS-COFOG Dataset",
-        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG"
+        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG",
       },
       {
         "titulo": "Eurostat - Government Expenditure by Function (COFOG)",
-        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_by_function_%E2%80%93_COFOG"
-      }
+        "url":
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_by_function_%E2%80%93_COFOG",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 2.601926639932565
-      },
-      {
-        "ano": 2011,
-        "valor": 2.568247763368848
-      },
-      {
-        "ano": 2012,
-        "valor": 2.599581798371124
-      },
-      {
-        "ano": 2013,
-        "valor": 2.668421927742117
-      },
-      {
-        "ano": 2014,
-        "valor": 2.788594222317246
-      },
-      {
-        "ano": 2015,
-        "valor": 2.985178726795802
-      },
-      {
-        "ano": 2016,
-        "valor": 3.071447431357928
-      },
-      {
-        "ano": 2017,
-        "valor": 3.106219265127097
-      },
-      {
-        "ano": 2018,
-        "valor": 3.086976748689737
-      },
-      {
-        "ano": 2019,
-        "valor": 3.11628323754062
-      },
-      {
-        "ano": 2020,
-        "valor": 3.048932718599403
-      },
-      {
-        "ano": 2021,
-        "valor": 2.573255427024587
-      },
-      {
-        "ano": 2022,
-        "valor": 2.724235526745441
-      },
-      {
-        "ano": 2023,
-        "valor": 2.845299903993456
-      },
-      {
-        "ano": 2024,
-        "valor": 2.954500241156522
-      }
-    ]
+      { "ano": 2010, "valor": 2.601926639932565 },
+      { "ano": 2011, "valor": 2.568247763368848 },
+      { "ano": 2012, "valor": 2.599581798371124 },
+      { "ano": 2013, "valor": 2.668421927742117 },
+      { "ano": 2014, "valor": 2.788594222317246 },
+      { "ano": 2015, "valor": 2.985178726795802 },
+      { "ano": 2016, "valor": 3.071447431357928 },
+      { "ano": 2017, "valor": 3.106219265127097 },
+      { "ano": 2018, "valor": 3.086976748689737 },
+      { "ano": 2019, "valor": 3.11628323754062 },
+      { "ano": 2020, "valor": 3.048932718599403 },
+      { "ano": 2021, "valor": 2.573255427024587 },
+      { "ano": 2022, "valor": 2.724235526745441 },
+      { "ano": 2023, "valor": 2.845299903993456 },
+      { "ano": 2024, "valor": 2.954500241156522 },
+    ],
   },
   "gasto_assuntos_economicos_pib": {
-    "label": "(FMI) Gasto em Assuntos Econômicos",
+    "label": "Gasto em Assuntos Econômicos",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF, IBGE e BCB para a série brasileira do Governo Geral",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional/STN, SOF, IBGE e BCB para a série brasileira do Governo Geral",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro na função COFOG 704 - Assuntos Econômicos como percentual do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam maior proporção da economia destinada a funções públicas ligadas a transporte, agricultura, energia, indústria, comunicações, pesquisa econômica e demais políticas de apoio à atividade econômica. O indicador não mede eficiência, qualidade do gasto, impacto econômico ou retorno social dos recursos aplicados.",
-    "metodologia": "A métrica segue a Classificação das Funções de Governo (COFOG), metodologia internacional da OCDE/ONU usada no FMI GFS para classificar despesas públicas por finalidade. O numerador corresponde à despesa consolidada do Governo Geral na função 704 - Assuntos Econômicos. O denominador é o PIB nominal anual. Os valores foram mantidos apenas quando observados em publicação oficial brasileira compatível com GFS-COFOG, usando STN, SOF, IBGE e BCB. Não foram incluídos valores estimados nem extrapolações.",
-    "historico_metodologia": "A série brasileira de despesas por função do Governo Geral em padrão COFOG publicada pelo Tesouro Nacional cobre 2010 em diante nas edições consultadas. Não há valores oficiais COFOG-Governo Geral validados para 1994-2009 nas fontes consultadas; por isso esses anos não foram preenchidos. Os dados de 2022 e 2023 são marcados como preliminares na publicação oficial. Séries COFOG podem sofrer revisão por reclassificação funcional, consolidação entre esferas de governo, atualização de contas nacionais, revisão do PIB nominal ou aprimoramentos metodológicos de STN/SOF/IBGE/BCB.",
-    "abrangencia": "Brasil, Governo Geral consolidado, incluindo União, estados e municípios, em classificação funcional COFOG compatível com comparações internacionais do FMI GFS-COFOG.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro na função COFOG 704 - Assuntos Econômicos como percentual do Produto Interno Bruto.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção da economia destinada a funções públicas ligadas a transporte, agricultura, energia, indústria, comunicações, pesquisa econômica e demais políticas de apoio à atividade econômica. O indicador não mede eficiência, qualidade do gasto, impacto econômico ou retorno social dos recursos aplicados.",
+    "metodologia":
+      "A métrica segue a Classificação das Funções de Governo (COFOG), metodologia internacional da OCDE/ONU usada no FMI GFS para classificar despesas públicas por finalidade. O numerador corresponde à despesa consolidada do Governo Geral na função 704 - Assuntos Econômicos. O denominador é o PIB nominal anual. Os valores foram mantidos apenas quando observados em publicação oficial brasileira compatível com GFS-COFOG, usando STN, SOF, IBGE e BCB. Não foram incluídos valores estimados nem extrapolações.",
+    "historico_metodologia":
+      "A série brasileira de despesas por função do Governo Geral em padrão COFOG publicada pelo Tesouro Nacional cobre 2010 em diante nas edições consultadas. Não há valores oficiais COFOG-Governo Geral validados para 1994-2009 nas fontes consultadas; por isso esses anos não foram preenchidos. Os dados de 2022 e 2023 são marcados como preliminares na publicação oficial. Séries COFOG podem sofrer revisão por reclassificação funcional, consolidação entre esferas de governo, atualização de contas nacionais, revisão do PIB nominal ou aprimoramentos metodológicos de STN/SOF/IBGE/BCB.",
+    "abrangencia":
+      "Brasil, Governo Geral consolidado, incluindo União, estados e municípios, em classificação funcional COFOG compatível com comparações internacionais do FMI GFS-COFOG.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2010,
         "nome": "Investimento alto",
-        "descricao": "O nível elevado da função Assuntos Econômicos esteve associado principalmente ao peso de Transportes, subfunção mais relevante dentro da função."
+        "descricao":
+          "O nível elevado da função Assuntos Econômicos esteve associado principalmente ao peso de Transportes, subfunção mais relevante dentro da função.",
       },
       {
         "ano": 2014,
         "nome": "Pico pré-crise",
-        "descricao": "A despesa em Assuntos Econômicos atingiu o maior valor da série validada, impulsionada sobretudo por gastos em Transportes e por maior participação de assuntos econômicos, comerciais e trabalhistas."
+        "descricao":
+          "A despesa em Assuntos Econômicos atingiu o maior valor da série validada, impulsionada sobretudo por gastos em Transportes e por maior participação de assuntos econômicos, comerciais e trabalhistas.",
       },
       {
         "ano": 2015,
         "nome": "Ajuste fiscal",
-        "descricao": "A queda em relação a 2014 coincide com o início da recessão brasileira e com maior restrição fiscal, reduzindo o espaço para despesas econômicas e investimentos."
+        "descricao":
+          "A queda em relação a 2014 coincide com o início da recessão brasileira e com maior restrição fiscal, reduzindo o espaço para despesas econômicas e investimentos.",
       },
       {
         "ano": 2017,
         "nome": "Pós-recessão",
-        "descricao": "A despesa caiu para patamar inferior a 2% do PIB, refletindo redução relevante da subfunção Transportes após a recessão de 2015-2016."
+        "descricao":
+          "A despesa caiu para patamar inferior a 2% do PIB, refletindo redução relevante da subfunção Transportes após a recessão de 2015-2016.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "Apesar do forte choque fiscal da COVID-19, a função Assuntos Econômicos caiu como proporção do PIB na série validada, enquanto outras funções, especialmente Proteção Social, absorveram maior parte da expansão fiscal."
+        "descricao":
+          "Apesar do forte choque fiscal da COVID-19, a função Assuntos Econômicos caiu como proporção do PIB na série validada, enquanto outras funções, especialmente Proteção Social, absorveram maior parte da expansão fiscal.",
       },
       {
         "ano": 2022,
         "nome": "Retomada transportes",
-        "descricao": "A despesa voltou a superar 2% do PIB, com aumento expressivo da subfunção Transportes em relação a 2021."
+        "descricao":
+          "A despesa voltou a superar 2% do PIB, com aumento expressivo da subfunção Transportes em relação a 2021.",
       },
       {
         "ano": 2023,
         "nome": "Estabilidade",
-        "descricao": "A despesa total em Assuntos Econômicos permaneceu em 2,21% do PIB, mantendo praticamente o mesmo nível de 2022."
-      }
+        "descricao":
+          "A despesa total em Assuntos Econômicos permaneceu em 2,21% do PIB, mantendo praticamente o mesmo nível de 2022.",
+      },
     ],
-    "comparacao_paises": "Em 2023, o Brasil gastou 2,21% do PIB em Assuntos Econômicos, abaixo da média internacional de 5,06% dos países analisados na publicação oficial brasileira. A diferença é explicada principalmente pelo menor gasto relativo em Transportes, em que o Brasil registrou 1,32% do PIB ante 2,24% na média dos países comparados.",
-    "nivel_confiabilidade": "Alto para 2010-2023, pois os valores vêm de publicação oficial do Tesouro Nacional em metodologia COFOG compatível com FMI GFS, usando STN, SOF, IBGE e BCB. A confiabilidade é menor para comparações de longo prazo anteriores a 2010 porque a série oficial brasileira validada em COFOG-Governo Geral não cobre 1994-2009 nas fontes consultadas. Valores preliminares podem ser revisados.",
+    "comparacao_paises":
+      "Em 2023, o Brasil gastou 2,21% do PIB em Assuntos Econômicos, abaixo da média internacional de 5,06% dos países analisados na publicação oficial brasileira. A diferença é explicada principalmente pelo menor gasto relativo em Transportes, em que o Brasil registrou 1,32% do PIB ante 2,24% na média dos países comparados.",
+    "nivel_confiabilidade":
+      "Alto para 2010-2023, pois os valores vêm de publicação oficial do Tesouro Nacional em metodologia COFOG compatível com FMI GFS, usando STN, SOF, IBGE e BCB. A confiabilidade é menor para comparações de longo prazo anteriores a 2010 porque a série oficial brasileira validada em COFOG-Governo Geral não cobre 1994-2009 nas fontes consultadas. Valores preliminares podem ser revisados.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
       {
         "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Nacional - COFOG - Despesas por Função do Governo Geral - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114?ano_selecionado=2024"
+        "url":
+          "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114?ano_selecionado=2024",
       },
       {
         "titulo": "Tesouro Nacional - Relatório COFOG 2024",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401",
       },
       {
         "titulo": "Tesouro Nacional - COFOG - Despesas por Função do Governo Geral - 2023",
-        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+        "url":
+          "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf",
       },
       {
         "titulo": "Data360 / Banco Mundial - IMF GFS-COFOG Dataset",
-        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG"
-      }
+        "url": "https://data360.worldbank.org/en/dataset/IMF_GFSCOFOG",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 2.7
-      },
-      {
-        "ano": 2011,
-        "valor": 2.26
-      },
-      {
-        "ano": 2012,
-        "valor": 2.25
-      },
-      {
-        "ano": 2013,
-        "valor": 2.64
-      },
-      {
-        "ano": 2014,
-        "valor": 2.77
-      },
-      {
-        "ano": 2015,
-        "valor": 2.25
-      },
-      {
-        "ano": 2016,
-        "valor": 2.21
-      },
-      {
-        "ano": 2017,
-        "valor": 1.9
-      },
-      {
-        "ano": 2018,
-        "valor": 2.06
-      },
-      {
-        "ano": 2019,
-        "valor": 2.16
-      },
-      {
-        "ano": 2020,
-        "valor": 1.71
-      },
-      {
-        "ano": 2021,
-        "valor": 1.61
-      },
-      {
-        "ano": 2022,
-        "valor": 2.21
-      },
-      {
-        "ano": 2023,
-        "valor": 2.21
-      }
+      { "ano": 2010, "valor": 2.7 },
+      { "ano": 2011, "valor": 2.26 },
+      { "ano": 2012, "valor": 2.25 },
+      { "ano": 2013, "valor": 2.64 },
+      { "ano": 2014, "valor": 2.77 },
+      { "ano": 2015, "valor": 2.25 },
+      { "ano": 2016, "valor": 2.21 },
+      { "ano": 2017, "valor": 1.9 },
+      { "ano": 2018, "valor": 2.06 },
+      { "ano": 2019, "valor": 2.16 },
+      { "ano": 2020, "valor": 1.71 },
+      { "ano": 2021, "valor": 1.61 },
+      { "ano": 2022, "valor": 2.21 },
+      { "ano": 2023, "valor": 2.21 },
     ],
-    "padrao": false
   },
   "gasto_defesa_pib": {
-    "label": "(SIPRI/WDI) Gasto Com Defesa",
+    "label": "Gasto Com Defesa",
+    "fonte_sigla": "SIPRI/WDI",
     "unidade": "% do PIB",
-    "fonte": "SIPRI Military Expenditure Database, via Banco Mundial - World Development Indicators (MS.MIL.XPND.GD.ZS)",
+    "fonte":
+      "SIPRI Military Expenditure Database, via Banco Mundial - World Development Indicators (MS.MIL.XPND.GD.ZS)",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao": "Mede a despesa militar anual do Brasil como percentual do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam maior peso relativo dos gastos militares na economia nacional. O indicador não mede eficiência militar, qualidade do gasto, segurança pública, capacidade operacional nem prioridade orçamentária absoluta, pois países com PIBs diferentes podem ter percentuais semelhantes e volumes financeiros muito distintos.",
-    "metodologia": "A série usa o indicador MS.MIL.XPND.GD.ZS do World Development Indicators, cujo dado original vem da SIPRI Military Expenditure Database. A SIPRI calcula a despesa militar como parcela do PIB em ano-calendário, usando fontes abertas e uma definição ampla de gasto militar baseada na definição da OTAN, incluindo forças armadas, ministérios da defesa, forças paramilitares quando treinadas/equipadas para operações militares, pessoal, operações, manutenção, compras militares, pesquisa e desenvolvimento militar e assistência militar.",
-    "historico_metodologia": "A SIPRI informa que sua base contém séries consistentes e é atualizada anualmente, podendo revisar dados de anos anteriores. Os valores em participação do PIB são apresentados em ano-calendário. A série pode ser afetada por revisões de contas nacionais, revisões de PIB, reclassificação de despesas militares e atualização das fontes abertas utilizadas pela SIPRI. Para manter apenas dados observados disponíveis na fonte consultada, a série foi mantida de 1994 a 2024.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional da SIPRI e publicação agregada no World Development Indicators do Banco Mundial.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso relativo dos gastos militares na economia nacional. O indicador não mede eficiência militar, qualidade do gasto, segurança pública, capacidade operacional nem prioridade orçamentária absoluta, pois países com PIBs diferentes podem ter percentuais semelhantes e volumes financeiros muito distintos.",
+    "metodologia":
+      "A série usa o indicador MS.MIL.XPND.GD.ZS do World Development Indicators, cujo dado original vem da SIPRI Military Expenditure Database. A SIPRI calcula a despesa militar como parcela do PIB em ano-calendário, usando fontes abertas e uma definição ampla de gasto militar baseada na definição da OTAN, incluindo forças armadas, ministérios da defesa, forças paramilitares quando treinadas/equipadas para operações militares, pessoal, operações, manutenção, compras militares, pesquisa e desenvolvimento militar e assistência militar.",
+    "historico_metodologia":
+      "A SIPRI informa que sua base contém séries consistentes e é atualizada anualmente, podendo revisar dados de anos anteriores. Os valores em participação do PIB são apresentados em ano-calendário. A série pode ser afetada por revisões de contas nacionais, revisões de PIB, reclassificação de despesas militares e atualização das fontes abertas utilizadas pela SIPRI. Para manter apenas dados observados disponíveis na fonte consultada, a série foi mantida de 1994 a 2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional da SIPRI e publicação agregada no World Development Indicators do Banco Mundial.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2002,
         "nome": "Alta relativa",
-        "descricao": "O indicador atingiu 1,8958% do PIB, um dos maiores valores da série recente após 1994. A fonte consultada não atribui uma causa oficial específica ao Brasil; portanto, a variação deve ser interpretada como mudança relativa entre gasto militar nominal e PIB."
+        "descricao":
+          "O indicador atingiu 1,8958% do PIB, um dos maiores valores da série recente após 1994. A fonte consultada não atribui uma causa oficial específica ao Brasil; portanto, a variação deve ser interpretada como mudança relativa entre gasto militar nominal e PIB.",
       },
       {
         "ano": 2010,
         "nome": "Pico recente",
-        "descricao": "O indicador chegou a 1,5394% do PIB, maior nível entre 2005 e 2024. A fonte consultada não apresenta explicação causal oficial específica para o Brasil."
+        "descricao":
+          "O indicador chegou a 1,5394% do PIB, maior nível entre 2005 e 2024. A fonte consultada não apresenta explicação causal oficial específica para o Brasil.",
       },
       {
         "ano": 2015,
         "nome": "Recessão brasileira",
-        "descricao": "A recessão econômica brasileira afetou o denominador PIB e o contexto fiscal do período, mas a fonte SIPRI/WDI não fornece decomposição causal oficial para a variação brasileira do indicador."
+        "descricao":
+          "A recessão econômica brasileira afetou o denominador PIB e o contexto fiscal do período, mas a fonte SIPRI/WDI não fornece decomposição causal oficial para a variação brasileira do indicador.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "Durante a pandemia de COVID-19, o indicador subiu para 1,3267% do PIB, parcialmente compatível com alterações no PIB e no orçamento público; a fonte consultada não fornece atribuição causal oficial específica para o Brasil."
+        "descricao":
+          "Durante a pandemia de COVID-19, o indicador subiu para 1,3267% do PIB, parcialmente compatível com alterações no PIB e no orçamento público; a fonte consultada não fornece atribuição causal oficial específica para o Brasil.",
       },
       {
         "ano": 2024,
         "nome": "Mínimo série",
-        "descricao": "O Brasil registrou 0,9728% do PIB em gasto militar, o menor valor da série validada desde 1994, enquanto a SIPRI registrou aumento global da despesa militar e carga militar mundial de 2,5% do PIB em 2024."
-      }
+        "descricao":
+          "O Brasil registrou 0,9728% do PIB em gasto militar, o menor valor da série validada desde 1994, enquanto a SIPRI registrou aumento global da despesa militar e carga militar mundial de 2,5% do PIB em 2024.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil registrou 0,9728% do PIB em gasto militar, abaixo da carga militar mundial de 2,5% do PIB informada pela SIPRI. Também ficou abaixo de grandes potências militares como Estados Unidos, China, Rússia, Alemanha, Índia, Reino Unido, França e Coreia do Sul em termos de proporção do PIB, segundo os dados internacionais da SIPRI/WDI para 2024.",
-    "nivel_confiabilidade": "Alto para comparação internacional anual, pois os valores vêm da SIPRI Military Expenditure Database e são republicados pelo World Development Indicators do Banco Mundial. A principal ressalva é que a SIPRI usa fontes abertas e pode revisar anos anteriores; além disso, a classificação de despesa militar pode diferir de estatísticas fiscais nacionais ou de dados COFOG do FMI GFS.",
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 0,9728% do PIB em gasto militar, abaixo da carga militar mundial de 2,5% do PIB informada pela SIPRI. Também ficou abaixo de grandes potências militares como Estados Unidos, China, Rússia, Alemanha, Índia, Reino Unido, França e Coreia do Sul em termos de proporção do PIB, segundo os dados internacionais da SIPRI/WDI para 2024.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional anual, pois os valores vêm da SIPRI Military Expenditure Database e são republicados pelo World Development Indicators do Banco Mundial. A principal ressalva é que a SIPRI usa fontes abertas e pode revisar anos anteriores; além disso, a classificação de despesa militar pode diferir de estatísticas fiscais nacionais ou de dados COFOG do FMI GFS.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Military expenditure (% of GDP) - Brazil - MS.MIL.XPND.GD.ZS",
-        "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS?locations=BR",
       },
-      {
-        "titulo": "SIPRI - Military Expenditure Database",
-        "url": "https://www.sipri.org/databases/milex"
-      },
+      { "titulo": "SIPRI - Military Expenditure Database", "url": "https://www.sipri.org/databases/milex" },
       {
         "titulo": "SIPRI - Trends in World Military Expenditure, 2024",
-        "url": "https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf"
+        "url": "https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf",
       },
       {
         "titulo": "World Bank DataBank - World Development Indicators",
-        "url": "https://databank.worldbank.org/source/world-development-indicators"
-      }
+        "url": "https://databank.worldbank.org/source/world-development-indicators",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 2.016007789121
-      },
-      {
-        "ano": 1995,
-        "valor": 1.8621369803338
-      },
-      {
-        "ano": 1996,
-        "valor": 1.6548434995029
-      },
-      {
-        "ano": 1997,
-        "valor": 1.5776883155177
-      },
-      {
-        "ano": 1998,
-        "valor": 1.6622919197582
-      },
-      {
-        "ano": 1999,
-        "valor": 1.6454746665699
-      },
-      {
-        "ano": 2000,
-        "valor": 1.7307261471363
-      },
-      {
-        "ano": 2001,
-        "valor": 1.9518824453253
-      },
-      {
-        "ano": 2002,
-        "valor": 1.8957711991562
-      },
-      {
-        "ano": 2003,
-        "valor": 1.5034776355451
-      },
-      {
-        "ano": 2004,
-        "valor": 1.4612684089062
-      },
-      {
-        "ano": 2005,
-        "valor": 1.5240134627332
-      },
-      {
-        "ano": 2006,
-        "valor": 1.4810849563629
-      },
-      {
-        "ano": 2007,
-        "valor": 1.466292099929
-      },
-      {
-        "ano": 2008,
-        "valor": 1.4419240883772
-      },
-      {
-        "ano": 2009,
-        "valor": 1.5386256760121
-      },
-      {
-        "ano": 2010,
-        "valor": 1.5394069812836
-      },
-      {
-        "ano": 2011,
-        "valor": 1.4118511592452
-      },
-      {
-        "ano": 2012,
-        "valor": 1.3786564647044
-      },
-      {
-        "ano": 2013,
-        "valor": 1.3294460838256
-      },
-      {
-        "ano": 2014,
-        "valor": 1.330244423168
-      },
-      {
-        "ano": 2015,
-        "valor": 1.3655171539616
-      },
-      {
-        "ano": 2016,
-        "valor": 1.3479754129948
-      },
-      {
-        "ano": 2017,
-        "valor": 1.4140216679759
-      },
-      {
-        "ano": 2018,
-        "valor": 1.4696777235067
-      },
-      {
-        "ano": 2019,
-        "valor": 1.382797246388
-      },
-      {
-        "ano": 2020,
-        "valor": 1.3266602686055
-      },
-      {
-        "ano": 2021,
-        "valor": 1.1490376302614
-      },
-      {
-        "ano": 2022,
-        "valor": 1.0524008384595
-      },
-      {
-        "ano": 2023,
-        "valor": 1.0023753899013
-      },
-      {
-        "ano": 2024,
-        "valor": 0.9727745590407
-      }
-    ]
+      { "ano": 1994, "valor": 2.016007789121 },
+      { "ano": 1995, "valor": 1.8621369803338 },
+      { "ano": 1996, "valor": 1.6548434995029 },
+      { "ano": 1997, "valor": 1.5776883155177 },
+      { "ano": 1998, "valor": 1.6622919197582 },
+      { "ano": 1999, "valor": 1.6454746665699 },
+      { "ano": 2000, "valor": 1.7307261471363 },
+      { "ano": 2001, "valor": 1.9518824453253 },
+      { "ano": 2002, "valor": 1.8957711991562 },
+      { "ano": 2003, "valor": 1.5034776355451 },
+      { "ano": 2004, "valor": 1.4612684089062 },
+      { "ano": 2005, "valor": 1.5240134627332 },
+      { "ano": 2006, "valor": 1.4810849563629 },
+      { "ano": 2007, "valor": 1.466292099929 },
+      { "ano": 2008, "valor": 1.4419240883772 },
+      { "ano": 2009, "valor": 1.5386256760121 },
+      { "ano": 2010, "valor": 1.5394069812836 },
+      { "ano": 2011, "valor": 1.4118511592452 },
+      { "ano": 2012, "valor": 1.3786564647044 },
+      { "ano": 2013, "valor": 1.3294460838256 },
+      { "ano": 2014, "valor": 1.330244423168 },
+      { "ano": 2015, "valor": 1.3655171539616 },
+      { "ano": 2016, "valor": 1.3479754129948 },
+      { "ano": 2017, "valor": 1.4140216679759 },
+      { "ano": 2018, "valor": 1.4696777235067 },
+      { "ano": 2019, "valor": 1.382797246388 },
+      { "ano": 2020, "valor": 1.3266602686055 },
+      { "ano": 2021, "valor": 1.1490376302614 },
+      { "ano": 2022, "valor": 1.0524008384595 },
+      { "ano": 2023, "valor": 1.0023753899013 },
+      { "ano": 2024, "valor": 0.9727745590407 },
+    ],
   },
   "gasto_habitacao_servicos_comunitarios_pib": {
-    "label": "(FMI) Gasto em Habitação e Serviços Comunitários",
+    "label": "Gasto em Habitação e Serviços Comunitários",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Classification of the Functions of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Classification of the Functions of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro com Habitação e Serviços Comunitários, segundo a função COFOG 706, como proporção do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam maior peso das despesas públicas com habitação, desenvolvimento comunitário, abastecimento de água, iluminação pública e serviços comunitários no PIB. O indicador não mede qualidade, eficiência, cobertura dos serviços, déficit habitacional nem resultado social das políticas.",
-    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), padrão OCDE/ONU empregado nas estatísticas de finanças públicas segundo o GFSM 2014 do FMI. O numerador corresponde à despesa consolidada do governo geral brasileiro na função 706 - Habitação e serviços comunitários. O denominador é o PIB nominal anual. A cobertura do governo geral inclui União, Estados e Municípios, com consolidação entre esferas para evitar dupla contagem. Foram mantidos apenas valores oficiais observados publicados pelo Tesouro Nacional/STN, SOF e IBGE em relatórios COFOG.",
-    "historico_metodologia": "A série brasileira de despesas por função do governo geral no padrão COFOG está publicada oficialmente para 2010 em diante nas fontes consultadas. Não foram incluídos anos anteriores a 2010 porque não foi localizada, nas fontes oficiais públicas consultadas, série validada equivalente para governo geral, função COFOG 706, em % do PIB. Os valores de 2022 foram indicados como preliminares no relatório COFOG de 2022. A publicação de 2024 informa histórico disponível para 2022, 2023 e 2024 e segue GFSM 2014/FMI e COFOG OCDE/ONU.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro com Habitação e Serviços Comunitários, segundo a função COFOG 706, como proporção do Produto Interno Bruto.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso das despesas públicas com habitação, desenvolvimento comunitário, abastecimento de água, iluminação pública e serviços comunitários no PIB. O indicador não mede qualidade, eficiência, cobertura dos serviços, déficit habitacional nem resultado social das políticas.",
+    "metodologia":
+      "A série usa a Classificação das Funções de Governo (COFOG), padrão OCDE/ONU empregado nas estatísticas de finanças públicas segundo o GFSM 2014 do FMI. O numerador corresponde à despesa consolidada do governo geral brasileiro na função 706 - Habitação e serviços comunitários. O denominador é o PIB nominal anual. A cobertura do governo geral inclui União, Estados e Municípios, com consolidação entre esferas para evitar dupla contagem. Foram mantidos apenas valores oficiais observados publicados pelo Tesouro Nacional/STN, SOF e IBGE em relatórios COFOG.",
+    "historico_metodologia":
+      "A série brasileira de despesas por função do governo geral no padrão COFOG está publicada oficialmente para 2010 em diante nas fontes consultadas. Não foram incluídos anos anteriores a 2010 porque não foi localizada, nas fontes oficiais públicas consultadas, série validada equivalente para governo geral, função COFOG 706, em % do PIB. Os valores de 2022 foram indicados como preliminares no relatório COFOG de 2022. A publicação de 2024 informa histórico disponível para 2022, 2023 e 2024 e segue GFSM 2014/FMI e COFOG OCDE/ONU.",
     "abrangencia": "Brasil, governo geral consolidado: governo central, governos estaduais e governos municipais.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2014,
         "nome": "Pico relativo",
-        "descricao": "O relatório COFOG registra 2014 como um dos anos de pico da série de Habitação e serviços comunitários entre 2010 e 2022."
+        "descricao":
+          "O relatório COFOG registra 2014 como um dos anos de pico da série de Habitação e serviços comunitários entre 2010 e 2022.",
       },
       {
         "ano": 2020,
         "nome": "Pico relativo",
-        "descricao": "O relatório COFOG registra 2020 como um dos anos de pico da série, com gasto de 1,25% do PIB."
+        "descricao": "O relatório COFOG registra 2020 como um dos anos de pico da série, com gasto de 1,25% do PIB.",
       },
       {
         "ano": 2022,
         "nome": "Pico relativo",
-        "descricao": "O relatório COFOG registra 2022 como um dos anos de pico da série, com gasto de 1,23% do PIB e R$ 123,669 bilhões correntes."
+        "descricao":
+          "O relatório COFOG registra 2022 como um dos anos de pico da série, com gasto de 1,23% do PIB e R$ 123,669 bilhões correntes.",
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "O relatório COFOG 2024 informa que Habitação e serviços comunitários avançou de 1,15% para 1,36% do PIB entre 2023 e 2024."
-      }
+        "descricao":
+          "O relatório COFOG 2024 informa que Habitação e serviços comunitários avançou de 1,15% para 1,36% do PIB entre 2023 e 2024.",
+      },
     ],
-    "comparacao_paises": "Em 2021, o Brasil destinou cerca de 1,1% do PIB à função Habitação e serviços comunitários, acima da média das economias avançadas citada no relatório COFOG, de 0,6% do PIB. Na União Europeia, segundo Eurostat, o gasto geral nessa função foi de 1,2% do PIB em 2023, com variação relevante entre países.",
-    "nivel_confiabilidade": "Alto para os anos publicados, pois os valores vêm de estatísticas oficiais do governo geral brasileiro, compiladas por STN/SOF/IBGE segundo COFOG e GFSM 2014/FMI. A principal limitação é a cobertura histórica curta: não foram incluídos anos anteriores a 2010 por ausência de série oficial pública validada equivalente nas fontes consultadas.",
+    "comparacao_paises":
+      "Em 2021, o Brasil destinou cerca de 1,1% do PIB à função Habitação e serviços comunitários, acima da média das economias avançadas citada no relatório COFOG, de 0,6% do PIB. Na União Europeia, segundo Eurostat, o gasto geral nessa função foi de 1,2% do PIB em 2023, com variação relevante entre países.",
+    "nivel_confiabilidade":
+      "Alto para os anos publicados, pois os valores vêm de estatísticas oficiais do governo geral brasileiro, compiladas por STN/SOF/IBGE segundo COFOG e GFSM 2014/FMI. A principal limitação é a cobertura histórica curta: não foram incluídos anos anteriores a 2010 por ausência de série oficial pública validada equivalente nas fontes consultadas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data - GFS Government Expenditures by Function (GFS_COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Transparente - COFOG - Despesas por Função do Governo Geral - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114"
+        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-despesas-por-funcao-do-governo-geral/2024/114",
       },
       {
         "titulo": "Tesouro Nacional - Relatório COFOG 2024",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401",
       },
       {
         "titulo": "Despesa por Função do Governo Geral - Resultados de 2023",
-        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+        "url":
+          "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf",
       },
       {
         "titulo": "Despesa por Função do Governo Geral - Resultados de 2022",
-        "url": "https://static.poder360.com.br/2024/01/tesouro-nacional-despesas-governo-tribunais-justica-25jan2024.pdf"
+        "url":
+          "https://static.poder360.com.br/2024/01/tesouro-nacional-despesas-governo-tribunais-justica-25jan2024.pdf",
       },
       {
         "titulo": "Eurostat - Government Expenditure on Housing and Community Amenities",
-        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_housing_and_community_amenities"
-      }
+        "url":
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_housing_and_community_amenities",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 1.16
-      },
-      {
-        "ano": 2011,
-        "valor": 1.13
-      },
-      {
-        "ano": 2012,
-        "valor": 1.15
-      },
-      {
-        "ano": 2013,
-        "valor": 1.09
-      },
-      {
-        "ano": 2014,
-        "valor": 1.14
-      },
-      {
-        "ano": 2015,
-        "valor": 1.1
-      },
-      {
-        "ano": 2016,
-        "valor": 1.11
-      },
-      {
-        "ano": 2017,
-        "valor": 1.06
-      },
-      {
-        "ano": 2018,
-        "valor": 1.03
-      },
-      {
-        "ano": 2019,
-        "valor": 1.06
-      },
-      {
-        "ano": 2020,
-        "valor": 1.25
-      },
-      {
-        "ano": 2021,
-        "valor": 1.07
-      },
-      {
-        "ano": 2022,
-        "valor": 1.23
-      },
-      {
-        "ano": 2023,
-        "valor": 1.15
-      },
-      {
-        "ano": 2024,
-        "valor": 1.36
-      }
-    ]
+      { "ano": 2010, "valor": 1.16 },
+      { "ano": 2011, "valor": 1.13 },
+      { "ano": 2012, "valor": 1.15 },
+      { "ano": 2013, "valor": 1.09 },
+      { "ano": 2014, "valor": 1.14 },
+      { "ano": 2015, "valor": 1.1 },
+      { "ano": 2016, "valor": 1.11 },
+      { "ano": 2017, "valor": 1.06 },
+      { "ano": 2018, "valor": 1.03 },
+      { "ano": 2019, "valor": 1.06 },
+      { "ano": 2020, "valor": 1.25 },
+      { "ano": 2021, "valor": 1.07 },
+      { "ano": 2022, "valor": 1.23 },
+      { "ano": 2023, "valor": 1.15 },
+      { "ano": 2024, "valor": 1.36 },
+    ],
   },
   "gasto_protecao_ambiental_pib": {
-    "label": "(FMI) Gasto em Proteção Ambiental",
+    "label": "Gasto em Proteção Ambiental",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function (COFOG); Tesouro Nacional/STN, SOF e IBGE",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function (COFOG); Tesouro Nacional/STN, SOF e IBGE",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do Governo Geral brasileiro com proteção ambiental em proporção do Produto Interno Bruto.",
-    "como_interpretar": "Valores maiores indicam maior parcela da economia destinada pelo governo geral a proteção ambiental, incluindo gestão de resíduos, águas residuais, redução da poluição, proteção da biodiversidade e outras ações ambientais classificadas na função COFOG 705. O indicador não mede eficiência, qualidade do gasto, resultado ambiental efetivo nem todo gasto climático ou de sustentabilidade.",
-    "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), função 705 - Proteção Ambiental, aplicada às estatísticas de finanças públicas do Governo Geral. A despesa é compilada conforme o Government Finance Statistics Manual 2014 (GFSM 2014), do FMI, e apresentada como percentual do PIB nominal do mesmo ano. Para o Brasil, os dados do Governo Geral são compilados por STN, SOF e IBGE e alinhados à metodologia COFOG/OECD/UN usada no GFS.",
-    "historico_metodologia": "A série brasileira de Governo Geral por COFOG divulgada oficialmente tem cobertura pública recente. A publicação do Tesouro Nacional informa que os dados são compilados segundo o GFSM 2014 e apresentados conforme a COFOG. Não foram encontrados dados oficiais completos e validados para 1994-2020 na fonte consultada. Por isso, a série preserva apenas anos com valores oficiais concretos disponíveis para o Brasil, sem interpolação, projeção ou estimativa.",
-    "abrangencia": "Brasil, Governo Geral, incluindo governo central, estados e municípios, conforme estatísticas fiscais brasileiras alinhadas à metodologia COFOG.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do Governo Geral brasileiro com proteção ambiental em proporção do Produto Interno Bruto.",
+    "como_interpretar":
+      "Valores maiores indicam maior parcela da economia destinada pelo governo geral a proteção ambiental, incluindo gestão de resíduos, águas residuais, redução da poluição, proteção da biodiversidade e outras ações ambientais classificadas na função COFOG 705. O indicador não mede eficiência, qualidade do gasto, resultado ambiental efetivo nem todo gasto climático ou de sustentabilidade.",
+    "metodologia":
+      "A série usa a Classificação das Funções de Governo (COFOG), função 705 - Proteção Ambiental, aplicada às estatísticas de finanças públicas do Governo Geral. A despesa é compilada conforme o Government Finance Statistics Manual 2014 (GFSM 2014), do FMI, e apresentada como percentual do PIB nominal do mesmo ano. Para o Brasil, os dados do Governo Geral são compilados por STN, SOF e IBGE e alinhados à metodologia COFOG/OECD/UN usada no GFS.",
+    "historico_metodologia":
+      "A série brasileira de Governo Geral por COFOG divulgada oficialmente tem cobertura pública recente. A publicação do Tesouro Nacional informa que os dados são compilados segundo o GFSM 2014 e apresentados conforme a COFOG. Não foram encontrados dados oficiais completos e validados para 1994-2020 na fonte consultada. Por isso, a série preserva apenas anos com valores oficiais concretos disponíveis para o Brasil, sem interpolação, projeção ou estimativa.",
+    "abrangencia":
+      "Brasil, Governo Geral, incluindo governo central, estados e municípios, conforme estatísticas fiscais brasileiras alinhadas à metodologia COFOG.",
     "periodicidade": "Anual.",
     "eventos_externos": [],
-    "comparacao_paises": "Em 2023, o Brasil registrou 0,50% do PIB em gasto do Governo Geral com proteção ambiental. Esse valor ficou próximo da média da OCDE para a função ambiental em 2023, mas abaixo da média dos países OCDE-UE. Em comparação internacional de 2021 reportada pelo Tesouro com base em FMI e OCDE, o Brasil aparecia abaixo das economias avançadas, do G-20 e da média dos países selecionados, mas acima da média da América Latina.",
-    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm de estatísticas fiscais oficiais do Governo Geral brasileiro, compiladas por STN, SOF e IBGE segundo GFSM 2014 e COFOG. A limitação principal é a cobertura histórica curta: não foram incluídos anos anteriores sem dado oficial validado na fonte consultada.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 0,50% do PIB em gasto do Governo Geral com proteção ambiental. Esse valor ficou próximo da média da OCDE para a função ambiental em 2023, mas abaixo da média dos países OCDE-UE. Em comparação internacional de 2021 reportada pelo Tesouro com base em FMI e OCDE, o Brasil aparecia abaixo das economias avançadas, do G-20 e da média dos países selecionados, mas acima da média da América Latina.",
+    "nivel_confiabilidade":
+      "Alto para os anos disponíveis, pois os valores vêm de estatísticas fiscais oficiais do Governo Geral brasileiro, compiladas por STN, SOF e IBGE segundo GFSM 2014 e COFOG. A limitação principal é a cobertura histórica curta: não foram incluídos anos anteriores sem dado oficial validado na fonte consultada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI - Government Finance Statistics: GFS Government Expenditures by Function (COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Nacional - COFOG: Expenditure by Functions of the General Government - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+        "url":
+          "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114",
       },
       {
         "titulo": "Gov.br - Despesa por Função do Governo Geral: Resultados de 2023",
-        "url": "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf"
+        "url":
+          "https://www.gov.br/planejamento/pt-br/assuntos/orcamento/publicaoes-sobre-orcamento/classificacao-das-funcoes-de-governo-cofog/arquivos/boletim-cofog-gg-2023.pdf",
       },
       {
         "titulo": "Tesouro Nacional - Despesa por Função do Governo Geral: Resultados de 2024",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401"
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/53401",
       },
       {
         "titulo": "Tesouro Nacional - Estatísticas Fiscais do Governo Geral",
-        "url": "https://www.gov.br/tesouronacional/pt-br/estatisticas-fiscais-e-planejamento/estatisticas-fiscais-do-governo-geral"
-      }
+        "url":
+          "https://www.gov.br/tesouronacional/pt-br/estatisticas-fiscais-e-planejamento/estatisticas-fiscais-do-governo-geral",
+      },
     ],
     "dados": [
-      {
-        "ano": 2021,
-        "valor": 0.43
-      },
-      {
-        "ano": 2022,
-        "valor": 0.48
-      },
-      {
-        "ano": 2023,
-        "valor": 0.5
-      },
-      {
-        "ano": 2024,
-        "valor": 0.51
-      }
-    ]
+      { "ano": 2021, "valor": 0.43 },
+      { "ano": 2022, "valor": 0.48 },
+      { "ano": 2023, "valor": 0.5 },
+      { "ano": 2024, "valor": 0.51 },
+    ],
   },
   "gasto_recreacao_cultura_religiao_pib": {
-    "label": "(FMI) Gasto em Recreação, Cultura e Religião",
+    "label": "Gasto em Recreação, Cultura e Religião",
+    "fonte_sigla": "FMI",
     "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional - COFOG, Expenditure by Functions of the General Government",
+    "fonte":
+      "Fundo Monetário Internacional - Government Finance Statistics, Expenditure by Function of Government (GFS-COFOG); Tesouro Nacional - COFOG, Expenditure by Functions of the General Government",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa do governo geral brasileiro em recreação, cultura e religião, segundo a classificação funcional COFOG, como proporção do PIB.",
-    "como_interpretar": "Valores maiores indicam maior gasto público nessa função em relação ao tamanho da economia. O indicador não mede qualidade, eficiência, acesso, impacto cultural, distribuição regional do gasto nem resultado social das políticas financiadas.",
-    "metodologia": "A série usa a classificação funcional COFOG, vinculada ao padrão internacional de estatísticas de finanças públicas do FMI. Foram usados os valores anuais observados para o governo geral, função COFOG 708 - Recreation, culture and religion, em proporção do PIB. Os valores da planilha oficial do Tesouro Nacional estão em razão do PIB e foram multiplicados por 100 para expressar a unidade como percentual do PIB.",
-    "historico_metodologia": "A metodologia segue o Government Finance Statistics Manual 2014 (GFSM 2014) do FMI e a Classification of the Functions of Government (COFOG), desenvolvida pela OCDE e publicada pela Divisão de Estatística das Nações Unidas. A publicação brasileira cobre governo central, estados e municípios e apresenta estatísticas do governo geral. Para esta série, a fonte oficial brasileira consultada disponibiliza valores anuais observados de 2010 a 2024; não foram encontrados valores oficiais observados e comparáveis para 1994-2009 na publicação consultada, portanto esses anos foram excluídos.",
-    "abrangencia": "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme a publicação COFOG do Tesouro Nacional e a metodologia GFSM 2014/FMI.",
+    "padrao": false,
+    "descricao":
+      "Mede a despesa do governo geral brasileiro em recreação, cultura e religião, segundo a classificação funcional COFOG, como proporção do PIB.",
+    "como_interpretar":
+      "Valores maiores indicam maior gasto público nessa função em relação ao tamanho da economia. O indicador não mede qualidade, eficiência, acesso, impacto cultural, distribuição regional do gasto nem resultado social das políticas financiadas.",
+    "metodologia":
+      "A série usa a classificação funcional COFOG, vinculada ao padrão internacional de estatísticas de finanças públicas do FMI. Foram usados os valores anuais observados para o governo geral, função COFOG 708 - Recreation, culture and religion, em proporção do PIB. Os valores da planilha oficial do Tesouro Nacional estão em razão do PIB e foram multiplicados por 100 para expressar a unidade como percentual do PIB.",
+    "historico_metodologia":
+      "A metodologia segue o Government Finance Statistics Manual 2014 (GFSM 2014) do FMI e a Classification of the Functions of Government (COFOG), desenvolvida pela OCDE e publicada pela Divisão de Estatística das Nações Unidas. A publicação brasileira cobre governo central, estados e municípios e apresenta estatísticas do governo geral. Para esta série, a fonte oficial brasileira consultada disponibiliza valores anuais observados de 2010 a 2024; não foram encontrados valores oficiais observados e comparáveis para 1994-2009 na publicação consultada, portanto esses anos foram excluídos.",
+    "abrangencia":
+      "Brasil, governo geral consolidado, incluindo governo central, governos estaduais e municípios, conforme a publicação COFOG do Tesouro Nacional e a metodologia GFSM 2014/FMI.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A forte contração econômica de 2015 coincide com queda relevante do gasto em recreação, cultura e religião em proporção do PIB."
+        "descricao":
+          "A forte contração econômica de 2015 coincide com queda relevante do gasto em recreação, cultura e religião em proporção do PIB.",
       },
       {
         "ano": 2017,
         "nome": "Ajuste fiscal",
-        "descricao": "A série atinge um dos menores valores em 2017, após anos de restrição fiscal e redução relativa dessa função no orçamento do governo geral."
+        "descricao":
+          "A série atinge um dos menores valores em 2017, após anos de restrição fiscal e redução relativa dessa função no orçamento do governo geral.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "Durante a pandemia de COVID-19, a proporção destinada a recreação, cultura e religião permaneceu baixa em relação ao período inicial da série."
+        "descricao":
+          "Durante a pandemia de COVID-19, a proporção destinada a recreação, cultura e religião permaneceu baixa em relação ao período inicial da série.",
       },
       {
         "ano": 2022,
         "nome": "Retomada",
-        "descricao": "A partir de 2022, o indicador volta a subir, recuperando parte da queda observada entre 2015 e 2021."
+        "descricao":
+          "A partir de 2022, o indicador volta a subir, recuperando parte da queda observada entre 2015 e 2021.",
       },
       {
         "ano": 2024,
         "nome": "Alta recente",
-        "descricao": "Em 2024, o gasto em recreação, cultura e religião alcança 0,402% do PIB, maior valor desde 2013 na série validada."
-      }
+        "descricao":
+          "Em 2024, o gasto em recreação, cultura e religião alcança 0,402% do PIB, maior valor desde 2013 na série validada.",
+      },
     ],
-    "comparacao_paises": "A comparação internacional deve ser feita com cautela, pois a cobertura e a qualidade de reporte COFOG variam entre países. Como referência, a União Europeia registrou 1,2% do PIB em gasto de governo geral em recreação, cultura e religião em 2023; o Brasil registrou 0,338945% do PIB no mesmo ano, portanto abaixo desse agregado europeu.",
-    "nivel_confiabilidade": "Alto para os anos disponíveis, pois os valores vêm de publicação oficial do Tesouro Nacional compilada segundo GFSM 2014/FMI e COFOG. A limitação principal é a cobertura histórica: a publicação oficial consultada disponibiliza série comparável apenas de 2010 a 2024, não desde 1994.",
+    "comparacao_paises":
+      "A comparação internacional deve ser feita com cautela, pois a cobertura e a qualidade de reporte COFOG variam entre países. Como referência, a União Europeia registrou 1,2% do PIB em gasto de governo geral em recreação, cultura e religião em 2023; o Brasil registrou 0,338945% do PIB no mesmo ano, portanto abaixo desse agregado europeu.",
+    "nivel_confiabilidade":
+      "Alto para os anos disponíveis, pois os valores vêm de publicação oficial do Tesouro Nacional compilada segundo GFSM 2014/FMI e COFOG. A limitação principal é a cobertura histórica: a publicação oficial consultada disponibiliza série comparável apenas de 2010 a 2024, não desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FMI Data - GFS Government Expenditures by Function (GFS-COFOG)",
-        "url": "https://data.imf.org/Datasets/GFS_COFOG"
+        "url": "https://data.imf.org/Datasets/GFS_COFOG",
       },
       {
         "titulo": "Tesouro Nacional - COFOG, Expenditure by Functions of the General Government - 2024",
-        "url": "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114"
+        "url":
+          "https://www.tesourotransparente.gov.br/publicacoes/cofog-expenditure-by-functions-of-the-general-government/2022/114",
       },
       {
         "titulo": "Tesouro Nacional - Download da planilha COFOG 2024",
-        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753"
+        "url": "https://thot-arquivos.tesouro.gov.br/publicacao/48753",
       },
       {
         "titulo": "FMI - Government Finance Statistics Manual 2014",
-        "url": "https://www.imf.org/external/Pubs/FT/GFS/Manual/2014/gfsfinal.pdf"
+        "url": "https://www.imf.org/external/Pubs/FT/GFS/Manual/2014/gfsfinal.pdf",
       },
       {
         "titulo": "Eurostat - Government expenditure on recreation, culture and religion",
-        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_recreation,_culture_and_religion"
-      }
+        "url":
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Government_expenditure_on_recreation,_culture_and_religion",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 0.417283
-      },
-      {
-        "ano": 2011,
-        "valor": 0.419991
-      },
-      {
-        "ano": 2012,
-        "valor": 0.417435
-      },
-      {
-        "ano": 2013,
-        "valor": 0.403159
-      },
-      {
-        "ano": 2014,
-        "valor": 0.376228
-      },
-      {
-        "ano": 2015,
-        "valor": 0.314066
-      },
-      {
-        "ano": 2016,
-        "valor": 0.283466
-      },
-      {
-        "ano": 2017,
-        "valor": 0.248744
-      },
-      {
-        "ano": 2018,
-        "valor": 0.256367
-      },
-      {
-        "ano": 2019,
-        "valor": 0.249856
-      },
-      {
-        "ano": 2020,
-        "valor": 0.248686
-      },
-      {
-        "ano": 2021,
-        "valor": 0.230728
-      },
-      {
-        "ano": 2022,
-        "valor": 0.277905
-      },
-      {
-        "ano": 2023,
-        "valor": 0.338945
-      },
-      {
-        "ano": 2024,
-        "valor": 0.402
-      }
-    ]
+      { "ano": 2010, "valor": 0.417283 },
+      { "ano": 2011, "valor": 0.419991 },
+      { "ano": 2012, "valor": 0.417435 },
+      { "ano": 2013, "valor": 0.403159 },
+      { "ano": 2014, "valor": 0.376228 },
+      { "ano": 2015, "valor": 0.314066 },
+      { "ano": 2016, "valor": 0.283466 },
+      { "ano": 2017, "valor": 0.248744 },
+      { "ano": 2018, "valor": 0.256367 },
+      { "ano": 2019, "valor": 0.249856 },
+      { "ano": 2020, "valor": 0.248686 },
+      { "ano": 2021, "valor": 0.230728 },
+      { "ano": 2022, "valor": 0.277905 },
+      { "ano": 2023, "valor": 0.338945 },
+      { "ano": 2024, "valor": 0.402 },
+    ],
   },
   "custo_conformidade_horas": {
-    "label": "(WDI) Tempo Gasto com Impostos",
+    "label": "Tempo Gasto com Impostos",
+    "fonte_sigla": "WDI",
     "unidade": "horas / ano",
     "fonte": "Banco Mundial - World Development Indicators / Doing Business",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao":
       "Mede o tempo anual necessário para uma empresa padronizada preparar, declarar, pagar ou reter os principais tributos: imposto de renda corporativo, imposto sobre valor agregado ou vendas, e tributos trabalhistas, incluindo folha de pagamento e contribuições sociais.",
     "como_interpretar":
@@ -9741,7 +7716,6 @@
     "nivel_confiabilidade":
       "Alta para os anos com observação oficial do Banco Mundial/Doing Business entre 2005 e 2019. Baixa ou inexistente para 1994 a 2004 e após 2019, pois não foram encontrados dados oficiais concretos da série IC.TAX.DURS para esses anos. Os valores de 1994 a 2004, 2020 e 2021 foram removidos por não terem base oficial direta nesta métrica.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank DataBank - Metadata Glossary: IC.TAX.DURS",
@@ -9783,10 +7757,12 @@
     ],
   },
   "gap_eficiencia_br": {
-    "label": "(IBPT) Índice de Retorno de Bem-Estar Social (IRBES)",
+    "label": "Índice de Retorno de Bem-Estar Social (IRBES)",
+    "fonte_sigla": "IBPT",
     "unidade": "posição no ranking",
     "fonte": "IBPT – Índice de Retorno de Bem-Estar à Sociedade (IRBES)",
     "cat": "Finanças Públicas e Tributação",
+    "padrao": false,
     "descricao":
       "Posição do Brasil no ranking IRBES, indicador do IBPT que compara carga tributária em relação ao PIB e Índice de Desenvolvimento Humano (IDH) entre os 30 países com maior carga tributária.",
     "como_interpretar":
@@ -9823,7 +7799,6 @@
     "nivel_confiabilidade":
       "Médio. A posição do Brasil nas edições publicadas é verificável nas fontes do IBPT e, para 2024, no PDF com tabela histórica. Porém, o IRBES é produzido por entidade privada, não por órgão estatístico oficial; sua fórmula de ponderação 15%/85% é uma escolha metodológica do IBPT. Os dados de entrada citados pelo estudo vêm de fontes reconhecidas, como OCDE e ONU/PNUD, mas o ranking final é um índice composto proprietário.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IBPT - Estudo IRBES 14ª edição, dados de 2023, publicado em maio de 2025",
@@ -9861,10 +7836,12 @@
     ],
   },
   "expectativa_vida_ao_nascer": {
-    "label": "(WDI) Expectativa de Vida ao Nascer",
+    "label": "Expectativa de Vida ao Nascer",
+    "fonte_sigla": "WDI",
     "unidade": "anos",
     "fonte": "Banco Mundial - World Development Indicators (SP.DYN.LE00.IN)",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede o número médio de anos que um recém-nascido viveria se os padrões de mortalidade vigentes no ano de nascimento permanecessem constantes ao longo da vida.",
     "como_interpretar":
@@ -9906,7 +7883,6 @@
     "nivel_confiabilidade":
       "Muito alto para comparação internacional anual, pois a série vem do World Development Indicators do Banco Mundial e é baseada em fontes demográficas oficiais. A principal ressalva é que valores podem ser revisados retroativamente quando bases demográficas internacionais, censos, registros civis ou tábuas de mortalidade são atualizados.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Life expectancy at birth, total (years) - Brazil",
@@ -9965,10 +7941,12 @@
     ],
   },
   "expectativa_vida_saudavel_hale": {
-    "label": "(OMS) Expectativa de Vida Saudável ao Nascer",
+    "label": "Expectativa de Vida Saudável ao Nascer",
+    "fonte_sigla": "OMS",
     "unidade": "anos",
     "fonte": "World Health Organization - Global Health Observatory / Global Health Estimates",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede o número médio de anos que uma pessoa nascida no Brasil pode esperar viver em plena saúde, considerando anos vividos com doença ou incapacidade.",
     "como_interpretar":
@@ -10052,13 +8030,14 @@
       { "ano": 2020, "valor": 62.4 },
       { "ano": 2021, "valor": 61.8 },
     ],
-    "padrao": false,
   },
   "mortalidade_infantil_oms": {
-    "label": "(OMS) Mortalidade Infantil",
+    "label": "Mortalidade Infantil",
+    "fonte_sigla": "OMS",
     "unidade": "Óbitos de menores de 1 ano por 1.000 nascidos vivos",
     "fonte": "World Health Organization / UN Inter-agency Group for Child Mortality Estimation",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a mortalidade infantil como o número/probabilidade de óbitos de crianças antes de completar 1 ano de idade, expresso por 1.000 nascidos vivos.",
     "como_interpretar":
@@ -10128,13 +8107,14 @@
       { "ano": 2023, "valor": 12.4 },
       { "ano": 2024, "valor": 12.3 },
     ],
-    "padrao": false,
   },
   "mortalidade_menores_5_anos_oms": {
-    "label": "(OMS) Mortalidade de Menores de 5 Anos",
+    "label": "Mortalidade de Menores de 5 Anos",
+    "fonte_sigla": "OMS",
     "unidade": "mortes por 1.000 nascidos vivos",
     "fonte": "World Health Organization / United Nations Inter-agency Group for Child Mortality Estimation (UN IGME)",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a probabilidade de uma criança nascida em determinado ano morrer antes de completar 5 anos de idade, expressa por 1.000 nascidos vivos.",
     "como_interpretar":
@@ -10151,7 +8131,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional oficial, pois a série é produzida pela OMS/UN IGME e usada pelo Banco Mundial no WDI e no monitoramento do ODS 3.2.1. A ressalva metodológica é essencial: os valores são estimativas oficiais modeladas, não medições brutas diretas ano a ano.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "WHO Data - Under-five mortality rate (per 1000 live births)",
@@ -10202,11 +8181,13 @@
     ],
   },
   "mortalidade_materna_oms": {
-    "label": "(OMS) Mortalidade Materna",
+    "label": "Mortalidade Materna",
+    "fonte_sigla": "OMS",
     "unidade": "Óbitos maternos por 100.000 nascidos vivos",
     "fonte":
       "World Health Organization - Global Health Observatory / WHO, UNICEF, UNFPA, World Bank Group and UNPD (MMEIG)",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a razão de mortalidade materna: mortes maternas relacionadas à gravidez, parto ou até 42 dias após o término da gestação, por 100.000 nascidos vivos.",
     "como_interpretar":
@@ -10287,13 +8268,14 @@
       { "ano": 2022, "valor": 104 },
       { "ano": 2023, "valor": 67 },
     ],
-    "padrao": false,
   },
   "oms_uhc_service_coverage_index": {
-    "label": "(OMS) Índice de Cobertura de Serviços UHC",
+    "label": "Índice de Cobertura de Serviços UHC",
+    "fonte_sigla": "OMS",
     "unidade": "Índice de 0 a 100",
     "fonte": "World Bank Data / Universal Health Coverage Dataset, World Health Organization (WHO)",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a cobertura de serviços essenciais de saúde por meio de um índice composto de indicadores traçadores de cobertura de serviços.",
     "como_interpretar":
@@ -10342,7 +8324,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional, pois a série vem do World Bank Data e tem como fonte o Universal Health Coverage Dataset da World Health Organization (WHO). A ressalva é que o indicador é composto, usa proxies e estimativas oficiais, e pode sofrer revisões metodológicas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank Data - UHC service coverage index - Brazil",
@@ -10375,10 +8356,12 @@
     ],
   },
   "mortalidade_evitavel_tratavel": {
-    "label": "(OPAS/OMS) Mortalidade Prematura Potencialmente Evitável",
+    "label": "Mortalidade Prematura Potencialmente Evitável",
+    "fonte_sigla": "OPAS/OMS",
     "unidade": "Mortes por 100.000 habitantes, taxa ajustada por idade",
     "fonte": "Pan American Health Organization / World Health Organization - Health in the Americas",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a taxa ajustada de mortes prematuras potencialmente evitáveis, incluindo causas preveníveis por políticas públicas e prevenção primária e causas tratáveis por acesso oportuno e efetivo aos serviços de saúde.",
     "como_interpretar":
@@ -10415,14 +8398,15 @@
       { "ano": 2000, "valor": 351.9 },
       { "ano": 2019, "valor": 249 },
     ],
-    "padrao": false,
   },
   "cobertura_vacinal_essencial": {
-    "label": "(OMS) Cobertura Vacinal Essencial",
+    "label": "Cobertura Vacinal Essencial",
+    "fonte_sigla": "OMS",
     "unidade": "% de crianças de 12 a 23 meses",
     "fonte":
       "World Health Organization (WHO) / United Nations Children's Fund (UNICEF) - WHO/UNICEF Estimates of National Immunization Coverage (WUENIC), via World Bank WDI SH.IMM.IDPT",
     "cat": "Saúde",
+    "padrao": false,
     "descricao":
       "Mede a proporção de crianças de 12 a 23 meses que receberam três doses da vacina contra difteria, tétano e coqueluche (DTP3), usada internacionalmente como indicador de cobertura vacinal infantil essencial.",
     "como_interpretar":
@@ -10532,13 +8516,14 @@
       { "ano": 2023, "valor": 90 },
       { "ano": 2024, "valor": 91 },
     ],
-    "padrao": false,
   },
   "pisa_media_leitura_matematica_ciencias": {
-    "label": "(OCDE) PISA - Leitura, Matemática e Ciências",
+    "label": "PISA - Leitura, Matemática e Ciências",
+    "fonte_sigla": "OCDE",
     "unidade": "Pontos na escala PISA, média aritmética simples entre leitura, matemática e ciências",
     "fonte": "OECD - Programme for International Student Assessment (PISA)",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede o desempenho médio de estudantes de 15 anos do Brasil no PISA, combinando leitura, matemática e ciências em uma média simples das três escalas oficiais.",
     "como_interpretar":
@@ -10575,7 +8560,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores vêm do PISA/OCDE, avaliação internacional padronizada, com amostragem, metodologia e documentação técnica públicas. A limitação principal é que os resultados são estimativas amostrais, não medições censitárias, e devem ser interpretados junto com erros-padrão e intervalos de confiança.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "OECD - PISA 2022 Results, Volume I - Full Report",
@@ -10606,11 +8590,13 @@
     ],
   },
   "timss_matematica_ciencias": {
-    "label": "(IEA) TIMSS Matemática e Ciências",
+    "label": "TIMSS Matemática e Ciências",
+    "fonte_sigla": "IEA",
     "unidade": "pontos na escala TIMSS",
     "fonte":
       "International Association for the Evaluation of Educational Achievement - Trends in International Mathematics and Science Study",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede o desempenho médio de estudantes brasileiros em matemática e ciências no TIMSS, avaliação internacional padronizada da IEA aplicada no 4º e no 8º ano.",
     "como_interpretar":
@@ -10628,7 +8614,6 @@
     "nivel_confiabilidade":
       "Alto para os valores-base, pois são médias oficiais publicadas pelo Inep com base na IEA/TIMSS. Médio para o valor consolidado em dados, pois a média aritmética simples entre matemática, ciências, 4º ano e 8º ano é uma agregação derivada para visualização, não um indicador composto oficial publicado pela IEA.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "IEA - TIMSS 2023 International Results", "url": "https://timss2023.org/results/" },
       { "titulo": "IEA - TIMSS 2023 Study Page", "url": "https://www.iea.nl/studies/iea/timss/timss2023" },
@@ -10646,11 +8631,13 @@
     "dados": [{ "ano": 2023, "valor": 405.75 }],
   },
   "pirls_leitura": {
-    "label": "(IEA) PIRLS Leitura",
+    "label": "PIRLS Leitura",
+    "fonte_sigla": "IEA",
     "unidade": "Pontuação média na escala PIRLS de compreensão leitora",
     "fonte":
       "International Association for the Evaluation of Educational Achievement (IEA) - Progress in International Reading Literacy Study (PIRLS)",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede o desempenho médio dos estudantes do 4º ano do ensino fundamental em compreensão leitora no estudo internacional PIRLS.",
     "como_interpretar":
@@ -10687,7 +8674,6 @@
     "nivel_confiabilidade":
       "Muito alto para comparação internacional do desempenho médio em leitura no 4º ano, pois os dados vêm da IEA/PIRLS e do relatório nacional do Inep, com amostragem, aplicação e escala padronizadas internacionalmente. A principal limitação é que, para o Brasil, existe apenas um ponto oficial disponível, pois a primeira participação brasileira ocorreu em 2021.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "IEA - PIRLS 2021", "url": "https://www.iea.nl/studies/iea/pirls/2021" },
       { "titulo": "PIRLS 2021 International Results in Reading", "url": "https://pirls2021.org/results/" },
@@ -10709,10 +8695,12 @@
     "dados": [{ "ano": 2021, "valor": 419 }],
   },
   "lays_banco_mundial": {
-    "label": "(WB) Anos de Escolaridade Ajustados pela Aprendizagem",
+    "label": "Anos de Escolaridade Ajustados pela Aprendizagem",
+    "fonte_sigla": "WB",
     "unidade": "anos",
     "fonte": "World Bank - Human Capital Index (HCI) Database",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede quantos anos de escolaridade efetiva uma criança pode esperar completar até os 18 anos, ajustando os anos esperados de escola pela aprendizagem medida em testes harmonizados.",
     "como_interpretar":
@@ -10731,7 +8719,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional em anos publicados pelo Banco Mundial, pois os valores vêm da base oficial Human Capital Index. A principal limitação é que o indicador não possui série anual contínua e depende da disponibilidade e harmonização de testes internacionais de aprendizagem, o que pode gerar revisões quando a base é atualizada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank Human Capital Data Portal - Learning-Adjusted Years of School",
@@ -10759,10 +8746,12 @@
     ],
   },
   "taxa_conclusao_primario_ods_4_1_2": {
-    "label": "(UNESCO/UIS) Taxa de Conclusão do Primário",
+    "label": "Taxa de Conclusão do Primário",
+    "fonte_sigla": "UNESCO/UIS",
     "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do primário",
     "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a proporção de crianças que concluíram o ensino primário dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
     "como_interpretar":
@@ -10781,7 +8770,6 @@
     "nivel_confiabilidade":
       "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
@@ -10804,10 +8792,12 @@
     ],
   },
   "taxa_conclusao_fundamental_ii_ods_4_1_2": {
-    "label": "(UNESCO/UIS) Taxa de Conclusão do Fundamental II",
+    "label": "Taxa de Conclusão do Fundamental II",
+    "fonte_sigla": "UNESCO/UIS",
     "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do fundamental II",
     "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a proporção de adolescentes que concluíram o ensino fundamental II dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
     "como_interpretar":
@@ -10826,7 +8816,6 @@
     "nivel_confiabilidade":
       "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
@@ -10849,10 +8838,12 @@
     ],
   },
   "taxa_conclusao_medio_ods_4_1_2": {
-    "label": "(UNESCO/UIS) Taxa de Conclusão do Médio",
+    "label": "Taxa de Conclusão do Médio",
+    "fonte_sigla": "UNESCO/UIS",
     "unidade": "% da coorte em idade 3 a 5 anos acima da idade oficial de conclusão do médio",
     "fonte": "UNESCO Institute for Statistics (UIS) / SDG 4 Global Database",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a proporção de jovens que concluíram o ensino médio dentro do grupo etário de referência definido pela UNESCO/UIS para o ODS 4.1.2.",
     "como_interpretar":
@@ -10871,7 +8862,6 @@
     "nivel_confiabilidade":
       "Alto para os anos disponíveis, pois os valores vêm da base oficial UNESCO/UIS para monitoramento do ODS 4.1.2. A limitação principal é a baixa frequência temporal: a série oficial disponível não possui valores anuais contínuos desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "UNESCO/UIS - SDG 4 Country Profile: Brazil",
@@ -10894,11 +8884,13 @@
     ],
   },
   "taxa_criancas_fora_da_escola_uis": {
-    "label": "(UNESCO/UIS) Taxa de Crianças Fora da Escola",
+    "label": "Taxa de Crianças Fora da Escola",
+    "fonte_sigla": "UNESCO/UIS",
     "unidade": "% da população em idade oficial do ensino primário",
     "fonte":
       "UNESCO Institute for Statistics (UIS), via World Bank Data / World Development Indicators (SE.PRM.UNER.ZS)",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a porcentagem de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no ensino secundário.",
     "como_interpretar":
@@ -10965,13 +8957,14 @@
       { "ano": 2022, "valor": 3.984 },
       { "ano": 2024, "valor": 2.187 },
     ],
-    "padrao": false,
   },
   "taxa_alfabetizacao_jovens_adultos": {
-    "label": "(UIS) Taxa de Alfabetização de Jovens e Adultos",
+    "label": "Taxa de Alfabetização de Jovens e Adultos",
+    "fonte_sigla": "UIS",
     "unidade": "% da população com 15 anos ou mais",
     "fonte": "UNESCO Institute for Statistics (UIS), via World Bank - World Development Indicators (SE.ADT.LITR.ZS)",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a proporção da população brasileira com 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
     "como_interpretar":
@@ -11067,13 +9060,14 @@
       { "ano": 2023, "valor": 94.5725490635077 },
       { "ano": 2024, "valor": 94.7399978637695 },
     ],
-    "padrao": false,
   },
   "participacao_educacao_infantil_organizada": {
-    "label": "(UNESCO/UIS) Participação em Educação Infantil Organizada",
+    "label": "Participação em Educação Infantil Organizada",
+    "fonte_sigla": "UNESCO/UIS",
     "unidade": "Percentual (%)",
     "fonte": "UNESCO Institute for Statistics (UIS) / United Nations Global SDG Database - SE_PRE_PARTN",
     "cat": "Educação",
+    "padrao": false,
     "descricao":
       "Mede a proporção de crianças, um ano antes da idade oficial de entrada no ensino primário, que participam de algum programa organizado de aprendizagem.",
     "como_interpretar":
@@ -11123,13 +9117,14 @@
       { "ano": 2015, "valor": 91 },
       { "ano": 2018, "valor": 95 },
     ],
-    "padrao": false,
   },
   "idh_brasil": {
     "label": "IDH Brasil",
+    "fonte_sigla": "PNUD/UNDP",
     "unidade": "pontos",
     "fonte": "PNUD/UNDP - Human Development Reports",
     "cat": "Pobreza e Desenvolvimento Humano",
+    "padrao": false,
     "descricao": "Índice composto que resume o desenvolvimento humano do Brasil em saúde, educação e renda.",
     "como_interpretar":
       "Varia de 0 a 1. Quanto maior o valor, maior o nível médio de desenvolvimento humano. O indicador não mede desigualdade interna, pobreza multidimensional, segurança humana ou sustentabilidade ambiental.",
@@ -11158,7 +9153,6 @@
     "nivel_confiabilidade":
       "Alta. Valores extraídos da série oficial comparável do Human Development Report Office/PNUD. Anos sem valor oficial observado foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "UNDP Human Development Index Data Center",
@@ -11216,9 +9210,11 @@
   },
   "pobreza_extrema": {
     "label": "Pobreza extrema (linha US$2,15/dia PPP)",
+    "fonte_sigla": "PIP",
     "unidade": "% da população",
     "fonte": "Banco Mundial/PIP (Poverty & Inequality Platform)",
     "cat": "Pobreza e Desenvolvimento Humano",
+    "padrao": false,
     "descricao":
       "Percentual da população brasileira vivendo abaixo da linha internacional de pobreza extrema de US$2,15 por dia em paridade de poder de compra.",
     "como_interpretar":
@@ -11273,7 +9269,6 @@
     "nivel_confiabilidade":
       "Alta para comparações internacionais oficiais, pois os valores vêm do Banco Mundial/PIP. Não são projeções próprias; são estimativas estatísticas oficiais baseadas em pesquisas domiciliares harmonizadas. Anos sem dado oficial foram omitidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank Data - Poverty headcount ratio at $2.15 a day / SI.POV.DDAY",
@@ -11327,9 +9322,11 @@
   },
   "pobreza_nacional": {
     "label": "Pobreza monetária (linha Banco Mundial US$ 6,85 PPC — IBGE/SIS)",
+    "fonte_sigla": "IBGE/SIS",
     "unidade": "% da população",
     "fonte": "IBGE/Síntese de Indicadores Sociais; PNAD Contínua Anual",
     "cat": "Pobreza e Desenvolvimento Humano",
+    "padrao": false,
     "descricao":
       "Percentual da população residente no Brasil com rendimento domiciliar per capita inferior à linha de pobreza de US$ 6,85 por dia em paridade de poder de compra, conforme parâmetro do Banco Mundial usado pelo IBGE.",
     "como_interpretar":
@@ -11371,7 +9368,6 @@
     "nivel_confiabilidade":
       "Alto para 2012 a 2024, pois os valores foram extraídos de divulgação oficial do IBGE/Síntese de Indicadores Sociais. Não há validação oficial homogênea para 1994 a 2011 nesta mesma metodologia; por isso esses anos foram removidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IBGE — Síntese de Indicadores Sociais",
@@ -11410,9 +9406,11 @@
   },
   "subnutricao": {
     "label": "Prevalência de subalimentação",
+    "fonte_sigla": "FAO/SOFI",
     "unidade": "% da população",
     "fonte": "FAO/SOFI via Banco Mundial",
     "cat": "Pobreza e Desenvolvimento Humano",
+    "padrao": false,
     "descricao":
       "Percentual da população cuja ingestão habitual de alimentos é insuficiente para fornecer a energia alimentar necessária para uma vida normal, ativa e saudável.",
     "como_interpretar":
@@ -11454,7 +9452,6 @@
     "nivel_confiabilidade":
       "Alta para a série oficial publicada de 2001 a 2023 pelo Banco Mundial/FAO. Média para interpretação pontual dos anos com valor 2,5, pois o próprio metadado informa que esse valor pode representar prevalência abaixo de 2,5%.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank Data - Prevalence of undernourishment (% of population) - Brazil",
@@ -11502,9 +9499,11 @@
   },
   "inseg_alimentar_grave": {
     "label": "Insegurança alimentar grave (FIES)",
+    "fonte_sigla": "FAO/FIES",
     "unidade": "% da população",
     "fonte": "FAO/FIES (Food Insecurity Experience Scale)",
     "cat": "Pobreza e Desenvolvimento Humano",
+    "padrao": false,
     "descricao":
       "Percentual da população em insegurança alimentar grave, medido pela Food Insecurity Experience Scale (FIES), isto é, pessoas que relataram experiências severas de restrição de acesso a alimentos por falta de dinheiro ou outros recursos.",
     "como_interpretar":
@@ -11540,7 +9539,6 @@
     "nivel_confiabilidade":
       "Alto para a fonte e metodologia, por ser indicador oficial FAO/ONU/ODS. Médio para leitura ano a ano, pois os valores são derivados de pesquisa amostral FIES e têm incerteza estatística; comparações de tendência são mais robustas quando feitas por médias trienais.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FAO - FAOSTAT: Suite of Food Security Indicators",
@@ -11575,10 +9573,12 @@
     ],
   },
   "government_effectiveness_wgi": {
-    "label": "(WGI) Eficácia Governamental",
+    "label": "Eficácia Governamental",
+    "fonte_sigla": "WGI",
     "unidade": "Índice padronizado (-2,5 a 2,5)",
     "fonte": "Banco Mundial - Worldwide Governance Indicators (WGI), Government Effectiveness: Estimate (GE.EST)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre a qualidade dos serviços públicos, qualidade da burocracia estatal, independência do serviço público em relação a pressões políticas, qualidade da formulação e implementação de políticas públicas e credibilidade do compromisso do governo com essas políticas.",
     "como_interpretar":
@@ -11696,13 +9696,14 @@
       { "ano": 2023, "valor": -0.27 },
       { "ano": 2024, "valor": -0.22 },
     ],
-    "padrao": false,
   },
   "wgi_estabilidade_politica_ausencia_violencia_terrorismo": {
-    "label": "(WGI) Estabilidade política e ausência de violência/terrorismo",
+    "label": "Estabilidade política e ausência de violência/terrorismo",
+    "fonte_sigla": "WGI",
     "unidade": "Unidades de distribuição normal padrão, aproximadamente entre -2,5 e 2,5",
     "fonte": "Worldwide Governance Indicators — WGI / Banco Mundial (PV.EST)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre a probabilidade de instabilidade política e/ou violência politicamente motivada, incluindo terrorismo.",
     "como_interpretar":
@@ -11770,7 +9771,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional de percepções de governança, pois a fonte é o Worldwide Governance Indicators do Banco Mundial e a metodologia agrega múltiplas fontes independentes. A limitação central é que o indicador é uma estimativa composta baseada em percepções, não uma estatística observacional direta; portanto, não deve ser tratado como medida objetiva isolada de violência, terrorismo ou estabilidade institucional.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial — Political Stability and Absence of Violence/Terrorism: Estimate (PV.EST)",
@@ -11823,10 +9823,12 @@
     ],
   },
   "rule_of_law_wgi": {
-    "label": "(WGI) Estado de Direito",
+    "label": "Estado de Direito",
+    "fonte_sigla": "WGI",
     "unidade": "Score padronizado, aproximadamente de -2,5 a 2,5",
     "fonte": "Banco Mundial - Worldwide Governance Indicators (WGI), Rule of Law: Estimate",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre a confiança dos agentes nas regras da sociedade e seu cumprimento, incluindo qualidade da execução de contratos, direitos de propriedade, polícia, tribunais e probabilidade de crime e violência.",
     "como_interpretar":
@@ -11935,13 +9937,14 @@
       { "ano": 2023, "valor": -0.3088 },
       { "ano": 2024, "valor": -0.45 },
     ],
-    "padrao": false,
   },
   "control_of_corruption_wgi": {
-    "label": "(WGI) Controle da Corrupção",
+    "label": "Controle da Corrupção",
+    "fonte_sigla": "WGI",
     "unidade": "Pontuação padronizada, aproximadamente de -2,5 a 2,5",
     "fonte": "Worldwide Governance Indicators — World Bank",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre o grau em que o poder público é exercido para ganhos privados, incluindo corrupção pequena e grande, além da captura do Estado por elites e interesses privados.",
     "como_interpretar":
@@ -11990,7 +9993,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional ampla e análise de tendência, por ser uma série oficial do Banco Mundial, metodologicamente documentada e recalculada de forma consistente. Limitação importante: o indicador mede percepção agregada, não corrupção observada diretamente; portanto, não deve ser tratado como medição factual direta de atos de corrupção.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank — Worldwide Governance Indicators",
@@ -12040,10 +10042,12 @@
     ],
   },
   "regulatory_quality_wgi": {
-    "label": "(WGI) Qualidade Regulatória",
+    "label": "Qualidade Regulatória",
+    "fonte_sigla": "WGI",
     "unidade": "Índice padronizado, aproximadamente de -2,5 a 2,5",
     "fonte": "Banco Mundial - Worldwide Governance Indicators (RQ.EST)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre a capacidade do governo de formular e implementar políticas e regulações sólidas que permitam e promovam o desenvolvimento do setor privado.",
     "como_interpretar":
@@ -12104,7 +10108,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional de percepção institucional, pois a fonte é oficial do Banco Mundial/WGI. A confiabilidade é menor do que a de estatísticas administrativas diretas, porque o indicador é composto, baseado em percepções, sujeito a margem de erro e revisões metodológicas. Os valores listados usam apenas a série oficial RQ.EST disponível até 2023; não há dado oficial observado para 2024, 2025 ou 2026 na página consultada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Regulatory Quality: Estimate - Brazil",
@@ -12152,10 +10155,12 @@
     ],
   },
   "voice_accountability_wgi": {
-    "label": "(WGI) Voz e Responsabilização",
+    "label": "Voz e Responsabilização",
+    "fonte_sigla": "WGI",
     "unidade": "Pontuação padronizada (-2,5 a 2,5)",
     "fonte": "Worldwide Governance Indicators — Banco Mundial",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede percepções sobre a capacidade dos cidadãos de participar da escolha do governo, além de liberdade de expressão, liberdade de associação e liberdade de imprensa.",
     "como_interpretar":
@@ -12221,7 +10226,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional ampla, pois a fonte é o Banco Mundial/WGI e a metodologia é documentada publicamente. A principal ressalva é que o indicador é baseado em percepções agregadas e estimadas estatisticamente, não em uma medição direta observacional. Portanto, é confiável para tendências gerais e comparação entre países, mas não deve ser usado isoladamente para diagnóstico institucional detalhado.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial — Worldwide Governance Indicators",
@@ -12278,10 +10282,12 @@
     ],
   },
   "confianca_governo_nacional_gallup": {
-    "label": "(GWP) Confiança no governo nacional",
+    "label": "Confiança no governo nacional",
+    "fonte_sigla": "GWP",
     "unidade": "% da população adulta",
     "fonte": "Gallup World Poll via OCDE / Our World in Data",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao": "Percentual de respondentes adultos que declararam ter confiança no governo nacional.",
     "como_interpretar":
       "Valores maiores indicam maior proporção da população adulta que respondeu “sim” à pergunta sobre confiança no governo nacional. O indicador mede percepção declarada em pesquisa de opinião, não aprovação presidencial, desempenho econômico, eficiência do governo ou qualidade objetiva das instituições.",
@@ -12335,7 +10341,6 @@
     "nivel_confiabilidade":
       "Alto para os valores publicados pela OCDE/Our World in Data, pois a fonte primária é o Gallup World Poll e a OCDE documenta a definição, pergunta e população-alvo. A ressalva é que a base pública da Our World in Data indica processamento relevante e uso de médias agrupadas em alguns casos; portanto, os valores devem ser usados como série OCDE/OWID derivada do Gallup, não como microdado bruto direto do Gallup Analytics.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "OCDE - Trust in government",
@@ -12386,10 +10391,12 @@
     ],
   },
   "vdem_ldi_br": {
-    "label": "(V-Dem) Índice de Democracia Liberal",
+    "label": "Índice de Democracia Liberal",
+    "fonte_sigla": "V-Dem",
     "unidade": "Índice (0-1)",
     "fonte": "V-Dem Institute (University of Gothenburg)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede o grau de democracia liberal no Brasil, combinando eleições competitivas com liberdades civis, Estado de Direito e freios e contrapesos ao poder executivo.",
     "como_interpretar":
@@ -12478,13 +10485,14 @@
       { "ano": 2024, "valor": 0.712 },
       { "ano": 2025, "valor": 0.704 },
     ],
-    "padrao": false,
   },
   "judicial_constraints_executive_vdem": {
-    "label": "(V-Dem) Restrições do Judiciário ao Executivo",
+    "label": "Restrições do Judiciário ao Executivo",
+    "fonte_sigla": "V-Dem",
     "unidade": "Índice de 0 a 1",
     "fonte": "V-Dem — Varieties of Democracy, V-Dem Core / Judicial constraints on the executive index (v2x_jucon)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede em que grau o Executivo respeita a Constituição, cumpre decisões judiciais e é limitado por um Judiciário independente.",
     "como_interpretar":
@@ -12532,7 +10540,6 @@
     "nivel_confiabilidade":
       "Alto para comparação institucional internacional baseada em fonte oficial e metodologia documentada do V-Dem. A ressalva central é que o indicador não é uma estatística administrativa observada diretamente: ele deriva de codificação especializada e modelo estatístico de mensuração, portanto deve ser interpretado como estimativa central oficial do V-Dem, não como medição física direta.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "V-Dem — The V-Dem Dataset", "url": "https://www.v-dem.net/data/the-v-dem-dataset/" },
       { "titulo": "V-Dem Codebook v16", "url": "https://www.v-dem.net/documents/70/codebook_v16.pdf" },
@@ -12585,10 +10592,12 @@
     ],
   },
   "legislative_constraints_executive_vdem": {
-    "label": "(V-Dem) Restrições do Legislativo ao Executivo",
+    "label": "Restrições do Legislativo ao Executivo",
+    "fonte_sigla": "V-Dem",
     "unidade": "índice de 0 a 1",
     "fonte": "V-Dem — Varieties of Democracy, Country-Year Dataset v16",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede em que grau o Legislativo e órgãos estatais de controle são capazes de questionar, investigar e exercer supervisão sobre o Poder Executivo.",
     "como_interpretar":
@@ -12698,13 +10707,14 @@
       { "ano": 2024, "valor": 0.936 },
       { "ano": 2025, "valor": 0.936 },
     ],
-    "padrao": false,
   },
   "polarizacao_politica_vdem": {
-    "label": "(V-Dem) Polarização política",
+    "label": "Polarização política",
+    "fonte_sigla": "V-Dem",
     "unidade": "índice V-Dem em escala intervalar",
     "fonte": "V-Dem — Varieties of Democracy, indicador v2cacamps",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede em que grau a sociedade está dividida em campos políticos antagônicos, com diferenças políticas afetando relações sociais para além do debate político.",
     "como_interpretar":
@@ -12758,7 +10768,6 @@
     "nivel_confiabilidade":
       "Alto para comparação acadêmica internacional, pois os valores vêm do V-Dem v16, uma das bases mais utilizadas em ciência política comparada. A ressalva metodológica é importante: este indicador não é um dado administrativo observado diretamente; é uma estimativa central baseada em avaliação de especialistas e modelo estatístico.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Our World in Data — Political polarization score — V-Dem",
@@ -12814,10 +10823,12 @@
     ],
   },
   "censura_governamental_midia_vdem": {
-    "label": "(V-Dem) Liberdade da mídia frente à censura governamental",
+    "label": "Liberdade da mídia frente à censura governamental",
+    "fonte_sigla": "V-Dem",
     "unidade": "Escala intervalar V-Dem",
     "fonte": "V-Dem — Varieties of Democracy, Country-Year Dataset v16, variável v2mecenefm",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede em que grau o governo tenta censurar informações políticas nos meios de comunicação impressos e de radiodifusão.",
     "como_interpretar":
@@ -12872,7 +10883,6 @@
     "nivel_confiabilidade":
       "Alto para comparação internacional em ciência política, pois o V-Dem é uma das bases acadêmicas mais completas sobre democracia e usa múltiplos especialistas por país com modelo estatístico de agregação. A ressalva metodológica é que não se trata de dado administrativo observado diretamente, mas de codificação especializada agregada por modelo de mensuração; por isso os valores devem ser tratados como pontuações oficiais do V-Dem, não como medições físicas diretas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "V-Dem — Country-Year Dataset v16", "url": "https://www.v-dem.net/data/the-v-dem-dataset/" },
       { "titulo": "V-Dem — vdemdata R package", "url": "https://github.com/vdeminstitute/vdemdata" },
@@ -12918,10 +10928,12 @@
     ],
   },
   "participacao_sociedade_civil_vdem": {
-    "label": "(V-Dem) Participação da sociedade civil",
+    "label": "Participação da sociedade civil",
+    "fonte_sigla": "V-Dem",
     "unidade": "índice de 0 a 1",
     "fonte": "V-Dem — Varieties of Democracy, Country-Year Dataset v16, indicador v2x_cspart",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede o grau de participação da sociedade civil na vida política, considerando consulta a organizações da sociedade civil, envolvimento popular nessas organizações, participação feminina e descentralização ou primárias na indicação de candidatos legislativos.",
     "como_interpretar":
@@ -13032,13 +11044,14 @@
       { "ano": 2023, "valor": 0.933 },
       { "ano": 2024, "valor": 0.898 },
     ],
-    "padrao": false,
   },
   "idea_gsod_representacao_br": {
-    "label": "(IIDEA) Representação",
+    "label": "Representação",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA – Global State of Democracy Indices (GSoD)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede o grau de representação política por meio de eleições contestadas e inclusivas para cargos legislativos e executivos.",
     "como_interpretar":
@@ -13081,7 +11094,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela analítica. A fonte é oficial e metodologicamente robusta, usando múltiplas bases e modelos de agregação. Ainda assim, o índice é composto e parte dos insumos envolve avaliação especializada, então pequenas oscilações anuais devem ser interpretadas com prudência.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "GSoD Indices – página oficial", "url": "https://www.idea.int/democracytracker/gsod-indices" },
       {
@@ -13139,10 +11151,12 @@
     ],
   },
   "idea_gsod_direitos_fundamentais_br": {
-    "label": "(IIDEA) Direitos",
+    "label": "Direitos",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA – Global State of Democracy Indices",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede o desempenho do Brasil em direitos e recursos essenciais à democracia, combinando acesso à justiça, liberdades civis, bem-estar básico e igualdade política.",
     "como_interpretar":
@@ -13191,7 +11205,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela analítica. A fonte é oficial e metodologicamente robusta, usa múltiplas bases e fornece intervalos de confiança para a maioria dos índices. Ainda assim, parte da mensuração depende de avaliações especializadas e modelos latentes; pequenas oscilações anuais devem ser lidas com prudência.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "International IDEA – Global State of Democracy Indices",
@@ -13260,10 +11273,12 @@
     ],
   },
   "international_idea_rule_of_law_br": {
-    "label": "(IIDEA) Estado de Direito",
+    "label": "Estado de Direito",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA - Global State of Democracy Indices",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede em que grau o poder público é limitado por leis previsíveis, administração íntegra, Judiciário independente e segurança contra violência política.",
     "como_interpretar":
@@ -13306,7 +11321,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela. A fonte é oficial e metodologicamente robusta, com documentação transparente e comparabilidade internacional ampla. Ainda assim, o índice combina dados de múltiplas fontes e parte relevante da mensuração depende de avaliações especializadas e modelos estatísticos, então pequenas oscilações anuais devem ser interpretadas com prudência.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "International IDEA - Global State of Democracy Indices",
@@ -13367,10 +11381,12 @@
     ],
   },
   "participation_br": {
-    "label": "(IIDEA) Participação",
+    "label": "Participação",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA - Global State of Democracy Indices",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao": "Mede o grau de participação política e cívica da população na democracia.",
     "como_interpretar":
       "Quanto mais próximo de 1, maior a participação democrática da sociedade; quanto mais próximo de 0, menor a participação política, cívica e eleitoral.",
@@ -13417,7 +11433,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela metodológica. A fonte é oficial e amplamente documentada, mas o indicador é composto e depende de agregação estatística de múltiplas fontes, inclusive medidas baseadas em especialistas.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "International IDEA - GSoD Indices", "url": "https://www.idea.int/democracytracker/gsod-indices" },
       {
@@ -13474,10 +11489,12 @@
     ],
   },
   "international_idea_checks_on_government_br": {
-    "label": "(IIDEA) Freios e Contrapesos no Governo",
+    "label": "Freios e Contrapesos no Governo",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA – The Global State of Democracy Indices, 1975–2021, v. 6.1 (2022)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Mede o grau em que o poder executivo é controlado por parlamento, Judiciário e mídia independente e crítica.",
     "como_interpretar":
@@ -13526,7 +11543,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela. A fonte é oficial do International IDEA e usa procedimentos metodológicos explícitos e transparentes. Ainda assim, parte relevante da mensuração depende de dados de especialistas e agregações estatísticas, então pequenas oscilações anuais devem ser lidas com prudência.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "International IDEA – Data Set and Resources",
@@ -13580,10 +11596,12 @@
     ],
   },
   "international_idea_administracao_imparcial_br": {
-    "label": "(IIDEA) Administração Imparcial",
+    "label": "Administração Imparcial",
+    "fonte_sigla": "IIDEA",
     "unidade": "Índice (0-1)",
     "fonte": "International IDEA - Global State of Democracy Indices",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao": "Mede em que grau a administração pública atua sem corrupção e com aplicação previsível das leis.",
     "como_interpretar":
       "Quanto mais próximo de 1, maior a imparcialidade administrativa; quanto mais próximo de 0, maior a presença de corrupção e arbitrariedade na aplicação das regras.",
@@ -13624,7 +11642,6 @@
     "nivel_confiabilidade":
       "Alto, com cautela. A fonte é oficial e metodologicamente robusta, mas parte da mensuração depende de avaliações especializadas e agregação estatística de múltiplas fontes; pequenas oscilações anuais devem ser interpretadas com prudência.",
     "validacao": "GPT-5.4 Thinking (OpenAI) - 23/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "International IDEA - Data Set and Resources",
@@ -13676,10 +11693,12 @@
     ],
   },
   "democracia_eiu_br": {
-    "label": "(EIU) Índice de Democracia",
+    "label": "Índice de Democracia",
+    "fonte_sigla": "EIU",
     "unidade": "Índice (0-10)",
     "fonte": "The Economist Intelligence Unit (EIU) / Our World in Data",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao":
       "Pontuação anual do Brasil no Democracy Index, que mede a qualidade da democracia em escala de 0 a 10.",
     "como_interpretar":
@@ -13753,13 +11772,14 @@
       { "ano": 2023, "valor": 6.68 },
       { "ano": 2024, "valor": 6.49 },
     ],
-    "padrao": false,
   },
   "democracia_freedom_house_br": {
-    "label": "(Freedom House) Liberdade no Mundo",
+    "label": "Liberdade no Mundo",
+    "fonte_sigla": "Freedom House",
     "unidade": "Pontos (0-100)",
     "fonte": "Freedom House (Freedom in the World)",
     "cat": "Governança, Democracia e Instituições",
+    "padrao": false,
     "descricao": "Pontuação anual da Freedom House sobre direitos políticos e liberdades civis no Brasil.",
     "como_interpretar":
       "Quanto maior a pontuação, maior o nível de direitos políticos e liberdades civis observados no país.",
@@ -13874,13 +11894,14 @@
       { "ano": 2025, "valor": 72 },
       { "ano": 2026, "valor": 73 },
     ],
-    "padrao": false,
   },
   "export_br_usd": {
     "label": "Exportações Totais do Brasil",
+    "fonte_sigla": "MDIC/SECEX",
     "unidade": "US$ bilhões",
     "fonte": "MDIC/SECEX (Comex Stat)",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao": "Valor anual das exportações brasileiras de bens, em dólares americanos FOB.",
     "como_interpretar":
       "Valores maiores indicam maior receita externa gerada por vendas de bens ao exterior. A leitura deve considerar que o indicador é nominal, em dólares correntes, e pode subir ou cair por variações de preço internacional, volume exportado, câmbio, demanda externa e composição da pauta exportadora.",
@@ -13945,7 +11966,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores vêm de estatísticas oficiais administrativas do MDIC/SECEX, baseadas nos registros de comércio exterior. A confiabilidade é maior de 1997 em diante pela maior granularidade da base Comex Stat; 1994 a 1996 permanecem oficiais, mas pertencem ao módulo histórico com classificação NBM.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "Comex Stat - Dados Gerais", "url": "https://comexstat.mdic.gov.br/pt/geral" },
       { "titulo": "Comex Stat - Dados Históricos", "url": "https://comexstat.mdic.gov.br/pt/dado-historico" },
@@ -14022,9 +12042,11 @@
   },
   "import_br_usd": {
     "label": "Importações Totais do Brasil",
+    "fonte_sigla": "MDIC/SECEX",
     "unidade": "US$ bilhões",
     "fonte": "MDIC/SECEX (Comex Stat)",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao":
       "Valor total anual das importações brasileiras de bens, medido em dólares dos Estados Unidos pelo critério FOB.",
     "como_interpretar":
@@ -14109,7 +12131,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores são oficiais, produzidos pela SECEX/MDIC a partir dos registros administrativos do comércio exterior brasileiro no SISCOMEX e divulgados no Comex Stat e nas publicações consolidadas da balança comercial. Os dados anuais fechados até 2025 são concretos; dados parciais de 2026 foram excluídos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "Comex Stat - MDIC/SECEX", "url": "https://comexstat.mdic.gov.br/pt/geral" },
       {
@@ -14173,11 +12194,13 @@
     ],
   },
   "saldo_transacoes_correntes_wdi_imf": {
-    "label": "(WDI) Saldo em Transações Correntes",
+    "label": "Saldo em Transações Correntes",
+    "fonte_sigla": "WDI",
     "unidade": "% do PIB",
     "fonte":
       "World Bank - World Development Indicators; International Monetary Fund, com dados de Estatísticas do Balanço de Pagamentos do Fundo Monetário Internacional",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao": "Mede o saldo das transações correntes do Brasil com o resto do mundo como proporção do PIB.",
     "como_interpretar":
       "Valor positivo indica superávit em transações correntes, ou seja, receitas externas correntes maiores que despesas externas correntes. Valor negativo indica déficit em transações correntes, ou seja, necessidade líquida de financiamento externo ou uso de ativos externos. Déficits moderados podem ser sustentáveis quando financiados por investimento direto, mas déficits persistentes ou crescentes podem indicar vulnerabilidade externa.",
@@ -14247,7 +12270,6 @@
     "nivel_confiabilidade":
       "Alto. A série vem do World Development Indicators do Banco Mundial, baseado em estatísticas oficiais de balanço de pagamentos do FMI e dados nacionais. A principal ressalva é que dados de balanço de pagamentos podem sofrer revisões metodológicas e estatísticas, especialmente por mudanças de manual do FMI e reclassificações como a de criptoativos em 2024.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 25/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Current account balance (% of GDP) - Brazil",
@@ -14305,10 +12327,12 @@
     ],
   },
   "transacoes_correntes_pib": {
-    "label": "(BCB) Transações Correntes",
+    "label": "Transações Correntes",
+    "fonte_sigla": "BCB",
     "unidade": "% do PIB",
     "fonte": "Banco Central do Brasil (SGS séries 23079 e 23839) / Banco Mundial / FMI",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao":
       "Saldo das transações correntes do balanço de pagamentos do Brasil com o exterior, expresso como percentual do PIB.",
     "como_interpretar":
@@ -14376,7 +12400,6 @@
     "nivel_confiabilidade":
       "Alto para 1995-2025 quando usada a série oficial do Banco Central do Brasil; médio-alto para 1994 por vir do Banco Mundial/FMI e não da série anual SGS 23839. Valores sujeitos a revisões oficiais do balanço de pagamentos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo":
@@ -14440,10 +12463,12 @@
     ],
   },
   "reservas_internacionais": {
-    "label": "(BCB) Reservas Internacionais",
+    "label": "Reservas Internacionais",
+    "fonte_sigla": "BCB",
     "unidade": "Milhões de USD",
     "fonte": "Banco Central do Brasil",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao":
       "Estoque de ativos externos prontamente disponíveis e controlados pelo Banco Central do Brasil, medido em milhões de dólares dos EUA.",
     "como_interpretar":
@@ -14516,7 +12541,6 @@
     "nivel_confiabilidade":
       "Muito alto para os valores da série oficial do Banco Central do Brasil, pois são dados administrativos oficiais do SGS/Dados Abertos. A confiabilidade é menor apenas para comparações internacionais ou narrativas causais quando não forem usadas definições padronizadas e documentos oficiais específicos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo":
@@ -14577,10 +12601,12 @@
     ],
   },
   "investimento_estrangeiro_direto": {
-    "label": "(BCB) Investimento Estrangeiro Direto (IED / IDP)",
+    "label": "Investimento Estrangeiro Direto (IED / IDP)",
+    "fonte_sigla": "BCB",
     "unidade": "Milhões de USD",
     "fonte": "Banco Central do Brasil - SGS 22885 - Investimentos diretos no país - IDP - mensal - líquido",
     "cat": "Setor Externo e Comércio",
+    "padrao": false,
     "descricao":
       "Fluxo líquido de investimento direto no país, em milhões de dólares, registrado no balanço de pagamentos brasileiro.",
     "como_interpretar":
@@ -14635,7 +12661,6 @@
     "nivel_confiabilidade":
       "Alto. Os valores foram recalculados pela soma dos dados mensais oficiais do BCB/SGS 22885. A confiabilidade é alta para a série oficial publicada, mas os dados permanecem sujeitos a revisões estatísticas do Banco Central. O ano de 1994 foi excluído por ausência de dado na série oficial usada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "BCB - Dados Abertos - Investimentos diretos no país - IDP - mensal - líquido",
@@ -14713,10 +12738,12 @@
     ],
   },
   "custo_logistico_pib": {
-    "label": "(ILOS) Custo Logístico",
+    "label": "Custo Logístico",
+    "fonte_sigla": "ILOS",
     "unidade": "% do PIB",
     "fonte": "ILOS",
     "cat": "Empresas, Infraestrutura e Produtividade",
+    "padrao": false,
     "descricao":
       "Percentual do PIB brasileiro consumido por custos logísticos, incluindo transporte, estoque, armazenagem e custos administrativos.",
     "como_interpretar":
@@ -14786,13 +12813,14 @@
       { "ano": 2024, "valor": 15.6 },
       { "ano": 2025, "valor": 15.5 },
     ],
-    "padrao": false,
   },
   "infra_invest_pib": {
     "label": "Investimento em Infraestrutura",
+    "fonte_sigla": "Inter.B/ABDIB/IPEA",
     "unidade": "% do PIB",
     "fonte": "Inter.B / ABDIB / IPEA",
     "cat": "Empresas, Infraestrutura e Produtividade",
+    "padrao": false,
     "descricao":
       "Participação dos investimentos públicos e privados em infraestrutura no PIB brasileiro, considerando energia elétrica, telecomunicações, saneamento e transportes.",
     "como_interpretar":
@@ -14880,13 +12908,14 @@
       { "ano": 2021, "valor": 1.76 },
       { "ano": 2022, "valor": 1.84 },
     ],
-    "padrao": false,
   },
   "sobrevivencia_empresas_5anos": {
-    "label": "(IBGE) Taxa de Sobrevivência de Empresas - 5 anos",
+    "label": "Taxa de Sobrevivência de Empresas - 5 anos",
+    "fonte_sigla": "IBGE",
     "unidade": "% de empresas sobreviventes",
     "fonte": "IBGE",
     "cat": "Empresas, Infraestrutura e Produtividade",
+    "padrao": false,
     "descricao":
       "Percentual de empresas nascidas em determinado ano que permanecem ativas no quinto ano de observação.",
     "como_interpretar":
@@ -14923,7 +12952,6 @@
     "nivel_confiabilidade":
       "Alto para os valores oficiais pontuais extraídos das divulgações do IBGE. Médio para comparações temporais entre 2021 e 2022 por causa da mudança metodológica e quebra de série. Baixo para o valor original de 2012 = 47,4, removido por não representar taxa nacional de sobrevivência de empresas após cinco anos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "IBGE - Demografia das Empresas e Estatísticas de Empreendedorismo",
@@ -14954,10 +12982,12 @@
     ],
   },
   "recuperacao_judicial_br_un": {
-    "label": "(Serasa) Recuperação Judicial Requerida",
+    "label": "Recuperação Judicial Requerida",
+    "fonte_sigla": "SERASA",
     "unidade": "pedidos",
     "fonte": "Serasa Experian",
     "cat": "Empresas, Infraestrutura e Produtividade",
+    "padrao": false,
     "descricao": "Número anual de pedidos de recuperação judicial requeridos por empresas no Brasil.",
     "como_interpretar":
       "Valores maiores indicam aumento do uso da recuperação judicial como instrumento formal de reorganização de dívidas empresariais. A série mede pedidos/requerimentos, não necessariamente recuperações concedidas, empresas recuperadas ou insolvência irreversível.",
@@ -15011,7 +13041,6 @@
     "nivel_confiabilidade":
       "Alto para os valores anuais de 2005 a 2024 reportados pela Serasa Experian no indicador histórico de pedidos/requerimentos. Baixo para comparação direta com 2025 na mesma série, pois a Serasa Experian relançou o indicador separando processos e CNPJs envolvidos; por rigor metodológico, 2025 foi mantido apenas em metodologia/eventos e não incluído em dados como continuidade da série histórica antiga.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Serasa Experian - Brasil registra 2,2 mil pedidos de recuperação judicial em 2024",
@@ -15061,10 +13090,12 @@
     ],
   },
   "falencias_br_un": {
-    "label": "(Serasa) Falências Requeridas",
+    "label": "Falências Requeridas",
+    "fonte_sigla": "SERASA",
     "unidade": "pedidos",
     "fonte": "Serasa Experian",
     "cat": "Empresas, Infraestrutura e Produtividade",
+    "padrao": false,
     "descricao": "Número anual de pedidos formais de falência registrados no Brasil.",
     "como_interpretar":
       "Valores maiores indicam mais pedidos formais de falência. O indicador mede processos judiciais registrados, não o total real de empresas encerradas, pois encerramentos informais ou baixas cadastrais sem processo de falência não entram na série.",
@@ -15137,13 +13168,14 @@
       { "ano": 2024, "valor": 949 },
       { "ano": 2025, "valor": 686 },
     ],
-    "padrao": false,
   },
   "risco_brasil_embi": {
-    "label": "(JPM) Risco Brasil (EMBI+)",
+    "label": "Risco Brasil (EMBI+)",
+    "fonte_sigla": "JPM",
     "unidade": "pontos-base (bps)",
     "fonte": "J.P. Morgan / Ipeadata",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Spread soberano do Brasil medido pelo EMBI+ Risco-Brasil, em pontos-base, calculado pelo J.P. Morgan e publicado pelo Ipeadata até 30/07/2024.",
     "como_interpretar":
@@ -15169,7 +13201,6 @@
     "nivel_confiabilidade":
       "Alto para os valores de 1994 a 30/07/2024, pois são registros oficiais publicados pelo Ipeadata com fonte J.P. Morgan. Valores posteriores a 30/07/2024 foram removidos por ausência de série oficial EMBI+ Brasil nessa fonte.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "Ipeadata - EMBI+ Risco-Brasil (JPM366_EMBI366)",
@@ -15218,9 +13249,11 @@
   },
   "ibov_avg_points": {
     "label": "Brasil: Ibovespa",
+    "fonte_sigla": "B3",
     "unidade": "pontos",
     "fonte": "B3 / Yahoo Finance",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Desempenho da B3, fortemente concentrado na economia antiga (bancos e commodities). Diferente dos países desenvolvidos (tecnologia de ponta), o Ibovespa espelha primordialmente a demanda global de insumos brutos.",
     "dados": [
@@ -15258,13 +13291,14 @@
       { "ano": 2025, "valor": 152430 },
       { "ano": 2026, "valor": 183540 },
     ],
-    "padrao": false,
   },
   "sp500_avg_points": {
     "label": "S&P 500",
+    "fonte_sigla": "S&P/FRED",
     "unidade": "pontos",
     "fonte": "S&P Dow Jones / Yahoo Finance / FRED",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Vitrine do capitalismo global (EUA). Validou crescimento colossal em alta tecnologia e resiliência a choques. Em comparação ao Ibovespa e Europa, o S&P 500 é o grande vórtex de atração de capital global do século XXI.",
     "dados": [
@@ -15302,13 +13336,14 @@
       { "ano": 2025, "valor": 5850.3 },
       { "ano": 2026, "valor": 6120.5 },
     ],
-    "padrao": false,
   },
   "nasdaq_composite_index": {
     "label": "Nova Iorque: Nasdaq Composite",
+    "fonte_sigla": "Nasdaq",
     "unidade": "Pontos",
     "fonte": "Nasdaq Stock Market / Bloomberg / WFE",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho de mais de 3.000 empresas listadas na bolsa Nasdaq, com forte predominância nos setores de tecnologia, internet e biotecnologia. Funciona como o principal barómetro global da economia digital e da inovação. A série histórica reflete ciclos de euforia e correção, como a bolha das 'pontocom' (2000), a aceleração tecnológica na pandemia (2020) e o rali recente impulsionado pela Inteligência Artificial. Devido ao perfil de crescimento das suas empresas, o índice é altamente sensível a variações nas taxas de juro dos EUA.",
     "dados": [
@@ -15346,13 +13381,14 @@
       { "ano": 2025, "valor": 18500 },
       { "ano": 2026, "valor": 19800 },
     ],
-    "padrao": false,
   },
   "nyse_composite_index": {
     "label": "Nova Iorque: NYSE Composite",
+    "fonte_sigla": "NYSE",
     "unidade": "Pontos",
     "fonte": "New York Stock Exchange (NYSE) / Bloomberg",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho de todas as ações ordinárias listadas na Bolsa de Valores de Nova York (NYSE), a maior do mundo em capitalização de mercado. O índice funciona como um termômetro abrangente da economia global e do apetite ao risco dos investidores institucionais. A série histórica ilustra os grandes ciclos económicos modernos: a bolha das 'pontocom' (2000), a profunda correção da Crise Financeira Global (2008) e o formidável 'bull market' impulsionado pela expansão monetária e pelo setor tecnológico na década de 2010 e no período pós-pandemia (2020-2021). A recuperação e os novos recordes projetados para 2024-2026 refletem a resiliência corporativa americana e a adaptação a um ambiente de taxas de juros globais mais altas. Segundo analistas de mercado, 'o índice composto da NYSE captura de forma mais fiel a saúde da economia tradicional e globalizada, por não ser tão concentrado em tecnologia quanto o Nasdaq' [1].",
     "dados": [
@@ -15390,13 +13426,14 @@
       { "ano": 2025, "valor": 18600 },
       { "ano": 2026, "valor": 19100 },
     ],
-    "padrao": false,
   },
   "ftse_100_index": {
     "label": "Londres: FTSE 100",
+    "fonte_sigla": "FTSE",
     "unidade": "Pontos",
     "fonte": "London Stock Exchange (LSE) / FTSE Russell / Bloomberg",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho das 100 empresas de maior capitalização bolsista cotadas na London Stock Exchange (LSE). O FTSE 100, ou 'Footsie', é o principal barómetro da economia do Reino Unido e uma referência global, dado que a maioria das suas empresas são multinacionais com receitas geradas em mercados externos. A sua série histórica ilustra grandes ciclos económicos: o pico da bolha tecnológica em 1999, a queda acentuada durante a crise financeira de 2008 e o período de incerteza e volatilidade que se seguiu ao referendo do Brexit em 2016. Ao contrário do Nasdaq, o FTSE 100 é fortemente ponderado em setores tradicionais como energia, banca e matérias-primas, o que lhe conferiu uma resiliência particular durante o ciclo inflacionário recente. As projeções para 2024-2026 sugerem uma trajetória de crescimento moderado, à medida que a economia britânica se adapta ao novo cenário pós-Brexit e à estabilização das taxas de juro pelo Banco de Inglaterra.",
     "dados": [
@@ -15434,13 +13471,14 @@
       { "ano": 2025, "valor": 8450 },
       { "ano": 2026, "valor": 8650 },
     ],
-    "padrao": false,
   },
   "euronext_100_index": {
     "label": "Europa: Euronext 100",
+    "fonte_sigla": "Euronext",
     "unidade": "Pontos",
     "fonte": "Euronext / Bloomberg / Reuters",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho das 100 empresas de maior capitalização e liquidez listadas na Euronext, a principal infraestrutura de mercado pan-europeia que conecta as bolsas de Paris, Amesterdão, Bruxelas, Lisboa, Dublin, Oslo e Milão. O índice funciona como o barómetro oficial da saúde corporativa da Zona Euro, sendo composto por gigantes dos setores de luxo, bens de consumo e tecnologia. A série histórica reflete momentos cruciais da integração europeia, a volatilidade da crise da dívida soberana (2011) e a resiliência do bloco frente a choques energéticos recentes. A projeção para 2024-2026 aponta para um crescimento sustentado, impulsionado pela estabilização da política monetária do Banco Central Europeu (BCE) e pela força exportadora das multinacionais europeias.",
     "dados": [
@@ -15478,13 +13516,14 @@
       { "ano": 2025, "valor": 1590 },
       { "ano": 2026, "valor": 1665 },
     ],
-    "padrao": false,
   },
   "nikkei_225_index": {
     "label": "Tóquio: Nikkei 225",
+    "fonte_sigla": "Nikkei",
     "unidade": "Pontos",
     "fonte": "Japan Exchange Group (JPX) / Nikkei Inc. / Bloomberg",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho das 225 maiores empresas públicas do Japão listadas na Bolsa de Valores de Tóquio (TSE). O Nikkei 225 é o principal indicador da saúde económica japonesa e um dos índices mais importantes da Ásia. A sua série histórica é marcada pelas 'Décadas Perdidas' após o colapso da bolha de ativos em 1990, resultando num longo período de deflação e estagnação. No entanto, a partir de 2013, com as políticas conhecidas como 'Abenomics', o índice iniciou uma recuperação estrutural. O marco mais significativo ocorreu em 2024, quando o Nikkei finalmente superou o seu recorde histórico de 1989, impulsionado pela reforma da governança corporativa, pela fraqueza do Iene e pelo renovado interesse de investidores globais. As projeções para 2025-2026 refletem a consolidação do Japão como uma alternativa estratégica nos mercados desenvolvidos.",
     "dados": [
@@ -15522,13 +13561,14 @@
       { "ano": 2025, "valor": 41200 },
       { "ano": 2026, "valor": 42800 },
     ],
-    "padrao": false,
   },
   "sse_composite_index": {
     "label": "Xangai: SSE Composite",
+    "fonte_sigla": "SSE",
     "unidade": "Pontos",
     "fonte": "Shanghai Stock Exchange / Bloomberg",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Mede o desempenho das ações transacionadas na Bolsa de Valores de Xangai. Reflete a evolução do mercado de capitais chinês, marcado por forte volatilidade, intervenções estatais e bolhas históricas acentuadas nos anos de 2007 e 2015. A estagnação em anos recentes ilustra o impacto da crise no setor imobiliário e os desafios da transição económica da China.",
     "dados": [
@@ -15566,13 +13606,14 @@
       { "ano": 2025, "valor": 3100 },
       { "ano": 2026, "valor": 3200 },
     ],
-    "padrao": false,
   },
   "fed_funds_aa": {
-    "label": "(FRED) Taxa de Juros",
+    "label": "Taxa de Juros",
+    "fonte_sigla": "FRED",
     "unidade": "% a.a.",
     "fonte": "Federal Reserve (FRED)",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Taxa básica de juros dos EUA; o custo do dinheiro globalmente. A elevação violenta em 2022/2023 foi o remédio contra a inflação, invertendo fluxos de capital e colocando pressão em Bancos Centrais da América Latina e Europa para acompanharem.",
     "dados": [
@@ -15610,13 +13651,14 @@
       { "ano": 2025, "valor": 4.6 },
       { "ano": 2026, "valor": 3.75 },
     ],
-    "padrao": false,
   },
   "us_inflation_aa": {
-    "label": "(FRED) Inflação",
+    "label": "Inflação",
+    "fonte_sigla": "FRED",
     "unidade": "% a.a.",
     "fonte": "Bureau of Labor Statistics (BLS) / FRED",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Índice de Preços ao Consumidor nos EUA. A anomalia pós-2020 (>8% em 2022), causada por expansão monetária pandêmica, exportou inflação para o resto do planeta (Brasil e Europa) através do encarecimento das commodities.",
     "dados": [
@@ -15654,13 +13696,14 @@
       { "ano": 2025, "valor": 2.7 },
       { "ano": 2026, "valor": 3.25 },
     ],
-    "padrao": false,
   },
   "us_payroll_avg": {
-    "label": "(BLS) Payroll",
+    "label": "Payroll",
+    "fonte_sigla": "BLS",
     "unidade": "milhares",
     "fonte": "Bureau of Labor Statistics (BLS)",
     "cat": "Mercados Financeiros e Risco",
+    "padrao": false,
     "descricao":
       "Criação de empregos formais nos EUA. Principal indicador de aquecimento da maior economia do mundo; sua resiliência recente sustentou o consumo global, descolando os EUA da Europa estagnada.",
     "dados": [
@@ -15698,13 +13741,14 @@
       { "ano": 2025, "valor": 165.2 },
       { "ano": 2026, "valor": 242 },
     ],
-    "padrao": false,
   },
   "dxy_index": {
     "label": "DXY (Índice do Dólar)",
+    "fonte_sigla": "ICE/FRED",
     "unidade": "pontos",
     "fonte": "ICE / FRED / Investing.com",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Força global da moeda norte-americana frente a moedas fortes. Máximas indicam o Fed elevando juros e sugando capital do mundo, sendo o termômetro de aversão ao risco. Quando sobe, moedas de emergentes (Brasil/LatAm) e Euro sofrem depreciação.",
     "dados": [
@@ -15742,13 +13786,14 @@
       { "ano": 2025, "valor": 103.1 },
       { "ano": 2026, "valor": 99.2 },
     ],
-    "padrao": false,
   },
   "usd_brl": {
     "label": "Dólar (USD/BRL)",
+    "fonte_sigla": "BCB",
     "unidade": "R$/US$",
     "fonte": "Banco Central do Brasil (SGS 3698)",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Cotação do dólar contra o Real. Reflete o diferencial de inflação, saúde fiscal e choques globais. Historicamente, o Real é uma das moedas emergentes que mais se desvalorizou frente ao Dólar, ao lado de pares latino-americanos com governança frágil.",
     "dados": [
@@ -15786,13 +13831,14 @@
       { "ano": 2025, "valor": 5.5 },
       { "ano": 2026, "valor": 5.68 },
     ],
-    "padrao": false,
   },
   "eur_brl": {
     "label": "Euro (EUR/BRL)",
+    "fonte_sigla": "BCB/BCE",
     "unidade": "BRL por EUR",
     "fonte": "Banco Central do Brasil / Banco Central Europeu",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação do Euro face ao Real brasileiro. Lançado como moeda escritural em 1999 e física em 2002, o Euro é a segunda principal moeda de reserva global. A sua evolução face ao Real reflete tanto os ciclos económicos da Zona Euro como a volatilidade cambial estrutural brasileira e a perceção de risco fiscal.",
     "dados": [
@@ -15825,13 +13871,14 @@
       { "ano": 2025, "valor": 5.48 },
       { "ano": 2026, "valor": 5.55 },
     ],
-    "padrao": false,
   },
   "gbp_brl": {
     "label": "Libra Esterlina (GBP/BRL)",
+    "fonte_sigla": "BCB/BOE",
     "unidade": "BRL por GBP",
     "fonte": "Banco Central do Brasil / Banco de Inglaterra (BOE)",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação da Libra Esterlina face ao Real brasileiro. Sendo uma das moedas de reserva mais antigas e fortes do mundo, a sua evolução face ao Real reflete a solidez da economia britânica e os impactos de eventos como o Brexit, evidenciando simultaneamente a desvalorização estrutural da moeda brasileira ao longo das décadas.",
     "dados": [
@@ -15869,13 +13916,14 @@
       { "ano": 2025, "valor": 6.45 },
       { "ano": 2026, "valor": 6.55 },
     ],
-    "padrao": false,
   },
   "jpy_brl": {
     "label": "Iene Japonês (JPY/BRL)",
+    "fonte_sigla": "BCB/BOJ",
     "unidade": "BRL por JPY",
     "fonte": "Banco Central do Brasil / Banco do Japão (BOJ)",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação do Iene japonês face ao Real brasileiro. O Iene é tradicionalmente considerado um ativo de refúgio em momentos de aversão ao risco global. A sua desvalorização recente reflete a manutenção de uma política monetária expansionista pelo Banco do Japão (BOJ), em forte contraste com a subida das taxas de juro nas restantes economias desenvolvidas e emergentes.",
     "dados": [
@@ -15913,13 +13961,14 @@
       { "ano": 2025, "valor": 0.035 },
       { "ano": 2026, "valor": 0.036 },
     ],
-    "padrao": false,
   },
   "usd_cny": {
     "label": "Yuan (CNY/USD)",
+    "fonte_sigla": "PBOC/WB",
     "unidade": "CNY por USD",
     "fonte": "Banco Popular da China (PBOC) / Banco Mundial",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação do Yuan (Renminbi) chinês face ao Dólar americano. Reflete o rigoroso controlo cambial exercido pelo Banco Popular da China. A manutenção de uma taxa fixa e desvalorizada até 2005 impulsionou fortemente as exportações do país. Atualmente, opera sob flutuação administrada, refletindo tensões comerciais e ajustes na política económica internacional chinesa.",
     "dados": [
@@ -15957,13 +14006,14 @@
       { "ano": 2025, "valor": 7.2 },
       { "ano": 2026, "valor": 7.25 },
     ],
-    "padrao": false,
   },
   "preco_bitcoin_usd": {
     "label": "Bitcoin (BTC/USD)",
+    "fonte_sigla": "CoinMarketCap/Glassnode",
     "unidade": "USD",
     "fonte": "CoinMarketCap / Glassnode",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação média anual da principal criptomoeda do mercado. Criado em 2009, o Bitcoin consolidou-se como um ativo de reserva de valor digital, caracterizado por ciclos de alta volatilidade e adoção institucional crescente ao longo da última década.",
     "dados": [
@@ -16001,13 +14051,14 @@
       { "ano": 2025, "valor": 75000 },
       { "ano": 2026, "valor": 85000 },
     ],
-    "padrao": false,
   },
   "preco_ethereum_usd": {
     "label": "Ethereum (ETH/USD)",
+    "fonte_sigla": "CoinMarketCap/Glassnode",
     "unidade": "USD",
     "fonte": "CoinMarketCap / Glassnode",
     "cat": "Moedas e Criptoativos",
+    "padrao": false,
     "descricao":
       "Mede a cotação da segunda maior criptomoeda do mercado. Criado em 2015, o Ethereum introduziu os contratos inteligentes (smart contracts) e as finanças descentralizadas (DeFi), apresentando alta volatilidade e crescente adoção.",
     "dados": [
@@ -16045,13 +14096,14 @@
       { "ano": 2025, "valor": 4000 },
       { "ano": 2026, "valor": 4500 },
     ],
-    "padrao": false,
   },
   "petroleo_brent_usd_barril": {
     "label": "Petróleo Brent (média anual)",
+    "fonte_sigla": "EIA/FRED/WB",
     "unidade": "US$/barril",
     "fonte": "EIA / FRED / Banco Mundial Pink Sheet",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço médio anual do petróleo Brent europeu, em dólares dos Estados Unidos por barril.",
     "como_interpretar":
       "Valores maiores indicam encarecimento do petróleo Brent no mercado internacional, com possível impacto sobre combustíveis, inflação, custos logísticos, balança comercial de países importadores e receitas de países exportadores.",
@@ -16098,7 +14150,6 @@
     "nivel_confiabilidade":
       "Alta. A série EIA/FRED é pública, recorrente, nominal, em unidade clara e com longa série histórica. Os anos de 2026 foram removidos por não representarem média anual fechada. Pequenas diferenças entre EIA, Banco Mundial, IMF e Energy Institute podem ocorrer por fonte, arredondamento e método de agregação.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "EIA - Europe Brent Spot Price FOB Annual", "url": "https://www.eia.gov/dnav/pet/hist/rbrteA.htm" },
       {
@@ -16156,10 +14207,12 @@
   },
   "preco_gas_natural_usd": {
     "label": "Gás Natural (Henry Hub)",
+    "fonte_sigla": "EIA/WB/FMI",
     "unidade": "USD/MMBtu",
     "fonte":
       "U.S. Energy Information Administration (EIA) / World Bank Commodity Price Data (Pink Sheet) / IMF Primary Commodity Prices",
     "cat": "Commodities",
+    "padrao": false,
     "descricao":
       "Preço médio anual à vista do gás natural no Henry Hub, Louisiana, principal referência física dos Estados Unidos para gás natural.",
     "como_interpretar":
@@ -16219,7 +14272,6 @@
     "nivel_confiabilidade":
       "Alto para 1997-2025, pois os valores vêm da série oficial anual da EIA. Médio-alto para 1994-1996, pois vêm de série histórica oficial World Bank/IMF/Bloomberg, mas não da série anual EIA, que só se inicia em 1997. 2026 foi removido por ser ano incompleto/projeção.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "EIA - Henry Hub Natural Gas Spot Price", "url": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm" },
       {
@@ -16277,9 +14329,11 @@
   },
   "ferro_minerio_usd_ton": {
     "label": "Minério de Ferro (CFR China)",
+    "fonte_sigla": "WB/FMI",
     "unidade": "US$/tonelada métrica seca",
     "fonte": "World Bank Commodity Markets Pink Sheet / IMF Primary Commodity Prices",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço médio anual nominal do minério de ferro no mercado internacional, referência CFR China.",
     "como_interpretar":
       "Valores maiores indicam minério de ferro mais caro no comércio internacional. A alta costuma refletir demanda forte por aço, restrições de oferta ou choques logísticos; quedas costumam refletir desaceleração da demanda siderúrgica, excesso de oferta ou retração econômica.",
@@ -16327,7 +14381,6 @@
     "nivel_confiabilidade":
       "Alta para 1994-2025 como série anual nominal publicada pelo Banco Mundial/IMF. Média para comparações históricas antes de 2009, porque a especificação da série mudou. 2026 foi excluído por não haver média anual fechada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank - Commodity Markets Pink Sheet Data",
@@ -16384,10 +14437,12 @@
   },
   "cobre_lme_usd_ton": {
     "label": "Cobre LME",
+    "fonte_sigla": "IMF/FRED/LME",
     "unidade": "US$/tonelada métrica",
     "fonte":
       "International Monetary Fund (Primary Commodity Prices) via FRED - série PCOPPUSDA; referência de mercado: London Metal Exchange (LME)",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço médio anual nominal do cobre no mercado global, em dólares dos EUA por tonelada métrica.",
     "como_interpretar":
       "Valores maiores indicam encarecimento internacional do cobre. A série reflete médias anuais nominais, não ajustadas pela inflação, portanto variações podem refletir demanda industrial, oferta mineral, câmbio global, estoques, choques geopolíticos e condições macroeconômicas.",
@@ -16440,7 +14495,6 @@
     "nivel_confiabilidade":
       "Alta para 1994-2025, pois os valores foram validados contra a série anual PCOPPUSDA do FRED, cuja fonte original é o IMF Primary Commodity Prices. O dado de 2026 foi removido por não haver média anual fechada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "FRED - Global price of Copper (PCOPPUSDA)", "url": "https://fred.stlouisfed.org/series/PCOPPUSDA" },
       { "titulo": "FRED - Table Data PCOPPUSDA", "url": "https://fred.stlouisfed.org/data/PCOPPUSDA" },
@@ -16488,9 +14542,11 @@
   },
   "ouro_lbma_usd_onca": {
     "label": "Ouro LBMA (PM fix)",
+    "fonte_sigla": "LBMA/ICE/WGC",
     "unidade": "US$/onça-troy",
     "fonte": "LBMA / ICE Benchmark Administration / World Gold Council",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço médio anual do ouro em dólar dos EUA por onça-troy, baseado no benchmark LBMA Gold Price PM.",
     "como_interpretar":
       "Valores maiores indicam aumento do preço internacional do ouro em dólar por onça-troy. O indicador não mede retorno real, retorno em moeda local, poder de compra nem preço de ouro físico no varejo.",
@@ -16550,7 +14606,6 @@
     "nivel_confiabilidade":
       "Alto para 1994-2025 quando tratado como média anual histórica do benchmark LBMA Gold Price PM em US$/onça-troy. Baixo/inválido para 2026 como média anual, pois o ano ainda não está encerrado em 24/04/2026. Valores de 2025 e 2024 foram corrigidos para os valores anuais oficiais reportados pelo World Gold Council.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "World Gold Council - Gold spot prices", "url": "https://www.gold.org/goldhub/data/gold-prices" },
       {
@@ -16604,10 +14659,12 @@
   },
   "soja_usd_t": {
     "label": "Soja (Preço Médio Global)",
+    "fonte_sigla": "FRED/IMF",
     "unidade": "USD/t",
     "fonte":
       "FRED / Federal Reserve Bank of St. Louis; fonte primária: International Monetary Fund (IMF), Primary Commodity Prices",
     "cat": "Commodities",
+    "padrao": false,
     "descricao":
       "Preço médio anual nominal da soja no mercado internacional, expresso em dólares dos Estados Unidos por tonelada métrica.",
     "como_interpretar":
@@ -16656,7 +14713,6 @@
     "nivel_confiabilidade":
       "Alto para 1994-2025, pois os valores foram substituídos pela série oficial anual PSOYBUSDA do FRED, cuja fonte primária é o IMF Primary Commodity Prices. O ano de 2026 foi removido por não haver média anual fechada; o valor disponível era trimestral/parcial e não comparável à série anual consolidada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FRED - Global price of Soybeans (PSOYBUSDA), Annual",
@@ -16708,9 +14764,11 @@
   },
   "milho_usd_t": {
     "label": "Milho (Preço Médio Global)",
+    "fonte_sigla": "FRED/IMF",
     "unidade": "USD/t",
     "fonte": "FRED / International Monetary Fund (PMAIZMTUSDA)",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço anual médio global do milho, em dólares correntes por tonelada métrica.",
     "como_interpretar":
       "Valores maiores indicam encarecimento internacional do milho. Como é um preço nominal em USD/t, não está ajustado pela inflação dos Estados Unidos.",
@@ -16757,7 +14815,6 @@
     "nivel_confiabilidade":
       "Alta para 1994-2025, pois os valores vêm de série anual oficial do FRED com fonte primária FMI. O ano de 2026 foi removido porque ainda não há média anual completa observada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FRED - Global price of Corn (PMAIZMTUSDA)",
@@ -16816,10 +14873,12 @@
   },
   "preco_trigo_usd": {
     "label": "Trigo",
+    "fonte_sigla": "IMF/FRED/WB",
     "unidade": "USD/ton",
     "fonte":
       "International Monetary Fund (Primary Commodity Prices) via FRED / World Bank Commodity Markets Pink Sheet",
     "cat": "Commodities",
+    "padrao": false,
     "descricao": "Preço médio anual internacional do trigo, em dólares nominais por tonelada métrica.",
     "como_interpretar":
       "Valores maiores indicam encarecimento do trigo no mercado internacional. A série é nominal, portanto não desconta inflação. Aumentos fortes costumam refletir choques de oferta, demanda, clima, estoques, custos logísticos ou conflitos que afetem grandes produtores e exportadores.",
@@ -16860,7 +14919,6 @@
     "nivel_confiabilidade":
       "Alta para 1994-2025, pois os valores vêm da série anual oficial PWHEAMTUSDA do FMI, disponibilizada pelo FRED. 2026 foi removido por ser ano incompleto. A identificação como 'US HRW' foi removida do label porque os valores informados correspondem à série do FMI/FRED 'Global price of Wheat', não à série anual do World Bank Pink Sheet 'Wheat, U.S., HRW', que apresenta valores diferentes em anos recentes.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FRED - Global price of Wheat (PWHEAMTUSDA), Annual",
@@ -16911,9 +14969,11 @@
   },
   "acucar_usd_t": {
     "label": "Açúcar (Preço Médio Global)",
+    "fonte_sigla": "FRED/IMF/WB",
     "unidade": "USD/t",
     "fonte": "FRED / International Monetary Fund (IMF) - PSUGAISAUSDA; World Bank Pink Sheet",
     "cat": "Commodities",
+    "padrao": false,
     "descricao":
       "Preço médio anual nominal do açúcar bruto no mercado mundial, baseado no preço ISA Sugar No. 11, convertido de centavos de dólar por libra para dólares por tonelada métrica.",
     "como_interpretar":
@@ -16950,7 +15010,6 @@
     "nivel_confiabilidade":
       "Alto para 1994-2025: valores anuais concretos, publicados pelo FRED com fonte no IMF Primary Commodity Prices e compatíveis com a definição do World Bank Pink Sheet. O ano de 2026 foi removido por não haver média anual completa oficial na data de validação.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "FRED - Global price of Sugar, No. 11, World (PSUGAISAUSDA)",
@@ -17005,9 +15064,11 @@
   },
   "preco_cafe_usd": {
     "label": "Café (Arábica)",
+    "fonte_sigla": "WB/ICO",
     "unidade": "USD/kg",
     "fonte": "World Bank Commodity Price Data (Pink Sheet) / ICO",
     "cat": "Commodities",
+    "padrao": false,
     "descricao":
       "Preço médio anual internacional do café Arábica, em dólares por quilograma, conforme a série Coffee, Arabica da Pink Sheet do Banco Mundial.",
     "como_interpretar":
@@ -17068,7 +15129,6 @@
     "nivel_confiabilidade":
       "Alta para 1994-2025, pois os valores anuais são dados observados publicados pela fonte oficial World Bank Pink Sheet. 2026 foi removido por não possuir média anual Jan-Dec fechada. Valores projetados de 2026 e projeções 2024-2026 do JSON original foram removidos/corrigidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       {
         "titulo": "World Bank Commodity Markets - Pink Sheet Data",
@@ -17130,9 +15190,11 @@
   },
   "carne_bovina_usd_t": {
     "label": "Carne Bovina (Preço Médio Global)",
+    "fonte_sigla": "IMF/FRED",
     "unidade": "USD/t",
     "fonte": "IMF Primary Commodity Prices via FRED (PBEEFUSDA)",
     "cat": "Commodities",
+    "padrao": false,
     "descricao":
       "Preço global de referência da carne bovina, convertido de centavos de dólar por libra para dólares por tonelada métrica.",
     "como_interpretar":
@@ -17149,7 +15211,6 @@
     "nivel_confiabilidade":
       "Alta para 2011-2025, pois os valores foram validados contra a série oficial PBEEFUSDA do FMI via FRED e convertidos diretamente para USD/t. Inexistente para 1994-2010 e 2026 nesta validação, pois esses anos não constam como observações anuais oficiais completas na fonte consultada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 24/04/2026",
-    "padrao": false,
     "fontes_links": [
       { "titulo": "FRED - Global price of Beef (PBEEFUSDA)", "url": "https://fred.stlouisfed.org/series/PBEEFUSDA" },
       { "titulo": "FRED - Table Data PBEEFUSDA", "url": "https://fred.stlouisfed.org/data/PBEEFUSDA" },
@@ -17176,357 +15237,5 @@
       { "ano": 2024, "valor": 5770.89 },
       { "ano": 2025, "valor": 6700.74 },
     ],
-  },
-  "deficit_habitacional": {
-    "label": "Déficit Habitacional",
-    "unidade": "Milhões de unidades",
-    "fonte": "Fundação João Pinheiro (FJP) / IBGE / Ministério das Cidades",
-    "cat": "Habitação, Inclusão Digital e Condições Sociais",
-    "descricao":
-      "O Déficit Habitacional mede a necessidade de novas moradias para suprir carências populacionais, indo além da simples 'falta de teto'. Ele é calculado através de três pilares: Habitação Precária (domicílios improvisados ou rústicos), Coabitação (famílias dividindo o mesmo teto por necessidade) e Ônus Excessivo com Aluguel (famílias de baixa renda que gastam mais de 30% da renda com moradia). No Brasil, a série mostra uma mudança qualitativa: enquanto a habitação rústica diminuiu, o 'ônus excessivo' disparou, tornando-se o principal motor do déficit. As maiores variações positivas (pioras) ocorreram após a crise de 2015-2016 e na pandemia de 2020, quando o desemprego e a inflação de aluguéis forçaram o aumento da coabitação. A precisão dos dados é baseada na metodologia da FJP aplicada ao Censo e à PNAD; os valores de 2024-2026 são projeções fundamentadas nas metas do programa 'Minha Casa, Minha Vida' (MCMV) e no crescimento demográfico urbano. Comparativamente, o Brasil possui um déficit proporcional semelhante ao do México e da Colômbia. Em relação à Europa, o problema brasileiro é a falta física de infraestrutura básica, enquanto o desafio europeu é a 'affordability' (acessibilidade financeira) em centros gentrificados. No cenário mundial, o Brasil se destaca por ter políticas habitacionais de larga escala, mas a projeção de 6,10 milhões para 2026 mostra que a entrega de chaves mal consegue empatar com o déficit qualitativo crescente nas periferias.",
-    "dados": [
-      { "ano": 1994, "valor": 4.8 },
-      { "ano": 1995, "valor": 4.9 },
-      { "ano": 1996, "valor": 5 },
-      { "ano": 1997, "valor": 5.1 },
-      { "ano": 1998, "valor": 5.2 },
-      { "ano": 1999, "valor": 5.3 },
-      { "ano": 2000, "valor": 5.45 },
-      { "ano": 2001, "valor": 5.5 },
-      { "ano": 2002, "valor": 5.55 },
-      { "ano": 2003, "valor": 5.6 },
-      { "ano": 2004, "valor": 5.65 },
-      { "ano": 2005, "valor": 5.7 },
-      { "ano": 2006, "valor": 5.72 },
-      { "ano": 2007, "valor": 5.75 },
-      { "ano": 2008, "valor": 5.78 },
-      { "ano": 2009, "valor": 5.8 },
-      { "ano": 2010, "valor": 5.85 },
-      { "ano": 2011, "valor": 5.82 },
-      { "ano": 2012, "valor": 5.8 },
-      { "ano": 2013, "valor": 5.78 },
-      { "ano": 2014, "valor": 5.75 },
-      { "ano": 2015, "valor": 5.92 },
-      { "ano": 2016, "valor": 6.05 },
-      { "ano": 2017, "valor": 6.1 },
-      { "ano": 2018, "valor": 6.15 },
-      { "ano": 2019, "valor": 6.2 },
-      { "ano": 2020, "valor": 6.25 },
-      { "ano": 2021, "valor": 6.28 },
-      { "ano": 2022, "valor": 6.22 },
-      { "ano": 2023, "valor": 6.18 },
-      { "ano": 2024, "valor": 6.15 },
-      { "ano": 2025, "valor": 6.12 },
-      { "ano": 2026, "valor": 6.1 },
-    ],
-    "padrao": false,
-  },
-  "acesso_banda_larga_pct": {
-    "label": "Acesso à Banda Larga Domiciliar",
-    "unidade": "% de domicílios",
-    "fonte": "ANATEL / IBGE (TIC Domicílios) / ITU",
-    "cat": "Habitação, Inclusão Digital e Condições Sociais",
-    "descricao":
-      "A métrica de Acesso à Banda Larga mede o percentual de domicílios brasileiros que possuem conexão à internet de alta velocidade (fixa ou móvel). Ela funciona como um indicador fundamental de inclusão digital e potencial para a economia do conhecimento. A série histórica revela uma das transformações mais rápidas da infraestrutura brasileira: de uma presença quase nula em 1994 (era do acesso discado) para uma cobertura de 94,2% em 2026. As maiores variações foram impulsionadas por três eventos: o Plano Nacional de Banda Larga (2010), a 'explosão' dos Provedores Regionais (ISPs) entre 2018 e 2022 — que levaram fibra óptica a cidades onde grandes operadoras não chegavam — e a pandemia de 2020, que tornou a internet um item de sobrevivência para educação e trabalho remoto. A precisão dos dados é alta, baseada na pesquisa TIC Domicílios (CGI.br) e dados regulatórios da ANATEL; os valores de 2024-2026 são projeções que consideram a universalização via 5G FWA e satélites de baixa órbita (Starlink) em áreas rurais. Comparativamente, o Brasil é líder na América Latina ao lado de Chile e Uruguai, superando o México (~75%). Em relação à Europa, o Brasil atingiu paridade em termos de 'acesso', mas ainda possui um hiato na 'qualidade/velocidade média' em comparação a países como Estônia ou Coreia do Sul. No cenário mundial, o país destaca-se pelo custo competitivo e pela capilaridade da rede de fibra, aproximando-se da saturação tecnológica em 2026.",
-    "dados": [
-      { "ano": 1994, "valor": 0.01 },
-      { "ano": 1995, "valor": 0.05 },
-      { "ano": 1996, "valor": 0.12 },
-      { "ano": 1997, "valor": 0.25 },
-      { "ano": 1998, "valor": 0.4 },
-      { "ano": 1999, "valor": 0.6 },
-      { "ano": 2000, "valor": 1.2 },
-      { "ano": 2001, "valor": 2.1 },
-      { "ano": 2002, "valor": 3.5 },
-      { "ano": 2003, "valor": 4.8 },
-      { "ano": 2004, "valor": 6.2 },
-      { "ano": 2005, "valor": 8.1 },
-      { "ano": 2006, "valor": 10.5 },
-      { "ano": 2007, "valor": 13.8 },
-      { "ano": 2008, "valor": 16.2 },
-      { "ano": 2009, "valor": 19.5 },
-      { "ano": 2010, "valor": 24.1 },
-      { "ano": 2011, "valor": 28.3 },
-      { "ano": 2012, "valor": 33.4 },
-      { "ano": 2013, "valor": 39.1 },
-      { "ano": 2014, "valor": 45.2 },
-      { "ano": 2015, "valor": 51 },
-      { "ano": 2016, "valor": 54.8 },
-      { "ano": 2017, "valor": 61.2 },
-      { "ano": 2018, "valor": 67.5 },
-      { "ano": 2019, "valor": 71.3 },
-      { "ano": 2020, "valor": 81.2 },
-      { "ano": 2021, "valor": 84.5 },
-      { "ano": 2022, "valor": 88.4 },
-      { "ano": 2023, "valor": 90.5 },
-      { "ano": 2024, "valor": 92.1 },
-      { "ano": 2025, "valor": 93.4 },
-      { "ano": 2026, "valor": 94.2 },
-    ],
-    "padrao": false,
-  },
-  "taxa_fecundidade_total": {
-    "label": "Taxa de Fecundidade Total",
-    "unidade": "filhos por mulher",
-    "fonte": "IBGE / Banco Mundial / ONU (DESA)",
-    "cat": "Habitação, Inclusão Digital e Condições Sociais",
-    "descricao":
-      "A Taxa de Fecundidade Total (TFT) representa o número médio de filhos que uma mulher teria até o fim de seu período reprodutivo. Ela é o principal indicador da dinâmica demográfica, sendo que o nível de 2,1 filhos é considerado a 'taxa de reposição' necessária para manter a população estável sem imigração. No Brasil, a métrica revela uma das transições demográficas mais rápidas do mundo: em 1994, o país ainda estava acima da reposição (2,47), mas cruzou o limite crítico de 2,1 por volta de 2004. As maiores variações foram influenciadas pela urbanização acelerada, maior escolaridade feminina e a entrada massiva de mulheres no mercado de trabalho. Um evento marcante foi a pandemia de 2020, que gerou um 'choque de incerteza', levando muitas famílias a adiarem a maternidade, resultando em uma queda abrupta. A precisão dos números até 2022 baseia-se no Censo e na PNAD Contínua; os valores para 2024-2026 são projeções fundamentadas nas novas estimativas do IBGE e tendências de adiamento da gravidez para após os 30 anos. Comparativamente, o Brasil (1,51 em 2026) apresenta uma taxa menor que a média da América Latina (~1,8) e já se assemelha a países europeus como Noruega ou Suécia, embora ainda esteja acima de extremos como Itália ou Coreia do Sul (0,7). No cenário mundial, o Brasil contribui para a tendência de 'envelhecimento precoce', onde a fecundidade cai antes mesmo de o país atingir altos níveis de riqueza, desafiando a sustentabilidade da previdência social.",
-    "dados": [
-      { "ano": 1994, "valor": 2.47 },
-      { "ano": 1995, "valor": 2.42 },
-      { "ano": 1996, "valor": 2.38 },
-      { "ano": 1997, "valor": 2.34 },
-      { "ano": 1998, "valor": 2.29 },
-      { "ano": 1999, "valor": 2.25 },
-      { "ano": 2000, "valor": 2.18 },
-      { "ano": 2001, "valor": 2.14 },
-      { "ano": 2002, "valor": 2.1 },
-      { "ano": 2003, "valor": 2.05 },
-      { "ano": 2004, "valor": 2.01 },
-      { "ano": 2005, "valor": 1.97 },
-      { "ano": 2006, "valor": 1.93 },
-      { "ano": 2007, "valor": 1.89 },
-      { "ano": 2008, "valor": 1.86 },
-      { "ano": 2009, "valor": 1.84 },
-      { "ano": 2010, "valor": 1.81 },
-      { "ano": 2011, "valor": 1.79 },
-      { "ano": 2012, "valor": 1.77 },
-      { "ano": 2013, "valor": 1.75 },
-      { "ano": 2014, "valor": 1.74 },
-      { "ano": 2015, "valor": 1.72 },
-      { "ano": 2016, "valor": 1.69 },
-      { "ano": 2017, "valor": 1.71 },
-      { "ano": 2018, "valor": 1.7 },
-      { "ano": 2019, "valor": 1.67 },
-      { "ano": 2020, "valor": 1.61 },
-      { "ano": 2021, "valor": 1.58 },
-      { "ano": 2022, "valor": 1.55 },
-      { "ano": 2023, "valor": 1.54 },
-      { "ano": 2024, "valor": 1.53 },
-      { "ano": 2025, "valor": 1.52 },
-      { "ano": 2026, "valor": 1.51 },
-    ],
-    "padrao": false,
-  },
-  "global_soft_power_index": {
-    "label": "Global Soft Power Index (Brasil)",
-    "unidade": "Pontuação (0-100)",
-    "fonte": "Brand Finance / Global Soft Power Index / Monocle",
-    "cat": "Relações Internacionais e Soft Power",
-    "descricao":
-      "O Global Soft Power Index mede a capacidade de uma nação influenciar as preferências de atores internacionais através da atração e persuasão, baseando-se em pilares como Cultura e Património, Relações Internacionais, Governação e Valores. A série histórica do Brasil reflete o prestígio da diplomacia e cultura brasileiras, com um pico de influência na transição para a década de 2010 e uma recuperação expressiva a partir de 2023. Segundo a Brand Finance, 'a liderança na agenda climática e a presidência do G20 em 2024 são os principais vetores do aumento da reputação global do país'. As projeções para 2025-2026 refletem o impacto esperado da COP30 na consolidação do Brasil como uma potência ambiental e mediadora do Sul Global. Os valores pré-2020 são estimativas baseadas em índices correlatos de influência internacional.",
-    "dados": [
-      { "ano": 1994, "valor": 34.5 },
-      { "ano": 1995, "valor": 35.2 },
-      { "ano": 1996, "valor": 35.8 },
-      { "ano": 1997, "valor": 36.4 },
-      { "ano": 1998, "valor": 36.1 },
-      { "ano": 1999, "valor": 35.9 },
-      { "ano": 2000, "valor": 37.8 },
-      { "ano": 2001, "valor": 38.5 },
-      { "ano": 2002, "valor": 39.4 },
-      { "ano": 2003, "valor": 40.8 },
-      { "ano": 2004, "valor": 42.1 },
-      { "ano": 2005, "valor": 42.8 },
-      { "ano": 2006, "valor": 43.4 },
-      { "ano": 2007, "valor": 44.2 },
-      { "ano": 2008, "valor": 45 },
-      { "ano": 2009, "valor": 46.5 },
-      { "ano": 2010, "valor": 47.4 },
-      { "ano": 2011, "valor": 48.1 },
-      { "ano": 2012, "valor": 48.5 },
-      { "ano": 2013, "valor": 47.8 },
-      { "ano": 2014, "valor": 47.2 },
-      { "ano": 2015, "valor": 44.5 },
-      { "ano": 2016, "valor": 42.8 },
-      { "ano": 2017, "valor": 42.1 },
-      { "ano": 2018, "valor": 40.5 },
-      { "ano": 2019, "valor": 39.8 },
-      { "ano": 2020, "valor": 41.3 },
-      { "ano": 2021, "valor": 37.9 },
-      { "ano": 2022, "valor": 40.7 },
-      { "ano": 2023, "valor": 42.6 },
-      { "ano": 2024, "valor": 45.1 },
-      { "ano": 2025, "valor": 47.2 },
-      { "ano": 2026, "valor": 49 },
-    ],
-    "padrao": false,
-  },
-  "lowy_diplomacy_index": {
-    "label": "Lowy Global Diplomacy Index (Brasil)",
-    "unidade": "Número de Postos",
-    "fonte": "Lowy Institute / Global Diplomacy Index",
-    "cat": "Relações Internacionais e Soft Power",
-    "descricao":
-      "O Global Diplomacy Index, produzido pelo Lowy Institute, mapeia e classifica as redes diplomáticas mais extensas do mundo por número de embaixadas, consulados e missões permanentes. O Brasil consolidou-se historicamente como a maior rede diplomática da América Latina e uma das maiores do mundo. O crescimento acentuado entre 2003 e 2011 refletiu a estratégia de diplomacia Sul-Sul, com a abertura de dezenas de postos na África, Caribe e Médio Oriente. Após um período de retração e fechamento de postos estratégicos entre 2019 e 2022, o país iniciou em 2023 um movimento de recomposição da sua presença externa. Em 2024, o Brasil ocupa a 10ª posição global, superando potências como a Índia e a Espanha em capilaridade diplomática. A projeção para 2026 aponta para a consolidação de 218 postos, visando apoiar a liderança brasileira na agenda climática e a presidência de fóruns multilaterais como o G20 e a COP30.",
-    "dados": [
-      { "ano": 1994, "valor": 162 },
-      { "ano": 1995, "valor": 164 },
-      { "ano": 1996, "valor": 166 },
-      { "ano": 1997, "valor": 168 },
-      { "ano": 1998, "valor": 170 },
-      { "ano": 1999, "valor": 172 },
-      { "ano": 2000, "valor": 174 },
-      { "ano": 2001, "valor": 176 },
-      { "ano": 2002, "valor": 178 },
-      { "ano": 2003, "valor": 182 },
-      { "ano": 2004, "valor": 188 },
-      { "ano": 2005, "valor": 195 },
-      { "ano": 2006, "valor": 202 },
-      { "ano": 2007, "valor": 208 },
-      { "ano": 2008, "valor": 212 },
-      { "ano": 2009, "valor": 216 },
-      { "ano": 2010, "valor": 220 },
-      { "ano": 2011, "valor": 222 },
-      { "ano": 2012, "valor": 223 },
-      { "ano": 2013, "valor": 224 },
-      { "ano": 2014, "valor": 225 },
-      { "ano": 2015, "valor": 225 },
-      { "ano": 2016, "valor": 225 },
-      { "ano": 2017, "valor": 223 },
-      { "ano": 2018, "valor": 220 },
-      { "ano": 2019, "valor": 215 },
-      { "ano": 2020, "valor": 208 },
-      { "ano": 2021, "valor": 195 },
-      { "ano": 2022, "valor": 190 },
-      { "ano": 2023, "valor": 200 },
-      { "ano": 2024, "valor": 205 },
-      { "ano": 2025, "valor": 212 },
-      { "ano": 2026, "valor": 218 },
-    ],
-    "padrao": false,
-  },
-  "henley_passport_power": {
-    "label": "Poder do Passaporte (Henley Index)",
-    "unidade": "Destinos sem visto",
-    "fonte": "Henley & Partners / IATA",
-    "cat": "Relações Internacionais e Soft Power",
-    "descricao":
-      "O Henley Passport Index classifica os passaportes globais pelo número de destinos acessíveis sem visto prévio. O Brasil mantém-se historicamente no top 20, refletindo uma diplomacia de abertura e neutralidade. A série regista um salto de cerca de 130 destinos em 2010 para 173 em 2024. Segundo a Henley & Partners, 'o Brasil continua a ser um dos países de rendimento médio com maior alcance diplomático' [1]. As projeções para 2026 sugerem a expansão para 178 destinos, impulsionada por novos acordos de isenção na Ásia e no Médio Oriente.",
-    "dados": [
-      { "ano": 1994, "valor": 85 },
-      { "ano": 1995, "valor": 88 },
-      { "ano": 1996, "valor": 92 },
-      { "ano": 1997, "valor": 95 },
-      { "ano": 1998, "valor": 98 },
-      { "ano": 1999, "valor": 102 },
-      { "ano": 2000, "valor": 105 },
-      { "ano": 2001, "valor": 108 },
-      { "ano": 2002, "valor": 110 },
-      { "ano": 2003, "valor": 112 },
-      { "ano": 2004, "valor": 115 },
-      { "ano": 2005, "valor": 118 },
-      { "ano": 2006, "valor": 120 },
-      { "ano": 2007, "valor": 122 },
-      { "ano": 2008, "valor": 125 },
-      { "ano": 2009, "valor": 128 },
-      { "ano": 2010, "valor": 130 },
-      { "ano": 2011, "valor": 133 },
-      { "ano": 2012, "valor": 136 },
-      { "ano": 2013, "valor": 141 },
-      { "ano": 2014, "valor": 144 },
-      { "ano": 2015, "valor": 146 },
-      { "ano": 2016, "valor": 153 },
-      { "ano": 2017, "valor": 156 },
-      { "ano": 2018, "valor": 160 },
-      { "ano": 2019, "valor": 171 },
-      { "ano": 2020, "valor": 170 },
-      { "ano": 2021, "valor": 171 },
-      { "ano": 2022, "valor": 170 },
-      { "ano": 2023, "valor": 170 },
-      { "ano": 2024, "valor": 173 },
-      { "ano": 2025, "valor": 175 },
-      { "ano": 2026, "valor": 178 },
-    ],
-    "padrao": false,
-  },
-  "participacao_organismos_multilaterais": {
-    "label": "Participação em Organismos Multilaterais",
-    "unidade": "Organismos",
-    "fonte": "Itamaraty (MRE) / ONU / UIA",
-    "cat": "Relações Internacionais e Soft Power",
-    "descricao":
-      "Mede o número de organizações, organismos e fóruns intergovernamentais em que o Brasil mantém participação ativa ou filiação oficial. Reflete a estratégia diplomática de 'universalismo' e a busca por influência global através do multilateralismo. A série histórica demonstra a expansão agressiva da presença brasileira no 'Eixo Sul-Sul' e em blocos regionais a partir de 2003, seguida por um período de retração e revisão de prioridades entre 2019 e 2022. A retoma em 2023 marca o reingresso em fóruns como a CELAC e a UNASUL, além do fortalecimento nos BRICS+. A projeção para 2026 aponta para o patamar recorde de 75 organismos, impulsionado pela liderança em frentes de governança climática e segurança alimentar internacional.",
-    "dados": [
-      { "ano": 1994, "valor": 48 },
-      { "ano": 1995, "valor": 48 },
-      { "ano": 1996, "valor": 49 },
-      { "ano": 1997, "valor": 50 },
-      { "ano": 1998, "valor": 51 },
-      { "ano": 1999, "valor": 51 },
-      { "ano": 2000, "valor": 52 },
-      { "ano": 2001, "valor": 53 },
-      { "ano": 2002, "valor": 54 },
-      { "ano": 2003, "valor": 56 },
-      { "ano": 2004, "valor": 58 },
-      { "ano": 2005, "valor": 60 },
-      { "ano": 2006, "valor": 62 },
-      { "ano": 2007, "valor": 63 },
-      { "ano": 2008, "valor": 65 },
-      { "ano": 2009, "valor": 67 },
-      { "ano": 2010, "valor": 68 },
-      { "ano": 2011, "valor": 68 },
-      { "ano": 2012, "valor": 69 },
-      { "ano": 2013, "valor": 69 },
-      { "ano": 2014, "valor": 70 },
-      { "ano": 2015, "valor": 70 },
-      { "ano": 2016, "valor": 70 },
-      { "ano": 2017, "valor": 71 },
-      { "ano": 2018, "valor": 70 },
-      { "ano": 2019, "valor": 67 },
-      { "ano": 2020, "valor": 65 },
-      { "ano": 2021, "valor": 65 },
-      { "ano": 2022, "valor": 65 },
-      { "ano": 2023, "valor": 68 },
-      { "ano": 2024, "valor": 72 },
-      { "ano": 2025, "valor": 74 },
-      { "ano": 2026, "valor": 75 },
-    ],
-    "padrao": false,
-  },
-  "investimento_cooperacao_abc": {
-    "label": "Investimento em Cooperação Técnica (ABC)",
-    "unidade": "Milhões de USD",
-    "fonte": "Agência Brasileira de Cooperação (ABC/MRE) / IPEA (COBRADI)",
-    "cat": "Relações Internacionais e Soft Power",
-    "descricao":
-      "Mede o investimento anual em projetos de cooperação técnica internacional coordenados pela Agência Brasileira de Cooperação (ABC). Este indicador reflete a face prática da 'Cooperação Sul-Sul', na qual o Brasil partilha conhecimento, tecnologias e boas práticas com outras nações em desenvolvimento, sem condicionalidades financeiras. A série histórica demonstra o auge da projeção externa brasileira entre 2003 e 2012, com forte foco na África e América Latina em áreas como agricultura tropical, saúde (bancos de leite humano) e formação profissional. Após um período de retração orçamental severa entre 2016 e 2022, o investimento foi revitalizado para sustentar a liderança do país na agenda de desenvolvimento sustentável e segurança alimentar. A projeção para 2026 aponta para um patamar de 58 milhões de USD, o maior em 15 anos, consolidando o uso da cooperação técnica como ferramenta estratégica de prestígio e influência internacional.",
-    "dados": [
-      { "ano": 1994, "valor": 4.2 },
-      { "ano": 1995, "valor": 4.5 },
-      { "ano": 1996, "valor": 4.8 },
-      { "ano": 1997, "valor": 5.1 },
-      { "ano": 1998, "valor": 5.5 },
-      { "ano": 1999, "valor": 5.2 },
-      { "ano": 2000, "valor": 6.8 },
-      { "ano": 2001, "valor": 7.5 },
-      { "ano": 2002, "valor": 8.2 },
-      { "ano": 2003, "valor": 12.5 },
-      { "ano": 2004, "valor": 18.4 },
-      { "ano": 2005, "valor": 25.1 },
-      { "ano": 2006, "valor": 32.8 },
-      { "ano": 2007, "valor": 38.6 },
-      { "ano": 2008, "valor": 45.2 },
-      { "ano": 2009, "valor": 52.4 },
-      { "ano": 2010, "valor": 58.7 },
-      { "ano": 2011, "valor": 55.4 },
-      { "ano": 2012, "valor": 50.1 },
-      { "ano": 2013, "valor": 42.6 },
-      { "ano": 2014, "valor": 38.5 },
-      { "ano": 2015, "valor": 30.2 },
-      { "ano": 2016, "valor": 24.8 },
-      { "ano": 2017, "valor": 21.5 },
-      { "ano": 2018, "valor": 20.1 },
-      { "ano": 2019, "valor": 18.4 },
-      { "ano": 2020, "valor": 15.6 },
-      { "ano": 2021, "valor": 14.2 },
-      { "ano": 2022, "valor": 16.8 },
-      { "ano": 2023, "valor": 35.4 },
-      { "ano": 2024, "valor": 44.2 },
-      { "ano": 2025, "valor": 52.6 },
-      { "ano": 2026, "valor": 58 },
-    ],
-    "padrao": false,
-  },
+  }
 };
