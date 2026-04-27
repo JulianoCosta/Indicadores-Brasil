@@ -6976,7 +6976,7 @@
     ],
   },
   "receita_total_governo_pib": {
-    "label": "(FMI) Receita Total do Governo / PIB",
+    "label": "(FMI) Receita Total do Governo",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - World Economic Outlook (GGR_NGDP) / Government Finance Statistics",
     "cat": "Finanças Públicas e Tributação",
@@ -7099,201 +7099,8 @@
       }
     ]
   },
-  "despesa_total_governo_pib": {
-    "label": "(FMI) Despesa Total do Governo / PIB",
-    "unidade": "% do PIB",
-    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO) / Government Finance Statistics (GFS)",
-    "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede a despesa total do governo geral do Brasil como proporção do PIB no ano fiscal correspondente.",
-    "como_interpretar": "Valores maiores indicam maior participação das despesas do governo geral na economia. O indicador inclui despesas correntes, despesas de capital e juros pagos, quando aplicável à metodologia de governo geral. Não mede eficiência do gasto, qualidade dos serviços públicos, composição da despesa nem sustentabilidade fiscal isoladamente.",
-    "metodologia": "O FMI expressa a despesa total do governo geral como percentual do PIB correspondente ao ano fiscal. A série segue conceitos de finanças públicas usados no WEO e no GFS, com base em dados reportados por autoridades nacionais, missões do FMI e ajustes metodológicos de comparabilidade internacional. Foram mantidos apenas anos históricos com valores observados disponíveis publicamente, excluindo anos futuros ou marcados como projeções.",
-    "historico_metodologia": "A série do WEO é revisada a cada edição, podendo incorporar atualizações das contas nacionais, revisões fiscais, mudanças de cobertura institucional do governo geral, reclassificações entre despesas correntes e de capital e ajustes de consistência feitos pelo FMI. O próprio FAQ do WEO informa que dados históricos podem ser atualizados continuamente e que anos posteriores ao 'Latest Actual Annual Data' devem ser tratados como estimativas/projeções. Para evitar projeções, a série foi encerrada em 2024, último ano histórico disponível nas fontes consultadas.",
-    "abrangencia": "Brasil, governo geral, abrangendo os níveis de governo incluídos na definição consolidada usada pelo FMI para comparabilidade internacional.",
-    "periodicidade": "Anual.",
-    "eventos_externos": [
-      {
-        "ano": 1998,
-        "nome": "Crise fiscal",
-        "descricao": "O aumento da despesa como proporção do PIB ocorreu em contexto de pressão cambial, juros elevados e deterioração fiscal anterior à mudança do regime cambial de 1999."
-      },
-      {
-        "ano": 2000,
-        "nome": "Ajuste fiscal",
-        "descricao": "A queda do indicador em 2000 coincide com o período posterior ao ajuste fiscal e à adoção de regras de responsabilidade fiscal no Brasil."
-      },
-      {
-        "ano": 2002,
-        "nome": "Choque eleitoral",
-        "descricao": "A elevação em 2002 ocorreu em ambiente de instabilidade financeira, alta de juros e aumento do custo fiscal associado à dívida pública."
-      },
-      {
-        "ano": 2009,
-        "nome": "Crise global",
-        "descricao": "A crise financeira internacional afetou a atividade econômica e elevou a razão despesa/PIB por queda do denominador e medidas anticíclicas."
-      },
-      {
-        "ano": 2016,
-        "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015-2016 elevou a despesa como proporção do PIB em razão da contração da atividade econômica e da rigidez de gastos obrigatórios."
-      },
-      {
-        "ano": 2020,
-        "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 ampliou gastos públicos emergenciais e reduziu a atividade econômica, pressionando a razão despesa/PIB."
-      },
-      {
-        "ano": 2024,
-        "nome": "Consolidação fiscal",
-        "descricao": "O valor de 2024 mostra queda frente ao pico recente, em contexto de regras fiscais, contenção de despesas e normalização parcial após choques pandêmicos."
-      }
-    ],
-    "comparacao_paises": "O Brasil apresenta despesa total do governo como proporção do PIB em nível intermediário-alto para uma economia emergente: abaixo de economias avançadas europeias com Estados de bem-estar mais amplos, mas acima de muitas economias emergentes com menor cobertura previdenciária, social e federativa.",
-    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte primária é o FMI WEO/GFS. A principal ressalva é que séries fiscais do WEO podem ser revisadas e que a cobertura de governo geral depende da qualidade e abrangência dos dados nacionais reportados ao FMI.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "padrao": false,
-    "fontes_links": [
-      {
-        "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
-        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
-      },
-      {
-        "titulo": "FMI DataMapper - Brazil",
-        "url": "https://www.imf.org/external/datamapper/profile/BRA"
-      },
-      {
-        "titulo": "FRED / Federal Reserve Bank of St. Louis - General Government Total Expenditure for Brazil, fonte FMI",
-        "url": "https://fred.stlouisfed.org/series/BRAGGXGDP"
-      },
-      {
-        "titulo": "FMI WEO - Frequently Asked Questions",
-        "url": "https://data.imf.org/en/Datasets/WEO/Frequently-Asked-Questions"
-      },
-      {
-        "titulo": "FMI - World Economic Outlook Databases",
-        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
-      }
-    ],
-    "dados": [
-      {
-        "ano": 1996,
-        "valor": 38.98
-      },
-      {
-        "ano": 1997,
-        "valor": 39.46
-      },
-      {
-        "ano": 1998,
-        "valor": 42.31
-      },
-      {
-        "ano": 1999,
-        "valor": 40.71
-      },
-      {
-        "ano": 2000,
-        "valor": 35.29
-      },
-      {
-        "ano": 2001,
-        "valor": 36.48
-      },
-      {
-        "ano": 2002,
-        "valor": 39.52
-      },
-      {
-        "ano": 2003,
-        "valor": 39.23
-      },
-      {
-        "ano": 2004,
-        "valor": 37.65
-      },
-      {
-        "ano": 2005,
-        "valor": 39.3
-      },
-      {
-        "ano": 2006,
-        "valor": 39.49
-      },
-      {
-        "ano": 2007,
-        "valor": 38.34
-      },
-      {
-        "ano": 2008,
-        "valor": 37.71
-      },
-      {
-        "ano": 2009,
-        "valor": 38.09
-      },
-      {
-        "ano": 2010,
-        "valor": 39.44
-      },
-      {
-        "ano": 2011,
-        "valor": 37.5761934289
-      },
-      {
-        "ano": 2012,
-        "valor": 37.2231414077
-      },
-      {
-        "ano": 2013,
-        "valor": 37.4487126748
-      },
-      {
-        "ano": 2014,
-        "valor": 38.5160104461
-      },
-      {
-        "ano": 2015,
-        "valor": 38.4852692611
-      },
-      {
-        "ano": 2016,
-        "valor": 39.6649059349
-      },
-      {
-        "ano": 2017,
-        "valor": 38.4770057609
-      },
-      {
-        "ano": 2018,
-        "valor": 38.4909950191
-      },
-      {
-        "ano": 2019,
-        "valor": 38.2982901838
-      },
-      {
-        "ano": 2020,
-        "valor": 37.6828226251
-      },
-      {
-        "ano": 2021,
-        "valor": 37.1091039795
-      },
-      {
-        "ano": 2022,
-        "valor": 36.9679814783
-      },
-      {
-        "ano": 2023,
-        "valor": 36.8398534184
-      },
-      {
-        "ano": 2024,
-        "valor": 36.4260913565
-      }
-    ]
-  },
   "receita_tributaria_pib": {
-    "label": "(OCDE) Receita Tributária / PIB",
+    "label": "(OCDE) Receita Tributária",
     "unidade": "% do PIB",
     "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean; Banco Mundial - World Development Indicators (GC.TAX.TOTL.GD.ZS) como referência metodológica complementar",
     "cat": "Finanças Públicas e Tributação",
@@ -7456,7 +7263,7 @@
     ]
   },
   "composicao_receita_tributaria_bens_servicos": {
-    "label": "(OCDE) Composição da Receita Tributária — Bens e Serviços",
+    "label": "(OCDE) Receita Tributária - Bens e Serviços",
     "unidade": "% da receita tributária total",
     "fonte": "OCDE - Global Revenue Statistics / Revenue Statistics in Latin America and the Caribbean",
     "cat": "Finanças Públicas e Tributação",
@@ -7643,130 +7450,362 @@
     ],
     "padrao": false
   },
-  "despesa_juros_receita": {
-    "label": "(WDI/FMI) Despesa Com Juros Sobre Receita",
-    "unidade": "% da receita do governo central",
-    "fonte": "Banco Mundial - World Development Indicators, com dados do FMI Government Finance Statistics Yearbook and data files",
+  "impostos_renda_lucros_ganhos_capital_receita_tributaria": {
+    "label": "(OCDE) Receita Tributária - Renda, Lucros e Ganhos de Capital",
+    "unidade": "% da receita tributária total",
+    "fonte": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 / Global Revenue Statistics Database",
     "cat": "Finanças Públicas e Tributação",
-    "descricao": "Mede quanto os pagamentos de juros da dívida do governo central representam em relação à receita pública.",
-    "como_interpretar": "Valores maiores indicam que uma parcela maior da receita do governo é consumida por pagamentos de juros, reduzindo o espaço fiscal para despesas primárias, investimento público ou redução de déficit. O indicador não mede sozinho solvência fiscal, qualidade do gasto, composição da dívida ou sustentabilidade intertemporal.",
-    "metodologia": "O Banco Mundial reproduz a série GC.XPN.INTP.RV.ZS do World Development Indicators, baseada no FMI Government Finance Statistics. O numerador inclui pagamentos de juros sobre dívida pública, incluindo títulos, empréstimos de longo prazo e outros instrumentos de dívida, pagos a residentes e não residentes. O denominador é a receita do governo, definida como transações que aumentam o valor econômico líquido de uma unidade ou setor. O valor é expresso como percentual da receita.",
-    "historico_metodologia": "A série segue a estrutura do Government Finance Statistics do FMI. O manual GFS 2014, harmonizado com o SNA 2008, recomenda registro em competência e cobertura padronizada de fluxos fiscais. A própria documentação do WDI alerta que, para muitos países, dados de governo central podem não cobrir todas as unidades governamentais e que estatísticas fiscais podem ser incompletas, defasadas ou não totalmente comparáveis entre países. Para o Brasil, a série observada disponível no WDI para este indicador começa em 2010; não há valores observados de 1994 a 2009 na página oficial consultada.",
-    "abrangencia": "Brasil, governo central, conforme padronização do World Development Indicators/FMI GFS. A série não representa necessariamente o setor público consolidado nem o governo geral completo.",
+    "descricao": "Mede a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total do Brasil.",
+    "como_interpretar": "Valores maiores indicam maior peso relativo da tributação sobre renda, lucros e ganhos de capital dentro da arrecadação tributária total. Valores menores indicam maior dependência relativa de outras bases tributárias, como contribuições sociais, impostos sobre bens e serviços, impostos sobre propriedade, impostos sobre folha de pagamento ou outros tributos.",
+    "metodologia": "Os valores foram calculados a partir da tabela oficial da OCDE para o Brasil, dividindo a receita da categoria 1000 - Taxes on income, profits and capital gains pela Total tax revenue, multiplicando o resultado por 100. Fórmula: valor = (categoria_1000 / receita_tributaria_total) * 100. A classificação segue a OECD Classification of Taxes and Interpretative Guide, na qual a categoria 1000 cobre impostos sobre renda, lucros e ganhos de capital de pessoas físicas, empresas e valores não alocáveis entre as duas categorias.",
+    "historico_metodologia": "A publicação Revenue Statistics in Latin America and the Caribbean 2025 informa dados comparáveis para 1990-2023, com metodologia harmonizada da OCDE. Para o Brasil, os dados estão em base de caixa e encerramento do ano em 31 de dezembro. A OCDE informa que os dados de 2022 foram atualizados com informações detalhadas da publicação Carga Tributária no Brasil, da Secretaria da Receita Federal do Brasil, e que os dados de 2023 vêm dos relatórios mais recentes da Secretaria do Tesouro Nacional e estão sujeitos a revisão na próxima edição. A tabela PDF oficial traz pontos selecionados da série, não todos os anos anuais entre 1994 e 2023; por isso, este JSON inclui apenas os anos diretamente validados na tabela oficial consultada, sem preencher lacunas por interpolação, estimativa ou suposição.",
+    "abrangencia": "Brasil, governo geral, receita tributária total e categoria 1000 da classificação tributária da OCDE.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
-        "ano": 2015,
-        "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015 coincidiu com forte aumento da razão entre pagamentos de juros e receita, chegando ao maior valor da série observada."
+        "ano": 2000,
+        "nome": "Pós-Real",
+        "descricao": "A série já reflete o período posterior à estabilização monetária do Plano Real, com estrutura tributária mais comparável em reais correntes."
       },
       {
-        "ano": 2016,
-        "nome": "Contração fiscal",
-        "descricao": "A continuidade da recessão e o elevado custo da dívida mantiveram a despesa com juros em patamar muito alto em relação à receita."
+        "ano": 2018,
+        "nome": "Pós-recessão",
+        "descricao": "O indicador permaneceu próximo de 22% após a recessão de 2015-2016 e a lenta recuperação econômica subsequente."
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e as contas públicas; a série mostra queda relativa da razão juros/receita em 2020, em meio a mudanças excepcionais de receita, despesa e política monetária."
+        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e a composição da arrecadação, mas a participação da categoria 1000 na receita tributária total ficou próxima ao nível de 2019."
       },
       {
         "ano": 2021,
-        "nome": "Alta Selic",
-        "descricao": "O início do ciclo de aperto monetário no Brasil aumentou gradualmente o custo de rolagem e carregamento da dívida, com reflexos posteriores sobre o peso dos juros."
+        "nome": "Recuperação",
+        "descricao": "A retomada econômica elevou a participação dos impostos sobre renda, lucros e ganhos de capital na receita tributária total."
+      },
+      {
+        "ano": 2022,
+        "nome": "Alta corporativa",
+        "descricao": "A participação da categoria 1000 subiu fortemente em 2022, acompanhando aumento da arrecadação de impostos sobre lucros e rendimentos."
       },
       {
         "ano": 2023,
-        "nome": "Juros altos",
-        "descricao": "A manutenção de juros nominais elevados coincidiu com nova alta da razão entre despesa com juros e receita."
-      },
-      {
-        "ano": 2024,
-        "nome": "Patamar elevado",
-        "descricao": "Mesmo com leve queda frente a 2023, o indicador permaneceu elevado, acima de 30% da receita."
+        "nome": "Revisão pendente",
+        "descricao": "A OCDE informa que os dados de 2023 vêm dos relatórios mais recentes do Tesouro Nacional e estão sujeitos a revisão na edição seguinte."
       }
     ],
-    "comparacao_paises": "O Brasil aparece entre países com carga de juros relativamente alta sobre a receita pública. Em 2024, o valor de 30,1% ficou muito acima do observado em economias avançadas com menor custo de dívida e também acima de muitos emergentes, indicando forte pressão fiscal por juros. A comparação exige cautela porque a série WDI/FMI pode variar em cobertura institucional, base contábil e abrangência fiscal entre países.",
-    "nivel_confiabilidade": "Alto para a série observada disponível no WDI/FMI GFS, por ser fonte oficial internacional e padronizada. A confiabilidade é menor para comparação internacional estrita, pois a própria documentação do WDI informa limitações de cobertura, consolidação, tempestividade e comparabilidade entre países. Valores ausentes de 1994 a 2009 foram excluídos, sem interpolação ou estimativa.",
+    "comparacao_paises": "Em 2023, o Brasil registrou aproximadamente 27,07% da receita tributária total em impostos sobre renda, lucros e ganhos de capital. A média da América Latina e Caribe para impostos sobre renda e lucros foi 29,6% da receita tributária total em 2023. A OCDE informa que, em comparação, PIT e CIT representaram 23,6% e 12,0% da receita tributária nos países da OCDE em 2022, respectivamente, totalizando cerca de 35,6% para essas duas subcategorias.",
+    "nivel_confiabilidade": "Alto para os anos apresentados, pois os valores foram calculados diretamente a partir de dados oficiais da OCDE para Brasil. A limitação é que a tabela PDF consultada não traz todos os anos anuais entre 1994 e 2023; portanto, lacunas não foram preenchidas. Para obter todos os anos de 1994 a 2023, é necessário extrair a série anual completa no OECD Data Explorer/API, usando a mesma categoria 1000 e a medida de participação na receita tributária total.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Interest payments (% of revenue) - Brazil - GC.XPN.INTP.RV.ZS",
-        "url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS?locations=BR"
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
+        "url": "https://www.oecd.org/en/publications/revenue-statistics-in-latin-america-and-the-caribbean-2025_7594fbdd-en.html"
       },
       {
-        "titulo": "Banco Mundial DataBank - Metadata GC.XPN.INTP.RV.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.XPN.INTP.RV.ZS"
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 PDF",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf"
       },
       {
-        "titulo": "Banco Mundial - World Development Indicators DataBank",
-        "url": "https://databank.worldbank.org/source/world-development-indicators"
+        "titulo": "OCDE - Brazil - Tax Revenues - Data Explorer",
+        "url": "https://data-explorer.oecd.org/vis?bp=true&df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_REV_LAC%40DF_REVBRA&df%5Bvs%5D=2.0&fc=Topic&fs%5B0%5D=Topic%2C1%7CTaxation%23TAX%23%7CGlobal+tax+revenues%23TAX_GTR%23&lc=en&pg=0&snb=159"
       },
       {
-        "titulo": "FMI - Government Finance Statistics",
-        "url": "https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA%3AGFS"
+        "titulo": "OCDE - Global Revenue Statistics Database",
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+      },
+      {
+        "titulo": "OCDE - OECD Classification of Taxes and Interpretative Guide",
+        "url": "https://www.oecd.org/en/publications/revenue-statistics-2025_3a264267-en/full-report/the-oecd-classification-of-taxes-and-interpretative-guide_c852c459.html"
       }
     ],
     "dados": [
       {
+        "ano": 2000,
+        "valor": 19.482431849649316
+      },
+      {
+        "ano": 2005,
+        "valor": 21.017019410672415
+      },
+      {
         "ano": 2010,
-        "valor": 24.16
-      },
-      {
-        "ano": 2011,
-        "valor": 26.01
-      },
-      {
-        "ano": 2012,
-        "valor": 23.17
-      },
-      {
-        "ano": 2013,
-        "valor": 24
-      },
-      {
-        "ano": 2014,
-        "valor": 26.93
-      },
-      {
-        "ano": 2015,
-        "valor": 39.91
-      },
-      {
-        "ano": 2016,
-        "valor": 37
-      },
-      {
-        "ano": 2017,
-        "valor": 35.9
+        "valor": 20.96580895311949
       },
       {
         "ano": 2018,
-        "valor": 34.1
+        "valor": 21.90449196213959
       },
       {
         "ano": 2019,
-        "valor": 27.4
+        "valor": 22.797190052871933
       },
       {
         "ano": 2020,
-        "valor": 25.5
+        "valor": 22.682401414729167
       },
       {
         "ano": 2021,
-        "valor": 27.1
+        "valor": 24.132835026831046
       },
       {
         "ano": 2022,
-        "valor": 28.9
+        "valor": 27.713685083470914
       },
       {
         "ano": 2023,
-        "valor": 30.8
+        "valor": 27.071370943485185
+      }
+    ]
+  },
+  "impostos_sobre_propriedade_receita_tributaria": {
+    "label": "(OCDE) Receita Tributária - Propriedade",
+    "unidade": "% da receita tributária total",
+    "fonte": "OCDE - Global Revenue Statistics Database / Revenue Statistics in Latin America and the Caribbean",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a participação dos impostos sobre propriedade na receita tributária total do governo geral brasileiro.",
+    "como_interpretar": "Valores maiores indicam que os impostos sobre uso, posse ou transferência de propriedade têm maior peso na composição da arrecadação tributária total. O indicador não mede carga tributária total, eficiência fiscal, progressividade nem qualidade do gasto público.",
+    "metodologia": "O indicador corresponde à receita classificada pela OCDE no código 4000, Taxes on property, dividida pela receita tributária total do governo geral e multiplicada por 100. A classificação 4000 inclui impostos recorrentes e não recorrentes sobre uso, posse ou transferência de propriedade, como propriedade imóvel, patrimônio líquido, herança, doações e transações financeiras e de capital, conforme a classificação tributária da OCDE.",
+    "historico_metodologia": "A série segue a metodologia padronizada da OCDE para Revenue Statistics, na qual tributos são classificados segundo sua base econômica. A OCDE define impostos como pagamentos compulsórios e sem contraprestação direta ao governo geral. Séries podem ser revisadas quando países atualizam dados fiscais, cobertura institucional, classificação de receitas ou valores de contas nacionais. A fonte oficial mais recente consultada para o Brasil é a edição 2025 de Revenue Statistics in Latin America and the Caribbean, com dados observados até 2023. Não há dado oficial observado de 2024 ou 2025 para este indicador nessa publicação.",
+    "abrangencia": "Brasil, governo geral, incluindo governo federal, estadual/regional, local e fundos de seguridade social quando aplicável, conforme cobertura da OCDE.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises": "Em 2023, os impostos sobre propriedade representaram cerca de 4,83% da receita tributária total do Brasil. Na comparação arredondada da OCDE para estrutura tributária, o Brasil aparece em torno de 5%, abaixo da média da OCDE usada na nota do país, cerca de 8%, e acima da média da América Latina e Caribe, cerca de 4%.",
+    "nivel_confiabilidade": "Alto para os anos explicitamente validados em tabelas e notas oficiais da OCDE. A série abaixo mantém apenas anos diretamente verificáveis nas fontes oficiais consultadas, sem interpolação e sem estimativas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025_2922daa3/7594fbdd-en.pdf"
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025: Brazil",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+      },
+      {
+        "titulo": "OCDE - Tax on property",
+        "url": "https://www.oecd.org/en/data/indicators/tax-on-property.html"
+      },
+      {
+        "titulo": "OCDE - OECD data via API",
+        "url": "https://www.oecd.org/en/data/insights/data-explainers/2024/09/api.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 6.674313855908486
+      },
+      {
+        "ano": 2010,
+        "valor": 4.334761369880737
+      },
+      {
+        "ano": 2018,
+        "valor": 4.4
+      },
+      {
+        "ano": 2019,
+        "valor": 4.6
+      },
+      {
+        "ano": 2022,
+        "valor": 4.750349478716478
+      },
+      {
+        "ano": 2023,
+        "valor": 4.825489273103911
+      }
+    ],
+    "padrao": false
+  },
+  "contribuicoes_sociais_pib": {
+    "label": "(OCDE) Receitas - Contribuições Sociais",
+    "unidade": "% do PIB",
+    "fonte": "OCDE - Revenue Statistics in Latin America and the Caribbean; FMI - Government Finance Statistics",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a arrecadação de contribuições sociais obrigatórias, classificadas pela OCDE no código 2000, como proporção do PIB.",
+    "como_interpretar": "Valores maiores indicam maior peso das contribuições sociais obrigatórias na economia. O indicador não mede a carga tributária total, nem a sustentabilidade previdenciária, nem a qualidade dos benefícios sociais financiados por essas contribuições.",
+    "metodologia": "A OCDE classifica contribuições sociais no código 2000 como pagamentos obrigatórios ao governo geral ligados ao financiamento de benefícios sociais. O indicador é calculado dividindo a receita anual de contribuições sociais pelo PIB nominal do mesmo ano e multiplicando por 100. A estrutura segue a metodologia Revenue Statistics da OCDE, compatível com padrões internacionais de estatísticas fiscais, incluindo o FMI Government Finance Statistics.",
+    "historico_metodologia": "A série da OCDE Revenue Statistics in Latin America and the Caribbean apresenta dados comparáveis de receitas tributárias por categoria. Para o Brasil, a tabela oficial de 2024 informa os valores de referência para 1990, 2000, 2010, 2021 e 2022, e a nota-país de 2025 informa 2023. Não foram incluídos anos intermediários não extraídos diretamente das tabelas oficiais consultadas, para evitar interpolação ou valor não validado. A fonte do Banco Mundial/FMI para 'Social contributions (current LCU)' existe até 2024, mas usa definição GFS em moeda corrente e não é idêntica à série OCDE de contribuições sociais como % do PIB; por isso não foi misturada aos dados do gráfico.",
+    "abrangencia": "Brasil, governo geral, receitas tributárias classificadas segundo a metodologia OCDE Revenue Statistics.",
+    "periodicidade": "Anual, embora as tabelas públicas resumidas da publicação consultada exibam apenas anos selecionados.",
+    "eventos_externos": [
+      {
+        "ano": 1994,
+        "nome": "Plano Real",
+        "descricao": "A estabilização monetária alterou a base nominal da arrecadação e melhorou a comparabilidade fiscal posterior."
+      },
+      {
+        "ano": 2003,
+        "nome": "Reforma previdenciária",
+        "descricao": "A Emenda Constitucional nº 41/2003 alterou regras previdenciárias do setor público e parâmetros contributivos."
+      },
+      {
+        "ano": 2011,
+        "nome": "Desoneração folha",
+        "descricao": "A política de desoneração da folha substituiu parcialmente contribuições previdenciárias patronais sobre folha por contribuição sobre receita bruta em setores selecionados."
+      },
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira reduziu atividade, emprego e massa salarial, afetando a base de arrecadação vinculada ao trabalho formal."
+      },
+      {
+        "ano": 2019,
+        "nome": "Reforma previdenciária",
+        "descricao": "A Emenda Constitucional nº 103/2019 alterou regras previdenciárias e parâmetros contributivos, com efeitos fiscais graduais."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou emprego, massa salarial e PIB, distorcendo temporariamente a relação entre contribuições sociais e PIB."
+      },
+      {
+        "ano": 2023,
+        "nome": "Alta recente",
+        "descricao": "A OCDE registrou aumento de 7,9% do PIB em 2022 para 8,1% do PIB em 2023 nas contribuições sociais do Brasil."
+      }
+    ],
+    "comparacao_paises": "Em 2023, o Brasil registrou 8,1% do PIB em contribuições sociais, acima da média da América Latina e Caribe informada pela OCDE para 2022, de 3,6% do PIB, e abaixo da média da OCDE disponível na tabela de 2021, de 9,0% do PIB.",
+    "nivel_confiabilidade": "Alto para os anos listados, pois os valores vêm diretamente de tabelas oficiais da OCDE Revenue Statistics e de nota-país da OCDE. A série não inclui anos intermediários desde 1994 porque esses valores não foram extraídos diretamente das tabelas oficiais consultadas nesta validação. Não há estimativas nem interpolação nos dados abaixo.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2024",
+        "url": "https://publications.iadb.org/publications/english/document/Revenue-Statistics-in-Latin-America-and-the-Caribbean-2024.pdf"
+      },
+      {
+        "titulo": "OCDE - Revenue Statistics in Latin America and the Caribbean 2025 - Brazil",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/revenue-statistics-in-latin-america-and-the-caribbean-2025-country-notes_29961c77/brazil_b08e62db/f6a5cb34-en.pdf"
+      },
+      {
+        "titulo": "OCDE - Global Revenue Statistics Database",
+        "url": "https://www.oecd.org/en/data/datasets/global-revenue-statistics-database.html"
+      },
+      {
+        "titulo": "Banco Mundial - Social contributions (current LCU) - Brazil",
+        "url": "https://data.worldbank.org/indicator/GC.REV.SOCL.CN?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata GC.REV.SOCL.CN",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.REV.SOCL.CN"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2000,
+        "valor": 7.0
+      },
+      {
+        "ano": 2010,
+        "valor": 8.1
+      },
+      {
+        "ano": 2021,
+        "valor": 7.8
+      },
+      {
+        "ano": 2022,
+        "valor": 7.9
+      },
+      {
+        "ano": 2023,
+        "valor": 8.1
+      }
+    ]
+  },
+  "doacoes_recebidas_receita_total": {
+    "label": "(FMI/WDI) Receitas - Doações e Outras",
+    "unidade": "% da receita",
+    "fonte": "Banco Mundial - World Development Indicators (GC.REV.GOTR.ZS), com dados originais do FMI - Government Finance Statistics Yearbook and data files",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a participação de doações e outras receitas na receita total do governo.",
+    "como_interpretar": "Valores maiores indicam maior peso de doações e outras receitas não classificadas como impostos ou contribuições sociais dentro da receita total. No caso do WDI, o indicador não mede somente doações: inclui também outras receitas, como renda de propriedade, vendas de bens e serviços e receitas diversas.",
+    "metodologia": "Indicador WDI GC.REV.GOTR.ZS. Calculado como doações e outras receitas divididas pela receita total, multiplicado por 100. Doações são transferências recebidas por unidades de governo de outras unidades governamentais residentes ou não residentes ou de organizações internacionais, que não atendem à definição de imposto, subsídio ou contribuição social. Outras receitas incluem toda receita recebível excluindo impostos, contribuições sociais e doações.",
+    "historico_metodologia": "A série vem do FMI Government Finance Statistics, disseminada pelo World Development Indicators do Banco Mundial. A fonte atual disponibiliza dados anuais observados para o Brasil de 2010 a 2024. Não há valores oficiais disponíveis no WDI para 1994-2009 nem valor observado para 2025/2026. A principal ressalva metodológica é que a série WDI GC.REV.GOTR.ZS agrega doações e outras receitas, portanto não deve ser interpretada como doações puras.",
+    "abrangencia": "Brasil, governo conforme cobertura reportada nas estatísticas de finanças públicas do FMI/WDI.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2016,
+        "nome": "Recessão fiscal",
+        "descricao": "A recessão brasileira de 2015-2016 pressionou a arrecadação e alterou a composição relativa das receitas públicas."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 causou forte choque econômico e fiscal, coincidindo com queda do peso de doações e outras receitas na receita total."
+      },
+      {
+        "ano": 2022,
+        "nome": "Alta commodities",
+        "descricao": "O aumento de receitas associadas a renda de propriedade, recursos naturais e componentes não tributários coincidiu com o maior valor recente da série."
       },
       {
         "ano": 2024,
-        "valor": 30.1
+        "nome": "Normalização fiscal",
+        "descricao": "A participação de doações e outras receitas recuou em relação a 2022 e 2023, permanecendo abaixo do pico recente."
+      }
+    ],
+    "comparacao_paises": "Em 2024, o Brasil registrou 19,324% no indicador WDI GC.REV.GOTR.ZS. Esse nível é relevante, mas a comparação internacional exige cautela porque a rubrica agrega doações e outras receitas, e a composição de receitas não tributárias varia muito entre países conforme propriedade estatal, recursos naturais, dividendos públicos, royalties, vendas de bens e serviços e transferências intergovernamentais.",
+    "nivel_confiabilidade": "Alto para comparação internacional padronizada, pois a série é publicada pelo World Development Indicators do Banco Mundial com base no FMI Government Finance Statistics. A confiabilidade é menor para a interpretação estrita como 'doações recebidas', porque o indicador oficial disponível agrega doações e outras receitas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Grants and other revenue (% of revenue) - Brazil",
+        "url": "https://data.worldbank.org/indicator/GC.REV.GOTR.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators - GC.REV.GOTR.ZS - Brazil",
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=GC.REV.GOTR.ZS&source=2"
+      },
+      {
+        "titulo": "CEIC / World Bank WDI - Brazil BR: Grants and Other Revenue",
+        "url": "https://www.ceicdata.com/en/brazil/government-revenue-expenditure-and-finance/br-grants-and-other-revenue"
+      },
+      {
+        "titulo": "World Bank - Indicators API Documentation",
+        "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2016,
+        "valor": 24.5
+      },
+      {
+        "ano": 2017,
+        "valor": 19.1
+      },
+      {
+        "ano": 2018,
+        "valor": 20.9
+      },
+      {
+        "ano": 2019,
+        "valor": 22.6
+      },
+      {
+        "ano": 2020,
+        "valor": 16.1
+      },
+      {
+        "ano": 2021,
+        "valor": 19.3
+      },
+      {
+        "ano": 2022,
+        "valor": 23.6
+      },
+      {
+        "ano": 2023,
+        "valor": 21.5
+      },
+      {
+        "ano": 2024,
+        "valor": 19.324
       }
     ],
     "padrao": false
@@ -7966,6 +8005,327 @@
       { "ano": 2024, "valor": 32.32 },
     ],
     "padrao": false,
+  },
+  "despesa_total_governo_pib": {
+    "label": "(FMI) Despesa Total do Governo",
+    "unidade": "% do PIB",
+    "fonte": "Fundo Monetário Internacional - World Economic Outlook (WEO) / Government Finance Statistics (GFS)",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede a despesa total do governo geral do Brasil como proporção do PIB no ano fiscal correspondente.",
+    "como_interpretar": "Valores maiores indicam maior participação das despesas do governo geral na economia. O indicador inclui despesas correntes, despesas de capital e juros pagos, quando aplicável à metodologia de governo geral. Não mede eficiência do gasto, qualidade dos serviços públicos, composição da despesa nem sustentabilidade fiscal isoladamente.",
+    "metodologia": "O FMI expressa a despesa total do governo geral como percentual do PIB correspondente ao ano fiscal. A série segue conceitos de finanças públicas usados no WEO e no GFS, com base em dados reportados por autoridades nacionais, missões do FMI e ajustes metodológicos de comparabilidade internacional. Foram mantidos apenas anos históricos com valores observados disponíveis publicamente, excluindo anos futuros ou marcados como projeções.",
+    "historico_metodologia": "A série do WEO é revisada a cada edição, podendo incorporar atualizações das contas nacionais, revisões fiscais, mudanças de cobertura institucional do governo geral, reclassificações entre despesas correntes e de capital e ajustes de consistência feitos pelo FMI. O próprio FAQ do WEO informa que dados históricos podem ser atualizados continuamente e que anos posteriores ao 'Latest Actual Annual Data' devem ser tratados como estimativas/projeções. Para evitar projeções, a série foi encerrada em 2024, último ano histórico disponível nas fontes consultadas.",
+    "abrangencia": "Brasil, governo geral, abrangendo os níveis de governo incluídos na definição consolidada usada pelo FMI para comparabilidade internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Crise fiscal",
+        "descricao": "O aumento da despesa como proporção do PIB ocorreu em contexto de pressão cambial, juros elevados e deterioração fiscal anterior à mudança do regime cambial de 1999."
+      },
+      {
+        "ano": 2000,
+        "nome": "Ajuste fiscal",
+        "descricao": "A queda do indicador em 2000 coincide com o período posterior ao ajuste fiscal e à adoção de regras de responsabilidade fiscal no Brasil."
+      },
+      {
+        "ano": 2002,
+        "nome": "Choque eleitoral",
+        "descricao": "A elevação em 2002 ocorreu em ambiente de instabilidade financeira, alta de juros e aumento do custo fiscal associado à dívida pública."
+      },
+      {
+        "ano": 2009,
+        "nome": "Crise global",
+        "descricao": "A crise financeira internacional afetou a atividade econômica e elevou a razão despesa/PIB por queda do denominador e medidas anticíclicas."
+      },
+      {
+        "ano": 2016,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015-2016 elevou a despesa como proporção do PIB em razão da contração da atividade econômica e da rigidez de gastos obrigatórios."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 ampliou gastos públicos emergenciais e reduziu a atividade econômica, pressionando a razão despesa/PIB."
+      },
+      {
+        "ano": 2024,
+        "nome": "Consolidação fiscal",
+        "descricao": "O valor de 2024 mostra queda frente ao pico recente, em contexto de regras fiscais, contenção de despesas e normalização parcial após choques pandêmicos."
+      }
+    ],
+    "comparacao_paises": "O Brasil apresenta despesa total do governo como proporção do PIB em nível intermediário-alto para uma economia emergente: abaixo de economias avançadas europeias com Estados de bem-estar mais amplos, mas acima de muitas economias emergentes com menor cobertura previdenciária, social e federativa.",
+    "nivel_confiabilidade": "Alto para comparação macroeconômica internacional, pois a fonte primária é o FMI WEO/GFS. A principal ressalva é que séries fiscais do WEO podem ser revisadas e que a cobertura de governo geral depende da qualidade e abrangência dos dados nacionais reportados ao FMI.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "padrao": false,
+    "fontes_links": [
+      {
+        "titulo": "FMI Data Portal - World Economic Outlook (WEO)",
+        "url": "https://data.imf.org/en/datasets/IMF.RES:WEO"
+      },
+      {
+        "titulo": "FMI DataMapper - Brazil",
+        "url": "https://www.imf.org/external/datamapper/profile/BRA"
+      },
+      {
+        "titulo": "FRED / Federal Reserve Bank of St. Louis - General Government Total Expenditure for Brazil, fonte FMI",
+        "url": "https://fred.stlouisfed.org/series/BRAGGXGDP"
+      },
+      {
+        "titulo": "FMI WEO - Frequently Asked Questions",
+        "url": "https://data.imf.org/en/Datasets/WEO/Frequently-Asked-Questions"
+      },
+      {
+        "titulo": "FMI - World Economic Outlook Databases",
+        "url": "https://www.imf.org/en/publications/sprolls/world-economic-outlook-databases"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1996,
+        "valor": 38.98
+      },
+      {
+        "ano": 1997,
+        "valor": 39.46
+      },
+      {
+        "ano": 1998,
+        "valor": 42.31
+      },
+      {
+        "ano": 1999,
+        "valor": 40.71
+      },
+      {
+        "ano": 2000,
+        "valor": 35.29
+      },
+      {
+        "ano": 2001,
+        "valor": 36.48
+      },
+      {
+        "ano": 2002,
+        "valor": 39.52
+      },
+      {
+        "ano": 2003,
+        "valor": 39.23
+      },
+      {
+        "ano": 2004,
+        "valor": 37.65
+      },
+      {
+        "ano": 2005,
+        "valor": 39.3
+      },
+      {
+        "ano": 2006,
+        "valor": 39.49
+      },
+      {
+        "ano": 2007,
+        "valor": 38.34
+      },
+      {
+        "ano": 2008,
+        "valor": 37.71
+      },
+      {
+        "ano": 2009,
+        "valor": 38.09
+      },
+      {
+        "ano": 2010,
+        "valor": 39.44
+      },
+      {
+        "ano": 2011,
+        "valor": 37.5761934289
+      },
+      {
+        "ano": 2012,
+        "valor": 37.2231414077
+      },
+      {
+        "ano": 2013,
+        "valor": 37.4487126748
+      },
+      {
+        "ano": 2014,
+        "valor": 38.5160104461
+      },
+      {
+        "ano": 2015,
+        "valor": 38.4852692611
+      },
+      {
+        "ano": 2016,
+        "valor": 39.6649059349
+      },
+      {
+        "ano": 2017,
+        "valor": 38.4770057609
+      },
+      {
+        "ano": 2018,
+        "valor": 38.4909950191
+      },
+      {
+        "ano": 2019,
+        "valor": 38.2982901838
+      },
+      {
+        "ano": 2020,
+        "valor": 37.6828226251
+      },
+      {
+        "ano": 2021,
+        "valor": 37.1091039795
+      },
+      {
+        "ano": 2022,
+        "valor": 36.9679814783
+      },
+      {
+        "ano": 2023,
+        "valor": 36.8398534184
+      },
+      {
+        "ano": 2024,
+        "valor": 36.4260913565
+      }
+    ]
+  },
+  "despesa_juros_receita": {
+    "label": "(WDI/FMI) Gasto Com Juros Sobre Receita",
+    "unidade": "% da receita do governo central",
+    "fonte": "Banco Mundial - World Development Indicators, com dados do FMI Government Finance Statistics Yearbook and data files",
+    "cat": "Finanças Públicas e Tributação",
+    "descricao": "Mede quanto os pagamentos de juros da dívida do governo central representam em relação à receita pública.",
+    "como_interpretar": "Valores maiores indicam que uma parcela maior da receita do governo é consumida por pagamentos de juros, reduzindo o espaço fiscal para despesas primárias, investimento público ou redução de déficit. O indicador não mede sozinho solvência fiscal, qualidade do gasto, composição da dívida ou sustentabilidade intertemporal.",
+    "metodologia": "O Banco Mundial reproduz a série GC.XPN.INTP.RV.ZS do World Development Indicators, baseada no FMI Government Finance Statistics. O numerador inclui pagamentos de juros sobre dívida pública, incluindo títulos, empréstimos de longo prazo e outros instrumentos de dívida, pagos a residentes e não residentes. O denominador é a receita do governo, definida como transações que aumentam o valor econômico líquido de uma unidade ou setor. O valor é expresso como percentual da receita.",
+    "historico_metodologia": "A série segue a estrutura do Government Finance Statistics do FMI. O manual GFS 2014, harmonizado com o SNA 2008, recomenda registro em competência e cobertura padronizada de fluxos fiscais. A própria documentação do WDI alerta que, para muitos países, dados de governo central podem não cobrir todas as unidades governamentais e que estatísticas fiscais podem ser incompletas, defasadas ou não totalmente comparáveis entre países. Para o Brasil, a série observada disponível no WDI para este indicador começa em 2010; não há valores observados de 1994 a 2009 na página oficial consultada.",
+    "abrangencia": "Brasil, governo central, conforme padronização do World Development Indicators/FMI GFS. A série não representa necessariamente o setor público consolidado nem o governo geral completo.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Recessão",
+        "descricao": "A recessão brasileira de 2015 coincidiu com forte aumento da razão entre pagamentos de juros e receita, chegando ao maior valor da série observada."
+      },
+      {
+        "ano": 2016,
+        "nome": "Contração fiscal",
+        "descricao": "A continuidade da recessão e o elevado custo da dívida mantiveram a despesa com juros em patamar muito alto em relação à receita."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou a atividade econômica e as contas públicas; a série mostra queda relativa da razão juros/receita em 2020, em meio a mudanças excepcionais de receita, despesa e política monetária."
+      },
+      {
+        "ano": 2021,
+        "nome": "Alta Selic",
+        "descricao": "O início do ciclo de aperto monetário no Brasil aumentou gradualmente o custo de rolagem e carregamento da dívida, com reflexos posteriores sobre o peso dos juros."
+      },
+      {
+        "ano": 2023,
+        "nome": "Juros altos",
+        "descricao": "A manutenção de juros nominais elevados coincidiu com nova alta da razão entre despesa com juros e receita."
+      },
+      {
+        "ano": 2024,
+        "nome": "Patamar elevado",
+        "descricao": "Mesmo com leve queda frente a 2023, o indicador permaneceu elevado, acima de 30% da receita."
+      }
+    ],
+    "comparacao_paises": "O Brasil aparece entre países com carga de juros relativamente alta sobre a receita pública. Em 2024, o valor de 30,1% ficou muito acima do observado em economias avançadas com menor custo de dívida e também acima de muitos emergentes, indicando forte pressão fiscal por juros. A comparação exige cautela porque a série WDI/FMI pode variar em cobertura institucional, base contábil e abrangência fiscal entre países.",
+    "nivel_confiabilidade": "Alto para a série observada disponível no WDI/FMI GFS, por ser fonte oficial internacional e padronizada. A confiabilidade é menor para comparação internacional estrita, pois a própria documentação do WDI informa limitações de cobertura, consolidação, tempestividade e comparabilidade entre países. Valores ausentes de 1994 a 2009 foram excluídos, sem interpolação ou estimativa.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Interest payments (% of revenue) - Brazil - GC.XPN.INTP.RV.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS?locations=BR"
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata GC.XPN.INTP.RV.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GC.XPN.INTP.RV.ZS"
+      },
+      {
+        "titulo": "Banco Mundial - World Development Indicators DataBank",
+        "url": "https://databank.worldbank.org/source/world-development-indicators"
+      },
+      {
+        "titulo": "FMI - Government Finance Statistics",
+        "url": "https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA%3AGFS"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2010,
+        "valor": 24.16
+      },
+      {
+        "ano": 2011,
+        "valor": 26.01
+      },
+      {
+        "ano": 2012,
+        "valor": 23.17
+      },
+      {
+        "ano": 2013,
+        "valor": 24
+      },
+      {
+        "ano": 2014,
+        "valor": 26.93
+      },
+      {
+        "ano": 2015,
+        "valor": 39.91
+      },
+      {
+        "ano": 2016,
+        "valor": 37
+      },
+      {
+        "ano": 2017,
+        "valor": 35.9
+      },
+      {
+        "ano": 2018,
+        "valor": 34.1
+      },
+      {
+        "ano": 2019,
+        "valor": 27.4
+      },
+      {
+        "ano": 2020,
+        "valor": 25.5
+      },
+      {
+        "ano": 2021,
+        "valor": 27.1
+      },
+      {
+        "ano": 2022,
+        "valor": 28.9
+      },
+      {
+        "ano": 2023,
+        "valor": 30.8
+      },
+      {
+        "ano": 2024,
+        "valor": 30.1
+      }
+    ],
+    "padrao": false
   },
   "gasto_protecao_social_pib": {
     "label": "(FMI/OCDE) Gasto em Proteção Social",
@@ -8918,7 +9278,7 @@
     "label": "(FMI) Gasto em Habitação e Serviços Comunitários",
     "unidade": "% do PIB",
     "fonte": "Fundo Monetário Internacional - Government Finance Statistics, Classification of the Functions of Government (GFS-COFOG); Tesouro Nacional/STN, SOF e IBGE",
-    "cat": "Finanças Públicas",
+    "cat": "Finanças Públicas e Tributação",
     "descricao": "Mede a despesa do governo geral brasileiro com Habitação e Serviços Comunitários, segundo a função COFOG 706, como proporção do Produto Interno Bruto.",
     "como_interpretar": "Valores maiores indicam maior peso das despesas públicas com habitação, desenvolvimento comunitário, abastecimento de água, iluminação pública e serviços comunitários no PIB. O indicador não mede qualidade, eficiência, cobertura dos serviços, déficit habitacional nem resultado social das políticas.",
     "metodologia": "A série usa a Classificação das Funções de Governo (COFOG), padrão OCDE/ONU empregado nas estatísticas de finanças públicas segundo o GFSM 2014 do FMI. O numerador corresponde à despesa consolidada do governo geral brasileiro na função 706 - Habitação e serviços comunitários. O denominador é o PIB nominal anual. A cobertura do governo geral inclui União, Estados e Municípios, com consolidação entre esferas para evitar dupla contagem. Foram mantidos apenas valores oficiais observados publicados pelo Tesouro Nacional/STN, SOF e IBGE em relatórios COFOG.",
