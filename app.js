@@ -1,5 +1,5 @@
 const { useState, useEffect, useMemo, useCallback } = React;
-const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea, ReferenceLine, ReferenceDot } = Recharts;
+const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea, ReferenceLine, ReferenceDot, Label } = Recharts;
 
 // ── Helpers ──────────────────────────────────────────────────
 
@@ -17,18 +17,18 @@ const PRES_ANOS = window.__MANDATOS__ || [];
 function getCategoriaCor(cat) {
   const raw = window.__CATEGORIAS__ || {};
   const search = normalizarCategoria(cat);
-  
+
   // Search for the category by normalizing keys on the fly
   for (const k in raw) {
     if (normalizarCategoria(k) === search) return raw[k];
   }
-  
+
   // Fallback for mojibake or other issues
   const fixedSearch = normalizarCategoria(tentarCorrigirMojibake(cat));
   for (const k in raw) {
     if (normalizarCategoria(k) === fixedSearch) return raw[k];
   }
-  
+
   return '#79c0ff';
 }
 
@@ -92,6 +92,12 @@ function AppAnual() {
   const [anoIni, setAnoIni] = useState(ANO_MINIMO);
   const [anoFim, setAnoFim] = useState(ANO_MAXIMO);
   const [menuAberto, setMenuAberto] = useState(false);
+  const [catsAbertas, setCatsAbertas] = useState([]);
+  const [viewCompacta, setViewCompacta] = useState(false);
+
+  const toggleCat = useCallback(cat => {
+    setCatsAbertas(prev => prev.includes(cat) ? prev.filter(c => c !== cat) : [...prev, cat]);
+  }, []);
 
   useEffect(() => {
     const carregar = () => {
@@ -162,14 +168,6 @@ function AppAnual() {
           <h1>Brasil 1995-2026</h1>
           <div className="subtitle">Explorador de indicadores anuais e contexto presidencial</div>
         </div>
-        <div className="header-actions">
-          <div className="subtitle">
-            {selecionados.length} indicador{selecionados.length === 1 ? "" : "es"} selecionado{selecionados.length === 1 ? "" : "s"}
-          </div>
-          <button type="button" className="action-btn action-btn--header" onClick={limparSelecao} disabled={selecionados.length === 0}>
-            Limpar seleção
-          </button>
-        </div>
       </header>
 
       <div className="app-body">
@@ -179,31 +177,52 @@ function AppAnual() {
 
           {/* Filtro de período */}
           <div className="sidebar-date-range">
-            <div className="sidebar-date-header">
-              <label>Período</label>
-              <div className="sidebar-date-values">
-                <label className="sidebar-date-field">
-                  <span>Inicial</span>
-                  <select value={anoIni} onChange={e => aoMudarAnoInicial(e.target.value)} aria-label="Ano inicial">
-                    {anosDisponiveis.filter(ano => ano <= anoFim).map(ano => (
-                      <option key={`inicio-${ano}`} value={ano}>{ano}</option>
-                    ))}
-                  </select>
-                </label>
-                <label className="sidebar-date-field">
-                  <span>Final</span>
-                  <select value={anoFim} onChange={e => aoMudarAnoFinal(e.target.value)} aria-label="Ano final">
-                    {anosDisponiveis.filter(ano => ano >= anoIni).map(ano => (
-                      <option key={`fim-${ano}`} value={ano}>{ano}</option>
-                    ))}
-                  </select>
-                </label>
-              </div>
+            <div className="sidebar-date-values">
+              <label className="sidebar-date-field">
+                <span>Início</span>
+                <select value={anoIni} onChange={e => aoMudarAnoInicial(e.target.value)} aria-label="Ano inicial">
+                  {anosDisponiveis.filter(ano => ano <= anoFim).map(ano => (
+                    <option key={`inicio-${ano}`} value={ano}>{ano}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="sidebar-date-field">
+                <span>Fim</span>
+                <select value={anoFim} onChange={e => aoMudarAnoFinal(e.target.value)} aria-label="Ano final">
+                  {anosDisponiveis.filter(ano => ano >= anoIni).map(ano => (
+                    <option key={`fim-${ano}`} value={ano}>{ano}</option>
+                  ))}
+                </select>
+              </label>
             </div>
           </div>
 
-          <div className="sidebar-metrics-header">
-            <span className="sidebar-metrics-title">INDICADORES ({totalValidadas})</span>
+          <div className="sidebar-visualization">
+            <div className="sidebar-section-header">
+              <span className="sidebar-section-title">Visualização</span>
+            </div>
+            <div className="view-toggle">
+              <button
+                className={"view-toggle-btn" + (!viewCompacta ? " ativo" : "")}
+                onClick={() => setViewCompacta(false)}
+              >Normal</button>
+              <button
+                className={"view-toggle-btn" + (viewCompacta ? " ativo" : "")}
+                onClick={() => setViewCompacta(true)}
+              >Compacta</button>
+            </div>
+          </div>
+
+          <div className="sidebar-metrics-header sidebar-section-header">
+            <span className="sidebar-section-title">Indicadores ({totalValidadas})</span>
+            <button
+              type="button"
+              className="action-btn--sidebar-clear"
+              onClick={limparSelecao}
+              disabled={selecionados.length === 0}
+            >
+              Limpar seleção
+            </button>
           </div>
 
           {/* Lista de métricas por categoria */}
@@ -212,26 +231,42 @@ function AppAnual() {
             if (validados.length === 0) return null;
             return (
               <div key={cat}>
-                <div className="cat-label" style={{ color: getCategoriaCor(cat) }}>{cat} ({validados.length})</div>
-                <div className="ind-grid">
-                  {validados.map(k => (
-                    <button
-                      key={k}
-                      type="button"
-                      className={"ind-btn" + (selecionados.includes(k) ? ' ativo' : '')}
-                      style={selecionados.includes(k) ? {
-                        border: `1px solid ${getCategoriaCor(cat)}`,
-                        boxShadow: `inset 3px 0 0 ${getCategoriaCor(cat)}`
-                      } : undefined}
-                      onClick={e => { e.preventDefault(); toggle(k); }}
-                    >
-                      <span className="ind-dot" style={{ backgroundColor: getCategoriaCor(cat) }} />
-                      <span className="ind-content">
-                        <span className="ind-label">{meta[k].label}</span>
-                        {meta[k].fonte_sigla && <span className="ind-source-badge">{meta[k].fonte_sigla}</span>}
-                      </span>
-                    </button>
-                  ))}
+                <div
+                  className={"cat-label" + (catsAbertas.includes(cat) ? " aberta" : "")}
+                  style={{
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => toggleCat(cat)}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ transition: 'transform 0.2s', transform: catsAbertas.includes(cat) ? 'rotate(90deg)' : 'none', marginRight: '10px' }}>
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                  <span className="cat-label-text">{cat}</span>
+                  <span className="cat-label-count"><span style={{ color: getCategoriaCor(cat) }}>{validados.length}</span></span>
+                </div>
+                <div className={"ind-grid-wrapper" + (catsAbertas.includes(cat) ? " aberta" : "")}>
+                  <div className="ind-grid-inner">
+                    <div className="ind-grid">
+                      {validados.map(k => (
+                        <button
+                          key={k}
+                          type="button"
+                          className={"ind-btn" + (selecionados.includes(k) ? ' ativo' : '')}
+                          style={selecionados.includes(k) ? {
+                            border: `1px solid ${getCategoriaCor(cat)}`,
+                            boxShadow: `0 4px 12px rgba(0, 0, 0, 0.08), inset 3px 0 0 ${getCategoriaCor(cat)}`
+                          } : undefined}
+                          onClick={e => { e.preventDefault(); toggle(k); }}
+                        >
+                          <span className="ind-dot" style={{ backgroundColor: getCategoriaCor(cat) }} />
+                          <span className="ind-content">
+                            <span className="ind-label">{meta[k].label}</span>
+                            {meta[k].fonte_sigla && <span className="ind-source-badge">{meta[k].fonte_sigla}</span>}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             );
@@ -249,7 +284,19 @@ function AppAnual() {
                 const dadosMetrica = dados[k]?.dados || [];
                 const dadosFiltrados = dadosMetrica.filter(d => d.ano >= anoIni && d.ano <= anoFim);
                 if (!meta || !meta[k]) return null;
-                return <GraficoAnual key={k} dados={dadosFiltrados} info={meta[k]} cor={getCategoriaCor(meta[k].cat)} anoIni={anoIni} anoFim={anoFim} />;
+                return (
+                  <GraficoAnual
+                    key={k}
+                    id={k}
+                    dados={dadosFiltrados}
+                    info={meta[k]}
+                    cor={getCategoriaCor(meta[k].cat)}
+                    anoIni={anoIni}
+                    anoFim={anoFim}
+                    onFechar={() => toggle(k)}
+                    compacta={viewCompacta}
+                  />
+                );
               })
             )}
           </div>
@@ -269,7 +316,7 @@ function AppAnual() {
 
 // ── GraficoAnual ─────────────────────────────────────────────
 
-function GraficoAnual({ dados, info, cor, anoIni, anoFim }) {
+function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, compacta }) {
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
   const comDados = dados.filter(d => d.valor != null);
   const ultimoDado = comDados.length ? comDados[comDados.length - 1] : null;
@@ -361,27 +408,25 @@ ${JSON.stringify(info, null, 2)}`;
       <div className="chart-head">
         <div className="chart-title" style={{ color: cor }}>
           <div className="chart-title__left">
-            {info.label}
-            {info.validacao && (
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a7f37" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" title="Validado">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            )}
+            <span className="chart-title__text">{info.label}</span>
+            <span className="chart-title__unit">{info.unidade}</span>
           </div>
+          <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
         </div>
-        {ultimoDado && (
-          <div className="chart-last-line">
-            <span className="chart-last-line__label">Último valor:</span>
-            <strong className="chart-last-line__value">{formatarValorIndicador(ultimoDado.valor)}</strong>
-            <span className="chart-last-line__year">({ultimoDado.ano})</span>
-          </div>
-        )}
       </div>
 
       {/* Unidade / Fonte */}
       <div className="chart-unit">
-        <strong style={{ color: '#24292f' }}>{info.unidade}</strong>
-        {info.fonte ? ` – Fonte: ${info.fonte}` : ''}
+        {info.fonte && (
+          <span className="chart-unit__source">
+            <span className="chart-unit__source-label">Fonte:</span> {info.fonte}
+          </span>
+        )}
       </div>
 
       {/* Gráfico */}
@@ -427,6 +472,21 @@ ${JSON.stringify(info, null, 2)}`;
               contentStyle={{ background: '#fff', border: '1px solid #d0d7de', fontSize: 14, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,.08)' }}
             />
             <Line type="monotone" dataKey="valor" stroke={cor} strokeWidth={1.5} dot={{ r: 2, fill: cor, strokeWidth: 0 }} activeDot={{ r: 4 }} isAnimationActive={false} connectNulls={false} />
+            {ultimoDado && (() => {
+              const temEvento = info.eventos_externos?.some(e => (e.ano || e.data) === ultimoDado.ano);
+              return (
+                <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
+                  <Label
+                    value={formatarValorIndicador(ultimoDado.valor)}
+                    position={temEvento ? "right" : "bottom"}
+                    offset={temEvento ? 10 : 8}
+                    fill={cor}
+                    fontSize={11}
+                    fontWeight="700"
+                  />
+                </ReferenceDot>
+              );
+            })()}
             {Array.isArray(info.eventos_externos) && [...info.eventos_externos].sort((a, b) => (a.ano || a.data) - (b.ano || b.data)).map((ev, i) => {
               const evAno = ev.ano || ev.data;
               const pt = dados.find(d => d.ano === evAno);
@@ -461,7 +521,7 @@ ${JSON.stringify(info, null, 2)}`;
       )}
 
       {/* Detalhe do evento selecionado */}
-      {eventoAtivo && (
+      {!compacta && eventoAtivo && (
         <div className="event-detail">
           <button className="event-detail__close" onClick={() => setEventoAtivo(null)}>×</button>
           <div className="event-detail__title">{eventoAtivo.ano || eventoAtivo.data}: {eventoAtivo.nome}</div>
@@ -470,39 +530,40 @@ ${JSON.stringify(info, null, 2)}`;
       )}
 
       {/* Metadados */}
-      <div className="chart-meta" style={{ marginTop: eventoAtivo ? 12 : 0 }}>
-        {fixedFields.map(renderField)}
+      {!compacta && (
+        <div className="chart-meta" style={{ marginTop: eventoAtivo ? 12 : 0 }}>
+          {fixedFields.map(renderField)}
 
-        {/* Ações */}
-        {(info.validacao || temExtras) && (
-          <div className="chart-actions">
-            {info.validacao && (
-              <button onClick={copiarParaIA} className="action-btn" title="Exportar para validação em IA">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                </svg>
-                <span>Validar indicador com IA</span>
-              </button>
-            )}
-          </div>
-        )}
+          {/* Ações */}
+          {(info.validacao || temExtras) && (
+            <div className="chart-actions">
+              {temExtras && (
+                <button className="action-btn" onClick={() => setExpandido(!expandido)}>
+                  <span>{expandido ? 'Ver menos' : 'Ver metadados'}</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={"expand-btn__icon" + (expandido ? " rotated" : "")}>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+              )}
+              {info.validacao && (
+                <button onClick={copiarParaIA} className="action-btn" title="Exportar para validação em IA">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                  </svg>
+                  <span>Validar com IA</span>
+                </button>
+              )}
+            </div>
+          )}
 
-        {temExtras && (
-          <button className="action-btn" onClick={() => setExpandido(!expandido)}>
-            <span>{expandido ? 'Ver menos' : 'Ver metadados completos'}</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={"expand-btn__icon" + (expandido ? " rotated" : "")}>
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </button>
-        )}
-
-        {expandido && (
-          <div className="extra-fields">
-            {extraFields.map(renderField)}
-          </div>
-        )}
-      </div>
+          {expandido && (
+            <div className="extra-fields">
+              {extraFields.map(renderField)}
+            </div>
+          )}
+        </div>
+      )}
 
       <ToastValidacao visivel={exibirAviso} aoFechar={() => setExibirAviso(false)} />
     </div>
