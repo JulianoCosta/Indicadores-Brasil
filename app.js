@@ -983,7 +983,7 @@ ${JSON.stringify(info, null, 2)}`;
                                 stroke={selecionado ? cor : "#fff"}
                                 strokeWidth={2}
                               />
-                              {!isMobile && !compacta && (
+                              {!isMobile && (
                                 <g style={{ pointerEvents: "none" }}>
                                   <line
                                     x1={cx}
