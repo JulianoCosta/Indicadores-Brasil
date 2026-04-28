@@ -439,7 +439,6 @@ function AppAnual() {
               <div className="sidebar-section-header">
                 <span className="sidebar-section-title">Janela temporal</span>
               </div>
-              <p className="sidebar-inline-note">Ajuste o período para reposicionar gráficos, eventos e metadados.</p>
 
               <div className="sidebar-date-values">
                 <label className="sidebar-date-field">
@@ -482,9 +481,6 @@ function AppAnual() {
               <div className="sidebar-section-header">
                 <span className="sidebar-section-title">Visualização</span>
               </div>
-              <p className="sidebar-inline-note">
-                Use a opção compacta para foco nos gráficos ou detalhada para contexto completo.
-              </p>
 
               <div className="view-toggle">
                 <button
@@ -525,23 +521,14 @@ function AppAnual() {
                 </svg>
                 <span>{linkCopiado ? "Link copiado" : "Compartilhar link"}</span>
               </button>
-            </div>
-
-            <div className="sidebar-panel sidebar-panel--metrics">
-              <div className="sidebar-metrics-header sidebar-section-header">
-                <span className="sidebar-section-title">Indicadores ({totalValidadas})</span>
-                <button
-                  type="button"
-                  className="action-btn--sidebar-clear"
-                  onClick={limparSelecao}
-                  disabled={selecionados.length === 0}
-                >
-                  Limpar seleção
-                </button>
-              </div>
-              <p className="sidebar-inline-note">
-                Abra uma categoria, combine temas e monte uma grade comparativa sob medida.
-              </p>
+              <button
+                type="button"
+                className="action-btn--sidebar-clear"
+                onClick={limparSelecao}
+                disabled={selecionados.length === 0}
+              >
+                Limpar seleção
+              </button>
             </div>
 
             {Object.entries(cats).map(([cat, keys]) => {
@@ -679,6 +666,13 @@ function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, compacta }) 
   const ticksY = criarTicksEixoY(dominioY);
   const ticksX = criarTicksEixoX(anoIni, anoFim);
   const temEventos = Array.isArray(info.eventos_externos) && info.eventos_externos.length > 0;
+  const alturaGrafico = isMobile ? (compacta ? 126 : 224) : compacta ? 150 : 250;
+  const margemGrafico = {
+    top: isMobile ? 8 : 20,
+    right: isMobile ? 34 : 42,
+    bottom: isMobile ? 20 : 10,
+    left: isMobile ? -8 : 6,
+  };
 
   const copiarParaIA = () => {
     const prompt = `Instruções para a IA: valide a confiabilidade dos dados do indicador abaixo. Verifique se os valores numéricos batem com a fonte oficial citada (${info.fonte}), se a descrição e os eventos históricos condizem com a realidade brasileira e se a metodologia está correta conforme os padrões estatísticos. Informe se encontrou alguma inconsistência significativa ou se os dados são altamente confiáveis.
@@ -780,11 +774,6 @@ ${JSON.stringify(info, null, 2)}`;
       }}
     >
       <div className="chart-head">
-        {!compacta && !isMobile && (
-          <div className="chart-badges">
-            <span className="chart-badge chart-badge--accent">{categoriaLabel}</span>
-          </div>
-        )}
 
         <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
           <svg
@@ -817,15 +806,10 @@ ${JSON.stringify(info, null, 2)}`;
         <div className="no-data">Sem dados no período selecionado.</div>
       ) : (
         <div className="chart-visual">
-          <ResponsiveContainer width="100%" height={compacta ? 150 : 250}>
+          <ResponsiveContainer width="100%" height={alturaGrafico}>
             <LineChart
               data={dadosComEventos}
-              margin={{
-                top: isMobile ? 10 : 20,
-                right: isMobile ? 44 : 42,
-                bottom: isMobile ? 28 : 10,
-                left: isMobile ? -8 : 6,
-              }}
+              margin={margemGrafico}
             >
               {PRES_ANOS.filter(
                 (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
@@ -909,8 +893,8 @@ ${JSON.stringify(info, null, 2)}`;
                 fontSize={isMobile ? 10 : 12}
                 ticks={ticksX}
                 interval={0}
-                tick={isMobile ? { angle: -90, textAnchor: "end", dy: 1 } : true}
-                tickMargin={isMobile ? 12 : 8}
+                tick={isMobile ? { angle: -90, textAnchor: "end", dx: -3, dy: 3 } : true}
+                tickMargin={isMobile ? 8 : 8}
                 allowDecimals={false}
               />
               <YAxis

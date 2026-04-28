@@ -235,14 +235,17 @@ h1 {
 .sidebar-anual__scroll {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   min-height: 100%;
   padding: 10px 10px 14px;
 }
 
 .sidebar-panel {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   border-radius: 12px;
+  gap: 10px;
   border: 0;
   background: var(--surface-2);
   box-shadow: none;
@@ -321,11 +324,6 @@ h1 {
   color: var(--text-strong);
 }
 
-.sidebar-visualization {
-  display: flex;
-  flex-direction: column;
-}
-
 .view-toggle {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -371,7 +369,6 @@ h1 {
   gap: 8px;
   width: 100%;
   min-height: 36px;
-  margin-top: 10px;
   border: 1px solid var(--border-medium);
   border-radius: 10px;
   background: #ffffff;
@@ -723,6 +720,9 @@ h1 {
 
 .chart-box--compact {
   padding: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .chart-head {
@@ -982,7 +982,7 @@ h1 {
   padding-left: 20px;
 }
 
-.sources-list li + li {
+.sources-list li+li {
   margin-top: 4px;
 }
 
@@ -1187,6 +1187,7 @@ h1 {
 }
 
 @media (max-width: 1180px) {
+
   .site-header,
   .dashboard-hero {
     grid-template-columns: 1fr;
@@ -1224,6 +1225,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
   html,
   body {
     overflow-x: hidden;
