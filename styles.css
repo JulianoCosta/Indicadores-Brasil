@@ -1393,6 +1393,13 @@ h1 {
     border-radius: 0;
   }
 
+  .chart-description,
+  .chart-meta .field-block,
+  .event-item__desc {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
   .chart-actions {
     flex-direction: column;
   }

@@ -820,7 +820,12 @@ ${JSON.stringify(info, null, 2)}`;
           <ResponsiveContainer width="100%" height={compacta ? 150 : 250}>
             <LineChart
               data={dadosComEventos}
-              margin={{ top: isMobile ? 10 : 20, right: isMobile ? 34 : 22, bottom: 10, left: isMobile ? -8 : 6 }}
+              margin={{
+                top: isMobile ? 10 : 20,
+                right: isMobile ? 44 : 42,
+                bottom: isMobile ? 28 : 10,
+                left: isMobile ? -8 : 6,
+              }}
             >
               {PRES_ANOS.filter(
                 (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
@@ -904,7 +909,8 @@ ${JSON.stringify(info, null, 2)}`;
                 fontSize={isMobile ? 10 : 12}
                 ticks={ticksX}
                 interval={0}
-                tickMargin={8}
+                tick={isMobile ? { angle: -90, textAnchor: "end", dy: 1 } : true}
+                tickMargin={isMobile ? 12 : 8}
                 allowDecimals={false}
               />
               <YAxis
@@ -945,24 +951,18 @@ ${JSON.stringify(info, null, 2)}`;
                 connectNulls={false}
               />
 
-              {ultimoDado &&
-                (() => {
-                  const temEvento = info.eventos_externos?.some(
-                    (evento) => (evento.ano || evento.data) === ultimoDado.ano,
-                  );
-                  return (
-                    <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
-                      <Label
-                        value={formatarValorIndicador(ultimoDado.valor)}
-                        position={isMobile ? "left" : temEvento ? "right" : "bottom"}
-                        offset={isMobile ? 8 : temEvento ? 10 : 8}
-                        fill={cor}
-                        fontSize={11}
-                        fontWeight="700"
-                      />
-                    </ReferenceDot>
-                  );
-                })()}
+              {ultimoDado && (
+                <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
+                  <Label
+                    value={formatarValorIndicador(ultimoDado.valor)}
+                    position="right"
+                    offset={10}
+                    fill={cor}
+                    fontSize={11}
+                    fontWeight="700"
+                  />
+                </ReferenceDot>
+              )}
 
               {Array.isArray(info.eventos_externos) &&
                 [...info.eventos_externos]
