@@ -184,6 +184,58 @@ function abreviarEvento(nome) {
 
 const ANO_MINIMO = 1995;
 const ANO_MAXIMO = 2026;
+const VISAO_COMPACTA = "compacta";
+const VISAO_DETALHADA = "detalhada";
+const PARAM_VISAO = "visao";
+const PARAM_INDICADORES = "indicadores";
+const PARAM_ANO_INICIO = "inicio";
+const PARAM_ANO_FIM = "fim";
+
+function lerAnoCompartilhado(params, nome) {
+  if (!params.has(nome)) return null;
+  const valor = Number(params.get(nome));
+  if (!Number.isInteger(valor)) return null;
+  return Math.min(ANO_MAXIMO, Math.max(ANO_MINIMO, valor));
+}
+
+function lerEstadoCompartilhado(keysValidas) {
+  if (typeof window === "undefined") return { compacta: null, indicadores: null, periodo: null };
+
+  const params = new URLSearchParams(window.location.search);
+  const visao = String(params.get(PARAM_VISAO) || "").toLowerCase();
+  const compacta = visao === VISAO_COMPACTA ? true : visao === VISAO_DETALHADA ? false : null;
+  const anoInicioParam = lerAnoCompartilhado(params, PARAM_ANO_INICIO);
+  const anoFimParam = lerAnoCompartilhado(params, PARAM_ANO_FIM);
+  let indicadores = null;
+  let periodo = null;
+
+  if (params.has(PARAM_INDICADORES)) {
+    const validas = new Set(keysValidas);
+    indicadores = params
+      .get(PARAM_INDICADORES)
+      .split(",")
+      .map((key) => key.trim())
+      .filter((key, index, todas) => validas.has(key) && todas.indexOf(key) === index);
+  }
+
+  if (anoInicioParam !== null || anoFimParam !== null) {
+    const anoInicio = anoInicioParam ?? ANO_MINIMO;
+    const anoFim = anoFimParam ?? ANO_MAXIMO;
+    periodo =
+      anoInicio <= anoFim ? { anoIni: anoInicio, anoFim } : { anoIni: anoFim, anoFim: anoInicio };
+  }
+
+  return { compacta, indicadores, periodo };
+}
+
+function criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim) {
+  const url = new URL(window.location.href);
+  url.searchParams.set(PARAM_VISAO, viewCompacta ? VISAO_COMPACTA : VISAO_DETALHADA);
+  url.searchParams.set(PARAM_INDICADORES, selecionados.join(","));
+  url.searchParams.set(PARAM_ANO_INICIO, anoIni);
+  url.searchParams.set(PARAM_ANO_FIM, anoFim);
+  return url.toString();
+}
 
 function AppAnual() {
   const [meta, setMeta] = useState(null);
@@ -196,6 +248,7 @@ function AppAnual() {
   const [menuAberto, setMenuAberto] = useState(false);
   const [catsAbertas, setCatsAbertas] = useState([]);
   const [viewCompacta, setViewCompacta] = useState(false);
+  const [linkCopiado, setLinkCopiado] = useState(false);
 
   const toggleCat = useCallback((cat) => {
     setCatsAbertas((prev) => (prev.includes(cat) ? prev.filter((item) => item !== cat) : [...prev, cat]));
@@ -216,9 +269,25 @@ function AppAnual() {
 
         const keys = Object.keys(jsonCorrigido);
         if (keys.length > 0) {
+          const estadoCompartilhado = lerEstadoCompartilhado(keys);
           const defaults = keys.filter((key) => jsonCorrigido[key].padrao === true);
           const fallback = keys.filter((key) => jsonCorrigido[key].validacao).slice(0, 3);
-          const iniciais = defaults.length > 0 ? defaults : fallback;
+          const iniciais =
+            estadoCompartilhado.indicadores !== null
+              ? estadoCompartilhado.indicadores
+              : defaults.length > 0
+                ? defaults
+                : fallback;
+
+          if (estadoCompartilhado.compacta !== null) {
+            setViewCompacta(estadoCompartilhado.compacta);
+          }
+
+          if (estadoCompartilhado.periodo !== null) {
+            setAnoIni(estadoCompartilhado.periodo.anoIni);
+            setAnoFim(estadoCompartilhado.periodo.anoFim);
+          }
+
           setSelecionados(iniciais);
 
           const categoriasAbertas = [...new Set(iniciais.map((key) => jsonCorrigido[key].cat))];
@@ -234,6 +303,15 @@ function AppAnual() {
 
     carregar();
   }, []);
+
+  useEffect(() => {
+    if (loading) return;
+
+    const proximaUrl = criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim);
+    if (proximaUrl !== window.location.href) {
+      window.history.replaceState(null, "", proximaUrl);
+    }
+  }, [anoFim, anoIni, loading, selecionados, viewCompacta]);
 
   const cats = useMemo(() => {
     if (!meta) return {};
@@ -254,6 +332,24 @@ function AppAnual() {
   const limparSelecao = useCallback(() => {
     setSelecionados([]);
   }, []);
+
+  const compartilharVisaoAtual = useCallback(() => {
+    const url = criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim);
+
+    const concluir = () => {
+      setLinkCopiado(true);
+      setTimeout(() => setLinkCopiado(false), 2500);
+    };
+
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard
+        .writeText(url)
+        .then(concluir)
+        .catch(() => copiarFallback(url, concluir));
+    } else {
+      copiarFallback(url, concluir);
+    }
+  }, [anoFim, anoIni, selecionados, viewCompacta]);
 
   const anosDisponiveis = useMemo(() => {
     const anos = [];
@@ -405,6 +501,31 @@ function AppAnual() {
                   Compacta
                 </button>
               </div>
+
+              <button
+                type="button"
+                className={"share-view-btn" + (linkCopiado ? " copiado" : "")}
+                onClick={compartilharVisaoAtual}
+                title="Copiar link da visao atual"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="18" cy="5" r="3" />
+                  <circle cx="6" cy="12" r="3" />
+                  <circle cx="18" cy="19" r="3" />
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <span>{linkCopiado ? "Link copiado" : "Compartilhar link"}</span>
+              </button>
             </div>
 
             <div className="sidebar-panel sidebar-panel--metrics">
