@@ -62,9 +62,9 @@ function hexToRgba(hex, alpha) {
   const normalized =
     clean.length === 3
       ? clean
-        .split("")
-        .map((char) => char + char)
-        .join("")
+          .split("")
+          .map((char) => char + char)
+          .join("")
       : clean;
 
   if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
@@ -221,8 +221,7 @@ function lerEstadoCompartilhado(keysValidas) {
   if (anoInicioParam !== null || anoFimParam !== null) {
     const anoInicio = anoInicioParam ?? ANO_MINIMO;
     const anoFim = anoFimParam ?? ANO_MAXIMO;
-    periodo =
-      anoInicio <= anoFim ? { anoIni: anoInicio, anoFim } : { anoIni: anoFim, anoFim: anoInicio };
+    periodo = anoInicio <= anoFim ? { anoIni: anoInicio, anoFim } : { anoIni: anoFim, anoFim: anoInicio };
   }
 
   return { compacta, indicadores, periodo };
@@ -780,12 +779,10 @@ ${JSON.stringify(info, null, 2)}`;
         "--chart-accent-wash": hexToRgba(cor, 0.1),
       }}
     >
-
       <div className="chart-head">
         {!compacta && (
           <div className="chart-badges">
             <span className="chart-badge chart-badge--accent">{categoriaLabel}</span>
-            {info.fonte_sigla && <span className="chart-badge">{info.fonte_sigla}</span>}
           </div>
         )}
 
@@ -807,6 +804,7 @@ ${JSON.stringify(info, null, 2)}`;
 
         <div className="chart-title">
           <div className="chart-title__left">
+            {info.fonte_sigla && <span className="chart-title__source">{info.fonte_sigla}</span>}
             <span className="chart-title__text">{info.label}</span>
             <span className="chart-title__unit">{info.unidade}</span>
           </div>
@@ -822,7 +820,7 @@ ${JSON.stringify(info, null, 2)}`;
           <ResponsiveContainer width="100%" height={compacta ? 150 : 250}>
             <LineChart
               data={dadosComEventos}
-              margin={{ top: isMobile ? 10 : 20, right: isMobile ? 8 : 22, bottom: 10, left: isMobile ? -8 : 6 }}
+              margin={{ top: isMobile ? 10 : 20, right: isMobile ? 34 : 22, bottom: 10, left: isMobile ? -8 : 6 }}
             >
               {PRES_ANOS.filter(
                 (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
@@ -956,8 +954,8 @@ ${JSON.stringify(info, null, 2)}`;
                     <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
                       <Label
                         value={formatarValorIndicador(ultimoDado.valor)}
-                        position={temEvento ? "right" : "bottom"}
-                        offset={temEvento ? 10 : 8}
+                        position={isMobile ? "left" : temEvento ? "right" : "bottom"}
+                        offset={isMobile ? 8 : temEvento ? 10 : 8}
                         fill={cor}
                         fontSize={11}
                         fontWeight="700"
@@ -1167,7 +1165,7 @@ function copiarFallback(texto, callback) {
 
   try {
     document.execCommand("copy");
-  } catch (error) { }
+  } catch (error) {}
 
   document.body.removeChild(el);
   callback();

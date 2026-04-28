@@ -16,28 +16,28 @@ window.__MANDATOS__ = [
   {
     nome: "Lula I",
     partido: "PT",
-    cor: "#f87171",
+    cor: "#ff5454ff",
     ini: 2003,
     fim: 2007
   },
   {
     nome: "Lula II",
     partido: "PT",
-    cor: "#f87171",
+    cor: "#ff5454ff",
     ini: 2007,
     fim: 2011
   },
   {
     nome: "Dilma I",
     partido: "PT",
-    cor: "#f87171",
+    cor: "#ff9191ff",
     ini: 2011,
     fim: 2015
   },
   {
     nome: "Dilma II",
     partido: "PT",
-    cor: "#f87171",
+    cor: "#ff9191ff",
     ini: 2015,
     fim: 2017
   },
@@ -58,7 +58,7 @@ window.__MANDATOS__ = [
   {
     nome: "Lula III",
     partido: "PT",
-    cor: "#f87171",
+    cor: "#ff5454ff",
     ini: 2023,
     fim: 2027
   }
