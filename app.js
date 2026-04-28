@@ -62,9 +62,9 @@ function hexToRgba(hex, alpha) {
   const normalized =
     clean.length === 3
       ? clean
-          .split("")
-          .map((char) => char + char)
-          .join("")
+        .split("")
+        .map((char) => char + char)
+        .join("")
       : clean;
 
   if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
@@ -780,7 +780,7 @@ ${JSON.stringify(info, null, 2)}`;
       }}
     >
       <div className="chart-head">
-        {!compacta && (
+        {!compacta && !isMobile && (
           <div className="chart-badges">
             <span className="chart-badge chart-badge--accent">{categoriaLabel}</span>
           </div>
@@ -1165,7 +1165,7 @@ function copiarFallback(texto, callback) {
 
   try {
     document.execCommand("copy");
-  } catch (error) {}
+  } catch (error) { }
 
   document.body.removeChild(el);
   callback();
