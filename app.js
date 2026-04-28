@@ -660,18 +660,16 @@ function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, compacta }) 
   const [eventoAtivo, setEventoAtivo] = React.useState(null);
   const [exibirAviso, setExibirAviso] = React.useState(false);
 
-  const categoriaLabel = info.cat || "Indicador";
   const valoresVisiveis = comDados.map((item) => item.valor);
   const dominioY = criarDominioEixoY(valoresVisiveis);
   const ticksY = criarTicksEixoY(dominioY);
   const ticksX = criarTicksEixoX(anoIni, anoFim);
-  const temEventos = Array.isArray(info.eventos_externos) && info.eventos_externos.length > 0;
-  const alturaGrafico = isMobile ? (compacta ? 126 : 224) : compacta ? 150 : 250;
+  const alturaGrafico = isMobile ? (compacta ? 150 : 220) : compacta ? 150 : 220;
   const margemGrafico = {
-    top: isMobile ? 8 : 20,
-    right: isMobile ? 34 : 42,
-    bottom: isMobile ? 20 : 10,
-    left: isMobile ? -8 : 6,
+    top: isMobile ? 0 : 5,
+    right: isMobile ? 25 : 15,
+    bottom: isMobile ? 15 : 0,
+    left: isMobile ? -8 : -2,
   };
 
   const copiarParaIA = () => {
@@ -800,7 +798,7 @@ ${JSON.stringify(info, null, 2)}`;
         </div>
       </div>
 
-      {!compacta && info.descricao && <div className="field-block chart-description">{info.descricao}</div>}
+      {info.descricao && <div className="field-block chart-description">{info.descricao}</div>}
 
       {comDados.length === 0 ? (
         <div className="no-data">Sem dados no período selecionado.</div>
