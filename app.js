@@ -1,4 +1,4 @@
-const { useState, useEffect, useMemo, useCallback } = React;
+const { useState, useEffect, useLayoutEffect, useMemo, useCallback } = React;
 const {
   LineChart,
   Line,
@@ -252,6 +252,9 @@ function AppAnual() {
   const [indicadoresSaindo, setIndicadoresSaindo] = useState([]);
   const refsIndicadores = React.useRef({});
   const timeoutsAnimacao = React.useRef({});
+  const posicoesAntesReordenacao = React.useRef(null);
+  const framesReordenacao = React.useRef([]);
+  const timeoutsReordenacao = React.useRef([]);
 
   const toggleCat = useCallback((cat) => {
     setCatsAbertas((prev) => (prev.includes(cat) ? prev.filter((item) => item !== cat) : [...prev, cat]));
@@ -334,6 +337,8 @@ function AppAnual() {
   useEffect(() => {
     return () => {
       Object.values(timeoutsAnimacao.current).forEach(clearTimeout);
+      framesReordenacao.current.forEach(cancelAnimationFrame);
+      timeoutsReordenacao.current.forEach(clearTimeout);
     };
   }, []);
 
@@ -379,9 +384,95 @@ function AppAnual() {
     selecionados.forEach(removerIndicador);
   }, [removerIndicador, selecionados]);
 
+  const medirPosicoesIndicadoresVisiveis = useCallback(() => {
+    const saindo = new Set(indicadoresSaindo);
+    const posicoes = new Map();
+
+    selecionados.forEach((key) => {
+      if (saindo.has(key)) return;
+
+      const node = refsIndicadores.current[key];
+      if (node) {
+        posicoes.set(key, node.getBoundingClientRect().top);
+      }
+    });
+
+    return posicoes;
+  }, [indicadoresSaindo, selecionados]);
+
+  const moverIndicador = useCallback(
+    (key, direcao) => {
+      posicoesAntesReordenacao.current = medirPosicoesIndicadoresVisiveis();
+
+      setSelecionados((prev) => {
+        const saindo = new Set(indicadoresSaindo);
+        const visiveis = prev.filter((item) => !saindo.has(item));
+        const origem = visiveis.indexOf(key);
+        const destino = origem + direcao;
+
+        if (origem < 0 || destino < 0 || destino >= visiveis.length) {
+          return prev;
+        }
+
+        const reordenados = [...visiveis];
+        const [item] = reordenados.splice(origem, 1);
+        reordenados.splice(destino, 0, item);
+
+        return prev.map((item) => (saindo.has(item) ? item : reordenados.shift()));
+      });
+    },
+    [indicadoresSaindo, medirPosicoesIndicadoresVisiveis],
+  );
+
   const selecionadosAtivos = useMemo(() => {
     return selecionados.filter((key) => !indicadoresSaindo.includes(key));
   }, [indicadoresSaindo, selecionados]);
+
+  useLayoutEffect(() => {
+    const posicoesAnteriores = posicoesAntesReordenacao.current;
+    if (!posicoesAnteriores) return;
+
+    posicoesAntesReordenacao.current = null;
+    framesReordenacao.current.forEach(cancelAnimationFrame);
+    timeoutsReordenacao.current.forEach(clearTimeout);
+    framesReordenacao.current = [];
+    timeoutsReordenacao.current = [];
+
+    selecionadosAtivos.forEach((key) => {
+      const node = refsIndicadores.current[key];
+      const topoAnterior = posicoesAnteriores.get(key);
+      if (!node || topoAnterior === undefined) return;
+
+      const deslocamento = topoAnterior - node.getBoundingClientRect().top;
+      if (Math.abs(deslocamento) < 1) return;
+
+      node.classList.add("chart-card-shell--reordenando");
+      node.style.transition = "none";
+      node.style.transform = `translateY(${deslocamento}px)`;
+      node.getBoundingClientRect();
+
+      const frame = requestAnimationFrame(() => {
+        let fallback;
+        const limparAnimacao = (event) => {
+          if (event && event.target !== node) return;
+
+          node.classList.remove("chart-card-shell--reordenando");
+          node.style.transition = "";
+          node.style.transform = "";
+          node.removeEventListener("transitionend", limparAnimacao);
+          clearTimeout(fallback);
+        };
+
+        node.addEventListener("transitionend", limparAnimacao);
+        node.style.transition = "";
+        node.style.transform = "";
+        fallback = setTimeout(limparAnimacao, 420);
+        timeoutsReordenacao.current.push(fallback);
+      });
+
+      framesReordenacao.current.push(frame);
+    });
+  }, [selecionadosAtivos]);
 
   const registrarRefIndicador = useCallback((key, node) => {
     if (node) {
@@ -657,6 +748,7 @@ function AppAnual() {
                 selecionados.map((key) => {
                   const dadosMetrica = dados[key]?.dados || [];
                   const dadosFiltrados = dadosMetrica.filter((item) => item.ano >= anoIni && item.ano <= anoFim);
+                  const posicaoAtiva = selecionadosAtivos.indexOf(key);
 
                   if (!meta || !meta[key]) return null;
 
@@ -677,6 +769,9 @@ function AppAnual() {
                         anoIni={anoIni}
                         anoFim={anoFim}
                         onFechar={() => removerIndicador(key)}
+                        onMover={(direcao) => moverIndicador(key, direcao)}
+                        podeSubir={posicaoAtiva > 0}
+                        podeDescer={posicaoAtiva >= 0 && posicaoAtiva < selecionadosAtivos.length - 1}
                         compacta={viewCompacta}
                       />
                     </div>
@@ -707,7 +802,7 @@ function AppAnual() {
   );
 }
 
-function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, compacta }) {
+function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, onMover, podeSubir, podeDescer, compacta }) {
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
   const comDados = dados.filter((item) => item.valor != null);
   const ultimoDado = comDados.length ? comDados[comDados.length - 1] : null;
@@ -857,21 +952,67 @@ ${JSON.stringify(info, null, 2)}`;
       }}
     >
       <div className="chart-head">
-        <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <div className="chart-card-actions" aria-label="Acoes do indicador">
+          <button
+            type="button"
+            className="chart-order-btn"
+            onClick={() => onMover(-1)}
+            disabled={!podeSubir}
+            title="Subir indicador"
+            aria-label="Subir indicador"
           >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 19V5" />
+              <path d="M5 12l7-7 7 7" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            className="chart-order-btn"
+            onClick={() => onMover(1)}
+            disabled={!podeDescer}
+            title="Descer indicador"
+            aria-label="Descer indicador"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 5v14" />
+              <path d="M19 12l-7 7-7-7" />
+            </svg>
+          </button>
+          <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
 
         <div className="chart-title">
           <div className="chart-title__left">
