@@ -418,16 +418,8 @@ function AppAnual() {
             <strong>{periodoSelecionado}</strong>
           </div>
           <div className="header-pill">
-            <span>Mandatos</span>
-            <strong>{totalMandatos}</strong>
-          </div>
-          <div className="header-pill">
             <span>Indicadores</span>
             <strong>{totalValidadas}</strong>
-          </div>
-          <div className="header-pill">
-            <span>Categorias</span>
-            <strong>{totalCategorias}</strong>
           </div>
         </div>
       </header>
@@ -523,7 +515,7 @@ function AppAnual() {
               </button>
               <button
                 type="button"
-                className="action-btn--sidebar-clear"
+                className="action-btn clear-selection-btn"
                 onClick={limparSelecao}
                 disabled={selecionados.length === 0}
               >

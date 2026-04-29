@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: light;
-  --bg-app: #eef2f7;
+  --bg-app: #f1f3f6;
   --bg-app-top: #f6f8fb;
   --surface-1: #ffffff;
   --surface-2: #f2f5f9;
@@ -16,12 +16,12 @@
   --text-inverse: #ffffff;
   --border-subtle: rgba(15, 23, 42, 0.08);
   --border-medium: rgba(15, 23, 42, 0.12);
-  --accent-primary: rgb(42, 44, 49);
+  --accent-primary: rgb(0, 85, 255);
   --accent-success: #18a566;
   --accent-error: #d34d62;
   --shadow-xl: 0 12px 32px rgba(15, 23, 42, 0.06);
   --shadow-lg: 0 10px 24px rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 6px 18px rgba(58, 67, 86, 0.05);
   --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
   --shadow-panel: 0 14px 34px rgba(15, 23, 42, 0.12);
   --radius-xl: 24px;
@@ -114,8 +114,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 14px 16px;
+  gap: 10px;
+  padding: 10px;
   border: 0;
   border-radius: 18px;
   background: var(--surface-1);
@@ -235,9 +235,9 @@ h1 {
 .sidebar-anual__scroll {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   min-height: 100%;
-  padding: 10px 10px 14px;
+  padding: 10px;
 }
 
 .sidebar-panel {
@@ -245,7 +245,7 @@ h1 {
   flex-direction: column;
   padding: 10px;
   border-radius: 12px;
-  gap: 10px;
+  gap: 8px;
   border: 0;
   background: var(--surface-2);
   box-shadow: none;
@@ -303,14 +303,14 @@ h1 {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-soft);
+  color: var(--text-strong);
   font-weight: 700;
 }
 
 .sidebar-date-values {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .sidebar-date-field {
@@ -327,11 +327,11 @@ h1 {
 .view-toggle {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .view-toggle-btn {
-  min-height: 36px;
+  min-height: 32px;
   border: 1px solid transparent;
   border-radius: 10px;
   background: #ffffff;
@@ -350,15 +350,7 @@ h1 {
 }
 
 .view-toggle-btn.ativo {
-  background: var(--accent-primary);
-  color: var(--text-inverse);
-  box-shadow:
-    0 6px 14px rgba(21, 94, 239, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.24);
-}
-
-.view-toggle-btn.ativo:hover {
-  background: var(--accent-primary);
+  background: var(--text-soft);
   color: var(--text-inverse);
 }
 
@@ -368,7 +360,7 @@ h1 {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  min-height: 36px;
+  min-height: 32px;
   border: 1px solid var(--border-medium);
   border-radius: 10px;
   background: #ffffff;
@@ -390,23 +382,6 @@ h1 {
   border-color: rgba(24, 165, 102, 0.28);
   background: rgba(24, 165, 102, 0.1);
   color: #11784c;
-}
-
-.action-btn--sidebar-clear {
-  min-height: auto;
-  padding: 0;
-  border: none;
-  background: transparent;
-  color: var(--text-secondary);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.action-btn--sidebar-clear:disabled {
-  opacity: 0.35;
-  cursor: default;
 }
 
 .cat-label {
@@ -465,13 +440,13 @@ h1 {
 }
 
 .ind-grid-wrapper.aberta .ind-grid-inner {
-  padding: 5px 0 1px 8px;
+  padding: 8px 0 1px 8px;
 }
 
 .ind-grid {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 
 .ind-btn {
@@ -624,8 +599,7 @@ h1 {
 .legend-mandatos-mobile {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  padding: 4px 0 6px;
+  gap: 12px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -998,7 +972,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 34px;
+  min-height: 32px;
   padding: 0 10px;
   border: 1px solid var(--border-medium);
   border-radius: 9px;
@@ -1023,6 +997,11 @@ h1 {
 .action-btn:disabled {
   opacity: 0.5;
   cursor: default;
+}
+
+.clear-selection-btn {
+  width: 100%;
+  justify-content: center;
 }
 
 .expand-btn__icon {
@@ -1248,7 +1227,7 @@ h1 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    padding: 12px;
+    padding: 10px;
     border-radius: 16px;
     overflow: hidden;
   }
@@ -1330,7 +1309,7 @@ h1 {
     max-width: 100%;
     min-width: 0;
     overflow: hidden;
-    gap: 8px;
+    gap: 10px;
   }
 
   .dashboard-hero {
@@ -1358,8 +1337,7 @@ h1 {
   }
 
   .legend-mandatos-mobile {
-    gap: 6px;
-    padding: 8px 0;
+    gap: 8px;
   }
 
   .chart-box {
