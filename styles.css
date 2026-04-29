@@ -788,7 +788,7 @@ h1 {
   flex-direction: column;
   position: relative;
   padding: 12px;
-  gap: 8px;
+  gap: 10px;
   border: 0;
   border-radius: 12px;
   background: #ffffff;
@@ -888,6 +888,30 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.chart-tooltip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+}
+
+.chart-tooltip__value {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.chart-tooltip__year {
+  color: #ffffff;
 }
 
 .chart-close-btn {
@@ -1041,7 +1065,7 @@ h1 {
 .chart-meta {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
   border: 0;
 }
 
@@ -1073,19 +1097,19 @@ h1 {
 .extra-fields {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
 }
 
 .event-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
 }
 
 .event-list__column {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .event-item {

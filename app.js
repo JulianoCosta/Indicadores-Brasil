@@ -986,6 +986,17 @@ ${JSON.stringify(info, null, 2)}`;
                   width={isMobile ? 42 : 52}
                 />
                 <Tooltip
+                  content={({ active, payload, label }) => {
+                    if (!active || !payload?.length) return null;
+
+                    const valor = payload[0]?.value;
+                    return (
+                      <div className="chart-tooltip" style={{ background: cor }}>
+                        <span className="chart-tooltip__year">{label}:</span>
+                        <span className="chart-tooltip__value">{formatarValorIndicador(valor)}</span>
+                      </div>
+                    );
+                  }}
                   labelFormatter={(ano) => {
                     const dado = dadosComEventos.find((item) => item.ano === ano);
                     const eventos = dado?._eventos?.map((evento) => evento.nome).join(" | ");
