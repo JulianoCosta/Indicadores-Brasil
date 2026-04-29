@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: light;
+  --sidebar-desktop-width: 385px;
+  --desktop-page-gutter: 24px;
   --bg-app: #f1f3f6;
   --bg-app-top: #f6f8fb;
   --surface-1: #ffffff;
@@ -95,23 +97,56 @@ button {
   }
 }
 
+@keyframes chartAddPulse {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: saturate(1);
+  }
+
+  55% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: saturate(1.08);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: saturate(1);
+  }
+}
+
+@keyframes chartRemoveSoft {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 760px;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+}
+
 .app-layout {
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-height: 100vh;
   width: 100%;
-  padding: 15px;
-  gap: 15px;
+  padding: 0;
 }
 
 .app-body {
-  display: flex;
-  align-items: stretch;
-  gap: 15px;
+  display: block;
 }
 
 .site-header {
-  display: flex;
+  display: none;
+}
+
+.site-header {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -220,11 +255,13 @@ h1 {
 }
 
 .sidebar-anual {
-  position: relative;
-  top: 0;
-  align-self: stretch;
-  width: min(350px, 100%);
-  flex-shrink: 0;
+  position: fixed;
+  inset: var(--desktop-page-gutter) auto var(--desktop-page-gutter) var(--desktop-page-gutter);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: var(--sidebar-desktop-width);
+  height: calc(100vh - (var(--desktop-page-gutter) * 2));
   border: 0;
   border-radius: 18px;
   background: var(--surface-1);
@@ -232,12 +269,41 @@ h1 {
   overflow: hidden;
 }
 
-.sidebar-anual__scroll {
+.sidebar-anual__top {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   gap: 8px;
-  min-height: 100%;
-  padding: 10px;
+  padding: 12px 10px 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-title-block {
+  padding: 2px 2px 4px;
+}
+
+.sidebar-title-block h1 {
+  margin: 0;
+  font-size: 1.28rem;
+  line-height: 1.08;
+}
+
+.sidebar-title-block .subtitle {
+  max-width: none;
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.sidebar-anual__scroll {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 8px;
+  height: auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 10px 10px 14px;
 }
 
 .sidebar-panel {
@@ -354,6 +420,12 @@ h1 {
   color: var(--text-inverse);
 }
 
+.sidebar-action-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
 .share-view-btn {
   display: inline-flex;
   align-items: center;
@@ -382,6 +454,19 @@ h1 {
   border-color: rgba(24, 165, 102, 0.28);
   background: rgba(24, 165, 102, 0.1);
   color: #11784c;
+}
+
+.share-copy-message {
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 7px 9px;
+  border-radius: 10px;
+  background: rgba(24, 165, 102, 0.1);
+  color: #11784c;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .cat-label {
@@ -518,7 +603,9 @@ h1 {
 }
 
 .main-content-anual {
-  flex: 1;
+  width: calc(100% - var(--sidebar-desktop-width) - var(--desktop-page-gutter));
+  margin-left: calc(var(--sidebar-desktop-width) + var(--desktop-page-gutter));
+  padding: 24px 24px 0;
   min-width: 0;
   overflow: visible;
   border: 0;
@@ -630,14 +717,32 @@ h1 {
   flex-direction: column;
   gap: 15px;
   padding-bottom: 56px;
+  overflow: visible;
+}
+
+.chart-card-shell {
+  overflow: visible;
+  padding: 3px;
+  margin: -3px 0;
+  scroll-margin-top: 16px;
+}
+
+.chart-card-shell--entrada .chart-box {
+  animation: chartAddPulse 0.58s ease both;
+  box-shadow:
+    0 0 0 2px var(--chart-accent-soft),
+    var(--shadow-panel);
+}
+
+.chart-card-shell--saida {
+  margin: -3px 0;
+  pointer-events: none;
+  overflow: hidden;
+  animation: chartRemoveSoft 0.28s ease forwards;
 }
 
 .app-layout--compact .dashboard-hero {
   display: none;
-}
-
-.app-layout--compact .dashboard-shell {
-  gap: 8px;
 }
 
 .app-layout--compact .cards-wrapper {
@@ -887,13 +992,46 @@ h1 {
 }
 
 .chart-description {
-  padding-left: 0 !important;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.chart-primary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  background: #fafbfd;
+}
+
+.chart-box--compact .chart-primary-card {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .chart-visual {
   border: 0;
   border-radius: 0;
   background: transparent;
+}
+
+.chart-source-line {
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.chart-source-line strong {
+  color: var(--text-strong);
+  font-weight: 800;
+}
+
+.chart-box--compact .chart-source-line {
+  display: none;
 }
 
 .no-data {
@@ -906,38 +1044,62 @@ h1 {
 }
 
 .chart-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
   border: 0;
 }
 
 .field-block {
-  padding: 0 0 0 10px;
-  border-radius: 0;
-  background: transparent;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  background: #fafbfd;
   color: var(--text-primary);
   font-size: 12px;
   line-height: 1.55;
 }
 
+.field-block--eventos_externos,
+.field-block--fontes_links,
+.chart-actions,
+.extra-fields {
+  grid-column: 1 / -1;
+}
+
 .field-label {
+  display: block;
+  margin-bottom: 4px;
   color: var(--text-strong);
   font-weight: 800;
 }
 
-.event-list,
 .extra-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.event-list__column {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .event-item {
-  padding: 7px 0 7px 10px;
-  border-left: 2px solid var(--border-subtle);
-  border-radius: 0;
-  background: transparent;
+  display: block;
+  padding: 8px;
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--chart-accent-soft);
+  border-radius: 9px;
+  background: #ffffff;
 }
 
 .event-item__title {
@@ -966,6 +1128,10 @@ h1 {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 4px;
+}
+
+.validation-ai-btn {
+  margin-top: 10px;
 }
 
 .action-btn {
@@ -1188,19 +1354,30 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  :root {
+    --sidebar-desktop-width: 330px;
+    --desktop-page-gutter: 0px;
+  }
+
   .app-layout {
-    padding: 12px;
+    padding: 0;
   }
 
   .app-body {
-    align-items: stretch;
+    display: block;
   }
 
   .sidebar-anual {
-    position: relative;
-    top: 0;
-    align-self: stretch;
-    width: min(330px, 100%);
+    inset: 0 auto 0 0;
+    width: var(--sidebar-desktop-width);
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .main-content-anual {
+    width: calc(100% - var(--sidebar-desktop-width));
+    margin-left: var(--sidebar-desktop-width);
+    padding: 12px 12px 0;
   }
 }
 
@@ -1217,7 +1394,7 @@ h1 {
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
-    padding: 10px;
+    padding: 0;
     gap: 10px;
   }
 
@@ -1282,6 +1459,7 @@ h1 {
     left: 12px;
     align-self: auto;
     width: min(340px, calc(100vw - 24px));
+    height: auto;
     border-radius: 18px;
     transform: translateX(calc(-100% - 16px));
     transition: transform 0.28s ease;
@@ -1289,7 +1467,9 @@ h1 {
   }
 
   .sidebar-anual__scroll {
-    height: 100%;
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 0;
     overflow-y: auto;
     padding: 14px 12px 18px;
   }
@@ -1301,6 +1481,8 @@ h1 {
   .main-content-anual {
     width: 100%;
     max-width: 100%;
+    margin-left: 0;
+    padding: 10px 10px 0;
     border-radius: 16px;
   }
 
@@ -1308,7 +1490,7 @@ h1 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     gap: 10px;
   }
 
@@ -1324,9 +1506,12 @@ h1 {
 
   .dashboard-hero__stats,
   .chart-insights,
-  .sidebar-stat-row,
-  .sidebar-date-values {
+  .sidebar-stat-row {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar-date-values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cards-wrapper {
@@ -1334,6 +1519,8 @@ h1 {
     max-width: 100%;
     min-width: 0;
     padding-bottom: 82px;
+    padding-inline: 4px;
+    overflow: visible;
   }
 
   .legend-mandatos-mobile {
@@ -1377,8 +1564,13 @@ h1 {
   .chart-description,
   .chart-meta .field-block,
   .event-item__desc {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
+  }
+
+  .chart-meta,
+  .extra-fields,
+  .event-list {
+    grid-template-columns: 1fr;
   }
 
   .chart-actions {

@@ -248,6 +248,10 @@ function AppAnual() {
   const [catsAbertas, setCatsAbertas] = useState([]);
   const [viewCompacta, setViewCompacta] = useState(false);
   const [linkCopiado, setLinkCopiado] = useState(false);
+  const [indicadorEmFoco, setIndicadorEmFoco] = useState(null);
+  const [indicadoresSaindo, setIndicadoresSaindo] = useState([]);
+  const refsIndicadores = React.useRef({});
+  const timeoutsAnimacao = React.useRef({});
 
   const toggleCat = useCallback((cat) => {
     setCatsAbertas((prev) => (prev.includes(cat) ? prev.filter((item) => item !== cat) : [...prev, cat]));
@@ -306,11 +310,32 @@ function AppAnual() {
   useEffect(() => {
     if (loading) return;
 
-    const proximaUrl = criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim);
+    const selecionadosAtivos = selecionados.filter((key) => !indicadoresSaindo.includes(key));
+    const proximaUrl = criarUrlCompartilhada(viewCompacta, selecionadosAtivos, anoIni, anoFim);
     if (proximaUrl !== window.location.href) {
       window.history.replaceState(null, "", proximaUrl);
     }
-  }, [anoFim, anoIni, loading, selecionados, viewCompacta]);
+  }, [anoFim, anoIni, indicadoresSaindo, loading, selecionados, viewCompacta]);
+
+  useEffect(() => {
+    if (!indicadorEmFoco || !selecionados.includes(indicadorEmFoco)) return;
+
+    const alvo = refsIndicadores.current[indicadorEmFoco];
+    if (alvo) {
+      setTimeout(() => {
+        alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 80);
+    }
+
+    const timeout = setTimeout(() => setIndicadorEmFoco(null), 900);
+    return () => clearTimeout(timeout);
+  }, [indicadorEmFoco, selecionados]);
+
+  useEffect(() => {
+    return () => {
+      Object.values(timeoutsAnimacao.current).forEach(clearTimeout);
+    };
+  }, []);
 
   const cats = useMemo(() => {
     if (!meta) return {};
@@ -324,16 +349,50 @@ function AppAnual() {
     return agrupadas;
   }, [meta]);
 
-  const toggle = useCallback((key) => {
-    setSelecionados((prev) => (prev.includes(key) ? prev.filter((item) => item !== key) : [...prev, key]));
+  const removerIndicador = useCallback((key) => {
+    setIndicadoresSaindo((prev) => (prev.includes(key) ? prev : [...prev, key]));
+    clearTimeout(timeoutsAnimacao.current[key]);
+    timeoutsAnimacao.current[key] = setTimeout(() => {
+      setSelecionados((prev) => prev.filter((item) => item !== key));
+      setIndicadoresSaindo((prev) => prev.filter((item) => item !== key));
+      delete timeoutsAnimacao.current[key];
+      delete refsIndicadores.current[key];
+    }, 280);
   }, []);
 
+  const toggle = useCallback(
+    (key) => {
+      if (selecionados.includes(key)) {
+        removerIndicador(key);
+        return;
+      }
+
+      clearTimeout(timeoutsAnimacao.current[key]);
+      setIndicadoresSaindo((saindo) => saindo.filter((item) => item !== key));
+      setIndicadorEmFoco(key);
+      setSelecionados((prev) => (prev.includes(key) ? prev : [...prev, key]));
+    },
+    [removerIndicador, selecionados],
+  );
+
   const limparSelecao = useCallback(() => {
-    setSelecionados([]);
+    selecionados.forEach(removerIndicador);
+  }, [removerIndicador, selecionados]);
+
+  const selecionadosAtivos = useMemo(() => {
+    return selecionados.filter((key) => !indicadoresSaindo.includes(key));
+  }, [indicadoresSaindo, selecionados]);
+
+  const registrarRefIndicador = useCallback((key, node) => {
+    if (node) {
+      refsIndicadores.current[key] = node;
+    } else {
+      delete refsIndicadores.current[key];
+    }
   }, []);
 
   const compartilharVisaoAtual = useCallback(() => {
-    const url = criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim);
+    const url = criarUrlCompartilhada(viewCompacta, selecionadosAtivos, anoIni, anoFim);
 
     const concluir = () => {
       setLinkCopiado(true);
@@ -348,7 +407,7 @@ function AppAnual() {
     } else {
       copiarFallback(url, concluir);
     }
-  }, [anoFim, anoIni, selecionados, viewCompacta]);
+  }, [anoFim, anoIni, selecionadosAtivos, viewCompacta]);
 
   const anosDisponiveis = useMemo(() => {
     const anos = [];
@@ -403,30 +462,17 @@ function AppAnual() {
 
   return (
     <div className={"app-layout" + (viewCompacta ? " app-layout--compact" : "")}>
-      <header className="site-header">
-        <div className="header-intro">
-          <h1>Indicadores anuais do Brasil</h1>
-          <div className="subtitle">
-            Explore séries históricas, compare períodos e conecte dados econômicos, sociais e institucionais ao contexto
-            presidencial.
-          </div>
-        </div>
-
-        <div className="header-highlights" aria-label="Resumo do painel">
-          <div className="header-pill">
-            <span>Período</span>
-            <strong>{periodoSelecionado}</strong>
-          </div>
-          <div className="header-pill">
-            <span>Indicadores</span>
-            <strong>{totalValidadas}</strong>
-          </div>
-        </div>
-      </header>
-
       <div className="app-body">
         <div className={"sidebar sidebar-anual" + (menuAberto ? " aberto" : "")}>
-          <div className="sidebar-anual__scroll">
+          <div className="sidebar-anual__top">
+            <div className="sidebar-title-block">
+              <h1>Indicadores anuais do Brasil</h1>
+              <div className="subtitle">
+                Explore séries históricas, compare períodos e conecte dados econômicos, sociais e institucionais ao
+                contexto presidencial.
+              </div>
+            </div>
+
             <div className="sidebar-panel sidebar-date-range">
               <div className="sidebar-section-header">
                 <span className="sidebar-section-title">Janela temporal</span>
@@ -434,7 +480,6 @@ function AppAnual() {
 
               <div className="sidebar-date-values">
                 <label className="sidebar-date-field">
-                  <span>Início</span>
                   <select
                     value={anoIni}
                     onChange={(event) => aoMudarAnoInicial(event.target.value)}
@@ -451,7 +496,6 @@ function AppAnual() {
                 </label>
 
                 <label className="sidebar-date-field">
-                  <span>Fim</span>
                   <select
                     value={anoFim}
                     onChange={(event) => aoMudarAnoFinal(event.target.value)}
@@ -489,40 +533,50 @@ function AppAnual() {
                 </button>
               </div>
 
-              <button
-                type="button"
-                className={"share-view-btn" + (linkCopiado ? " copiado" : "")}
-                onClick={compartilharVisaoAtual}
-                title="Copiar link da visao atual"
-              >
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              <div className="sidebar-action-row">
+                <button
+                  type="button"
+                  className={"share-view-btn" + (linkCopiado ? " copiado" : "")}
+                  onClick={compartilharVisaoAtual}
+                  title="Copiar link da visao atual"
+                  aria-describedby={linkCopiado ? "share-copy-message" : undefined}
                 >
-                  <circle cx="18" cy="5" r="3" />
-                  <circle cx="6" cy="12" r="3" />
-                  <circle cx="18" cy="19" r="3" />
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-                <span>{linkCopiado ? "Link copiado" : "Compartilhar link"}</span>
-              </button>
-              <button
-                type="button"
-                className="action-btn clear-selection-btn"
-                onClick={limparSelecao}
-                disabled={selecionados.length === 0}
-              >
-                Limpar seleção
-              </button>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                  </svg>
+                  <span>{linkCopiado ? "Link copiado" : "Compartilhar"}</span>
+                </button>
+                <button
+                  type="button"
+                  className="action-btn clear-selection-btn"
+                  onClick={limparSelecao}
+                  disabled={selecionadosAtivos.length === 0}
+                >
+                  Limpar
+                </button>
+              </div>
+              {linkCopiado && (
+                <div id="share-copy-message" className="share-copy-message" role="status" aria-live="polite">
+                  Link copiado para a área de transferência.
+                </div>
+              )}
             </div>
+          </div>
 
+          <div className="sidebar-anual__scroll">
             {Object.entries(cats).map(([cat, keys]) => {
               const validados = keys.filter((key) => meta[key].validacao);
               if (validados.length === 0) return null;
@@ -563,7 +617,7 @@ function AppAnual() {
                     <div className="ind-grid-inner">
                       <div className="ind-grid">
                         {validados.map((key) => {
-                          const ativa = selecionados.includes(key);
+                          const ativa = selecionadosAtivos.includes(key);
                           return (
                             <button
                               key={key}
@@ -607,16 +661,25 @@ function AppAnual() {
                   if (!meta || !meta[key]) return null;
 
                   return (
-                    <GraficoAnual
+                    <div
                       key={key}
-                      dados={dadosFiltrados}
-                      info={meta[key]}
-                      cor={getCategoriaCor(meta[key].cat)}
-                      anoIni={anoIni}
-                      anoFim={anoFim}
-                      onFechar={() => toggle(key)}
-                      compacta={viewCompacta}
-                    />
+                      ref={(node) => registrarRefIndicador(key, node)}
+                      className={
+                        "chart-card-shell" +
+                        (indicadorEmFoco === key ? " chart-card-shell--entrada" : "") +
+                        (indicadoresSaindo.includes(key) ? " chart-card-shell--saida" : "")
+                      }
+                    >
+                      <GraficoAnual
+                        dados={dadosFiltrados}
+                        info={meta[key]}
+                        cor={getCategoriaCor(meta[key].cat)}
+                        anoIni={anoIni}
+                        anoFim={anoFim}
+                        onFechar={() => removerIndicador(key)}
+                        compacta={viewCompacta}
+                      />
+                    </div>
                   );
                 })}
             </div>
@@ -697,22 +760,31 @@ ${JSON.stringify(info, null, 2)}`;
   const renderField = ([key, label]) => {
     const value = info[key];
     if (!value) return null;
+    const fieldClassName = `field-block field-block--${key}`;
 
     if (key === "eventos_externos" && Array.isArray(value)) {
+      const eventosOrdenados = [...value].sort((a, b) => (a.ano || a.data) - (b.ano || b.data));
+      const metadeEventos = Math.ceil(eventosOrdenados.length / 2);
+      const colunasEventos = [eventosOrdenados.slice(0, metadeEventos), eventosOrdenados.slice(metadeEventos)].filter(
+        (coluna) => coluna.length > 0,
+      );
+
       return (
-        <div key={key} className="field-block">
-          <strong className="field-label">{label}:</strong>
+        <div key={key} className={fieldClassName}>
+          <strong className="field-label">{label}</strong>
           <div className="event-list">
-            {[...value]
-              .sort((a, b) => (a.ano || a.data) - (b.ano || b.data))
-              .map((evento, index) => (
-                <div key={index} className="event-item">
-                  <span className="event-item__title">
-                    {evento.ano || evento.data}: {evento.nome}
-                  </span>
-                  <p className="event-item__desc">{evento.descricao}</p>
-                </div>
-              ))}
+            {colunasEventos.map((coluna, colunaIndex) => (
+              <div key={colunaIndex} className="event-list__column">
+                {coluna.map((evento, index) => (
+                  <div key={`${colunaIndex}-${index}`} className="event-item">
+                    <span className="event-item__title">
+                      {evento.ano || evento.data}: {evento.nome}
+                    </span>
+                    <p className="event-item__desc">{evento.descricao}</p>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       );
@@ -720,8 +792,8 @@ ${JSON.stringify(info, null, 2)}`;
 
     if (key === "fontes_links" && Array.isArray(value)) {
       return (
-        <div key={key} className="field-block">
-          <strong className="field-label">{label}:</strong>
+        <div key={key} className={fieldClassName}>
+          <strong className="field-label">{label}</strong>
           <ul className="sources-list">
             {value.map((link, index) => (
               <li key={index}>
@@ -745,13 +817,33 @@ ${JSON.stringify(info, null, 2)}`;
     }
 
     return (
-      <div key={key} className="field-block">
-        {key !== "descricao" && <strong className="field-label">{label}: </strong>}
-        {typeof displayValue === "object" ? JSON.stringify(displayValue) : displayValue}
+      <div key={key} className={fieldClassName}>
+        {key !== "descricao" && <strong className="field-label">{label}</strong>}
+        <div>{typeof displayValue === "object" ? JSON.stringify(displayValue) : displayValue}</div>
+        {key === "validacao" && (
+          <button onClick={copiarParaIA} className="action-btn validation-ai-btn" title="Exportar para validação em IA">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+            </svg>
+            <span>Validar com IA</span>
+          </button>
+        )}
       </div>
     );
   };
 
+  const fontePrincipal = info.fonte;
+  const camposFixosDaGrade = fixedFields.filter(([key]) => key !== "fonte");
   const temExtras = extraFields.some(([key]) => info[key]);
 
   return (
@@ -764,7 +856,6 @@ ${JSON.stringify(info, null, 2)}`;
       }}
     >
       <div className="chart-head">
-
         <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
           <svg
             width="18"
@@ -790,243 +881,248 @@ ${JSON.stringify(info, null, 2)}`;
         </div>
       </div>
 
-      {info.descricao && <div className="field-block chart-description">{info.descricao}</div>}
+      <div className="chart-primary-card">
+        {info.descricao && <div className="chart-description">{info.descricao}</div>}
 
-      {comDados.length === 0 ? (
-        <div className="no-data">Sem dados no período selecionado.</div>
-      ) : (
-        <div className="chart-visual">
-          <ResponsiveContainer width="100%" height={alturaGrafico}>
-            <LineChart
-              data={dadosComEventos}
-              margin={margemGrafico}
-            >
-              {PRES_ANOS.filter(
-                (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
-              ).flatMap((presidente, index) => {
-                const x1 = presidente.ini - 0.5;
-                const x2 = presidente.fim - 0.5;
-                let labelMandato = null;
+        {comDados.length === 0 ? (
+          <div className="no-data">Sem dados no período selecionado.</div>
+        ) : (
+          <div className="chart-visual">
+            <ResponsiveContainer width="100%" height={alturaGrafico}>
+              <LineChart data={dadosComEventos} margin={margemGrafico}>
+                {PRES_ANOS.filter(
+                  (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
+                ).flatMap((presidente, index) => {
+                  const x1 = presidente.ini - 0.5;
+                  const x2 = presidente.fim - 0.5;
+                  let labelMandato = null;
 
-                if (!compacta && isMobile) {
-                  labelMandato = (props) => {
-                    const { viewBox } = props;
-                    if (!viewBox) return null;
-                    const cx = viewBox.x + viewBox.width / 2 + 4;
-                    const startY = viewBox.y + viewBox.height - 7;
+                  if (isMobile) {
+                    labelMandato = (props) => {
+                      const { viewBox } = props;
+                      if (!viewBox) return null;
+                      const cx = viewBox.x + viewBox.width / 2 + 4;
+                      const startY = viewBox.y + viewBox.height - 7;
 
-                    return (
-                      <text
-                        x={cx}
-                        y={startY}
-                        fill={presidente.cor}
-                        fontSize={11}
-                        fontWeight="bold"
-                        opacity={0.32}
-                        textAnchor="start"
-                        transform={`rotate(-90, ${cx}, ${startY})`}
-                      >
-                        {presidente.nome}
-                      </text>
-                    );
-                  };
-                } else if (!compacta) {
-                  labelMandato = {
-                    value: presidente.nome,
-                    position: "insideBottom",
-                    fill: presidente.cor,
-                    fontSize: 11,
-                    fontWeight: "bold",
-                    dy: -5,
-                    fillOpacity: 0.65,
-                  };
-                }
+                      return (
+                        <text
+                          x={cx}
+                          y={startY}
+                          fill={presidente.cor}
+                          fontSize={11}
+                          fontWeight="bold"
+                          opacity={0.35}
+                          textAnchor="start"
+                          transform={`rotate(-90, ${cx}, ${startY})`}
+                        >
+                          {presidente.nome}
+                        </text>
+                      );
+                    };
+                  } else {
+                    labelMandato = {
+                      value: presidente.nome,
+                      position: "insideBottom",
+                      fill: presidente.cor,
+                      fontSize: 11,
+                      fontWeight: "bold",
+                      dy: -5,
+                      fillOpacity: 0.35,
+                    };
+                  }
 
-                return [
-                  <ReferenceArea
-                    key={`area-${index}`}
-                    x1={x1}
-                    x2={x2}
-                    fill={presidente.cor}
-                    fillOpacity={0.1}
-                    ifOverflow="hidden"
-                  />,
-                  <ReferenceArea
-                    key={`label-${index}`}
-                    x1={x1}
-                    x2={x2}
-                    fill="transparent"
-                    ifOverflow="hidden"
-                    label={labelMandato}
-                  />,
-                ];
-              })}
+                  return [
+                    <ReferenceArea
+                      key={`area-${index}`}
+                      x1={x1}
+                      x2={x2}
+                      fill={presidente.cor}
+                      fillOpacity={0.1}
+                      ifOverflow="hidden"
+                    />,
+                    <ReferenceArea
+                      key={`label-${index}`}
+                      x1={x1}
+                      x2={x2}
+                      fill="transparent"
+                      ifOverflow="hidden"
+                      label={labelMandato}
+                    />,
+                  ];
+                })}
 
-              {ticksY
-                .filter((tick) => tick !== 0)
-                .map((tick) => (
-                  <ReferenceLine
-                    key={`tick-y-${tick}`}
-                    y={tick}
-                    stroke="#172033"
-                    strokeOpacity={0.12}
-                    strokeDasharray="3 5"
-                  />
-                ))}
-              <ReferenceLine y={0} stroke="#172033" strokeOpacity={0.28} strokeWidth={1.2} />
+                {ticksY
+                  .filter((tick) => tick !== 0)
+                  .map((tick) => (
+                    <ReferenceLine
+                      key={`tick-y-${tick}`}
+                      y={tick}
+                      stroke="#172033"
+                      strokeOpacity={0.12}
+                      strokeDasharray="3 5"
+                    />
+                  ))}
+                <ReferenceLine y={0} stroke="#172033" strokeOpacity={0.28} strokeWidth={1.2} />
 
-              <XAxis
-                dataKey="ano"
-                type="number"
-                domain={[anoIni, anoFim]}
-                stroke="#6b7a90"
-                fontSize={isMobile ? 10 : 12}
-                ticks={ticksX}
-                interval={0}
-                tick={isMobile ? { angle: -90, textAnchor: "end", dx: -3, dy: 3 } : true}
-                tickMargin={isMobile ? 8 : 8}
-                allowDecimals={false}
-              />
-              <YAxis
-                stroke="#6b7a90"
-                fontSize={12}
-                domain={dominioY}
-                ticks={ticksY}
-                tickFormatter={formatarTickEixoY}
-                width={isMobile ? 42 : 52}
-              />
-              <Tooltip
-                labelFormatter={(ano) => {
-                  const dado = dadosComEventos.find((item) => item.ano === ano);
-                  const eventos = dado?._eventos?.map((evento) => evento.nome).join(" | ");
-                  return eventos ? `${ano} • ${eventos}` : `${ano}`;
-                }}
-                formatter={(value) => [value != null ? value.toFixed(2) : "-", info.label]}
-                contentStyle={{
-                  background: "rgba(9, 17, 31, 0.94)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  color: "#f8fafc",
-                  fontSize: 13,
-                  borderRadius: 16,
-                  boxShadow: "0 18px 40px rgba(15, 23, 42, 0.28)",
-                  backdropFilter: "blur(14px)",
-                }}
-                labelStyle={{ color: "#f8fafc", fontWeight: 700, marginBottom: 6 }}
-                itemStyle={{ color: "#dbe7ff" }}
-              />
-              <Line
-                type="monotone"
-                dataKey="valor"
-                stroke={cor}
-                strokeWidth={1.6}
-                dot={{ r: 1.8, fill: cor, strokeWidth: 0 }}
-                activeDot={{ r: 5, fill: cor, stroke: "#ffffff", strokeWidth: 2 }}
-                isAnimationActive={false}
-                connectNulls={false}
-              />
+                <XAxis
+                  dataKey="ano"
+                  type="number"
+                  domain={[anoIni, anoFim]}
+                  stroke="#6b7a90"
+                  fontSize={isMobile ? 10 : 12}
+                  ticks={ticksX}
+                  interval={0}
+                  tick={isMobile ? { angle: -90, textAnchor: "end", dx: -3, dy: 3 } : true}
+                  tickMargin={isMobile ? 8 : 8}
+                  allowDecimals={false}
+                />
+                <YAxis
+                  stroke="#6b7a90"
+                  fontSize={12}
+                  domain={dominioY}
+                  ticks={ticksY}
+                  tickFormatter={formatarTickEixoY}
+                  width={isMobile ? 42 : 52}
+                />
+                <Tooltip
+                  labelFormatter={(ano) => {
+                    const dado = dadosComEventos.find((item) => item.ano === ano);
+                    const eventos = dado?._eventos?.map((evento) => evento.nome).join(" | ");
+                    return eventos ? `${ano} • ${eventos}` : `${ano}`;
+                  }}
+                  formatter={(value) => [value != null ? value.toFixed(2) : "-", info.label]}
+                  contentStyle={{
+                    background: "rgba(9, 17, 31, 0.94)",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    color: "#f8fafc",
+                    fontSize: 13,
+                    borderRadius: 16,
+                    boxShadow: "0 18px 40px rgba(15, 23, 42, 0.28)",
+                    backdropFilter: "blur(14px)",
+                  }}
+                  labelStyle={{ color: "#f8fafc", fontWeight: 700, marginBottom: 6 }}
+                  itemStyle={{ color: "#dbe7ff" }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="valor"
+                  stroke={cor}
+                  strokeWidth={1.6}
+                  dot={{ r: 1.8, fill: cor, strokeWidth: 0 }}
+                  activeDot={{ r: 5, fill: cor, stroke: "#ffffff", strokeWidth: 2 }}
+                  isAnimationActive={false}
+                  connectNulls={false}
+                />
 
-              {ultimoDado && (
-                <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
-                  <Label
-                    value={formatarValorIndicador(ultimoDado.valor)}
-                    position="right"
-                    offset={10}
-                    fill={cor}
-                    fontSize={11}
-                    fontWeight="700"
-                  />
-                </ReferenceDot>
-              )}
+                {ultimoDado && (
+                  <ReferenceDot x={ultimoDado.ano} y={ultimoDado.valor} r={0} isFront={true}>
+                    <Label
+                      value={formatarValorIndicador(ultimoDado.valor)}
+                      position="right"
+                      offset={10}
+                      fill={cor}
+                      fontSize={11}
+                      fontWeight="700"
+                    />
+                  </ReferenceDot>
+                )}
 
-              {Array.isArray(info.eventos_externos) &&
-                [...info.eventos_externos]
-                  .sort((a, b) => (a.ano || a.data) - (b.ano || b.data))
-                  .map((evento, index) => {
-                    const evAno = evento.ano || evento.data;
-                    const ponto = dados.find((item) => item.ano === evAno);
-                    if (!ponto || ponto.valor == null) return null;
+                {Array.isArray(info.eventos_externos) &&
+                  [...info.eventos_externos]
+                    .sort((a, b) => (a.ano || a.data) - (b.ano || b.data))
+                    .map((evento, index) => {
+                      const evAno = evento.ano || evento.data;
+                      const ponto = dados.find((item) => item.ano === evAno);
+                      if (!ponto || ponto.valor == null) return null;
 
-                    const selecionado = eventoAtivo === evento;
-                    return (
-                      <ReferenceDot
-                        key={`ev-${index}`}
-                        x={evAno}
-                        y={ponto.valor}
-                        r={selecionado ? 6 : 4}
-                        strokeWidth={2}
-                        shape={({ cx, cy }) => {
-                          if (cx == null || cy == null) return null;
+                      const selecionado = eventoAtivo === evento;
+                      return (
+                        <ReferenceDot
+                          key={`ev-${index}`}
+                          x={evAno}
+                          y={ponto.valor}
+                          r={selecionado ? 6 : 4}
+                          strokeWidth={2}
+                          shape={({ cx, cy }) => {
+                            if (cx == null || cy == null) return null;
 
-                          const dir = cy < 84 ? 1 : -1;
-                          const pin = [10, 20, 30][index % 3] * dir;
-                          const dy = dir === 1 ? 11 : -6;
-                          const rotulo = abreviarEvento(evento.nome);
+                            const dir = cy < 84 ? 1 : -1;
+                            const pin = [10, 20, 30][index % 3] * dir;
+                            const dy = dir === 1 ? 11 : -6;
+                            const rotulo = abreviarEvento(evento.nome);
 
-                          return (
-                            <g
-                              onClick={() => setEventoAtivo(selecionado ? null : evento)}
-                              style={{ cursor: "pointer" }}
-                            >
-                              <circle
-                                cx={cx}
-                                cy={cy}
-                                r={selecionado ? 6 : 4}
-                                fill={selecionado ? "#fff" : cor}
-                                stroke={selecionado ? cor : "#fff"}
-                                strokeWidth={2}
-                              />
-                              {!isMobile && (
-                                <g style={{ pointerEvents: "none" }}>
-                                  <line
-                                    x1={cx}
-                                    y1={cy}
-                                    x2={cx}
-                                    y2={cy + pin}
-                                    stroke={cor}
-                                    strokeWidth={1}
-                                    strokeOpacity={selecionado ? 0.58 : 0.34}
-                                    strokeDasharray="2 2"
-                                  />
-                                  <circle cx={cx} cy={cy + pin} r={1.5} fill={cor} opacity={0.62} />
-                                  <text
-                                    x={cx}
-                                    y={cy + pin}
-                                    fill="#fff"
-                                    stroke="#fff"
-                                    strokeWidth={3}
-                                    strokeLinejoin="round"
-                                    textAnchor="middle"
-                                    dy={dy}
-                                    fontSize={9}
-                                    fontWeight="bold"
-                                    opacity={0.9}
-                                  >
-                                    {rotulo}
-                                  </text>
-                                  <text
-                                    x={cx}
-                                    y={cy + pin}
-                                    fill={cor}
-                                    textAnchor="middle"
-                                    dy={dy}
-                                    fontSize={9}
-                                    fontWeight="bold"
-                                    opacity={selecionado ? 1 : 0.72}
-                                  >
-                                    {rotulo}
-                                  </text>
-                                </g>
-                              )}
-                            </g>
-                          );
-                        }}
-                      />
-                    );
-                  })}
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-      )}
+                            return (
+                              <g
+                                onClick={() => setEventoAtivo(selecionado ? null : evento)}
+                                style={{ cursor: "pointer" }}
+                              >
+                                <circle
+                                  cx={cx}
+                                  cy={cy}
+                                  r={selecionado ? 6 : 4}
+                                  fill={selecionado ? "#fff" : cor}
+                                  stroke={selecionado ? cor : "#fff"}
+                                  strokeWidth={2}
+                                />
+                                {!isMobile && (
+                                  <g style={{ pointerEvents: "none" }}>
+                                    <line
+                                      x1={cx}
+                                      y1={cy}
+                                      x2={cx}
+                                      y2={cy + pin}
+                                      stroke={cor}
+                                      strokeWidth={1}
+                                      strokeOpacity={selecionado ? 0.58 : 0.34}
+                                      strokeDasharray="2 2"
+                                    />
+                                    <circle cx={cx} cy={cy + pin} r={1.5} fill={cor} opacity={0.62} />
+                                    <text
+                                      x={cx}
+                                      y={cy + pin}
+                                      fill="#fff"
+                                      stroke="#fff"
+                                      strokeWidth={3}
+                                      strokeLinejoin="round"
+                                      textAnchor="middle"
+                                      dy={dy}
+                                      fontSize={9}
+                                      fontWeight="bold"
+                                      opacity={0.9}
+                                    >
+                                      {rotulo}
+                                    </text>
+                                    <text
+                                      x={cx}
+                                      y={cy + pin}
+                                      fill={cor}
+                                      textAnchor="middle"
+                                      dy={dy}
+                                      fontSize={9}
+                                      fontWeight="bold"
+                                      opacity={selecionado ? 1 : 0.72}
+                                    >
+                                      {rotulo}
+                                    </text>
+                                  </g>
+                                )}
+                              </g>
+                            );
+                          }}
+                        />
+                      );
+                    })}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+
+        {fontePrincipal && (
+          <div className="chart-source-line">
+            <strong>Fonte:</strong> {fontePrincipal}
+          </div>
+        )}
+      </div>
 
       {!compacta && eventoAtivo && (
         <div className="event-detail">
@@ -1042,47 +1138,26 @@ ${JSON.stringify(info, null, 2)}`;
 
       {!compacta && (
         <div className="chart-meta" style={{ marginTop: eventoAtivo ? 12 : 0 }}>
-          {fixedFields.map(renderField)}
+          {camposFixosDaGrade.map(renderField)}
 
-          {(info.validacao || temExtras) && (
+          {temExtras && (
             <div className="chart-actions">
-              {temExtras && (
-                <button className="action-btn" onClick={() => setExpandido(!expandido)}>
-                  <span>{expandido ? "Ver menos" : "Ver metadados"}</span>
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={"expand-btn__icon" + (expandido ? " rotated" : "")}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-              )}
-
-              {info.validacao && (
-                <button onClick={copiarParaIA} className="action-btn" title="Exportar para validação em IA">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                  </svg>
-                  <span>Validar com IA</span>
-                </button>
-              )}
+              <button className="action-btn" onClick={() => setExpandido(!expandido)}>
+                <span>{expandido ? "Ver menos" : "Ver metadados"}</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={"expand-btn__icon" + (expandido ? " rotated" : "")}
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
             </div>
           )}
 
