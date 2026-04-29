@@ -766,6 +766,10 @@ function AppAnual() {
           <div
             className={"dashboard-shell" + (selecionadosAtivos.length > 0 ? " dashboard-shell--has-visible-cards" : "")}
           >
+            <aside className="legal-disclaimer">
+              <p>{TEXTOS_APP.avisos?.disclaimerJuridico}</p>
+            </aside>
+
             <div className="cards-wrapper">
               {selecionados.length > 0 &&
                 selecionados.map((key) => {
@@ -801,11 +805,6 @@ function AppAnual() {
                   );
                 })}
             </div>
-
-            <footer className="legal-footer">
-              <p>{TEXTOS_APP.avisos?.footerJuridico}</p>
-              <p>{TEXTOS_APP.avisos?.mandatoContexto}</p>
-            </footer>
           </div>
         </div>
 

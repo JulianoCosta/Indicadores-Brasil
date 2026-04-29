@@ -48,8 +48,7 @@
     }
   ],
   "avisos": {
-    "mandatoContexto": "Faixa de mandato presidencial exibida apenas para contextualização histórica. Não representa atribuição automática de responsabilidade causal pelo resultado do indicador.",
-    "footerJuridico": "Projeto independente. Dados atribuídos às fontes indicadas. Não há vínculo, aprovação ou endosso por parte das instituições citadas."
+    "disclaimerJuridico": "Projeto independente, sem vínculo ou endosso das instituições citadas; os dados seguem as fontes indicadas e os mandatos servem apenas como contexto histórico."
   },
   "avisosMetodologia": [
     {

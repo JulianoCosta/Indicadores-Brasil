@@ -891,7 +891,7 @@ h1 {
   padding-left: 20px;
 }
 
-.sources-list li + li {
+.sources-list li+li {
   margin-top: 4px;
 }
 
@@ -1048,13 +1048,13 @@ h1 {
   line-height: 1.6;
 }
 
-.legal-footer {
+.legal-disclaimer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  z-index: 2;
   padding: 12px;
+  margin-bottom: 15px;
   gap: 10px;
   border: 0;
   border-radius: 12px;
@@ -1065,7 +1065,7 @@ h1 {
   box-shadow: var(--shadow-panel);
 }
 
-.legal-footer p {
+.legal-disclaimer p {
   margin: 0;
   text-align: justify;
 }
@@ -1254,6 +1254,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -1394,7 +1395,7 @@ h1 {
     justify-content: center;
   }
 
-  .legal-footer {
+  .legal-disclaimer {
     flex-direction: column;
     gap: 8px;
     padding: 12px;
