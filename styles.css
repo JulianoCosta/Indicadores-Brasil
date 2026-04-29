@@ -59,7 +59,7 @@ input {
 select,
 input {
   width: 100%;
-  min-height: 36px;
+  min-height: 32px;
   padding: 0 10px;
   border: 1px solid var(--border-medium);
   border-radius: 10px;
