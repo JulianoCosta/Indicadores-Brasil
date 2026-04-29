@@ -478,6 +478,7 @@ h1 {
   background: var(--surface-2);
   color: var(--text-strong);
   box-shadow: none;
+  user-select: none;
   transition:
     border-color 0.2s ease,
     background 0.2s ease;
@@ -521,17 +522,14 @@ h1 {
 
 .ind-grid-inner {
   min-height: 0;
-  padding: 0 0 0 8px;
-}
-
-.ind-grid-wrapper.aberta .ind-grid-inner {
-  padding: 8px 0 1px 8px;
+  overflow: hidden;
 }
 
 .ind-grid {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  padding: 8px 0 1px 8px;
 }
 
 .ind-btn {
@@ -729,9 +727,6 @@ h1 {
 
 .chart-card-shell--entrada .chart-box {
   animation: chartAddPulse 0.58s ease both;
-  box-shadow:
-    0 0 0 2px var(--chart-accent-soft),
-    var(--shadow-panel);
 }
 
 .chart-card-shell--saida {
@@ -750,7 +745,7 @@ h1 {
 }
 
 .app-layout--compact .chart-title {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .app-layout--compact .chart-title__unit {
@@ -844,7 +839,7 @@ h1 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-strong);
@@ -872,8 +867,8 @@ h1 {
   min-height: 20px;
   padding: 0 6px;
   border-radius: 999px;
-  background: var(--chart-accent-wash);
-  color: var(--text-strong);
+  background: var(--surface-3);
+  color: var(--text-secondary);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -887,8 +882,8 @@ h1 {
   min-height: 20px;
   padding: 0 6px;
   border-radius: 999px;
-  background: var(--surface-3);
-  color: var(--text-secondary);
+  background: var(--chart-accent-medium);
+  color: var(--text-strong);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.03em;

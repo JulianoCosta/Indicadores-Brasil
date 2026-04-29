@@ -183,7 +183,7 @@ function abreviarEvento(nome) {
 }
 
 const ANO_MINIMO = 1995;
-const ANO_MAXIMO = 2026;
+const ANO_MAXIMO = 2027;
 const VISAO_COMPACTA = "compacta";
 const VISAO_DETALHADA = "detalhada";
 const PARAM_VISAO = "visao";
@@ -851,6 +851,7 @@ ${JSON.stringify(info, null, 2)}`;
       className={"chart-box" + (compacta ? " chart-box--compact" : "")}
       style={{
         "--chart-accent": cor,
+        "--chart-accent-medium": hexToRgba(cor, 0.32),
         "--chart-accent-soft": hexToRgba(cor, 0.24),
         "--chart-accent-wash": hexToRgba(cor, 0.1),
       }}
@@ -874,8 +875,8 @@ ${JSON.stringify(info, null, 2)}`;
 
         <div className="chart-title">
           <div className="chart-title__left">
-            {info.fonte_sigla && <span className="chart-title__source">{info.fonte_sigla}</span>}
             <span className="chart-title__text">{info.label}</span>
+            {info.fonte_sigla && <span className="chart-title__source">{info.fonte_sigla}</span>}
             <span className="chart-title__unit">{info.unidade}</span>
           </div>
         </div>
