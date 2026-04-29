@@ -1,0 +1,144 @@
+{
+  "camposFixos": [
+    {
+      "chave": "fonte",
+      "label": "Fonte"
+    },
+    {
+      "chave": "como_interpretar",
+      "label": "Como interpretar"
+    },
+    {
+      "chave": "comparacao_paises",
+      "label": "Comparação entre países"
+    }
+  ],
+  "camposExtras": [
+    {
+      "chave": "nivel_confiabilidade",
+      "label": "Nível de confiabilidade"
+    },
+    {
+      "chave": "metodologia",
+      "label": "Metodologia"
+    },
+    {
+      "chave": "historico_metodologia",
+      "label": "Histórico da metodologia"
+    },
+    {
+      "chave": "abrangencia",
+      "label": "Abrangência"
+    },
+    {
+      "chave": "periodicidade",
+      "label": "Periodicidade"
+    },
+    {
+      "chave": "eventos_externos",
+      "label": "Eventos externos"
+    },
+    {
+      "chave": "validacao",
+      "label": "Validação"
+    },
+    {
+      "chave": "fontes_links",
+      "label": "Fontes e links"
+    }
+  ],
+  "avisos": {
+    "mandatoContexto": "Faixa de mandato presidencial exibida apenas para contextualização histórica. Não representa atribuição automática de responsabilidade causal pelo resultado do indicador.",
+    "footerJuridico": "Projeto independente. Dados atribuídos às fontes indicadas. Não há vínculo, aprovação ou endosso por parte das instituições citadas."
+  },
+  "avisosMetodologia": [
+    {
+      "titulo": "Aviso de não causalidade",
+      "texto": "Os períodos presidenciais são exibidos apenas como referência histórica e visual. A sobreposição entre indicadores e governos não implica causalidade direta. A evolução dos indicadores pode refletir fatores como choques externos, ciclos econômicos, decisões de outros Poderes, políticas estaduais ou municipais, mudanças metodológicas, revisões estatísticas, pandemia, preços internacionais, juros globais e defasagens entre causa e efeito."
+    },
+    {
+      "titulo": "Independência política",
+      "texto": "Este site é uma ferramenta independente de visualização de dados públicos e séries estatísticas. Não possui vínculo com partido político, candidato, campanha eleitoral, governo, órgão público ou entidade internacional. O site não recomenda voto, não pede apoio político e não deve ser interpretado como propaganda eleitoral."
+    },
+    {
+      "titulo": "Fontes e licenças",
+      "texto": "Os dados são atribuídos às respectivas fontes indicadas em cada indicador. Quando aplicável, os dados podem ter sido adaptados, organizados, agregados, convertidos ou reformatados para fins de visualização. A citação da fonte não implica aprovação, participação, patrocínio ou endosso da visualização por parte da instituição original."
+    },
+    {
+      "titulo": "Estimativas e revisões",
+      "texto": "Algumas séries estatísticas podem ser estimativas, projeções, séries modeladas, dados harmonizados internacionalmente ou dados sujeitos a revisão. Consulte a natureza do dado, a metodologia, a data de extração/validação e as observações de cada indicador antes de interpretar os resultados."
+    },
+    {
+      "titulo": "Limitação",
+      "texto": "Apesar do esforço de validação e documentação, erros de transcrição, revisão posterior das fontes ou diferenças metodológicas podem ocorrer. Para decisões técnicas, jurídicas, financeiras, acadêmicas ou políticas, consulte também a base original da fonte oficial."
+    },
+    {
+      "titulo": "Critérios de seleção",
+      "texto": "Os indicadores foram selecionados priorizando cobertura histórica, comparabilidade internacional, disponibilidade pública, relevância substantiva, reputação da fonte, documentação metodológica e possibilidade de validação. A seleção dos indicadores não pretende favorecer governo, partido, ideologia ou candidato."
+    }
+  ],
+  "modalLegal": {
+    "eyebrow": "Transparência",
+    "titulo": "Avisos, Fontes e Metodologia",
+    "fechar": "Fechar avisos"
+  },
+  "estadoCarregando": {
+    "eyebrow": "Carregando",
+    "titulo": "Preparando o atlas visual.",
+    "texto": "Os indicadores anuais estão sendo organizados para leitura."
+  },
+  "estadoErro": {
+    "eyebrow": "Falha de carga",
+    "titulo": "Não foi possível montar o painel.",
+    "prefixo": "Erro:"
+  },
+  "sidebar": {
+    "titulo": "Indicadores anuais do Brasil",
+    "subtitulo": "Explore séries históricas, compare períodos e conecte dados econômicos, sociais e institucionais ao contexto presidencial.",
+    "botaoLegal": "Avisos, Fontes e Metodologia",
+    "janelaTemporal": "Janela temporal",
+    "anoInicial": "Ano inicial",
+    "anoFinal": "Ano final",
+    "visualizacao": "Visualização",
+    "detalhada": "Detalhada",
+    "compacta": "Compacta",
+    "compartilhar": "Compartilhar",
+    "linkCopiado": "Link copiado",
+    "limpar": "Limpar",
+    "mensagemLinkCopiado": "Link copiado para a área de transferência.",
+    "tituloCompartilhar": "Copiar link da visão atual",
+    "tituloMenu": "Menu de indicadores"
+  },
+  "grafico": {
+    "semValor": "Sem valor",
+    "semDadosPeriodo": "Sem dados no período selecionado.",
+    "fonte": "Fonte:",
+    "verMenos": "Ver menos",
+    "verMetadados": "Ver metadados",
+    "acoesIndicador": "Ações do indicador",
+    "subir": "Subir indicador",
+    "descer": "Descer indicador",
+    "remover": "Remover indicador",
+    "validarIA": "Validar com IA",
+    "exportarValidacaoIA": "Exportar para validação em IA"
+  },
+  "toastValidacao": {
+    "titulo": "Dados copiados",
+    "textoInicio": "Cole no",
+    "provedores": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "textoFim": "para validar os dados."
+  },
+  "erroCarregamento": {
+    "titulo": "Erro ao carregar dados",
+    "texto": "Os arquivos de dados locais não foram carregados corretamente.",
+    "detalhe": "Verifique se mandatos.js, dados_anuais.js, textos.json e app.js estão na mesma pasta do HTML."
+  },
+  "promptValidacaoIA": {
+    "intro": "Instruções para a IA: valide a confiabilidade dos dados do indicador abaixo. Verifique se os valores numéricos batem com a fonte oficial citada ({fonte}), se a descrição e os eventos históricos condizem com a realidade brasileira e se a metodologia está correta conforme os padrões estatísticos. Informe se encontrou alguma inconsistência significativa ou se os dados são altamente confiáveis.",
+    "dadosTitulo": "DADOS DO INDICADOR (JSON):"
+  }
+}

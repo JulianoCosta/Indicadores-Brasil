@@ -39,6 +39,11 @@ function normalizarCategoria(cat) {
 }
 
 const PRES_ANOS = window.__MANDATOS__ || [];
+let TEXTOS_APP = window.__TEXTOS_APP__ || {};
+
+function camposParaPares(campos) {
+  return (campos || []).map((campo) => [campo.chave, campo.label]);
+}
 
 function getCategoriaCor(cat) {
   const raw = window.__CATEGORIAS__ || {};
@@ -62,9 +67,9 @@ function hexToRgba(hex, alpha) {
   const normalized =
     clean.length === 3
       ? clean
-        .split("")
-        .map((char) => char + char)
-        .join("")
+          .split("")
+          .map((char) => char + char)
+          .join("")
       : clean;
 
   if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
@@ -79,49 +84,20 @@ function hexToRgba(hex, alpha) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-const fixedFields = [
-  ["fonte", "Fonte"],
-  ["como_interpretar", "Como interpretar"],
-  ["comparacao_paises", "Comparação entre países"],
-];
+function getCamposFixos() {
+  return camposParaPares(TEXTOS_APP.camposFixos);
+}
 
-const extraFields = [
-  ["nivel_confiabilidade", "Nível de confiabilidade"],
-  ["metodologia", "Metodologia"],
-  ["historico_metodologia", "Histórico da metodologia"],
-  ["abrangencia", "Abrangência"],
-  ["periodicidade", "Periodicidade"],
-  ["eventos_externos", "Eventos externos"],
-  ["validacao", "Validação"],
-  ["fontes_links", "Fontes e links"],
-];
-
-function LegendMandatos() {
-  return (
-    <div className="legend-mandatos-mobile">
-      {PRES_ANOS.map((presidente) => (
-        <div key={presidente.nome} className="legend-mandatos-item">
-          <span
-            className="legend-mandatos-swatch"
-            style={{ backgroundColor: presidente.cor, border: `1px solid ${presidente.cor}` }}
-          />
-          <span>{presidente.nome}</span>
-        </div>
-      ))}
-    </div>
-  );
+function getCamposExtras() {
+  return camposParaPares(TEXTOS_APP.camposExtras);
 }
 
 function formatarValorIndicador(valor) {
-  if (valor == null || Number.isNaN(valor)) return "Sem valor";
+  if (valor == null || Number.isNaN(valor)) return TEXTOS_APP.grafico?.semValor;
   const abs = Math.abs(valor);
   const casas = abs >= 100 ? 0 : abs >= 10 ? 1 : 2;
 
   return new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 0, maximumFractionDigits: casas }).format(valor);
-}
-
-function formatarPeriodo(anoIni, anoFim) {
-  return anoIni === anoFim ? String(anoIni) : `${anoIni} - ${anoFim}`;
 }
 
 function formatarTickEixoY(valor) {
@@ -236,6 +212,57 @@ function criarUrlCompartilhada(viewCompacta, selecionados, anoIni, anoFim) {
   return url.toString();
 }
 
+function AvisosMetodologiaModal({ aberto, onFechar }) {
+  useEffect(() => {
+    if (!aberto) return undefined;
+
+    const fecharComEscape = (event) => {
+      if (event.key === "Escape") onFechar();
+    };
+
+    document.addEventListener("keydown", fecharComEscape);
+    return () => document.removeEventListener("keydown", fecharComEscape);
+  }, [aberto, onFechar]);
+
+  if (!aberto) return null;
+
+  return (
+    <div className="legal-modal-backdrop" role="presentation" onMouseDown={onFechar}>
+      <section
+        className="legal-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="legal-modal-title"
+        onMouseDown={(event) => event.stopPropagation()}
+      >
+        <div className="legal-modal__header">
+          <div>
+            <span className="legal-modal__eyebrow">{TEXTOS_APP.modalLegal?.eyebrow}</span>
+            <h2 id="legal-modal-title">{TEXTOS_APP.modalLegal?.titulo}</h2>
+          </div>
+          <button
+            type="button"
+            className="legal-modal__close"
+            onClick={onFechar}
+            aria-label={TEXTOS_APP.modalLegal?.fechar}
+          >
+            ×
+          </button>
+        </div>
+
+        <div className="legal-modal__body">
+          {(TEXTOS_APP.avisosMetodologia || []).map((aviso) => (
+            <article key={aviso.titulo} className="legal-notice">
+              <h3>{aviso.titulo}</h3>
+              <p>{aviso.texto}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
 function AppAnual() {
   const [meta, setMeta] = useState(null);
   const [dados, setDados] = useState({});
@@ -248,6 +275,7 @@ function AppAnual() {
   const [catsAbertas, setCatsAbertas] = useState([]);
   const [viewCompacta, setViewCompacta] = useState(false);
   const [linkCopiado, setLinkCopiado] = useState(false);
+  const [avisosAbertos, setAvisosAbertos] = useState(false);
   const [indicadorEmFoco, setIndicadorEmFoco] = useState(null);
   const [indicadoresSaindo, setIndicadoresSaindo] = useState([]);
   const refsIndicadores = React.useRef({});
@@ -527,9 +555,9 @@ function AppAnual() {
   if (loading) {
     return (
       <div className="empty-state" style={{ margin: 24 }}>
-        <div className="empty-state__eyebrow">Carregando</div>
-        <h3 className="empty-state__title">Preparando o atlas visual.</h3>
-        <p className="empty-state__text">Os indicadores anuais estão sendo organizados para leitura.</p>
+        <div className="empty-state__eyebrow">{TEXTOS_APP.estadoCarregando?.eyebrow}</div>
+        <h3 className="empty-state__title">{TEXTOS_APP.estadoCarregando?.titulo}</h3>
+        <p className="empty-state__text">{TEXTOS_APP.estadoCarregando?.texto}</p>
       </div>
     );
   }
@@ -537,19 +565,14 @@ function AppAnual() {
   if (erro) {
     return (
       <div className="empty-state" style={{ margin: 24 }}>
-        <div className="empty-state__eyebrow">Falha de carga</div>
-        <h3 className="empty-state__title">Não foi possível montar o painel.</h3>
-        <p className="empty-state__text">Erro: {erro}</p>
+        <div className="empty-state__eyebrow">{TEXTOS_APP.estadoErro?.eyebrow}</div>
+        <h3 className="empty-state__title">{TEXTOS_APP.estadoErro?.titulo}</h3>
+        <p className="empty-state__text">
+          {TEXTOS_APP.estadoErro?.prefixo} {erro}
+        </p>
       </div>
     );
   }
-
-  const totalValidadas = meta ? Object.values(meta).filter((value) => value.validacao).length : 0;
-  const totalCategorias = Object.keys(cats).length;
-  const periodoSelecionado = formatarPeriodo(anoIni, anoFim);
-  const totalMandatos = PRES_ANOS.filter(
-    (presidente) => Math.min(anoFim + 1, presidente.fim) > Math.max(anoIni, presidente.ini),
-  ).length;
 
   return (
     <div className={"app-layout" + (viewCompacta ? " app-layout--compact" : "")}>
@@ -557,16 +580,16 @@ function AppAnual() {
         <div className={"sidebar sidebar-anual" + (menuAberto ? " aberto" : "")}>
           <div className="sidebar-anual__top">
             <div className="sidebar-title-block">
-              <h1>Indicadores anuais do Brasil</h1>
-              <div className="subtitle">
-                Explore séries históricas, compare períodos e conecte dados econômicos, sociais e institucionais ao
-                contexto presidencial.
-              </div>
+              <h1>{TEXTOS_APP.sidebar?.titulo}</h1>
+              <div className="subtitle">{TEXTOS_APP.sidebar?.subtitulo}</div>
+              <button type="button" className="legal-access-btn" onClick={() => setAvisosAbertos(true)}>
+                {TEXTOS_APP.sidebar?.botaoLegal}
+              </button>
             </div>
 
             <div className="sidebar-panel sidebar-date-range">
               <div className="sidebar-section-header">
-                <span className="sidebar-section-title">Janela temporal</span>
+                <span className="sidebar-section-title">{TEXTOS_APP.sidebar?.janelaTemporal}</span>
               </div>
 
               <div className="sidebar-date-values">
@@ -574,7 +597,7 @@ function AppAnual() {
                   <select
                     value={anoIni}
                     onChange={(event) => aoMudarAnoInicial(event.target.value)}
-                    aria-label="Ano inicial"
+                    aria-label={TEXTOS_APP.sidebar?.anoInicial}
                   >
                     {anosDisponiveis
                       .filter((ano) => ano <= anoFim)
@@ -590,7 +613,7 @@ function AppAnual() {
                   <select
                     value={anoFim}
                     onChange={(event) => aoMudarAnoFinal(event.target.value)}
-                    aria-label="Ano final"
+                    aria-label={TEXTOS_APP.sidebar?.anoFinal}
                   >
                     {anosDisponiveis
                       .filter((ano) => ano >= anoIni)
@@ -606,7 +629,7 @@ function AppAnual() {
 
             <div className="sidebar-panel sidebar-visualization">
               <div className="sidebar-section-header">
-                <span className="sidebar-section-title">Visualização</span>
+                <span className="sidebar-section-title">{TEXTOS_APP.sidebar?.visualizacao}</span>
               </div>
 
               <div className="view-toggle">
@@ -614,13 +637,13 @@ function AppAnual() {
                   className={"view-toggle-btn" + (!viewCompacta ? " ativo" : "")}
                   onClick={() => setViewCompacta(false)}
                 >
-                  Detalhada
+                  {TEXTOS_APP.sidebar?.detalhada}
                 </button>
                 <button
                   className={"view-toggle-btn" + (viewCompacta ? " ativo" : "")}
                   onClick={() => setViewCompacta(true)}
                 >
-                  Compacta
+                  {TEXTOS_APP.sidebar?.compacta}
                 </button>
               </div>
 
@@ -629,7 +652,7 @@ function AppAnual() {
                   type="button"
                   className={"share-view-btn" + (linkCopiado ? " copiado" : "")}
                   onClick={compartilharVisaoAtual}
-                  title="Copiar link da visao atual"
+                  title={TEXTOS_APP.sidebar?.tituloCompartilhar}
                   aria-describedby={linkCopiado ? "share-copy-message" : undefined}
                 >
                   <svg
@@ -648,7 +671,7 @@ function AppAnual() {
                     <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
                     <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
                   </svg>
-                  <span>{linkCopiado ? "Link copiado" : "Compartilhar"}</span>
+                  <span>{linkCopiado ? TEXTOS_APP.sidebar?.linkCopiado : TEXTOS_APP.sidebar?.compartilhar}</span>
                 </button>
                 <button
                   type="button"
@@ -656,12 +679,12 @@ function AppAnual() {
                   onClick={limparSelecao}
                   disabled={selecionadosAtivos.length === 0}
                 >
-                  Limpar
+                  {TEXTOS_APP.sidebar?.limpar}
                 </button>
               </div>
               {linkCopiado && (
                 <div id="share-copy-message" className="share-copy-message" role="status" aria-live="polite">
-                  Link copiado para a área de transferência.
+                  {TEXTOS_APP.sidebar?.mensagemLinkCopiado}
                 </div>
               )}
             </div>
@@ -740,9 +763,9 @@ function AppAnual() {
         </div>
 
         <div className="main-content main-content-anual">
-          <div className="dashboard-shell">
-            <LegendMandatos />
-
+          <div
+            className={"dashboard-shell" + (selecionadosAtivos.length > 0 ? " dashboard-shell--has-visible-cards" : "")}
+          >
             <div className="cards-wrapper">
               {selecionados.length > 0 &&
                 selecionados.map((key) => {
@@ -778,10 +801,19 @@ function AppAnual() {
                   );
                 })}
             </div>
+
+            <footer className="legal-footer">
+              <p>{TEXTOS_APP.avisos?.footerJuridico}</p>
+              <p>{TEXTOS_APP.avisos?.mandatoContexto}</p>
+            </footer>
           </div>
         </div>
 
-        <button className="menu-btn-anual" onClick={() => setMenuAberto(!menuAberto)} title="Menu de indicadores">
+        <button
+          className="menu-btn-anual"
+          onClick={() => setMenuAberto(!menuAberto)}
+          title={TEXTOS_APP.sidebar?.tituloMenu}
+        >
           <svg
             width="24"
             height="24"
@@ -797,6 +829,7 @@ function AppAnual() {
         </button>
 
         <div className={"overlay-anual" + (menuAberto ? " visivel" : "")} onClick={() => setMenuAberto(false)} />
+        <AvisosMetodologiaModal aberto={avisosAbertos} onFechar={() => setAvisosAbertos(false)} />
       </div>
     </div>
   );
@@ -823,9 +856,10 @@ function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, onMover, pod
   };
 
   const copiarParaIA = () => {
-    const prompt = `Instruções para a IA: valide a confiabilidade dos dados do indicador abaixo. Verifique se os valores numéricos batem com a fonte oficial citada (${info.fonte}), se a descrição e os eventos históricos condizem com a realidade brasileira e se a metodologia está correta conforme os padrões estatísticos. Informe se encontrou alguma inconsistência significativa ou se os dados são altamente confiáveis.
+    const intro = (TEXTOS_APP.promptValidacaoIA?.intro || "").replace("{fonte}", info.fonte || "");
+    const prompt = `${intro}
 
-DADOS DO INDICADOR (JSON):
+${TEXTOS_APP.promptValidacaoIA?.dadosTitulo}
 ${JSON.stringify(info, null, 2)}`;
 
     const concluir = () => {
@@ -916,7 +950,11 @@ ${JSON.stringify(info, null, 2)}`;
         {key !== "descricao" && <strong className="field-label">{label}</strong>}
         <div>{typeof displayValue === "object" ? JSON.stringify(displayValue) : displayValue}</div>
         {key === "validacao" && (
-          <button onClick={copiarParaIA} className="action-btn validation-ai-btn" title="Exportar para validação em IA">
+          <button
+            onClick={copiarParaIA}
+            className="action-btn validation-ai-btn"
+            title={TEXTOS_APP.grafico?.exportarValidacaoIA}
+          >
             <svg
               width="14"
               height="14"
@@ -930,7 +968,7 @@ ${JSON.stringify(info, null, 2)}`;
               <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
               <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
             </svg>
-            <span>Validar com IA</span>
+            <span>{TEXTOS_APP.grafico?.validarIA}</span>
           </button>
         )}
       </div>
@@ -938,6 +976,8 @@ ${JSON.stringify(info, null, 2)}`;
   };
 
   const fontePrincipal = info.fonte;
+  const fixedFields = getCamposFixos();
+  const extraFields = getCamposExtras();
   const camposFixosDaGrade = fixedFields.filter(([key]) => key !== "fonte");
   const temExtras = extraFields.some(([key]) => info[key]);
 
@@ -952,14 +992,14 @@ ${JSON.stringify(info, null, 2)}`;
       }}
     >
       <div className="chart-head">
-        <div className="chart-card-actions" aria-label="Acoes do indicador">
+        <div className="chart-card-actions" aria-label={TEXTOS_APP.grafico?.acoesIndicador}>
           <button
             type="button"
             className="chart-order-btn"
             onClick={() => onMover(-1)}
             disabled={!podeSubir}
-            title="Subir indicador"
-            aria-label="Subir indicador"
+            title={TEXTOS_APP.grafico?.subir}
+            aria-label={TEXTOS_APP.grafico?.subir}
           >
             <svg
               width="16"
@@ -980,8 +1020,8 @@ ${JSON.stringify(info, null, 2)}`;
             className="chart-order-btn"
             onClick={() => onMover(1)}
             disabled={!podeDescer}
-            title="Descer indicador"
-            aria-label="Descer indicador"
+            title={TEXTOS_APP.grafico?.descer}
+            aria-label={TEXTOS_APP.grafico?.descer}
           >
             <svg
               width="16"
@@ -997,7 +1037,7 @@ ${JSON.stringify(info, null, 2)}`;
               <path d="M19 12l-7 7-7-7" />
             </svg>
           </button>
-          <button type="button" className="chart-close-btn" onClick={onFechar} title="Remover indicador">
+          <button type="button" className="chart-close-btn" onClick={onFechar} title={TEXTOS_APP.grafico?.remover}>
             <svg
               width="18"
               height="18"
@@ -1027,7 +1067,7 @@ ${JSON.stringify(info, null, 2)}`;
         {info.descricao && <div className="chart-description">{info.descricao}</div>}
 
         {comDados.length === 0 ? (
-          <div className="no-data">Sem dados no período selecionado.</div>
+          <div className="no-data">{TEXTOS_APP.grafico?.semDadosPeriodo}</div>
         ) : (
           <div className="chart-visual">
             <ResponsiveContainer width="100%" height={alturaGrafico}>
@@ -1270,33 +1310,33 @@ ${JSON.stringify(info, null, 2)}`;
           </div>
         )}
 
+        {eventoAtivo && (
+          <div className="event-detail">
+            <button className="event-detail__close" onClick={() => setEventoAtivo(null)}>
+              ×
+            </button>
+            <div className="event-detail__title">
+              {eventoAtivo.ano || eventoAtivo.data}: {eventoAtivo.nome}
+            </div>
+            <div className="event-detail__desc">{eventoAtivo.descricao}</div>
+          </div>
+        )}
+
         {fontePrincipal && (
           <div className="chart-source-line">
-            <strong>Fonte:</strong> {fontePrincipal}
+            <strong>{TEXTOS_APP.grafico?.fonte}</strong> {fontePrincipal}
           </div>
         )}
       </div>
 
-      {!compacta && eventoAtivo && (
-        <div className="event-detail">
-          <button className="event-detail__close" onClick={() => setEventoAtivo(null)}>
-            ×
-          </button>
-          <div className="event-detail__title">
-            {eventoAtivo.ano || eventoAtivo.data}: {eventoAtivo.nome}
-          </div>
-          <div className="event-detail__desc">{eventoAtivo.descricao}</div>
-        </div>
-      )}
-
       {!compacta && (
-        <div className="chart-meta" style={{ marginTop: eventoAtivo ? 12 : 0 }}>
+        <div className="chart-meta">
           {camposFixosDaGrade.map(renderField)}
 
           {temExtras && (
             <div className="chart-actions">
               <button className="action-btn" onClick={() => setExpandido(!expandido)}>
-                <span>{expandido ? "Ver menos" : "Ver metadados"}</span>
+                <span>{expandido ? TEXTOS_APP.grafico?.verMenos : TEXTOS_APP.grafico?.verMetadados}</span>
                 <svg
                   width="12"
                   height="12"
@@ -1344,14 +1384,21 @@ function ToastValidacao({ visivel, aoFechar }) {
               <polyline points="20 6 9 17 4 12" />
             </svg>
           </div>
-          <strong style={{ fontSize: 16 }}>Dados copiados</strong>
+          <strong style={{ fontSize: 16 }}>{TEXTOS_APP.toastValidacao?.titulo}</strong>
         </div>
         <button onClick={aoFechar} className="toast-close">
           ×
         </button>
       </div>
       <div className="toast-body">
-        Cole no <strong>ChatGPT</strong>, <strong>Claude</strong> ou <strong>Gemini</strong> para validar os dados.
+        {TEXTOS_APP.toastValidacao?.textoInicio}{" "}
+        {(TEXTOS_APP.toastValidacao?.provedores || []).map((provedor, index, provedores) => (
+          <React.Fragment key={provedor}>
+            {index > 0 && (index === provedores.length - 1 ? " ou " : ", ")}
+            <strong>{provedor}</strong>
+          </React.Fragment>
+        ))}{" "}
+        {TEXTOS_APP.toastValidacao?.textoFim}
       </div>
     </div>
   );
@@ -1367,7 +1414,7 @@ function copiarFallback(texto, callback) {
 
   try {
     document.execCommand("copy");
-  } catch (error) { }
+  } catch (error) {}
 
   document.body.removeChild(el);
   callback();
@@ -1377,6 +1424,7 @@ let appMontado = false;
 
 function dadosProntos() {
   return (
+    window.__TEXTOS_APP__ &&
     Array.isArray(window.__MANDATOS__) &&
     window.__MANDATOS__.length > 0 &&
     window.__DADOS_ANUAIS__ &&
@@ -1387,12 +1435,13 @@ function dadosProntos() {
 function mostrarErroCarregamento() {
   const root = document.getElementById("root2");
   if (!root || appMontado) return;
+  const erroCarregamento = TEXTOS_APP.erroCarregamento || {};
 
   root.innerHTML = `
     <div style="padding:40px;text-align:center;font-family:Manrope,Segoe UI,sans-serif;color:#d93025;">
-      <h2>Erro ao carregar dados</h2>
-      <p>Os arquivos de dados locais não foram carregados corretamente.</p>
-      <p style="font-size:.95em;color:#64748b;">Verifique se <code>mandatos.js</code>, <code>dados_anuais.js</code> e <code>app.js</code> estão na mesma pasta do HTML.</p>
+      <h2>${erroCarregamento.titulo || ""}</h2>
+      <p>${erroCarregamento.texto || ""}</p>
+      <p style="font-size:.95em;color:#64748b;">${erroCarregamento.detalhe || ""}</p>
     </div>
   `;
 }
@@ -1406,8 +1455,28 @@ function montarApp() {
   ReactDOM.createRoot(root).render(<AppAnual />);
 }
 
+function carregarTextosApp() {
+  if (window.__TEXTOS_APP__) {
+    TEXTOS_APP = window.__TEXTOS_APP__;
+    return Promise.resolve();
+  }
+
+  return fetch("textos.json?v=1.0.0")
+    .then((resposta) => {
+      if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+      return resposta.json();
+    })
+    .then((textos) => {
+      TEXTOS_APP = textos;
+      window.__TEXTOS_APP__ = textos;
+    })
+    .catch(() => {
+      window.__TEXTOS_APP__ = null;
+    });
+}
+
 window.addEventListener("dataLoaded", montarApp);
-montarApp();
+carregarTextosApp().then(montarApp);
 
 window.addEventListener("load", () => {
   setTimeout(() => {
