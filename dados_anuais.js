@@ -9118,6 +9118,756 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2018, "valor": 95 },
     ],
   },
+  "homicidios_intencionais_100_mil_hab": {
+    "label": "Homicídios Intencionais",
+    "fonte_sigla": "WDI/UNODC",
+    "unidade": "Homicídios intencionais por 100 mil habitantes",
+    "fonte":
+      "World Bank - World Development Indicators (VC.IHR.PSRC.P5) / UNODC Research - Data Portal – Intentional Homicide, UN Office on Drugs and Crime (UNODC)",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao": "Mede a taxa anual de vítimas de homicídio intencional no Brasil para cada 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior incidência de violência letal intencional em relação ao tamanho da população. O indicador é adequado para comparação internacional, mas não mede todos os crimes violentos, tentativas de homicídio, sensação de segurança, impunidade, qualidade investigativa ou diferenças locais dentro do país.",
+    "metodologia":
+      "O Banco Mundial define homicídio intencional como morte ilegal infligida a uma pessoa com intenção de causar morte ou lesão grave. A taxa é calculada como o número de vítimas de homicídio intencional dividido pela população total e multiplicado por 100.000. A série WDI usa como fonte o UNODC Research - Data Portal – Intentional Homicide, que harmoniza dados nacionais para comparabilidade internacional. Foram mantidos apenas anos com valor anual disponível na série oficial WDI/UNODC para o Brasil, sem incluir anos posteriores sem dado publicado.",
+    "historico_metodologia":
+      "A série é anual e comparável internacionalmente, mas pode sofrer revisões retroativas quando o UNODC atualiza dados nacionais, corrige classificações, incorpora novas fontes administrativas ou harmoniza diferenças entre registros criminais e registros de saúde pública. O próprio conceito estatístico exclui mortes diretamente atribuídas a conflitos armados organizados e pode diferir de definições legais nacionais de homicídio, assassinato, mortes decorrentes de intervenção policial ou outras categorias de mortes violentas. A cobertura oficial disponível na série WDI/UNODC vai de 1990 a 2023; por isso, 2024, 2025 e 2026 não foram incluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo Banco Mundial e UNODC para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2003,
+        "nome": "Estatuto Desarmamento",
+        "descricao":
+          "A aprovação do Estatuto do Desarmamento no Brasil ocorreu no período anterior à queda da taxa observada em 2004 e 2005; a série não permite atribuir causalidade isolada ao evento.",
+      },
+      {
+        "ano": 2012,
+        "nome": "Nova Alta",
+        "descricao":
+          "A taxa voltou a subir de forma relevante em 2012, após relativa estabilidade entre 2006 e 2011, iniciando período de níveis mais elevados até 2017.",
+      },
+      {
+        "ano": 2017,
+        "nome": "Pico Série",
+        "descricao": "A série WDI/UNODC registra em 2017 o maior valor do período de 1994 a 2023 para o Brasil.",
+      },
+      {
+        "ano": 2018,
+        "nome": "Queda Forte",
+        "descricao":
+          "A taxa caiu de 31,16 em 2017 para 27,16 em 2018, marcando a primeira grande reversão após o pico da série.",
+      },
+      {
+        "ano": 2019,
+        "nome": "Nova Queda",
+        "descricao":
+          "A taxa caiu novamente de forma expressiva em 2019, de 27,16 para 21,24 homicídios por 100 mil habitantes.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "O primeiro ano da pandemia de COVID-19 coincidiu com leve aumento da taxa, de 21,24 em 2019 para 21,81 em 2020.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Menor Recente",
+        "descricao":
+          "A taxa de 2023 foi a menor da série desde 1994, ficando em 19,28 homicídios intencionais por 100 mil habitantes.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 19,28 homicídios intencionais por 100 mil habitantes, nível muito superior ao observado na maioria das economias europeias e asiáticas de baixa violência e ainda elevado em comparação global. Dentro da América Latina e Caribe, o Brasil ficou abaixo de países com taxas mais altas, como Jamaica, Equador, Haiti, Honduras, Colômbia e México, mas acima de países como Chile, Argentina e Uruguai.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do World Development Indicators do Banco Mundial com fonte UNODC. A principal ressalva é que homicídios dependem da qualidade dos registros criminais, registros de saúde pública, classificação legal e harmonização internacional; portanto, os valores são oficiais e comparáveis, mas não devem ser tratados como medição perfeita de toda violência letal no país.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Intentional homicides (per 100,000 people) - Brazil - VC.IHR.PSRC.P5",
+        "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - VC.IHR.PSRC.P5",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/VC.IHR.PSRC.P5",
+      },
+      {
+        "titulo": "UNODC Data Portal - Victims of Intentional Homicide",
+        "url": "https://data.unodc.org/datareport/hom-victim",
+      },
+      {
+        "titulo": "UNODC - Global Study on Homicide",
+        "url": "https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 18.74 },
+      { "ano": 1995, "valor": 21.02 },
+      { "ano": 1996, "valor": 23.69 },
+      { "ano": 1997, "valor": 24.3 },
+      { "ano": 1998, "valor": 24.8 },
+      { "ano": 1999, "valor": 25 },
+      { "ano": 2000, "valor": 26.07 },
+      { "ano": 2001, "valor": 27.2 },
+      { "ano": 2002, "valor": 27.85 },
+      { "ano": 2003, "valor": 28.27 },
+      { "ano": 2004, "valor": 26.49 },
+      { "ano": 2005, "valor": 25.77 },
+      { "ano": 2006, "valor": 26.34 },
+      { "ano": 2007, "valor": 25.31 },
+      { "ano": 2008, "valor": 26.34 },
+      { "ano": 2009, "valor": 26.79 },
+      { "ano": 2010, "valor": 26.99 },
+      { "ano": 2011, "valor": 26.75 },
+      { "ano": 2012, "valor": 28.64 },
+      { "ano": 2013, "valor": 28.64 },
+      { "ano": 2014, "valor": 29.85 },
+      { "ano": 2015, "valor": 28.85 },
+      { "ano": 2016, "valor": 30.12 },
+      { "ano": 2017, "valor": 31.16 },
+      { "ano": 2018, "valor": 27.16 },
+      { "ano": 2019, "valor": 21.24 },
+      { "ano": 2020, "valor": 21.81 },
+      { "ano": 2021, "valor": 20.5 },
+      { "ano": 2022, "valor": 20.08 },
+      { "ano": 2023, "valor": 19.28 },
+    ],
+  },
+  "homicidio_doloso_vitimas_sinesp_mjsp": {
+    "label": "Homicídios Dolosos",
+    "fonte_sigla": "SINESP/MJSP",
+    "unidade": "vítimas",
+    "fonte":
+      "Ministério da Justiça e Segurança Pública - Sistema Nacional de Informações de Segurança Pública (Sinesp), Dados Nacionais de Segurança Pública / Mapa da Segurança Pública",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede o número anual de vítimas de homicídio doloso registradas oficialmente no Brasil pelas unidades federativas e consolidadas pelo Sinesp/MJSP.",
+    "como_interpretar":
+      "Valores maiores indicam maior número absoluto de vítimas de homicídio doloso registradas no país. O indicador mede vítimas registradas em boletins de ocorrência e consolidadas administrativamente; não deve ser confundido com mortes por agressão do Sistema de Informações sobre Mortalidade do Ministério da Saúde, nem com Mortes Violentas Intencionais, que agregam outras categorias como latrocínio e lesão corporal seguida de morte.",
+    "metodologia":
+      "Os valores correspondem à soma anual nacional das vítimas de homicídio doloso informadas pelas Secretarias de Segurança Pública dos estados e do Distrito Federal ao Sinesp/MJSP. A base aberta do Sinesp consolida dados oriundos dos boletins de ocorrência registrados pelas Polícias Civis, organizados por UF, mês, tipo de crime, sexo da vítima e quantidade de vítimas. Para 2015 a 2019, foram somadas as vítimas do tipo de crime 'Homicídio doloso' na planilha oficial 'Dados Nacionais de Segurança Pública - UF'. Para 2020 a 2024, foram usados os totais nacionais mais recentes publicados no Mapa da Segurança Pública 2025, com data de extração de 13/02/2025, substituindo valores anteriores sujeitos a retificação.",
+    "historico_metodologia":
+      "A Senasp informa que a coleta informatizada teve origem no SinespJC em 2004, com dados agregados das unidades federativas; em 2010 houve reformulação para o SinespJC Web; a partir de 2012, com a Lei nº 12.681/2012, iniciou-se a estruturação do Sinesp; e, em 2015, foi disponibilizado o Sinesp Integração para consolidação de múltiplas fontes em uma base nacional. A própria fonte alerta que os dados refletem o nível de alimentação e consolidação das unidades federativas na data de extração, podendo ocorrer atualizações e retificações posteriores. Não foram incluídos anos de 1994 a 2014 porque a série aberta nacional do Sinesp/MJSP para esse indicador não apresenta valores oficiais consolidados e verificáveis para esse período.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados informados pelas unidades federativas e pelo Distrito Federal ao Sinesp/MJSP.",
+    "periodicidade": "Mensal na base operacional; agregação anual neste indicador.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Não é recomendado usar este indicador para comparação direta entre países, pois ele é baseado em registros policiais administrativos do Brasil e em classificação jurídica nacional de homicídio doloso. Para comparação internacional, a referência mais adequada é o indicador de homicídios intencionais por 100 mil habitantes do UNODC/Banco Mundial, que aplica padronização estatística internacional.",
+    "nivel_confiabilidade":
+      "Alto para monitoramento oficial de registros policiais nacionais, pois os dados são fornecidos pelas unidades federativas ao Sinesp/MJSP e publicados por fonte governamental oficial. A confiabilidade não é 'muito alta' para comparação histórica absoluta porque há risco de diferenças de registro entre estados, alterações de fluxo de envio, consolidação posterior e retificações retroativas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "MJSP - Ocorrências Criminais - Sinesp",
+        "url": "https://dados.mj.gov.br/dataset/sistema-nacional-de-estatisticas-de-seguranca-publica",
+      },
+      {
+        "titulo": "MJSP/Sinesp - Dados Nacionais de Segurança Pública - UF XLSX",
+        "url":
+          "https://dados.mj.gov.br/dataset/210b9ae2-21fc-4986-89c6-2006eb4db247/resource/feeae05e-faba-406c-8a4a-512aec91a9d1/download/indicadoressegurancapublicauf.xlsx",
+      },
+      {
+        "titulo": "MJSP - Mapa da Segurança Pública 2025",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dados-nacionais-de-seguranca-publica-mapa/mapa-da-seguranca-publica-2025.pdf",
+      },
+      {
+        "titulo": "Gov.br - Mapa da Segurança Pública 2025: Brasil reduz homicídios dolosos",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/noticias/mapa-da-seguranca-publica-2025-brasil-reduz-homicidios-dolosos-e-bate-recorde-em-apreensoes-de-drogas",
+      },
+    ],
+    "dados": [
+      { "ano": 2015, "valor": 48673 },
+      { "ano": 2016, "valor": 51093 },
+      { "ano": 2017, "valor": 55950 },
+      { "ano": 2018, "valor": 48965 },
+      { "ano": 2019, "valor": 39646 },
+      { "ano": 2020, "valor": 42034 },
+      { "ano": 2021, "valor": 39599 },
+      { "ano": 2022, "valor": 38922 },
+      { "ano": 2023, "valor": 37754 },
+      { "ano": 2024, "valor": 35365 },
+    ],
+  },
+  "homicidios_mulheres_100mil": {
+    "label": "Homicídios Intencionais De Mulheres",
+    "fonte_sigla": "WDI/UNODC",
+    "unidade": "homicídios por 100 mil mulheres",
+    "fonte": "World Bank - World Development Indicators / UNODC Research - Data Portal – Intentional Homicide",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao": "Mede a taxa de mulheres vítimas de homicídio intencional por 100 mil mulheres.",
+    "como_interpretar":
+      "Valores maiores indicam maior incidência de homicídios intencionais contra mulheres em relação à população feminina. O indicador não mede feminicídio legal, violência doméstica, agressões não letais ou motivação de gênero; mede todas as mulheres vítimas de homicídio intencional conforme a definição estatística internacional do UNODC.",
+    "metodologia":
+      "O indicador corresponde ao número de mulheres vítimas de homicídio intencional dividido pela população feminina residente no mesmo ano, multiplicado por 100.000. A definição estatística internacional considera homicídio intencional como morte ilegal infligida por outra pessoa com intenção de causar morte ou lesão grave. Os dados de homicídio são compilados pelo UNODC a partir de fontes oficiais nacionais, principalmente sistemas de justiça criminal e estatísticas policiais, e publicados no World Development Indicators do Banco Mundial.",
+    "historico_metodologia":
+      "A metodologia internacional do UNODC busca padronizar o conceito de homicídio intencional pela International Classification of Crime for Statistical Purposes (ICCS). A série do WDI para o Brasil está disponível de 1990 a 2023, mas este JSON mantém apenas 1994 em diante, conforme solicitado. A criação da tipificação penal brasileira de feminicídio em 2015 não altera diretamente este indicador, pois ele mede homicídios intencionais de mulheres, não feminicídios legais. Mudanças nacionais de registro, investigação e classificação criminal podem afetar a comparabilidade ao longo do tempo, mas os valores aqui mantidos são os publicados na série WDI/UNODC, sem interpolação, extrapolação ou estimativa própria.",
+    "abrangencia": "Brasil, nível nacional; mulheres vítimas de homicídio intencional por 100 mil mulheres residentes.",
+    "periodicidade": "Anual",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 3,92 homicídios intencionais de mulheres por 100 mil mulheres, acima da maioria dos países de alta renda e abaixo de alguns países latino-americanos e caribenhos com taxas mais elevadas. A comparação internacional é metodologicamente possível pelo WDI/UNODC, mas deve ser feita com cautela porque diferenças de registro criminal, investigação, cobertura estatística e classificação de homicídios podem afetar a comparabilidade entre países.",
+    "nivel_confiabilidade":
+      "Alta para a série apresentada, pois os valores são da série oficial WDI/UNODC, com cobertura anual nacional e metodologia internacional padronizada. A limitação central é conceitual: o indicador mede homicídios intencionais de mulheres, não feminicídio legal ou motivação de gênero.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Intentional Homicides, Female (per 100,000 female) - Brazil",
+        "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.FE.P5?locations=BR",
+      },
+      {
+        "titulo": "World Bank Gender Data Portal - Intentional Homicides (per 100,000 people)",
+        "url": "https://genderdata.worldbank.org/en/indicator/vc-ihr-psrc-p5",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata Glossary - Intentional Homicides",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/VC.IHR.PSRC.P5",
+      },
+      {
+        "titulo": "UNODC Research - Data Portal – Intentional Homicide",
+        "url": "https://data.unodc.org/datareport/hom-femicide",
+      },
+      {
+        "titulo": "UN Statistics Division - SDG Indicator 16.1.1 Metadata",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-16-01-01.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 3.25 },
+      { "ano": 1995, "valor": 3.75 },
+      { "ano": 1996, "valor": 4.46 },
+      { "ano": 1997, "valor": 4.28 },
+      { "ano": 1998, "valor": 4.12 },
+      { "ano": 1999, "valor": 4.1 },
+      { "ano": 2000, "valor": 4.27 },
+      { "ano": 2001, "valor": 4.34 },
+      { "ano": 2002, "valor": 4.31 },
+      { "ano": 2003, "valor": 4.33 },
+      { "ano": 2004, "valor": 4.16 },
+      { "ano": 2005, "valor": 4.17 },
+      { "ano": 2006, "valor": 4.27 },
+      { "ano": 2007, "valor": 3.97 },
+      { "ano": 2008, "valor": 4.19 },
+      { "ano": 2009, "valor": 4.4 },
+      { "ano": 2010, "valor": 4.56 },
+      { "ano": 2011, "valor": 4.58 },
+      { "ano": 2012, "valor": 4.74 },
+      { "ano": 2013, "valor": 4.75 },
+      { "ano": 2014, "valor": 4.77 },
+      { "ano": 2015, "valor": 4.52 },
+      { "ano": 2016, "valor": 4.51 },
+      { "ano": 2017, "valor": 4.75 },
+      { "ano": 2018, "valor": 4.32 },
+      { "ano": 2019, "valor": 3.55 },
+      { "ano": 2020, "valor": 4.05 },
+      { "ano": 2021, "valor": 4.01 },
+      { "ano": 2022, "valor": 3.92 },
+      { "ano": 2023, "valor": 3.92 },
+    ],
+  },
+  "estupro_vitimas_sinesp_mjsp": {
+    "label": "Estupros",
+    "fonte_sigla": "SINESP/MJSP",
+    "unidade": "vítimas registradas",
+    "fonte": "Ministério da Justiça e Segurança Pública - Dados Nacionais de Segurança Pública / Sinesp VDE (BancoVDE)",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede o número anual de vítimas registradas nos indicadores oficiais de estupro informados pelas Unidades da Federação ao Sinesp/MJSP.",
+    "como_interpretar":
+      "Valores maiores indicam maior número de vítimas registradas em boletins e bases estaduais consolidadas no Sinesp. O indicador mede registros oficiais, não a prevalência real de violência sexual, pois crimes desse tipo podem sofrer subnotificação relevante e variações de registro entre estados.",
+    "metodologia":
+      "Os valores foram obtidos a partir dos arquivos oficiais BancoVDE do Sinesp/MJSP. Para cada ano completo, foram selecionadas as linhas dos eventos 'Estupro' e 'Estupro de vulnerável' e somado o campo 'total_vitima' de janeiro a dezembro, para todas as 27 Unidades da Federação. A soma conjunta segue a nota metodológica oficial da base, segundo a qual, no indicador 'Estupro', podem ocorrer duas linhas no mesmo mês e, quando isso ocorrer, os valores devem ser somados para obter o total correto. Não foram incluídos valores estimados, projeções ou anos incompletos.",
+    "historico_metodologia":
+      "A coleta federal de estatísticas criminais começou a ser estruturada pela Senasp a partir de 2001; a coleta informatizada foi inaugurada com o SinespJC em 2004; em 2012 foi instituído o Sinesp; em 2015 foi disponibilizado o Sinesp Integração; e, em maio de 2023, foi lançado o Sinesp VDE para coletar, consolidar e validar os Dados Nacionais de Segurança Pública. A base pode receber atualizações posteriores à publicação, pois os dados refletem o nível de alimentação e consolidação das Unidades da Federação na data de extração. Séries de estupro devem ser interpretadas com cautela por mudanças de integração, validação, capacidade de registro, classificação penal e subnotificação.",
+    "abrangencia":
+      "Brasil, cobertura nacional por Unidade da Federação, com dados informados pelos Gestores Estaduais de Estatística e consolidados pelo Ministério da Justiça e Segurança Pública.",
+    "periodicidade": "Mensal na base original; anual por agregação de janeiro a dezembro neste indicador.",
+    "eventos_externos": [
+      {
+        "ano": 2018,
+        "nome": "Lei SUSP",
+        "descricao":
+          "A Lei nº 13.675/2018 instituiu o Sistema Único de Segurança Pública e reforçou a base normativa do Sinesp, afetando a organização nacional das estatísticas de segurança pública.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 coincidiu com mudanças de circulação, atendimento e registro de ocorrências, o que pode ter afetado a quantidade de vítimas registradas no período.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Sinesp VDE",
+        "descricao":
+          "O lançamento do Sinesp Validador de Dados Estatísticos em maio de 2023 alterou o processo de coleta, consolidação e validação dos 28 indicadores nacionais de segurança pública.",
+      },
+    ],
+    "comparacao_paises":
+      "Não é recomendado comparar diretamente este indicador com outros países, porque registros policiais de estupro dependem de legislação penal, definição estatística, propensão à denúncia, capacidade institucional, protocolos policiais e subnotificação. Para comparação internacional, a referência mais apropriada é usar séries padronizadas do UNODC, ainda com forte cautela metodológica.",
+    "nivel_confiabilidade":
+      "Alto para registros administrativos oficiais consolidados pelo MJSP nos anos apresentados; médio para medir a incidência real do fenômeno, devido à subnotificação, diferenças estaduais de registro e possíveis atualizações posteriores da base. A série foi limitada a anos completos e valores diretamente verificáveis nos arquivos oficiais BancoVDE.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "MJSP - Dados Nacionais de Segurança Pública",
+        "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica",
+      },
+      {
+        "titulo": "MJSP - Base de Dados e Notas Metodológicas dos Gestores Estaduais - Sinesp VDE 2015 a 2026",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023",
+      },
+      {
+        "titulo": "MJSP - DNSP - Base de Dados - BancoVDE",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2018.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2018.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2019.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2019.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2020.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2020.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2021.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2021.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2022.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2022.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2023.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2023.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2024.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2024.xlsx/@@download/file",
+      },
+      {
+        "titulo": "MJSP - BancoVDE 2025.xlsx",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2025.xlsx/@@download/file",
+      },
+    ],
+    "dados": [
+      { "ano": 2018, "valor": 72816 },
+      { "ano": 2019, "valor": 77550 },
+      { "ano": 2020, "valor": 67128 },
+      { "ano": 2021, "valor": 72604 },
+      { "ano": 2022, "valor": 80537 },
+      { "ano": 2023, "valor": 88469 },
+      { "ano": 2024, "valor": 89106 },
+      { "ano": 2025, "valor": 83492 },
+    ],
+  },
+  "roubos_100_mil_hab_unodc": {
+    "label": "Roubos",
+    "fonte_sigla": "UNODC",
+    "unidade": "roubos registrados por 100 mil habitantes",
+    "fonte": "UNODC Research - Data Portal - Violent and Sexual Crime",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa de roubos registrados pela polícia ou por outras agências de aplicação da lei no Brasil, por 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior número de roubos registrados em relação ao tamanho da população. O indicador mede ocorrências registradas oficialmente, não a vitimização real total, pois depende de denúncia, registro policial, legislação nacional, práticas administrativas e capacidade institucional.",
+    "metodologia":
+      "O indicador usa a definição de robbery do ICCS 0401: subtração ou obtenção ilegal de propriedade com uso de força ou ameaça de força contra uma pessoa, com intenção de reter temporária ou permanentemente a propriedade. A unidade estatística é a infração registrada. A taxa é calculada como: número de roubos registrados no ano dividido pela população total do país no mesmo ano, multiplicado por 100.000. Os dados criminais são fornecidos por Estados-membros ao UNODC por meio do United Nations Survey of Crime Trends and Operations of Criminal Justice Systems (UN-CTS) ou por outros meios oficiais, e a população usada é da UN DESA, Population Division.",
+    "historico_metodologia":
+      "A série de roubos do UNODC para comparação internacional sofre limitações relevantes: nem todos os países reportam todos os anos; categorias nacionais podem não coincidir perfeitamente com o ICCS 0401; mudanças de legislação, registro policial, informatização, integração de bases e propensão das vítimas a denunciar podem alterar a série sem refletir necessariamente mudança real de criminalidade. A fonte oficial consultada informa atualização do Data Portal em 15/05/2025 e apresenta valores selecionados no Statistical Yearbook 2025. Não foram incluídos anos sem valor oficial publicado para robbery na tabela validada; portanto, anos de 1994 a 2009, 2011, 2012, 2014, 2016, 2017, 2018, 2020, 2021, 2022, 2023, 2024 e 2025 ficaram fora da série por ausência de valor concreto validado nessa fonte.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados administrativos de crimes registrados oficialmente e padronização internacional pelo UNODC.",
+    "periodicidade":
+      "Anual, conforme disponibilidade de reporte oficial; a tabela validada disponível publica apenas anos selecionados para o Brasil.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "A comparação internacional deve ser feita com cautela porque roubos dependem fortemente de denúncia, registro policial e definição legal nacional. Nos anos com dados publicados, o Brasil aparece com taxa elevada frente a muitos países com menor incidência registrada de roubo, mas comparações diretas são menos robustas do que para homicídios.",
+    "nivel_confiabilidade":
+      "Alto para representar registros administrativos oficiais enviados ou validados pelo UNODC nos anos publicados. Médio para comparação internacional e análise de prevalência real, devido a subnotificação, diferenças legais, mudanças de registro e lacunas temporais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "UNODC Data Portal - Violent and Sexual Crime",
+        "url": "https://data.unodc.org/datareport/violent-offences",
+      },
+      {
+        "titulo": "UNODC - Metadata Information: Violent and Sexual Crime",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2025-11/metadata_violent_and_sexual_crime.pdf",
+      },
+      {
+        "titulo": "United Nations Statistical Yearbook 2025 - Intentional Homicides and Other Crimes",
+        "url": "https://data.un.org/_Docs/SYB/PDFs/SYB68_328_202511_Intentional%20homicides%20and%20other%20crimes.pdf",
+      },
+      {
+        "titulo": "United Nations Data - CSV: Intentional Homicides and Other Crimes",
+        "url": "https://data.un.org/_Docs/SYB/CSV/SYB68_328_202511_Intentional%20homicides%20and%20other%20crimes.csv",
+      },
+    ],
+    "dados": [
+      { "ano": 2010, "valor": 558.1 },
+      { "ano": 2013, "valor": 510.1 },
+      { "ano": 2015, "valor": 768.9 },
+      { "ano": 2019, "valor": 570.3 },
+    ],
+  },
+  "roubo_veiculos_ocorrencias_sinesp_mjsp": {
+    "label": "Roubo De Veículos",
+    "fonte_sigla": "SINESP/MJSP",
+    "unidade": "ocorrências registradas",
+    "fonte":
+      "Ministério da Justiça e Segurança Pública - Sistema Nacional de Informações de Segurança Pública (SINESP) / Dados Nacionais de Segurança Pública / Sinesp VDE",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede o total anual de ocorrências registradas de roubo de veículos no Brasil, informadas pelas Unidades da Federação e pelo Distrito Federal ao SINESP/MJSP.",
+    "como_interpretar":
+      "Valores maiores indicam maior número absoluto de registros policiais de roubo de veículos no ano. Como o indicador está em ocorrências, e não em taxa, ele é influenciado pelo tamanho da frota, volume populacional, registro policial, cobertura estadual e validação das bases. Não deve ser usado isoladamente para comparar risco individual sem denominador por frota ou população.",
+    "metodologia":
+      "Foram utilizados apenas totais anuais oficiais de ocorrências de roubo de veículos publicados pelo MJSP/SINESP. O indicador é informado pelas Unidades da Federação e pelo Distrito Federal ao Sistema Nacional de Informações de Segurança Pública. Para esta série, a métrica escolhida foi contagem absoluta de ocorrências, não taxa por 100 mil habitantes, pois a fonte oficial do Mapa da Segurança Pública apresenta o roubo de veículos como ocorrências registradas e, em alguns casos, como taxa por 100 mil veículos, não por 100 mil habitantes. Foram mantidos apenas anos completos com valores nacionais oficiais explicitamente publicados e verificáveis nas fontes consultadas.",
+    "historico_metodologia":
+      "O SinespJC teve início em 2004 para coleta de dados de registros policiais. Em 2015, foi disponibilizado o Sinesp Integração. Em 2023, o MJSP lançou o Sinesp Validador de Dados Estatísticos (Sinesp VDE), ampliando a validação mensal dos indicadores nacionais enviados pelos gestores estaduais. Embora o pedido mencione série desde 1994, não foi identificada fonte oficial SINESP/MJSP com série nacional validada de roubo de veículos desde 1994. Por rigor metodológico, os anos de 1994 a 2020 foram omitidos. O ano de 2020 também foi omitido porque o Mapa da Segurança Pública 2024 informa ausência de dados de MA, RJ, RO e SC no VDE até a data de extração. Os dados podem sofrer retificações posteriores conforme atualização, consolidação e validação pelas Unidades da Federação.",
+    "abrangencia":
+      "Brasil, com dados informados pelas Unidades da Federação e pelo Distrito Federal e consolidação nacional pelo MJSP/SINESP.",
+    "periodicidade":
+      "Mensal na coleta e validação; anual nesta série por consolidação dos anos completos publicados oficialmente.",
+    "eventos_externos": [
+      {
+        "ano": 2015,
+        "nome": "Sinesp Integração",
+        "descricao":
+          "Disponibilização do Sinesp Integração, ampliando a estrutura nacional de envio e consolidação de dados de segurança pública.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Sinesp VDE",
+        "descricao":
+          "Lançamento do Sinesp Validador de Dados Estatísticos, ferramenta usada para validação dos indicadores nacionais enviados pelos gestores estaduais.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Queda Anual",
+        "descricao":
+          "O Mapa da Segurança Pública 2025 registrou redução de 6,10% nas ocorrências de roubo de veículos em 2024 em relação a 2023.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta nesta fonte. O SINESP/MJSP é uma base oficial nacional brasileira, não uma base global harmonizada. Comparações entre países exigiriam padronização penal, equivalência de classificação criminal, cobertura de registro policial e denominador comparável, como população ou frota de veículos.",
+    "nivel_confiabilidade":
+      "Alto para os anos incluídos, pois os valores foram mantidos apenas quando publicados oficialmente pelo MJSP/SINESP em materiais nacionais. A confiabilidade é menor para reconstrução histórica longa, porque não há série oficial SINESP/MJSP validada desde 1994 para este indicador e porque mudanças de sistema, validação estadual e retificações podem alterar valores retrospectivamente.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "MJSP - Dados Nacionais de Segurança Pública",
+        "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica",
+      },
+      {
+        "titulo": "MJSP - Base de Dados e Notas Metodológicas dos Gestores Estaduais - Sinesp VDE 2015 a 2026",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023",
+      },
+      {
+        "titulo": "Dados.MJ - Ocorrências Criminais - Sinesp",
+        "url": "https://dados.mj.gov.br/dataset/sistema-nacional-de-estatisticas-de-seguranca-publica",
+      },
+      {
+        "titulo": "MJSP - Mapa da Segurança Pública 2024",
+        "url": "https://dspace.mj.gov.br/bitstream/1/12727/1/Mapa%20da%20Seguran%C3%A7a%20P%C3%BAblica%202024.pdf",
+      },
+      {
+        "titulo": "MJSP - Mapa da Segurança Pública 2025",
+        "url":
+          "https://www.gov.br/mj/pt-br/assuntos/noticias/mapa-da-seguranca-publica-2025-brasil-reduz-homicidios-dolosos-e-bate-recorde-em-apreensoes-de-drogas/mjsp-mapa-da-seguranca-publica-2025.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2021, "valor": 141147 },
+      { "ano": 2022, "valor": 148004 },
+      { "ano": 2023, "valor": 135433 },
+      { "ano": 2024, "valor": 127165 },
+    ],
+  },
+  "agressoes_graves_100_mil_hab": {
+    "label": "Agressões Graves",
+    "fonte_sigla": "UNODC",
+    "unidade": "vítimas por 100 mil habitantes",
+    "fonte": "UNODC Research - Data Portal - Violent and Sexual Crime",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa de vítimas de agressão grave registradas por autoridades policiais ou outras agências de aplicação da lei, expressa por 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior taxa registrada de vítimas de agressão grave. O indicador não mede necessariamente a prevalência real de violência física grave, pois depende de notificação, registro policial, classificação jurídica, capacidade institucional e aderência nacional à definição estatística internacional.",
+    "metodologia":
+      "O UNODC utiliza dados administrativos nacionais reportados pelos Estados-membros por meio do United Nations Survey of Crime Trends and Operations of Criminal Justice Systems (UN-CTS) ou outros meios validados. Agressão grave corresponde ao ICCS 020111: aplicação intencional ou imprudente de força física séria contra o corpo de uma pessoa, resultando em lesão corporal grave. A unidade de contagem para vítimas de agressão grave é a vítima individual. A taxa total é calculada como 100.000 multiplicado pelo número total de vítimas dividido pela população total residente no ano, com população proveniente da UN DESA - World Population Prospects.",
+    "historico_metodologia":
+      "A série de crimes violentos do UNODC foi atualizada em 15/05/2025 e usa definições baseadas na International Classification of Crime for Statistical Purposes (ICCS). A comparabilidade histórica pode ser afetada por mudanças nacionais de legislação, práticas de registro policial, estágio de registro do caso, cobertura institucional, subnotificação, integração entre agências e grau de adoção das definições internacionais. Não há série anual completa para o Brasil desde 1994 neste atributo; foram mantidos apenas anos com valores oficiais observados disponíveis, sem interpolação, projeção ou estimativa.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional do UNODC para comparação entre países quando há dados reportados e validados.",
+    "periodicidade":
+      "Anual, conforme disponibilidade de reporte nacional ao UN-CTS e atualização do Data Portal do UNODC.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 106,1 vítimas de agressão grave por 100 mil habitantes. No mesmo recorte oficial, o valor ficou acima de Bolívia (91,6) e Bulgária (56,7), mas abaixo de Canadá (226,9). A comparação internacional deve ser interpretada com cautela, pois diferenças de legislação, subnotificação, registro policial e aderência ao ICCS podem alterar fortemente os níveis observados.",
+    "nivel_confiabilidade":
+      "Médio-alto para os anos disponíveis, por se tratar de dados oficiais administrativos reportados ao UNODC e revisados por consistência. A principal limitação é a baixa completude histórica para o Brasil e a comparabilidade internacional limitada por diferenças nacionais de registro, subnotificação e classificação criminal.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "UNODC Data Portal - Victims of Serious Assault",
+        "url": "https://data.unodc.org/datareport/serious-assault",
+      },
+      {
+        "titulo": "UNODC Data Portal - Violent and Sexual Crime - Metadata",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2025-11/metadata_violent_and_sexual_crime.pdf",
+      },
+      {
+        "titulo": "UNODC Data Portal - Violent and Sexual Crime - Download Data",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2025-12/data_cts_violent_and_sexual_crime.xlsx",
+      },
+      {
+        "titulo": "United Nations Statistical Yearbook 2025 - Intentional Homicides and Other Crimes",
+        "url": "https://data.un.org/_Docs/SYB/PDFs/SYB68_328_202511_Intentional%20homicides%20and%20other%20crimes.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2010, "valor": 369.5 },
+      { "ano": 2013, "valor": 333.3 },
+      { "ano": 2015, "valor": 307.9 },
+      { "ano": 2019, "valor": 290.6 },
+      { "ano": 2020, "valor": 93.7 },
+      { "ano": 2023, "valor": 106.1 },
+    ],
+  },
+  "sequestros_por_100_mil_hab_unodc": {
+    "label": "Sequestros",
+    "fonte_sigla": "UNODC",
+    "unidade": "casos por 100 mil habitantes",
+    "fonte": "UNODC Research - Data Portal - Violent and Sexual Crime",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa de sequestros registrados por autoridades policiais ou órgãos de aplicação da lei no Brasil, expressa por 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior número de sequestros registrados em relação ao tamanho da população. O indicador mede registros oficiais, não necessariamente a ocorrência real total, pois pode ser afetado por subnotificação, diferenças legais, práticas policiais, capacidade institucional e mudanças no estágio de registro dos crimes.",
+    "metodologia":
+      "O UNODC coleta dados nacionais administrativos enviados pelos países por meio do United Nations Survey of Crime Trends and Operations of Criminal Justice Systems (UN-CTS) ou outros canais oficiais. O sequestro segue a classificação ICCS 020221, referente à detenção e retirada ilegal de uma pessoa para obter ganho ilícito, benefício material, libertação de alguém ou para obrigar uma pessoa física ou jurídica a fazer ou deixar de fazer algo. A taxa é calculada como: 100.000 × número de sequestros registrados / população residente total. A população usada pelo UNODC deriva das estimativas oficiais da Divisão de População das Nações Unidas. Foram mantidos apenas anos em que a taxa oficial apareceu diretamente nas fontes oficiais da ONU/UNODC; lacunas não foram interpoladas e estimativas não foram incluídas.",
+    "historico_metodologia":
+      "A fonte oficial consultada informa atualização metodológica do conjunto Violent and Sexual Crime em 15/05/2025 e usa dados administrativos nacionais de polícia ou aplicação da lei, com padronização pela ICCS quando aplicável. Não foram localizadas alterações metodológicas específicas para o Brasil que permitam ajustar retroativamente a série de sequestros. A comparabilidade temporal e internacional pode ser afetada por diferenças na definição legal, no funcionamento do sistema de justiça criminal, no estágio em que o crime é registrado, na disposição da população para reportar ocorrências e na capacidade de registro das autoridades. Dados anteriores a 2010 e anos sem valor oficial diretamente validável nas fontes consultadas não foram incluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional para comparação com outros países no Data Portal do UNODC e no Statistical Yearbook das Nações Unidas.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Na última taxa oficial diretamente validada para o Brasil nas fontes consultadas, o país registrou 2,1 sequestros por 100 mil habitantes em 2020. Em comparação, no mesmo conjunto estatístico das Nações Unidas, países com dado disponível em 2023 incluem Canadá com 10,1, Chile com 3,3, Colômbia com 1,2 e Costa Rica com 0,3 sequestros por 100 mil habitantes. A comparação deve ser feita com cautela, pois crimes registrados dependem de legislação, práticas policiais, subnotificação e capacidade institucional de cada país.",
+    "nivel_confiabilidade":
+      "Alto para os anos incluídos, pois os valores vêm de fontes oficiais da ONU/UNODC baseadas em registros administrativos nacionais e padronização estatística internacional. A confiabilidade é menor para comparações diretas entre países e para análise de tendência contínua, porque a série disponível possui lacunas e o próprio UNODC ressalta limitações de comparabilidade por diferenças legais, operacionais e de subnotificação. Nenhum valor ausente foi estimado, interpolado ou substituído.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "UNODC Data Portal - Violent and Sexual Crime",
+        "url": "https://dataunodc.un.org/dp-crime-violent-offences",
+      },
+      {
+        "titulo": "UNODC - Metadata Information: Violent and Sexual Crime",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2025-11/metadata_violent_and_sexual_crime.pdf",
+      },
+      {
+        "titulo":
+          "United Nations Statistics Division - Statistical Yearbook 2025: Intentional Homicides and Other Crimes",
+        "url": "https://data.un.org/_Docs/SYB/PDFs/SYB68_328_202511_Intentional%20homicides%20and%20other%20crimes.pdf",
+      },
+      {
+        "titulo": "United Nations Statistics Division - CSV: Intentional Homicides and Other Crimes",
+        "url": "https://data.un.org/_Docs/SYB/CSV/SYB68_328_202511_Intentional%20homicides%20and%20other%20crimes.csv",
+      },
+    ],
+    "dados": [
+      { "ano": 2010, "valor": 0.2 },
+      { "ano": 2013, "valor": 0.2 },
+      { "ano": 2015, "valor": 0.2 },
+      { "ano": 2019, "valor": 0.3 },
+      { "ano": 2020, "valor": 2.1 },
+    ],
+  },
+  "impacto_do_terrorismo_gti_iep": {
+    "label": "Impacto do Terrorismo",
+    "fonte_sigla": "IEP/GTI",
+    "unidade": "Pontuação de 0 a 10",
+    "fonte": "Institute for Economics & Peace - Global Terrorism Index",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede o impacto relativo do terrorismo no Brasil por meio da pontuação composta do Global Terrorism Index, em escala de 0 a 10.",
+    "como_interpretar":
+      "Valores maiores indicam maior impacto mensurável do terrorismo. Pontuação 0 indica ausência de impacto registrado pelo índice; pontuação 10 representa o maior impacto mensurável na escala do GTI. O indicador não mede criminalidade comum, segurança pública geral, homicídios comuns, percepção de medo ou violência política não classificada como terrorismo pela metodologia do índice.",
+    "metodologia":
+      "O Global Terrorism Index, produzido pelo Institute for Economics & Peace, mede o impacto do terrorismo usando uma pontuação composta baseada em quatro componentes principais: incidentes terroristas, mortes, feridos e reféns, ponderados ao longo de cinco anos. A metodologia atribui maior peso às mortes, aplica decaimento temporal para refletir efeitos persistentes do terrorismo e transforma os resultados em uma escala logarítmica de 0 a 10. Nas edições recentes, a base factual de eventos utilizada pelo IEP é o Dragonfly TerrorismTracker, com registros desde 1º de janeiro de 2007. Em edições anteriores, o GTI utilizou bases como a Global Terrorism Database do START. Foram mantidos apenas valores publicados diretamente em relatórios ou planilhas oficiais do IEP/Vision of Humanity, ou derivados mecanicamente de colunas oficiais de variação do próprio GTI, sem interpolação, projeção ou estimativa externa.",
+    "historico_metodologia":
+      "A série pública do GTI não oferece, em fonte oficial aberta e validável, valores anuais completos para o Brasil desde 1994. Por isso, anos sem valor oficial verificável foram omitidos. Valores de 1994 a 2001 não foram incluídos, pois não foi encontrada publicação oficial do IEP/GTI com pontuação anual validável para o Brasil nesse período. A metodologia e a base de eventos também mudaram ao longo das edições: relatórios antigos do GTI usavam principalmente a Global Terrorism Database do START, enquanto relatórios recentes usam o Dragonfly TerrorismTracker. Essa mudança pode afetar comparabilidade histórica fina. Valores derivados de colunas oficiais de mudança do GTI foram mantidos apenas quando a operação aritmética era direta e verificável a partir do próprio relatório oficial.",
+    "abrangencia":
+      "Brasil, dentro da cobertura global do Global Terrorism Index, que compara 163 países e territórios e cobre aproximadamente 99,7% da população mundial.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2018,
+        "nome": "Marielle Franco",
+        "descricao":
+          "O GTI 2019 citou o caso Marielle Franco dentro do aumento do impacto do terrorismo registrado para o Brasil em 2018, ano em que o país teve sua pior pontuação desde 2002 segundo o relatório.",
+      },
+      {
+        "ano": 2023,
+        "nome": "7 de Outubro",
+        "descricao":
+          "O GTI 2026 destacou que o forte aumento global do terrorismo em 2023 esteve ligado aos ataques de 7 de outubro em Israel, afetando a comparação internacional do índice.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Queda Global",
+        "descricao":
+          "O GTI 2026 registrou queda global de mortes e incidentes de terrorismo em 2025, coincidindo com melhora da pontuação brasileira em relação ao ano anterior.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2025, o Brasil teve pontuação 0,909 e ficou na 62ª posição global, indicando impacto baixo em comparação com países mais afetados como Burkina Faso, Mali, Paquistão, Síria, Nigéria e Colômbia. Na América do Sul, o Brasil ficou muito abaixo da Colômbia, Chile e Equador em impacto do terrorismo, mas acima de países com pontuação nula ou quase nula, como Argentina, Venezuela, Bolívia, Paraguai e Uruguai.",
+    "nivel_confiabilidade":
+      "Alto para os anos com valores diretamente publicados em relatórios ou planilhas oficiais do IEP/Vision of Humanity. Moderado-alto para valores derivados exclusivamente de colunas oficiais de variação do próprio GTI. A série é metodologicamente confiável como indicador internacional comparável, mas incompleta para uso histórico anual desde 1994, pois o IEP não disponibiliza publicamente uma série oficial completa, contínua e validável para o Brasil desde esse ano. Não foram usados valores estimados, interpolados ou de fontes não oficiais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Institute for Economics & Peace - Global Terrorism Index",
+        "url": "https://www.economicsandpeace.org/global-terrorism-index/",
+      },
+      {
+        "titulo": "Vision of Humanity - Global Terrorism Index",
+        "url": "https://www.visionofhumanity.org/maps/global-terrorism-index/",
+      },
+      {
+        "titulo": "Global Terrorism Index 2026 Report",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2026/03/Global-Terrorism-Index-2026-Report.pdf",
+      },
+      {
+        "titulo": "Global Terrorism Index 2025 Report",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2025/03/Global-Terrorism-Index-2025.pdf",
+      },
+      {
+        "titulo": "Global Terrorism Index 2023 Overall Scores 2011-2022",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2023/06/GTI-2023-Overall-scores-2011-2022.xlsx",
+      },
+      {
+        "titulo": "Global Terrorism Index 2022 Report",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2022/03/GTI-2022-web-09062022.pdf",
+      },
+      {
+        "titulo": "Global Terrorism Index 2020 Report",
+        "url": "https://visionofhumanity.org/wp-content/uploads/2020/11/GTI-2020-web-1.pdf",
+      },
+      {
+        "titulo": "Global Terrorism Index 2019 Report",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2020/11/GTI-2019-web.pdf",
+      },
+      {
+        "titulo": "Global Terrorism Index 2018 Report",
+        "url": "https://www.visionofhumanity.org/wp-content/uploads/2020/10/Global-Terrorism-Index-2018.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2002, "valor": 0.747 },
+      { "ano": 2017, "valor": 1.388 },
+      { "ano": 2018, "valor": 2.53 },
+      { "ano": 2019, "valor": 2.443 },
+      { "ano": 2020, "valor": 1.427 },
+      { "ano": 2021, "valor": 0.951 },
+      { "ano": 2022, "valor": 0.599428341 },
+      { "ano": 2023, "valor": 1.988 },
+      { "ano": 2024, "valor": 1.43 },
+      { "ano": 2025, "valor": 0.909 },
+    ],
+  },
+  "populacao_prisional_100_mil_hab": {
+    "label": "População Prisional",
+    "fonte_sigla": "UNODC/WPB",
+    "unidade": "pessoas privadas de liberdade por 100 mil habitantes",
+    "fonte":
+      "UNODC Research - Data Portal – Prisons and Prisoners / Institute for Crime & Justice Policy Research - World Prison Brief",
+    "cat": "Segurança Pública",
+    "padrao": false,
+    "descricao":
+      "Mede a quantidade de pessoas privadas de liberdade em prisões, instituições penais ou correcionais para cada 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior taxa de encarceramento em relação à população total. O indicador mede estoque prisional, não criminalidade, eficiência judicial, qualidade do sistema prisional, reincidência, perfil dos crimes ou legalidade das prisões.",
+    "metodologia":
+      "O indicador divide o total de pessoas mantidas em prisões, instituições penais ou correcionais pela população nacional total e multiplica o resultado por 100.000. A definição da UNODC considera pessoas mantidas em prisões em uma data específica, normalmente no fim do ano, excluindo detidos administrativos não criminais. A World Prison Brief publica valores nacionais coletados junto à administração prisional nacional e calcula a taxa com base na população nacional usada em suas tabelas. Foram mantidos apenas pontos observados publicados pelas fontes; não foram feitas interpolações, projeções ou estimativas pela IA.",
+    "historico_metodologia":
+      "A série não possui cobertura anual pública completa desde 1994 nas fontes verificadas. A World Prison Brief informa que seus dados de tendência dão uma indicação da evolução e que o quadro é inevitavelmente incompleto. A UNODC informa que dados nacionais são submetidos por autoridades nacionais via UN-CTS ou outros meios e passam por checagens de consistência. Comparações temporais podem ser afetadas por mudanças de cobertura institucional, inclusão ou exclusão de tipos de custódia, datas de referência, revisão de dados nacionais e uso de estimativas populacionais da ONU ou de outras fontes reconhecidas para o denominador.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados comparáveis internacionalmente quando observadas as diferenças de definição, cobertura prisional e data de referência entre países.",
+    "periodicidade":
+      "Irregular na World Prison Brief para pontos históricos; anual ou quase anual na base UNODC quando reportado pelo país.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "O Brasil aparece entre os países com maior população prisional absoluta do mundo. Em 2024, a World Prison Brief registrou 909.067 pessoas privadas de liberdade e taxa de 416 por 100 mil habitantes, patamar alto em comparação internacional. A comparação entre países deve considerar diferenças de legislação penal, política de drogas, prisão provisória, capacidade administrativa, subnotificação, cobertura institucional e critérios nacionais de contagem.",
+    "nivel_confiabilidade":
+      "Alto para os pontos publicados diretamente pelas fontes, pois derivam de dados de administração prisional nacional compilados por UNODC e World Prison Brief. A confiabilidade é menor para comparação anual contínua porque a série pública não é completa desde 1994 e pode haver diferenças de cobertura, data de corte e definição entre anos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Prison Brief - Brazil",
+        "url": "https://www.prisonstudies.org/country/brazil?language_content_entity=en-gb",
+      },
+      {
+        "titulo": "World Prison Brief - Highest to Lowest - Prison Population Total",
+        "url":
+          "https://www.prisonstudies.org/world-prison-data/highest-lowest/highest-lowest-prison-population-total?language_content_entity=en-gb",
+      },
+      { "titulo": "UNODC Data Portal - Prisons", "url": "https://data.unodc.org/datareport/prison-held" },
+      {
+        "titulo": "UNODC Metadata - Prisons and Prisoners",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2025-11/metadata_prisons_and_prisoners.pdf",
+      },
+      {
+        "titulo": "UNODC Data Download - Prisons and Prisoners",
+        "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2026-04/data_cts_prisons_and_prisoners.xlsx",
+      },
+    ],
+    "dados": [
+      { "ano": 1995, "valor": 107 },
+      { "ano": 1997, "valor": 119 },
+      { "ano": 2000, "valor": 132 },
+      { "ano": 2002, "valor": 132 },
+      { "ano": 2004, "valor": 180 },
+      { "ano": 2006, "valor": 209 },
+      { "ano": 2008, "valor": 231 },
+      { "ano": 2010, "valor": 249 },
+      { "ano": 2012, "valor": 270 },
+      { "ano": 2014, "valor": 301 },
+      { "ano": 2016, "valor": 349 },
+      { "ano": 2018, "valor": 354 },
+      { "ano": 2020, "valor": 381 },
+      { "ano": 2023, "valor": 392 },
+      { "ano": 2024, "valor": 416 },
+    ],
+  },
   "idh_brasil": {
     "label": "IDH Brasil",
     "fonte_sigla": "PNUD/UNDP",
@@ -15237,5 +15987,5 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2024, "valor": 5770.89 },
       { "ano": 2025, "valor": 6700.74 },
     ],
-  }
+  },
 };
