@@ -9243,110 +9243,491 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2022, "valor": 397.3333333333333 },
     ],
   },
-  "timss_matematica_ciencias": {
-    "label": "TIMSS Matemática e Ciências",
-    "fonte_sigla": "IEA",
-    "unidade": "pontos na escala TIMSS",
-    "fonte":
-      "International Association for the Evaluation of Educational Achievement - Trends in International Mathematics and Science Study",
+  "taxa_atendimento_escolar_0_a_3_anos": {
+    "label": "Taxa de Atendimento Escolar de 0 a 3 Anos",
+    "fonte_sigla": "IBGE/INEP",
+    "unidade": "% da população de 0 a 3 anos",
+    "fonte": "IBGE - Pesquisa Nacional por Amostra de Domicílios Contínua Anual, Tabela 7138: Taxa de escolarização, por sexo e grupo de idade / INEP - Censo Escolar da Educação Básica",
     "cat": "Educação",
     "padrao": false,
-    "descricao":
-      "Mede o desempenho médio de estudantes brasileiros em matemática e ciências no TIMSS, avaliação internacional padronizada da IEA aplicada no 4º e no 8º ano.",
-    "como_interpretar":
-      "Valores maiores indicam maior proficiência média em matemática e ciências. A escala TIMSS usa média internacional de referência de 500 pontos e desvio-padrão de 100 pontos estabelecidos a partir da distribuição internacional original de 1995. O valor consolidado apresentado é uma média aritmética simples das quatro médias oficiais disponíveis para o Brasil em 2023: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano.",
-    "metodologia":
-      "A IEA aplica testes padronizados de matemática e ciências a amostras representativas de estudantes do 4º e do 8º ano, usando desenho amostral probabilístico, matrizes de itens e escalas de proficiência comparáveis internacionalmente. Para este JSON, foram usados apenas os valores oficiais publicados para o Brasil no TIMSS 2023: matemática 4º ano = 400, ciências 4º ano = 425, matemática 8º ano = 378 e ciências 8º ano = 420. O valor anual consolidado em dados foi calculado como média aritmética simples desses quatro resultados oficiais: 405,75.",
-    "historico_metodologia":
-      "O TIMSS ocorre em ciclos quadrienais desde 1995 e mede tendências de desempenho em matemática e ciências. A escala TIMSS foi estabelecida em 1995 com média de referência 500 e desvio-padrão 100. O Brasil divulgou resultados de sua primeira participação no TIMSS em 2023, portanto não há série histórica brasileira oficial anterior comparável para esse indicador. Como o valor consolidado combina domínios e anos escolares, ele deve ser interpretado como síntese descritiva dos resultados oficiais, não como uma escala composta oficial publicada pela IEA.",
-    "abrangencia":
-      "Brasil, estudantes do 4º e do 8º ano do ensino fundamental, com amostras nacionais representativas e resultados comparáveis internacionalmente no TIMSS 2023.",
-    "periodicidade": "Quadrienal, conforme ciclos do TIMSS.",
-    "eventos_externos": [],
-    "comparacao_paises":
-      "Em 2023, o Brasil ficou abaixo da média internacional do TIMSS nos quatro resultados oficiais disponíveis: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano. No 4º ano, o Brasil registrou 400 pontos em matemática e 425 em ciências, contra média internacional de 503 em matemática e 494 em ciências. No 8º ano, registrou 378 pontos em matemática e 420 em ciências, contra média internacional de 478 em ambos os domínios.",
-    "nivel_confiabilidade":
-      "Alto para os valores-base, pois são médias oficiais publicadas pelo Inep com base na IEA/TIMSS. Médio para o valor consolidado em dados, pois a média aritmética simples entre matemática, ciências, 4º ano e 8º ano é uma agregação derivada para visualização, não um indicador composto oficial publicado pela IEA.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "fontes_links": [
-      { "titulo": "IEA - TIMSS 2023 International Results", "url": "https://timss2023.org/results/" },
-      { "titulo": "IEA - TIMSS 2023 Study Page", "url": "https://www.iea.nl/studies/iea/timss/timss2023" },
-      {
-        "titulo": "Inep - Resultados TIMSS 2023 Brasil",
-        "url":
-          "https://download.inep.gov.br/areas_de_atuacao/avaliacao-e-exames-educacionais-timms/resultados-2023.pdf",
-      },
-      {
-        "titulo": "Inep - Brasil divulga resultados da primeira participação no TIMSS",
-        "url":
-          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/acoes-internacionais/brasil-divulga-resultados-da-primeira-participacao-no-timss",
-      },
-    ],
-    "dados": [{ "ano": 2023, "valor": 405.75 }],
-  },
-  "pirls_leitura": {
-    "label": "PIRLS Leitura",
-    "fonte_sigla": "IEA",
-    "unidade": "Pontuação média na escala PIRLS de compreensão leitora",
-    "fonte":
-      "International Association for the Evaluation of Educational Achievement (IEA) - Progress in International Reading Literacy Study (PIRLS)",
-    "cat": "Educação",
-    "padrao": false,
-    "descricao":
-      "Mede o desempenho médio dos estudantes do 4º ano do ensino fundamental em compreensão leitora no estudo internacional PIRLS.",
-    "como_interpretar":
-      "Valores maiores indicam melhor desempenho médio em leitura. A escala PIRLS foi estabelecida em 2001 com média internacional de referência 500 e desvio-padrão 100. O indicador deve ser interpretado como desempenho educacional comparável internacionalmente para estudantes do 4º ano, não como taxa de alfabetização geral da população.",
-    "metodologia":
-      "O PIRLS aplica testes cognitivos de leitura e questionários contextuais a amostras representativas de estudantes do 4º ano de escolarização. A avaliação mede dois propósitos principais de leitura: experiência literária e aquisição/uso de informação. Os resultados são estimados por modelagem psicométrica em escala internacional padronizada, seguindo diretrizes amostrais, tradução, aplicação, codificação e controle de qualidade definidos pela IEA e pelo TIMSS & PIRLS International Study Center.",
-    "historico_metodologia":
-      "O PIRLS é realizado desde 2001 em ciclos quinquenais. A edição de 2021 foi o quinto ciclo do estudo e marcou uma transição internacional relevante para avaliação digital em parte dos países, embora o Brasil tenha aplicado testes e questionários em papel. A coleta de 2021 ocorreu durante a pandemia de COVID-19 e, segundo a IEA/Inep, enfrentou desafios operacionais, mas manteve padrões internacionais de qualidade. O Brasil participou pela primeira vez no PIRLS em 2021; portanto, não há série histórica brasileira oficial anterior a 2021 nesse indicador.",
-    "abrangencia":
-      "Brasil, amostra nacional de escolas públicas e privadas, abrangendo estudantes do 4º ano do ensino fundamental, com comparabilidade internacional entre países e economias participantes do PIRLS 2021.",
-    "periodicidade": "Quinquenal.",
+    "descricao": "Mede a proporção de crianças de 0 a 3 anos que frequentam escola ou creche no Brasil.",
+    "como_interpretar": "Valores maiores indicam maior acesso das crianças de 0 a 3 anos à creche ou escola. O indicador mede acesso/frequência, mas não mede qualidade pedagógica, jornada, infraestrutura, demanda reprimida, disponibilidade de vagas ou equidade regional e socioeconômica.",
+    "metodologia": "A série principal usa a PNAD Contínua Anual do IBGE, módulo Educação, divulgada no SIDRA, Tabela 7138. A taxa de escolarização corresponde à razão entre o número de estudantes de determinada faixa etária e a população total da mesma faixa etária, multiplicada por 100. Para este indicador, foi selecionado Brasil, sexo total, grupo de idade 0 a 3 anos e variável Taxa de escolarização. O Censo Escolar do INEP é usado apenas como fonte complementar de validação administrativa sobre matrículas em creche, não como denominador populacional. O próprio INEP alerta que não é adequado estimar taxa de escolarização pela divisão direta entre matrículas do Censo Escolar e projeções populacionais do IBGE, pois as pesquisas têm escopos e metodologias distintos.",
+    "historico_metodologia": "A PNAD Contínua passou a divulgar o módulo anual de Educação a partir de 2016, por isso não há série oficial diretamente comparável desde 1994 nessa metodologia. Os anos de 2020 e 2021 não foram mantidos na série de Educação por causa dos impactos da pandemia de COVID-19 na coleta e divulgação do módulo. Séries anteriores da PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar podem mostrar tendências históricas, mas não são metodologicamente equivalentes à PNAD Contínua Tabela 7138 e, portanto, não foram misturadas nos dados do gráfico. Os valores podem sofrer revisões por reponderação amostral, atualização de pesos, revisão populacional ou atualização do SIDRA.",
+    "abrangencia": "Brasil, cobertura nacional, população residente em domicílios particulares permanentes pesquisada pela PNAD Contínua; complemento administrativo nacional pelo Censo Escolar para matrículas em creche.",
+    "periodicidade": "Anual, com base no módulo Educação da PNAD Contínua, normalmente referente ao 2º trimestre. O Censo Escolar também é anual.",
     "eventos_externos": [
       {
-        "ano": 2021,
+        "ano": 2016,
+        "nome": "Início PNAD-C",
+        "descricao": "Início da série comparável da PNAD Contínua Educação para taxa de escolarização por grupo de idade no SIDRA."
+      },
+      {
+        "ano": 2020,
         "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 interrompeu a comparabilidade regular do módulo Educação em 2020 e 2021 e afetou a frequência escolar e a oferta presencial."
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada",
+        "descricao": "A série volta a apresentar dados após a interrupção de 2020 e 2021, com taxa de 36,0%, pouco acima do nível de 2019."
+      },
+      {
+        "ano": 2024,
+        "nome": "Meta PNE",
+        "descricao": "O Plano Nacional de Educação previa atendimento de pelo menos 50% das crianças de 0 a 3 anos até 2024, mas a taxa oficial permaneceu abaixo da meta."
+      },
+      {
+        "ano": 2025,
+        "nome": "Matrículas estáveis",
+        "descricao": "O Censo Escolar 2025 registrou 4.182.646 matrículas em creche, leve queda frente a 2024, mas esse número não foi usado para calcular taxa de atendimento."
+      }
+    ],
+    "comparacao_paises": "A comparação internacional estrita para 0 a 3 anos é limitada porque países classificam educação infantil, creche, pré-escola e cuidado infantil de formas diferentes. Relatórios da OCDE indicam que o Brasil tem participação relativamente alta perto da idade de entrada no ensino fundamental, mas baixa participação entre crianças menores de 3 anos em comparação com países da OCDE de maior cobertura.",
+    "nivel_confiabilidade": "Alto para acompanhamento nacional a partir de 2016, pois os valores vêm da PNAD Contínua/SIDRA, fonte oficial do IBGE. A ressalva é que a PNAD Contínua é uma pesquisa amostral, sujeita a erro amostral e revisões de ponderação. A série não deve ser combinada diretamente com PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar para formar uma série contínua desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "IBGE SIDRA - Tabela 7138 - Taxa de escolarização, por sexo e grupo de idade",
+        "url": "https://sidra.ibge.gov.br/tabela/7138"
+      },
+      {
+        "titulo": "IBGE - PNAD Contínua Educação 2024 - Apresentação oficial",
+        "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/80f8445b4b7a92d561ea8a641e50869b.pdf"
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Indicadores educacionais avançam em 2024",
+        "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43699-indicadores-educacionais-avancam-em-2024-mas-atraso-escolar-aumenta"
+      },
+      {
+        "titulo": "INEP - Censo Escolar da Educação Básica 2025 - Apresentação Coletiva",
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+      },
+      {
+        "titulo": "INEP - Sinopses Estatísticas da Educação Básica",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica"
+      },
+      {
+        "titulo": "INEP - Censo Escolar",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar"
+      },
+      {
+        "titulo": "OECD - International Evidence to Support the Reform of Early Childhood Education and Care in Brazil",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/04/international-evidence-to-support-the-reform-of-early-childhood-education-and-care-ecec-in-brazil-in-2024_9e12e4ae/b820e627-en.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2016,
+        "valor": 30.3
+      },
+      {
+        "ano": 2017,
+        "valor": 32.7
+      },
+      {
+        "ano": 2018,
+        "valor": 34.2
+      },
+      {
+        "ano": 2019,
+        "valor": 35.5
+      },
+      {
+        "ano": 2022,
+        "valor": 36.0
+      },
+      {
+        "ano": 2023,
+        "valor": 38.7
+      },
+      {
+        "ano": 2024,
+        "valor": 39.8
+      }
+    ]
+  },
+  "taxa_criancas_fora_da_escola_uis": {
+    "label": "Taxa de Crianças Fora da Escola",
+    "fonte_sigla": "UNESCO/UIS",
+    "unidade": "% da população em idade oficial do ensino primário",
+    "fonte":
+      "UNESCO Institute for Statistics (UIS), via World Bank Data / World Development Indicators (SE.PRM.UNER.ZS)",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao":
+      "Mede a porcentagem de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no ensino secundário.",
+    "como_interpretar":
+      "Valores menores indicam maior inclusão escolar na idade primária. Valor igual a 0% indicaria que todas as crianças em idade oficial do ensino primário estão matriculadas no ensino primário ou secundário. O indicador não mede aprendizagem, frequência efetiva, abandono ao longo do ano, distorção idade-série ou qualidade da educação.",
+    "metodologia":
+      "O indicador é calculado como a quantidade de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no secundário, dividida pela população total na idade oficial do ensino primário, multiplicada por 100. Crianças na idade oficial do ensino primário matriculadas apenas na educação pré-primária são consideradas fora da escola para este indicador. A série é compilada pela UNESCO/UIS a partir de dados administrativos educacionais e população escolar estimada, disseminada também pelo World Bank Data / World Development Indicators.",
+    "historico_metodologia":
+      "A UNESCO/UIS passou por mudanças relevantes de disseminação e atualização de base, incluindo a migração para o novo UIS Data Browser e atualizações periódicas dos arquivos em massa. A série brasileira disponível na fonte consultada possui lacunas antes de 2012 para esta definição específica; portanto, foram mantidos apenas anos com observações concretas disponíveis na série oficial. Valores de anos sem dado oficial observado entre 1994 e 2026 não foram interpolados nem estimados.",
+    "abrangencia": "Brasil, cobertura nacional, crianças em idade oficial do ensino primário, ambos os sexos.",
+    "periodicidade": "Anual, conforme disponibilidade de envio e validação dos dados nacionais pela UNESCO/UIS.",
+    "eventos_externos": [
+      {
+        "ano": 2012,
+        "nome": "Maior valor",
         "descricao":
-          "A coleta do PIRLS 2021 ocorreu durante a pandemia de COVID-19, período citado pela IEA/Inep como contexto excepcional para a aplicação internacional da avaliação.",
+          "Primeiro ano disponível da série validada e maior taxa registrada no período observado, segundo a série UNESCO/UIS via World Bank/CEIC.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia de COVID-19 afetou o funcionamento escolar e a mensuração educacional, podendo impactar matrícula e permanência escolar no período.",
       },
       {
         "ano": 2021,
-        "nome": "Estreia brasileira",
+        "nome": "Pico pandêmico",
         "descricao":
-          "O PIRLS 2021 foi a primeira participação do Brasil no estudo, impossibilitando comparação histórica nacional com ciclos anteriores.",
+          "A série mostra elevação relevante em 2021, ano ainda fortemente afetado por interrupções educacionais associadas à pandemia.",
       },
       {
-        "ano": 2021,
-        "nome": "Aplicação em papel",
+        "ano": 2022,
+        "nome": "Retomada",
         "descricao":
-          "Embora o ciclo de 2021 tenha marcado a transição internacional para avaliação digital em vários países, o Brasil aplicou testes e questionários em papel.",
+          "A taxa caiu em 2022 em relação a 2021, coincidindo com a retomada mais ampla das atividades presenciais e normalização parcial do sistema educacional.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Menor valor",
+        "descricao":
+          "A série atualizada indica queda para 2,187% em 2024, menor valor recente localizado na fonte consultada.",
       },
     ],
     "comparacao_paises":
-      "No PIRLS 2021, o Brasil obteve 419 pontos em compreensão leitora. O resultado foi significativamente inferior ao de 58 dos 65 países e regiões de referência participantes. O desempenho brasileiro não diferiu significativamente do Kosovo (421) e do Irã (413), e foi estatisticamente superior ao da Jordânia (381), Egito (378) e África do Sul (288).",
+      "Em 2024, o Brasil aparece com taxa de crianças fora da escola no ensino primário de 2,187%, abaixo da mediana global aproximada informada pelo World Bank/WDI para países com dados no mesmo indicador, mas acima de países com taxas próximas de zero, como Japão, Reino Unido, Lituânia, França e Polônia.",
     "nivel_confiabilidade":
-      "Muito alto para comparação internacional do desempenho médio em leitura no 4º ano, pois os dados vêm da IEA/PIRLS e do relatório nacional do Inep, com amostragem, aplicação e escala padronizadas internacionalmente. A principal limitação é que, para o Brasil, existe apenas um ponto oficial disponível, pois a primeira participação brasileira ocorreu em 2021.",
+      "Alto para comparação internacional, pois a série é da UNESCO/UIS e redistribuída pelo World Bank Data / World Development Indicators. A principal limitação é a cobertura temporal: há observações oficiais disponíveis apenas para parte do período solicitado; anos sem valor observado não foram preenchidos.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
-      { "titulo": "IEA - PIRLS 2021", "url": "https://www.iea.nl/studies/iea/pirls/2021" },
-      { "titulo": "PIRLS 2021 International Results in Reading", "url": "https://pirls2021.org/results/" },
       {
-        "titulo": "Inep - PIRLS",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pirls",
+        "titulo": "World Bank Data - Children out of school (% of primary school age) - SE.PRM.UNER.ZS",
+        "url": "https://data.worldbank.org/indicator/SE.PRM.UNER.ZS?locations=BR",
       },
+      { "titulo": "UNESCO/UIS Data Browser", "url": "https://databrowser.uis.unesco.org/" },
+      { "titulo": "UNESCO/UIS API Documentation", "url": "https://api.uis.unesco.org/api/public/documentation/" },
       {
-        "titulo":
-          "Inep - Brasil no PIRLS 2021: Análise dos resultados da compreensão leitora dos estudantes do 4º ano do ensino fundamental",
-        "url":
-          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/brasil-no-pirls-2021-analise-dos-resultados-da-compreensao-leitora-dos-estudantes-do-4o-ano-do-ensino-fundamental",
-      },
-      {
-        "titulo": "Inep - Brasil no PIRLS 2021: Sumário Executivo",
-        "url": "https://download.inep.gov.br/pirls/2021/brasil_sumario_executivo.pdf",
+        "titulo": "CEIC / World Bank WDI - Brazil Social Education Statistics",
+        "url": "https://www.ceicdata.com/en/brazil/social-education-statistics",
       },
     ],
-    "dados": [{ "ano": 2021, "valor": 419 }],
+    "dados": [
+      { "ano": 2012, "valor": 5.82 },
+      { "ano": 2013, "valor": 3.95 },
+      { "ano": 2021, "valor": 5.23 },
+      { "ano": 2022, "valor": 3.984 },
+      { "ano": 2024, "valor": 2.187 },
+    ],
+  },
+  "participacao_educacao_infantil_organizada": {
+    "label": "Participação em Educação Infantil Organizada",
+    "fonte_sigla": "UNESCO/UIS",
+    "unidade": "Percentual (%)",
+    "fonte": "UNESCO Institute for Statistics (UIS) / United Nations Global SDG Database - SE_PRE_PARTN",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção de crianças, um ano antes da idade oficial de entrada no ensino primário, que participam de algum programa organizado de aprendizagem.",
+    "como_interpretar":
+      "Valores maiores indicam maior participação das crianças em educação organizada imediatamente antes da entrada oficial no ensino primário. Valores próximos de 100% indicam cobertura quase universal. O indicador não mede qualidade da educação infantil, aprendizagem efetiva, carga horária, infraestrutura ou desigualdades internas.",
+    "metodologia":
+      "O indicador ODS 4.2.2 é calculado como o número de crianças na idade-alvo que participam de programas organizados de aprendizagem, incluindo educação infantil e ensino primário quando aplicável, dividido pela população total da mesma idade, multiplicado por 100. A idade-alvo corresponde a um ano antes da idade oficial de entrada no ensino primário em cada país. A fonte principal é administrativa; quando derivado de pesquisas domiciliares, matrícula/participação e população são coletadas na mesma operação estatística.",
+    "historico_metodologia":
+      "A definição internacional do ODS 4.2.2 foi padronizada pela ONU/UNESCO-UIS como 'participation rate in organized learning (one year before the official primary entry age), by sex'. A atualização metodológica oficial consultada é de 29/07/2024. A série pode sofrer revisões quando há atualização de dados nacionais, reprocessamento pelo UIS, revisão de população por idade simples ou mudança de fonte entre registros administrativos e pesquisas domiciliares. Dados de 2020 podem ter comparabilidade afetada por restrições da pandemia, mudanças de coleta e não resposta em pesquisas domiciliares.",
+    "abrangencia": "Brasil, cobertura nacional, ambos os sexos, indicador ODS 4.2.2 comparável internacionalmente.",
+    "periodicidade": "Anual, conforme disponibilidade de dados nacionais processados pelo UIS/ONU.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A documentação oficial do UIS alerta que dados coletados por pesquisas em 2020 podem ter comparabilidade afetada por restrições de mobilidade, entrevistas telefônicas, mudanças amostrais, maior não resposta e questionários adaptados.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil aparece acima da média regional da América Latina e Caribe nos materiais recentes do Banco Mundial/Human Capital Data Portal, com participação elevada em aprendizagem organizada antes da entrada no ensino primário. A comparação internacional deve ser feita com cautela porque a idade oficial de entrada no primário varia por país e a fonte pode alternar entre dados administrativos e pesquisas domiciliares.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional do ODS 4.2.2, por ser indicador oficial monitorado pelo UNESCO Institute for Statistics e pela base global dos ODS da ONU. A principal limitação é a disponibilidade irregular de observações anuais e possíveis revisões posteriores da série. Mantive apenas valores observados disponíveis nas fontes oficiais consultadas, sem interpolação, projeção ou imputação própria.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "UNSD - SDG Metadata Indicator 4.2.2",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-02-02.pdf",
+      },
+      {
+        "titulo": "UNESCO UIS - Metadata 4.2.2",
+        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.2.2.pdf",
+      },
+      {
+        "titulo": "UNESCO UIS Data Browser - Bulk Data Download",
+        "url": "https://databrowser.uis.unesco.org/resources/bulk",
+      },
+      {
+        "titulo": "UNSD - Global SDG Database Indicator 4.2.2",
+        "url": "https://unstats.un.org/sdgs/indicators/database/?indicator=4.2.2",
+      },
+      {
+        "titulo": "World Bank Human Capital Data Portal - Participation rate in organized learning",
+        "url": "https://humancapital.worldbank.org/en/indicator/WB_HCP_ORG_LEARNING",
+      },
+    ],
+    "dados": [
+      { "ano": 2015, "valor": 91 },
+      { "ano": 2018, "valor": 95 },
+    ],
+  },
+  "taxa_alfabetizacao_jovens_adultos": {
+    "label": "Taxa de Alfabetização de Jovens e Adultos",
+    "fonte_sigla": "UIS",
+    "unidade": "% da população com 15 anos ou mais",
+    "fonte": "UNESCO Institute for Statistics (UIS), via World Bank - World Development Indicators (SE.ADT.LITR.ZS)",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção da população brasileira com 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção de jovens e adultos alfabetizados. O indicador mede alfabetização básica declarada ou aferida por censos e pesquisas domiciliares, mas não mede proficiência leitora avançada, qualidade da educação, compreensão textual complexa nem desempenho escolar.",
+    "metodologia":
+      "A taxa é calculada dividindo-se o número de pessoas alfabetizadas com 15 anos ou mais pela população total da mesma faixa etária, excluindo pessoas com condição de alfabetização desconhecida, e multiplicando o resultado por 100. A série internacional é compilada pelo UNESCO Institute for Statistics a partir de censos nacionais e pesquisas domiciliares, com padronização pelo World Development Indicators.",
+    "historico_metodologia":
+      "A metodologia internacional do UIS define alfabetização como a capacidade de ler e escrever, com compreensão, uma declaração curta e simples sobre a vida cotidiana. A fonte informa que, em alguns países, podem existir diferenças de definição, método de coleta, uso de autodeclaração, inferência por escolaridade ou testes diretos. Para o Brasil, os valores recentes são compatíveis com a série de educação da PNAD Contínua/IBGE iniciada em 2016. Não foram incluídos anos sem valor publicado na série consultada.",
+    "abrangencia": "Brasil, cobertura nacional, população residente com 15 anos ou mais.",
+    "periodicidade":
+      "Anual, conforme disponibilidade de censos e pesquisas domiciliares nacionais compiladas pelo UIS/WDI.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Censo 2000",
+        "descricao":
+          "O valor de 2000 coincide com ano censitário brasileiro, uma das bases nacionais usadas para medir alfabetização da população.",
+      },
+      {
+        "ano": 2004,
+        "nome": "Queda PNAD",
+        "descricao":
+          "Segundo o IBGE, a taxa de analfabetismo medida pela PNAD caiu de 11,5% em 2004 para 8,0% em 2015, movimento compatível com alta gradual da alfabetização adulta.",
+      },
+      {
+        "ano": 2016,
+        "nome": "PNAD Contínua",
+        "descricao":
+          "A série recente de indicadores educacionais do IBGE passa a ser acompanhada pela PNAD Contínua, permitindo atualização anual mais regular da alfabetização da população de 15 anos ou mais.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 afetou fortemente a educação brasileira, mas a alfabetização de adultos variou pouco no curto prazo por ser um indicador de estoque populacional acumulado.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Mínimo histórico",
+        "descricao":
+          "O IBGE informou que, em 2024, o analfabetismo da população com 15 anos ou mais caiu para 5,3%, o menor nível da série da PNAD Contínua iniciada em 2016.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 94,74% de alfabetização da população com 15 anos ou mais. É um patamar alto em comparação com países de baixa renda, mas ainda abaixo de países com alfabetização praticamente universal, próximos de 99% ou 100%. Comparações internacionais devem ser feitas com cautela porque o UIS informa diferenças nacionais de definição e coleta.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do UNESCO Institute for Statistics e é redistribuída pelo World Bank WDI/FRED. A ressalva metodológica é que alfabetização pode ser medida por autodeclaração, censos, pesquisas domiciliares ou testes diretos, e a própria fonte alerta que definições e métodos podem variar entre países.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Literacy rate, adult total (% of people ages 15 and above) - Brazil",
+        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - SE.ADT.LITR.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/millennium-development-goals/series/SE.ADT.LITR.ZS",
+      },
+      {
+        "titulo": "FRED - Literacy Rate, Adult Total for Brazil (SEADTLITRZSBRA)",
+        "url": "https://fred.stlouisfed.org/series/SEADTLITRZSBRA",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Education indicators advance in 2024",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/43730-education-indicators-advance-in-2024-but-school-failure-increases",
+      },
+      {
+        "titulo": "IBGE Agência de Notícias - Literacy transforms youth and adult lives in Brazil",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/16523-alfabetizacao-transforma-a-vida-de-jovens-e-adultos-pelo-brasil-3",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 86.370002746582 },
+      { "ano": 2004, "valor": 88.620002746582 },
+      { "ano": 2006, "valor": 89.620002746582 },
+      { "ano": 2007, "valor": 90.0100021362305 },
+      { "ano": 2008, "valor": 90.0400009155273 },
+      { "ano": 2009, "valor": 90.3000030517578 },
+      { "ano": 2010, "valor": 90.379997253418 },
+      { "ano": 2011, "valor": 91.4100036621094 },
+      { "ano": 2012, "valor": 91.3399963378906 },
+      { "ano": 2013, "valor": 91.4800033569336 },
+      { "ano": 2014, "valor": 91.7300033569336 },
+      { "ano": 2015, "valor": 92.0500030517578 },
+      { "ano": 2016, "valor": 92.8099975585938 },
+      { "ano": 2017, "valor": 93.0800018310547 },
+      { "ano": 2018, "valor": 93.2300033569336 },
+      { "ano": 2019, "valor": 93.8926266999537 },
+      { "ano": 2020, "valor": 94.7444114331042 },
+      { "ano": 2021, "valor": 94.7726170886975 },
+      { "ano": 2022, "valor": 94.376866160108 },
+      { "ano": 2023, "valor": 94.5725490635077 },
+      { "ano": 2024, "valor": 94.7399978637695 },
+    ],
+  },
+  "taxa_abandono_escolar_ensino_medio": {
+    "label": "Taxa de Abandono Escolar no Ensino Médio",
+    "fonte_sigla": "INEP",
+    "unidade": "% das matrículas consideradas válidas",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Indicadores Educacionais - Taxas de Rendimento Escolar",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede a proporção de matrículas do ensino médio regular e integrado informadas como abandono ao final do ano letivo, entre as matrículas com situação final válida.",
+    "como_interpretar": "Valores maiores indicam maior proporção de estudantes que deixaram de frequentar a escola após a data de referência do Censo Escolar. Valores menores indicam menor abandono escolar. O indicador não mede evasão interanual diretamente; evasão pertence ao conjunto de taxas de transição escolar.",
+    "metodologia": "A taxa de abandono é calculada pelo Inep a partir da segunda etapa do Censo Escolar, chamada Situação do Aluno. Para as matrículas consideradas válidas, o cálculo é: Taxa de abandono = [ABA / (APR + REP + ABA)] x 100, em que APR é o número de matrículas aprovadas, REP é o número de matrículas reprovadas e ABA é o número de matrículas informadas como deixou de frequentar. A série principal deste JSON usa Brasil, total do ensino médio, incluindo rede pública e privada, conforme os indicadores de rendimento escolar do Inep. As taxas de transição escolar, como promoção, repetência e evasão, são indicadores relacionados, mas metodologicamente distintos, calculados por acompanhamento longitudinal dos estudantes entre anos escolares.",
+    "historico_metodologia": "O Censo Escolar passou a coletar dados individualizados de alunos e docentes a partir de meados dos anos 2000, o que permitiu maior qualidade na produção de indicadores de trajetória. O Inep informa que as taxas de transição eram divulgadas até 2005 com metodologia baseada em estimativas matemáticas derivadas das taxas de rendimento e que, a partir de 2017, foram retomadas com metodologia própria baseada no acompanhamento longitudinal dos estudantes. Para rendimento escolar, a série padronizada disponível no portal de Indicadores Educacionais cobre 2007 a 2024. Foram incluídos também 1996 e 1997 porque há tabela oficial histórica do Inep/MEC/SEEC publicada pelo Inep. Não foram incluídos 1994, 1995 e 1998 a 2006 por não terem sido localizados, na fonte oficial consultada, em série nacional validável com a mesma estrutura.",
+    "abrangencia": "Brasil, ensino médio, total das redes pública e privada, conforme Censo Escolar da Educação Básica.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Nova Série",
+        "descricao": "Início da série padronizada de taxas de rendimento escolar disponível no portal oficial de Indicadores Educacionais do Inep."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 e as orientações educacionais excepcionais afetaram o calendário escolar, a avaliação, a retenção e o abandono; o Inep aponta o uso de estratégias como contínuo curricular em 2020-2021."
+      },
+      {
+        "ano": 2021,
+        "nome": "Retorno Parcial",
+        "descricao": "O período pós-2020 marcou reversão parcial dos efeitos excepcionais observados no primeiro ano da pandemia, com retorno gradual das taxas de rendimento a patamares mais próximos do período pré-pandemia."
+      },
+      {
+        "ano": 2024,
+        "nome": "Pé-de-Meia",
+        "descricao": "A política federal de incentivo à permanência no ensino médio foi implementada em 2024; o MEC associou o período 2022-2024 à queda do abandono escolar no ensino médio, embora a série do indicador continue sendo apurada pelo Censo Escolar/Inep."
+      }
+    ],
+    "comparacao_paises": "A comparação internacional direta é limitada, porque a taxa de abandono do Inep é um indicador administrativo nacional baseado na Situação do Aluno no Censo Escolar. Para comparação entre países, indicadores harmonizados de organismos como UNESCO/UIS ou OCDE devem ser usados com cautela, pois conceitos como abandono, evasão, conclusão, repetência e população fora da escola podem ter definições diferentes.",
+    "nivel_confiabilidade": "Alto para os anos 2007 a 2024, por serem derivados dos Indicadores Educacionais oficiais do Inep/Censo Escolar. Médio-alto para 1996 e 1997, por serem valores oficiais históricos MEC/Inep/SEEC, mas com estrutura anterior à série padronizada atual. A principal ressalva é a quebra de comparabilidade entre a tabela histórica de 1996-1997 e a série padronizada de 2007 em diante.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "INEP - Taxas de Rendimento Escolar",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-rendimento-escolar"
+      },
+      {
+        "titulo": "INEP - Taxas de Rendimento Escolar 2024 - Metodologia",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/taxas_de_rendimento_escolar_2024.pdf"
+      },
+      {
+        "titulo": "INEP - Microdados do Censo Escolar da Educação Básica",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar"
+      },
+      {
+        "titulo": "INEP - Taxas de Aprovação, Reprovação e Abandono Escolar 1996-1997",
+        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/censo-escolar/confira-as-taxas-de-aprovacao-reprovacao-e-abandono-escolar"
+      },
+      {
+        "titulo": "INEP - Nota Técnica das Taxas de Transição 2007-2016",
+        "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2007_2016/nota_tecnica_taxas_transicao_2007_2016.pdf"
+      },
+      {
+        "titulo": "INEP - Censo Escolar da Educação Básica 2024 - Resumo Técnico",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1996,
+        "valor": 15.7
+      },
+      {
+        "ano": 1997,
+        "valor": 13.7
+      },
+      {
+        "ano": 2007,
+        "valor": 13.2
+      },
+      {
+        "ano": 2008,
+        "valor": 12.8
+      },
+      {
+        "ano": 2009,
+        "valor": 11.5
+      },
+      {
+        "ano": 2010,
+        "valor": 10.3
+      },
+      {
+        "ano": 2011,
+        "valor": 9.5
+      },
+      {
+        "ano": 2012,
+        "valor": 9.1
+      },
+      {
+        "ano": 2013,
+        "valor": 8.1
+      },
+      {
+        "ano": 2014,
+        "valor": 7.6
+      },
+      {
+        "ano": 2015,
+        "valor": 6.8
+      },
+      {
+        "ano": 2016,
+        "valor": 6.6
+      },
+      {
+        "ano": 2017,
+        "valor": 6.1
+      },
+      {
+        "ano": 2018,
+        "valor": 6.1
+      },
+      {
+        "ano": 2019,
+        "valor": 4.7
+      },
+      {
+        "ano": 2020,
+        "valor": 2.3
+      },
+      {
+        "ano": 2021,
+        "valor": 5.0
+      },
+      {
+        "ano": 2022,
+        "valor": 5.7
+      },
+      {
+        "ano": 2023,
+        "valor": 3.3
+      },
+      {
+        "ano": 2024,
+        "valor": 3.2
+      }
+    ]
   },
   "lays_banco_mundial": {
     "label": "Anos de Escolaridade Ajustados pela Aprendizagem",
@@ -9398,6 +9779,495 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2018, "valor": 7.77 },
       { "ano": 2020, "valor": 7.87 },
     ],
+  },
+  "taxa_distorcao_idade_serie_anos_finais_ensino_fundamental": {
+    "label": "Taxa de Distorção Idade-Série Nos Anos Finais do Ensino Fundamental",
+    "fonte_sigla": "INEP",
+    "unidade": "% das matrículas",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Taxas de Distorção Idade-série",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede o percentual de alunos dos anos finais do ensino fundamental com dois ou mais anos de atraso em relação à idade considerada adequada para a série frequentada.",
+    "como_interpretar": "Valores maiores indicam maior proporção de estudantes em atraso escolar. Quedas no indicador sugerem melhora no fluxo escolar, menor repetência acumulada, menor ingresso tardio ou menor retorno tardio após abandono. O indicador não mede diretamente aprendizagem, qualidade do ensino ou conclusão escolar.",
+    "metodologia": "O indicador é calculado pelo INEP a partir dos registros administrativos do Censo Escolar da Educação Básica. Para cada série ou grupo de séries, divide-se o número de matrículas de alunos com idade superior à recomendada para a série pelo total de matrículas da série ou grupo de séries, multiplicando o resultado por 100. Considera-se distorção idade-série quando o estudante completa, no ano de referência do Censo Escolar, idade igual ou superior a dois anos acima da idade recomendada para a série frequentada. Esta série usa o recorte Brasil, todas as redes, anos finais do ensino fundamental.",
+    "historico_metodologia": "A série atual dos Indicadores Educacionais do INEP para taxa de distorção idade-série está disponível no portal oficial a partir de 2006, não desde 1994. Para evitar interpolação, estimativas ou reconstruções não auditáveis, foram mantidos apenas valores concretos localizados e validados em fontes oficiais ou em tabelas derivadas diretamente de MEC/INEP/DEED. A comparabilidade histórica deve considerar a transição do ensino fundamental de 8 para 9 anos, regulamentada na década de 2000, e a consolidação do Censo Escolar em formato eletrônico pelo Educacenso. A metodologia básica do indicador permanece baseada na relação entre idade do estudante, série frequentada e matrícula total, mas mudanças de organização escolar, coleta censitária, classificação de etapas e regras de progressão podem afetar a interpretação temporal.",
+    "abrangencia": "Brasil, todas as redes de ensino, anos finais do ensino fundamental da educação básica.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2016,
+        "nome": "Transição EF",
+        "descricao": "A série ainda reflete efeitos da reorganização do ensino fundamental de 8 para 9 anos e da convivência entre estruturas seriadas distintas nos registros educacionais."
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 alterou o funcionamento das escolas, o calendário letivo e as políticas de progressão, afetando indicadores de fluxo escolar."
+      },
+      {
+        "ano": 2021,
+        "nome": "Progressão excepcional",
+        "descricao": "Políticas de aprovação, reorganização curricular e retorno gradual às aulas presenciais influenciaram a leitura dos indicadores de atraso escolar no período pós-pandemia."
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada presencial",
+        "descricao": "A retomada mais ampla das atividades presenciais coincidiu com forte redução da taxa de distorção idade-série nos anos finais."
+      },
+      {
+        "ano": 2025,
+        "nome": "Queda recente",
+        "descricao": "Os resultados do Censo Escolar 2025 indicaram nova queda na distorção idade-série dos anos finais do ensino fundamental."
+      }
+    ],
+    "comparacao_paises": "Não há comparação internacional direta e metodologicamente segura para este indicador, pois ele depende da estrutura seriada, idade normativa de ingresso, regras nacionais de progressão e desenho administrativo do Censo Escolar. Para comparação internacional de atraso ou fluxo escolar, indicadores da UNESCO/UIS podem ser usados, mas não são equivalentes diretos à taxa de distorção idade-série do INEP.",
+    "nivel_confiabilidade": "Alto para os anos informados, pois os dados derivam do Censo Escolar da Educação Básica e dos Indicadores Educacionais do INEP. A principal limitação é que a série oficial pública atual não cobre 1994 em formato diretamente comparável, e o recorte escolhido é especificamente anos finais do ensino fundamental, não toda a educação básica.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "INEP - Taxas de Distorção Idade-série",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-distorcao-idade-serie"
+      },
+      {
+        "titulo": "INEP - Dicionário de Indicadores Educacionais: Fórmulas de Cálculo",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/dicionario_de_indicadores_educacionais_formulas_de_calculo.pdf"
+      },
+      {
+        "titulo": "INEP - Apresentação do Censo Escolar da Educação Básica 2025",
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+      },
+      {
+        "titulo": "INEP - Censo Escolar da Educação Básica 2024: Resumo Técnico",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
+      },
+      {
+        "titulo": "Todos Pela Educação - Anuário Brasileiro da Educação Básica 2025, com Fonte MEC/INEP/DEED",
+        "url": "https://anuario.todospelaeducacao.org.br/2025/capitulo-3-ef-anos-finais.html"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2014,
+        "valor": 27.3
+      },
+      {
+        "ano": 2015,
+        "valor": 26.8
+      },
+      {
+        "ano": 2016,
+        "valor": 26.4
+      },
+      {
+        "ano": 2017,
+        "valor": 25.9
+      },
+      {
+        "ano": 2018,
+        "valor": 24.7
+      },
+      {
+        "ano": 2019,
+        "valor": 23.4
+      },
+      {
+        "ano": 2020,
+        "valor": 22.7
+      },
+      {
+        "ano": 2021,
+        "valor": 21.0
+      },
+      {
+        "ano": 2022,
+        "valor": 18.5
+      },
+      {
+        "ano": 2023,
+        "valor": 17.0
+      },
+      {
+        "ano": 2024,
+        "valor": 15.7
+      },
+      {
+        "ano": 2025,
+        "valor": 14.4
+      }
+    ]
+  },
+  "ideb_anos_iniciais_total_brasil": {
+    "label": "IDEB Anos Iniciais",
+    "fonte_sigla": "INEP",
+    "unidade": "Índice de 0 a 10",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Índice de Desenvolvimento da Educação Básica (Ideb)",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede a qualidade dos anos iniciais do ensino fundamental no Brasil, combinando desempenho no Saeb e fluxo escolar medido pelas taxas de aprovação.",
+    "como_interpretar": "Valores maiores indicam melhor combinação entre aprendizagem em língua portuguesa e matemática e progressão escolar. O indicador varia de 0 a 10. A série não deve ser interpretada como medida completa da qualidade educacional, pois não cobre diretamente infraestrutura, equidade, clima escolar, formação docente ou competências não avaliadas pelo Saeb.",
+    "metodologia": "O Ideb é calculado pelo Inep como o produto entre a proficiência média padronizada dos estudantes no Saeb, em língua portuguesa e matemática, e o indicador de rendimento escolar obtido a partir das taxas de aprovação do Censo Escolar. A fórmula sintética é Ideb = N x P, em que N representa a média padronizada de desempenho em escala de 0 a 10 e P representa o indicador de rendimento, derivado do fluxo escolar. Esta série usa o recorte oficial 'Ideb Total - Anos iniciais do ensino fundamental - Brasil'.",
+    "historico_metodologia": "O Ideb foi criado em 2007 e possui série oficial iniciada em 2005, com divulgação bienal. Não há valores oficiais do Ideb antes de 2005. O primeiro ciclo de metas foi pactuado no âmbito do Decreto nº 6.094/2007, com metas intermediárias até 2021. Em 2024, o Inep instituiu o Grupo Técnico Novo Ideb para subsidiar a atualização do indicador após o fim do primeiro ciclo de metas. A série foi mantida apenas com anos oficialmente divulgados pelo Inep; não foram incluídas projeções, metas ou estimativas.",
+    "abrangencia": "Brasil, total das redes, anos iniciais do ensino fundamental.",
+    "periodicidade": "Bienal.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Criação Ideb",
+        "descricao": "O Ideb foi criado em 2007, com base inicial em 2005, para combinar desempenho no Saeb e fluxo escolar em um indicador sintético."
+      },
+      {
+        "ano": 2017,
+        "nome": "Avanço contínuo",
+        "descricao": "A série dos anos iniciais manteve crescimento consistente até 2017, impulsionada pela melhora combinada do rendimento escolar e do desempenho padronizado."
+      },
+      {
+        "ano": 2021,
+        "nome": "Queda Saeb",
+        "descricao": "O Ideb caiu de 5,9 em 2019 para 5,8 em 2021 porque a proficiência média padronizada recuou, apesar da elevação do indicador de rendimento."
+      },
+      {
+        "ano": 2023,
+        "nome": "Recuperação parcial",
+        "descricao": "O Ideb dos anos iniciais chegou a 6,0 em 2023, com recuperação da proficiência média padronizada em relação a 2021, embora o indicador de rendimento tenha recuado levemente."
+      },
+      {
+        "ano": 2024,
+        "nome": "Novo Ideb",
+        "descricao": "O Inep instituiu o Grupo Técnico Novo Ideb para estudar a atualização do indicador após o encerramento do primeiro ciclo de metas."
+      }
+    ],
+    "comparacao_paises": "O Ideb é um indicador nacional brasileiro e não possui comparação internacional direta. Para comparação entre países, indicadores mais adequados são PISA/OCDE, TIMSS/IEA, PIRLS/IEA ou métricas harmonizadas do Banco Mundial, como Learning Poverty. Portanto, não é metodologicamente correto comparar o valor do Ideb diretamente com indicadores de outros países.",
+    "nivel_confiabilidade": "Muito alto para o recorte informado, pois os valores vêm diretamente do Inep, órgão oficial responsável pelo Saeb, pelo Censo Escolar e pelo cálculo do Ideb. A principal limitação é conceitual: o Ideb é comparável ao longo do tempo dentro do mesmo recorte, mas não é uma métrica completa de qualidade educacional nem um indicador internacionalmente comparável.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Inep - Índice de Desenvolvimento da Educação Básica (Ideb)",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb"
+      },
+      {
+        "titulo": "Inep - Resultados do Ideb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados"
+      },
+      {
+        "titulo": "Inep - Apresentação Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+      },
+      {
+        "titulo": "Inep - Nota Técnica das Metas Intermediárias do Ideb",
+        "url": "https://download.inep.gov.br/educacao_basica/portal_ideb/o_que_sao_as_metas/Nota_Tecnica_n2_metas_intermediarias_IDEB.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2005,
+        "valor": 3.8
+      },
+      {
+        "ano": 2007,
+        "valor": 4.2
+      },
+      {
+        "ano": 2009,
+        "valor": 4.6
+      },
+      {
+        "ano": 2011,
+        "valor": 5
+      },
+      {
+        "ano": 2013,
+        "valor": 5.2
+      },
+      {
+        "ano": 2015,
+        "valor": 5.5
+      },
+      {
+        "ano": 2017,
+        "valor": 5.8
+      },
+      {
+        "ano": 2019,
+        "valor": 5.9
+      },
+      {
+        "ano": 2021,
+        "valor": 5.8
+      },
+      {
+        "ano": 2023,
+        "valor": 6
+      }
+    ]
+  },
+  "proficiencia_media_saeb_lingua_portuguesa_5_ano_ef": {
+    "label": "Proficiência Média SAEB Em Língua Portuguesa - 5º Ano EF",
+    "fonte_sigla": "INEP/SAEB",
+    "unidade": "Pontos na escala de proficiência do Saeb",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica (Saeb)",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede a proficiência média nacional dos estudantes do 5º ano do ensino fundamental em Língua Portuguesa no Saeb. Nas edições antigas, a etapa equivalente era denominada 4ª série do ensino fundamental.",
+    "como_interpretar": "Valores maiores indicam maior proficiência média em Língua Portuguesa, especialmente em leitura e interpretação de textos, conforme a escala do Saeb para a etapa avaliada. O indicador deve ser comparado apenas dentro da mesma etapa escolar e da mesma área avaliada; não mede diretamente abandono, aprovação, equidade, infraestrutura escolar ou qualidade pedagógica individual.",
+    "metodologia": "O Saeb é uma avaliação externa em larga escala conduzida pelo Inep. A série utiliza médias nacionais de proficiência em Língua Portuguesa para estudantes da 4ª série/5º ano do ensino fundamental. A partir de 1995, o Saeb adotou a Teoria de Resposta ao Item (TRI), permitindo a comparabilidade longitudinal das proficiências na escala do Saeb. Foram mantidos apenas anos com resultado nacional oficial publicado pelo Inep; não foram interpolados anos sem edição ou sem valor publicado. Os valores de 1995 a 2005 seguem a tabela oficial de médias de proficiência do Saeb 1995-2005. Os valores de 2007 a 2019 seguem a série histórica oficial publicada no Relatório de Resultados do Saeb 2019. Os valores de 2021 e 2023 seguem os resultados oficiais divulgados pelo Inep para o Saeb/Ideb 2023 e pelo relatório de proficiência do Saeb 2023.",
+    "historico_metodologia": "Não há valor oficial comparável para 1994 nesta série. Em 1995, o Saeb passou a usar TRI, marco metodológico que tornou possível comparar resultados ao longo do tempo. Em 1997, foram desenvolvidas novas matrizes de referência. Em 2001, o Saeb passou a concentrar os testes em Língua Portuguesa e Matemática e adotou novas matrizes. Em 2005, o Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados para redes, municípios e escolas públicas, mantendo a série nacional. Em 2007, o desempenho do Saeb passou a compor o Ideb junto com taxas de rendimento escolar. A nomenclatura da etapa mudou de 4ª série para 5º ano do ensino fundamental com a reorganização do ensino fundamental. As edições de 2021 e 2023 devem ser interpretadas considerando o impacto educacional da pandemia de COVID-19 sobre participação, aprendizagem e trajetória escolar. Os valores de 2007 e 2009 foram mantidos no arredondamento oficial publicado na série histórica do relatório do Saeb 2019.",
+    "abrangencia": "Brasil, total nacional, estudantes da 4ª série/5º ano do ensino fundamental avaliados no Saeb, abrangendo redes públicas e privadas conforme o desenho amostral e censitário oficial de cada edição.",
+    "periodicidade": "Bienal nas edições consideradas, com divulgação por edição do Saeb.",
+    "eventos_externos": [
+      {
+        "ano": 1995,
+        "nome": "TRI",
+        "descricao": "O Saeb adotou a Teoria de Resposta ao Item, permitindo comparabilidade longitudinal dos resultados de proficiência."
+      },
+      {
+        "ano": 2001,
+        "nome": "Novas Matrizes",
+        "descricao": "O Saeb passou a aplicar testes apenas de Língua Portuguesa e Matemática e adotou novas matrizes de referência."
+      },
+      {
+        "ano": 2005,
+        "nome": "Prova Brasil",
+        "descricao": "O Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados sem interromper a série nacional."
+      },
+      {
+        "ano": 2007,
+        "nome": "Ideb",
+        "descricao": "O Inep passou a usar médias de desempenho do Saeb, combinadas com taxas de rendimento escolar, para calcular o Ideb."
+      },
+      {
+        "ano": 2021,
+        "nome": "Pandemia",
+        "descricao": "A edição de 2021 registrou queda expressiva da proficiência média em relação a 2019, em contexto de interrupção e instabilidade das aulas presenciais."
+      },
+      {
+        "ano": 2023,
+        "nome": "Recuperação",
+        "descricao": "A proficiência média nacional voltou a subir em relação a 2021, aproximando-se novamente do patamar observado em 2019."
+      }
+    ],
+    "comparacao_paises": "Não aplicável para comparação direta entre países, pois o Saeb é uma avaliação nacional brasileira com escala própria. Para comparação internacional de desempenho em leitura, os indicadores mais adequados são avaliações internacionais como Pisa e PIRLS, não a escala do Saeb.",
+    "nivel_confiabilidade": "Muito alto para a série nacional oficial do Brasil, pois os valores são publicados pelo Inep, órgão oficial responsável pelo Saeb. A principal ressalva é metodológica: mudanças de desenho, abrangência, nomenclatura escolar e contexto de aplicação podem afetar a interpretação histórica. Os valores foram mantidos apenas quando publicados oficialmente, sem interpolação, projeção ou estimativa externa.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Inep - Resultados do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados"
+      },
+      {
+        "titulo": "Inep - Histórico do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico"
+      },
+      {
+        "titulo": "Inep - Saeb 1995-2005: Médias de Proficiência",
+        "url": "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/SAEB1995_2005.pdf"
+      },
+      {
+        "titulo": "Inep - Relatório de Resultados do Saeb 2019, Volume 1",
+        "url": "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf"
+      },
+      {
+        "titulo": "Inep - Apresentação Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+      },
+      {
+        "titulo": "Inep - Relatório de Resultados do Saeb 2023: Dados de Proficiência, Volume 1",
+        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1995,
+        "valor": 188.3
+      },
+      {
+        "ano": 1997,
+        "valor": 186.5
+      },
+      {
+        "ano": 1999,
+        "valor": 170.7
+      },
+      {
+        "ano": 2001,
+        "valor": 165.1
+      },
+      {
+        "ano": 2003,
+        "valor": 169.4
+      },
+      {
+        "ano": 2005,
+        "valor": 172.3
+      },
+      {
+        "ano": 2007,
+        "valor": 176
+      },
+      {
+        "ano": 2009,
+        "valor": 184
+      },
+      {
+        "ano": 2011,
+        "valor": 191
+      },
+      {
+        "ano": 2013,
+        "valor": 196
+      },
+      {
+        "ano": 2015,
+        "valor": 208
+      },
+      {
+        "ano": 2017,
+        "valor": 215
+      },
+      {
+        "ano": 2019,
+        "valor": 214.6
+      },
+      {
+        "ano": 2021,
+        "valor": 208.1
+      },
+      {
+        "ano": 2023,
+        "valor": 213.9
+      }
+    ]
+  },
+  "proficiencia_media_saeb_matematica_5ano_ef": {
+    "label": "Proficiência Média SAEB em Matemática - 5º Ano do Ensino Fundamental",
+    "fonte_sigla": "INEP/SAEB",
+    "unidade": "pontos na escala SAEB",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica - Proficiência Média em Matemática no 5º ano do Ensino Fundamental - Brasil",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede a proficiência média dos estudantes brasileiros do 5º ano do ensino fundamental em Matemática, segundo a escala oficial do Saeb.",
+    "como_interpretar": "Valores maiores indicam maior desempenho médio dos estudantes em Matemática na etapa avaliada. A escala é própria do Saeb e não deve ser interpretada como percentual de acertos nem comparada diretamente com avaliações internacionais. A comparação temporal é válida dentro da mesma etapa, área e escala, respeitando mudanças metodológicas e de cobertura.",
+    "metodologia": "O indicador corresponde à média nacional das proficiências dos estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb. O Inep calcula as proficiências em uma escala de desempenho educacional construída para a avaliação, com uso de procedimentos estatísticos de larga escala, pesos amostrais quando aplicável e agregação nacional. Foram mantidos apenas anos com resultados oficiais publicados pelo Inep; não foram incluídos anos sem aplicação regular nem valores projetados.",
+    "historico_metodologia": "O Saeb foi criado em 1990 e passou por reformulação relevante em 1995, quando a série histórica moderna de proficiências passou a permitir comparações mais consistentes. A partir de 2005, a Prova Brasil/Anresc ampliou a divulgação de resultados para escolas e municípios, enquanto a Aneb manteve componente amostral. Em 2019, o Inep manteve as matrizes de Língua Portuguesa e Matemática não atualizadas à BNCC para preservar a comparabilidade da série histórica. Em 2021, a aplicação ocorreu sob forte impacto da pandemia de COVID-19, afetando participação e desempenho. Em 2023, houve recuperação parcial em relação a 2021, mas o resultado nacional ainda ficou abaixo do nível pré-pandemia de 2019.",
+    "abrangencia": "Brasil, estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb, com resultados nacionais agregados.",
+    "periodicidade": "Bienal, nas edições regulares do Saeb.",
+    "eventos_externos": [
+      {
+        "ano": 1995,
+        "nome": "Reformulação",
+        "descricao": "O Saeb foi reformulado, iniciando a série moderna de resultados comparáveis de proficiência."
+      },
+      {
+        "ano": 2005,
+        "nome": "Prova Brasil",
+        "descricao": "A ampliação da avaliação com a Anresc/Prova Brasil aumentou a granularidade dos resultados divulgados para redes, municípios e escolas públicas elegíveis."
+      },
+      {
+        "ano": 2019,
+        "nome": "Matriz Mantida",
+        "descricao": "O Inep manteve as matrizes de Língua Portuguesa e Matemática para preservar a comparabilidade histórica da série."
+      },
+      {
+        "ano": 2021,
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou fortemente o desempenho e interrompeu a trajetória de crescimento observada antes de 2019."
+      },
+      {
+        "ano": 2023,
+        "nome": "Recuperação Parcial",
+        "descricao": "O resultado de 2023 recuperou parte da queda de 2021, mas ainda ficou abaixo do nível pré-pandemia de 2019."
+      }
+    ],
+    "comparacao_paises": "O Saeb não possui comparação internacional direta, pois usa escala, matriz e população-alvo próprias do Brasil. Para comparação entre países, avaliações como Pisa e Timss são metodologicamente mais adequadas, mas não devem ser misturadas com a escala do Saeb.",
+    "nivel_confiabilidade": "Alto. Os valores vêm de relatórios oficiais do Inep/Saeb. A principal ressalva é que os valores de 1995 a 2017 aparecem nos gráficos oficiais arredondados, enquanto 2019, 2021 e 2023 foram divulgados também com valores arredondados nos relatórios e, em apresentações oficiais, com uma casa decimal.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Inep - Resultados do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados"
+      },
+      {
+        "titulo": "Inep - Relatório de Resultados do Saeb 2019 - Volume 1",
+        "url": "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf"
+      },
+      {
+        "titulo": "Inep - Relatório de Resultados do Saeb 2023 - Volume 1 - Dados de Proficiência",
+        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf"
+      },
+      {
+        "titulo": "Inep - Apresentação Ideb 2023",
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+      },
+      {
+        "titulo": "Inep - Histórico do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico"
+      },
+      {
+        "titulo": "Inep - Microdados do Saeb",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/saeb"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1995,
+        "valor": 191
+      },
+      {
+        "ano": 1997,
+        "valor": 191
+      },
+      {
+        "ano": 1999,
+        "valor": 181
+      },
+      {
+        "ano": 2001,
+        "valor": 176
+      },
+      {
+        "ano": 2003,
+        "valor": 177
+      },
+      {
+        "ano": 2005,
+        "valor": 182
+      },
+      {
+        "ano": 2007,
+        "valor": 193
+      },
+      {
+        "ano": 2009,
+        "valor": 204
+      },
+      {
+        "ano": 2011,
+        "valor": 210
+      },
+      {
+        "ano": 2013,
+        "valor": 211
+      },
+      {
+        "ano": 2015,
+        "valor": 219
+      },
+      {
+        "ano": 2017,
+        "valor": 224
+      },
+      {
+        "ano": 2019,
+        "valor": 227.9
+      },
+      {
+        "ano": 2021,
+        "valor": 216.9
+      },
+      {
+        "ano": 2023,
+        "valor": 224.8
+      }
+    ]
   },
   "taxa_conclusao_primario_ods_4_1_2": {
     "label": "Taxa de Conclusão do Primário",
@@ -9537,240 +10407,588 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2024, "valor": 68.7 },
     ],
   },
-  "taxa_criancas_fora_da_escola_uis": {
-    "label": "Taxa de Crianças Fora da Escola",
-    "fonte_sigla": "UNESCO/UIS",
-    "unidade": "% da população em idade oficial do ensino primário",
-    "fonte":
-      "UNESCO Institute for Statistics (UIS), via World Bank Data / World Development Indicators (SE.PRM.UNER.ZS)",
+  "matriculas_educacao_profissional_tecnica_nivel_medio": {
+    "label": "Matrículas Na Educação Profissional Técnica De Nível Médio",
+    "fonte_sigla": "INEP",
+    "unidade": "matrículas",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Sinopse Estatística da Educação Básica",
     "cat": "Educação",
     "padrao": false,
-    "descricao":
-      "Mede a porcentagem de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no ensino secundário.",
-    "como_interpretar":
-      "Valores menores indicam maior inclusão escolar na idade primária. Valor igual a 0% indicaria que todas as crianças em idade oficial do ensino primário estão matriculadas no ensino primário ou secundário. O indicador não mede aprendizagem, frequência efetiva, abandono ao longo do ano, distorção idade-série ou qualidade da educação.",
-    "metodologia":
-      "O indicador é calculado como a quantidade de crianças em idade oficial do ensino primário que não estão matriculadas no ensino primário nem no secundário, dividida pela população total na idade oficial do ensino primário, multiplicada por 100. Crianças na idade oficial do ensino primário matriculadas apenas na educação pré-primária são consideradas fora da escola para este indicador. A série é compilada pela UNESCO/UIS a partir de dados administrativos educacionais e população escolar estimada, disseminada também pelo World Bank Data / World Development Indicators.",
-    "historico_metodologia":
-      "A UNESCO/UIS passou por mudanças relevantes de disseminação e atualização de base, incluindo a migração para o novo UIS Data Browser e atualizações periódicas dos arquivos em massa. A série brasileira disponível na fonte consultada possui lacunas antes de 2012 para esta definição específica; portanto, foram mantidos apenas anos com observações concretas disponíveis na série oficial. Valores de anos sem dado oficial observado entre 1994 e 2026 não foram interpolados nem estimados.",
-    "abrangencia": "Brasil, cobertura nacional, crianças em idade oficial do ensino primário, ambos os sexos.",
-    "periodicidade": "Anual, conforme disponibilidade de envio e validação dos dados nacionais pela UNESCO/UIS.",
+    "descricao": "Mede o número absoluto de matrículas na educação profissional técnica de nível médio no Brasil.",
+    "como_interpretar": "Valores maiores indicam maior volume de matrículas em cursos técnicos de nível médio. O indicador mede expansão de acesso, mas não mede conclusão, qualidade da formação, inserção profissional, permanência dos estudantes ou adequação da oferta ao mercado de trabalho.",
+    "metodologia": "O indicador corresponde ao número absoluto de matrículas em educação profissional técnica de nível médio declaradas ao Censo Escolar da Educação Básica, levantamento estatístico anual, obrigatório e declaratório realizado pelo Inep em colaboração com secretarias estaduais e municipais de educação e escolas públicas e privadas. A série considera matrículas em modalidades técnicas de nível médio, incluindo Ensino Médio Normal/Magistério, curso técnico integrado ao ensino médio, curso técnico integrado à EJA de nível médio, curso técnico concomitante e curso técnico subsequente. Para 2025, foi usado o total da categoria 'educação profissional técnica' divulgado pelo Inep no Censo Escolar 2025, excluindo FIC ou qualificação profissional.",
+    "historico_metodologia": "A série comparável oficial consolidada do indicador de educação profissional técnica de nível médio aparece nas publicações do PNE/Inep a partir de 2008 e, de forma central para a Meta 11 do PNE 2014-2024, a partir da linha de base de 2013. Não foram incluídos anos de 1994 a 2007 porque não foi localizada, nas fontes oficiais consultadas, série nacional contínua, validável e metodologicamente comparável para o mesmo recorte exato. A partir de 2022-2025, a expansão e a classificação da educação profissional passaram a ser afetadas pela organização curricular do ensino médio e pelo registro de itinerários de formação técnica e profissional, exigindo atenção para distinguir educação profissional técnica de FIC ou qualificação profissional.",
+    "abrangencia": "Brasil, total nacional, redes pública e privada, educação básica, educação profissional técnica de nível médio.",
+    "periodicidade": "Anual.",
     "eventos_externos": [
       {
-        "ano": 2012,
-        "nome": "Maior valor",
-        "descricao":
-          "Primeiro ano disponível da série validada e maior taxa registrada no período observado, segundo a série UNESCO/UIS via World Bank/CEIC.",
+        "ano": 2011,
+        "nome": "Pronatec",
+        "descricao": "O Programa Nacional de Acesso ao Ensino Técnico e Emprego foi criado para ampliar a oferta de cursos técnicos e de formação profissional, antecedendo a forte expansão observada até 2014."
+      },
+      {
+        "ano": 2014,
+        "nome": "PNE",
+        "descricao": "O Plano Nacional de Educação 2014-2024 estabeleceu a Meta 11 de triplicar as matrículas da educação profissional técnica de nível médio, tomando 2013 como linha de base."
       },
       {
         "ano": 2020,
-        "nome": "COVID-19",
-        "descricao":
-          "A pandemia de COVID-19 afetou o funcionamento escolar e a mensuração educacional, podendo impactar matrícula e permanência escolar no período.",
+        "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou o funcionamento das redes de ensino e os processos educacionais, embora a série de matrículas técnicas tenha mantido crescimento agregado em 2020."
       },
       {
         "ano": 2021,
-        "nome": "Pico pandêmico",
-        "descricao":
-          "A série mostra elevação relevante em 2021, ano ainda fortemente afetado por interrupções educacionais associadas à pandemia.",
+        "nome": "Retração",
+        "descricao": "O número de matrículas técnicas caiu em 2021 em relação a 2020, em contexto de efeitos persistentes da pandemia e reorganização das redes de ensino."
       },
       {
         "ano": 2022,
         "nome": "Retomada",
-        "descricao":
-          "A taxa caiu em 2022 em relação a 2021, coincidindo com a retomada mais ampla das atividades presenciais e normalização parcial do sistema educacional.",
+        "descricao": "As matrículas técnicas voltaram a crescer fortemente em 2022, superando 2 milhões de registros."
       },
       {
-        "ano": 2024,
-        "nome": "Menor valor",
-        "descricao":
-          "A série atualizada indica queda para 2,187% em 2024, menor valor recente localizado na fonte consultada.",
-      },
+        "ano": 2025,
+        "nome": "Itinerários Técnicos",
+        "descricao": "O Censo Escolar 2025 registrou expansão da educação profissional técnica, com destaque para matrículas relacionadas ao itinerário de formação técnica e profissional."
+      }
     ],
-    "comparacao_paises":
-      "Em 2024, o Brasil aparece com taxa de crianças fora da escola no ensino primário de 2,187%, abaixo da mediana global aproximada informada pelo World Bank/WDI para países com dados no mesmo indicador, mas acima de países com taxas próximas de zero, como Japão, Reino Unido, Lituânia, França e Polônia.",
-    "nivel_confiabilidade":
-      "Alto para comparação internacional, pois a série é da UNESCO/UIS e redistribuída pelo World Bank Data / World Development Indicators. A principal limitação é a cobertura temporal: há observações oficiais disponíveis apenas para parte do período solicitado; anos sem valor observado não foram preenchidos.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "comparacao_paises": "A comparação internacional direta por número absoluto de matrículas não é metodologicamente adequada, pois depende do tamanho populacional e da estrutura do ensino médio de cada país. Para comparação entre países, o indicador mais apropriado é a proporção de estudantes do ensino médio em programas vocacionais/técnicos segundo classificações internacionais como ISCED/OCDE. No Censo Escolar 2025, o Brasil registrou 21,5% dos alunos do ensino médio em cursos técnicos articulados ao ensino médio regular no total das redes e 20,1% na rede pública.",
+    "nivel_confiabilidade": "Alto para os anos de 2008 a 2025 incluídos, pois os valores foram obtidos em publicações oficiais do Inep/MEC baseadas no Censo Escolar da Educação Básica. A principal ressalva é metodológica: os anos anteriores a 2008 não foram incluídos por falta de série oficial nacional contínua e comparável para o recorte exato; além disso, mudanças de classificação e expansão dos itinerários técnicos no ensino médio podem afetar a interpretação da tendência recente.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
-        "titulo": "World Bank Data - Children out of school (% of primary school age) - SE.PRM.UNER.ZS",
-        "url": "https://data.worldbank.org/indicator/SE.PRM.UNER.ZS?locations=BR",
+        "titulo": "Inep - Sinopses Estatísticas da Educação Básica",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica"
       },
-      { "titulo": "UNESCO/UIS Data Browser", "url": "https://databrowser.uis.unesco.org/" },
-      { "titulo": "UNESCO/UIS API Documentation", "url": "https://api.uis.unesco.org/api/public/documentation/" },
       {
-        "titulo": "CEIC / World Bank WDI - Brazil Social Education Statistics",
-        "url": "https://www.ceicdata.com/en/brazil/social-education-statistics",
+        "titulo": "Inep - Censo Escolar",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar"
       },
+      {
+        "titulo": "Inep - Apresentação do Censo Escolar 2025",
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+      },
+      {
+        "titulo": "Inep - Apresentação do Censo Escolar 2024",
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2024/apresentacao_coletiva.pdf"
+      },
+      {
+        "titulo": "Inep - Relatório do Quinto Ciclo de Monitoramento das Metas do PNE",
+        "url": "https://cooperacaopne.mec.gov.br/pluginfile.php/311/mod_page/content/5/relatorio_do_quinto_ciclo_de_monitoramento_das_metas_do_plano_nacional_de_educacao.pdf"
+      },
+      {
+        "titulo": "Inep - Plano Nacional de Educação 2014-2024: Linha de Base",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/plano_nacional_de_educacao_pne_2014_2024_linha_de_base.pdf"
+      },
+      {
+        "titulo": "Lei nº 13.005/2014 - Plano Nacional de Educação",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13005.htm"
+      }
     ],
     "dados": [
-      { "ano": 2012, "valor": 5.82 },
-      { "ano": 2013, "valor": 3.95 },
-      { "ano": 2021, "valor": 5.23 },
-      { "ano": 2022, "valor": 3.984 },
-      { "ano": 2024, "valor": 2.187 },
-    ],
-  },
-  "taxa_alfabetizacao_jovens_adultos": {
-    "label": "Taxa de Alfabetização de Jovens e Adultos",
-    "fonte_sigla": "UIS",
-    "unidade": "% da população com 15 anos ou mais",
-    "fonte": "UNESCO Institute for Statistics (UIS), via World Bank - World Development Indicators (SE.ADT.LITR.ZS)",
-    "cat": "Educação",
-    "padrao": false,
-    "descricao":
-      "Mede a proporção da população brasileira com 15 anos ou mais que consegue ler e escrever, com compreensão, uma declaração curta e simples sobre sua vida cotidiana.",
-    "como_interpretar":
-      "Valores maiores indicam maior proporção de jovens e adultos alfabetizados. O indicador mede alfabetização básica declarada ou aferida por censos e pesquisas domiciliares, mas não mede proficiência leitora avançada, qualidade da educação, compreensão textual complexa nem desempenho escolar.",
-    "metodologia":
-      "A taxa é calculada dividindo-se o número de pessoas alfabetizadas com 15 anos ou mais pela população total da mesma faixa etária, excluindo pessoas com condição de alfabetização desconhecida, e multiplicando o resultado por 100. A série internacional é compilada pelo UNESCO Institute for Statistics a partir de censos nacionais e pesquisas domiciliares, com padronização pelo World Development Indicators.",
-    "historico_metodologia":
-      "A metodologia internacional do UIS define alfabetização como a capacidade de ler e escrever, com compreensão, uma declaração curta e simples sobre a vida cotidiana. A fonte informa que, em alguns países, podem existir diferenças de definição, método de coleta, uso de autodeclaração, inferência por escolaridade ou testes diretos. Para o Brasil, os valores recentes são compatíveis com a série de educação da PNAD Contínua/IBGE iniciada em 2016. Não foram incluídos anos sem valor publicado na série consultada.",
-    "abrangencia": "Brasil, cobertura nacional, população residente com 15 anos ou mais.",
-    "periodicidade":
-      "Anual, conforme disponibilidade de censos e pesquisas domiciliares nacionais compiladas pelo UIS/WDI.",
-    "eventos_externos": [
       {
-        "ano": 2000,
-        "nome": "Censo 2000",
-        "descricao":
-          "O valor de 2000 coincide com ano censitário brasileiro, uma das bases nacionais usadas para medir alfabetização da população.",
+        "ano": 2008,
+        "valor": 1129584
       },
       {
-        "ano": 2004,
-        "nome": "Queda PNAD",
-        "descricao":
-          "Segundo o IBGE, a taxa de analfabetismo medida pela PNAD caiu de 11,5% em 2004 para 8,0% em 2015, movimento compatível com alta gradual da alfabetização adulta.",
+        "ano": 2009,
+        "valor": 1252240
+      },
+      {
+        "ano": 2010,
+        "valor": 1361827
+      },
+      {
+        "ano": 2011,
+        "valor": 1458496
+      },
+      {
+        "ano": 2012,
+        "valor": 1532562
+      },
+      {
+        "ano": 2013,
+        "valor": 1602946
+      },
+      {
+        "ano": 2014,
+        "valor": 1886167
+      },
+      {
+        "ano": 2015,
+        "valor": 1825457
       },
       {
         "ano": 2016,
-        "nome": "PNAD Contínua",
-        "descricao":
-          "A série recente de indicadores educacionais do IBGE passa a ser acompanhada pela PNAD Contínua, permitindo atualização anual mais regular da alfabetização da população de 15 anos ou mais.",
+        "valor": 1775324
+      },
+      {
+        "ano": 2017,
+        "valor": 1791806
+      },
+      {
+        "ano": 2018,
+        "valor": 1868917
+      },
+      {
+        "ano": 2019,
+        "valor": 1874974
       },
       {
         "ano": 2020,
-        "nome": "Pandemia",
-        "descricao":
-          "A pandemia de COVID-19 afetou fortemente a educação brasileira, mas a alfabetização de adultos variou pouco no curto prazo por ser um indicador de estoque populacional acumulado.",
+        "valor": 1901477
+      },
+      {
+        "ano": 2021,
+        "valor": 1851541
+      },
+      {
+        "ano": 2022,
+        "valor": 2069771
+      },
+      {
+        "ano": 2023,
+        "valor": 2271607
       },
       {
         "ano": 2024,
-        "nome": "Mínimo histórico",
-        "descricao":
-          "O IBGE informou que, em 2024, o analfabetismo da população com 15 anos ou mais caiu para 5,3%, o menor nível da série da PNAD Contínua iniciada em 2016.",
-      },
-    ],
-    "comparacao_paises":
-      "Em 2024, o Brasil registrou 94,74% de alfabetização da população com 15 anos ou mais. É um patamar alto em comparação com países de baixa renda, mas ainda abaixo de países com alfabetização praticamente universal, próximos de 99% ou 100%. Comparações internacionais devem ser feitas com cautela porque o UIS informa diferenças nacionais de definição e coleta.",
-    "nivel_confiabilidade":
-      "Alto para comparação internacional, pois a série vem do UNESCO Institute for Statistics e é redistribuída pelo World Bank WDI/FRED. A ressalva metodológica é que alfabetização pode ser medida por autodeclaração, censos, pesquisas domiciliares ou testes diretos, e a própria fonte alerta que definições e métodos podem variar entre países.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
-    "fontes_links": [
-      {
-        "titulo": "World Bank Data - Literacy rate, adult total (% of people ages 15 and above) - Brazil",
-        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=BR",
+        "valor": 2389454
       },
       {
-        "titulo": "World Bank DataBank Metadata - SE.ADT.LITR.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/millennium-development-goals/series/SE.ADT.LITR.ZS",
-      },
-      {
-        "titulo": "FRED - Literacy Rate, Adult Total for Brazil (SEADTLITRZSBRA)",
-        "url": "https://fred.stlouisfed.org/series/SEADTLITRZSBRA",
-      },
-      {
-        "titulo": "IBGE Agência de Notícias - Education indicators advance in 2024",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/43730-education-indicators-advance-in-2024-but-school-failure-increases",
-      },
-      {
-        "titulo": "IBGE Agência de Notícias - Literacy transforms youth and adult lives in Brazil",
-        "url":
-          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/16523-alfabetizacao-transforma-a-vida-de-jovens-e-adultos-pelo-brasil-3",
-      },
-    ],
-    "dados": [
-      { "ano": 2000, "valor": 86.370002746582 },
-      { "ano": 2004, "valor": 88.620002746582 },
-      { "ano": 2006, "valor": 89.620002746582 },
-      { "ano": 2007, "valor": 90.0100021362305 },
-      { "ano": 2008, "valor": 90.0400009155273 },
-      { "ano": 2009, "valor": 90.3000030517578 },
-      { "ano": 2010, "valor": 90.379997253418 },
-      { "ano": 2011, "valor": 91.4100036621094 },
-      { "ano": 2012, "valor": 91.3399963378906 },
-      { "ano": 2013, "valor": 91.4800033569336 },
-      { "ano": 2014, "valor": 91.7300033569336 },
-      { "ano": 2015, "valor": 92.0500030517578 },
-      { "ano": 2016, "valor": 92.8099975585938 },
-      { "ano": 2017, "valor": 93.0800018310547 },
-      { "ano": 2018, "valor": 93.2300033569336 },
-      { "ano": 2019, "valor": 93.8926266999537 },
-      { "ano": 2020, "valor": 94.7444114331042 },
-      { "ano": 2021, "valor": 94.7726170886975 },
-      { "ano": 2022, "valor": 94.376866160108 },
-      { "ano": 2023, "valor": 94.5725490635077 },
-      { "ano": 2024, "valor": 94.7399978637695 },
-    ],
+        "ano": 2025,
+        "valor": 2490145
+      }
+    ]
   },
-  "participacao_educacao_infantil_organizada": {
-    "label": "Participação em Educação Infantil Organizada",
-    "fonte_sigla": "UNESCO/UIS",
-    "unidade": "Percentual (%)",
-    "fonte": "UNESCO Institute for Statistics (UIS) / United Nations Global SDG Database - SE_PRE_PARTN",
+  "matriculas_graduacao_educacao_superior_brasil": {
+    "label": "Matrículas na Graduação da Educação Superior",
+    "fonte_sigla": "INEP/Censup",
+    "unidade": "matrículas",
+    "fonte": "MEC/Inep - Censo da Educação Superior - Número de matrículas em cursos de graduação - Brasil",
     "cat": "Educação",
     "padrao": false,
-    "descricao":
-      "Mede a proporção de crianças, um ano antes da idade oficial de entrada no ensino primário, que participam de algum programa organizado de aprendizagem.",
-    "como_interpretar":
-      "Valores maiores indicam maior participação das crianças em educação organizada imediatamente antes da entrada oficial no ensino primário. Valores próximos de 100% indicam cobertura quase universal. O indicador não mede qualidade da educação infantil, aprendizagem efetiva, carga horária, infraestrutura ou desigualdades internas.",
-    "metodologia":
-      "O indicador ODS 4.2.2 é calculado como o número de crianças na idade-alvo que participam de programas organizados de aprendizagem, incluindo educação infantil e ensino primário quando aplicável, dividido pela população total da mesma idade, multiplicado por 100. A idade-alvo corresponde a um ano antes da idade oficial de entrada no ensino primário em cada país. A fonte principal é administrativa; quando derivado de pesquisas domiciliares, matrícula/participação e população são coletadas na mesma operação estatística.",
-    "historico_metodologia":
-      "A definição internacional do ODS 4.2.2 foi padronizada pela ONU/UNESCO-UIS como 'participation rate in organized learning (one year before the official primary entry age), by sex'. A atualização metodológica oficial consultada é de 29/07/2024. A série pode sofrer revisões quando há atualização de dados nacionais, reprocessamento pelo UIS, revisão de população por idade simples ou mudança de fonte entre registros administrativos e pesquisas domiciliares. Dados de 2020 podem ter comparabilidade afetada por restrições da pandemia, mudanças de coleta e não resposta em pesquisas domiciliares.",
-    "abrangencia": "Brasil, cobertura nacional, ambos os sexos, indicador ODS 4.2.2 comparável internacionalmente.",
-    "periodicidade": "Anual, conforme disponibilidade de dados nacionais processados pelo UIS/ONU.",
+    "descricao": "Mede o número total de matrículas em cursos de graduação no Brasil, considerando instituições de educação superior públicas e privadas.",
+    "como_interpretar": "Valores maiores indicam maior volume de vínculos de matrícula em cursos de graduação. O indicador mede escala do sistema de educação superior, mas não mede taxa de acesso, taxa líquida, taxa bruta, qualidade dos cursos, permanência, conclusão ou proporção da população em idade universitária atendida.",
+    "metodologia": "O indicador usa o total nacional de matrículas em cursos de graduação informado pelo Censo da Educação Superior do Inep. A coleta é anual, descentralizada e indireta, baseada nas declarações obrigatórias das instituições de educação superior públicas e privadas. O conceito utilizado é matrícula em curso de graduação, abrangendo bacharelado, licenciatura e tecnológico, nas modalidades presencial e a distância. Os valores representam vínculos de matrícula, não necessariamente pessoas únicas. Foram mantidos apenas valores oficiais publicados pelo Inep para o Brasil de 1994 a 2024. Não foram incluídas estimativas, projeções, cursos sequenciais ou pós-graduação.",
+    "historico_metodologia": "O Censo da Educação Superior é a fonte estatística oficial do Inep para a educação superior brasileira. Ao longo do tempo, o instrumento de coleta, os sistemas de preenchimento, os módulos, as validações de consistência e os procedimentos de disseminação foram aperfeiçoados, especialmente com o uso do sistema Censup e publicações metodológicas anuais. Essas mudanças podem afetar a qualidade e a consistência operacional da coleta, mas o agregado nacional de matrículas em cursos de graduação preserva alta comparabilidade temporal. A partir de 2008, o Decreto nº 6.425 regulamentou o censo anual da educação, reforçando a obrigatoriedade da declaração. A série usa os valores divulgados oficialmente pelo Inep no Censo da Educação Superior 2024, que consolida a série histórica 1980-2024.",
+    "abrangencia": "Brasil, cobertura nacional, instituições de educação superior públicas e privadas, cursos de graduação presenciais e a distância.",
+    "periodicidade": "Anual.",
     "eventos_externos": [
+      {
+        "ano": 1996,
+        "nome": "LDB",
+        "descricao": "A Lei nº 9.394/1996 reorganizou as diretrizes e bases da educação nacional, incluindo a educação superior, em um período que antecedeu forte expansão das matrículas."
+      },
+      {
+        "ano": 1999,
+        "nome": "Fies",
+        "descricao": "O Fundo de Financiamento ao Estudante de Ensino Superior foi instituído no fim da década de 1990, ampliando mecanismos de financiamento para cursos superiores não gratuitos."
+      },
+      {
+        "ano": 2005,
+        "nome": "ProUni",
+        "descricao": "O Programa Universidade para Todos passou a ofertar bolsas de estudo em cursos de graduação e sequenciais de formação específica, compondo o contexto de expansão do acesso no setor privado."
+      },
+      {
+        "ano": 2007,
+        "nome": "Reuni",
+        "descricao": "O Programa de Apoio a Planos de Reestruturação e Expansão das Universidades Federais foi instituído para expandir e reestruturar a rede federal de educação superior."
+      },
+      {
+        "ano": 2017,
+        "nome": "Marco EaD",
+        "descricao": "A regulamentação federal da educação a distância no ensino superior contribuiu para o contexto de expansão posterior das matrículas EaD."
+      },
       {
         "ano": 2020,
         "nome": "Pandemia",
+        "descricao": "A pandemia de COVID-19 afetou calendários acadêmicos e procedimentos de coleta, exigindo orientações específicas do Inep para instituições com atraso no calendário."
+      },
+      {
+        "ano": 2024,
+        "nome": "EaD maioria",
+        "descricao": "Em 2024, a educação a distância passou a representar 50,7% das matrículas de graduação, e o total de matrículas ultrapassou 10 milhões pela primeira vez na série histórica do Inep."
+      }
+    ],
+    "comparacao_paises": "A comparação direta entre países por número absoluto de matrículas não é metodologicamente adequada, pois países mais populosos tendem a ter mais matrículas. Para comparação internacional de acesso, o indicador mais apropriado é a taxa bruta de matrícula no ensino terciário, como a série da UNESCO/UIS ou do Banco Mundial. Este JSON não usa essa taxa porque mantém apenas a contagem oficial de matrículas da graduação do Inep.",
+    "nivel_confiabilidade": "Muito alto para contagem oficial de matrículas na graduação no Brasil, pois os valores vêm do Censo da Educação Superior do Inep, fonte oficial, anual e obrigatória. A principal ressalva é conceitual: o indicador mede vínculos de matrícula, não pessoas únicas nem taxa de atendimento populacional.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Inep - Apresentação do Censo da Educação Superior 2024 - Gráfico 28",
+        "url": "https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf"
+      },
+      {
+        "titulo": "Inep - Notas Estatísticas do Censo da Educação Superior 2024",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/notas_estatisticas_censo_escolar_da_educacao_superior_2024.pdf"
+      },
+      {
+        "titulo": "Inep - Microdados do Censo da Educação Superior",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior"
+      },
+      {
+        "titulo": "Inep - Metodologia de Coleta do Censo da Educação Superior 2024",
+        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/metodologia-de-coleta-do-censo-da-educacao-superior-2024"
+      },
+      {
+        "titulo": "Inep - Manual de Preenchimento do Censo da Educação Superior 2024 - Módulo Aluno",
+        "url": "https://download.inep.gov.br/pesquisas_estatisticas_indicadores_educacionais/censo_da_educacao_superior/orientacoes/manuais/modulo_aluno_2024.pdf"
+      },
+      {
+        "titulo": "Planalto - Decreto nº 6.425/2008 - Censo Anual da Educação",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6425.htm"
+      },
+      {
+        "titulo": "Planalto - Lei nº 9.394/1996 - Lei de Diretrizes e Bases da Educação Nacional",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+      },
+      {
+        "titulo": "Planalto - Decreto nº 6.096/2007 - Reuni",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6096.htm"
+      },
+      {
+        "titulo": "MEC - Programa Universidade para Todos - ProUni",
+        "url": "https://www.gov.br/mec/pt-br/prouni"
+      },
+      {
+        "titulo": "MEC - Fundo de Financiamento Estudantil - Fies",
+        "url": "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/fundo-de-financiamento-estudantil-fies"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 1994,
+        "valor": 1661034
+      },
+      {
+        "ano": 1995,
+        "valor": 1759703
+      },
+      {
+        "ano": 1996,
+        "valor": 1868529
+      },
+      {
+        "ano": 1997,
+        "valor": 1945615
+      },
+      {
+        "ano": 1998,
+        "valor": 2125958
+      },
+      {
+        "ano": 1999,
+        "valor": 2369945
+      },
+      {
+        "ano": 2000,
+        "valor": 2695927
+      },
+      {
+        "ano": 2001,
+        "valor": 3036113
+      },
+      {
+        "ano": 2002,
+        "valor": 3520627
+      },
+      {
+        "ano": 2003,
+        "valor": 3936933
+      },
+      {
+        "ano": 2004,
+        "valor": 4223344
+      },
+      {
+        "ano": 2005,
+        "valor": 4567798
+      },
+      {
+        "ano": 2006,
+        "valor": 4883852
+      },
+      {
+        "ano": 2007,
+        "valor": 5250147
+      },
+      {
+        "ano": 2008,
+        "valor": 5808017
+      },
+      {
+        "ano": 2009,
+        "valor": 5954021
+      },
+      {
+        "ano": 2010,
+        "valor": 6379299
+      },
+      {
+        "ano": 2011,
+        "valor": 6739689
+      },
+      {
+        "ano": 2012,
+        "valor": 7037688
+      },
+      {
+        "ano": 2013,
+        "valor": 7305977
+      },
+      {
+        "ano": 2014,
+        "valor": 7828013
+      },
+      {
+        "ano": 2015,
+        "valor": 8027297
+      },
+      {
+        "ano": 2016,
+        "valor": 8048701
+      },
+      {
+        "ano": 2017,
+        "valor": 8286663
+      },
+      {
+        "ano": 2018,
+        "valor": 8450755
+      },
+      {
+        "ano": 2019,
+        "valor": 8603824
+      },
+      {
+        "ano": 2020,
+        "valor": 8680354
+      },
+      {
+        "ano": 2021,
+        "valor": 8986554
+      },
+      {
+        "ano": 2022,
+        "valor": 9443597
+      },
+      {
+        "ano": 2023,
+        "valor": 9976782
+      },
+      {
+        "ano": 2024,
+        "valor": 10226873
+      }
+    ]
+  },
+  "indicador_adequacao_formacao_docente": {
+    "label": "Indicador de Adequação da Formação Docente",
+    "fonte_sigla": "INEP",
+    "unidade": "% de docências no Grupo 1",
+    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Adequação da Formação Docente",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao": "Mede a proporção de docências em que o professor possui formação superior de licenciatura, ou bacharelado com complementação pedagógica, na mesma área da disciplina que leciona.",
+    "como_interpretar": "Valores maiores indicam maior adequação entre a formação inicial do docente e a disciplina ministrada. O Grupo 1 representa a situação considerada mais adequada pelo INEP. O indicador não mede qualidade pedagógica, aprendizagem dos alunos, experiência docente, remuneração, estabilidade profissional ou condições de trabalho.",
+    "metodologia": "O INEP classifica cada docência, isto é, cada relação entre docente, turma e disciplina, em cinco grupos de adequação, com base nos dados declarados no Censo Escolar da Educação Básica. O Grupo 1 inclui docentes com formação superior de licenciatura na mesma disciplina que lecionam, ou bacharelado na mesma disciplina com curso de complementação pedagógica concluído. A série abaixo usa o percentual de docências classificadas no Grupo 1, agregado para Brasil, todas as redes, ensino médio.",
+    "historico_metodologia": "A Nota Técnica nº 020/2014 do INEP introduziu o indicador com base no Censo Escolar de 2013 e definiu a classificação em cinco grupos. Não há série oficial comparável desde 1994; por isso foram mantidos apenas anos com dados oficiais disponíveis e comparáveis na divulgação do INEP. A partir de 2019, o Censo Escolar deixou de coletar cursos superiores em andamento, e parte da elevação observada em indicadores de formação docente decorre da atualização do cadastro de docentes promovida pelo INEP, incluindo cursos concluídos em anos anteriores até então não declarados.",
+    "abrangencia": "Brasil, todas as redes de ensino, ensino médio, docências da educação básica avaliadas pelo Censo Escolar.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2014,
+        "nome": "PNE",
+        "descricao": "A Lei nº 13.005/2014 aprovou o Plano Nacional de Educação, cuja Meta 15 reforçou a formação específica de nível superior em licenciatura na área de atuação dos professores da educação básica."
+      },
+      {
+        "ano": 2014,
+        "nome": "Nota Técnica",
+        "descricao": "O INEP publicou a Nota Técnica nº 020/2014, formalizando a metodologia do Indicador de Adequação da Formação Docente e a classificação das docências em cinco grupos."
+      },
+      {
+        "ano": 2019,
+        "nome": "Cadastro Docente",
+        "descricao": "A divulgação do Censo Escolar registrou efeito da atualização do cadastro de docentes, com inclusão de cursos concluídos em anos anteriores que ainda não haviam sido declarados."
+      },
+      {
+        "ano": 2024,
+        "nome": "Novo PNE",
+        "descricao": "A discussão do novo Plano Nacional de Educação manteve a adequação da formação docente como dimensão relevante para monitorar a valorização e a qualificação dos profissionais da educação básica."
+      }
+    ],
+    "comparacao_paises": "Não há comparação internacional direta robusta para este indicador, pois ele depende da legislação brasileira sobre licenciaturas, complementação pedagógica, organização curricular e declaração de docências no Censo Escolar. Comparações internacionais devem usar indicadores mais gerais, como qualificação formal de professores por etapa de ensino, produzidos por UNESCO/UIS ou OCDE, quando disponíveis.",
+    "nivel_confiabilidade": "Alto para a série oficial brasileira de 2014 a 2024, pois os dados derivam do Censo Escolar da Educação Básica e da metodologia documentada pelo INEP. A principal limitação é que o indicador depende da qualidade da declaração das escolas e do cadastro de formação docente; além disso, não há série oficial comparável desde 1994.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "INEP - Adequação da Formação Docente",
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/adequacao-da-formacao-docente"
+      },
+      {
+        "titulo": "INEP - Nota Técnica nº 020/2014 - Indicador de Adequação da Formação do Docente da Educação Básica",
+        "url": "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/2013/nota_tecnica_indicador_de_adequacao_da_formacao_do_docente_da_educacao_basica.pdf"
+      },
+      {
+        "titulo": "INEP - Indicadores Educacionais",
+        "url": "https://www.gov.br/inep/pt-br/relatorio-anual-de-atividades-e-gestao-do-inep-2025/pesquisas-estatisticas-e-indicadores-educacionais/indicadores-educacionais"
+      },
+      {
+        "titulo": "INEP - Censo Escolar da Educação Básica 2024 - Resumo Técnico",
+        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
+      }
+    ],
+    "dados": [
+      {
+        "ano": 2014,
+        "valor": 59.5
+      },
+      {
+        "ano": 2015,
+        "valor": 58.9
+      },
+      {
+        "ano": 2016,
+        "valor": 60.4
+      },
+      {
+        "ano": 2017,
+        "valor": 61.0
+      },
+      {
+        "ano": 2018,
+        "valor": 61.9
+      },
+      {
+        "ano": 2019,
+        "valor": 63.3
+      },
+      {
+        "ano": 2020,
+        "valor": 65.2
+      },
+      {
+        "ano": 2021,
+        "valor": 66.6
+      },
+      {
+        "ano": 2022,
+        "valor": 67.6
+      },
+      {
+        "ano": 2023,
+        "valor": 68.2
+      },
+      {
+        "ano": 2024,
+        "valor": 68.4
+      }
+    ]
+  },
+  "timss_matematica_ciencias": {
+    "label": "TIMSS Matemática e Ciências",
+    "fonte_sigla": "IEA",
+    "unidade": "pontos na escala TIMSS",
+    "fonte":
+      "International Association for the Evaluation of Educational Achievement - Trends in International Mathematics and Science Study",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao":
+      "Mede o desempenho médio de estudantes brasileiros em matemática e ciências no TIMSS, avaliação internacional padronizada da IEA aplicada no 4º e no 8º ano.",
+    "como_interpretar":
+      "Valores maiores indicam maior proficiência média em matemática e ciências. A escala TIMSS usa média internacional de referência de 500 pontos e desvio-padrão de 100 pontos estabelecidos a partir da distribuição internacional original de 1995. O valor consolidado apresentado é uma média aritmética simples das quatro médias oficiais disponíveis para o Brasil em 2023: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano.",
+    "metodologia":
+      "A IEA aplica testes padronizados de matemática e ciências a amostras representativas de estudantes do 4º e do 8º ano, usando desenho amostral probabilístico, matrizes de itens e escalas de proficiência comparáveis internacionalmente. Para este JSON, foram usados apenas os valores oficiais publicados para o Brasil no TIMSS 2023: matemática 4º ano = 400, ciências 4º ano = 425, matemática 8º ano = 378 e ciências 8º ano = 420. O valor anual consolidado em dados foi calculado como média aritmética simples desses quatro resultados oficiais: 405,75.",
+    "historico_metodologia":
+      "O TIMSS ocorre em ciclos quadrienais desde 1995 e mede tendências de desempenho em matemática e ciências. A escala TIMSS foi estabelecida em 1995 com média de referência 500 e desvio-padrão 100. O Brasil divulgou resultados de sua primeira participação no TIMSS em 2023, portanto não há série histórica brasileira oficial anterior comparável para esse indicador. Como o valor consolidado combina domínios e anos escolares, ele deve ser interpretado como síntese descritiva dos resultados oficiais, não como uma escala composta oficial publicada pela IEA.",
+    "abrangencia":
+      "Brasil, estudantes do 4º e do 8º ano do ensino fundamental, com amostras nacionais representativas e resultados comparáveis internacionalmente no TIMSS 2023.",
+    "periodicidade": "Quadrienal, conforme ciclos do TIMSS.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2023, o Brasil ficou abaixo da média internacional do TIMSS nos quatro resultados oficiais disponíveis: matemática 4º ano, ciências 4º ano, matemática 8º ano e ciências 8º ano. No 4º ano, o Brasil registrou 400 pontos em matemática e 425 em ciências, contra média internacional de 503 em matemática e 494 em ciências. No 8º ano, registrou 378 pontos em matemática e 420 em ciências, contra média internacional de 478 em ambos os domínios.",
+    "nivel_confiabilidade":
+      "Alto para os valores-base, pois são médias oficiais publicadas pelo Inep com base na IEA/TIMSS. Médio para o valor consolidado em dados, pois a média aritmética simples entre matemática, ciências, 4º ano e 8º ano é uma agregação derivada para visualização, não um indicador composto oficial publicado pela IEA.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+    "fontes_links": [
+      { "titulo": "IEA - TIMSS 2023 International Results", "url": "https://timss2023.org/results/" },
+      { "titulo": "IEA - TIMSS 2023 Study Page", "url": "https://www.iea.nl/studies/iea/timss/timss2023" },
+      {
+        "titulo": "Inep - Resultados TIMSS 2023 Brasil",
+        "url":
+          "https://download.inep.gov.br/areas_de_atuacao/avaliacao-e-exames-educacionais-timms/resultados-2023.pdf",
+      },
+      {
+        "titulo": "Inep - Brasil divulga resultados da primeira participação no TIMSS",
+        "url":
+          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/acoes-internacionais/brasil-divulga-resultados-da-primeira-participacao-no-timss",
+      },
+    ],
+    "dados": [{ "ano": 2023, "valor": 405.75 }],
+  },
+  "pirls_leitura": {
+    "label": "PIRLS Leitura",
+    "fonte_sigla": "IEA",
+    "unidade": "Pontuação média na escala PIRLS de compreensão leitora",
+    "fonte":
+      "International Association for the Evaluation of Educational Achievement (IEA) - Progress in International Reading Literacy Study (PIRLS)",
+    "cat": "Educação",
+    "padrao": false,
+    "descricao":
+      "Mede o desempenho médio dos estudantes do 4º ano do ensino fundamental em compreensão leitora no estudo internacional PIRLS.",
+    "como_interpretar":
+      "Valores maiores indicam melhor desempenho médio em leitura. A escala PIRLS foi estabelecida em 2001 com média internacional de referência 500 e desvio-padrão 100. O indicador deve ser interpretado como desempenho educacional comparável internacionalmente para estudantes do 4º ano, não como taxa de alfabetização geral da população.",
+    "metodologia":
+      "O PIRLS aplica testes cognitivos de leitura e questionários contextuais a amostras representativas de estudantes do 4º ano de escolarização. A avaliação mede dois propósitos principais de leitura: experiência literária e aquisição/uso de informação. Os resultados são estimados por modelagem psicométrica em escala internacional padronizada, seguindo diretrizes amostrais, tradução, aplicação, codificação e controle de qualidade definidos pela IEA e pelo TIMSS & PIRLS International Study Center.",
+    "historico_metodologia":
+      "O PIRLS é realizado desde 2001 em ciclos quinquenais. A edição de 2021 foi o quinto ciclo do estudo e marcou uma transição internacional relevante para avaliação digital em parte dos países, embora o Brasil tenha aplicado testes e questionários em papel. A coleta de 2021 ocorreu durante a pandemia de COVID-19 e, segundo a IEA/Inep, enfrentou desafios operacionais, mas manteve padrões internacionais de qualidade. O Brasil participou pela primeira vez no PIRLS em 2021; portanto, não há série histórica brasileira oficial anterior a 2021 nesse indicador.",
+    "abrangencia":
+      "Brasil, amostra nacional de escolas públicas e privadas, abrangendo estudantes do 4º ano do ensino fundamental, com comparabilidade internacional entre países e economias participantes do PIRLS 2021.",
+    "periodicidade": "Quinquenal.",
+    "eventos_externos": [
+      {
+        "ano": 2021,
+        "nome": "Pandemia",
         "descricao":
-          "A documentação oficial do UIS alerta que dados coletados por pesquisas em 2020 podem ter comparabilidade afetada por restrições de mobilidade, entrevistas telefônicas, mudanças amostrais, maior não resposta e questionários adaptados.",
+          "A coleta do PIRLS 2021 ocorreu durante a pandemia de COVID-19, período citado pela IEA/Inep como contexto excepcional para a aplicação internacional da avaliação.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Estreia brasileira",
+        "descricao":
+          "O PIRLS 2021 foi a primeira participação do Brasil no estudo, impossibilitando comparação histórica nacional com ciclos anteriores.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Aplicação em papel",
+        "descricao":
+          "Embora o ciclo de 2021 tenha marcado a transição internacional para avaliação digital em vários países, o Brasil aplicou testes e questionários em papel.",
       },
     ],
     "comparacao_paises":
-      "O Brasil aparece acima da média regional da América Latina e Caribe nos materiais recentes do Banco Mundial/Human Capital Data Portal, com participação elevada em aprendizagem organizada antes da entrada no ensino primário. A comparação internacional deve ser feita com cautela porque a idade oficial de entrada no primário varia por país e a fonte pode alternar entre dados administrativos e pesquisas domiciliares.",
+      "No PIRLS 2021, o Brasil obteve 419 pontos em compreensão leitora. O resultado foi significativamente inferior ao de 58 dos 65 países e regiões de referência participantes. O desempenho brasileiro não diferiu significativamente do Kosovo (421) e do Irã (413), e foi estatisticamente superior ao da Jordânia (381), Egito (378) e África do Sul (288).",
     "nivel_confiabilidade":
-      "Alto para comparação internacional do ODS 4.2.2, por ser indicador oficial monitorado pelo UNESCO Institute for Statistics e pela base global dos ODS da ONU. A principal limitação é a disponibilidade irregular de observações anuais e possíveis revisões posteriores da série. Mantive apenas valores observados disponíveis nas fontes oficiais consultadas, sem interpolação, projeção ou imputação própria.",
+      "Muito alto para comparação internacional do desempenho médio em leitura no 4º ano, pois os dados vêm da IEA/PIRLS e do relatório nacional do Inep, com amostragem, aplicação e escala padronizadas internacionalmente. A principal limitação é que, para o Brasil, existe apenas um ponto oficial disponível, pois a primeira participação brasileira ocorreu em 2021.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
     "fontes_links": [
+      { "titulo": "IEA - PIRLS 2021", "url": "https://www.iea.nl/studies/iea/pirls/2021" },
+      { "titulo": "PIRLS 2021 International Results in Reading", "url": "https://pirls2021.org/results/" },
       {
-        "titulo": "UNSD - SDG Metadata Indicator 4.2.2",
-        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-04-02-02.pdf",
+        "titulo": "Inep - PIRLS",
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pirls",
       },
       {
-        "titulo": "UNESCO UIS - Metadata 4.2.2",
-        "url": "https://uis.unesco.org/sites/default/files/medias/fichiers/2025/07/Metadata-4.2.2.pdf",
+        "titulo":
+          "Inep - Brasil no PIRLS 2021: Análise dos resultados da compreensão leitora dos estudantes do 4º ano do ensino fundamental",
+        "url":
+          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/brasil-no-pirls-2021-analise-dos-resultados-da-compreensao-leitora-dos-estudantes-do-4o-ano-do-ensino-fundamental",
       },
       {
-        "titulo": "UNESCO UIS Data Browser - Bulk Data Download",
-        "url": "https://databrowser.uis.unesco.org/resources/bulk",
-      },
-      {
-        "titulo": "UNSD - Global SDG Database Indicator 4.2.2",
-        "url": "https://unstats.un.org/sdgs/indicators/database/?indicator=4.2.2",
-      },
-      {
-        "titulo": "World Bank Human Capital Data Portal - Participation rate in organized learning",
-        "url": "https://humancapital.worldbank.org/en/indicator/WB_HCP_ORG_LEARNING",
+        "titulo": "Inep - Brasil no PIRLS 2021: Sumário Executivo",
+        "url": "https://download.inep.gov.br/pirls/2021/brasil_sumario_executivo.pdf",
       },
     ],
-    "dados": [
-      { "ano": 2015, "valor": 91 },
-      { "ano": 2018, "valor": 95 },
-    ],
+    "dados": [{ "ano": 2021, "valor": 419 }],
   },
   "homicidios_intencionais_100_mil_hab": {
     "label": "Homicídios Intencionais",
