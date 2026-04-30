@@ -2374,7 +2374,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "caged_saldo": {
-    "label": "Saldo anual de empregos formais",
+    "label": "Saldo Anual de Empregos Formais",
     "fonte_sigla": "MTE",
     "unidade": "postos de trabalho (saldo anual)",
     "fonte": "Ministério do Trabalho e Emprego — Caged/Novo Caged",
@@ -2457,7 +2457,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "salario_min_nominal": {
-    "label": "Salário mínimo nominal",
+    "label": "Salário Mínimo Nominal",
     "fonte_sigla": "BCB",
     "unidade": "R$ correntes",
     "fonte": "Legislação federal; Banco Central do Brasil - SGS série 1619",
@@ -2572,7 +2572,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "salario_min_real_idx": {
-    "label": "Salário mínimo real (poder de compra)",
+    "label": "Salário Mínimo Real (poder de compra)",
     "fonte_sigla": "BCB",
     "unidade": "Índice (base 1994=100)",
     "fonte": "Banco Central do Brasil/SGS série 1619; INPC/IBGE via SGS série 188",
@@ -2922,7 +2922,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "inflacao_wdi": {
-    "label": "Inflação ao consumidor",
+    "label": "Inflação ao Consumidor",
     "fonte_sigla": "WDI",
     "unidade": "% ao ano",
     "fonte": "Banco Mundial - World Development Indicators (FP.CPI.TOTL.ZG)",
@@ -11736,7 +11736,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "pobreza_extrema": {
-    "label": "Pobreza extrema (< US$2,15/dia PPC)",
+    "label": "Pobreza Extrema (< US$2,15/dia PPC)",
     "fonte_sigla": "PIP",
     "unidade": "% da população",
     "fonte": "Banco Mundial/PIP (Poverty & Inequality Platform)",
@@ -12055,7 +12055,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "subnutricao": {
-    "label": "Prevalência de subalimentação",
+    "label": "Subalimentação",
     "fonte_sigla": "FAO/SOFI",
     "unidade": "% da população",
     "fonte": "FAO/SOFI via Banco Mundial",
@@ -12148,7 +12148,7 @@ window.__DADOS_ANUAIS__ = {
     ],
   },
   "inseg_alimentar_grave": {
-    "label": "Insegurança alimentar grave (FIES)",
+    "label": "Insegurança Alimentar Grave",
     "fonte_sigla": "FAO/FIES",
     "unidade": "% da população",
     "fonte": "FAO/FIES (Food Insecurity Experience Scale)",

@@ -58,6 +58,7 @@ button,
 select,
 input {
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 select,
@@ -394,6 +395,8 @@ h1 {
   background: var(--surface-2);
   color: var(--text-strong);
   box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   user-select: none;
   transition:
     border-color 0.2s ease,
@@ -408,6 +411,11 @@ h1 {
 
 .cat-label:hover {
   background: #e8edf4;
+}
+
+.cat-label:active {
+  background: var(--surface-2);
+  color: var(--text-strong);
 }
 
 .cat-label-text {
@@ -429,6 +437,8 @@ h1 {
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
+  contain: layout paint;
+  will-change: grid-template-rows;
   transition: grid-template-rows 0.28s ease;
 }
 
@@ -891,7 +901,7 @@ h1 {
   padding-left: 20px;
 }
 
-.sources-list li+li {
+.sources-list li + li {
   margin-top: 4px;
 }
 
@@ -1254,7 +1264,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-
   html,
   body {
     overflow-x: hidden;

@@ -787,7 +787,6 @@ function AppAnual() {
               {selecionados.length > 0 &&
                 selecionados.map((key) => {
                   const dadosMetrica = dados[key]?.dados || [];
-                  const dadosFiltrados = dadosMetrica.filter((item) => item.ano >= anoIni && item.ano <= anoFim);
                   const posicaoAtiva = selecionadosAtivos.indexOf(key);
 
                   if (!meta || !meta[key]) return null;
@@ -803,13 +802,14 @@ function AppAnual() {
                       }
                     >
                       <GraficoAnual
-                        dados={dadosFiltrados}
+                        indicadorKey={key}
+                        dados={dadosMetrica}
                         info={meta[key]}
                         cor={getCategoriaCor(meta[key].cat)}
                         anoIni={anoIni}
                         anoFim={anoFim}
-                        onFechar={() => removerIndicador(key)}
-                        onMover={(direcao) => moverIndicador(key, direcao)}
+                        onFechar={removerIndicador}
+                        onMover={moverIndicador}
                         podeSubir={posicaoAtiva > 0}
                         podeDescer={posicaoAtiva >= 0 && posicaoAtiva < selecionadosAtivos.length - 1}
                         compacta={viewCompacta}
@@ -847,9 +847,25 @@ function AppAnual() {
   );
 }
 
-function GraficoAnual({ dados, info, cor, anoIni, anoFim, onFechar, onMover, podeSubir, podeDescer, compacta }) {
+const GraficoAnual = React.memo(function GraficoAnual({
+  indicadorKey,
+  dados,
+  info,
+  cor,
+  anoIni,
+  anoFim,
+  onFechar,
+  onMover,
+  podeSubir,
+  podeDescer,
+  compacta,
+}) {
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
-  const comDados = dados.filter((item) => item.valor != null);
+  const dadosFiltrados = React.useMemo(
+    () => dados.filter((item) => item.ano >= anoIni && item.ano <= anoFim),
+    [anoFim, anoIni, dados],
+  );
+  const comDados = React.useMemo(() => dadosFiltrados.filter((item) => item.valor != null), [dadosFiltrados]);
   const ultimoDado = comDados.length ? comDados[comDados.length - 1] : null;
   const [expandido, setExpandido] = React.useState(false);
   const [eventoAtivo, setEventoAtivo] = React.useState(null);
@@ -890,13 +906,13 @@ ${JSON.stringify(info, null, 2)}`;
   };
 
   const dadosComEventos = React.useMemo(() => {
-    if (!Array.isArray(info.eventos_externos)) return dados;
+    if (!Array.isArray(info.eventos_externos)) return dadosFiltrados;
 
-    return dados.map((item) => {
+    return dadosFiltrados.map((item) => {
       const eventos = info.eventos_externos.filter((evento) => (evento.ano || evento.data) === item.ano);
       return { ...item, _eventos: eventos };
     });
-  }, [dados, info.eventos_externos]);
+  }, [dadosFiltrados, info.eventos_externos]);
 
   const renderField = ([key, label]) => {
     const value = info[key];
@@ -1008,7 +1024,7 @@ ${JSON.stringify(info, null, 2)}`;
           <button
             type="button"
             className="chart-order-btn"
-            onClick={() => onMover(-1)}
+            onClick={() => onMover(indicadorKey, -1)}
             disabled={!podeSubir}
             title={TEXTOS_APP.grafico?.subir}
             aria-label={TEXTOS_APP.grafico?.subir}
@@ -1030,7 +1046,7 @@ ${JSON.stringify(info, null, 2)}`;
           <button
             type="button"
             className="chart-order-btn"
-            onClick={() => onMover(1)}
+            onClick={() => onMover(indicadorKey, 1)}
             disabled={!podeDescer}
             title={TEXTOS_APP.grafico?.descer}
             aria-label={TEXTOS_APP.grafico?.descer}
@@ -1049,7 +1065,12 @@ ${JSON.stringify(info, null, 2)}`;
               <path d="M19 12l-7 7-7-7" />
             </svg>
           </button>
-          <button type="button" className="chart-close-btn" onClick={onFechar} title={TEXTOS_APP.grafico?.remover}>
+          <button
+            type="button"
+            className="chart-close-btn"
+            onClick={() => onFechar(indicadorKey)}
+            title={TEXTOS_APP.grafico?.remover}
+          >
             <svg
               width="18"
               height="18"
@@ -1373,7 +1394,7 @@ ${JSON.stringify(info, null, 2)}`;
       <ToastValidacao visivel={exibirAviso} aoFechar={() => setExibirAviso(false)} />
     </div>
   );
-}
+});
 
 function ToastValidacao({ visivel, aoFechar }) {
   if (!visivel) return null;
