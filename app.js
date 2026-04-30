@@ -51,11 +51,13 @@ function getCategoriaCor(cat) {
 
   for (const chave in raw) {
     if (normalizarCategoria(chave) === search) return raw[chave];
+    if (normalizarCategoria(tentarCorrigirMojibake(chave)) === search) return raw[chave];
   }
 
   const fixedSearch = normalizarCategoria(tentarCorrigirMojibake(cat));
   for (const chave in raw) {
     if (normalizarCategoria(chave) === fixedSearch) return raw[chave];
+    if (normalizarCategoria(tentarCorrigirMojibake(chave)) === fixedSearch) return raw[chave];
   }
 
   return "#79c0ff";
@@ -70,7 +72,15 @@ function hexToRgba(hex, alpha) {
           .split("")
           .map((char) => char + char)
           .join("")
-      : clean;
+      : clean.length === 4
+        ? clean
+            .slice(0, 3)
+            .split("")
+            .map((char) => char + char)
+            .join("")
+        : clean.length === 8
+          ? clean.slice(0, 6)
+          : clean;
 
   if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
     return `rgba(121, 192, 255, ${alpha})`;
@@ -381,6 +391,7 @@ function AppAnual() {
 
     return agrupadas;
   }, [meta]);
+  const totalIndicadoresValidados = meta ? Object.values(meta).filter((indicador) => indicador.validacao).length : 0;
 
   const removerIndicador = useCallback((key) => {
     setIndicadoresSaindo((prev) => (prev.includes(key) ? prev : [...prev, key]));
@@ -580,7 +591,9 @@ function AppAnual() {
         <div className={"sidebar sidebar-anual" + (menuAberto ? " aberto" : "")}>
           <div className="sidebar-anual__top">
             <div className="sidebar-title-block">
-              <h1>{TEXTOS_APP.sidebar?.titulo}</h1>
+              <h1>
+                {TEXTOS_APP.sidebar?.titulo} ({totalIndicadoresValidados})
+              </h1>
               <div className="subtitle">{TEXTOS_APP.sidebar?.subtitulo}</div>
               <button type="button" className="legal-access-btn" onClick={() => setAvisosAbertos(true)}>
                 {TEXTOS_APP.sidebar?.botaoLegal}

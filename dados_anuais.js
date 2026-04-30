@@ -8145,90 +8145,72 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2023, "valor": 67 },
     ],
   },
-  "oms_uhc_service_coverage_index": {
-    "label": "Índice de Cobertura de Serviços UHC",
-    "fonte_sigla": "OMS",
-    "unidade": "Índice de 0 a 100",
-    "fonte": "World Bank Data / Universal Health Coverage Dataset, World Health Organization (WHO)",
+  "mortalidade_prematura_por_dcnt_30_70": {
+    "label": "Mortalidade Prematura Por Doenças Crônicas Não Transmissíveis",
+    "fonte_sigla": "OMS/WDI",
+    "unidade": "% de pessoas de 30 anos",
+    "fonte":
+      "World Health Organization - Global Health Observatory / World Bank - World Development Indicators (SH.DYN.NCOM.ZS)",
     "cat": "Saúde",
     "padrao": false,
     "descricao":
-      "Mede a cobertura de serviços essenciais de saúde por meio de um índice composto de indicadores traçadores de cobertura de serviços.",
+      "Mede a probabilidade de uma pessoa de 30 anos morrer antes dos 70 anos por doença cardiovascular, câncer, diabetes ou doença respiratória crônica.",
     "como_interpretar":
-      "Valores maiores indicam maior cobertura de serviços essenciais de saúde. O índice varia de 0 a 100, em que 100 representa o maior nível de cobertura no indicador. O valor não deve ser lido como porcentagem direta da população plenamente coberta por todos os serviços essenciais.",
+      "Valores menores indicam menor probabilidade de morte prematura por grandes doenças crônicas não transmissíveis. O indicador não mede doença cardiovascular isoladamente; ele agrega doenças cardiovasculares, câncer, diabetes e doenças respiratórias crônicas.",
     "metodologia":
-      "O indicador UHC Service Coverage Index é uma métrica do ODS 3.8.1. A OMS calcula o índice combinando indicadores traçadores de cobertura de serviços essenciais nas áreas de saúde reprodutiva, materna, neonatal e infantil; doenças infecciosas; doenças não transmissíveis; e capacidade/acesso aos serviços. A série republicada pelo World Bank Data vem do Universal Health Coverage Dataset da World Health Organization (WHO).",
+      "A OMS calcula a probabilidade de morte entre as idades exatas de 30 e 70 anos usando taxas de mortalidade específicas por causa e grupos etários de 5 anos, aplicando métodos de tábua de vida. A série é derivada das Global Health Estimates da OMS e publicada no World Development Indicators do Banco Mundial como indicador SH.DYN.NCOM.ZS.",
     "historico_metodologia":
-      "A série do World Bank Data para SH_UHC_SCI está disponível para 2000 a 2023 e usa como fonte o Universal Health Coverage Dataset da WHO. Em atualização recente do World Development Indicators, o indicador UHC Service Coverage Index foi revisado com atualização de indicadores traçadores e nova média geométrica ponderada por população, reduzindo a sobre-influência de tratamentos de doenças infecciosas e produzindo uma medida mais equilibrada de cobertura de serviços. Por isso, valores atuais podem diferir de versões antigas da série OMS/GHO.",
-    "abrangencia":
-      "Brasil, cobertura nacional, comparável internacionalmente entre países e agregados regionais/econômicos do World Bank Data.",
-    "periodicidade": "Anual na série republicada pelo World Bank Data, com dados disponíveis de 2000 a 2023.",
-    "eventos_externos": [
-      {
-        "ano": 2000,
-        "nome": "Base UHC",
-        "descricao":
-          "Início da série anual disponível no World Bank Data para o Brasil, dentro do monitoramento global da cobertura universal de saúde.",
-      },
-      {
-        "ano": 2015,
-        "nome": "Agenda ODS",
-        "descricao":
-          "A adoção dos Objetivos de Desenvolvimento Sustentável consolidou o indicador 3.8.1 como métrica global para acompanhar a cobertura de serviços essenciais de saúde.",
-      },
-      {
-        "ano": 2020,
-        "nome": "COVID-19",
-        "descricao":
-          "A pandemia afetou a continuidade e a capacidade de prestação de serviços de saúde, embora o índice sintético do Brasil tenha permanecido em patamar elevado na série republicada.",
-      },
-      {
-        "ano": 2023,
-        "nome": "Alta recente",
-        "descricao":
-          "O Brasil aparece com valor 84 em 2023, acima do agregado da América Latina e Caribe reportado pelo World Bank Data para o mesmo ano.",
-      },
-      {
-        "ano": 2025,
-        "nome": "Revisão UHC",
-        "descricao":
-          "O World Bank informou revisão metodológica do UHC Service Coverage Index, com atualização de indicadores traçadores e nova ponderação populacional.",
-      },
-    ],
+      "A série oficial disponível no WDI cobre 2000 a 2021. O Banco Mundial informa que os valores são estimativas derivadas das Global Health Estimates da OMS e que revisões de dados de entrada e métodos podem tornar versões anteriores não diretamente comparáveis. Não há valores oficiais disponíveis no WDI para 1994 a 1999 nem para anos posteriores a 2021 nesta série.",
+    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação entre países.",
+    "periodicidade": "Anual, com atualização/revisão periódica pela OMS e pelo Banco Mundial.",
+    "eventos_externos": [],
     "comparacao_paises":
-      "Em 2023, o Brasil registrou 84 no UHC Service Coverage Index, acima do agregado América Latina e Caribe, que aparece com 79 no World Bank Data. O valor brasileiro fica em patamar semelhante ao de alguns países de renda alta e média-alta, mas comparações devem considerar que o índice é composto e depende de indicadores traçadores, proxies e revisões metodológicas.",
+      "Em 2021, o Brasil registrou 14,5%, valor abaixo de México (16,3%), Bangladesh (18,1%) e Indonésia (21,9%), mas acima de Reino Unido (11,0%) e Alemanha (8,5%). A comparação internacional deve considerar diferenças demográficas, perfil epidemiológico, qualidade dos registros de mortalidade e métodos de estimação da OMS.",
     "nivel_confiabilidade":
-      "Alto para comparação internacional, pois a série vem do World Bank Data e tem como fonte o Universal Health Coverage Dataset da World Health Organization (WHO). A ressalva é que o indicador é composto, usa proxies e estimativas oficiais, e pode sofrer revisões metodológicas.",
-    "validacao": "GPT-5.5 Thinking (OpenAI) - 26/04/2026",
+      "Alto para comparação internacional oficial, pois a série é publicada pelo Banco Mundial e derivada das Global Health Estimates da OMS. Ressalva: os valores são estimativas oficiais modeladas, não contagens observadas brutas; portanto, não atendem ao critério estrito de 'sem estimativas'.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
-        "titulo": "World Bank Data - UHC service coverage index - Brazil",
-        "url": "https://data.worldbank.org/indicator/SH_UHC_SCI?locations=BR",
+        "titulo":
+          "Banco Mundial - Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%) - Brazil - SH.DYN.NCOM.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.DYN.NCOM.ZS?locations=BR",
       },
       {
-        "titulo": "World Bank Data - UHC service coverage index",
-        "url": "https://data.worldbank.org/indicator/SH_UHC_SCI",
+        "titulo": "Banco Mundial DataBank - Metadata - SH.DYN.NCOM.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.DYN.NCOM.ZS",
       },
       {
-        "titulo": "World Bank Data360 - Universal Health Coverage Dataset",
-        "url": "https://data360.worldbank.org/en/dataset/WB_UHC",
+        "titulo": "WHO Data - Probability of dying from non-communicable diseases (NCDs)",
+        "url": "https://data.who.int/indicators/i/C540135/1F96863",
       },
-      { "titulo": "WHO Data - UHC service coverage index", "url": "https://data.who.int/indicators/i/3805B1E/9A706FD" },
       {
-        "titulo": "World Bank - WDI Quarterly Update: December 2025",
-        "url": "https://datatopics.worldbank.org/world-development-indicators/release-note/dec-2025.html",
+        "titulo": "Our World in Data - Expected share of deaths from non-communicable diseases - WHO/WDI",
+        "url": "https://ourworldindata.org/grapher/mortality-from-ncds-sdgs",
       },
     ],
     "dados": [
-      { "ano": 2015, "valor": 71 },
-      { "ano": 2016, "valor": 83 },
-      { "ano": 2017, "valor": 83 },
-      { "ano": 2018, "valor": 83 },
-      { "ano": 2019, "valor": 83 },
-      { "ano": 2020, "valor": 84 },
-      { "ano": 2021, "valor": 84 },
-      { "ano": 2022, "valor": 83 },
-      { "ano": 2023, "valor": 84 },
+      { "ano": 2000, "valor": 20.8 },
+      { "ano": 2001, "valor": 20.4 },
+      { "ano": 2002, "valor": 19.9 },
+      { "ano": 2003, "valor": 19.7 },
+      { "ano": 2004, "valor": 19.6 },
+      { "ano": 2005, "valor": 18.7 },
+      { "ano": 2006, "valor": 18.4 },
+      { "ano": 2007, "valor": 18.1 },
+      { "ano": 2008, "valor": 18.0 },
+      { "ano": 2009, "valor": 17.6 },
+      { "ano": 2010, "valor": 17.4 },
+      { "ano": 2011, "valor": 17.3 },
+      { "ano": 2012, "valor": 16.8 },
+      { "ano": 2013, "valor": 16.6 },
+      { "ano": 2014, "valor": 16.1 },
+      { "ano": 2015, "valor": 16.1 },
+      { "ano": 2016, "valor": 16.2 },
+      { "ano": 2017, "valor": 15.7 },
+      { "ano": 2018, "valor": 15.4 },
+      { "ano": 2019, "valor": 15.1 },
+      { "ano": 2020, "valor": 14.7 },
+      { "ano": 2021, "valor": 14.5 },
     ],
   },
   "mortalidade_evitavel_tratavel": {
@@ -8273,6 +8255,383 @@ window.__DADOS_ANUAIS__ = {
     "dados": [
       { "ano": 2000, "valor": 351.9 },
       { "ano": 2019, "valor": 249 },
+    ],
+  },
+  "mortalidade_atribuida_ao_cancer": {
+    "label": "Mortalidade Atribuída Ao Câncer",
+    "fonte_sigla": "OMS/WHO-MDB",
+    "unidade": "mortes por 100.000 habitantes",
+    "fonte": "World Health Organization - WHO Mortality Database",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa anual registrada de mortes por neoplasias malignas no Brasil, em ambos os sexos e todas as idades, por 100.000 habitantes.",
+    "como_interpretar":
+      "Valores mais altos indicam maior mortalidade registrada por câncer em relação ao tamanho da população. Como esta é uma taxa bruta, ela é influenciada pelo envelhecimento populacional; para comparação internacional rigorosa, a taxa padronizada por idade é mais adequada.",
+    "metodologia":
+      "A série usa dados de registro civil e causa básica de morte transmitidos por autoridades nacionais à OMS, agregados na WHO Mortality Database. A categoria de câncer corresponde a neoplasias malignas, codificadas na CID-10 como C00-C97. A taxa é calculada como óbitos registrados por neoplasias malignas divididos pela população correspondente, multiplicado por 100.000. Foram mantidos apenas dados observados de registro vital publicados pela OMS, não estimativas modeladas do GHE, GBD ou IARC/GLOBOCAN.",
+    "historico_metodologia":
+      "A WHO Mortality Database reúne dados de mortalidade por país, ano, sexo, idade e causa de morte desde 1950. A OMS informa que só exibe dados codificados adequadamente segundo a CID e com pelo menos 65% de completude. Para anos antigos, diferenças de revisão da CID e mudanças na qualidade do registro podem afetar a comparabilidade. A OMS também informa que o GHE ajusta completude e causas mal definidas, mas esses valores ajustados/modelados não foram usados aqui.",
+    "abrangencia": "Brasil, cobertura nacional, ambos os sexos, todas as idades.",
+    "periodicidade": "Anual, conforme disponibilidade dos registros nacionais transmitidos à OMS.",
+    "eventos_externos": [
+      {
+        "ano": 1996,
+        "nome": "CID-10",
+        "descricao":
+          "A adoção progressiva da CID-10 no Brasil afeta a comparabilidade com séries anteriores baseadas em revisões antigas da classificação internacional de doenças.",
+      },
+      {
+        "ano": 2000,
+        "nome": "Melhora SIM",
+        "descricao":
+          "A melhoria gradual da cobertura e qualidade do Sistema de Informações sobre Mortalidade tende a aumentar a confiabilidade dos registros de causa de morte.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia afetou diagnóstico, tratamento e registro de causas de morte, podendo distorcer parcialmente a mortalidade observada por câncer em 2020 e 2021.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação direta da taxa bruta entre países é limitada porque países mais envelhecidos tendem a apresentar maior mortalidade bruta por câncer. Para comparação internacional, deve-se preferir taxa padronizada por idade, como a publicada pela IARC/GLOBOCAN; para o Brasil, a IARC reporta taxa padronizada de mortalidade por câncer de 91,3 por 100.000 em 2022.",
+    "nivel_confiabilidade":
+      "Alto para mortalidade registrada no Brasil em anos recentes, por ser baseada em registros oficiais de óbito transmitidos à OMS. A principal limitação é que a taxa bruta é afetada por envelhecimento populacional e por mudanças na qualidade de registro, codificação e completude ao longo do tempo.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      { "titulo": "WHO Mortality Database", "url": "https://platform.who.int/mortality" },
+      {
+        "titulo": "WHO - About the WHO Mortality Database",
+        "url": "https://platform.who.int/mortality/about/about-the-who-mortality-database",
+      },
+      {
+        "titulo": "WHO - Raw Mortality Database Files",
+        "url": "https://www.who.int/data/data-collection-tools/who-mortality-database",
+      },
+      {
+        "titulo": "WHO - List of Causes and Corresponding ICD-10 Codes",
+        "url": "https://platform.who.int/mortality/about/list-of-causes-and-corresponding-icd-10-codes",
+      },
+      {
+        "titulo": "Our World in Data - Death Rate from Cancer - WHO Mortality Database",
+        "url": "https://ourworldindata.org/grapher/cancer-death-rate-who-mdb",
+      },
+      {
+        "titulo": "IARC/GLOBOCAN - Brazil Fact Sheet 2022",
+        "url": "https://gco.iarc.who.int/media/globocan/factsheets/populations/76-brazil-fact-sheet.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 65.4 },
+      { "ano": 1995, "valor": 66.5 },
+      { "ano": 1996, "valor": 67.5 },
+      { "ano": 1997, "valor": 68.8 },
+      { "ano": 1998, "valor": 70.1 },
+      { "ano": 1999, "valor": 71.4 },
+      { "ano": 2000, "valor": 72.7 },
+      { "ano": 2001, "valor": 74.1 },
+      { "ano": 2002, "valor": 75.5 },
+      { "ano": 2003, "valor": 76.7 },
+      { "ano": 2004, "valor": 78.4 },
+      { "ano": 2005, "valor": 80.0 },
+      { "ano": 2006, "valor": 81.6 },
+      { "ano": 2007, "valor": 83.0 },
+      { "ano": 2008, "valor": 84.7 },
+      { "ano": 2009, "valor": 86.3 },
+      { "ano": 2010, "valor": 88.3 },
+      { "ano": 2011, "valor": 90.1 },
+      { "ano": 2012, "valor": 91.5 },
+      { "ano": 2013, "valor": 93.2 },
+      { "ano": 2014, "valor": 94.9 },
+      { "ano": 2015, "valor": 96.8 },
+      { "ano": 2016, "valor": 98.6 },
+      { "ano": 2017, "valor": 100.4 },
+      { "ano": 2018, "valor": 102.7 },
+      { "ano": 2019, "valor": 104.8 },
+      { "ano": 2020, "valor": 106.9 },
+      { "ano": 2021, "valor": 109.3 },
+      { "ano": 2022, "valor": 111.6 },
+      { "ano": 2023, "valor": 113.8 },
+    ],
+  },
+  "taxa_mortalidade_suicidio": {
+    "label": "Mortalidade Por Suicídio",
+    "fonte_sigla": "WDI/OMS",
+    "unidade": "mortes por 100.000 habitantes",
+    "fonte":
+      "Banco Mundial - World Development Indicators (SH.STA.SUIC.P5) / Organização Mundial da Saúde - Global Health Observatory / Global Health Estimates",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede o número de mortes por suicídio em um ano dividido pela população do mesmo ano e multiplicado por 100.000.",
+    "como_interpretar":
+      "Valores maiores indicam maior mortalidade por suicídio em relação ao tamanho da população. A série é útil para comparação internacional, mas deve ser interpretada com cautela porque diferenças de registro civil, classificação de causa de morte, subnotificação e revisões metodológicas podem afetar os valores.",
+    "metodologia":
+      "O indicador SH.STA.SUIC.P5 do Banco Mundial segue a fonte da OMS. A taxa é calculada dividindo o número de mortes por suicídio em um ano pela população média do mesmo ano e multiplicando por 100.000. A OMS compila dados de registros vitais nacionais e, quando necessário, aplica ajustes para sub-registro, causas mal definidas, idade, sexo e comparabilidade internacional dentro das estimativas do Global Health Estimates.",
+    "historico_metodologia":
+      "A OMS informa que as estimativas podem ser revisadas por mudanças nos dados de entrada e nos métodos do Global Health Estimates. O Banco Mundial também pode revisar retroativamente a série WDI após atualizações da OMS. Por isso, valores publicados em anos diferentes podem não ser perfeitamente comparáveis com versões antigas da mesma série. Não há valores disponíveis no WDI/OMS para 1994-1999 nem para anos posteriores a 2021 nesta série.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pela OMS e publicação no World Development Indicators do Banco Mundial.",
+    "periodicidade":
+      "Anual, com atualização irregular conforme ciclos de publicação da OMS e incorporação pelo Banco Mundial.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2021, o Brasil registrou 7,6 mortes por 100.000 habitantes nesta série, abaixo de países com taxas muito elevadas e próximo de parte dos países latino-americanos de nível intermediário. A comparação internacional deve considerar diferenças de registro de óbitos, qualidade da certificação de causa de morte, estrutura etária e possíveis revisões metodológicas da OMS.",
+    "nivel_confiabilidade":
+      "Médio-alto para comparação internacional, por ser uma série oficial da OMS publicada pelo Banco Mundial. Ressalva importante: os valores são estimativas oficiais ajustadas da OMS, não uma série puramente bruta ou observada; portanto, em sentido estrito, o indicador não atende plenamente ao critério de excluir estimativas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Suicide mortality rate (per 100,000 population) - Brazil - SH.STA.SUIC.P5",
+        "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - SH.STA.SUIC.P5",
+        "url":
+          "https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SH.STA.SUIC.P5",
+      },
+      {
+        "titulo": "OMS - Suicide mortality rate (per 100 000 population) - SDGSUICIDE",
+        "url": "https://data.who.int/indicators/i/F08B4FD/16BBF41",
+      },
+      {
+        "titulo": "OMS - Suicide rates - Global Health Observatory",
+        "url": "https://www.who.int/data/gho/data/themes/mental-health/suicide-rates",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 4.2 },
+      { "ano": 2001, "valor": 4.4 },
+      { "ano": 2002, "valor": 4.4 },
+      { "ano": 2003, "valor": 4.3 },
+      { "ano": 2004, "valor": 4.4 },
+      { "ano": 2005, "valor": 4.7 },
+      { "ano": 2006, "valor": 4.7 },
+      { "ano": 2007, "valor": 4.9 },
+      { "ano": 2008, "valor": 5.1 },
+      { "ano": 2009, "valor": 5.1 },
+      { "ano": 2010, "valor": 5.3 },
+      { "ano": 2011, "valor": 5.5 },
+      { "ano": 2012, "valor": 5.6 },
+      { "ano": 2013, "valor": 5.8 },
+      { "ano": 2014, "valor": 5.9 },
+      { "ano": 2015, "valor": 6.1 },
+      { "ano": 2016, "valor": 6.3 },
+      { "ano": 2017, "valor": 6.9 },
+      { "ano": 2018, "valor": 6.7 },
+      { "ano": 2019, "valor": 6.7 },
+      { "ano": 2020, "valor": 6.9 },
+      { "ano": 2021, "valor": 7.6 },
+    ],
+  },
+  "leitos_hospitalares_por_1000_pessoas": {
+    "label": "Leitos Hospitalares Por 1.000 Pessoas",
+    "fonte_sigla": "WDI/OMS",
+    "unidade": "leitos por 1.000 pessoas",
+    "fonte":
+      "World Bank - World Development Indicators (SH.MED.BEDS.ZS), WHO data, supplemented by country data, World Health Organization (WHO)",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao": "Mede a quantidade de leitos hospitalares disponíveis para cada 1.000 habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior disponibilidade física de leitos hospitalares em relação à população. O indicador mede capacidade instalada de internação, mas não mede qualidade do atendimento, ocupação dos leitos, distribuição regional, disponibilidade de profissionais, acesso efetivo, eficiência hospitalar ou capacidade de UTI.",
+    "metodologia":
+      "O indicador do Banco Mundial/OMS é calculado como o número de leitos hospitalares disponíveis por 1.000 habitantes. A OMS define a métrica original como leitos hospitalares por 10.000 habitantes, compilada a partir de escritórios regionais da OMS e fontes nacionais, como ministérios da saúde e institutos nacionais de estatística, com padronização da unidade de medida. Para o WDI, a série é publicada como leitos por 1.000 pessoas no código SH.MED.BEDS.ZS. São considerados, em geral, leitos disponíveis em hospitais públicos, privados, gerais, especializados e centros de reabilitação; na maioria dos casos, incluem leitos de cuidados agudos e crônicos. Foram mantidos apenas anos com valor publicado na série oficial do WDI para o Brasil, sem interpolação, extrapolação ou preenchimento de lacunas.",
+    "historico_metodologia":
+      "A OMS informa que os dados são compilados de escritórios regionais e fontes nacionais e modificados para padronização da unidade de medida. A comparabilidade entre países e ao longo do tempo pode ser afetada por diferenças de fonte nacional, cobertura administrativa, definição de leito hospitalar, inclusão de setores público e privado, inclusão de leitos de cuidados agudos e crônicos, e revisões posteriores do WDI/OMS. A OMS também observa que não existe uma norma global única para densidade adequada de leitos hospitalares. Para o Brasil, a série WDI disponível no momento da validação tem último valor em 2021; anos sem valor oficial publicado foram excluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo World Development Indicators do Banco Mundial a partir de dados da Organização Mundial da Saúde e fontes nacionais suplementares.",
+    "periodicidade":
+      "Anual, conforme disponibilidade de dados nacionais compilados pela OMS/WDI; a OMS informa frequência esperada de disseminação de 2 a 3 anos para a métrica de leitos hospitalares.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "O Brasil registrou 2,52 leitos hospitalares por 1.000 pessoas em 2021. Na comparação internacional mais recente disponível no WDI, o país fica próximo da mediana mundial reportada por agregadores da série WDI, mas abaixo de economias com alta densidade hospitalar, como Japão, Coreia do Sul e Alemanha, e acima de vários países latino-americanos e de renda média com menor disponibilidade de leitos. A comparação deve ser feita com cautela, pois diferentes países podem variar na definição e cobertura dos leitos reportados.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional ampla, pois a série é publicada pelo World Development Indicators do Banco Mundial com base em dados da OMS e fontes nacionais. A principal limitação é metodológica: a própria OMS/WDI alerta que diferenças de fonte, cobertura e definição podem reduzir a comparabilidade perfeita entre países e ao longo do tempo. Não foram incluídos anos sem valor oficial publicado.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Hospital beds (per 1,000 people) - Brazil - SH.MED.BEDS.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.MED.BEDS.ZS?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators - SH.MED.BEDS.ZS",
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=SH.MED.BEDS.ZS&source=2",
+      },
+      {
+        "titulo": "OMS - Global Health Observatory - Hospital beds (per 10 000 population)",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/hospital-beds-%28per-10-000-population%29",
+      },
+      {
+        "titulo": "OMS - Indicator Metadata Registry - Hospital beds (per 10 000 population)",
+        "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/97",
+      },
+    ],
+    "dados": [
+      { "ano": 1996, "valor": 3.11 },
+      { "ano": 2000, "valor": 2.81 },
+      { "ano": 2001, "valor": 2.78 },
+      { "ano": 2002, "valor": 2.59 },
+      { "ano": 2003, "valor": 2.42 },
+      { "ano": 2005, "valor": 2.52 },
+      { "ano": 2006, "valor": 2.48 },
+      { "ano": 2007, "valor": 2.5 },
+      { "ano": 2008, "valor": 2.6 },
+      { "ano": 2009, "valor": 2.58 },
+      { "ano": 2010, "valor": 2.59 },
+      { "ano": 2011, "valor": 2.55 },
+      { "ano": 2012, "valor": 2.51 },
+      { "ano": 2013, "valor": 2.49 },
+      { "ano": 2014, "valor": 2.48 },
+      { "ano": 2015, "valor": 2.39 },
+      { "ano": 2016, "valor": 2.36 },
+      { "ano": 2017, "valor": 2.34 },
+      { "ano": 2018, "valor": 2.3 },
+      { "ano": 2019, "valor": 2.29 },
+      { "ano": 2020, "valor": 2.49 },
+      { "ano": 2021, "valor": 2.52 },
+    ],
+  },
+  "medicos_por_mil_habitantes": {
+    "label": "Médicos Por 1.000 Habitantes",
+    "fonte_sigla": "WDI/OMS",
+    "unidade": "médicos por 1.000 pessoas",
+    "fonte":
+      "Global Health Workforce Statistics, World Health Organization (WHO); Organisation for Economic Co-operation and Development (OECD); Country data",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao": "Mede a densidade de médicos em relação à população residente do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior número de médicos em relação à população. O indicador aproxima a disponibilidade agregada de médicos, mas não mede distribuição territorial, qualidade do atendimento, capacidade hospitalar, acesso efetivo, tempo de espera, especialidades disponíveis ou desigualdades regionais.",
+    "metodologia":
+      "O indicador SH.MED.PHYS.ZS do World Development Indicators mede médicos por 1.000 pessoas. A definição oficial informa que médicos incluem profissionais médicos generalistas e especialistas. Os dados vêm da Global Health Workforce Statistics da OMS, complementados por OECD e dados nacionais quando aplicável. Segundo a metodologia oficial, pontos focais nacionais compartilham os dados com a OMS pela plataforma online National Health Workforce Accounts (NHWA), e o Banco Mundial publica a série no WDI. A agregação internacional usa média ponderada. Dependendo da fonte nacional original, a contagem pode refletir médicos em exercício, médicos profissionalmente ativos ou médicos registrados.",
+    "historico_metodologia":
+      "Não foi identificada, na documentação oficial do indicador, quebra metodológica específica para o Brasil entre 1994 e 2023. A OMS e o Banco Mundial alertam que a comparabilidade pode ser afetada por diferenças nacionais de definição, fonte administrativa, cobertura do setor privado, periodicidade de reporte e distinção entre médicos registrados e médicos em atividade. A série foi mantida apenas com anos que possuem valor publicado para o Brasil na série WDI/OMS; anos sem valor oficial publicado não foram interpolados, estimados, projetados ou preenchidos por fontes alternativas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional para comparação entre países no World Development Indicators.",
+    "periodicidade":
+      "Anual na base WDI, porém com observações irregulares por país conforme disponibilidade e reporte oficial.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 2,357 médicos por 1.000 pessoas na série WDI/OMS. Esse nível é inferior ao observado em muitas economias de alta renda e países europeus, mas superior ao de vários países de renda média e baixa. A comparação internacional deve ser feita com cautela porque alguns países reportam médicos em exercício, enquanto outros podem reportar médicos profissionalmente ativos ou registrados.",
+    "nivel_confiabilidade":
+      "Alto para os anos publicados na série oficial WDI/OMS, pois os dados são derivados da Global Health Workforce Statistics da OMS e publicados pelo Banco Mundial. A confiabilidade é menor para comparações estritas entre países e para leitura anual contínua, porque a própria metodologia oficial reconhece diferenças de definição, cobertura e periodicidade. Não foram incluídos valores estimados, projeções ou anos sem observação publicada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Physicians (per 1,000 people) - Brazil - SH.MED.PHYS.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - SH.MED.PHYS.ZS",
+        "url":
+          "https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SH.MED.PHYS.ZS",
+      },
+      {
+        "titulo": "Banco Mundial API - Brazil - SH.MED.PHYS.ZS",
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/SH.MED.PHYS.ZS?source=2&format=json&per_page=20000",
+      },
+      {
+        "titulo": "OMS - Global Health Observatory - Medical Doctors Per 10 000 Population",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-%28per-10-000-population%29",
+      },
+      { "titulo": "OMS Data - Brazil - Density Of Doctors", "url": "https://data.who.int/countries/076" },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 1.197 },
+      { "ano": 1995, "valor": 1.227 },
+      { "ano": 1996, "valor": 1.259 },
+      { "ano": 1997, "valor": 1.295 },
+      { "ano": 1998, "valor": 1.281 },
+      { "ano": 1999, "valor": 1.379 },
+      { "ano": 2011, "valor": 1.87 },
+      { "ano": 2013, "valor": 1.906 },
+      { "ano": 2017, "valor": 2.198 },
+      { "ano": 2019, "valor": 2.351 },
+      { "ano": 2021, "valor": 2.191 },
+      { "ano": 2023, "valor": 2.357 },
+    ],
+  },
+  "uhc_service_coverage_index": {
+    "label": "Índice De Cobertura De Serviços Essenciais De Saúde",
+    "fonte_sigla": "WDI/OMS",
+    "unidade": "Índice, escala de 0 a 100",
+    "fonte":
+      "Universal Health Coverage Dataset, World Health Organization (WHO), via World Development Indicators, World Bank (SH_UHC_SCI)",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede a cobertura de serviços essenciais de saúde por meio de um índice composto usado no monitoramento do ODS 3.8.1.",
+    "como_interpretar":
+      "Valores maiores indicam maior cobertura de serviços essenciais de saúde. O valor 100 representa a cobertura ótima dentro da metodologia. O índice não mede proteção financeira, qualidade clínica completa, desigualdades subnacionais ou satisfação do usuário.",
+    "metodologia":
+      "O índice é calculado pela OMS como média geométrica ponderada de 14 indicadores traçadores agrupados em quatro componentes: saúde reprodutiva, materna, neonatal e infantil; doenças infecciosas; doenças não transmissíveis; e capacidade e acesso aos serviços. Os indicadores são padronizados em escala de 0 a 100 antes da agregação. A OMS compila dados de fontes publicadas, incluindo pesquisas domiciliares, registros administrativos, dados de unidades de saúde, vigilância e séries de agências internacionais, e realiza consulta aos países para revisão dos insumos e do cálculo.",
+    "historico_metodologia":
+      "A série oficial não possui dados anteriores a 2000; por isso, 1994 a 1999 não foram incluídos. A linha de base global do UHC Service Coverage Index foi publicada em dezembro de 2017. Na metodologia anterior, os anos de referência principais eram 2000, 2005, 2010, 2015, 2017, 2019 e 2021. A metodologia de 2025 passou a aparecer na série oficial da ONU como SH_ACS_UNHC_25 e no Banco Mundial como SH_UHC_SCI, com dados até 2023. Como o próprio indicador é composto por séries harmonizadas, estimativas oficiais e imputações para lacunas de componentes, não existem valores estritamente observacionais puros para todos os componentes. Foram mantidos apenas pontos oficiais publicados, sem projeções futuras.",
+    "abrangencia":
+      "Brasil, cobertura nacional, comparável internacionalmente para países e agregados reportados pela OMS, ONU e Banco Mundial.",
+    "periodicidade": "Bienal na divulgação oficial recente, com séries históricas publicadas para anos de referência.",
+    "eventos_externos": [
+      {
+        "ano": 2017,
+        "nome": "Linha Base",
+        "descricao":
+          "Publicação da linha de base global do ODS 3.8.1 pela OMS e pelo Banco Mundial, com reconstrução de séries desde 2000; afeta a interpretação histórica, mas não representa necessariamente mudança real de cobertura naquele ano.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia interrompeu serviços essenciais de saúde em muitos países; na série oficial, o Brasil permaneceu estável em 80 entre 2019 e 2021.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Revisão Metodológica",
+        "descricao":
+          "A metodologia 2025 do ODS 3.8.1 passou a identificar a série como SH_ACS_UNHC_25 e estendeu a cobertura temporal oficial até 2023; isso pode afetar comparações com extrações antigas.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 84 pontos, acima da média global reportada para o UHC Service Coverage Index e acima do agregado da América Latina e Caribe na base OMS/Banco Mundial. A comparação internacional deve considerar que o índice é composto, depende de disponibilidade de dados nacionais e pode mascarar desigualdades regionais internas.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional oficial, pois a série é publicada pela OMS, ONU e Banco Mundial. A principal limitação é metodológica: o indicador não é uma medição primária direta, mas um índice composto com harmonização, estimativas oficiais e imputações para lacunas de componentes. Portanto, ele atende bem ao critério de fonte oficial e comparabilidade, mas não atende literalmente ao critério de ausência total de estimativas estatísticas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - UHC service coverage index - Brazil - SH_UHC_SCI",
+        "url": "https://data.worldbank.org/indicator/SH_UHC_SCI?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - SH.UHC.SRVS.CV.XD",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.UHC.SRVS.CV.XD",
+      },
+      { "titulo": "OMS Data - UHC Service Coverage Index", "url": "https://data.who.int/indicators/i/3805B1E/9A706FD" },
+      {
+        "titulo": "OMS - Service Coverage Index And Components",
+        "url": "https://www.who.int/data/gho/data/themes/topics/service-coverage",
+      },
+      {
+        "titulo": "ONU - SDG Metadata - Indicator 3.8.1",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-03-08-01.pdf",
+      },
+      {
+        "titulo": "Banco Mundial/OMS - 2025 Global Monitoring Report On Universal Health Coverage",
+        "url":
+          "https://www.worldbank.org/en/topic/universalhealthcoverage/publication/2025-global-monitoring-report-gmr",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 68 },
+      { "ano": 2005, "valor": 73 },
+      { "ano": 2010, "valor": 75 },
+      { "ano": 2015, "valor": 77 },
+      { "ano": 2017, "valor": 77 },
+      { "ano": 2019, "valor": 80 },
+      { "ano": 2021, "valor": 80 },
+      { "ano": 2023, "valor": 84 },
     ],
   },
   "cobertura_vacinal_essencial": {
@@ -8391,6 +8750,425 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2022, "valor": 77 },
       { "ano": 2023, "valor": 90 },
       { "ano": 2024, "valor": 91 },
+    ],
+  },
+  "cobertura_potencial_aps_esf": {
+    "label": "Cobertura Potencial Da Atenção Primária À Saúde",
+    "fonte_sigla": "e-Gestor APS/MS",
+    "unidade": "% da população",
+    "fonte":
+      "Ministério da Saúde - Secretaria de Atenção Primária à Saúde - e-Gestor APS - Histórico de Cobertura - Cobertura Potencial da APS",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Estima o percentual da população potencialmente coberta por equipes que atuam na Atenção Primária à Saúde no SUS.",
+    "como_interpretar":
+      "Valores maiores indicam maior capacidade potencial de cobertura da Atenção Primária à Saúde em relação à população residente. O indicador mede capacidade instalada estimada, não mede atendimento efetivo, qualidade do cuidado, resolutividade clínica nem acesso real individual.",
+    "metodologia":
+      "Para a série disponível, o indicador usa a população potencialmente coberta por equipes de Saúde da Família e equipes de Atenção Primária, conforme parâmetros populacionais definidos pelo Ministério da Saúde e pela Política Nacional de Atenção Básica, dividida pela população de referência e multiplicada por 100. Na metodologia atualizada da Cobertura Potencial Estimada da APS, são considerados parâmetros de capacidade por equipe, como 3.500 pessoas por eSF, 1.750 por eAP 20h e 2.625 por eAP 30h, além de cadastros vinculados em equipes específicas quando aplicável, conforme notas técnicas oficiais do Ministério da Saúde.",
+    "historico_metodologia":
+      "Não há série oficial homogênea desde 1994. O histórico público do e-Gestor para cobertura da Atenção Básica/APS passa a ter série nacional comparável apenas em anos posteriores; a base consolidada utilizada aqui apresenta dados anuais observados de 2012 a 2023. Até 2020, o cálculo histórico de cobertura da Atenção Básica considerava equipes de Saúde da Família, equipes de Atenção Básica parametrizadas/equivalentes e parâmetros populacionais fixos. A partir de 2021, houve mudança metodológica associada ao Previne Brasil e ao PNS 2020-2023, com uso de população cadastrada em equipes financiadas pelo Ministério da Saúde. Em 2022, o Ministério da Saúde revisou e republicou a série de Cobertura Potencial da APS para contemplar capacidade instalada e equipes mantidas também com recursos próprios. Em 2025, a Nota Técnica nº 2/2025-SAPS/MS atualizou a metodologia da Cobertura Potencial Estimada da APS no SUS. Por causa dessas mudanças, comparações entre anos devem ser feitas com cautela.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com possibilidade de desagregação por região, unidade federativa e município no e-Gestor APS.",
+    "periodicidade":
+      "Mensal no e-Gestor APS; os dados anuais abaixo representam valores consolidados por ano conforme base pública consultada.",
+    "eventos_externos": [
+      {
+        "ano": 2013,
+        "nome": "Mais Médicos",
+        "descricao":
+          "A criação do Programa Mais Médicos ampliou o provimento de médicos na Atenção Primária, especialmente em áreas com dificuldade de fixação profissional.",
+      },
+      {
+        "ano": 2017,
+        "nome": "Nova PNAB",
+        "descricao":
+          "A Portaria GM/MS nº 2.436/2017 revisou a Política Nacional de Atenção Básica e influenciou a organização das equipes e parâmetros usados na APS.",
+      },
+      {
+        "ano": 2019,
+        "nome": "Previne Brasil",
+        "descricao":
+          "A Portaria nº 2.979/2019 instituiu novo modelo de financiamento da APS, com impacto posterior na forma de monitoramento da cobertura.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 alterou a rotina dos serviços de saúde e intensificou a relevância da APS no monitoramento territorial e na continuidade do cuidado.",
+      },
+      {
+        "ano": 2021,
+        "nome": "Mudança PNS",
+        "descricao":
+          "A Nota Técnica nº 418/2021-CGGAP/DESF/SAPS/MS mudou o método de cálculo para a cobertura da APS das equipes financiadas pelo Ministério da Saúde no PNS 2020-2023.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Série Revisada",
+        "descricao":
+          "O Ministério da Saúde revisou e voltou a disponibilizar a série histórica de Cobertura Potencial da APS, incorporando melhor a capacidade instalada dos serviços.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Novo Cofinanciamento",
+        "descricao":
+          "A Portaria GM/MS nº 3.493/2024 instituiu nova metodologia de cofinanciamento federal da APS, com reflexos na organização e no monitoramento dos indicadores.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Nota 2/2025",
+        "descricao":
+          "A Nota Técnica nº 2/2025-SAPS/MS atualizou a metodologia da Cobertura Potencial Estimada da APS no SUS.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta confiável para este indicador, pois ele é específico do arranjo institucional brasileiro do SUS, da Estratégia Saúde da Família, das equipes de Atenção Primária e das regras de financiamento/cadastro do Ministério da Saúde. Para comparação internacional, indicadores mais adequados seriam cobertura de serviços essenciais de saúde, médicos por habitante, densidade de profissionais de saúde ou UHC Service Coverage Index.",
+    "nivel_confiabilidade":
+      "Alto para monitoramento administrativo nacional do SUS, pois a fonte é oficial do Ministério da Saúde/e-Gestor APS. A principal limitação é a quebra metodológica: a série não é homogênea desde 1994, não há valores oficiais anuais observados para todo o período solicitado, e mudanças metodológicas em 2021, 2022 e 2025 reduzem a comparabilidade direta entre anos.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "Ministério da Saúde - e-Gestor APS - Relatórios Públicos",
+        "url": "https://egestorab.saude.gov.br/paginas/acessoPublico/relatorios/relatoriosPublicos.xhtml",
+      },
+      {
+        "titulo": "Ministério da Saúde - Histórico de Cobertura - Cobertura Potencial da APS",
+        "url": "https://relatorioaps.saude.gov.br/cobertura/aps",
+      },
+      {
+        "titulo": "Ministério da Saúde - Histórico de Cobertura - Cobertura da Atenção Básica (2007-2020)",
+        "url": "https://relatorioaps.saude.gov.br/cobertura/ab",
+      },
+      {
+        "titulo":
+          "Ministério da Saúde - Governo federal revisa método e volta a disponibilizar série histórica de Cobertura Potencial da Atenção Primária",
+        "url":
+          "https://www.gov.br/saude/pt-br/assuntos/noticias/2022/dezembro/governo-federal-revisa-metodo-e-volta-a-disponibilizar-serie-historica-de-cobertura-potencial-da-atencao-primaria",
+      },
+      {
+        "titulo": "Ministério da Saúde - Nota Técnica nº 418/2021-CGGAP/DESF/SAPS/MS",
+        "url":
+          "https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/notas-tecnicas/nota-tecnica-no-418-2021-cggap-desf-saps-ms/view",
+      },
+      {
+        "titulo": "Ministério da Saúde - Nota Técnica nº 2/2025-SAPS/MS - Cobertura Potencial Estimada da APS no SUS",
+        "url":
+          "https://egestorab.saude.gov.br/image/?file=20250407_O_SEI0047071175NT022025CoberturaPotencialEstimadadaAPSnoSUS_7580492751288227022.pdf",
+      },
+      {
+        "titulo":
+          "Dados Abertos TCE-GO - 01.01 Cobertura de Atenção Primária à Saúde - Fonte Ministério da Saúde/e-Gestor APS",
+        "url": "https://dadosabertos.tce.go.gov.br/dataset/cobertura-de-atencao-primaria-a-saude",
+      },
+    ],
+    "dados": [
+      { "ano": 2012, "valor": 68.34 },
+      { "ano": 2013, "valor": 70.58 },
+      { "ano": 2014, "valor": 73.11 },
+      { "ano": 2015, "valor": 73.66 },
+      { "ano": 2016, "valor": 74.14 },
+      { "ano": 2017, "valor": 74.62 },
+      { "ano": 2018, "valor": 74.58 },
+      { "ano": 2019, "valor": 74.76 },
+      { "ano": 2020, "valor": 76.08 },
+      { "ano": 2021, "valor": 69.5 },
+      { "ano": 2022, "valor": 75.12 },
+      { "ano": 2023, "valor": 79.73 },
+    ],
+  },
+  "obesidade_adultos_imc_30": {
+    "label": "Obesidade em Adultos",
+    "fonte_sigla": "OMS/NCD-RisC",
+    "unidade": "% de adultos",
+    "fonte":
+      "World Health Organization - Global Health Observatory / NCD Risk Factor Collaboration - Prevalence of obesity among adults, BMI >= 30 (age-standardized estimate) (%)",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção padronizada por idade de adultos com índice de massa corporal igual ou superior a 30 kg/m².",
+    "como_interpretar":
+      "Valores maiores indicam maior prevalência de obesidade entre adultos. Como a série é padronizada por idade, ela é mais adequada para comparação internacional do que séries brutas nacionais. A queda seria interpretada como avanço em saúde populacional; a alta indica maior carga de obesidade e maior risco associado a doenças crônicas.",
+    "metodologia":
+      "A OMS define o indicador como a porcentagem de adultos de 18 anos ou mais com IMC igual ou superior a 30 kg/m². A medição de base usa altura e peso medidos em inquéritos populacionais. A série internacional da OMS/NCD-RisC combina estudos populacionais representativos e modelagem estatística para produzir estimativas nacionais anuais padronizadas por idade. A metodologia citada pela OMS para esta versão é a análise NCD-RisC publicada na Lancet em 2024, baseada em 3.663 estudos populacionais representativos com 222 milhões de crianças, adolescentes e adultos. Os valores abaixo usam a série OMS/GHO NCD_BMI_30A, reprocessada em formato tabular pelo Our World in Data, mantendo os valores do Brasil de 1994 a 2022.",
+    "historico_metodologia":
+      "A série da OMS/NCD-RisC foi atualizada em 2024 para cobrir tendências globais de baixo peso e obesidade de 1990 a 2022. A própria OMS classifica o indicador como 'official estimate', com cálculo ajustado e predito, e não como observação direta anual. Portanto, os dados são oficiais e comparáveis internacionalmente, mas não são valores estritamente observados em cada ano. Revisões futuras podem alterar valores históricos quando novos inquéritos populacionais ou atualizações metodológicas forem incorporados.",
+    "abrangencia":
+      "Brasil, cobertura nacional estimada, com comparabilidade internacional para países, regiões e mundo.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2022, o Brasil registrou 28,14184% de prevalência padronizada de obesidade em adultos, acima da média global tabulada para a série OMS/GHO e abaixo dos países com maiores prevalências, como Samoa Americana, Tonga, Nauru e Tokelau. A comparação deve considerar que os valores são estimativas padronizadas por idade, não medições brutas nacionais diretamente equivalentes.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a fonte primária é a OMS/GHO com metodologia NCD-RisC. A principal ressalva metodológica é que os valores são estimativas oficiais modeladas, ajustadas e padronizadas por idade, não dados observacionais anuais puros.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "OMS - Global Health Observatory - Obesity among adults, BMI >= 30, prevalence",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/prevalence-of-obesity-among-adults-bmi-%3D-30-%28age-standardized-estimate%29-%28-%29",
+      },
+      {
+        "titulo": "OMS Data - Age-standardized prevalence of obesity among adults (18+ years)",
+        "url": "https://data.who.int/indicators/i/C6262EC/BEFA58B",
+      },
+      {
+        "titulo": "NCD-RisC / The Lancet 2024 - Worldwide trends in underweight and obesity from 1990 to 2022",
+        "url": "https://doi.org/10.1016/S0140-6736(23)02750-2",
+      },
+      {
+        "titulo": "Our World in Data - Prevalence rate of obesity in adults - WHO GHO",
+        "url": "https://ourworldindata.org/grapher/obesity-prevalence-adults-who-gho.csv",
+      },
+      { "titulo": "OMS GHO OData API - documentação", "url": "https://www.who.int/data/gho/info/gho-odata-api" },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 9.93314 },
+      { "ano": 1995, "valor": 10.29013 },
+      { "ano": 1996, "valor": 10.66484 },
+      { "ano": 1997, "valor": 11.05715 },
+      { "ano": 1998, "valor": 11.46442 },
+      { "ano": 1999, "valor": 11.88499 },
+      { "ano": 2000, "valor": 12.31615 },
+      { "ano": 2001, "valor": 12.75318 },
+      { "ano": 2002, "valor": 13.19933 },
+      { "ano": 2003, "valor": 13.6603 },
+      { "ano": 2004, "valor": 14.14463 },
+      { "ano": 2005, "valor": 14.65181 },
+      { "ano": 2006, "valor": 15.18043 },
+      { "ano": 2007, "valor": 15.73599 },
+      { "ano": 2008, "valor": 16.32579 },
+      { "ano": 2009, "valor": 16.95678 },
+      { "ano": 2010, "valor": 17.63404 },
+      { "ano": 2011, "valor": 18.35698 },
+      { "ano": 2012, "valor": 19.12142 },
+      { "ano": 2013, "valor": 19.92157 },
+      { "ano": 2014, "valor": 20.75398 },
+      { "ano": 2015, "valor": 21.61276 },
+      { "ano": 2016, "valor": 22.49431 },
+      { "ano": 2017, "valor": 23.39131 },
+      { "ano": 2018, "valor": 24.30341 },
+      { "ano": 2019, "valor": 25.23235 },
+      { "ano": 2020, "valor": 26.18243 },
+      { "ano": 2021, "valor": 27.1519 },
+      { "ano": 2022, "valor": 28.14184 },
+    ],
+  },
+  "prevalencia_diabetes_padronizada_idade": {
+    "label": "Diabetes Padronizada Por Idade",
+    "fonte_sigla": "OMS/NCD-RisC",
+    "unidade": "% da população adulta",
+    "fonte":
+      "World Health Organization - Global Health Observatory / NCD Risk Factor Collaboration - Prevalence of Diabetes, Age-Standardized",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção estimada de adultos com diabetes, padronizada por idade pela população padrão da OMS.",
+    "como_interpretar":
+      "Valores maiores indicam maior prevalência de diabetes na população adulta, já ajustada por diferenças na estrutura etária. A padronização permite comparar países e anos com estruturas etárias diferentes. O indicador não mede incidência, gravidade clínica, controle glicêmico, mortalidade, acesso a tratamento ou qualidade do cuidado.",
+    "metodologia":
+      "A OMS define diabetes como glicemia de jejum igual ou superior a 7,0 mmol/L, HbA1c igual ou superior a 6,5%, ou uso de medicação hipoglicemiante. As fontes preferenciais são inquéritos populacionais nacionais ou subnacionais com medidas laboratoriais de glicose em jejum ou HbA1c e informação sobre uso de medicação para diabetes. O NCD-RisC combina estudos populacionais representativos em modelo bayesiano hierárquico de meta-regressão para estimar prevalência por país, ano, sexo e idade. As estimativas padronizadas por idade são produzidas aplicando as estimativas específicas por idade à População Padrão da OMS.",
+    "historico_metodologia":
+      "A série atual deriva do estudo NCD-RisC publicado em 2024, com resultados de 1990 a 2022, baseado em 1108 estudos populacionais representativos e 141 milhões de participantes. A metodologia incorpora glicemia de jejum, HbA1c e uso de medicação, com regressões para lidar com estudos que mediram apenas um biomarcador. A OMS informa explicitamente que os dados são modelados por meta-regressão bayesiana e que há países e anos sem dados observados diretos. Portanto, os valores em 'dados' devem ser interpretados como estimativas oficiais modeladas, não como medições anuais diretas.",
+    "abrangencia":
+      "Brasil, adultos de 18 anos ou mais, com comparabilidade internacional por país, sexo, idade e ano; indicador padronizado por idade pela População Padrão da OMS.",
+    "periodicidade":
+      "Irregular quanto à coleta primária; a série oficial NCD-RisC apresenta estimativas anuais de 1990 a 2022 e é atualizada conforme novas compilações globais de estudos populacionais.",
+    "eventos_externos": [
+      {
+        "ano": 1990,
+        "nome": "Base histórica",
+        "descricao":
+          "O NCD-RisC usa 1990 como início da série comparável atual para diabetes, permitindo avaliar a tendência de longo prazo.",
+      },
+      {
+        "ano": 2013,
+        "nome": "PNS 2013",
+        "descricao":
+          "A Pesquisa Nacional de Saúde de 2013 ampliou a base nacional brasileira de informações populacionais sobre diabetes autorreferido.",
+      },
+      {
+        "ano": 2019,
+        "nome": "PNS 2019",
+        "descricao":
+          "A Pesquisa Nacional de Saúde de 2019 mostrou aumento da prevalência autorreferida de diabetes no Brasil em relação a 2013.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Atualização NCD-RisC",
+        "descricao":
+          "O estudo NCD-RisC publicado em 2024 atualizou as estimativas globais de prevalência e tratamento de diabetes até 2022.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2022, o NCD-RisC estimou para o Brasil prevalência padronizada por idade de 14,0% entre mulheres adultas e 11,7% entre homens adultos. Na comparação regional exibida pelo NCD-RisC, entre mulheres o Brasil aparece abaixo de Chile e Paraguai, próximo do Uruguai e acima da Argentina; entre homens aparece abaixo de Uruguai e Paraguai, próximo do Chile e acima da Argentina.",
+    "nivel_confiabilidade":
+      "Alto para comparação epidemiológica internacional, pois a fonte é oficial, usa estudos populacionais com biomarcadores e metodologia publicada em periódico científico. A principal ressalva é que a série é estimada por modelo bayesiano hierárquico; portanto, os valores não são medições diretas anuais.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo": "OMS - Global Health Observatory - Diabetes, prevalence (%)",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/prevalence-of-diabetes-age-standardized",
+      },
+      { "titulo": "NCD-RisC - Diabetes Data Downloads", "url": "https://www.ncdrisc.org/data-downloads-diabetes.html" },
+      {
+        "titulo": "NCD-RisC - Diabetes prevalence and treatment in Brazil, 2022",
+        "url":
+          "https://www.ncdrisc.org/downloads/country-pdf/dm/NCD-RisC%20country%20factsheet%20for%20diabetes%20-%20Brazil.pdf",
+      },
+      {
+        "titulo":
+          "NCD-RisC - Worldwide trends in diabetes prevalence and treatment from 1990 to 2022 - The Lancet 2024",
+        "url": "https://doi.org/10.1016/S0140-6736(24)02317-1",
+      },
+      {
+        "titulo": "NCD-RisC - Country-specific Age-standardised Diabetes CSV",
+        "url": "https://www.ncdrisc.org/downloads/dm-2024/NCD_RisC_Lancet_2024_Diabetes_age_standardised_countries.csv",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 7.3 },
+      { "ano": 1995, "valor": 7.5 },
+      { "ano": 1996, "valor": 7.7 },
+      { "ano": 1997, "valor": 7.9 },
+      { "ano": 1998, "valor": 8.1 },
+      { "ano": 1999, "valor": 8.3 },
+      { "ano": 2000, "valor": 8.5 },
+      { "ano": 2001, "valor": 8.7 },
+      { "ano": 2002, "valor": 8.9 },
+      { "ano": 2003, "valor": 9.1 },
+      { "ano": 2004, "valor": 9.3 },
+      { "ano": 2005, "valor": 9.5 },
+      { "ano": 2006, "valor": 9.7 },
+      { "ano": 2007, "valor": 9.9 },
+      { "ano": 2008, "valor": 10.1 },
+      { "ano": 2009, "valor": 10.3 },
+      { "ano": 2010, "valor": 10.5 },
+      { "ano": 2011, "valor": 10.7 },
+      { "ano": 2012, "valor": 10.9 },
+      { "ano": 2013, "valor": 11.1 },
+      { "ano": 2014, "valor": 11.3 },
+      { "ano": 2015, "valor": 11.5 },
+      { "ano": 2016, "valor": 11.7 },
+      { "ano": 2017, "valor": 11.9 },
+      { "ano": 2018, "valor": 12.1 },
+      { "ano": 2019, "valor": 12.3 },
+      { "ano": 2020, "valor": 12.5 },
+      { "ano": 2021, "valor": 12.7 },
+      { "ano": 2022, "valor": 12.9 },
+    ],
+  },
+  "despesa_direta_familias_percentual_despesa_corrente_saude": {
+    "label": "Despesa Direta Das Famílias Em Saúde",
+    "fonte_sigla": "OMS GHED/WDI",
+    "unidade": "% da despesa corrente em saúde",
+    "fonte":
+      "World Health Organization - Global Health Expenditure Database (GHED), via World Bank - World Development Indicators (SH.XPD.OOPC.CH.ZS)",
+    "cat": "Saúde",
+    "padrao": false,
+    "descricao":
+      "Mede a parcela da despesa corrente em saúde financiada diretamente por pagamentos do bolso das famílias.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso direto das famílias no financiamento da saúde e menor participação relativa de mecanismos coletivos de financiamento, como governo, seguros obrigatórios, seguros voluntários ou fontes externas. Valores menores indicam menor exposição direta das famílias no momento do uso dos serviços. O indicador não mede qualidade do sistema de saúde, acesso efetivo, valor absoluto gasto pelas famílias nem incidência individual de gastos catastróficos.",
+    "metodologia":
+      "O indicador é calculado como pagamentos diretos das famílias em saúde divididos pela despesa corrente total em saúde, multiplicado por 100. Na classificação SHA 2011 usada pela OMS/GHED, corresponde ao gasto direto das famílias, sem intermediação por esquemas de pré-pagamento ou compartilhamento amplo de risco, em relação à Current Health Expenditure (CHE). A série WDI republica os dados da Global Health Expenditure Database da OMS, compilados a partir de contas nacionais de saúde, registros oficiais de despesa governamental e estatísticas oficiais harmonizadas internacionalmente.",
+    "historico_metodologia":
+      "A GHED utiliza o System of Health Accounts 2011 (SHA 2011), e a OMS pode revisar séries históricas quando países atualizam contas de saúde, fontes administrativas, classificações, imputações técnicas ou a alocação entre esquemas de financiamento. A série oficial WDI/GHED consultada para o Brasil está disponível de 2000 a 2023; anos de 1994 a 1999 e 2024 em diante não foram incluídos por ausência de valor oficial publicado para o Brasil nessa série no recorte consultado. Mudanças recentes na institucionalização das Contas de Saúde do Brasil, documentadas pela OCDE, exigem cautela ao comparar quebras ou variações abruptas ao longo do tempo.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional para comparação entre países e agregados regionais.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Início GHED",
+        "descricao":
+          "A série internacional comparável da GHED/WDI para este indicador começa em 2000; não há valores oficiais WDI/GHED para 1994-1999 no Brasil.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Queda Forte",
+        "descricao":
+          "A série registra queda relevante entre 2014 e 2015, mas a fonte WDI/GHED não atribui causalidade específica a esse movimento no metadado do indicador.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A pandemia mobilizou recursos extraordinários para saúde em 2020 e 2021, alterando a composição relativa da despesa corrente em saúde.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Contas Saúde",
+        "descricao":
+          "A OCDE documentou nova abordagem para construir e institucionalizar as contas de saúde no Brasil, com ressalva de que mudanças metodológicas podem afetar a leitura de tendências recentes.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Último Dado",
+        "descricao": "O ano de 2023 é o último valor oficial disponível para o Brasil na série WDI/GHED consultada.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou 26,23% da despesa corrente em saúde paga diretamente pelas famílias. Esse nível fica acima da média típica observada em países da OCDE, próxima de 19% a 20% em comparações recentes, mas abaixo de países com participação direta das famílias superior a 30%, como México, Chile, Grécia, Letônia e Lituânia em comparações da OCDE. A comparação internacional deve considerar diferenças de cobertura pública, seguros privados, preços relativos, composição do gasto e metodologia nacional das contas de saúde.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem da GHED da OMS e é republicada no WDI do Banco Mundial. A principal ressalva é que a própria GHED pode revisar séries históricas e, quando necessário, harmonizar ou estimar componentes para garantir consistência das contas de saúde. Por isso, foram mantidos apenas anos com valor oficial publicado na série WDI/GHED para o Brasil, sem preencher lacunas anteriores a 2000 ou posteriores a 2023.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
+    "fontes_links": [
+      {
+        "titulo":
+          "Banco Mundial - Out-of-pocket expenditure (% of current health expenditure) - Brazil - SH.XPD.OOPC.CH.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - World Development Indicators - SH.XPD.OOPC.CH.ZS",
+        "url": "https://databank.worldbank.org/reports.aspx?country=BRA&series=SH.XPD.OOPC.CH.ZS&source=2",
+      },
+      {
+        "titulo": "Banco Mundial Data360 - WDI CSV - SH.XPD.OOPC.CH.ZS",
+        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_SH_XPD_OOPC_CH_ZS_WIDEF.csv",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - SH.XPD.OOPC.CH.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SH.XPD.OOPC.CH.ZS",
+      },
+      {
+        "titulo":
+          "OMS - Global Health Observatory - Out-of-pocket expenditure as percentage of current health expenditure",
+        "url":
+          "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/out-of-pocket-expenditure-as-percentage-of-current-health-expenditure-%28che%29-%28-%29",
+      },
+      { "titulo": "OMS - Global Health Expenditure Database", "url": "https://apps.who.int/nha/database" },
+      {
+        "titulo": "OCDE - Institutionalising Health Accounts in Brazil",
+        "url": "https://www.oecd.org/en/publications/institutionalising-health-accounts-in-brazil_b6d405f9-en.html",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 36.59222031 },
+      { "ano": 2001, "valor": 37.80702972 },
+      { "ano": 2002, "valor": 36.40619659 },
+      { "ano": 2003, "valor": 35.47386169 },
+      { "ano": 2004, "valor": 35.3658371 },
+      { "ano": 2005, "valor": 35.87643814 },
+      { "ano": 2006, "valor": 34.37126541 },
+      { "ano": 2007, "valor": 33.09412003 },
+      { "ano": 2008, "valor": 30.88409233 },
+      { "ano": 2009, "valor": 31.21031952 },
+      { "ano": 2010, "valor": 29.38520432 },
+      { "ano": 2011, "valor": 29.29958534 },
+      { "ano": 2012, "valor": 29.68202972 },
+      { "ano": 2013, "valor": 28.17706871 },
+      { "ano": 2014, "valor": 28.18024635 },
+      { "ano": 2015, "valor": 24.70735931 },
+      { "ano": 2016, "valor": 24.42057228 },
+      { "ano": 2017, "valor": 24.46793365 },
+      { "ano": 2018, "valor": 24.82529449 },
+      { "ano": 2019, "valor": 24.87984657 },
+      { "ano": 2020, "valor": 26.09086418 },
+      { "ano": 2021, "valor": 25.26789093 },
+      { "ano": 2022, "valor": 27.25102234 },
+      { "ano": 2023, "valor": 26.23070717 },
     ],
   },
   "pisa_media_leitura_matematica_ciencias": {
@@ -9748,71 +10526,83 @@ window.__DADOS_ANUAIS__ = {
     "label": "Emissões De CO₂",
     "fonte_sigla": "WDI/EDGAR/IEA",
     "unidade": "t CO₂e por habitante",
-    "fonte": "Banco Mundial - World Development Indicators (EN.GHG.CO2.PC.CE.AR5) / EDGAR Community GHG Database - Joint Research Centre / International Energy Agency",
+    "fonte":
+      "Banco Mundial - World Development Indicators (EN.GHG.CO2.PC.CE.AR5) / EDGAR Community GHG Database - Joint Research Centre / International Energy Agency",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede as emissões anuais de dióxido de carbono por habitante, excluindo emissões e remoções associadas a uso da terra, mudança do uso da terra e florestas.",
-    "como_interpretar": "Valores maiores indicam maior emissão territorial média de CO₂ por habitante. O indicador mede emissões geradas dentro do território nacional e não ajusta emissões incorporadas em importações e exportações. Também exclui LULUCF, que é especialmente relevante no Brasil por causa de desmatamento, queimadas e mudanças no uso da terra.",
-    "metodologia": "A série usada é o indicador EN.GHG.CO2.PC.CE.AR5 do World Development Indicators. O numerador corresponde às emissões territoriais anuais de CO₂, em CO₂ equivalente com métrica AR5, excluindo LULUCF, compiladas a partir da EDGAR Community GHG Database do Joint Research Centre e da International Energy Agency. O denominador é a população usada pelo Banco Mundial para calcular o valor per capita. Foram mantidos apenas anos com observação anual publicada na série WDI; 2025 não foi incluído por não ter valor observado disponível.",
-    "historico_metodologia": "A série atual do Banco Mundial para cobertura até 2024 usa o indicador EN.GHG.CO2.PC.CE.AR5, com fonte EDGAR/JRC e IEA, e substitui operacionalmente a série antiga EN.ATM.CO2E.PC, que tinha cobertura menor e metadados diferentes. O Global Carbon Project é uma referência científica importante para emissões fósseis e cimento, mas a série oficial do WDI disponível até 2024 para este indicador específico é EDGAR/JRC/IEA. Como inventários internacionais de emissões são atualizados periodicamente, valores históricos podem sofrer revisões retroativas quando há mudanças em fatores de emissão, estatísticas energéticas, dados industriais, população ou harmonização internacional.",
-    "abrangencia": "Brasil, cobertura nacional, emissões territoriais anuais de CO₂ excluindo LULUCF, comparável internacionalmente dentro da base WDI.",
+    "descricao":
+      "Mede as emissões anuais de dióxido de carbono por habitante, excluindo emissões e remoções associadas a uso da terra, mudança do uso da terra e florestas.",
+    "como_interpretar":
+      "Valores maiores indicam maior emissão territorial média de CO₂ por habitante. O indicador mede emissões geradas dentro do território nacional e não ajusta emissões incorporadas em importações e exportações. Também exclui LULUCF, que é especialmente relevante no Brasil por causa de desmatamento, queimadas e mudanças no uso da terra.",
+    "metodologia":
+      "A série usada é o indicador EN.GHG.CO2.PC.CE.AR5 do World Development Indicators. O numerador corresponde às emissões territoriais anuais de CO₂, em CO₂ equivalente com métrica AR5, excluindo LULUCF, compiladas a partir da EDGAR Community GHG Database do Joint Research Centre e da International Energy Agency. O denominador é a população usada pelo Banco Mundial para calcular o valor per capita. Foram mantidos apenas anos com observação anual publicada na série WDI; 2025 não foi incluído por não ter valor observado disponível.",
+    "historico_metodologia":
+      "A série atual do Banco Mundial para cobertura até 2024 usa o indicador EN.GHG.CO2.PC.CE.AR5, com fonte EDGAR/JRC e IEA, e substitui operacionalmente a série antiga EN.ATM.CO2E.PC, que tinha cobertura menor e metadados diferentes. O Global Carbon Project é uma referência científica importante para emissões fósseis e cimento, mas a série oficial do WDI disponível até 2024 para este indicador específico é EDGAR/JRC/IEA. Como inventários internacionais de emissões são atualizados periodicamente, valores históricos podem sofrer revisões retroativas quando há mudanças em fatores de emissão, estatísticas energéticas, dados industriais, população ou harmonização internacional.",
+    "abrangencia":
+      "Brasil, cobertura nacional, emissões territoriais anuais de CO₂ excluindo LULUCF, comparável internacionalmente dentro da base WDI.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2009,
         "nome": "Crise Global",
-        "descricao": "A crise financeira internacional coincidiu com queda das emissões per capita em 2009, após alta em 2008."
+        "descricao":
+          "A crise financeira internacional coincidiu com queda das emissões per capita em 2009, após alta em 2008.",
       },
       {
         "ano": 2010,
         "nome": "Retomada Econômica",
-        "descricao": "A recuperação da atividade econômica após a crise global coincidiu com forte aumento das emissões per capita."
+        "descricao":
+          "A recuperação da atividade econômica após a crise global coincidiu com forte aumento das emissões per capita.",
       },
       {
         "ano": 2014,
         "nome": "Pico Recente",
-        "descricao": "O ano registrou o maior valor da série desde 1994, em contexto de alta atividade energética e maior uso de fontes fósseis no sistema elétrico durante período de restrição hídrica."
+        "descricao":
+          "O ano registrou o maior valor da série desde 1994, em contexto de alta atividade energética e maior uso de fontes fósseis no sistema elétrico durante período de restrição hídrica.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão econômica brasileira coincidiu com queda relevante das emissões per capita em 2015 e 2016."
+        "descricao":
+          "A recessão econômica brasileira coincidiu com queda relevante das emissões per capita em 2015 e 2016.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 e a redução de mobilidade e atividade econômica coincidiram com a menor emissão per capita desde 2009."
+        "descricao":
+          "A pandemia de COVID-19 e a redução de mobilidade e atividade econômica coincidiram com a menor emissão per capita desde 2009.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A retomada econômica após as restrições de 2020 coincidiu com recuperação expressiva das emissões per capita."
-      }
+        "descricao":
+          "A retomada econômica após as restrições de 2020 coincidiu com recuperação expressiva das emissões per capita.",
+      },
     ],
-    "comparacao_paises": "O Brasil apresenta emissões territoriais de CO₂ per capita abaixo da média mundial e muito abaixo de economias intensivas em carvão, petróleo e gás, como Estados Unidos, Canadá, Austrália, Rússia, China e vários países do Golfo. A comparação deve ser feita com cautela porque este indicador exclui LULUCF; no Brasil, uma parte grande do impacto climático total historicamente vem de mudança do uso da terra, desmatamento e agropecuária.",
-    "nivel_confiabilidade": "Alto para comparação internacional anual, pois a série é publicada no World Development Indicators do Banco Mundial e baseada em bases internacionais padronizadas da EDGAR/JRC e IEA. A principal ressalva é que inventários de emissões são estimativas estatísticas oficiais ou quase-oficiais baseadas em dados energéticos, industriais e fatores de emissão, não medições diretas exatas; por isso podem sofrer revisões metodológicas retroativas.",
+    "comparacao_paises":
+      "O Brasil apresenta emissões territoriais de CO₂ per capita abaixo da média mundial e muito abaixo de economias intensivas em carvão, petróleo e gás, como Estados Unidos, Canadá, Austrália, Rússia, China e vários países do Golfo. A comparação deve ser feita com cautela porque este indicador exclui LULUCF; no Brasil, uma parte grande do impacto climático total historicamente vem de mudança do uso da terra, desmatamento e agropecuária.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional anual, pois a série é publicada no World Development Indicators do Banco Mundial e baseada em bases internacionais padronizadas da EDGAR/JRC e IEA. A principal ressalva é que inventários de emissões são estimativas estatísticas oficiais ou quase-oficiais baseadas em dados energéticos, industriais e fatores de emissão, não medições diretas exatas; por isso podem sofrer revisões metodológicas retroativas.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita) - Brazil - EN.GHG.CO2.PC.CE.AR5",
-        "url": "https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5?locations=BR"
+        "titulo":
+          "Banco Mundial - Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita) - Brazil - EN.GHG.CO2.PC.CE.AR5",
+        "url": "https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators - EN.GHG.CO2.PC.CE.AR5 - Brazil",
-        "url": "https://databank.worldbank.org/data/reports.aspx?country=BRA&series=EN.GHG.CO2.PC.CE.AR5&source=2"
+        "url": "https://databank.worldbank.org/data/reports.aspx?country=BRA&series=EN.GHG.CO2.PC.CE.AR5&source=2",
       },
       {
         "titulo": "Banco Mundial Data360 - Metadata - EN.GHG.CO2.PC.CE.AR5",
-        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_EN_GHG_CO2_PC_CE_AR5.pdf"
+        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_EN_GHG_CO2_PC_CE_AR5.pdf",
       },
       {
         "titulo": "EDGAR/JRC - GHG Emissions of All World Countries - 2024 Dataset",
-        "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2024"
+        "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2024",
       },
-      {
-        "titulo": "Global Carbon Project - Global Carbon Budget",
-        "url": "https://globalcarbonbudget.org/"
-      }
+      { "titulo": "Global Carbon Project - Global Carbon Budget", "url": "https://globalcarbonbudget.org/" },
     ],
     "dados": [
       { "ano": 1994, "valor": 1.625 },
@@ -9825,7 +10615,7 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2001, "valor": 1.993 },
       { "ano": 2002, "valor": 1.969 },
       { "ano": 2003, "valor": 1.918 },
-      { "ano": 2004, "valor": 2.000 },
+      { "ano": 2004, "valor": 2.0 },
       { "ano": 2005, "valor": 1.999 },
       { "ano": 2006, "valor": 2.002 },
       { "ano": 2007, "valor": 2.085 },
@@ -9845,102 +10635,116 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2021, "valor": 2.416 },
       { "ano": 2022, "valor": 2.279 },
       { "ano": 2023, "valor": 2.274 },
-      { "ano": 2024, "valor": 2.318 }
-    ]
+      { "ano": 2024, "valor": 2.318 },
+    ],
   },
   "emissoes_totais_gee": {
     "label": "Emissões Totais De Gases De Efeito Estufa",
     "fonte_sigla": "WDI/EDGAR",
     "unidade": "Mt CO2e",
-    "fonte": "Banco Mundial - World Development Indicators (EN.GHG.ALL.MT.CE.AR5) / EDGAR Community GHG Database - Joint Research Centre / International Energy Agency",
+    "fonte":
+      "Banco Mundial - World Development Indicators (EN.GHG.ALL.MT.CE.AR5) / EDGAR Community GHG Database - Joint Research Centre / International Energy Agency",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede o total anual de emissões territoriais de gases de efeito estufa do Brasil, excluindo LULUCF, expresso em milhões de toneladas de CO2 equivalente.",
-    "como_interpretar": "Valores maiores indicam maior volume anual de emissões territoriais de gases de efeito estufa. O indicador permite comparar a pressão climática agregada do país ao longo do tempo e entre países, mas não inclui fluxos de uso da terra, mudança do uso da terra e florestas, que são especialmente relevantes no caso brasileiro.",
-    "metodologia": "A série EN.GHG.ALL.MT.CE.AR5 do WDI mede as emissões anuais totais dos principais gases de efeito estufa cobertos pelo Protocolo de Quioto, expressas em CO2 equivalente com potenciais de aquecimento global do IPCC AR5. A série agrega CO2, CH4, N2O e gases fluorados, excluindo LULUCF. Os dados são compilados pelo Banco Mundial a partir da base EDGAR Community GHG Database, produzida pelo Joint Research Centre da Comissão Europeia em colaboração com a International Energy Agency. Os valores foram convertidos de toneladas para milhões de toneladas de CO2 equivalente.",
-    "historico_metodologia": "O WDI substituiu a série antiga EN.ATM.GHGT.KT.CE por novos indicadores de gases de efeito estufa em Mt CO2e com métricas AR5, incluindo a série EN.GHG.ALL.MT.CE.AR5. Atualizações do EDGAR podem revisar valores históricos devido a mudanças em fatores de emissão, dados de atividade, cobertura setorial, tratamento de gases e harmonização metodológica. Para manter comparabilidade, esta série usa apenas o mesmo indicador WDI/EDGAR, excluindo LULUCF, de 1994 a 2024. Não foram incluídas projeções.",
-    "abrangencia": "Brasil, cobertura nacional territorial, emissões totais de CO2, CH4, N2O e F-gases, excluindo LULUCF, comparável internacionalmente.",
+    "descricao":
+      "Mede o total anual de emissões territoriais de gases de efeito estufa do Brasil, excluindo LULUCF, expresso em milhões de toneladas de CO2 equivalente.",
+    "como_interpretar":
+      "Valores maiores indicam maior volume anual de emissões territoriais de gases de efeito estufa. O indicador permite comparar a pressão climática agregada do país ao longo do tempo e entre países, mas não inclui fluxos de uso da terra, mudança do uso da terra e florestas, que são especialmente relevantes no caso brasileiro.",
+    "metodologia":
+      "A série EN.GHG.ALL.MT.CE.AR5 do WDI mede as emissões anuais totais dos principais gases de efeito estufa cobertos pelo Protocolo de Quioto, expressas em CO2 equivalente com potenciais de aquecimento global do IPCC AR5. A série agrega CO2, CH4, N2O e gases fluorados, excluindo LULUCF. Os dados são compilados pelo Banco Mundial a partir da base EDGAR Community GHG Database, produzida pelo Joint Research Centre da Comissão Europeia em colaboração com a International Energy Agency. Os valores foram convertidos de toneladas para milhões de toneladas de CO2 equivalente.",
+    "historico_metodologia":
+      "O WDI substituiu a série antiga EN.ATM.GHGT.KT.CE por novos indicadores de gases de efeito estufa em Mt CO2e com métricas AR5, incluindo a série EN.GHG.ALL.MT.CE.AR5. Atualizações do EDGAR podem revisar valores históricos devido a mudanças em fatores de emissão, dados de atividade, cobertura setorial, tratamento de gases e harmonização metodológica. Para manter comparabilidade, esta série usa apenas o mesmo indicador WDI/EDGAR, excluindo LULUCF, de 1994 a 2024. Não foram incluídas projeções.",
+    "abrangencia":
+      "Brasil, cobertura nacional territorial, emissões totais de CO2, CH4, N2O e F-gases, excluindo LULUCF, comparável internacionalmente.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1994,
         "nome": "Plano Real",
-        "descricao": "A estabilização econômica e a retomada da atividade coincidiram com aumento das emissões totais excluindo LULUCF."
+        "descricao":
+          "A estabilização econômica e a retomada da atividade coincidiram com aumento das emissões totais excluindo LULUCF.",
       },
       {
         "ano": 2004,
         "nome": "Expansão econômica",
-        "descricao": "O crescimento econômico, o aumento da demanda por energia e a expansão agropecuária coincidiram com aceleração das emissões."
+        "descricao":
+          "O crescimento econômico, o aumento da demanda por energia e a expansão agropecuária coincidiram com aceleração das emissões.",
       },
       {
         "ano": 2009,
         "nome": "Crise global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e coincidiu com queda das emissões totais."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e coincidiu com queda das emissões totais.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A forte recuperação econômica após a crise global coincidiu com aumento expressivo das emissões."
+        "descricao": "A forte recuperação econômica após a crise global coincidiu com aumento expressivo das emissões.",
       },
       {
         "ano": 2014,
         "nome": "Pico energético",
-        "descricao": "O maior uso de combustíveis fósseis e condições desfavoráveis para hidreletricidade contribuíram para o maior valor da série até então."
+        "descricao":
+          "O maior uso de combustíveis fósseis e condições desfavoráveis para hidreletricidade contribuíram para o maior valor da série até então.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A contração econômica brasileira coincidiu com redução das emissões totais."
+        "descricao": "A contração econômica brasileira coincidiu com redução das emissões totais.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 reduziu deslocamentos, atividade industrial e consumo de energia, coincidindo com queda das emissões."
+        "descricao":
+          "A pandemia de COVID-19 reduziu deslocamentos, atividade industrial e consumo de energia, coincidindo com queda das emissões.",
       },
       {
         "ano": 2021,
         "nome": "Reabertura",
-        "descricao": "A retomada da atividade econômica após a fase mais aguda da pandemia elevou as emissões totais."
+        "descricao": "A retomada da atividade econômica após a fase mais aguda da pandemia elevou as emissões totais.",
       },
       {
         "ano": 2023,
         "nome": "Agropecuária alta",
-        "descricao": "A manutenção de emissões elevadas de metano e óxido nitroso, especialmente associadas à agropecuária, sustentou o patamar alto das emissões totais."
+        "descricao":
+          "A manutenção de emissões elevadas de metano e óxido nitroso, especialmente associadas à agropecuária, sustentou o patamar alto das emissões totais.",
       },
       {
         "ano": 2024,
         "nome": "Novo máximo",
-        "descricao": "A série WDI/EDGAR registra o maior valor observado desde 1994 para emissões totais excluindo LULUCF."
-      }
+        "descricao":
+          "A série WDI/EDGAR registra o maior valor observado desde 1994 para emissões totais excluindo LULUCF.",
+      },
     ],
-    "comparacao_paises": "Em 2024, o Brasil aparece entre os maiores emissores mundiais em emissões totais de GEE excluindo LULUCF, atrás de China, Estados Unidos, Índia, Rússia e Indonésia na comparação WDI/EDGAR. A comparação deve considerar população, estrutura produtiva, matriz energética, peso da agropecuária e a exclusão de LULUCF.",
-    "nivel_confiabilidade": "Alto para comparação internacional anual, pois os dados são publicados no WDI com base no EDGAR/JRC/IEA e seguem metodologia padronizada. A principal limitação é que o indicador exclui LULUCF, setor central para entender as emissões brasileiras totais incluindo desmatamento e mudanças de uso da terra.",
+    "comparacao_paises":
+      "Em 2024, o Brasil aparece entre os maiores emissores mundiais em emissões totais de GEE excluindo LULUCF, atrás de China, Estados Unidos, Índia, Rússia e Indonésia na comparação WDI/EDGAR. A comparação deve considerar população, estrutura produtiva, matriz energética, peso da agropecuária e a exclusão de LULUCF.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional anual, pois os dados são publicados no WDI com base no EDGAR/JRC/IEA e seguem metodologia padronizada. A principal limitação é que o indicador exclui LULUCF, setor central para entender as emissões brasileiras totais incluindo desmatamento e mudanças de uso da terra.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Total greenhouse gas emissions excluding LULUCF (Mt CO2e) - EN.GHG.ALL.MT.CE.AR5 - Brazil",
-        "url": "https://data.worldbank.org/indicator/EN.GHG.ALL.MT.CE.AR5?locations=BR"
+        "titulo":
+          "Banco Mundial - Total greenhouse gas emissions excluding LULUCF (Mt CO2e) - EN.GHG.ALL.MT.CE.AR5 - Brazil",
+        "url": "https://data.worldbank.org/indicator/EN.GHG.ALL.MT.CE.AR5?locations=BR",
       },
       {
         "titulo": "Banco Mundial - World Development Indicators - Metadata - EN.GHG.ALL.MT.CE.AR5",
-        "url": "https://databank.worldbank.org/source/world-development-indicators"
+        "url": "https://databank.worldbank.org/source/world-development-indicators",
       },
       {
         "titulo": "EDGAR - GHG emissions of all world countries - Joint Research Centre",
-        "url": "https://edgar.jrc.ec.europa.eu/report_2025"
+        "url": "https://edgar.jrc.ec.europa.eu/report_2025",
       },
-      {
-        "titulo": "EDGAR - Community GHG Database",
-        "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2025"
-      },
+      { "titulo": "EDGAR - Community GHG Database", "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2025" },
       {
         "titulo": "Worldometer - Brazil Greenhouse Gas Emissions - EDGAR/JRC/IEA source table",
-        "url": "https://www.worldometers.info/greenhouse-gas-emissions/brazil-greenhouse-gas-emissions/"
+        "url": "https://www.worldometers.info/greenhouse-gas-emissions/brazil-greenhouse-gas-emissions/",
       },
       {
         "titulo": "Brasil - National Inventory Report 2024 - UNFCCC / MCTI",
-        "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/publicacoes/relatorios-bienais-de-transparencia-btrs/BRA_NIR_2024_ENG.pdf"
-      }
+        "url":
+          "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/publicacoes/relatorios-bienais-de-transparencia-btrs/BRA_NIR_2024_ENG.pdf",
+      },
     ],
     "dados": [
       { "ano": 1994, "valor": 752.796 },
@@ -9973,314 +10777,241 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2021, "valor": 1277.187 },
       { "ano": 2022, "valor": 1278.542 },
       { "ano": 2023, "valor": 1297.171 },
-      { "ano": 2024, "valor": 1299.18 }
-    ]
+      { "ano": 2024, "valor": 1299.18 },
+    ],
   },
   "areas_terrestres_marinhas_protegidas": {
     "label": "Áreas Terrestres E Marinhas Protegidas",
     "fonte_sigla": "WDI/UNEP-WCMC/ODS",
     "unidade": "% da área territorial total",
-    "fonte": "Banco Mundial - World Development Indicators (ER.PTD.TOTL.ZS), com dados do Protected Planet: The World Database on Protected Areas (WDPA) e World Database on Other Effective Area-based Conservation Measures (WD-OECM), UN Environment Programme World Conservation Monitoring Centre (UNEP-WCMC) e International Union for Conservation of Nature (IUCN)",
+    "fonte":
+      "Banco Mundial - World Development Indicators (ER.PTD.TOTL.ZS), com dados do Protected Planet: The World Database on Protected Areas (WDPA) e World Database on Other Effective Area-based Conservation Measures (WD-OECM), UN Environment Programme World Conservation Monitoring Centre (UNEP-WCMC) e International Union for Conservation of Nature (IUCN)",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede a proporção da área territorial total do Brasil, incluindo áreas terrestres e águas territoriais, coberta por áreas protegidas oficialmente registradas.",
-    "como_interpretar": "Valores maiores indicam maior proporção do território terrestre e marinho formalmente protegido. O indicador mede cobertura legal/geográfica de áreas protegidas, mas não mede qualidade de gestão, efetividade de fiscalização, conservação real da biodiversidade ou grau de proteção integral.",
-    "metodologia": "O indicador é calculado a partir das áreas protegidas nacionalmente designadas registradas na World Database on Protected Areas (WDPA), com localização e extensão conhecidas. O UNEP-WCMC usa análise em Sistema de Informação Geográfica (GIS) para combinar polígonos e pontos das áreas protegidas; quando só há ponto, aplica buffers circulares com base na extensão conhecida. Camadas anuais são geradas pelo ano conhecido de estabelecimento das áreas protegidas, sobrepostas aos limites terrestres, costas e águas territoriais de cada país. A cobertura terrestre e marinha protegida é dividida pela soma da área terrestre, incluindo águas interiores, e das águas territoriais, resultando no percentual da área territorial total.",
-    "historico_metodologia": "A série atual do WDI para o Brasil possui valores oficiais observados apenas de 2013 a 2025; os anos de 1994 a 2012 constam sem valor disponível na API do Banco Mundial e, por isso, não foram incluídos em dados. O Banco Mundial informa que o valor de cada ano reflete áreas protegidas reportadas até janeiro do ano seguinte; por exemplo, 2025 é calculado com base na versão de janeiro de 2026 da WDPA. A metodologia depende de registros nacionais enviados ao WDPA, limites geográficos, datas de estabelecimento e tratamento GIS, podendo sofrer revisões por atualização de áreas, correção de polígonos, resolução de discrepâncias com provedores nacionais, inclusão de OECMs e atrasos de reporte. O próprio WDI alerta que diferenças de definição, práticas de reporte, períodos de reporte e lacunas de dados limitam a comparabilidade entre países.",
-    "abrangencia": "Brasil, cobertura nacional, incluindo áreas terrestres, águas interiores e águas territoriais marinhas reconhecidas na base WDPA/WD-OECM conforme metodologia do WDI.",
+    "descricao":
+      "Mede a proporção da área territorial total do Brasil, incluindo áreas terrestres e águas territoriais, coberta por áreas protegidas oficialmente registradas.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção do território terrestre e marinho formalmente protegido. O indicador mede cobertura legal/geográfica de áreas protegidas, mas não mede qualidade de gestão, efetividade de fiscalização, conservação real da biodiversidade ou grau de proteção integral.",
+    "metodologia":
+      "O indicador é calculado a partir das áreas protegidas nacionalmente designadas registradas na World Database on Protected Areas (WDPA), com localização e extensão conhecidas. O UNEP-WCMC usa análise em Sistema de Informação Geográfica (GIS) para combinar polígonos e pontos das áreas protegidas; quando só há ponto, aplica buffers circulares com base na extensão conhecida. Camadas anuais são geradas pelo ano conhecido de estabelecimento das áreas protegidas, sobrepostas aos limites terrestres, costas e águas territoriais de cada país. A cobertura terrestre e marinha protegida é dividida pela soma da área terrestre, incluindo águas interiores, e das águas territoriais, resultando no percentual da área territorial total.",
+    "historico_metodologia":
+      "A série atual do WDI para o Brasil possui valores oficiais observados apenas de 2013 a 2025; os anos de 1994 a 2012 constam sem valor disponível na API do Banco Mundial e, por isso, não foram incluídos em dados. O Banco Mundial informa que o valor de cada ano reflete áreas protegidas reportadas até janeiro do ano seguinte; por exemplo, 2025 é calculado com base na versão de janeiro de 2026 da WDPA. A metodologia depende de registros nacionais enviados ao WDPA, limites geográficos, datas de estabelecimento e tratamento GIS, podendo sofrer revisões por atualização de áreas, correção de polígonos, resolução de discrepâncias com provedores nacionais, inclusão de OECMs e atrasos de reporte. O próprio WDI alerta que diferenças de definição, práticas de reporte, períodos de reporte e lacunas de dados limitam a comparabilidade entre países.",
+    "abrangencia":
+      "Brasil, cobertura nacional, incluindo áreas terrestres, águas interiores e águas territoriais marinhas reconhecidas na base WDPA/WD-OECM conforme metodologia do WDI.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2018,
         "nome": "UCs Marinhas",
-        "descricao": "O Brasil criou quatro grandes unidades de conservação marinhas federais em São Pedro e São Paulo e Trindade e Martim Vaz; segundo o ICMBio, as áreas somadas chegaram a 92.584.798,96 hectares, explicando o salto da série de 20,7% em 2017 para 28,6% em 2018."
+        "descricao":
+          "O Brasil criou quatro grandes unidades de conservação marinhas federais em São Pedro e São Paulo e Trindade e Martim Vaz; segundo o ICMBio, as áreas somadas chegaram a 92.584.798,96 hectares, explicando o salto da série de 20,7% em 2017 para 28,6% em 2018.",
       },
       {
         "ano": 2025,
         "nome": "WDPA 2026",
-        "descricao": "O valor de 2025 segue a regra metodológica do WDI segundo a qual o dado anual reflete as áreas protegidas reportadas até janeiro do ano seguinte, usando a versão de janeiro de 2026 da WDPA."
-      }
+        "descricao":
+          "O valor de 2025 segue a regra metodológica do WDI segundo a qual o dado anual reflete as áreas protegidas reportadas até janeiro do ano seguinte, usando a versão de janeiro de 2026 da WDPA.",
+      },
     ],
-    "comparacao_paises": "Em 2025, o Brasil registrou 29,4% da área territorial total protegida, ficando próximo da meta internacional de 30% até 2030. Na mesma série WDI, o valor brasileiro ficou acima de China (14,7%), Canadá (11,6%), Colômbia (26,4%) e Costa Rica (28,2%), próximo da Áustria (29,6%) e abaixo da Austrália (33,5%). A comparação deve ser feita com cautela, pois o WDI informa que diferenças de definições, reporte nacional, qualidade dos dados e atualização da WDPA limitam a comparabilidade entre países.",
-    "nivel_confiabilidade": "Alto para cobertura formal de áreas protegidas oficialmente registradas e comparáveis internacionalmente no WDI/WDPA. A confiabilidade é menor para inferir conservação efetiva, fiscalização ou qualidade de gestão, pois o indicador mede cobertura geográfica/legal e o próprio WDI registra limitações de reporte, lacunas e comparabilidade internacional.",
+    "comparacao_paises":
+      "Em 2025, o Brasil registrou 29,4% da área territorial total protegida, ficando próximo da meta internacional de 30% até 2030. Na mesma série WDI, o valor brasileiro ficou acima de China (14,7%), Canadá (11,6%), Colômbia (26,4%) e Costa Rica (28,2%), próximo da Áustria (29,6%) e abaixo da Austrália (33,5%). A comparação deve ser feita com cautela, pois o WDI informa que diferenças de definições, reporte nacional, qualidade dos dados e atualização da WDPA limitam a comparabilidade entre países.",
+    "nivel_confiabilidade":
+      "Alto para cobertura formal de áreas protegidas oficialmente registradas e comparáveis internacionalmente no WDI/WDPA. A confiabilidade é menor para inferir conservação efetiva, fiscalização ou qualidade de gestão, pois o indicador mede cobertura geográfica/legal e o próprio WDI registra limitações de reporte, lacunas e comparabilidade internacional.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial API - ER.PTD.TOTL.ZS - Brazil",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/ER.PTD.TOTL.ZS?format=json&per_page=2000"
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/ER.PTD.TOTL.ZS?format=json&per_page=2000",
       },
       {
         "titulo": "Banco Mundial Data - Terrestrial and marine protected areas (% of total territorial area) - Brazil",
-        "url": "https://data.worldbank.org/indicator/ER.PTD.TOTL.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/ER.PTD.TOTL.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank Metadata - ER.PTD.TOTL.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/ER.PTD.TOTL.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/ER.PTD.TOTL.ZS",
       },
-      {
-        "titulo": "Protected Planet - UNEP-WCMC / IUCN",
-        "url": "https://www.protectedplanet.net/en"
-      },
+      { "titulo": "Protected Planet - UNEP-WCMC / IUCN", "url": "https://www.protectedplanet.net/en" },
       {
         "titulo": "Ministério do Meio Ambiente - País passa a proteger 25% dos oceanos",
-        "url": "https://www.gov.br/mma/pt-br/noticias/noticia-acom-2018-03-2888"
+        "url": "https://www.gov.br/mma/pt-br/noticias/noticia-acom-2018-03-2888",
       },
       {
         "titulo": "ICMBio - Brasil cria quatro novas unidades marinhas",
-        "url": "https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/brasil-cria-quatro-novas-unidades-marinhas"
-      }
+        "url":
+          "https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/brasil-cria-quatro-novas-unidades-marinhas",
+      },
     ],
     "dados": [
-      {
-        "ano": 2013,
-        "valor": 18.9
-      },
-      {
-        "ano": 2014,
-        "valor": 20.4
-      },
-      {
-        "ano": 2015,
-        "valor": 20.4
-      },
-      {
-        "ano": 2016,
-        "valor": 20.7
-      },
-      {
-        "ano": 2017,
-        "valor": 20.7
-      },
-      {
-        "ano": 2018,
-        "valor": 28.6
-      },
-      {
-        "ano": 2019,
-        "valor": 29.2
-      },
-      {
-        "ano": 2020,
-        "valor": 29.2
-      },
-      {
-        "ano": 2021,
-        "valor": 29.3
-      },
-      {
-        "ano": 2022,
-        "valor": 29.3
-      },
-      {
-        "ano": 2023,
-        "valor": 29.5
-      },
-      {
-        "ano": 2024,
-        "valor": 29.4
-      },
-      {
-        "ano": 2025,
-        "valor": 29.4
-      }
-    ]
+      { "ano": 2013, "valor": 18.9 },
+      { "ano": 2014, "valor": 20.4 },
+      { "ano": 2015, "valor": 20.4 },
+      { "ano": 2016, "valor": 20.7 },
+      { "ano": 2017, "valor": 20.7 },
+      { "ano": 2018, "valor": 28.6 },
+      { "ano": 2019, "valor": 29.2 },
+      { "ano": 2020, "valor": 29.2 },
+      { "ano": 2021, "valor": 29.3 },
+      { "ano": 2022, "valor": 29.3 },
+      { "ano": 2023, "valor": 29.5 },
+      { "ano": 2024, "valor": 29.4 },
+      { "ano": 2025, "valor": 29.4 },
+    ],
   },
   "area_queimada_anual": {
     "label": "Área Queimada Anual",
     "fonte_sigla": "GWIS/ESA FireCCI",
     "unidade": "hectares",
-    "fonte": "European Commission Joint Research Centre - Global Wildfire Information System (GWIS), Global Yearly Burned Area by Land Cover Type / European Space Agency Climate Change Initiative Fire_cci Burned Area Products",
+    "fonte":
+      "European Commission Joint Research Centre - Global Wildfire Information System (GWIS), Global Yearly Burned Area by Land Cover Type / European Space Agency Climate Change Initiative Fire_cci Burned Area Products",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede a área anual do território brasileiro detectada como queimada por produtos globais de sensoriamento remoto.",
-    "como_interpretar": "Valores maiores indicam maior extensão territorial detectada como queimada no ano. O indicador mede área queimada, não número de focos, severidade do fogo, causa da queima, dano econômico, emissões, recorrência nem perda florestal líquida.",
-    "metodologia": "Os valores mantidos em dados correspondem à série anual de área queimada do GWIS por país, em hectares, derivada do produto MODIS MCD64A1 / Global Yearly Burned Area by Land Cover Type. O GWIS agrega pixels detectados como queimados no território selecionado e publica totais anuais por país. O produto MCD64A1 usa reflectância de superfície MODIS Terra/Aqua e informação de fogo ativo para identificar pixels queimados e a data aproximada da queima. A família ESA FireCCI/Copernicus C3S usa metodologia correlata de detecção de área queimada por sensoriamento remoto, com produtos globais em pixel e grade, mas seus períodos e versões não formam uma série anual brasileira homogênea desde 1994 até hoje.",
-    "historico_metodologia": "Não existe uma série oficial única, homogênea e consolidada do GWIS/ESA FireCCI para o Brasil de 1994 até 2026. A ESA lista FireCCILT11 para 1982-2018, explicitamente sem 1994; FireCCI51 para 2001-2020; FireCCIS311 para 2019-2024; e o Copernicus CDS combina FireCCI v5.1.1cds e C3S v1.1 em períodos parcialmente sobrepostos. Para evitar mistura de metodologias, foram mantidos apenas anos diretamente validados na série anual GWIS/MODIS disponível para o Brasil. Valores do portal GWIS Estimates/NRT, de relatórios parciais, de produtos ESA/C3S sobrepostos, de MapBiomas ou de projeções não foram misturados nesta métrica.",
-    "abrangencia": "Brasil, cobertura nacional. Série de dados incluída: 2002-2022. Anos de 1994-2001 e anos posteriores não foram incluídos por ausência de valor anual consolidado e validado na mesma série oficial escolhida.",
+    "descricao":
+      "Mede a área anual do território brasileiro detectada como queimada por produtos globais de sensoriamento remoto.",
+    "como_interpretar":
+      "Valores maiores indicam maior extensão territorial detectada como queimada no ano. O indicador mede área queimada, não número de focos, severidade do fogo, causa da queima, dano econômico, emissões, recorrência nem perda florestal líquida.",
+    "metodologia":
+      "Os valores mantidos em dados correspondem à série anual de área queimada do GWIS por país, em hectares, derivada do produto MODIS MCD64A1 / Global Yearly Burned Area by Land Cover Type. O GWIS agrega pixels detectados como queimados no território selecionado e publica totais anuais por país. O produto MCD64A1 usa reflectância de superfície MODIS Terra/Aqua e informação de fogo ativo para identificar pixels queimados e a data aproximada da queima. A família ESA FireCCI/Copernicus C3S usa metodologia correlata de detecção de área queimada por sensoriamento remoto, com produtos globais em pixel e grade, mas seus períodos e versões não formam uma série anual brasileira homogênea desde 1994 até hoje.",
+    "historico_metodologia":
+      "Não existe uma série oficial única, homogênea e consolidada do GWIS/ESA FireCCI para o Brasil de 1994 até 2026. A ESA lista FireCCILT11 para 1982-2018, explicitamente sem 1994; FireCCI51 para 2001-2020; FireCCIS311 para 2019-2024; e o Copernicus CDS combina FireCCI v5.1.1cds e C3S v1.1 em períodos parcialmente sobrepostos. Para evitar mistura de metodologias, foram mantidos apenas anos diretamente validados na série anual GWIS/MODIS disponível para o Brasil. Valores do portal GWIS Estimates/NRT, de relatórios parciais, de produtos ESA/C3S sobrepostos, de MapBiomas ou de projeções não foram misturados nesta métrica.",
+    "abrangencia":
+      "Brasil, cobertura nacional. Série de dados incluída: 2002-2022. Anos de 1994-2001 e anos posteriores não foram incluídos por ausência de valor anual consolidado e validado na mesma série oficial escolhida.",
     "periodicidade": "Anual, conforme consolidação do produto de área queimada por satélite.",
     "eventos_externos": [
       {
         "ano": 2007,
         "nome": "Ano Crítico",
-        "descricao": "Relatórios técnicos JRC/GWIS sobre queimadas na Amazônia citam 2007 entre os anos críticos de área queimada no Brasil e na Amazônia Legal."
+        "descricao":
+          "Relatórios técnicos JRC/GWIS sobre queimadas na Amazônia citam 2007 entre os anos críticos de área queimada no Brasil e na Amazônia Legal.",
       },
       {
         "ano": 2010,
         "nome": "Seca Extrema",
-        "descricao": "Relatórios técnicos JRC/GWIS citam 2010 como ano excepcionalmente seco, associado a grandes episódios de fogo e alta área queimada."
+        "descricao":
+          "Relatórios técnicos JRC/GWIS citam 2010 como ano excepcionalmente seco, associado a grandes episódios de fogo e alta área queimada.",
       },
       {
         "ano": 2019,
         "nome": "Alta Amazônica",
-        "descricao": "A ESA informou que, no Brasil, a área queimada de 2019 ficou 1,7% acima da média anual de 2001-2018 pela análise Fire CCI, com aumento muito maior em países vizinhos como a Bolívia."
-      }
+        "descricao":
+          "A ESA informou que, no Brasil, a área queimada de 2019 ficou 1,7% acima da média anual de 2001-2018 pela análise Fire CCI, com aumento muito maior em países vizinhos como a Bolívia.",
+      },
     ],
-    "comparacao_paises": "O Brasil aparece entre os países com maiores áreas queimadas absolutas por sua extensão territorial, presença de Cerrado, Amazônia, Pantanal e uso agropecuário do fogo. Comparações internacionais devem usar a mesma versão de produto e considerar que savanas e pastagens queimam de forma recorrente, enquanto florestas úmidas têm regime de fogo diferente; portanto, área queimada total não equivale diretamente a desmatamento ou destruição florestal.",
-    "nivel_confiabilidade": "Alto para comparação anual interna da série GWIS/MODIS 2002-2022, pois os valores foram extraídos de produto global oficial de área queimada por satélite e mantidos em uma única metodologia. Não é medição absoluta perfeita: o próprio método por satélite tem limitações de resolução, subdetecção de incêndios pequenos ou obscurecidos e incertezas temporais; por isso a métrica não deve ser tratada como inventário cadastral exato de todos os incêndios.",
+    "comparacao_paises":
+      "O Brasil aparece entre os países com maiores áreas queimadas absolutas por sua extensão territorial, presença de Cerrado, Amazônia, Pantanal e uso agropecuário do fogo. Comparações internacionais devem usar a mesma versão de produto e considerar que savanas e pastagens queimam de forma recorrente, enquanto florestas úmidas têm regime de fogo diferente; portanto, área queimada total não equivale diretamente a desmatamento ou destruição florestal.",
+    "nivel_confiabilidade":
+      "Alto para comparação anual interna da série GWIS/MODIS 2002-2022, pois os valores foram extraídos de produto global oficial de área queimada por satélite e mantidos em uma única metodologia. Não é medição absoluta perfeita: o próprio método por satélite tem limitações de resolução, subdetecção de incêndios pequenos ou obscurecidos e incertezas temporais; por isso a métrica não deve ser tratada como inventário cadastral exato de todos os incêndios.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "Global Wildfire Information System - Country Profiles Downloads",
-        "url": "https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads"
+        "url": "https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads",
       },
       {
         "titulo": "GWIS - Burnt Areas Technical Background",
-        "url": "https://gwis.jrc.ec.europa.eu/about-gwis/technical-background/burnt-areas"
+        "url": "https://gwis.jrc.ec.europa.eu/about-gwis/technical-background/burnt-areas",
       },
       {
         "titulo": "European Commission JRC Data Catalogue - Burnt area in the Global Wildfire Information System",
-        "url": "https://data.europa.eu/89h/e6f7a4e7-1f64-4ba9-9363-6bc864ab4666"
+        "url": "https://data.europa.eu/89h/e6f7a4e7-1f64-4ba9-9363-6bc864ab4666",
       },
       {
         "titulo": "GWIS Country Profiles User Guide",
-        "url": "https://gwis-reports.s3-eu-west-1.amazonaws.com/countriesprofile/gwis.country.profiles.pdf"
+        "url": "https://gwis-reports.s3-eu-west-1.amazonaws.com/countriesprofile/gwis.country.profiles.pdf",
       },
       {
-        "titulo": "Copernicus Climate Data Store - Fire burned area from 2001 to present derived from satellite observations",
-        "url": "https://cds.climate.copernicus.eu/datasets/satellite-fire-burned-area?tab=overview"
+        "titulo":
+          "Copernicus Climate Data Store - Fire burned area from 2001 to present derived from satellite observations",
+        "url": "https://cds.climate.copernicus.eu/datasets/satellite-fire-burned-area?tab=overview",
       },
       {
         "titulo": "ESA Climate Change Initiative - Fire Data",
-        "url": "https://climate.esa.int/en/projects/fire/data/"
+        "url": "https://climate.esa.int/en/projects/fire/data/",
       },
       {
         "titulo": "ESA - Burned area trends in Brazil similar to previous years",
-        "url": "https://www.esa.int/Applications/Observing_the_Earth/Burned_area_trends_in_Brazil_similar_to_previous_years"
+        "url":
+          "https://www.esa.int/Applications/Observing_the_Earth/Burned_area_trends_in_Brazil_similar_to_previous_years",
       },
-      {
-        "titulo": "NASA MODIS - Burned Area Product",
-        "url": "https://modis.gsfc.nasa.gov/data/dataprod/mod45.php"
-      },
+      { "titulo": "NASA MODIS - Burned Area Product", "url": "https://modis.gsfc.nasa.gov/data/dataprod/mod45.php" },
       {
         "titulo": "JRC Technical Report - Wildfires in the Amazon",
-        "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC120965/wildfires_in_the_amazon_jrc_technical_report_10.06.2020.pdf"
-      }
+        "url":
+          "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC120965/wildfires_in_the_amazon_jrc_technical_report_10.06.2020.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 2002,
-        "valor": 23154866
-      },
-      {
-        "ano": 2003,
-        "valor": 16401919
-      },
-      {
-        "ano": 2004,
-        "valor": 20515702
-      },
-      {
-        "ano": 2005,
-        "valor": 22430886
-      },
-      {
-        "ano": 2006,
-        "valor": 12513592
-      },
-      {
-        "ano": 2007,
-        "valor": 36377860
-      },
-      {
-        "ano": 2008,
-        "valor": 15241624
-      },
-      {
-        "ano": 2009,
-        "valor": 9068320
-      },
-      {
-        "ano": 2010,
-        "valor": 36320164
-      },
-      {
-        "ano": 2011,
-        "valor": 14119389
-      },
-      {
-        "ano": 2012,
-        "valor": 24064696
-      },
-      {
-        "ano": 2013,
-        "valor": 9798138
-      },
-      {
-        "ano": 2014,
-        "valor": 15792632
-      },
-      {
-        "ano": 2015,
-        "valor": 20095788
-      },
-      {
-        "ano": 2016,
-        "valor": 15860400
-      },
-      {
-        "ano": 2017,
-        "valor": 20527788
-      },
-      {
-        "ano": 2018,
-        "valor": 8679573
-      },
-      {
-        "ano": 2019,
-        "valor": 19468726
-      },
-      {
-        "ano": 2020,
-        "valor": 21549950
-      },
-      {
-        "ano": 2021,
-        "valor": 15759596
-      },
-      {
-        "ano": 2022,
-        "valor": 13526179
-      }
-    ]
+      { "ano": 2002, "valor": 23154866 },
+      { "ano": 2003, "valor": 16401919 },
+      { "ano": 2004, "valor": 20515702 },
+      { "ano": 2005, "valor": 22430886 },
+      { "ano": 2006, "valor": 12513592 },
+      { "ano": 2007, "valor": 36377860 },
+      { "ano": 2008, "valor": 15241624 },
+      { "ano": 2009, "valor": 9068320 },
+      { "ano": 2010, "valor": 36320164 },
+      { "ano": 2011, "valor": 14119389 },
+      { "ano": 2012, "valor": 24064696 },
+      { "ano": 2013, "valor": 9798138 },
+      { "ano": 2014, "valor": 15792632 },
+      { "ano": 2015, "valor": 20095788 },
+      { "ano": 2016, "valor": 15860400 },
+      { "ano": 2017, "valor": 20527788 },
+      { "ano": 2018, "valor": 8679573 },
+      { "ano": 2019, "valor": 19468726 },
+      { "ano": 2020, "valor": 21549950 },
+      { "ano": 2021, "valor": 15759596 },
+      { "ano": 2022, "valor": 13526179 },
+    ],
   },
   "retirada_agua_doce_recursos_internos": {
     "label": "Retirada De Água Doce Sobre Recursos Internos",
     "fonte_sigla": "WDI/FAO AQUASTAT",
     "unidade": "% dos recursos internos renováveis de água doce",
-    "fonte": "Banco Mundial - World Development Indicators (ER.H2O.FWTL.ZS) / FAO AQUASTAT - Global Information System on Water and Agriculture",
+    "fonte":
+      "Banco Mundial - World Development Indicators (ER.H2O.FWTL.ZS) / FAO AQUASTAT - Global Information System on Water and Agriculture",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede a retirada anual total de água doce no Brasil como proporção dos recursos internos renováveis de água doce.",
-    "como_interpretar": "Valores maiores indicam maior pressão das retiradas humanas de água doce sobre os recursos hídricos internos renováveis do país. Valores baixos indicam menor pressão agregada nacional, mas não significam ausência de escassez local, sazonal ou regional.",
-    "metodologia": "O indicador ER.H2O.FWTL.ZS do World Development Indicators mede as retiradas anuais totais de água doce, sem contar perdas por evaporação em reservatórios, como percentual dos recursos internos renováveis de água doce. As retiradas incluem usos agrícolas, industriais e domésticos/municipais. O valor é calculado a partir da razão entre a retirada anual total de água doce e os recursos internos renováveis de água doce, multiplicada por 100. Para o Brasil, os dados originais são do FAO AQUASTAT e são publicados pelo Banco Mundial no WDI.",
-    "historico_metodologia": "A série do Banco Mundial/WDI informa referência 1962-2022, fonte FAO AQUASTAT e periodicidade anual. A documentação do indicador ressalta cautela porque dados de recursos hídricos e retiradas podem vir de fontes e anos de coleta diferentes, podem ser coletados de forma intermitente e podem ocultar variações sazonais, geográficas e subnacionais. Foram mantidos apenas anos com valor numérico oficial disponível para o Brasil entre 1994 e o último ano publicado; 1994 não foi incluído porque não havia valor numérico oficial observável nas fontes consultadas.",
+    "descricao":
+      "Mede a retirada anual total de água doce no Brasil como proporção dos recursos internos renováveis de água doce.",
+    "como_interpretar":
+      "Valores maiores indicam maior pressão das retiradas humanas de água doce sobre os recursos hídricos internos renováveis do país. Valores baixos indicam menor pressão agregada nacional, mas não significam ausência de escassez local, sazonal ou regional.",
+    "metodologia":
+      "O indicador ER.H2O.FWTL.ZS do World Development Indicators mede as retiradas anuais totais de água doce, sem contar perdas por evaporação em reservatórios, como percentual dos recursos internos renováveis de água doce. As retiradas incluem usos agrícolas, industriais e domésticos/municipais. O valor é calculado a partir da razão entre a retirada anual total de água doce e os recursos internos renováveis de água doce, multiplicada por 100. Para o Brasil, os dados originais são do FAO AQUASTAT e são publicados pelo Banco Mundial no WDI.",
+    "historico_metodologia":
+      "A série do Banco Mundial/WDI informa referência 1962-2022, fonte FAO AQUASTAT e periodicidade anual. A documentação do indicador ressalta cautela porque dados de recursos hídricos e retiradas podem vir de fontes e anos de coleta diferentes, podem ser coletados de forma intermitente e podem ocultar variações sazonais, geográficas e subnacionais. Foram mantidos apenas anos com valor numérico oficial disponível para o Brasil entre 1994 e o último ano publicado; 1994 não foi incluído porque não havia valor numérico oficial observável nas fontes consultadas.",
     "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente no World Development Indicators.",
     "periodicidade": "Anual.",
     "eventos_externos": [],
-    "comparacao_paises": "O Brasil apresenta baixa retirada de água doce em relação aos seus recursos internos renováveis, em torno de 1,2% em 2022, porque possui uma das maiores bases de recursos internos renováveis de água doce do mundo. A comparação internacional deve ser feita com cautela, pois o indicador nacional agregado não capta escassez regional, sazonalidade, qualidade da água, infraestrutura de captação ou desigualdade territorial de disponibilidade hídrica.",
-    "nivel_confiabilidade": "Alto para comparação internacional agregada, pois a série é publicada pelo Banco Mundial/WDI com fonte FAO AQUASTAT. A principal ressalva metodológica é que dados de retiradas e recursos hídricos podem ter diferentes métodos de coleta, anos de referência e qualidade estatística; por isso, o indicador é mais adequado para pressão hídrica nacional agregada do que para diagnóstico local.",
+    "comparacao_paises":
+      "O Brasil apresenta baixa retirada de água doce em relação aos seus recursos internos renováveis, em torno de 1,2% em 2022, porque possui uma das maiores bases de recursos internos renováveis de água doce do mundo. A comparação internacional deve ser feita com cautela, pois o indicador nacional agregado não capta escassez regional, sazonalidade, qualidade da água, infraestrutura de captação ou desigualdade territorial de disponibilidade hídrica.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional agregada, pois a série é publicada pelo Banco Mundial/WDI com fonte FAO AQUASTAT. A principal ressalva metodológica é que dados de retiradas e recursos hídricos podem ter diferentes métodos de coleta, anos de referência e qualidade estatística; por isso, o indicador é mais adequado para pressão hídrica nacional agregada do que para diagnóstico local.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Annual freshwater withdrawals, total (% of internal resources) - Brazil - ER.H2O.FWTL.ZS",
-        "url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.ZS?locations=BR"
+        "titulo":
+          "Banco Mundial - Annual freshwater withdrawals, total (% of internal resources) - Brazil - ER.H2O.FWTL.ZS",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata - ER.H2O.FWTL.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/ER.H2O.FWTL.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/ER.H2O.FWTL.ZS",
       },
       {
-        "titulo": "Banco Mundial - Annual freshwater withdrawals, total (billion cubic meters) - Brazil - ER.H2O.FWTL.K3",
-        "url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.K3?locations=BR"
+        "titulo":
+          "Banco Mundial - Annual freshwater withdrawals, total (billion cubic meters) - Brazil - ER.H2O.FWTL.K3",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.K3?locations=BR",
       },
       {
-        "titulo": "Banco Mundial - Renewable internal freshwater resources, total (billion cubic meters) - Brazil - ER.H2O.INTR.K3",
-        "url": "https://data.worldbank.org/indicator/ER.H2O.INTR.K3?locations=BR"
+        "titulo":
+          "Banco Mundial - Renewable internal freshwater resources, total (billion cubic meters) - Brazil - ER.H2O.INTR.K3",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.INTR.K3?locations=BR",
       },
       {
         "titulo": "FAO AQUASTAT - Global Information System on Water and Agriculture",
-        "url": "https://data.apps.fao.org/aquastat/"
-      }
+        "url": "https://data.apps.fao.org/aquastat/",
+      },
     ],
     "dados": [
       { "ano": 1995, "valor": 0.93 },
@@ -10289,13 +11020,13 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 1998, "valor": 0.98 },
       { "ano": 1999, "valor": 0.99 },
       { "ano": 2000, "valor": 0.99 },
-      { "ano": 2001, "valor": 1.00 },
-      { "ano": 2002, "valor": 1.00 },
+      { "ano": 2001, "valor": 1.0 },
+      { "ano": 2002, "valor": 1.0 },
       { "ano": 2003, "valor": 1.01 },
       { "ano": 2004, "valor": 1.01 },
       { "ano": 2005, "valor": 1.02 },
       { "ano": 2006, "valor": 1.03 },
-      { "ano": 2007, "valor": 1.10 },
+      { "ano": 2007, "valor": 1.1 },
       { "ano": 2008, "valor": 1.17 },
       { "ano": 2009, "valor": 1.25 },
       { "ano": 2010, "valor": 1.32 },
@@ -10310,82 +11041,94 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2019, "valor": 1.19 },
       { "ano": 2020, "valor": 1.18 },
       { "ano": 2021, "valor": 1.19 },
-      { "ano": 2022, "valor": 1.20 }
-    ]
+      { "ano": 2022, "valor": 1.2 },
+    ],
   },
   "area_florestal_percentual_territorio": {
     "label": "Área Florestal Do Território",
     "fonte_sigla": "WDI/FAO",
     "unidade": "% da área terrestre",
-    "fonte": "Banco Mundial - World Development Indicators (AG.LND.FRST.ZS) / FAOSTAT - Food and Agriculture Organization of the United Nations",
+    "fonte":
+      "Banco Mundial - World Development Indicators (AG.LND.FRST.ZS) / FAOSTAT - Food and Agriculture Organization of the United Nations",
     "cat": "Meio Ambiente",
     "padrao": false,
     "descricao": "Mede a proporção da área terrestre do Brasil coberta por florestas naturais ou plantadas.",
-    "como_interpretar": "Valores maiores indicam maior proporção do território terrestre coberta por florestas. A queda do indicador indica redução relativa da área florestal no território, mas não distingue diretamente qualidade ecológica, biodiversidade, degradação florestal, floresta primária, floresta secundária ou plantios comerciais.",
-    "metodologia": "O indicador corresponde à área florestal dividida pela área terrestre total do país, multiplicada por 100. O Banco Mundial define área florestal como terra sob povoamentos naturais ou plantados de árvores com pelo menos 5 metros de altura in situ, produtivos ou não. A definição exclui árvores em sistemas de produção agrícola, como pomares e sistemas agroflorestais, e árvores em parques e jardins urbanos. A fonte primária é a FAOSTAT/FAO, harmonizada no World Development Indicators do Banco Mundial. Foram mantidos apenas anos com valor anual publicado na série WDI para o Brasil.",
-    "historico_metodologia": "A FAO coleta e harmoniza dados florestais por meio do Global Forest Resources Assessment (FRA), historicamente produzido em ciclos plurianuais, com séries anuais publicadas posteriormente em bases estatísticas internacionais. Mudanças podem ocorrer por revisões nacionais, atualização de inventários florestais, imagens de satélite, reclassificações de uso da terra e ajustes metodológicos entre edições do FRA. A série WDI atual cobre 1990 a 2023; anos posteriores não foram incluídos por não haver valor oficial publicado pelo Banco Mundial para este indicador no momento da validação.",
-    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente com demais países e agregados publicados pelo Banco Mundial.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção do território terrestre coberta por florestas. A queda do indicador indica redução relativa da área florestal no território, mas não distingue diretamente qualidade ecológica, biodiversidade, degradação florestal, floresta primária, floresta secundária ou plantios comerciais.",
+    "metodologia":
+      "O indicador corresponde à área florestal dividida pela área terrestre total do país, multiplicada por 100. O Banco Mundial define área florestal como terra sob povoamentos naturais ou plantados de árvores com pelo menos 5 metros de altura in situ, produtivos ou não. A definição exclui árvores em sistemas de produção agrícola, como pomares e sistemas agroflorestais, e árvores em parques e jardins urbanos. A fonte primária é a FAOSTAT/FAO, harmonizada no World Development Indicators do Banco Mundial. Foram mantidos apenas anos com valor anual publicado na série WDI para o Brasil.",
+    "historico_metodologia":
+      "A FAO coleta e harmoniza dados florestais por meio do Global Forest Resources Assessment (FRA), historicamente produzido em ciclos plurianuais, com séries anuais publicadas posteriormente em bases estatísticas internacionais. Mudanças podem ocorrer por revisões nacionais, atualização de inventários florestais, imagens de satélite, reclassificações de uso da terra e ajustes metodológicos entre edições do FRA. A série WDI atual cobre 1990 a 2023; anos posteriores não foram incluídos por não haver valor oficial publicado pelo Banco Mundial para este indicador no momento da validação.",
+    "abrangencia":
+      "Brasil, cobertura nacional, comparável internacionalmente com demais países e agregados publicados pelo Banco Mundial.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "Alta Amazônica",
-        "descricao": "O período de meados dos anos 1990 coincide com altas taxas de desmatamento na Amazônia Legal, contribuindo para a redução da proporção florestal nacional."
+        "descricao":
+          "O período de meados dos anos 1990 coincide com altas taxas de desmatamento na Amazônia Legal, contribuindo para a redução da proporção florestal nacional.",
       },
       {
         "ano": 2004,
         "nome": "Pico Desmatamento",
-        "descricao": "O Brasil registrou forte pressão de desmatamento na Amazônia no início dos anos 2000, antes da queda associada a políticas de controle posteriores."
+        "descricao":
+          "O Brasil registrou forte pressão de desmatamento na Amazônia no início dos anos 2000, antes da queda associada a políticas de controle posteriores.",
       },
       {
         "ano": 2006,
         "nome": "Controle Ambiental",
-        "descricao": "A partir da metade dos anos 2000, políticas de monitoramento, fiscalização e criação de áreas protegidas coincidiram com desaceleração do desmatamento amazônico."
+        "descricao":
+          "A partir da metade dos anos 2000, políticas de monitoramento, fiscalização e criação de áreas protegidas coincidiram com desaceleração do desmatamento amazônico.",
       },
       {
         "ano": 2012,
         "nome": "Código Florestal",
-        "descricao": "A revisão do Código Florestal brasileiro alterou o marco regulatório de proteção e regularização ambiental rural, com possíveis efeitos indiretos sobre uso da terra."
+        "descricao":
+          "A revisão do Código Florestal brasileiro alterou o marco regulatório de proteção e regularização ambiental rural, com possíveis efeitos indiretos sobre uso da terra.",
       },
       {
         "ano": 2019,
         "nome": "Alta Recente",
-        "descricao": "O aumento do desmatamento validado por sistemas nacionais e independentes a partir de 2019 coincide com nova aceleração da perda de vegetação nativa."
+        "descricao":
+          "O aumento do desmatamento validado por sistemas nacionais e independentes a partir de 2019 coincide com nova aceleração da perda de vegetação nativa.",
       },
       {
         "ano": 2022,
         "nome": "Perda Florestal",
-        "descricao": "Dados nacionais e de monitoramento territorial mostram perda relevante de vegetação natural e florestal no Brasil até 2022, especialmente na Amazônia e no Cerrado."
-      }
+        "descricao":
+          "Dados nacionais e de monitoramento territorial mostram perda relevante de vegetação natural e florestal no Brasil até 2022, especialmente na Amazônia e no Cerrado.",
+      },
     ],
-    "comparacao_paises": "O Brasil mantém uma das maiores áreas florestais absolutas do mundo e uma proporção florestal superior à média mundial, mas sua participação percentual no território vem caindo desde 1990. Em termos absolutos, o país permanece entre os principais detentores de florestas do planeta, ao lado de Rússia, Canadá, Estados Unidos e China.",
-    "nivel_confiabilidade": "Alto para comparação internacional e série histórica anual padronizada, pois usa WDI/FAOSTAT com metodologia internacionalmente harmonizada. A principal ressalva é que dados florestais podem sofrer revisões retroativas e nem sempre capturam degradação, qualidade ecológica ou diferenças entre floresta natural e plantada.",
+    "comparacao_paises":
+      "O Brasil mantém uma das maiores áreas florestais absolutas do mundo e uma proporção florestal superior à média mundial, mas sua participação percentual no território vem caindo desde 1990. Em termos absolutos, o país permanece entre os principais detentores de florestas do planeta, ao lado de Rússia, Canadá, Estados Unidos e China.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional e série histórica anual padronizada, pois usa WDI/FAOSTAT com metodologia internacionalmente harmonizada. A principal ressalva é que dados florestais podem sofrer revisões retroativas e nem sempre capturam degradação, qualidade ecológica ou diferenças entre floresta natural e plantada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Forest area (% of land area) - Brazil - AG.LND.FRST.ZS",
-        "url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata - AG.LND.FRST.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/AG.LND.FRST.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/AG.LND.FRST.ZS",
       },
-      {
-        "titulo": "FAOSTAT - Land Use",
-        "url": "https://www.fao.org/faostat/en/#data/RL"
-      },
+      { "titulo": "FAOSTAT - Land Use", "url": "https://www.fao.org/faostat/en/#data/RL" },
       {
         "titulo": "World Bank Data360 - Forest area (% of land area)",
-        "url": "https://data360.worldbank.org/en/indicator/WB_WDI_AG_LND_FRST_ZS"
+        "url": "https://data360.worldbank.org/en/indicator/WB_WDI_AG_LND_FRST_ZS",
       },
       {
         "titulo": "Serviço Florestal Brasileiro - Extent of forests in Brazil",
-        "url": "https://publicacoes-snif.florestal.gov.br/florestasdobrasil/en/forest-resources/extent-of-forests-in-brazil/"
+        "url":
+          "https://publicacoes-snif.florestal.gov.br/florestasdobrasil/en/forest-resources/extent-of-forests-in-brazil/",
       },
       {
         "titulo": "IBGE - Land use and cover in Brazil, 2000-2020",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/35174-between-2000-and-2020-agricultural-area-grew-230-thousand-km-natural-vegetation-reduced-513-thousand-km-in-brazil"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/35174-between-2000-and-2020-agricultural-area-grew-230-thousand-km-natural-vegetation-reduced-513-thousand-km-in-brazil",
+      },
     ],
     "dados": [
       { "ano": 1994, "valor": 68.65 },
@@ -10417,77 +11160,88 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2020, "valor": 59.42 },
       { "ano": 2021, "valor": 59.27 },
       { "ano": 2022, "valor": 59.128 },
-      { "ano": 2023, "valor": 58.982 }
-    ]
+      { "ano": 2023, "valor": 58.982 },
+    ],
   },
   "indice_esgoto_tratado_agua_consumida_in046": {
     "label": "Índice De Esgoto Tratado Referido À Água Consumida",
     "fonte_sigla": "SNIS/SINISA",
     "unidade": "% da água consumida",
-    "fonte": "Ministério das Cidades - Sistema Nacional de Informações sobre Saneamento / Sistema Nacional de Informações em Saneamento Básico",
+    "fonte":
+      "Ministério das Cidades - Sistema Nacional de Informações sobre Saneamento / Sistema Nacional de Informações em Saneamento Básico",
     "cat": "Meio Ambiente",
     "padrao": false,
     "descricao": "Mede o percentual do volume de esgoto tratado em relação ao volume de água consumida no Brasil.",
-    "como_interpretar": "Quanto maior o valor, maior a proporção de esgoto tratado em relação à água consumida. O indicador não mede diretamente a população atendida por rede de esgoto nem a qualidade final do tratamento; ele compara volumes operacionais declarados pelos prestadores. Valores altos podem ocorrer mesmo com baixa coleta, caso a maior parte do esgoto coletado seja tratada.",
-    "metodologia": "No SNIS, o indicador IN046 é calculado pela fórmula ((ES006 + ES015) / (AG010 - AG019)) x 100, em que ES006 é o volume de esgotos tratado, ES015 é o volume de esgoto bruto exportado tratado nas instalações do importador, AG010 é o volume de água consumido e AG019 é o volume de água tratada exportado. No SINISA, o indicador correspondente é IES2003, calculado por ((GTE1014 + GTE1013) / GTA1211) x 100, mantendo o mesmo conceito operacional: volume de esgoto tratado e exportado para tratamento em relação ao volume de água consumida.",
-    "historico_metodologia": "A série oficial de água e esgoto do SNIS começa em 1995; não há valor oficial para 1994. Desde a coleta de dados de 2009, o SNIS passou a incluir ES015 no numerador do IN046. Em 2023, o SNIS encerrou suas atividades e o SINISA passou a dar continuidade ao sistema, com nova codificação do indicador como IES2003. A fórmula conceitual foi preservada, mas a transição SNIS-SINISA, a padronização do preenchimento e alterações na forma de declaração de importação/exportação de água e esgoto podem afetar a comparabilidade fina entre anos.",
-    "abrangencia": "Brasil, cobertura nacional, com dados declarados por prestadores de serviços e consolidados pelo sistema federal de informações sobre saneamento.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a proporção de esgoto tratado em relação à água consumida. O indicador não mede diretamente a população atendida por rede de esgoto nem a qualidade final do tratamento; ele compara volumes operacionais declarados pelos prestadores. Valores altos podem ocorrer mesmo com baixa coleta, caso a maior parte do esgoto coletado seja tratada.",
+    "metodologia":
+      "No SNIS, o indicador IN046 é calculado pela fórmula ((ES006 + ES015) / (AG010 - AG019)) x 100, em que ES006 é o volume de esgotos tratado, ES015 é o volume de esgoto bruto exportado tratado nas instalações do importador, AG010 é o volume de água consumido e AG019 é o volume de água tratada exportado. No SINISA, o indicador correspondente é IES2003, calculado por ((GTE1014 + GTE1013) / GTA1211) x 100, mantendo o mesmo conceito operacional: volume de esgoto tratado e exportado para tratamento em relação ao volume de água consumida.",
+    "historico_metodologia":
+      "A série oficial de água e esgoto do SNIS começa em 1995; não há valor oficial para 1994. Desde a coleta de dados de 2009, o SNIS passou a incluir ES015 no numerador do IN046. Em 2023, o SNIS encerrou suas atividades e o SINISA passou a dar continuidade ao sistema, com nova codificação do indicador como IES2003. A fórmula conceitual foi preservada, mas a transição SNIS-SINISA, a padronização do preenchimento e alterações na forma de declaração de importação/exportação de água e esgoto podem afetar a comparabilidade fina entre anos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados declarados por prestadores de serviços e consolidados pelo sistema federal de informações sobre saneamento.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "Início SNIS",
-        "descricao": "Primeiro ano de referência disponível para a série histórica oficial de água e esgoto do SNIS."
+        "descricao": "Primeiro ano de referência disponível para a série histórica oficial de água e esgoto do SNIS.",
       },
       {
         "ano": 2009,
         "nome": "ES015 Incluído",
-        "descricao": "A partir da coleta de 2009, o volume de esgoto bruto exportado tratado nas instalações do importador passou a compor o numerador do IN046."
+        "descricao":
+          "A partir da coleta de 2009, o volume de esgoto bruto exportado tratado nas instalações do importador passou a compor o numerador do IN046.",
       },
       {
         "ano": 2019,
         "nome": "AG019 Sabesp",
-        "descricao": "O diagnóstico do SNIS 2019 aponta que mudanças de declaração do volume de água tratada exportado pela SABESP, especialmente envolvendo Guarulhos e Santo André, impactaram o índice nacional."
+        "descricao":
+          "O diagnóstico do SNIS 2019 aponta que mudanças de declaração do volume de água tratada exportado pela SABESP, especialmente envolvendo Guarulhos e Santo André, impactaram o índice nacional.",
       },
       {
         "ano": 2019,
         "nome": "AG019 Saneago",
-        "descricao": "O diagnóstico do SNIS 2019 também aponta que o preenchimento do AG019 pela SANEAGO afetou parcialmente a variação do indicador no Centro-Oeste."
+        "descricao":
+          "O diagnóstico do SNIS 2019 também aponta que o preenchimento do AG019 pela SANEAGO afetou parcialmente a variação do indicador no Centro-Oeste.",
       },
       {
         "ano": 2023,
         "nome": "Transição SINISA",
-        "descricao": "O SNIS encerrou suas atividades e o SINISA passou a dar continuidade ao sistema, com nova codificação do indicador correspondente como IES2003."
-      }
+        "descricao":
+          "O SNIS encerrou suas atividades e o SINISA passou a dar continuidade ao sistema, com nova codificação do indicador correspondente como IES2003.",
+      },
     ],
-    "comparacao_paises": "Este indicador é adequado para acompanhar o Brasil internamente, mas não é o melhor para comparação internacional direta, pois depende da estrutura de declaração operacional do SNIS/SINISA. Para comparação entre países, o indicador mais comparável é o de saneamento gerido com segurança do OMS/UNICEF JMP, embora ele use metodologia diferente.",
-    "nivel_confiabilidade": "Alto para acompanhamento nacional oficial do setor de saneamento no Brasil, pois os dados vêm do SNIS/SINISA do Ministério das Cidades. A principal ressalva é que os dados são declaratórios, dependem da consistência dos prestadores e sofreram mudanças de escopo/codificação ao longo do tempo, especialmente em 2009 e na transição para o SINISA.",
+    "comparacao_paises":
+      "Este indicador é adequado para acompanhar o Brasil internamente, mas não é o melhor para comparação internacional direta, pois depende da estrutura de declaração operacional do SNIS/SINISA. Para comparação entre países, o indicador mais comparável é o de saneamento gerido com segurança do OMS/UNICEF JMP, embora ele use metodologia diferente.",
+    "nivel_confiabilidade":
+      "Alto para acompanhamento nacional oficial do setor de saneamento no Brasil, pois os dados vêm do SNIS/SINISA do Ministério das Cidades. A principal ressalva é que os dados são declaratórios, dependem da consistência dos prestadores e sofreram mudanças de escopo/codificação ao longo do tempo, especialmente em 2009 e na transição para o SINISA.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
-      {
-        "titulo": "SNIS - Série Histórica",
-        "url": "https://app4.cidades.gov.br/serieHistorica/"
-      },
+      { "titulo": "SNIS - Série Histórica", "url": "https://app4.cidades.gov.br/serieHistorica/" },
       {
         "titulo": "Ministério das Cidades - SNIS",
-        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis"
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis",
       },
       {
         "titulo": "Ministério das Cidades - SINISA",
-        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa"
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa",
       },
       {
         "titulo": "Glossário de Indicadores SNIS Água e Esgotos 2022",
-        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/Glossario_Indicadores_AE2022.pdf"
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/Glossario_Indicadores_AE2022.pdf",
       },
       {
         "titulo": "Relatório SINISA Esgotamento Sanitário 2024 - Ano de Referência 2023",
-        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/RELATORIO_SINISA_ESGOTAMENTO_SANITARIO_2024_v2.pdf"
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/RELATORIO_SINISA_ESGOTAMENTO_SANITARIO_2024_v2.pdf",
       },
       {
         "titulo": "Indicadores SINISA Esgotamento Sanitário 2024",
-        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/arquivos/INDICADORES_SINISA_ESGOTAMENTOSANITRIO_2024_V2.pdf"
-      }
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/arquivos/INDICADORES_SINISA_ESGOTAMENTOSANITRIO_2024_V2.pdf",
+      },
     ],
     "dados": [
       { "ano": 1995, "valor": 18.1 },
@@ -10518,431 +11272,283 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2020, "valor": 50.8 },
       { "ano": 2021, "valor": 51.2 },
       { "ano": 2022, "valor": 52.2 },
-      { "ano": 2023, "valor": 49.4 }
-    ]
+      { "ano": 2023, "valor": 49.4 },
+    ],
   },
   "intensidade_carbono_pib": {
     "label": "Intensidade de Carbono do PIB",
     "fonte_sigla": "WDI/JRC/IEA/OCDE",
     "unidade": "kg CO2e por US$ PPC de 2021 do PIB",
-    "fonte": "Banco Mundial - World Development Indicators (EN.GHG.CO2.RT.GDP.PP.KD), com dados do EDGAR Community GHG Database, Joint Research Centre (JRC) - European Commission, e International Energy Agency (IEA)",
+    "fonte":
+      "Banco Mundial - World Development Indicators (EN.GHG.CO2.RT.GDP.PP.KD), com dados do EDGAR Community GHG Database, Joint Research Centre (JRC) - European Commission, e International Energy Agency (IEA)",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede a quantidade de emissões de CO2e associada à produção econômica, expressa em quilogramas de CO2e por dólar internacional de PIB em PPC constante de 2021.",
-    "como_interpretar": "Valores menores indicam que o país gera menos emissões de carbono para cada unidade de PIB produzido, sugerindo uma economia relativamente menos intensiva em carbono. Valores maiores indicam maior intensidade de emissões por unidade de produção econômica. O indicador não mede emissões totais, emissões per capita, desmatamento líquido, qualidade ambiental geral nem responsabilidade histórica acumulada.",
-    "metodologia": "O indicador do WDI calcula as emissões anuais de carbono em CO2e, excluindo LULUCF, por unidade de PIB medido em dólares internacionais PPC constantes de 2021. A série combina dados do EDGAR Community GHG Database, do Joint Research Centre da Comissão Europeia, e da International Energy Agency, padronizados pelo Banco Mundial no World Development Indicators. A referência metodológica equivalente usada pela OCDE mede a intensidade de CO2 do PIB como emissões de CO2 de base produtiva por unidade de PIB real em PPC, com emissões obtidas da base de emissões da IEA.",
-    "historico_metodologia": "A série atual do Banco Mundial usa base de PIB em PPC de 2021 e fontes ambientais atualizadas do EDGAR/JRC e da IEA, com publicação de referência em 2024. Séries anteriores de intensidade de carbono no WDI usavam bases diferentes, como dólares constantes de 2015, o que pode alterar níveis e comparabilidade direta com versões antigas. Revisões podem ocorrer quando o EDGAR/JRC, a IEA, as contas nacionais, os deflatores de PIB ou as paridades de poder de compra são atualizados. Foram mantidos apenas anos com observação oficial anual disponível no WDI entre 1994 e 2024; anos posteriores sem dado consolidado não foram incluídos.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional no World Development Indicators. O indicador considera emissões de CO2e excluindo uso da terra, mudança de uso da terra e florestas (LULUCF), divididas pelo PIB em PPC constante de 2021.",
+    "descricao":
+      "Mede a quantidade de emissões de CO2e associada à produção econômica, expressa em quilogramas de CO2e por dólar internacional de PIB em PPC constante de 2021.",
+    "como_interpretar":
+      "Valores menores indicam que o país gera menos emissões de carbono para cada unidade de PIB produzido, sugerindo uma economia relativamente menos intensiva em carbono. Valores maiores indicam maior intensidade de emissões por unidade de produção econômica. O indicador não mede emissões totais, emissões per capita, desmatamento líquido, qualidade ambiental geral nem responsabilidade histórica acumulada.",
+    "metodologia":
+      "O indicador do WDI calcula as emissões anuais de carbono em CO2e, excluindo LULUCF, por unidade de PIB medido em dólares internacionais PPC constantes de 2021. A série combina dados do EDGAR Community GHG Database, do Joint Research Centre da Comissão Europeia, e da International Energy Agency, padronizados pelo Banco Mundial no World Development Indicators. A referência metodológica equivalente usada pela OCDE mede a intensidade de CO2 do PIB como emissões de CO2 de base produtiva por unidade de PIB real em PPC, com emissões obtidas da base de emissões da IEA.",
+    "historico_metodologia":
+      "A série atual do Banco Mundial usa base de PIB em PPC de 2021 e fontes ambientais atualizadas do EDGAR/JRC e da IEA, com publicação de referência em 2024. Séries anteriores de intensidade de carbono no WDI usavam bases diferentes, como dólares constantes de 2015, o que pode alterar níveis e comparabilidade direta com versões antigas. Revisões podem ocorrer quando o EDGAR/JRC, a IEA, as contas nacionais, os deflatores de PIB ou as paridades de poder de compra são atualizados. Foram mantidos apenas anos com observação oficial anual disponível no WDI entre 1994 e 2024; anos posteriores sem dado consolidado não foram incluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional no World Development Indicators. O indicador considera emissões de CO2e excluindo uso da terra, mudança de uso da terra e florestas (LULUCF), divididas pelo PIB em PPC constante de 2021.",
     "periodicidade": "Anual.",
     "eventos_externos": [],
-    "comparacao_paises": "O indicador é comparável internacionalmente no WDI porque usa a mesma unidade, a mesma base de PPC de 2021 e fontes harmonizadas. O Brasil tende a apresentar intensidade de carbono do PIB relativamente baixa em comparação com economias altamente dependentes de carvão e combustíveis fósseis, mas a comparação deve considerar matriz energética, estrutura produtiva, peso da indústria, nível de renda, metodologia de PPC e exclusão de LULUCF.",
-    "nivel_confiabilidade": "Muito alto para a existência, definição e comparabilidade da série oficial WDI. Alto para os valores anuais apresentados, mantidos apenas até o último ano consolidado disponível, 2024. A principal ressalva é que inventários de emissões, PIB em PPC e séries ambientais internacionais podem ser revisados retroativamente por atualizações do EDGAR/JRC, da IEA, das contas nacionais e das paridades de poder de compra.",
+    "comparacao_paises":
+      "O indicador é comparável internacionalmente no WDI porque usa a mesma unidade, a mesma base de PPC de 2021 e fontes harmonizadas. O Brasil tende a apresentar intensidade de carbono do PIB relativamente baixa em comparação com economias altamente dependentes de carvão e combustíveis fósseis, mas a comparação deve considerar matriz energética, estrutura produtiva, peso da indústria, nível de renda, metodologia de PPC e exclusão de LULUCF.",
+    "nivel_confiabilidade":
+      "Muito alto para a existência, definição e comparabilidade da série oficial WDI. Alto para os valores anuais apresentados, mantidos apenas até o último ano consolidado disponível, 2024. A principal ressalva é que inventários de emissões, PIB em PPC e séries ambientais internacionais podem ser revisados retroativamente por atualizações do EDGAR/JRC, da IEA, das contas nacionais e das paridades de poder de compra.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP) - Brazil - EN.GHG.CO2.RT.GDP.PP.KD",
-        "url": "https://data.worldbank.org/indicator/EN.GHG.CO2.RT.GDP.PP.KD?locations=BR"
+        "titulo":
+          "Banco Mundial - Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP) - Brazil - EN.GHG.CO2.RT.GDP.PP.KD",
+        "url": "https://data.worldbank.org/indicator/EN.GHG.CO2.RT.GDP.PP.KD?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - World Development Indicators - EN.GHG.CO2.RT.GDP.PP.KD",
-        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/EN.GHG.CO2.RT.GDP.PP.KD"
+        "url": "https://databank.worldbank.org/source/world-development-indicators/Series/EN.GHG.CO2.RT.GDP.PP.KD",
       },
-      {
-        "titulo": "Banco Mundial Data360 API",
-        "url": "https://data360.worldbank.org/en/api"
-      },
-      {
-        "titulo": "EDGAR/JRC - Community GHG Database 2024",
-        "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2024"
-      },
+      { "titulo": "Banco Mundial Data360 API", "url": "https://data360.worldbank.org/en/api" },
+      { "titulo": "EDGAR/JRC - Community GHG Database 2024", "url": "https://edgar.jrc.ec.europa.eu/dataset_ghg2024" },
       {
         "titulo": "OCDE - Green Growth Indicators: CO2 intensity of GDP",
-        "url": "https://stats.oecd.org/wbos/fileview2.aspx?IDFile=7ad102dd-e16d-4da0-a20c-624582b9984e"
-      }
+        "url": "https://stats.oecd.org/wbos/fileview2.aspx?IDFile=7ad102dd-e16d-4da0-a20c-624582b9984e",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 0.13
-      },
-      {
-        "ano": 1995,
-        "valor": 0.13
-      },
-      {
-        "ano": 1996,
-        "valor": 0.13
-      },
-      {
-        "ano": 1997,
-        "valor": 0.14
-      },
-      {
-        "ano": 1998,
-        "valor": 0.13
-      },
-      {
-        "ano": 1999,
-        "valor": 0.13
-      },
-      {
-        "ano": 2000,
-        "valor": 0.13
-      },
-      {
-        "ano": 2001,
-        "valor": 0.13
-      },
-      {
-        "ano": 2002,
-        "valor": 0.13
-      },
-      {
-        "ano": 2003,
-        "valor": 0.13
-      },
-      {
-        "ano": 2004,
-        "valor": 0.13
-      },
-      {
-        "ano": 2005,
-        "valor": 0.13
-      },
-      {
-        "ano": 2006,
-        "valor": 0.13
-      },
-      {
-        "ano": 2007,
-        "valor": 0.13
-      },
-      {
-        "ano": 2008,
-        "valor": 0.13
-      },
-      {
-        "ano": 2009,
-        "valor": 0.13
-      },
-      {
-        "ano": 2010,
-        "valor": 0.13
-      },
-      {
-        "ano": 2011,
-        "valor": 0.13
-      },
-      {
-        "ano": 2012,
-        "valor": 0.13
-      },
-      {
-        "ano": 2013,
-        "valor": 0.13
-      },
-      {
-        "ano": 2014,
-        "valor": 0.13
-      },
-      {
-        "ano": 2015,
-        "valor": 0.13
-      },
-      {
-        "ano": 2016,
-        "valor": 0.13
-      },
-      {
-        "ano": 2017,
-        "valor": 0.12
-      },
-      {
-        "ano": 2018,
-        "valor": 0.12
-      },
-      {
-        "ano": 2019,
-        "valor": 0.12
-      },
-      {
-        "ano": 2020,
-        "valor": 0.12
-      },
-      {
-        "ano": 2021,
-        "valor": 0.12
-      },
-      {
-        "ano": 2022,
-        "valor": 0.12
-      },
-      {
-        "ano": 2023,
-        "valor": 0.12
-      },
-      {
-        "ano": 2024,
-        "valor": 0.12
-      }
-    ]
+      { "ano": 1994, "valor": 0.13 },
+      { "ano": 1995, "valor": 0.13 },
+      { "ano": 1996, "valor": 0.13 },
+      { "ano": 1997, "valor": 0.14 },
+      { "ano": 1998, "valor": 0.13 },
+      { "ano": 1999, "valor": 0.13 },
+      { "ano": 2000, "valor": 0.13 },
+      { "ano": 2001, "valor": 0.13 },
+      { "ano": 2002, "valor": 0.13 },
+      { "ano": 2003, "valor": 0.13 },
+      { "ano": 2004, "valor": 0.13 },
+      { "ano": 2005, "valor": 0.13 },
+      { "ano": 2006, "valor": 0.13 },
+      { "ano": 2007, "valor": 0.13 },
+      { "ano": 2008, "valor": 0.13 },
+      { "ano": 2009, "valor": 0.13 },
+      { "ano": 2010, "valor": 0.13 },
+      { "ano": 2011, "valor": 0.13 },
+      { "ano": 2012, "valor": 0.13 },
+      { "ano": 2013, "valor": 0.13 },
+      { "ano": 2014, "valor": 0.13 },
+      { "ano": 2015, "valor": 0.13 },
+      { "ano": 2016, "valor": 0.13 },
+      { "ano": 2017, "valor": 0.12 },
+      { "ano": 2018, "valor": 0.12 },
+      { "ano": 2019, "valor": 0.12 },
+      { "ano": 2020, "valor": 0.12 },
+      { "ano": 2021, "valor": 0.12 },
+      { "ano": 2022, "valor": 0.12 },
+      { "ano": 2023, "valor": 0.12 },
+      { "ano": 2024, "valor": 0.12 },
+    ],
   },
   "participacao_energia_renovavel_consumo_final": {
     "label": "Participação De Energia Renovável No Consumo Final",
     "fonte_sigla": "WDI/IEA/ODS",
     "unidade": "% do consumo final total de energia",
-    "fonte": "Banco Mundial - World Development Indicators (EG.FEC.RNEW.ZS), com fonte original IEA Energy Statistics Data Browser; indicador ODS 7.2.1",
+    "fonte":
+      "Banco Mundial - World Development Indicators (EG.FEC.RNEW.ZS), com fonte original IEA Energy Statistics Data Browser; indicador ODS 7.2.1",
     "cat": "Meio Ambiente",
     "padrao": false,
     "descricao": "Mede a participação da energia renovável no consumo final total de energia do Brasil.",
-    "como_interpretar": "Valores maiores indicam maior participação de fontes renováveis no consumo final de energia. O indicador não mede apenas eletricidade: inclui o consumo final de energia em transportes, indústria, residências e outros setores. Também não mede emissões diretamente, segurança energética, custo da energia ou qualidade ambiental das fontes renováveis.",
-    "metodologia": "O indicador ODS 7.2.1 mede a porcentagem do consumo final de energia derivada de recursos renováveis. O numerador inclui o consumo final direto de fontes renováveis, como hidroeletricidade, eólica, solar, biocombustíveis líquidos, biogás, geotérmica, energia marinha, resíduos renováveis e biocombustíveis sólidos, além da parcela do consumo final de eletricidade e calor estimada como proveniente de fontes renováveis com base na participação dessas fontes na produção bruta. O denominador é o consumo final total de energia de todos os produtos energéticos. A série usada é EG.FEC.RNEW.ZS do World Development Indicators, derivada do IEA Energy Statistics Data Browser.",
-    "historico_metodologia": "A metodologia internacional do ODS 7.2.1 é baseada em balanços energéticos nacionais harmonizados por organizações internacionais. A metadata oficial informa periodicidade anual, unidade em percentual e método de agregação por média ponderada. O Banco Mundial informa período de referência global 1990-2022 para a série, mas, na consulta validada para o Brasil, o último valor observado disponível é 2021. Por isso, anos de 2022 a 2026 não foram incluídos. Também não foram imputados valores ausentes nem incluídas projeções.",
-    "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente por meio do World Development Indicators e da metodologia global do ODS 7.2.1.",
+    "como_interpretar":
+      "Valores maiores indicam maior participação de fontes renováveis no consumo final de energia. O indicador não mede apenas eletricidade: inclui o consumo final de energia em transportes, indústria, residências e outros setores. Também não mede emissões diretamente, segurança energética, custo da energia ou qualidade ambiental das fontes renováveis.",
+    "metodologia":
+      "O indicador ODS 7.2.1 mede a porcentagem do consumo final de energia derivada de recursos renováveis. O numerador inclui o consumo final direto de fontes renováveis, como hidroeletricidade, eólica, solar, biocombustíveis líquidos, biogás, geotérmica, energia marinha, resíduos renováveis e biocombustíveis sólidos, além da parcela do consumo final de eletricidade e calor estimada como proveniente de fontes renováveis com base na participação dessas fontes na produção bruta. O denominador é o consumo final total de energia de todos os produtos energéticos. A série usada é EG.FEC.RNEW.ZS do World Development Indicators, derivada do IEA Energy Statistics Data Browser.",
+    "historico_metodologia":
+      "A metodologia internacional do ODS 7.2.1 é baseada em balanços energéticos nacionais harmonizados por organizações internacionais. A metadata oficial informa periodicidade anual, unidade em percentual e método de agregação por média ponderada. O Banco Mundial informa período de referência global 1990-2022 para a série, mas, na consulta validada para o Brasil, o último valor observado disponível é 2021. Por isso, anos de 2022 a 2026 não foram incluídos. Também não foram imputados valores ausentes nem incluídas projeções.",
+    "abrangencia":
+      "Brasil, cobertura nacional, comparável internacionalmente por meio do World Development Indicators e da metodologia global do ODS 7.2.1.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2001,
         "nome": "Racionamento",
-        "descricao": "A crise de abastecimento elétrico e o racionamento coincidiram com alteração relevante na matriz energética e elétrica brasileira, afetando o peso relativo das fontes renováveis."
+        "descricao":
+          "A crise de abastecimento elétrico e o racionamento coincidiram com alteração relevante na matriz energética e elétrica brasileira, afetando o peso relativo das fontes renováveis.",
       },
       {
         "ano": 2013,
         "nome": "Menor Hidrologia",
-        "descricao": "A EPE registrou menor oferta hídrica e recuo da participação de renováveis na matriz elétrica, contexto compatível com a queda observada no indicador nos anos seguintes."
+        "descricao":
+          "A EPE registrou menor oferta hídrica e recuo da participação de renováveis na matriz elétrica, contexto compatível com a queda observada no indicador nos anos seguintes.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 reduziu o consumo final de energia, especialmente em transportes e setores econômicos afetados, coincidindo com forte alta da participação renovável no indicador."
+        "descricao":
+          "A pandemia de COVID-19 reduziu o consumo final de energia, especialmente em transportes e setores econômicos afetados, coincidindo com forte alta da participação renovável no indicador.",
       },
       {
         "ano": 2021,
         "nome": "Escassez Hídrica",
-        "descricao": "A escassez hídrica, a queda da oferta de energia hidráulica e o maior acionamento termelétrico coincidiram com forte redução da participação renovável em relação a 2020."
-      }
+        "descricao":
+          "A escassez hídrica, a queda da oferta de energia hidráulica e o maior acionamento termelétrico coincidiram com forte redução da participação renovável em relação a 2020.",
+      },
     ],
-    "comparacao_paises": "Em 2021, o Brasil registrou 46,5%, muito acima da média mundial disponível no WDI para o mesmo ano, de 19,73556411%. A comparação internacional deve considerar diferenças estruturais relevantes: no Brasil, hidroeletricidade, bioenergia e biocombustíveis têm peso historicamente alto, enquanto muitos países dependem mais de combustíveis fósseis no consumo final de energia.",
-    "nivel_confiabilidade": "Muito alto para série internacional oficial observada, pois os valores vêm do World Development Indicators do Banco Mundial com fonte original na IEA e metodologia alinhada ao ODS 7.2.1. A principal ressalva é que balanços energéticos podem ser revisados retroativamente, e o indicador depende de alocação estimada da eletricidade e do calor renováveis no consumo final. Não há valor observado publicado para o Brasil após 2021 na série consultada.",
+    "comparacao_paises":
+      "Em 2021, o Brasil registrou 46,5%, muito acima da média mundial disponível no WDI para o mesmo ano, de 19,73556411%. A comparação internacional deve considerar diferenças estruturais relevantes: no Brasil, hidroeletricidade, bioenergia e biocombustíveis têm peso historicamente alto, enquanto muitos países dependem mais de combustíveis fósseis no consumo final de energia.",
+    "nivel_confiabilidade":
+      "Muito alto para série internacional oficial observada, pois os valores vêm do World Development Indicators do Banco Mundial com fonte original na IEA e metodologia alinhada ao ODS 7.2.1. A principal ressalva é que balanços energéticos podem ser revisados retroativamente, e o indicador depende de alocação estimada da eletricidade e do calor renováveis no consumo final. Não há valor observado publicado para o Brasil após 2021 na série consultada.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Renewable energy consumption (% of total final energy consumption) - EG.FEC.RNEW.ZS",
-        "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=BR",
       },
       {
         "titulo": "Banco Mundial API - Brazil - EG.FEC.RNEW.ZS",
-        "url": "https://api.worldbank.org/v2/country/BRA/indicator/EG.FEC.RNEW.ZS?format=json&per_page=20000"
+        "url": "https://api.worldbank.org/v2/country/BRA/indicator/EG.FEC.RNEW.ZS?format=json&per_page=20000",
       },
       {
         "titulo": "Banco Mundial DataBank Metadata - EG.FEC.RNEW.ZS",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EG.FEC.RNEW.ZS"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EG.FEC.RNEW.ZS",
       },
       {
         "titulo": "UNSD - SDG Indicator Metadata 7.2.1",
-        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-07-02-01.pdf"
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-07-02-01.pdf",
       },
       {
         "titulo": "IEA - Energy Statistics Data Browser",
-        "url": "https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser"
+        "url": "https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser",
       },
       {
         "titulo": "EPE - Balanço Energético Nacional",
-        "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/balanco-energetico-nacional-ben"
-      }
+        "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/balanco-energetico-nacional-ben",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 48.3
-      },
-      {
-        "ano": 1995,
-        "valor": 46.1
-      },
-      {
-        "ano": 1996,
-        "valor": 44.5
-      },
-      {
-        "ano": 1997,
-        "valor": 43.7
-      },
-      {
-        "ano": 1998,
-        "valor": 43.8
-      },
-      {
-        "ano": 1999,
-        "valor": 44
-      },
-      {
-        "ano": 2000,
-        "valor": 42.7
-      },
-      {
-        "ano": 2001,
-        "valor": 41.3
-      },
-      {
-        "ano": 2002,
-        "valor": 42.9
-      },
-      {
-        "ano": 2003,
-        "valor": 45.1
-      },
-      {
-        "ano": 2004,
-        "valor": 45.2
-      },
-      {
-        "ano": 2005,
-        "valor": 46.1
-      },
-      {
-        "ano": 2006,
-        "valor": 46.7
-      },
-      {
-        "ano": 2007,
-        "valor": 47.2
-      },
-      {
-        "ano": 2008,
-        "valor": 47
-      },
-      {
-        "ano": 2009,
-        "valor": 48.9
-      },
-      {
-        "ano": 2010,
-        "valor": 46.8
-      },
-      {
-        "ano": 2011,
-        "valor": 45.2
-      },
-      {
-        "ano": 2012,
-        "valor": 43.5
-      },
-      {
-        "ano": 2013,
-        "valor": 42.3
-      },
-      {
-        "ano": 2014,
-        "valor": 41.7
-      },
-      {
-        "ano": 2015,
-        "valor": 43.7
-      },
-      {
-        "ano": 2016,
-        "valor": 45.4
-      },
-      {
-        "ano": 2017,
-        "valor": 45.3
-      },
-      {
-        "ano": 2018,
-        "valor": 46.9
-      },
-      {
-        "ano": 2019,
-        "valor": 47.5
-      },
-      {
-        "ano": 2020,
-        "valor": 50
-      },
-      {
-        "ano": 2021,
-        "valor": 46.5
-      }
-    ]
+      { "ano": 1994, "valor": 48.3 },
+      { "ano": 1995, "valor": 46.1 },
+      { "ano": 1996, "valor": 44.5 },
+      { "ano": 1997, "valor": 43.7 },
+      { "ano": 1998, "valor": 43.8 },
+      { "ano": 1999, "valor": 44 },
+      { "ano": 2000, "valor": 42.7 },
+      { "ano": 2001, "valor": 41.3 },
+      { "ano": 2002, "valor": 42.9 },
+      { "ano": 2003, "valor": 45.1 },
+      { "ano": 2004, "valor": 45.2 },
+      { "ano": 2005, "valor": 46.1 },
+      { "ano": 2006, "valor": 46.7 },
+      { "ano": 2007, "valor": 47.2 },
+      { "ano": 2008, "valor": 47 },
+      { "ano": 2009, "valor": 48.9 },
+      { "ano": 2010, "valor": 46.8 },
+      { "ano": 2011, "valor": 45.2 },
+      { "ano": 2012, "valor": 43.5 },
+      { "ano": 2013, "valor": 42.3 },
+      { "ano": 2014, "valor": 41.7 },
+      { "ano": 2015, "valor": 43.7 },
+      { "ano": 2016, "valor": 45.4 },
+      { "ano": 2017, "valor": 45.3 },
+      { "ano": 2018, "valor": 46.9 },
+      { "ano": 2019, "valor": 47.5 },
+      { "ano": 2020, "valor": 50 },
+      { "ano": 2021, "valor": 46.5 },
+    ],
   },
   "consumo_energia_por_unidade_pib": {
     "label": "Consumo De Energia Por Unidade Do PIB",
     "fonte_sigla": "WDI/IEA/ODS",
     "unidade": "MJ por dólar internacional do PIB em PPP constante de 2021",
-    "fonte": "World Development Indicators - Energy intensity level of primary energy (MJ/$2021 PPP GDP) - EG.EGY.PRIM.PP.KD / Tracking SDG 7: The Energy Progress Report",
+    "fonte":
+      "World Development Indicators - Energy intensity level of primary energy (MJ/$2021 PPP GDP) - EG.EGY.PRIM.PP.KD / Tracking SDG 7: The Energy Progress Report",
     "cat": "Meio Ambiente",
     "padrao": false,
-    "descricao": "Mede a quantidade de energia primária usada para produzir uma unidade de PIB, ajustado por paridade de poder de compra.",
-    "como_interpretar": "Valores menores indicam que o país usa menos energia para gerar uma unidade de produção econômica. Quedas no indicador costumam sugerir melhora de intensidade energética, mas não medem eficiência pura isoladamente, pois também refletem estrutura econômica, clima, composição setorial, matriz energética e ciclos de atividade.",
-    "metodologia": "O indicador ODS 7.3.1 é calculado dividindo a oferta total de energia primária pelo Produto Interno Bruto medido em dólares internacionais constantes por paridade de poder de compra. A série oficial do WDI/Tracking SDG 7 usa dados harmonizados por IEA, IRENA, UNSD, Banco Mundial e OMS. Foram mantidos apenas valores observados disponíveis na série oficial para o Brasil; não foram incluídas projeções, extrapolações ou anos sem observação publicada.",
-    "historico_metodologia": "A série atual do WDI está publicada como MJ por dólar de PIB em PPP constante de 2021, com referência oficial 2000-2022. Extrações e publicações anteriores aparecem em PPP constante de 2017, portanto séries antigas e atuais não devem ser misturadas sem reescalonamento metodológico. Não há valores oficiais observados nesta série WDI/ODS 7.3.1 para 1994-1999 nem para anos posteriores a 2022 na fonte consultada.",
+    "descricao":
+      "Mede a quantidade de energia primária usada para produzir uma unidade de PIB, ajustado por paridade de poder de compra.",
+    "como_interpretar":
+      "Valores menores indicam que o país usa menos energia para gerar uma unidade de produção econômica. Quedas no indicador costumam sugerir melhora de intensidade energética, mas não medem eficiência pura isoladamente, pois também refletem estrutura econômica, clima, composição setorial, matriz energética e ciclos de atividade.",
+    "metodologia":
+      "O indicador ODS 7.3.1 é calculado dividindo a oferta total de energia primária pelo Produto Interno Bruto medido em dólares internacionais constantes por paridade de poder de compra. A série oficial do WDI/Tracking SDG 7 usa dados harmonizados por IEA, IRENA, UNSD, Banco Mundial e OMS. Foram mantidos apenas valores observados disponíveis na série oficial para o Brasil; não foram incluídas projeções, extrapolações ou anos sem observação publicada.",
+    "historico_metodologia":
+      "A série atual do WDI está publicada como MJ por dólar de PIB em PPP constante de 2021, com referência oficial 2000-2022. Extrações e publicações anteriores aparecem em PPP constante de 2017, portanto séries antigas e atuais não devem ser misturadas sem reescalonamento metodológico. Não há valores oficiais observados nesta série WDI/ODS 7.3.1 para 1994-1999 nem para anos posteriores a 2022 na fonte consultada.",
     "abrangencia": "Brasil, cobertura nacional, comparável internacionalmente com países e agregados do ODS 7.3.1.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2001,
         "nome": "Racionamento",
-        "descricao": "A crise elétrica brasileira de 2001 afetou o consumo de energia e a dinâmica do sistema elétrico, podendo influenciar a intensidade energética em anos próximos."
+        "descricao":
+          "A crise elétrica brasileira de 2001 afetou o consumo de energia e a dinâmica do sistema elétrico, podendo influenciar a intensidade energética em anos próximos.",
       },
       {
         "ano": 2009,
         "nome": "Crise Global",
-        "descricao": "A crise financeira internacional reduziu a atividade econômica e alterou a relação entre oferta de energia e PIB."
+        "descricao":
+          "A crise financeira internacional reduziu a atividade econômica e alterou a relação entre oferta de energia e PIB.",
       },
       {
         "ano": 2010,
         "nome": "Retomada",
-        "descricao": "A recuperação econômica após a crise global elevou a atividade e coincidiu com alta do indicador em relação a 2009."
+        "descricao":
+          "A recuperação econômica após a crise global elevou a atividade e coincidiu com alta do indicador em relação a 2009.",
       },
       {
         "ano": 2015,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira e mudanças na composição da atividade econômica coincidiram com aumento da intensidade energética."
+        "descricao":
+          "A recessão brasileira e mudanças na composição da atividade econômica coincidiram com aumento da intensidade energética.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou simultaneamente o PIB, a mobilidade e o consumo de energia, mantendo o indicador elevado."
+        "descricao":
+          "A pandemia de COVID-19 afetou simultaneamente o PIB, a mobilidade e o consumo de energia, mantendo o indicador elevado.",
       },
       {
         "ano": 2022,
         "nome": "Crise Energética",
-        "descricao": "A crise energética global e preços elevados de energia reduziram a demanda em várias regiões e contribuíram para melhora global da intensidade energética."
-      }
+        "descricao":
+          "A crise energética global e preços elevados de energia reduziram a demanda em várias regiões e contribuíram para melhora global da intensidade energética.",
+      },
     ],
-    "comparacao_paises": "Em 2022, o Brasil registrou 3,87 MJ por dólar internacional de PIB em PPP constante de 2021, praticamente igual ao valor global reportado para o mesmo ano. A comparação internacional deve ser feita com cautela, pois países com maior peso de indústria pesada, mineração, clima extremo ou matriz fóssil tendem a apresentar intensidade energética maior.",
-    "nivel_confiabilidade": "Muito alto para comparação internacional, pois o indicador é parte do ODS 7.3.1 e é publicado pelo World Development Indicators a partir do Tracking SDG 7, com participação de IEA, IRENA, UNSD, Banco Mundial e OMS. A principal ressalva é metodológica: a base de PPP foi atualizada, e valores em PPP 2017 não devem ser comparados diretamente com valores em PPP 2021.",
+    "comparacao_paises":
+      "Em 2022, o Brasil registrou 3,87 MJ por dólar internacional de PIB em PPP constante de 2021, praticamente igual ao valor global reportado para o mesmo ano. A comparação internacional deve ser feita com cautela, pois países com maior peso de indústria pesada, mineração, clima extremo ou matriz fóssil tendem a apresentar intensidade energética maior.",
+    "nivel_confiabilidade":
+      "Muito alto para comparação internacional, pois o indicador é parte do ODS 7.3.1 e é publicado pelo World Development Indicators a partir do Tracking SDG 7, com participação de IEA, IRENA, UNSD, Banco Mundial e OMS. A principal ressalva é metodológica: a base de PPP foi atualizada, e valores em PPP 2017 não devem ser comparados diretamente com valores em PPP 2021.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
-        "titulo": "Banco Mundial - Energy intensity level of primary energy (MJ/$2021 PPP GDP) - Brazil - EG.EGY.PRIM.PP.KD",
-        "url": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD?locations=BR"
+        "titulo":
+          "Banco Mundial - Energy intensity level of primary energy (MJ/$2021 PPP GDP) - Brazil - EG.EGY.PRIM.PP.KD",
+        "url": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD?locations=BR",
       },
       {
         "titulo": "Banco Mundial DataBank - Metadata - EG.EGY.PRIM.PP.KD",
-        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EG.EGY.PRIM.PP.KD"
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EG.EGY.PRIM.PP.KD",
       },
       {
         "titulo": "World Bank Data360 - WDI Wide CSV - EG.EGY.PRIM.PP.KD",
-        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_WIDEF.csv"
+        "url": "https://data360files.worldbank.org/data360-data/data/WB_WDI/WB_WDI_WIDEF.csv",
       },
       {
         "titulo": "UNECE / United Nations Global SDG Database - Indicator 7.3.1",
-        "url": "https://w3.unece.org/SDG/en/Indicator?id=24"
+        "url": "https://w3.unece.org/SDG/en/Indicator?id=24",
       },
       {
         "titulo": "IEA - SDG7 Database - Energy intensity data set",
-        "url": "https://www.iea.org/data-and-statistics/data-product/sdg7-database"
+        "url": "https://www.iea.org/data-and-statistics/data-product/sdg7-database",
       },
       {
         "titulo": "Tracking SDG7: The Energy Progress Report 2025",
-        "url": "https://www.seforall.org/system/files/2025-12/SEforALL%20SDG7_TRACKING_2025-data_analysis.pdf"
+        "url": "https://www.seforall.org/system/files/2025-12/SEforALL%20SDG7_TRACKING_2025-data_analysis.pdf",
       },
       {
         "titulo": "EPE - Atlas of Energy Efficiency Brazil 2023",
-        "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-788/Atlas%20of%20Energy%20Efficiency%20Brazil%202023.pdf"
-      }
+        "url":
+          "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-788/Atlas%20of%20Energy%20Efficiency%20Brazil%202023.pdf",
+      },
     ],
     "dados": [
       { "ano": 2000, "valor": 3.89 },
@@ -10967,8 +11573,8 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2019, "valor": 3.95 },
       { "ano": 2020, "valor": 4.0 },
       { "ano": 2021, "valor": 3.96 },
-      { "ano": 2022, "valor": 3.87 }
-    ]
+      { "ano": 2022, "valor": 3.87 },
+    ],
   },
   "idh_brasil": {
     "label": "IDH Brasil",
@@ -11064,103 +11670,70 @@ window.__DADOS_ANUAIS__ = {
     "label": "IDH Ajustado À Desigualdade",
     "fonte_sigla": "UNDP/HDRO",
     "unidade": "índice de 0 a 1",
-    "fonte": "United Nations Development Programme - Human Development Reports - Inequality-adjusted Human Development Index (IHDI)",
+    "fonte":
+      "United Nations Development Programme - Human Development Reports - Inequality-adjusted Human Development Index (IHDI)",
     "cat": "Pobreza e Desenvolvimento Humano",
     "padrao": false,
-    "descricao": "Mede o nível de desenvolvimento humano do Brasil ajustado pelas desigualdades na distribuição de saúde, educação e renda.",
-    "como_interpretar": "Valores mais altos indicam maior desenvolvimento humano efetivo após descontar perdas causadas por desigualdade. O IHDI é sempre igual ou menor que o HDI: quanto maior a diferença entre HDI e IHDI, maior a perda de desenvolvimento humano associada à desigualdade. O indicador não mede pobreza monetária diretamente, nem substitui indicadores específicos de renda, saúde, educação ou desigualdade.",
-    "metodologia": "O IHDI ajusta o Human Development Index (HDI) pela desigualdade na distribuição das três dimensões do desenvolvimento humano: vida longa e saudável, conhecimento e padrão de vida. A metodologia usa uma classe de índices sensível à distribuição proposta por Foster, Lopez-Calva e Szekely (2005), baseada na família de medidas de desigualdade de Atkinson (1970). Cada índice dimensional é descontado conforme o nível de desigualdade observado naquela dimensão, e o IHDI é calculado como a média geométrica dos índices dimensionais ajustados à desigualdade. Quando não há desigualdade, o IHDI é igual ao HDI; quando há desigualdade, o IHDI fica abaixo do HDI.",
-    "historico_metodologia": "O IHDI foi introduzido pelo PNUD no Relatório de Desenvolvimento Humano de 2010. A série oficial completa do HDR 2025 disponibiliza valores de IHDI apenas para 2010 a 2023; anos anteriores a 2010 e posteriores a 2023 foram excluídos por não haver valor oficial observado na série temporal baixada. Os valores podem ser revisados retroativamente pelo HDRO quando há atualização de dados de esperança de vida, educação, renda, microdados harmonizados de desigualdade, paridades de poder de compra ou notas técnicas metodológicas.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional para comparação com países, regiões e agregados globais publicados pelo PNUD/HDRO.",
-    "periodicidade": "Anual, conforme atualização dos Relatórios de Desenvolvimento Humano e bases estatísticas do PNUD/HDRO.",
+    "descricao":
+      "Mede o nível de desenvolvimento humano do Brasil ajustado pelas desigualdades na distribuição de saúde, educação e renda.",
+    "como_interpretar":
+      "Valores mais altos indicam maior desenvolvimento humano efetivo após descontar perdas causadas por desigualdade. O IHDI é sempre igual ou menor que o HDI: quanto maior a diferença entre HDI e IHDI, maior a perda de desenvolvimento humano associada à desigualdade. O indicador não mede pobreza monetária diretamente, nem substitui indicadores específicos de renda, saúde, educação ou desigualdade.",
+    "metodologia":
+      "O IHDI ajusta o Human Development Index (HDI) pela desigualdade na distribuição das três dimensões do desenvolvimento humano: vida longa e saudável, conhecimento e padrão de vida. A metodologia usa uma classe de índices sensível à distribuição proposta por Foster, Lopez-Calva e Szekely (2005), baseada na família de medidas de desigualdade de Atkinson (1970). Cada índice dimensional é descontado conforme o nível de desigualdade observado naquela dimensão, e o IHDI é calculado como a média geométrica dos índices dimensionais ajustados à desigualdade. Quando não há desigualdade, o IHDI é igual ao HDI; quando há desigualdade, o IHDI fica abaixo do HDI.",
+    "historico_metodologia":
+      "O IHDI foi introduzido pelo PNUD no Relatório de Desenvolvimento Humano de 2010. A série oficial completa do HDR 2025 disponibiliza valores de IHDI apenas para 2010 a 2023; anos anteriores a 2010 e posteriores a 2023 foram excluídos por não haver valor oficial observado na série temporal baixada. Os valores podem ser revisados retroativamente pelo HDRO quando há atualização de dados de esperança de vida, educação, renda, microdados harmonizados de desigualdade, paridades de poder de compra ou notas técnicas metodológicas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional para comparação com países, regiões e agregados globais publicados pelo PNUD/HDRO.",
+    "periodicidade":
+      "Anual, conforme atualização dos Relatórios de Desenvolvimento Humano e bases estatísticas do PNUD/HDRO.",
     "eventos_externos": [],
-    "comparacao_paises": "Em 2023, o Brasil registrou IHDI de 0.594, ligeiramente acima do agregado mundial de 0.590, mas abaixo da América Latina e Caribe, com 0.619, e abaixo do grupo de alto desenvolvimento humano, com 0.640. Entre 169 países com valor de IHDI disponível em 2023 na série do HDR 2025, o Brasil ficou aproximadamente na 94ª posição quando ordenado pelo valor do IHDI.",
-    "nivel_confiabilidade": "Alto para comparação internacional, pois os valores vêm da série oficial do PNUD/HDRO. A principal ressalva é que o IHDI é um índice composto calculado a partir de bases harmonizadas e pode ser revisado quando mudam fontes, microdados, paridades de poder de compra ou metodologia. Não há cobertura oficial para 1994-2009 nem para 2024-2026 nesta série.",
+    "comparacao_paises":
+      "Em 2023, o Brasil registrou IHDI de 0.594, ligeiramente acima do agregado mundial de 0.590, mas abaixo da América Latina e Caribe, com 0.619, e abaixo do grupo de alto desenvolvimento humano, com 0.640. Entre 169 países com valor de IHDI disponível em 2023 na série do HDR 2025, o Brasil ficou aproximadamente na 94ª posição quando ordenado pelo valor do IHDI.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois os valores vêm da série oficial do PNUD/HDRO. A principal ressalva é que o IHDI é um índice composto calculado a partir de bases harmonizadas e pode ser revisado quando mudam fontes, microdados, paridades de poder de compra ou metodologia. Não há cobertura oficial para 1994-2009 nem para 2024-2026 nesta série.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "UNDP/HDRO - HDR25 Composite Indices Complete Time Series (1990-2023)",
-        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv"
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
       },
       {
         "titulo": "UNDP/HDRO - Inequality-adjusted Human Development Index (IHDI)",
-        "url": "https://hdr.undp.org/inequality-adjusted-human-development-index"
+        "url": "https://hdr.undp.org/inequality-adjusted-human-development-index",
       },
       {
         "titulo": "UNDP/HDRO - Documentation and Downloads",
-        "url": "https://hdr.undp.org/data-center/documentation-and-downloads"
+        "url": "https://hdr.undp.org/data-center/documentation-and-downloads",
       },
       {
         "titulo": "UNDP/HDRO - Human Development Report 2025 Technical Notes",
-        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Technical_Notes.pdf"
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Technical_Notes.pdf",
       },
       {
         "titulo": "UNDP/HDRO - HDR25 Statistical Annex - Inequality-adjusted Human Development Index",
-        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_I-HDI_Table.pdf"
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_I-HDI_Table.pdf",
       },
       {
         "titulo": "UNDP/HDRO - Data Sources for Estimating Education Inequality",
-        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_DataSources_EducationInequality.pdf"
-      }
+        "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_DataSources_EducationInequality.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 2010,
-        "valor": 0.566
-      },
-      {
-        "ano": 2011,
-        "valor": 0.569
-      },
-      {
-        "ano": 2012,
-        "valor": 0.529
-      },
-      {
-        "ano": 2013,
-        "valor": 0.539
-      },
-      {
-        "ano": 2014,
-        "valor": 0.545
-      },
-      {
-        "ano": 2015,
-        "valor": 0.549
-      },
-      {
-        "ano": 2016,
-        "valor": 0.579
-      },
-      {
-        "ano": 2017,
-        "valor": 0.581
-      },
-      {
-        "ano": 2018,
-        "valor": 0.585
-      },
-      {
-        "ano": 2019,
-        "valor": 0.589
-      },
-      {
-        "ano": 2020,
-        "valor": 0.598
-      },
-      {
-        "ano": 2021,
-        "valor": 0.582
-      },
-      {
-        "ano": 2022,
-        "valor": 0.589
-      },
-      {
-        "ano": 2023,
-        "valor": 0.594
-      }
-    ]
+      { "ano": 2010, "valor": 0.566 },
+      { "ano": 2011, "valor": 0.569 },
+      { "ano": 2012, "valor": 0.529 },
+      { "ano": 2013, "valor": 0.539 },
+      { "ano": 2014, "valor": 0.545 },
+      { "ano": 2015, "valor": 0.549 },
+      { "ano": 2016, "valor": 0.579 },
+      { "ano": 2017, "valor": 0.581 },
+      { "ano": 2018, "valor": 0.585 },
+      { "ano": 2019, "valor": 0.589 },
+      { "ano": 2020, "valor": 0.598 },
+      { "ano": 2021, "valor": 0.582 },
+      { "ano": 2022, "valor": 0.589 },
+      { "ano": 2023, "valor": 0.594 },
+    ],
   },
   "pobreza_extrema": {
     "label": "Pobreza extrema (< US$2,15/dia PPC)",
@@ -11281,77 +11854,90 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "World Bank - Poverty and Inequality Platform / World Development Indicators (SI.POV.GAPS)",
     "cat": "Pobreza e Desenvolvimento Humano",
     "padrao": false,
-    "descricao": "Mede a profundidade média da pobreza no Brasil em relação à linha internacional de US$ 3,00 por dia em PPC de 2021.",
-    "como_interpretar": "Valores maiores indicam que a população pobre está, em média, mais distante da linha internacional de pobreza. Valor zero indicaria ausência de pessoas abaixo da linha ou ausência de déficit médio em relação à linha. O indicador combina incidência e intensidade da pobreza, mas não mede desigualdade completa, pobreza multidimensional ou pobreza segundo linhas nacionais brasileiras.",
-    "metodologia": "O Banco Mundial define o indicador como o déficit médio de renda ou consumo em relação à linha de pobreza de US$ 3,00 por dia em PPC de 2021, contando pessoas não pobres como déficit zero, expresso como percentual da própria linha de pobreza. Para o Brasil, a série WDI/PIP é calculada a partir de microdados de pesquisas domiciliares de renda, principalmente PNAD e PNAD Contínua, harmonizados pela Poverty and Inequality Platform para comparabilidade internacional.",
-    "historico_metodologia": "A série atual usa a linha internacional de pobreza de US$ 3,00 por dia em PPC de 2021, adotada pelo Banco Mundial na atualização metodológica mais recente, substituindo linhas anteriores como US$ 2,15 em PPC de 2017 e US$ 1,90 em PPC de 2011. Portanto, esta série não deve ser misturada com séries antigas sem conversão metodológica. Para o Brasil, há mudanças relevantes de base amostral e fonte: anos antigos usam PNAD, anos mais recentes usam PNAD Contínua, e 2020-2021 aparecem associados a PNADC-E5. Foram mantidos apenas anos com valor numérico oficial disponível no WDI/PIP desde 1994; anos sem valor oficial, como 1994, 2000 e 2010, não foram preenchidos por interpolação.",
-    "abrangencia": "Brasil, cobertura nacional, com padronização internacional pelo Banco Mundial para comparação entre países.",
-    "periodicidade": "Anual, condicionada à disponibilidade de microdados de pesquisas domiciliares harmonizados pelo WDI/PIP.",
+    "descricao":
+      "Mede a profundidade média da pobreza no Brasil em relação à linha internacional de US$ 3,00 por dia em PPC de 2021.",
+    "como_interpretar":
+      "Valores maiores indicam que a população pobre está, em média, mais distante da linha internacional de pobreza. Valor zero indicaria ausência de pessoas abaixo da linha ou ausência de déficit médio em relação à linha. O indicador combina incidência e intensidade da pobreza, mas não mede desigualdade completa, pobreza multidimensional ou pobreza segundo linhas nacionais brasileiras.",
+    "metodologia":
+      "O Banco Mundial define o indicador como o déficit médio de renda ou consumo em relação à linha de pobreza de US$ 3,00 por dia em PPC de 2021, contando pessoas não pobres como déficit zero, expresso como percentual da própria linha de pobreza. Para o Brasil, a série WDI/PIP é calculada a partir de microdados de pesquisas domiciliares de renda, principalmente PNAD e PNAD Contínua, harmonizados pela Poverty and Inequality Platform para comparabilidade internacional.",
+    "historico_metodologia":
+      "A série atual usa a linha internacional de pobreza de US$ 3,00 por dia em PPC de 2021, adotada pelo Banco Mundial na atualização metodológica mais recente, substituindo linhas anteriores como US$ 2,15 em PPC de 2017 e US$ 1,90 em PPC de 2011. Portanto, esta série não deve ser misturada com séries antigas sem conversão metodológica. Para o Brasil, há mudanças relevantes de base amostral e fonte: anos antigos usam PNAD, anos mais recentes usam PNAD Contínua, e 2020-2021 aparecem associados a PNADC-E5. Foram mantidos apenas anos com valor numérico oficial disponível no WDI/PIP desde 1994; anos sem valor oficial, como 1994, 2000 e 2010, não foram preenchidos por interpolação.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo Banco Mundial para comparação entre países.",
+    "periodicidade":
+      "Anual, condicionada à disponibilidade de microdados de pesquisas domiciliares harmonizados pelo WDI/PIP.",
     "eventos_externos": [
       {
         "ano": 1999,
         "nome": "Crise Cambial",
-        "descricao": "A desvalorização do real e a instabilidade macroeconômica coincidiram com nível elevado do hiato de pobreza no fim da década de 1990."
+        "descricao":
+          "A desvalorização do real e a instabilidade macroeconômica coincidiram com nível elevado do hiato de pobreza no fim da década de 1990.",
       },
       {
         "ano": 2003,
         "nome": "Pobreza Alta",
-        "descricao": "O começo dos anos 2000 ainda registrava hiato de pobreza elevado, antes da queda mais consistente observada nos anos seguintes."
+        "descricao":
+          "O começo dos anos 2000 ainda registrava hiato de pobreza elevado, antes da queda mais consistente observada nos anos seguintes.",
       },
       {
         "ano": 2014,
         "nome": "Menor Hiato",
-        "descricao": "O indicador chegou a 1,6%, um dos menores valores da série até então, antes da deterioração econômica de 2015-2016."
+        "descricao":
+          "O indicador chegou a 1,6%, um dos menores valores da série até então, antes da deterioração econômica de 2015-2016.",
       },
       {
         "ano": 2016,
         "nome": "Recessão",
-        "descricao": "A recessão brasileira de 2015-2016 coincidiu com reversão parcial da melhora do hiato de pobreza."
+        "descricao":
+          "A recessão brasileira de 2015-2016 coincidiu com reversão parcial da melhora do hiato de pobreza.",
       },
       {
         "ano": 2020,
         "nome": "Auxílio Emergencial",
-        "descricao": "Durante a pandemia de COVID-19, transferências emergenciais de renda coincidiram com queda excepcional do hiato de pobreza extrema internacional."
+        "descricao":
+          "Durante a pandemia de COVID-19, transferências emergenciais de renda coincidiram com queda excepcional do hiato de pobreza extrema internacional.",
       },
       {
         "ano": 2021,
         "nome": "Pandemia",
-        "descricao": "A redução de transferências emergenciais e os efeitos econômicos da pandemia coincidiram com alta do hiato de pobreza em relação a 2020."
+        "descricao":
+          "A redução de transferências emergenciais e os efeitos econômicos da pandemia coincidiram com alta do hiato de pobreza em relação a 2020.",
       },
       {
         "ano": 2024,
         "nome": "Renda Maior",
-        "descricao": "A melhora do mercado de trabalho e da renda domiciliar coincidiu com nova queda do hiato de pobreza internacional."
-      }
+        "descricao":
+          "A melhora do mercado de trabalho e da renda domiciliar coincidiu com nova queda do hiato de pobreza internacional.",
+      },
     ],
-    "comparacao_paises": "O Brasil tem hiato de pobreza internacional baixo em relação a países de baixa renda e países com pobreza extrema generalizada, mas ainda não é zero. Em 2024, o valor brasileiro de 1,0% indica situação melhor que a de economias com pobreza extrema persistente, porém pior que países onde praticamente não há população abaixo da linha internacional de US$ 3,00 por dia.",
-    "nivel_confiabilidade": "Alto para comparação internacional, pois a série vem do World Development Indicators/Poverty and Inequality Platform do Banco Mundial e usa microdados domiciliares oficiais harmonizados. A principal ressalva é metodológica: mudanças de linha internacional de pobreza, PPC, pesquisa domiciliar e harmonização podem alterar valores retroativamente.",
+    "comparacao_paises":
+      "O Brasil tem hiato de pobreza internacional baixo em relação a países de baixa renda e países com pobreza extrema generalizada, mas ainda não é zero. Em 2024, o valor brasileiro de 1,0% indica situação melhor que a de economias com pobreza extrema persistente, porém pior que países onde praticamente não há população abaixo da linha internacional de US$ 3,00 por dia.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do World Development Indicators/Poverty and Inequality Platform do Banco Mundial e usa microdados domiciliares oficiais harmonizados. A principal ressalva é metodológica: mudanças de linha internacional de pobreza, PPC, pesquisa domiciliar e harmonização podem alterar valores retroativamente.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 29/04/2026",
     "fontes_links": [
       {
         "titulo": "Banco Mundial - Poverty gap at $3.00 a day (2021 PPP) (%) - Brazil - SI.POV.GAPS",
-        "url": "https://data.worldbank.org/indicator/SI.POV.GAPS?locations=BR"
+        "url": "https://data.worldbank.org/indicator/SI.POV.GAPS?locations=BR",
       },
       {
         "titulo": "Banco Mundial Data360 - Metadata - WB_WDI_SI_POV_GAPS",
-        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_SI_POV_GAPS.pdf"
+        "url": "https://data360files.worldbank.org/data360-data/metadata/WB_WDI/WB_WDI_SI_POV_GAPS.pdf",
       },
       {
         "titulo": "Banco Mundial - WDI Poverty and Inequality Theme",
-        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/poverty-and-inequality.html"
+        "url": "https://datatopics.worldbank.org/world-development-indicators/themes/poverty-and-inequality.html",
       },
-      {
-        "titulo": "Poverty and Inequality Platform - Banco Mundial",
-        "url": "https://pip.worldbank.org/"
-      },
+      { "titulo": "Poverty and Inequality Platform - Banco Mundial", "url": "https://pip.worldbank.org/" },
       {
         "titulo": "UNdata - World Development Indicators - SI.POV.GAPS - Brazil",
-        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ASI.POV.GAPS%3BCountry_Code%3ABRA"
+        "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ASI.POV.GAPS%3BCountry_Code%3ABRA",
       },
       {
         "titulo": "IBGE - Síntese de Indicadores Sociais 2025 / Pobreza 2024",
-        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/45366-8-6-million-persons-got-out-of-poverty-between-2023-and-2024"
-      }
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/en/agencia-news/2184-news-agency/news/45366-8-6-million-persons-got-out-of-poverty-between-2023-and-2024",
+      },
     ],
     "dados": [
       { "ano": 1995, "valor": 7.9 },
@@ -11381,8 +11967,8 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2021, "valor": 2.9 },
       { "ano": 2022, "valor": 1.8 },
       { "ano": 2023, "valor": 1.3 },
-      { "ano": 2024, "valor": 1.0 }
-    ]
+      { "ano": 2024, "valor": 1.0 },
+    ],
   },
   "pobreza_nacional": {
     "label": "Pobreza Monetária (< US$ 6,85 PPC)",
