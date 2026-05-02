@@ -215,6 +215,47 @@ h1 {
   padding: 2px 2px 4px;
 }
 
+.brand-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  color: var(--text-strong);
+}
+
+.brand-icon svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.brand-icon__bar {
+  fill: none;
+  stroke-width: 4.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.brand-icon__bar--green {
+  stroke: #009c3b;
+}
+
+.brand-icon__bar--yellow {
+  stroke: #ffdf00;
+}
+
+.brand-icon__bar--blue {
+  stroke: #1d4ed8;
+}
+
 .legal-access-btn {
   display: inline-flex;
   align-items: center;
@@ -242,6 +283,7 @@ h1 {
 
 .sidebar-title-block h1 {
   margin: 0;
+  min-width: 0;
   font-size: 1.28rem;
   line-height: 1.08;
 }
@@ -901,7 +943,7 @@ h1 {
   padding-left: 20px;
 }
 
-.sources-list li + li {
+.sources-list li+li {
   margin-top: 4px;
 }
 
@@ -1264,6 +1306,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
   html,
   body {
     overflow-x: hidden;

@@ -591,9 +591,18 @@ function AppAnual() {
         <div className={"sidebar sidebar-anual" + (menuAberto ? " aberto" : "")}>
           <div className="sidebar-anual__top">
             <div className="sidebar-title-block">
-              <h1>
-                {TEXTOS_APP.sidebar?.titulo} ({totalIndicadoresValidados})
-              </h1>
+              <div className="brand-heading">
+                <span className="brand-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" focusable="false">
+                    <path className="brand-icon__bar brand-icon__bar--blue" d="M14 35V23" />
+                    <path className="brand-icon__bar brand-icon__bar--green" d="M24 35V13" />
+                    <path className="brand-icon__bar brand-icon__bar--yellow" d="M34 35V19" />
+                  </svg>
+                </span>
+                <h1>
+                  {TEXTOS_APP.sidebar?.titulo} ({totalIndicadoresValidados})
+                </h1>
+              </div>
               <div className="subtitle">{TEXTOS_APP.sidebar?.subtitulo}</div>
               <button type="button" className="legal-access-btn" onClick={() => setAvisosAbertos(true)}>
                 {TEXTOS_APP.sidebar?.botaoLegal}
