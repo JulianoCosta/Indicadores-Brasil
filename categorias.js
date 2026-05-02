@@ -8,13 +8,14 @@ window.__CATEGORIAS__ = {
   'Tecnologia e Inovação': '#86a400ff',
   'Segurança Pública': '#dc0000ff',
   'Meio Ambiente': '#0d9d00ff',
+  'Habitação, Saneamento e Vida Urbana': '#9d009aff',
   'Pobreza e Desenvolvimento Humano': '#5b2700ff',
-  'Governança, Democracia e Instituições': '#bf008c',
+  'Governança, Democracia e Instituições': '#bf0026ff',
   'Setor Externo e Comércio': '#00a682ff',
-  'Empresas, Infraestrutura e Produtividade': '#bd2846',
-  'Mercados Financeiros e Risco': '#002a61ff',
+  'Empresas, Infraestrutura e Produtividade': '#3928bdff',
+  'Mercados Financeiros e Risco': '#431d00ff',
   'Moedas e Criptoativos': '#d68400',
-  'Commodities': '#a16207',
+  'Commodities': '#856d00ff',
   'Habitação, Inclusão Digital e Condições Sociais': '#4f46e5',
   'Relações Internacionais e Soft Power': '#be123c'
 };

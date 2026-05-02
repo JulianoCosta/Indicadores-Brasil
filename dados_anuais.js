@@ -14062,6 +14062,1054 @@ window.__DADOS_ANUAIS__ = {
       { "ano": 2024, "valor": 50.3 },
     ],
   },
+  "deficit_habitacional_total": {
+    "label": "Déficit Habitacional Total",
+    "fonte_sigla": "FJP/IBGE/PNAD-C/CadÚnico",
+    "unidade": "domicílios",
+    "fonte":
+      "Fundação João Pinheiro - Déficit Habitacional no Brasil / IBGE - Pesquisa Nacional por Amostra de Domicílios Contínua / Cadastro Único para Programas Sociais",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao": "Mede o número total de domicílios em situação de déficit habitacional no Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior necessidade quantitativa de moradias adequadas. O indicador soma domicílios em habitação precária, coabitação e ônus excessivo com aluguel urbano, evitando dupla contagem conforme a hierarquia metodológica da FJP. O indicador não mede inadequação qualitativa de moradias existentes, como ausência de infraestrutura urbana, inadequação edilícia ou irregularidade fundiária.",
+    "metodologia":
+      "A Fundação João Pinheiro calcula o déficit habitacional total a partir da soma dos componentes habitação precária, coabitação e ônus excessivo com aluguel urbano. A habitação precária inclui domicílios rústicos e improvisados; a coabitação inclui cômodos e unidades domésticas conviventes consideradas déficit; o ônus excessivo com aluguel urbano identifica domicílios urbanos alugados em que famílias de até três salários mínimos comprometem mais de 30% da renda com aluguel. O cálculo é hierárquico, descontando domicílios já classificados em componentes anteriores, exceto unidades domésticas conviventes, para reduzir dupla contagem. A base principal é a PNAD Contínua do IBGE, complementada pelo CadÚnico em aspectos específicos, especialmente domicílios improvisados e população em situação de rua quando aplicável na metodologia mais recente.",
+    "historico_metodologia":
+      "A série histórica longa do déficit habitacional da FJP não é plenamente homogênea desde 1994, pois houve mudanças de fonte, questionários e metodologia. Até 2015, os relatórios usavam metodologia associada principalmente à PNAD anual e/ou Censo, enquanto a série 2016-2019 foi recalculada com nova metodologia baseada na PNAD Contínua. A FJP publicou dados reponderados para 2016-2019 após alterações nos pesos da PNAD Contínua. Em 2020 e 2021 não há valores oficiais comparáveis porque o IBGE não divulgou os módulos de características dos domicílios da PNAD Contínua em razão das dificuldades de coleta durante a pandemia de Covid-19. A partir de 2022, a FJP retomou a divulgação anual com PNAD Contínua, incorporando ajustes metodológicos e uso complementar do CadÚnico. Por rigor metodológico, este JSON mantém apenas a série comparável PNAD-C/CadÚnico disponível para 2016-2019 e 2022-2024, excluindo anos anteriores a 2016 e anos sem dado oficial comparável.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com recortes oficiais por grandes regiões, unidades da federação, regiões metropolitanas, estratos geográficos, situação do domicílio e faixas de renda, conforme disponibilidade nas tabelas da FJP.",
+    "periodicidade":
+      "Anual, quando a PNAD Contínua disponibiliza os módulos necessários e a FJP publica a atualização metodologicamente compatível.",
+    "eventos_externos": [
+      {
+        "ano": 2016,
+        "nome": "Nova Série",
+        "descricao":
+          "Início da série recente calculada pela FJP com base na PNAD Contínua, após mudanças de fonte e metodologia em relação às séries antigas baseadas na PNAD anual.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de Covid-19 afetou a coleta da PNAD Contínua e impediu a divulgação dos módulos de características dos domicílios necessários ao cálculo oficial do déficit habitacional para 2020 e 2021.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada PNADC",
+        "descricao":
+          "A FJP retomou a divulgação anual do déficit habitacional com dados da PNAD Contínua, após a interrupção de 2020 e 2021, estimando o déficit em 6.215.313 domicílios.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Retomada MCMV",
+        "descricao":
+          "O Ministério das Cidades associou a trajetória recente de queda do déficit habitacional à recriação do Minha Casa, Minha Vida, embora o indicador também reflita fatores demográficos, renda, aluguel, coabitação e precariedade habitacional.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Queda Recente",
+        "descricao":
+          "A atualização de 2024 registrou queda pelo segundo ano consecutivo, com redução dos três componentes do déficit habitacional: ônus excessivo com aluguel, habitação precária e coabitação.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta robusta para este indicador, porque o déficit habitacional da FJP é uma métrica nacional, construída com conceitos, fontes e critérios próprios do Brasil. Comparações com outros países exigem indicadores harmonizados de moradia adequada, como overcrowding, housing cost overburden, informal settlements ou acesso a serviços, mas esses indicadores não são equivalentes ao déficit habitacional total calculado pela FJP.",
+    "nivel_confiabilidade":
+      "Alto para acompanhar a série recente brasileira de 2016-2019 e 2022-2024, pois os valores derivam de fonte oficial especializada, a Fundação João Pinheiro, com base em microdados oficiais do IBGE/PNAD Contínua e uso complementar do CadÚnico. A principal ressalva é que se trata de estimativa estatística oficial baseada em pesquisa amostral e metodologia específica, sujeita a revisões, reponderações e quebras metodológicas; por isso, anos anteriores a 2016 não foram misturados com a série PNAD-C recente.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Fundação João Pinheiro - Déficit Habitacional no Brasil",
+        "url": "https://fjp.mg.gov.br/deficit-habitacional-no-brasil/",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Tabela Dados do Déficit Habitacional no Brasil 2023",
+        "url":
+          "https://docs.google.com/spreadsheets/d/1lQzsAuzhRCEJufiIEI_tVzO4vllcBT38/edit?ouid=104372843943715905267&rtpof=true&sd=true&usp=sharing",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Estimativas Déficit Habitacional no Brasil 2022",
+        "url":
+          "https://docs.google.com/spreadsheets/d/1OqAuggLve9HoPrI8jJcaAfSu1q5DCvdc/edit?ouid=104381820996905888402&rtpof=true&sd=true&usp=sharing",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Estimativas Déficit Habitacional no Brasil - Dados Reponderados 2016-2019",
+        "url":
+          "https://docs.google.com/spreadsheets/d/1y0c_oDcNpcq29fJyPAA4jtjDTAzij2MW/edit?ouid=104381820996905888402&rtpof=true&sd=true&usp=sharing",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Relatório Déficit Habitacional no Brasil 2022",
+        "url": "https://repositorio.fjp.mg.gov.br/items/4ea6db72-4b2e-4dcb-af59-95202212ce9a",
+      },
+      {
+        "titulo":
+          "Fundação João Pinheiro - Relatório Metodologia do Déficit Habitacional e da Inadequação de Domicílios no Brasil 2016-2019",
+        "url":
+          "https://fjp.mg.gov.br/wp-content/uploads/2020/12/04.03_Relatorio-Metodologia-do-Deficit-Habitacional-e-da-Inadequacao-de-Domicilios-no-Brasil-2016-2019-v-1.0_compressed.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Déficit Habitacional no Brasil Recua pelo 2º Ano Consecutivo em 2024",
+        "url": "https://www.gov.br/cidades/pt-br/assuntos/noticias-1/noticia-mcid-n-2073",
+      },
+    ],
+    "dados": [
+      { "ano": 2016, "valor": 5768482 },
+      { "ano": 2017, "valor": 6068566 },
+      { "ano": 2018, "valor": 5973218 },
+      { "ano": 2019, "valor": 5964993 },
+      { "ano": 2022, "valor": 6215313 },
+      { "ano": 2023, "valor": 5977317 },
+      { "ano": 2024, "valor": 5773983 },
+    ],
+  },
+  "populacao_residente_em_favelas_e_comunidades_urbanas": {
+    "label": "População Residente Em Favelas E Comunidades Urbanas",
+    "fonte_sigla": "IBGE",
+    "unidade": "pessoas",
+    "fonte": "IBGE - Censo Demográfico: Favelas e Comunidades Urbanas / Aglomerados Subnormais",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede o número de pessoas residentes em territórios classificados pelo IBGE como Favelas e Comunidades Urbanas, anteriormente denominados Aglomerados Subnormais.",
+    "como_interpretar":
+      "Valores maiores indicam maior população residente em territórios populares com insuficiência ou inadequação de políticas públicas, infraestrutura urbana, serviços ou segurança jurídica da posse. A comparação temporal deve ser feita com cautela, pois parte da variação decorre de aperfeiçoamentos metodológicos, tecnológicos e territoriais do IBGE, não apenas de crescimento real das favelas.",
+    "metodologia":
+      "O indicador usa os resultados do universo do Censo Demográfico do IBGE para população residente em Favelas e Comunidades Urbanas. Até 2010, o IBGE utilizava a denominação Aglomerados Subnormais; em 2024, passou a adotar a denominação Favelas e Comunidades Urbanas, sem alterar o conteúdo dos critérios que estruturaram a identificação e o mapeamento dessas áreas no Censo 2022. Os valores correspondem à população residente recenseada nesses territórios, segundo a classificação territorial do IBGE em cada operação censitária. Foram mantidos apenas anos censitários com valores oficiais publicados após 1994.",
+    "historico_metodologia":
+      "O IBGE informa que a produção estatística sobre favelas evoluiu ao longo dos censos. Em 1991, adotou-se o conceito de Aglomerado Subnormal, com foco em irregularidade fundiária associada a precariedades urbanísticas ou de serviços. Em 2000, a categoria foi mantida, mas o IBGE reconhece divergências entre a base territorial censitária e cadastros municipais, o que motivou aperfeiçoamentos posteriores. Em 2010, houve avanço relevante na identificação e detalhamento dos aglomerados. Em 2022, foram usados melhores recursos digitais, imagens de satélite, georreferenciamento, dados auxiliares e maior diálogo com organizações das favelas. O IBGE afirma que os resultados de 1980 a 2010 refletem aperfeiçoamento metodológico e operacional e não permitem conclusões diretas sobre surgimento, expansão ou remoção de favelas. A segunda edição do Censo 2022 corrigiu pequenas inconsistências entre bases geográficas e estatísticas, alterando a população nacional em Favelas e Comunidades Urbanas de 16.390.815 para 16.390.790 pessoas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com desagregações disponíveis por Grandes Regiões, Unidades da Federação, concentrações urbanas, municípios e Favelas e Comunidades Urbanas, conforme disponibilidade do IBGE.",
+    "periodicidade": "Decenal, conforme o Censo Demográfico. Não há série anual oficial para este indicador.",
+    "eventos_externos": [
+      {
+        "ano": 2000,
+        "nome": "Base Restrita",
+        "descricao":
+          "O IBGE informou que, no Censo 2000, a Base Territorial identificava setores censitários de aglomerados subnormais em 225 municípios, enquanto pesquisas municipais próximas apontavam presença de favelas e assemelhados em número maior de municípios, indicando limitação de captação territorial.",
+      },
+      {
+        "ano": 2010,
+        "nome": "Aprimoramento Censitário",
+        "descricao":
+          "O Censo 2010 trouxe avanço na identificação, detalhamento e divulgação de resultados por aglomerado, ampliando a capacidade de mensurar esses territórios em relação a 1991 e 2000.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Melhor Mapeamento",
+        "descricao":
+          "No Censo 2022, o IBGE utilizou dados georreferenciados, recursos digitais melhores, imagens de satélite e diálogo ampliado com organizações comunitárias, melhorando a captação da população em favelas.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Nova Denominação",
+        "descricao":
+          "O IBGE substituiu a denominação Aglomerados Subnormais por Favelas e Comunidades Urbanas, após estudos técnicos e consultas sociais, mantendo o conteúdo dos critérios usados para identificação e mapeamento no Censo 2022.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Segunda Edição",
+        "descricao":
+          "O IBGE publicou segunda edição corrigida dos resultados do Censo 2022 para Favelas e Comunidades Urbanas, ajustando pequenas inconsistências entre bases geográficas e estatísticas.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta é limitada, pois cada país usa conceitos, critérios territoriais e capacidade de mapeamento próprios para assentamentos informais, favelas ou slums. O IBGE cita que a ONU-Habitat estima cerca de um bilhão de pessoas vivendo em favelas e assentamentos informais no mundo, mas ressalta que a mensuração internacional pode estar subestimada devido à dificuldade de captação e à dinamicidade desses territórios.",
+    "nivel_confiabilidade":
+      "Alto para os anos censitários publicados pelo IBGE, pois os valores vêm do Censo Demográfico, a principal operação estatística domiciliar do país. A principal ressalva é a comparabilidade temporal: mudanças operacionais, tecnológicas, territoriais e de captação afetam a série, portanto os valores não devem ser interpretados como variação pura da população em favelas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "IBGE - Censo 2022: Brasil tinha 16,4 milhões de pessoas morando em Favelas e Comunidades Urbanas",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41797-censo-2022-brasil-tinha-16-4-milhoes-de-pessoas-morando-em-favelas-e-comunidades-urbanas",
+      },
+      {
+        "titulo": "IBGE - Censo Demográfico 2022: Favelas e Comunidades Urbanas - Resultados do Universo",
+        "url":
+          "https://www.ibge.gov.br/estatisticas/sociais/habitacao/22827-censo-demografico-2022.html?edicao=41773&t=resultados",
+      },
+      {
+        "titulo": "IBGE Biblioteca - Censo Demográfico 2022: Favelas e Comunidades Urbanas",
+        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2102134&view=detalhes",
+      },
+      {
+        "titulo": "IBGE - Favelas e Comunidades Urbanas",
+        "url":
+          "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/15788-favelas-e-comunidades-urbanas.html",
+      },
+      {
+        "titulo": "IBGE - Favelas e Comunidades Urbanas: IBGE muda denominação dos Aglomerados Subnormais",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/38962-favelas-e-comunidades-urbanas-ibge-muda-denominacao-dos-aglomerados-subnormais",
+      },
+      {
+        "titulo": "IBGE - Censo 2010: 11,4 milhões de brasileiros vivem em Aglomerados Subnormais",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/14157-asi-censo-2010-114-milhoes-de-brasileiros-60-vivem-em-aglomerados-subnormais",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 6535634 },
+      { "ano": 2010, "valor": 11425644 },
+      { "ano": 2022, "valor": 16390790 },
+    ],
+  },
+  "onus_excessivo_aluguel_urbano_ate_3_sm": {
+    "label": "Domicílios Com Ônus Excessivo De Aluguel",
+    "fonte_sigla": "FJP/IBGE PNAD-C",
+    "unidade": "domicílios",
+    "fonte":
+      "Fundação João Pinheiro - Déficit Habitacional no Brasil / Instituto Brasileiro de Geografia e Estatística - Pesquisa Nacional por Amostra de Domicílios Contínua",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede o número de domicílios urbanos com renda domiciliar de até três salários mínimos que gastam mais de 30% da renda domiciliar com aluguel.",
+    "como_interpretar":
+      "Valores maiores indicam aumento do número de domicílios de baixa renda em situação de forte comprometimento da renda com aluguel. O indicador mede pressão habitacional por custo de moradia, mas não mede diretamente qualidade física do domicílio, informalidade fundiária, acesso a infraestrutura urbana ou valor absoluto dos aluguéis.",
+    "metodologia":
+      "A Fundação João Pinheiro identifica o ônus excessivo com aluguel urbano como componente do déficit habitacional quando o domicílio é urbano, tem renda domiciliar de até três salários mínimos e despende mais de 30% da renda domiciliar com aluguel. Os valores são calculados a partir dos microdados da PNAD Contínua do IBGE, dentro da metodologia do Déficit Habitacional no Brasil. Foram mantidos apenas anos com divulgação oficial da FJP baseada na PNAD Contínua e com valor absoluto nacional do componente.",
+    "historico_metodologia":
+      "A série comparável baseada na PNAD Contínua começa em 2016. Séries anteriores da FJP existem para anos como 1991, 2000, 2005-2015, mas usavam bases e arranjos metodológicos diferentes, principalmente Censo Demográfico e PNAD anual, e não foram misturadas a esta série para evitar quebra de comparabilidade. Em 2022, a FJP retomou a publicação após ausência de informações habitacionais suficientes nos anos de 2020 e 2021. A metodologia recente do déficit habitacional passou a combinar PNAD Contínua e CadÚnico para alguns componentes, mas o ônus excessivo com aluguel urbano é calculado a partir da PNAD Contínua. Houve divulgação de dados reponderados para 2016-2019; por isso, foram usados os valores reponderados publicados no relatório de 2022.",
+    "abrangencia":
+      "Brasil, domicílios urbanos, renda domiciliar de até três salários mínimos, conforme metodologia da Fundação João Pinheiro para o déficit habitacional.",
+    "periodicidade":
+      "Anual quando há divulgação oficial da FJP com base disponível da PNAD Contínua; não há valores oficiais comparáveis para 2020 e 2021 nesta série.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Lacuna PNAD-C",
+        "descricao":
+          "A FJP informa que a publicação das estimativas foi retomada em 2022 após dois anos marcados pela ausência de informações sobre características habitacionais dos domicílios brasileiros, o que impede a inclusão de valores comparáveis para 2020 e 2021.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Retomada",
+        "descricao":
+          "A divulgação de 2022 retomou a série com base na PNAD Contínua e mostrou aumento do ônus excessivo com aluguel urbano em relação a 2019.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Alta Aluguel",
+        "descricao":
+          "O componente subiu de 3.242.780 domicílios em 2022 para 3.665.440 em 2023, tornando-se ainda mais dominante dentro do déficit habitacional.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Recuo Déficit",
+        "descricao":
+          "O Ministério das Cidades informou que os três componentes do déficit habitacional caíram em 2024; o ônus excessivo com aluguel urbano recuou de 3.665.440 para 3.587.777 domicílios.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta robusta para este indicador específico da FJP, porque ele depende de definição nacional de déficit habitacional, recorte urbano, limite de renda em salários mínimos e regra de comprometimento superior a 30% da renda com aluguel. Comparações internacionais devem usar indicadores harmonizados como housing cost overburden rate, rent overburden ou housing cost burden, mas eles não são metodologicamente equivalentes ao componente da FJP.",
+    "nivel_confiabilidade":
+      "Alto para acompanhamento nacional de 2016 em diante, pois usa metodologia oficial da Fundação João Pinheiro e microdados da PNAD Contínua do IBGE. A principal ressalva é que os valores são estimativas amostrais de pesquisa domiciliar, podem sofrer reponderações e não devem ser comparados diretamente com séries antigas da PNAD anual ou do Censo sem tratamento metodológico específico.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Fundação João Pinheiro - Déficit Habitacional no Brasil",
+        "url": "https://fjp.mg.gov.br/deficit-habitacional-no-brasil/",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Relatório Déficit Habitacional no Brasil 2016-2019",
+        "url":
+          "https://fjp.mg.gov.br/wp-content/uploads/2021/04/21.05_Relatorio-Deficit-Habitacional-no-Brasil-2016-2019-v2.0.pdf",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Relatório Déficit Habitacional no Brasil 2022",
+        "url": "https://ac24horas.com/wp-content/uploads/2024/05/RELATORIO-DEFICIT-HABITACIONAL-PnadC2022.pdf",
+      },
+      {
+        "titulo": "Fundação João Pinheiro - Tabela Dados do Déficit Habitacional no Brasil 2023",
+        "url":
+          "https://docs.google.com/spreadsheets/d/1lQzsAuzhRCEJufiIEI_tVzO4vllcBT38/edit?ouid=104372843943715905267&rtpof=true&sd=true&usp=sharing",
+      },
+      {
+        "titulo": "Ministério das Cidades - Déficit Habitacional no Brasil 2024",
+        "url": "https://www.gov.br/cidades/pt-br/assuntos/noticias-1/noticia-mcid-n-2073",
+      },
+    ],
+    "dados": [
+      { "ano": 2016, "valor": 2863470 },
+      { "ano": 2017, "valor": 2995857 },
+      { "ano": 2018, "valor": 3089165 },
+      { "ano": 2019, "valor": 3070106 },
+      { "ano": 2022, "valor": 3242780 },
+      { "ano": 2023, "valor": 3665440 },
+      { "ano": 2024, "valor": 3587777 },
+    ],
+  },
+  "indice_atendimento_total_agua_snis_sinisa": {
+    "label": "Índice De Atendimento Total De Água",
+    "fonte_sigla": "SNIS/SINISA",
+    "unidade": "% da população total",
+    "fonte":
+      "Ministério das Cidades - Sistema Nacional de Informações sobre Saneamento / Sistema Nacional de Informações em Saneamento Básico",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao": "Mede o percentual da população total atendida com rede pública de abastecimento de água no Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção da população total atendida por rede pública de abastecimento de água. O indicador não mede qualidade da água, continuidade do fornecimento, perdas na distribuição, capacidade hídrica, tarifa, acesso por soluções individuais ou segurança sanitária do serviço.",
+    "metodologia":
+      "No SNIS, o IN055 é calculado como AG001 dividido por GE12a, multiplicado por 100. AG001 corresponde à população total atendida com abastecimento de água; GE12a corresponde à população total residente do(s) município(s) com abastecimento de água, segundo o IBGE. No SINISA, o indicador equivalente IAG0001 mede o atendimento da população total com rede de abastecimento de água. Foram mantidos apenas valores oficiais publicados ou reproduzidos em documentos oficiais/relatórios técnicos baseados diretamente no SNIS/SINISA, sem projeções.",
+    "historico_metodologia":
+      "O SNIS possui série de água e esgoto desde o ano de referência 1995, mas a cobertura inicial do sistema era menor e dependia de autopreenchimento dos prestadores. Até 2022, o indicador equivalente usado era o IN055 do SNIS. A partir do ano de referência 2023, o SNIS foi substituído pelo SINISA, com continuidade institucional, mas com mudanças de sistema, nomenclatura, coleta, organização e estimativas populacionais; por isso, a comparação direta entre IN055/SNIS e IAG0001/SINISA deve ser feita com cautela. O ano de 1994 não foi incluído porque não há série SNIS/SINISA oficial para esse ano. Anos anteriores a 2004 e alguns anos intermediários não foram incluídos neste JSON por não terem sido validados com valor nacional oficial direto nas fontes consultadas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados agregados a partir das informações municipais e dos prestadores participantes da coleta SNIS/SINISA.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1995,
+        "nome": "Início SNIS",
+        "descricao":
+          "Ano inicial da série histórica de água e esgoto do SNIS, com cobertura inicial mais limitada e expansão posterior da base declaratória.",
+      },
+      {
+        "ano": 2007,
+        "nome": "Lei Saneamento",
+        "descricao":
+          "A Lei nº 11.445/2007 estabeleceu diretrizes nacionais para o saneamento básico, fortalecendo planejamento, regulação e universalização.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Novo Marco",
+        "descricao":
+          "A Lei nº 14.026/2020 atualizou o marco legal do saneamento e reforçou metas de universalização, com efeitos regulatórios e institucionais sobre o setor.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Transição SINISA",
+        "descricao":
+          "Último ciclo do SNIS e início da substituição pelo SINISA, com alteração institucional e metodológica relevante para a continuidade da série.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Primeiro SINISA",
+        "descricao":
+          "Primeira divulgação de resultados pelo SINISA para o ano de referência 2023, substituindo a nomenclatura IN055/SNIS pelo indicador IAG0001/SINISA.",
+      },
+    ],
+    "comparacao_paises":
+      "O IN055/IAG0001 é um indicador administrativo nacional do Brasil e não é, por si só, plenamente comparável entre países. Para comparação internacional de acesso à água, a fonte mais adequada é o Joint Monitoring Programme da OMS/UNICEF, que usa categorias como basic drinking water service e safely managed drinking water service, com metodologia diferente da rede pública declarada no SNIS/SINISA.",
+    "nivel_confiabilidade":
+      "Alto para os anos incluídos em dados, pois os valores derivam do sistema oficial federal SNIS/SINISA. A principal ressalva é a dependência de dados declaratórios pelos prestadores e titulares, mudanças de cobertura/amostra ao longo do tempo e a transição metodológica SNIS-SINISA a partir do ano de referência 2023. Não foram preenchidos anos sem validação direta suficiente.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Ministério das Cidades - SNIS",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis",
+      },
+      {
+        "titulo": "Ministério das Cidades - SINISA",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa",
+      },
+      {
+        "titulo": "Ministério das Cidades - Diagnóstico Temático Visão Geral Água e Esgoto SNIS 2023",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/DIAGNOSTICO_TEMATICO_VISAO_GERAL_AE_SNIS_2023.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Diagnóstico Temático Visão Geral Água e Esgoto SNIS 2021",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/DIAGNOSTICO_TEMATICO_VISAO_GERAL_AE_SNIS_2021.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Do SNIS ao SINISA: Abastecimento de Água 2019",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/cadernos-tematicos/DO_SNIS_AO_SINISA_AGUA_SNIS_2019_REPUBLICACAO_compressed.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Diagnóstico dos Serviços de Água e Esgotos 2018",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/diagnosticos-anteriores-do-snis/agua-e-esgotos-1/2018/Diagnostico_AE2018.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Relatório SINISA Abastecimento de Água 2024, ano de referência 2023",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/copy_of_RELATORIO_SINISA_ABASTECIMENTO_DE_AGUA_2024_v2.pdf",
+      },
+      {
+        "titulo":
+          "Ministério das Cidades - Relatório dos Serviços de Abastecimento de Água SINISA 2025, ano de referência 2024",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/copy_of_RELATORIO_SINISA_ABASTECIMENTO_AGUA_2025.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2004, "valor": 80.6 },
+      { "ano": 2014, "valor": 83.0 },
+      { "ano": 2016, "valor": 83.3 },
+      { "ano": 2017, "valor": 83.47 },
+      { "ano": 2018, "valor": 83.62 },
+      { "ano": 2019, "valor": 83.72 },
+      { "ano": 2020, "valor": 84.13 },
+      { "ano": 2021, "valor": 84.2 },
+      { "ano": 2022, "valor": 84.92 },
+      { "ano": 2023, "valor": 83.13 },
+      { "ano": 2024, "valor": 84.1 },
+    ],
+  },
+  "indice_atendimento_total_esgoto": {
+    "label": "Índice De Atendimento Total De Esgoto",
+    "fonte_sigla": "SNIS/SINISA",
+    "unidade": "% da população total",
+    "fonte":
+      "Ministério das Cidades - Sistema Nacional de Informações sobre Saneamento (SNIS) / Sistema Nacional de Informações em Saneamento Básico (SINISA)",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao": "Mede o percentual da população total atendida por rede coletora de esgoto.",
+    "como_interpretar":
+      "Valores maiores indicam maior cobertura populacional por rede coletora de esgoto. O indicador mede atendimento por rede coletora, não mede necessariamente tratamento efetivo do esgoto, qualidade do serviço, ligações domiciliares ativas, soluções individuais como fossas sépticas, nem universalização sanitária completa.",
+    "metodologia":
+      "No SNIS, o indicador IN056 é calculado como o percentual da população total atendida com esgotamento sanitário em relação à população total residente dos municípios considerados na base do indicador. No SINISA, o indicador equivalente IES0001 é calculado como [(GTE0001 + GTE0002) / DFE0001] x 100, isto é, população urbana atendida com rede de esgotamento sanitário somada à população rural atendida com rede de esgotamento sanitário, dividida pela população total residente.",
+    "historico_metodologia":
+      "Não há dado SNIS para 1994, pois a série histórica de Água e Esgotos do SNIS se inicia em 1995. Até o ano-base 2022, a série usa o indicador SNIS IN056. A partir do ano-base 2023, o SINISA substitui o SNIS e passa a divulgar o indicador IES0001. A transição SNIS-SINISA alterou estrutura de coleta, módulos, respondentes e fórmulas operacionais, reduzindo a comparabilidade perfeita entre os anos. Por isso, os valores de 2023 e 2024 devem ser interpretados como continuidade institucional do indicador, mas com ressalva metodológica.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com dados declarados por titulares, prestadores e entidades participantes do SNIS/SINISA.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Lei 11.445",
+        "descricao":
+          "A Lei nº 11.445/2007 estabeleceu diretrizes nacionais para o saneamento básico e instituiu base legal para o sistema nacional de informações do setor.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Novo Marco",
+        "descricao":
+          "A Lei nº 14.026/2020 atualizou o marco legal do saneamento e fixou metas nacionais de universalização, incluindo atendimento de esgoto até 2033.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Transição SINISA",
+        "descricao":
+          "O ano-base 2023 marcou a substituição operacional do SNIS pelo SINISA, com mudança relevante de sistema, módulos de coleta e base de respondentes, afetando a comparabilidade com o IN056 histórico.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Nova Coleta",
+        "descricao":
+          "O SINISA consolidou nova rodada de divulgação com ano-base 2024, mantendo o indicador IES0001 para atendimento total da população com rede coletora de esgoto.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta é limitada, porque o IN056/IES0001 mede atendimento por rede coletora de esgoto, enquanto bases globais como OMS/UNICEF JMP usam conceitos como saneamento básico ou saneamento gerido com segurança, que incluem critérios de instalação, compartilhamento, tratamento e disposição. Portanto, o indicador é adequado para série nacional brasileira, mas não deve ser comparado diretamente com indicadores internacionais sem harmonização metodológica.",
+    "nivel_confiabilidade":
+      "Alto para acompanhamento oficial nacional do setor de saneamento no Brasil, pois a fonte é o sistema oficial do Ministério das Cidades. A principal ressalva é que os dados são declaratórios, dependem da adesão e qualidade das informações dos respondentes e sofreram mudança metodológica relevante na transição SNIS-SINISA a partir do ano-base 2023.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      { "titulo": "SNIS - Série Histórica", "url": "https://app4.mdr.gov.br/serieHistorica/" },
+      {
+        "titulo": "Ministério das Cidades - SNIS",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis",
+      },
+      {
+        "titulo": "Glossário de Indicadores SNIS Água e Esgotos 2022 - IN056",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/Glossario_Indicadores_AE2022.pdf",
+      },
+      {
+        "titulo": "SINISA 2024 - Relatório dos Serviços de Esgotamento Sanitário, ano de referência 2023",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/RELATORIO_SINISA_ESGOTAMENTO_SANITARIO_2024_v2.pdf",
+      },
+      {
+        "titulo": "SINISA 2025 - Resultados, ano de referência 2024",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/resultados-sinisa-2025",
+      },
+      {
+        "titulo": "Glossário de Indicadores SINISA Esgotamento Sanitário 2024 - IES0001",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/GlossrioIndicadores_ESGOTO_2024.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2012, "valor": 48.3 },
+      { "ano": 2013, "valor": 48.6 },
+      { "ano": 2014, "valor": 49.6 },
+      { "ano": 2015, "valor": 50.3 },
+      { "ano": 2016, "valor": 51.9 },
+      { "ano": 2017, "valor": 52.4 },
+      { "ano": 2018, "valor": 53.2 },
+      { "ano": 2019, "valor": 54.1 },
+      { "ano": 2020, "valor": 55.0 },
+      { "ano": 2021, "valor": 55.8 },
+      { "ano": 2022, "valor": 56.0 },
+      { "ano": 2023, "valor": 59.7 },
+      { "ano": 2024, "valor": 56.7 },
+    ],
+  },
+  "esgoto_tratado_relacao_agua_consumida": {
+    "label": "Esgoto Tratado Em Relação À Água Consumida",
+    "fonte_sigla": "SNIS/SINISA",
+    "unidade": "% da água consumida",
+    "fonte":
+      "Sistema Nacional de Informações sobre Saneamento / Sistema Nacional de Informações em Saneamento Básico - Ministério das Cidades",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao": "Mede o volume de esgoto tratado em relação ao volume de água consumida no Brasil.",
+    "como_interpretar":
+      "Quanto maior o valor, maior é a proporção do esgoto gerado que recebe tratamento em relação à água consumida. O indicador não mede diretamente qualidade do tratamento, remoção de poluentes, cobertura populacional de coleta ou atendimento domiciliar.",
+    "metodologia":
+      "No SNIS, o indicador IN046 é calculado como ((ES006 + ES015) / (AG010 - AG019)) * 100, em que ES006 é o volume de esgotos tratado, ES015 é o volume de esgoto bruto exportado tratado nas instalações do importador, AG010 é o volume de água consumido e AG019 é o volume de água tratada exportado. No SINISA, o indicador equivalente IES2003 é calculado como [(GTE1014 + GTE1013) / GTA1211] * 100, medindo o esgoto tratado referido à água consumida.",
+    "historico_metodologia":
+      "A série SNIS de água e esgoto existe desde 1995, mas os valores aqui incluídos foram mantidos apenas a partir de 2007, por serem os anos para os quais foi possível validar a sequência nacional do indicador em fontes oficiais e documentos técnicos que reproduzem a série SNIS/SINISA. A partir da coleta de 2009, o SNIS passou a incluir a informação ES015, volume de esgoto bruto exportado tratado nas instalações do importador, no cálculo do IN046. Em 2024, o SINISA substituiu o SNIS como sistema nacional, com nova estrutura de módulos, novos códigos e mudanças de escopo e detalhamento; por isso, 2023 e 2024 devem ser comparados com cautela em relação à série histórica SNIS.",
+    "abrangencia":
+      "Brasil, total nacional, com base nas informações declaradas por prestadores e municípios participantes do SNIS/SINISA.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2007,
+        "nome": "Lei Nacional",
+        "descricao":
+          "A Lei nº 11.445/2007 estabeleceu as diretrizes nacionais para o saneamento básico e reforçou o papel de sistemas de informação para acompanhamento do setor.",
+      },
+      {
+        "ano": 2009,
+        "nome": "ES015",
+        "descricao":
+          "A partir da coleta de 2009, o SNIS incluiu a informação de esgoto bruto exportado tratado nas instalações do importador, afetando o cálculo do IN046.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Novo Marco",
+        "descricao":
+          "A Lei nº 14.026/2020 atualizou o marco legal do saneamento, com metas de universalização e maior pressão regulatória sobre água e esgoto.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Transição SINISA",
+        "descricao":
+          "O SINISA entrou em operação substituindo o SNIS, com nova estrutura de coleta, novos códigos de indicadores e maior detalhamento das informações.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta confiável para este indicador, pois IN046/IES2003 é uma métrica operacional brasileira baseada na metodologia SNIS/SINISA. Comparações com outros países exigem indicadores harmonizados internacionalmente, como dados de saneamento do JMP OMS/UNICEF, que medem acesso a serviços, não exatamente esgoto tratado em relação à água consumida.",
+    "nivel_confiabilidade":
+      "Alto para acompanhamento oficial nacional do setor, pois os dados vêm do SNIS/SINISA, sistema oficial do Ministério das Cidades. A principal ressalva é que os dados são majoritariamente autodeclarados por prestadores e municípios, podem sofrer revisões, mudanças de cobertura, diferenças de preenchimento e alterações metodológicas na transição SNIS-SINISA.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Ministério das Cidades - SNIS",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis",
+      },
+      {
+        "titulo": "Ministério das Cidades - SINISA",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa",
+      },
+      {
+        "titulo": "Ministério das Cidades - Resultados SINISA 2025",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/resultados-sinisa-2025",
+      },
+      {
+        "titulo": "Ministério das Cidades - Relatório SINISA Esgotamento Sanitário 2025",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/RELATORIO_SINISA_ESGOTAMENTO_SANITARIO_2025.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Relatório SINISA Esgotamento Sanitário 2024",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/RELATORIO_SINISA_ESGOTAMENTO_SANITARIO_2024_v2.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Glossário de Indicadores SNIS Água e Esgotos 2022",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/Glossario_Indicadores_AE2022.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - Glossário de Indicadores SINISA Esgoto 2024",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/GlossrioIndicadores_ESGOTO_2024.pdf",
+      },
+      { "titulo": "SNIS - Série Histórica", "url": "https://app4.mdr.gov.br/serieHistorica/" },
+    ],
+    "dados": [
+      { "ano": 2007, "valor": 32.5 },
+      { "ano": 2008, "valor": 34.6 },
+      { "ano": 2009, "valor": 37.9 },
+      { "ano": 2010, "valor": 37.9 },
+      { "ano": 2011, "valor": 37.5 },
+      { "ano": 2012, "valor": 38.7 },
+      { "ano": 2013, "valor": 39.0 },
+      { "ano": 2014, "valor": 40.8 },
+      { "ano": 2015, "valor": 42.7 },
+      { "ano": 2016, "valor": 44.9 },
+      { "ano": 2017, "valor": 46.0 },
+      { "ano": 2018, "valor": 46.3 },
+      { "ano": 2019, "valor": 49.1 },
+      { "ano": 2020, "valor": 50.8 },
+      { "ano": 2021, "valor": 51.2 },
+      { "ano": 2022, "valor": 51.2 },
+      { "ano": 2023, "valor": 49.4 },
+      { "ano": 2024, "valor": 51.8 },
+    ],
+  },
+  "domicilios_com_coleta_de_lixo": {
+    "label": "Domicílios Com Coleta De Lixo",
+    "fonte_sigla": "IBGE/PNAD-C",
+    "unidade": "% dos domicílios particulares permanentes",
+    "fonte":
+      "Instituto Brasileiro de Geografia e Estatística - Pesquisa Nacional por Amostra de Domicílios Contínua Anual, Tabela SIDRA 6736",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção de domicílios particulares permanentes do Brasil cujo lixo tem destinação por serviço de coleta, somando coleta diretamente no domicílio por serviço de limpeza e coleta em caçamba de serviço de limpeza.",
+    "como_interpretar":
+      "Quanto maior o valor, maior a cobertura domiciliar de coleta regular de lixo. O indicador não mede coleta seletiva, qualidade da destinação final, reciclagem, frequência da coleta, existência de lixões, aterros sanitários ou manejo ambientalmente adequado dos resíduos.",
+    "metodologia":
+      "A série principal usa a PNAD Contínua Anual do IBGE, Tabela SIDRA 6736, variável 'Distribuição percentual dos domicílios', recorte territorial Brasil, situação do domicílio total, e soma das categorias de destino do lixo 'Coletado diretamente por serviço de limpeza' e 'Coletado em caçamba de serviço de limpeza'. Os dados derivam de pesquisa domiciliar por amostragem probabilística, com resultados ponderados para representar os domicílios particulares permanentes. O SNIS/SINISA de resíduos sólidos é mantido apenas como fonte complementar setorial, pois seus indicadores são baseados em informações administrativas dos prestadores/municípios e não substituem a medida domiciliar da PNAD-C.",
+    "historico_metodologia":
+      "A PNAD Contínua fornece série anual comparável para características gerais dos domicílios a partir de 2016. Para 2020 e 2021, o IBGE não disponibilizou estatísticas desse recorte devido aos efeitos da pandemia de COVID-19 sobre a coleta e a taxa de resposta dos módulos investigados na primeira visita. Em 2025, a Amostra Mestra iniciou transição gradual para incorporar o Censo Demográfico 2022 ao desenho amostral, processo previsto para integralização em 2026. O SNIS encerrou suas atividades com a coleta de informações de 2023 e o SINISA entrou em atividade em 2024, mas essa mudança afeta principalmente os indicadores administrativos setoriais, não a série domiciliar principal da PNAD-C. Não foram incluídos anos anteriores a 2016 porque não há série anual PNAD-C equivalente e diretamente comparável desde 1994 para este recorte.",
+    "abrangencia":
+      "Brasil, domicílios particulares permanentes, com desagregações disponíveis por Grandes Regiões, Unidades da Federação, municípios, situação urbana/rural e destino do lixo no SIDRA.",
+    "periodicidade":
+      "Anual, com ausência de dados para 2020 e 2021 no recorte de características gerais dos domicílios.",
+    "eventos_externos": [
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "O IBGE não disponibilizou estatísticas da PNAD Contínua sobre características gerais dos domicílios para 2020 e 2021 devido à redução da taxa de resposta e dificuldades de mensuração durante a pandemia de COVID-19.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Transição SNIS",
+        "descricao":
+          "O SNIS encerrou suas atividades com a coleta de 2023 e o SINISA passou a dar continuidade ao sistema nacional de informações de saneamento a partir de 2024, afetando o contexto administrativo de resíduos sólidos usado como complemento setorial.",
+      },
+      {
+        "ano": 2025,
+        "nome": "Nova Amostra",
+        "descricao":
+          "A PNAD Contínua iniciou a transição gradual da Amostra Mestra para incorporar o Censo Demográfico 2022 ao desenho amostral, com integralização prevista em 2026.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta deve ser feita com cautela, pois a PNAD-C mede destino do lixo declarado em domicílios particulares permanentes, enquanto bases internacionais como JMP/UN-Habitat/ODS podem usar conceitos de coleta municipal, gestão segura de resíduos ou população atendida. Para comparações entre países, a métrica brasileira deve ser harmonizada ao conceito internacional escolhido antes da comparação.",
+    "nivel_confiabilidade":
+      "Alto para o Brasil a partir de 2016, pois a série principal vem de pesquisa domiciliar oficial do IBGE, com metodologia amostral documentada e divulgação no SIDRA. A principal limitação é a ausência de dados PNAD-C comparáveis para 2020 e 2021 e a transição amostral iniciada em 2025.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "IBGE - SIDRA - Tabela 6736 - Domicílios e Moradores, por situação do domicílio e destino do lixo",
+        "url": "https://sidra.ibge.gov.br/tabela/6736",
+      },
+      {
+        "titulo": "IBGE - PNAD Contínua - Características gerais dos domicílios e dos moradores 2025",
+        "url":
+          "https://www.ibge.gov.br/estatisticas/sociais/populacao/17270-pnad-continua.html?edicao=46417&t=resultados",
+      },
+      {
+        "titulo": "IBGE - Agência de Notícias - Domicílios alugados cresceram mais de 50% desde 2016",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/46449-domicilios-alugados-cresceram-mais-de-50-desde-2016",
+      },
+      {
+        "titulo": "IBGE - Informativo PNAD Contínua: Características gerais dos domicílios e dos moradores 2025",
+        "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102274_informativo.pdf",
+      },
+      {
+        "titulo": "Ministério das Cidades - SINISA",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa",
+      },
+      {
+        "titulo": "Ministério das Cidades - Indicadores do Módulo Resíduos Sólidos - SINISA",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/arquivos/copy_of_INDICADORES_SINISA_RESIDUOS_SOLIDOS.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2016, "valor": 90.4 },
+      { "ano": 2023, "valor": 92.6 },
+      { "ano": 2024, "valor": 93.1 },
+    ],
+  },
+  "deslocamento_casa_trabalho_superior_1h": {
+    "label": "Trabalhadores Com Deslocamento Casa-Trabalho Superior A 1 Hora",
+    "fonte_sigla": "IBGE/SIMU",
+    "unidade": "% dos trabalhadores ocupados que trabalham fora do domicílio",
+    "fonte":
+      "IBGE - Censo Demográfico 2010 e Censo Demográfico 2022: Deslocamentos para trabalho e para estudo / Ministério das Cidades - Sistema Nacional de Informações em Mobilidade Urbana (SIMU)",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção de pessoas ocupadas que trabalham fora do domicílio e gastam mais de uma hora no deslocamento habitual entre casa e trabalho.",
+    "como_interpretar":
+      "Valores maiores indicam maior incidência de deslocamentos longos casa-trabalho entre trabalhadores que exercem o trabalho fora do domicílio. O indicador captura pressão de tempo, custo urbano e possível ineficiência de mobilidade, mas não mede qualidade do transporte, distância percorrida, custo monetário do deslocamento nem conforto da viagem.",
+    "metodologia":
+      "O indicador foi calculado pela soma das categorias oficiais do IBGE 'Mais de uma hora até duas horas' e 'Mais de duas horas' na distribuição percentual das pessoas ocupadas na semana de referência que trabalhavam fora do domicílio, por tempo habitual de deslocamento do domicílio para o trabalho principal. Para 2010, foram usados os percentuais 9,7% e 1,8%, totalizando 11,5%. Para 2022, foram usados os percentuais comparativos 10,1% e 1,0%, totalizando 11,1%. Foram mantidos somente anos censitários com valores oficiais publicados e diretamente verificáveis.",
+    "historico_metodologia":
+      "A série não é anual. O Censo Demográfico de 2010 coletou o tempo habitual de deslocamento casa-trabalho para pessoas ocupadas que trabalhavam fora do domicílio e declaravam realizar o deslocamento para trabalho diariamente. O Censo Demográfico de 2022 coletou o tempo habitual no trajeto do domicílio até o trabalho principal; na comparação 2010/2022, o IBGE informa que 2022 considera quem declarou realizar o deslocamento para trabalho ao menos três dias por semana. Os resultados de 2022 divulgados em 2025 são preliminares da amostra e foram estimados a partir de áreas de ponderação preliminares. Por isso, os valores de 2022 podem ser revisados quando o IBGE divulgar resultados definitivos da amostra.",
+    "abrangencia":
+      "Brasil, cobertura nacional, pessoas de 10 anos ou mais ocupadas na semana de referência que trabalhavam fora do domicílio, conforme recorte do Censo Demográfico.",
+    "periodicidade":
+      "Decenal, dependente da divulgação do Censo Demográfico. Não há série anual oficial nacional comparável desde 1994 para este mesmo atributo.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Não há comparação internacional direta robusta neste JSON, porque o indicador usa categorias e universo populacional específicos do Censo Demográfico brasileiro. Comparações com outros países exigiriam harmonização metodológica de universo, pergunta, limiares de tempo e conceito de trabalho fora do domicílio.",
+    "nivel_confiabilidade":
+      "Alto para os anos censitários publicados, por usar dados oficiais do IBGE. A confiabilidade é limitada para análise temporal contínua, pois há apenas dois pontos nacionais comparáveis no período solicitado e o valor de 2022 ainda foi divulgado como resultado preliminar da amostra.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "IBGE - Censo 2022: Deslocamentos para trabalho e para estudo - Resultados preliminares da amostra",
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/eb6833eb8d1aa7d4f77b9b38cd20fbdb.pdf",
+      },
+      {
+        "titulo": "IBGE Biblioteca - Censo 2022: Deslocamentos para trabalho e para estudo",
+        "url": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?id=2102210&view=detalhes",
+      },
+      {
+        "titulo": "IBGE - Censo Demográfico 2010",
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/9662-censo-demografico-2010.html",
+      },
+      {
+        "titulo": "Ministério das Cidades - Sistema Nacional de Informações em Mobilidade Urbana - SIMU",
+        "url":
+          "https://www.gov.br/cidades/pt-br/acesso-a-informacao/paineis-publicos-2/sistema-nacional-de-informacoes-em-mobilidade-urbana-simu",
+      },
+      {
+        "titulo": "SIMU - Percentual da população que gasta 1 hora ou mais no deslocamento casa-trabalho",
+        "url":
+          "https://simu.cidades.gov.br/glossario/acesso-ao-sistema-de-mobilidade-urbana/percentual-da-populacao-que-gasta-1-hora-ou-mais-no-deslocamento-casa-trabalho/",
+      },
+    ],
+    "dados": [
+      { "ano": 2010, "valor": 11.5 },
+      { "ano": 2022, "valor": 11.1 },
+    ],
+  },
+  "obitos_acidentes_transporte_100_mil_habitantes": {
+    "label": "Óbitos Por Acidentes De Transporte",
+    "fonte_sigla": "SIM/DATASUS/IPEA",
+    "unidade": "óbitos por 100 mil habitantes",
+    "fonte":
+      "Ministério da Saúde - Sistema de Informações sobre Mortalidade (SIM) / Atlas da Violência - Ipea e Fórum Brasileiro de Segurança Pública",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede a taxa anual de mortes de residentes no Brasil por acidentes de transporte, expressa por 100 mil habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior mortalidade por acidentes de transporte em relação ao tamanho da população. O indicador mede óbitos, não mede feridos, internações, gravidade não fatal, exposição ao trânsito, frota circulante, quilômetros rodados ou qualidade da infraestrutura viária.",
+    "metodologia":
+      "O numerador corresponde aos óbitos por residência registrados no Sistema de Informações sobre Mortalidade (SIM), do Ministério da Saúde. Para séries históricas de acidentes de transporte, o Atlas da Violência informa que, no período de 1979 a 1995, foram considerados códigos da CID-9 E800-E848; a partir de 1996, a classificação passa a seguir a CID-10 para acidentes de transporte. A taxa é calculada como número de óbitos por acidentes de transporte dividido pela população residente do ano, multiplicado por 100.000. Para 2013-2023, foram mantidos os valores publicados no Atlas da Violência 2025 para acidentes fatais de trânsito, calculados com dados do SIM e população da PNAD Contínua/IBGE.",
+    "historico_metodologia":
+      "Há duas ressalvas metodológicas relevantes. Primeiro, existe quebra de classificação internacional de causas de morte entre CID-9, usada até 1995, e CID-10, usada a partir de 1996. Segundo, o Atlas da Violência 2025 informa mudança na fonte populacional usada no cálculo das taxas: versões anteriores usavam estimativas populacionais do TCU em parte da série, enquanto a partir do Atlas da Violência 2024/2025 passou-se a usar população da PNAD Contínua/IBGE sempre que possível, o que pode alterar taxas por 100 mil habitantes e reduzir comparabilidade com séries antigas. Os valores de 1994-2012 foram mantidos conforme a série histórica publicada no Mapa da Violência 2014 com base no SIM/SVS/MS; os valores de 2013-2023 foram mantidos conforme o Atlas da Violência 2025. Não foram incluídos valores projetados.",
+    "abrangencia": "Brasil, cobertura nacional, população residente.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 1998,
+        "nome": "Código Trânsito",
+        "descricao":
+          "A entrada em vigor do Código de Trânsito Brasileiro coincidiu com queda expressiva da taxa de mortes por acidentes de transporte no fim dos anos 1990.",
+      },
+      {
+        "ano": 2008,
+        "nome": "Lei Seca",
+        "descricao":
+          "A Lei nº 11.705/2008 endureceu restrições à condução sob efeito de álcool, fator relevante para políticas de segurança viária.",
+      },
+      {
+        "ano": 2010,
+        "nome": "Alta Motocicletas",
+        "descricao":
+          "O crescimento da frota e do uso de motocicletas elevou a exposição de usuários vulneráveis e está associado ao aumento das mortes envolvendo motociclistas.",
+      },
+      {
+        "ano": 2014,
+        "nome": "Desaceleração",
+        "descricao":
+          "O Atlas da Violência 2025 associa parte da queda observada entre 2014 e 2019 à desaceleração econômica e à redução da demanda agregada por viagens.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 alterou padrões de mobilidade, com estabilidade relativa dos óbitos em 2020 e 2021 segundo o Atlas da Violência 2025.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Nova Alta",
+        "descricao":
+          "O Atlas da Violência 2025 registrou aumento da taxa nacional de acidentes fatais de trânsito para 16,2 óbitos por 100 mil habitantes em 2023.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta deve ser feita com cautela porque a OMS e o Banco Mundial usam estimativas padronizadas de mortalidade por lesões no trânsito, enquanto este gráfico usa registros oficiais do SIM/DATASUS e taxas publicadas pelo Atlas da Violência/Ipea. Ainda assim, a OMS estimou para o Brasil taxa de 15,7 mortes no trânsito por 100 mil habitantes em 2021, nível superior ao típico de países de alta renda e próximo ao patamar médio das Américas.",
+    "nivel_confiabilidade":
+      "Alto para óbitos oficialmente registrados no SIM/DATASUS e consolidados pelo Atlas da Violência/Ipea. As principais limitações são sub-registro ou qualidade variável da causa básica em algumas localidades e anos, mudança CID-9/CID-10 em 1996, e mudança da fonte populacional usada no denominador nas versões recentes do Atlas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Atlas da Violência - Taxa de óbitos em acidentes de transporte",
+        "url": "https://www.ipea.gov.br/atlasviolencia/dados-series/153",
+      },
+      {
+        "titulo": "Atlas da Violência 2025 - Ipea/FBSP",
+        "url": "https://forumseguranca.org.br/wp-content/uploads/2025/05/atlas-violencia-2025.pdf",
+      },
+      {
+        "titulo": "Mapa da Violência 2014 - Os Jovens do Brasil",
+        "url": "https://biblioteca.flacso.org.br/files/2020/03/Mapa2014_JovensBrasil.pdf",
+      },
+      {
+        "titulo": "DATASUS - Informações de Saúde TABNET",
+        "url": "https://datasus.saude.gov.br/informacoes-de-saude-tabnet/",
+      },
+      {
+        "titulo": "Banco Mundial - Mortality caused by road traffic injury (SH.STA.TRAF.P5)",
+        "url": "https://data.worldbank.org/indicator/SH.STA.TRAF.P5?locations=BR",
+      },
+      {
+        "titulo": "OMS - Global Status Report on Road Safety 2023 - Brazil Country Profile",
+        "url": "https://cdn.who.int/media/docs/default-source/country-profiles/road-safety/road-safety-2023-bra.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 19.2 },
+      { "ano": 1995, "valor": 21.3 },
+      { "ano": 1996, "valor": 22.6 },
+      { "ano": 1997, "valor": 22.4 },
+      { "ano": 1998, "valor": 19.2 },
+      { "ano": 1999, "valor": 18.4 },
+      { "ano": 2000, "valor": 17.5 },
+      { "ano": 2001, "valor": 18.0 },
+      { "ano": 2002, "valor": 19.1 },
+      { "ano": 2003, "valor": 19.0 },
+      { "ano": 2004, "valor": 19.9 },
+      { "ano": 2005, "valor": 19.9 },
+      { "ano": 2006, "valor": 19.9 },
+      { "ano": 2007, "valor": 20.3 },
+      { "ano": 2008, "valor": 20.7 },
+      { "ano": 2009, "valor": 20.2 },
+      { "ano": 2010, "valor": 23.0 },
+      { "ano": 2011, "valor": 23.2 },
+      { "ano": 2012, "valor": 23.7 },
+      { "ano": 2013, "valor": 21.2 },
+      { "ano": 2014, "valor": 21.8 },
+      { "ano": 2015, "valor": 19.1 },
+      { "ano": 2016, "valor": 18.3 },
+      { "ano": 2017, "valor": 17.2 },
+      { "ano": 2018, "valor": 15.7 },
+      { "ano": 2019, "valor": 15.2 },
+      { "ano": 2020, "valor": 15.5 },
+      { "ano": 2021, "valor": 15.9 },
+      { "ano": 2022, "valor": 15.8 },
+      { "ano": 2023, "valor": 16.2 },
+    ],
+  },
+  "desabrigados_desalojados_por_desastres": {
+    "label": "Pessoas Desabrigadas E Desalojadas Por Desastres",
+    "fonte_sigla": "Atlas/Sedec-MIDR",
+    "unidade": "pessoas",
+    "fonte":
+      "Secretaria Nacional de Proteção e Defesa Civil - Atlas Digital de Desastres no Brasil / Sistema Integrado de Informações sobre Desastres",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede o total anual de pessoas desabrigadas e desalojadas em decorrência de desastres registrados oficialmente no Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior número de pessoas obrigadas a deixar suas moradias, temporária ou definitivamente, em razão de desastres. O indicador mede dano humano informado após eventos registrados, não população exposta previamente ao risco nem número de moradias em áreas vulneráveis.",
+    "metodologia":
+      "O indicador soma, por ano de ocorrência, os campos DH_DESABRIGADOS e DH_DESALOJADOS da base oficial BD_Atlas_1991_2024_v1.0_2025.04.14_Consolidado.csv, do Atlas Digital de Desastres no Brasil/S2iD. Foram considerados todos os registros oficiais disponíveis na base, independentemente da tipologia do desastre e do status Registro ou Reconhecido. O ano foi extraído do campo Data_Evento.",
+    "historico_metodologia":
+      "A série histórica do Atlas incorpora registros anteriores ao S2iD digital, especialmente de 1991 a 2012, derivados de documentos oficiais como NOPRED, AVADAN, FIDE, decretos, portarias e relatórios. A partir da padronização nacional pela COBRADE e do uso do S2iD, a coleta passou a ser mais estruturada. A atualização de 2025 informa cobertura de 1991 a 2024, com registros municipais oficiais organizados por gráficos, tabelas e mapas. Mesmo assim, a série pode sofrer subnotificação, revisões retroativas e diferenças de capacidade de registro entre municípios.",
+    "abrangencia":
+      "Brasil, cobertura municipal, com registros oficiais disponíveis no Atlas Digital de Desastres/S2iD.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Chuvas SC",
+        "descricao":
+          "Chuvas extremas, inundações e movimentos de massa em Santa Catarina elevaram fortemente os registros de pessoas desabrigadas e desalojadas.",
+      },
+      {
+        "ano": 2009,
+        "nome": "Cheias NE",
+        "descricao":
+          "Eventos de cheias e inundações em vários estados aumentaram expressivamente o número de desabrigados e desalojados.",
+      },
+      {
+        "ano": 2011,
+        "nome": "Região Serrana",
+        "descricao":
+          "Deslizamentos e enxurradas na Região Serrana do Rio de Janeiro produziram grande impacto humano e habitacional.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Chuvas Extremas",
+        "descricao":
+          "Eventos severos de chuvas, inundações e movimentos de massa elevaram os registros de deslocamento forçado.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Enchentes RS",
+        "descricao":
+          "As enchentes no Rio Grande do Sul elevaram fortemente os registros de pessoas desalojadas e desabrigadas.",
+      },
+    ],
+    "comparacao_paises":
+      "Não há comparação internacional direta plenamente equivalente, pois o indicador depende do sistema administrativo brasileiro de registro de desastres, da classificação COBRADE e da capacidade local de informar danos humanos. Bases internacionais como EM-DAT permitem comparação ampla, mas usam critérios próprios de inclusão e podem divergir dos registros administrativos nacionais.",
+    "nivel_confiabilidade":
+      "Alto como série administrativa oficial brasileira de danos humanos registrados pela Defesa Civil Nacional. A principal limitação é que não mede exposição preventiva ao risco e pode sofrer subnotificação, diferenças municipais de registro, revisões retroativas e mudanças de padronização entre o período histórico pré-S2iD e o período digital.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      { "titulo": "Atlas Digital de Desastres no Brasil", "url": "https://atlasdigital.mdr.gov.br/" },
+      {
+        "titulo": "Atlas Digital de Desastres - Downloads",
+        "url": "https://atlasdigital.mdr.gov.br/paginas/downloads.xhtml",
+      },
+      {
+        "titulo": "MIDR - Atlas Digital de Desastres no Brasil atualizado com dados consolidados de 2024",
+        "url":
+          "https://www.gov.br/mdr/pt-br/noticias/atlas-digital-de-desastres-no-brasil-e-atualizado-com-dados-consolidados-de-2024",
+      },
+      {
+        "titulo": "Portal de Dados Abertos do MIDR - S2ID - Dados Informados",
+        "url": "https://dadosabertos.mdr.gov.br/dataset/s2id_sedec",
+      },
+    ],
+    "dados": [
+      { "ano": 1991, "valor": 20847 },
+      { "ano": 1992, "valor": 63668 },
+      { "ano": 1993, "valor": 11029 },
+      { "ano": 1994, "valor": 6660 },
+      { "ano": 1995, "valor": 86705 },
+      { "ano": 1996, "valor": 9153 },
+      { "ano": 1997, "valor": 20317 },
+      { "ano": 1998, "valor": 62630 },
+      { "ano": 1999, "valor": 15576 },
+      { "ano": 2000, "valor": 112467 },
+      { "ano": 2001, "valor": 85980 },
+      { "ano": 2002, "valor": 170349 },
+      { "ano": 2003, "valor": 139211 },
+      { "ano": 2004, "valor": 391031 },
+      { "ano": 2005, "valor": 253567 },
+      { "ano": 2006, "valor": 175460 },
+      { "ano": 2007, "valor": 208048 },
+      { "ano": 2008, "valor": 656149 },
+      { "ano": 2009, "valor": 1041277 },
+      { "ano": 2010, "valor": 488086 },
+      { "ano": 2011, "valor": 552813 },
+      { "ano": 2012, "valor": 363157 },
+      { "ano": 2013, "valor": 587996 },
+      { "ano": 2014, "valor": 451007 },
+      { "ano": 2015, "valor": 481787 },
+      { "ano": 2016, "valor": 130979 },
+      { "ano": 2017, "valor": 297125 },
+      { "ano": 2018, "valor": 107726 },
+      { "ano": 2019, "valor": 282794 },
+      { "ano": 2020, "valor": 381951 },
+      { "ano": 2021, "valor": 426880 },
+      { "ano": 2022, "valor": 880218 },
+      { "ano": 2023, "valor": 681693 },
+      { "ano": 2024, "valor": 1125331 },
+    ],
+  },
+  "obitos_por_desastres_hidrologicos_geologicos": {
+    "label": "Óbitos Por Desastres Hidrológicos E Geológicos",
+    "fonte_sigla": "Atlas/Sedec-MIDR",
+    "unidade": "óbitos",
+    "fonte":
+      "Secretaria Nacional de Proteção e Defesa Civil - Atlas Digital de Desastres no Brasil / Sistema Integrado de Informações sobre Desastres",
+    "cat": "Habitação, Saneamento e Vida Urbana",
+    "padrao": false,
+    "descricao":
+      "Mede o total anual de mortes diretamente associadas a desastres hidrológicos e geológicos registrados oficialmente no Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior letalidade anual de eventos como alagamentos, enxurradas, inundações, chuvas intensas, movimentos de massa e erosões. O indicador mede mortes registradas após desastres reconhecidos ou informados, não risco potencial, população exposta ou frequência total de eventos.",
+    "metodologia":
+      "O indicador soma, por ano de ocorrência, o campo DH_MORTOS da base oficial BD_Atlas_1991_2024_v1.0_2025.04.14_Consolidado.csv, do Atlas Digital de Desastres no Brasil/S2iD. Foram incluídos os registros classificados no grupo_de_desastre 'Hidrológico' e a tipologia 'Erosão'. Assim, o recorte inclui Alagamentos, Enxurradas, Inundações, Chuvas Intensas, Movimento de Massa e Erosão. O ano foi extraído do campo Data_Evento.",
+    "historico_metodologia":
+      "A base histórica do Atlas combina registros documentais antigos e registros digitais posteriores. Antes da consolidação do S2iD, parte dos registros foi resgatada de documentos oficiais como NOPRED, AVADAN, FIDE, decretos, portarias e relatórios; depois, a base passou a usar registros mais padronizados pelo S2iD e pela COBRADE. A atualização de 2025 informa cobertura de 1991 a 2024. A comparabilidade temporal exige cautela porque a capacidade de registro, a classificação dos desastres e a qualidade do preenchimento podem variar ao longo do tempo.",
+    "abrangencia":
+      "Brasil, cobertura municipal, com registros oficiais disponíveis no Atlas Digital de Desastres/S2iD.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2011,
+        "nome": "Região Serrana",
+        "descricao":
+          "Deslizamentos e enxurradas na Região Serrana do Rio de Janeiro produziram mortalidade excepcionalmente elevada.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Petrópolis",
+        "descricao":
+          "Chuvas extremas, enxurradas e movimentos de massa em Petrópolis elevaram os óbitos por desastres hidrológicos e geológicos.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Enchentes RS",
+        "descricao":
+          "As enchentes no Rio Grande do Sul elevaram a mortalidade associada a desastres hidrológicos em 2024.",
+      },
+    ],
+    "comparacao_paises":
+      "A comparação internacional direta deve ser feita com cautela. O Atlas/S2iD é uma base administrativa nacional; bases internacionais como EM-DAT usam critérios próprios de inclusão de desastres e podem não reproduzir exatamente os registros oficiais brasileiros.",
+    "nivel_confiabilidade":
+      "Alto como registro administrativo oficial brasileiro de mortes informadas e padronizadas pela Defesa Civil Nacional. A principal limitação é que os valores dependem do registro municipal e estadual, da correta classificação COBRADE e da consistência histórica entre registros documentais antigos e registros digitais recentes.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 02/05/2026",
+    "fontes_links": [
+      { "titulo": "Atlas Digital de Desastres no Brasil", "url": "https://atlasdigital.mdr.gov.br/" },
+      {
+        "titulo": "Atlas Digital de Desastres - Downloads",
+        "url": "https://atlasdigital.mdr.gov.br/paginas/downloads.xhtml",
+      },
+      {
+        "titulo": "MIDR - Atlas Digital de Desastres no Brasil atualizado com dados consolidados de 2024",
+        "url":
+          "https://www.gov.br/mdr/pt-br/noticias/atlas-digital-de-desastres-no-brasil-e-atualizado-com-dados-consolidados-de-2024",
+      },
+      {
+        "titulo": "Portal de Dados Abertos do MIDR - S2ID - Dados Informados",
+        "url": "https://dadosabertos.mdr.gov.br/dataset/s2id_sedec",
+      },
+    ],
+    "dados": [
+      { "ano": 1991, "valor": 36 },
+      { "ano": 1992, "valor": 11 },
+      { "ano": 1993, "valor": 16 },
+      { "ano": 1994, "valor": 4 },
+      { "ano": 1995, "valor": 31 },
+      { "ano": 1996, "valor": 12 },
+      { "ano": 1997, "valor": 8 },
+      { "ano": 1998, "valor": 7 },
+      { "ano": 1999, "valor": 7 },
+      { "ano": 2000, "valor": 53 },
+      { "ano": 2001, "valor": 65 },
+      { "ano": 2002, "valor": 88 },
+      { "ano": 2003, "valor": 91 },
+      { "ano": 2004, "valor": 190 },
+      { "ano": 2005, "valor": 109 },
+      { "ano": 2006, "valor": 143 },
+      { "ano": 2007, "valor": 114 },
+      { "ano": 2008, "valor": 196 },
+      { "ano": 2009, "valor": 262 },
+      { "ano": 2010, "valor": 339 },
+      { "ano": 2011, "valor": 947 },
+      { "ano": 2012, "valor": 82 },
+      { "ano": 2013, "valor": 132 },
+      { "ano": 2014, "valor": 63 },
+      { "ano": 2015, "valor": 47 },
+      { "ano": 2016, "valor": 56 },
+      { "ano": 2017, "valor": 49 },
+      { "ano": 2018, "valor": 51 },
+      { "ano": 2019, "valor": 89 },
+      { "ano": 2020, "valor": 165 },
+      { "ano": 2021, "valor": 58 },
+      { "ano": 2022, "valor": 600 },
+      { "ano": 2023, "valor": 173 },
+      { "ano": 2024, "valor": 263 },
+    ],
+  },
   "government_effectiveness_wgi": {
     "label": "Eficácia Governamental",
     "fonte_sigla": "WGI",
