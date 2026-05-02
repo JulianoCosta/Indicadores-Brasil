@@ -9247,105 +9247,100 @@ window.__DADOS_ANUAIS__ = {
     "label": "Taxa de Atendimento Escolar de 0 a 3 Anos",
     "fonte_sigla": "IBGE/INEP",
     "unidade": "% da população de 0 a 3 anos",
-    "fonte": "IBGE - Pesquisa Nacional por Amostra de Domicílios Contínua Anual, Tabela 7138: Taxa de escolarização, por sexo e grupo de idade / INEP - Censo Escolar da Educação Básica",
+    "fonte":
+      "IBGE - Pesquisa Nacional por Amostra de Domicílios Contínua Anual, Tabela 7138: Taxa de escolarização, por sexo e grupo de idade / INEP - Censo Escolar da Educação Básica",
     "cat": "Educação",
     "padrao": false,
     "descricao": "Mede a proporção de crianças de 0 a 3 anos que frequentam escola ou creche no Brasil.",
-    "como_interpretar": "Valores maiores indicam maior acesso das crianças de 0 a 3 anos à creche ou escola. O indicador mede acesso/frequência, mas não mede qualidade pedagógica, jornada, infraestrutura, demanda reprimida, disponibilidade de vagas ou equidade regional e socioeconômica.",
-    "metodologia": "A série principal usa a PNAD Contínua Anual do IBGE, módulo Educação, divulgada no SIDRA, Tabela 7138. A taxa de escolarização corresponde à razão entre o número de estudantes de determinada faixa etária e a população total da mesma faixa etária, multiplicada por 100. Para este indicador, foi selecionado Brasil, sexo total, grupo de idade 0 a 3 anos e variável Taxa de escolarização. O Censo Escolar do INEP é usado apenas como fonte complementar de validação administrativa sobre matrículas em creche, não como denominador populacional. O próprio INEP alerta que não é adequado estimar taxa de escolarização pela divisão direta entre matrículas do Censo Escolar e projeções populacionais do IBGE, pois as pesquisas têm escopos e metodologias distintos.",
-    "historico_metodologia": "A PNAD Contínua passou a divulgar o módulo anual de Educação a partir de 2016, por isso não há série oficial diretamente comparável desde 1994 nessa metodologia. Os anos de 2020 e 2021 não foram mantidos na série de Educação por causa dos impactos da pandemia de COVID-19 na coleta e divulgação do módulo. Séries anteriores da PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar podem mostrar tendências históricas, mas não são metodologicamente equivalentes à PNAD Contínua Tabela 7138 e, portanto, não foram misturadas nos dados do gráfico. Os valores podem sofrer revisões por reponderação amostral, atualização de pesos, revisão populacional ou atualização do SIDRA.",
-    "abrangencia": "Brasil, cobertura nacional, população residente em domicílios particulares permanentes pesquisada pela PNAD Contínua; complemento administrativo nacional pelo Censo Escolar para matrículas em creche.",
-    "periodicidade": "Anual, com base no módulo Educação da PNAD Contínua, normalmente referente ao 2º trimestre. O Censo Escolar também é anual.",
+    "como_interpretar":
+      "Valores maiores indicam maior acesso das crianças de 0 a 3 anos à creche ou escola. O indicador mede acesso/frequência, mas não mede qualidade pedagógica, jornada, infraestrutura, demanda reprimida, disponibilidade de vagas ou equidade regional e socioeconômica.",
+    "metodologia":
+      "A série principal usa a PNAD Contínua Anual do IBGE, módulo Educação, divulgada no SIDRA, Tabela 7138. A taxa de escolarização corresponde à razão entre o número de estudantes de determinada faixa etária e a população total da mesma faixa etária, multiplicada por 100. Para este indicador, foi selecionado Brasil, sexo total, grupo de idade 0 a 3 anos e variável Taxa de escolarização. O Censo Escolar do INEP é usado apenas como fonte complementar de validação administrativa sobre matrículas em creche, não como denominador populacional. O próprio INEP alerta que não é adequado estimar taxa de escolarização pela divisão direta entre matrículas do Censo Escolar e projeções populacionais do IBGE, pois as pesquisas têm escopos e metodologias distintos.",
+    "historico_metodologia":
+      "A PNAD Contínua passou a divulgar o módulo anual de Educação a partir de 2016, por isso não há série oficial diretamente comparável desde 1994 nessa metodologia. Os anos de 2020 e 2021 não foram mantidos na série de Educação por causa dos impactos da pandemia de COVID-19 na coleta e divulgação do módulo. Séries anteriores da PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar podem mostrar tendências históricas, mas não são metodologicamente equivalentes à PNAD Contínua Tabela 7138 e, portanto, não foram misturadas nos dados do gráfico. Os valores podem sofrer revisões por reponderação amostral, atualização de pesos, revisão populacional ou atualização do SIDRA.",
+    "abrangencia":
+      "Brasil, cobertura nacional, população residente em domicílios particulares permanentes pesquisada pela PNAD Contínua; complemento administrativo nacional pelo Censo Escolar para matrículas em creche.",
+    "periodicidade":
+      "Anual, com base no módulo Educação da PNAD Contínua, normalmente referente ao 2º trimestre. O Censo Escolar também é anual.",
     "eventos_externos": [
       {
         "ano": 2016,
         "nome": "Início PNAD-C",
-        "descricao": "Início da série comparável da PNAD Contínua Educação para taxa de escolarização por grupo de idade no SIDRA."
+        "descricao":
+          "Início da série comparável da PNAD Contínua Educação para taxa de escolarização por grupo de idade no SIDRA.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 interrompeu a comparabilidade regular do módulo Educação em 2020 e 2021 e afetou a frequência escolar e a oferta presencial."
+        "descricao":
+          "A pandemia de COVID-19 interrompeu a comparabilidade regular do módulo Educação em 2020 e 2021 e afetou a frequência escolar e a oferta presencial.",
       },
       {
         "ano": 2022,
         "nome": "Retomada",
-        "descricao": "A série volta a apresentar dados após a interrupção de 2020 e 2021, com taxa de 36,0%, pouco acima do nível de 2019."
+        "descricao":
+          "A série volta a apresentar dados após a interrupção de 2020 e 2021, com taxa de 36,0%, pouco acima do nível de 2019.",
       },
       {
         "ano": 2024,
         "nome": "Meta PNE",
-        "descricao": "O Plano Nacional de Educação previa atendimento de pelo menos 50% das crianças de 0 a 3 anos até 2024, mas a taxa oficial permaneceu abaixo da meta."
+        "descricao":
+          "O Plano Nacional de Educação previa atendimento de pelo menos 50% das crianças de 0 a 3 anos até 2024, mas a taxa oficial permaneceu abaixo da meta.",
       },
       {
         "ano": 2025,
         "nome": "Matrículas estáveis",
-        "descricao": "O Censo Escolar 2025 registrou 4.182.646 matrículas em creche, leve queda frente a 2024, mas esse número não foi usado para calcular taxa de atendimento."
-      }
+        "descricao":
+          "O Censo Escolar 2025 registrou 4.182.646 matrículas em creche, leve queda frente a 2024, mas esse número não foi usado para calcular taxa de atendimento.",
+      },
     ],
-    "comparacao_paises": "A comparação internacional estrita para 0 a 3 anos é limitada porque países classificam educação infantil, creche, pré-escola e cuidado infantil de formas diferentes. Relatórios da OCDE indicam que o Brasil tem participação relativamente alta perto da idade de entrada no ensino fundamental, mas baixa participação entre crianças menores de 3 anos em comparação com países da OCDE de maior cobertura.",
-    "nivel_confiabilidade": "Alto para acompanhamento nacional a partir de 2016, pois os valores vêm da PNAD Contínua/SIDRA, fonte oficial do IBGE. A ressalva é que a PNAD Contínua é uma pesquisa amostral, sujeita a erro amostral e revisões de ponderação. A série não deve ser combinada diretamente com PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar para formar uma série contínua desde 1994.",
+    "comparacao_paises":
+      "A comparação internacional estrita para 0 a 3 anos é limitada porque países classificam educação infantil, creche, pré-escola e cuidado infantil de formas diferentes. Relatórios da OCDE indicam que o Brasil tem participação relativamente alta perto da idade de entrada no ensino fundamental, mas baixa participação entre crianças menores de 3 anos em comparação com países da OCDE de maior cobertura.",
+    "nivel_confiabilidade":
+      "Alto para acompanhamento nacional a partir de 2016, pois os valores vêm da PNAD Contínua/SIDRA, fonte oficial do IBGE. A ressalva é que a PNAD Contínua é uma pesquisa amostral, sujeita a erro amostral e revisões de ponderação. A série não deve ser combinada diretamente com PNAD antiga, Censo Demográfico ou matrículas do Censo Escolar para formar uma série contínua desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "IBGE SIDRA - Tabela 7138 - Taxa de escolarização, por sexo e grupo de idade",
-        "url": "https://sidra.ibge.gov.br/tabela/7138"
+        "url": "https://sidra.ibge.gov.br/tabela/7138",
       },
       {
         "titulo": "IBGE - PNAD Contínua Educação 2024 - Apresentação oficial",
-        "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/80f8445b4b7a92d561ea8a641e50869b.pdf"
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/80f8445b4b7a92d561ea8a641e50869b.pdf",
       },
       {
         "titulo": "IBGE Agência de Notícias - Indicadores educacionais avançam em 2024",
-        "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43699-indicadores-educacionais-avancam-em-2024-mas-atraso-escolar-aumenta"
+        "url":
+          "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43699-indicadores-educacionais-avancam-em-2024-mas-atraso-escolar-aumenta",
       },
       {
         "titulo": "INEP - Censo Escolar da Educação Básica 2025 - Apresentação Coletiva",
-        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf",
       },
       {
         "titulo": "INEP - Sinopses Estatísticas da Educação Básica",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica"
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica",
       },
       {
         "titulo": "INEP - Censo Escolar",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar",
       },
       {
         "titulo": "OECD - International Evidence to Support the Reform of Early Childhood Education and Care in Brazil",
-        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/04/international-evidence-to-support-the-reform-of-early-childhood-education-and-care-ecec-in-brazil-in-2024_9e12e4ae/b820e627-en.pdf"
-      }
+        "url":
+          "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/04/international-evidence-to-support-the-reform-of-early-childhood-education-and-care-ecec-in-brazil-in-2024_9e12e4ae/b820e627-en.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 2016,
-        "valor": 30.3
-      },
-      {
-        "ano": 2017,
-        "valor": 32.7
-      },
-      {
-        "ano": 2018,
-        "valor": 34.2
-      },
-      {
-        "ano": 2019,
-        "valor": 35.5
-      },
-      {
-        "ano": 2022,
-        "valor": 36.0
-      },
-      {
-        "ano": 2023,
-        "valor": 38.7
-      },
-      {
-        "ano": 2024,
-        "valor": 39.8
-      }
-    ]
+      { "ano": 2016, "valor": 30.3 },
+      { "ano": 2017, "valor": 32.7 },
+      { "ano": 2018, "valor": 34.2 },
+      { "ano": 2019, "valor": 35.5 },
+      { "ano": 2022, "valor": 36.0 },
+      { "ano": 2023, "valor": 38.7 },
+      { "ano": 2024, "valor": 39.8 },
+    ],
   },
   "taxa_criancas_fora_da_escola_uis": {
     "label": "Taxa de Crianças Fora da Escola",
@@ -9586,148 +9581,105 @@ window.__DADOS_ANUAIS__ = {
     "label": "Taxa de Abandono Escolar no Ensino Médio",
     "fonte_sigla": "INEP",
     "unidade": "% das matrículas consideradas válidas",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Indicadores Educacionais - Taxas de Rendimento Escolar",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Indicadores Educacionais - Taxas de Rendimento Escolar",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede a proporção de matrículas do ensino médio regular e integrado informadas como abandono ao final do ano letivo, entre as matrículas com situação final válida.",
-    "como_interpretar": "Valores maiores indicam maior proporção de estudantes que deixaram de frequentar a escola após a data de referência do Censo Escolar. Valores menores indicam menor abandono escolar. O indicador não mede evasão interanual diretamente; evasão pertence ao conjunto de taxas de transição escolar.",
-    "metodologia": "A taxa de abandono é calculada pelo Inep a partir da segunda etapa do Censo Escolar, chamada Situação do Aluno. Para as matrículas consideradas válidas, o cálculo é: Taxa de abandono = [ABA / (APR + REP + ABA)] x 100, em que APR é o número de matrículas aprovadas, REP é o número de matrículas reprovadas e ABA é o número de matrículas informadas como deixou de frequentar. A série principal deste JSON usa Brasil, total do ensino médio, incluindo rede pública e privada, conforme os indicadores de rendimento escolar do Inep. As taxas de transição escolar, como promoção, repetência e evasão, são indicadores relacionados, mas metodologicamente distintos, calculados por acompanhamento longitudinal dos estudantes entre anos escolares.",
-    "historico_metodologia": "O Censo Escolar passou a coletar dados individualizados de alunos e docentes a partir de meados dos anos 2000, o que permitiu maior qualidade na produção de indicadores de trajetória. O Inep informa que as taxas de transição eram divulgadas até 2005 com metodologia baseada em estimativas matemáticas derivadas das taxas de rendimento e que, a partir de 2017, foram retomadas com metodologia própria baseada no acompanhamento longitudinal dos estudantes. Para rendimento escolar, a série padronizada disponível no portal de Indicadores Educacionais cobre 2007 a 2024. Foram incluídos também 1996 e 1997 porque há tabela oficial histórica do Inep/MEC/SEEC publicada pelo Inep. Não foram incluídos 1994, 1995 e 1998 a 2006 por não terem sido localizados, na fonte oficial consultada, em série nacional validável com a mesma estrutura.",
-    "abrangencia": "Brasil, ensino médio, total das redes pública e privada, conforme Censo Escolar da Educação Básica.",
+    "descricao":
+      "Mede a proporção de matrículas do ensino médio regular e integrado informadas como abandono ao final do ano letivo, entre as matrículas com situação final válida.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção de estudantes que deixaram de frequentar a escola após a data de referência do Censo Escolar. Valores menores indicam menor abandono escolar. O indicador não mede evasão interanual diretamente; evasão pertence ao conjunto de taxas de transição escolar.",
+    "metodologia":
+      "A taxa de abandono é calculada pelo Inep a partir da segunda etapa do Censo Escolar, chamada Situação do Aluno. Para as matrículas consideradas válidas, o cálculo é: Taxa de abandono = [ABA / (APR + REP + ABA)] x 100, em que APR é o número de matrículas aprovadas, REP é o número de matrículas reprovadas e ABA é o número de matrículas informadas como deixou de frequentar. A série principal deste JSON usa Brasil, total do ensino médio, incluindo rede pública e privada, conforme os indicadores de rendimento escolar do Inep. As taxas de transição escolar, como promoção, repetência e evasão, são indicadores relacionados, mas metodologicamente distintos, calculados por acompanhamento longitudinal dos estudantes entre anos escolares.",
+    "historico_metodologia":
+      "O Censo Escolar passou a coletar dados individualizados de alunos e docentes a partir de meados dos anos 2000, o que permitiu maior qualidade na produção de indicadores de trajetória. O Inep informa que as taxas de transição eram divulgadas até 2005 com metodologia baseada em estimativas matemáticas derivadas das taxas de rendimento e que, a partir de 2017, foram retomadas com metodologia própria baseada no acompanhamento longitudinal dos estudantes. Para rendimento escolar, a série padronizada disponível no portal de Indicadores Educacionais cobre 2007 a 2024. Foram incluídos também 1996 e 1997 porque há tabela oficial histórica do Inep/MEC/SEEC publicada pelo Inep. Não foram incluídos 1994, 1995 e 1998 a 2006 por não terem sido localizados, na fonte oficial consultada, em série nacional validável com a mesma estrutura.",
+    "abrangencia":
+      "Brasil, ensino médio, total das redes pública e privada, conforme Censo Escolar da Educação Básica.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2007,
         "nome": "Nova Série",
-        "descricao": "Início da série padronizada de taxas de rendimento escolar disponível no portal oficial de Indicadores Educacionais do Inep."
+        "descricao":
+          "Início da série padronizada de taxas de rendimento escolar disponível no portal oficial de Indicadores Educacionais do Inep.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 e as orientações educacionais excepcionais afetaram o calendário escolar, a avaliação, a retenção e o abandono; o Inep aponta o uso de estratégias como contínuo curricular em 2020-2021."
+        "descricao":
+          "A pandemia de COVID-19 e as orientações educacionais excepcionais afetaram o calendário escolar, a avaliação, a retenção e o abandono; o Inep aponta o uso de estratégias como contínuo curricular em 2020-2021.",
       },
       {
         "ano": 2021,
         "nome": "Retorno Parcial",
-        "descricao": "O período pós-2020 marcou reversão parcial dos efeitos excepcionais observados no primeiro ano da pandemia, com retorno gradual das taxas de rendimento a patamares mais próximos do período pré-pandemia."
+        "descricao":
+          "O período pós-2020 marcou reversão parcial dos efeitos excepcionais observados no primeiro ano da pandemia, com retorno gradual das taxas de rendimento a patamares mais próximos do período pré-pandemia.",
       },
       {
         "ano": 2024,
         "nome": "Pé-de-Meia",
-        "descricao": "A política federal de incentivo à permanência no ensino médio foi implementada em 2024; o MEC associou o período 2022-2024 à queda do abandono escolar no ensino médio, embora a série do indicador continue sendo apurada pelo Censo Escolar/Inep."
-      }
+        "descricao":
+          "A política federal de incentivo à permanência no ensino médio foi implementada em 2024; o MEC associou o período 2022-2024 à queda do abandono escolar no ensino médio, embora a série do indicador continue sendo apurada pelo Censo Escolar/Inep.",
+      },
     ],
-    "comparacao_paises": "A comparação internacional direta é limitada, porque a taxa de abandono do Inep é um indicador administrativo nacional baseado na Situação do Aluno no Censo Escolar. Para comparação entre países, indicadores harmonizados de organismos como UNESCO/UIS ou OCDE devem ser usados com cautela, pois conceitos como abandono, evasão, conclusão, repetência e população fora da escola podem ter definições diferentes.",
-    "nivel_confiabilidade": "Alto para os anos 2007 a 2024, por serem derivados dos Indicadores Educacionais oficiais do Inep/Censo Escolar. Médio-alto para 1996 e 1997, por serem valores oficiais históricos MEC/Inep/SEEC, mas com estrutura anterior à série padronizada atual. A principal ressalva é a quebra de comparabilidade entre a tabela histórica de 1996-1997 e a série padronizada de 2007 em diante.",
+    "comparacao_paises":
+      "A comparação internacional direta é limitada, porque a taxa de abandono do Inep é um indicador administrativo nacional baseado na Situação do Aluno no Censo Escolar. Para comparação entre países, indicadores harmonizados de organismos como UNESCO/UIS ou OCDE devem ser usados com cautela, pois conceitos como abandono, evasão, conclusão, repetência e população fora da escola podem ter definições diferentes.",
+    "nivel_confiabilidade":
+      "Alto para os anos 2007 a 2024, por serem derivados dos Indicadores Educacionais oficiais do Inep/Censo Escolar. Médio-alto para 1996 e 1997, por serem valores oficiais históricos MEC/Inep/SEEC, mas com estrutura anterior à série padronizada atual. A principal ressalva é a quebra de comparabilidade entre a tabela histórica de 1996-1997 e a série padronizada de 2007 em diante.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "INEP - Taxas de Rendimento Escolar",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-rendimento-escolar"
+        "url":
+          "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-rendimento-escolar",
       },
       {
         "titulo": "INEP - Taxas de Rendimento Escolar 2024 - Metodologia",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/taxas_de_rendimento_escolar_2024.pdf"
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/taxas_de_rendimento_escolar_2024.pdf",
       },
       {
         "titulo": "INEP - Microdados do Censo Escolar da Educação Básica",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar"
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar",
       },
       {
         "titulo": "INEP - Taxas de Aprovação, Reprovação e Abandono Escolar 1996-1997",
-        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/censo-escolar/confira-as-taxas-de-aprovacao-reprovacao-e-abandono-escolar"
+        "url":
+          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/censo-escolar/confira-as-taxas-de-aprovacao-reprovacao-e-abandono-escolar",
       },
       {
         "titulo": "INEP - Nota Técnica das Taxas de Transição 2007-2016",
-        "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2007_2016/nota_tecnica_taxas_transicao_2007_2016.pdf"
+        "url":
+          "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2007_2016/nota_tecnica_taxas_transicao_2007_2016.pdf",
       },
       {
         "titulo": "INEP - Censo Escolar da Educação Básica 2024 - Resumo Técnico",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
-      }
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 1996,
-        "valor": 15.7
-      },
-      {
-        "ano": 1997,
-        "valor": 13.7
-      },
-      {
-        "ano": 2007,
-        "valor": 13.2
-      },
-      {
-        "ano": 2008,
-        "valor": 12.8
-      },
-      {
-        "ano": 2009,
-        "valor": 11.5
-      },
-      {
-        "ano": 2010,
-        "valor": 10.3
-      },
-      {
-        "ano": 2011,
-        "valor": 9.5
-      },
-      {
-        "ano": 2012,
-        "valor": 9.1
-      },
-      {
-        "ano": 2013,
-        "valor": 8.1
-      },
-      {
-        "ano": 2014,
-        "valor": 7.6
-      },
-      {
-        "ano": 2015,
-        "valor": 6.8
-      },
-      {
-        "ano": 2016,
-        "valor": 6.6
-      },
-      {
-        "ano": 2017,
-        "valor": 6.1
-      },
-      {
-        "ano": 2018,
-        "valor": 6.1
-      },
-      {
-        "ano": 2019,
-        "valor": 4.7
-      },
-      {
-        "ano": 2020,
-        "valor": 2.3
-      },
-      {
-        "ano": 2021,
-        "valor": 5.0
-      },
-      {
-        "ano": 2022,
-        "valor": 5.7
-      },
-      {
-        "ano": 2023,
-        "valor": 3.3
-      },
-      {
-        "ano": 2024,
-        "valor": 3.2
-      }
-    ]
+      { "ano": 1996, "valor": 15.7 },
+      { "ano": 1997, "valor": 13.7 },
+      { "ano": 2007, "valor": 13.2 },
+      { "ano": 2008, "valor": 12.8 },
+      { "ano": 2009, "valor": 11.5 },
+      { "ano": 2010, "valor": 10.3 },
+      { "ano": 2011, "valor": 9.5 },
+      { "ano": 2012, "valor": 9.1 },
+      { "ano": 2013, "valor": 8.1 },
+      { "ano": 2014, "valor": 7.6 },
+      { "ano": 2015, "valor": 6.8 },
+      { "ano": 2016, "valor": 6.6 },
+      { "ano": 2017, "valor": 6.1 },
+      { "ano": 2018, "valor": 6.1 },
+      { "ano": 2019, "valor": 4.7 },
+      { "ano": 2020, "valor": 2.3 },
+      { "ano": 2021, "valor": 5.0 },
+      { "ano": 2022, "valor": 5.7 },
+      { "ano": 2023, "valor": 3.3 },
+      { "ano": 2024, "valor": 3.2 },
+    ],
   },
   "lays_banco_mundial": {
     "label": "Anos de Escolaridade Ajustados pela Aprendizagem",
@@ -9784,490 +9736,390 @@ window.__DADOS_ANUAIS__ = {
     "label": "Taxa de Distorção Idade-Série Nos Anos Finais do Ensino Fundamental",
     "fonte_sigla": "INEP",
     "unidade": "% das matrículas",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Taxas de Distorção Idade-série",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Taxas de Distorção Idade-série",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede o percentual de alunos dos anos finais do ensino fundamental com dois ou mais anos de atraso em relação à idade considerada adequada para a série frequentada.",
-    "como_interpretar": "Valores maiores indicam maior proporção de estudantes em atraso escolar. Quedas no indicador sugerem melhora no fluxo escolar, menor repetência acumulada, menor ingresso tardio ou menor retorno tardio após abandono. O indicador não mede diretamente aprendizagem, qualidade do ensino ou conclusão escolar.",
-    "metodologia": "O indicador é calculado pelo INEP a partir dos registros administrativos do Censo Escolar da Educação Básica. Para cada série ou grupo de séries, divide-se o número de matrículas de alunos com idade superior à recomendada para a série pelo total de matrículas da série ou grupo de séries, multiplicando o resultado por 100. Considera-se distorção idade-série quando o estudante completa, no ano de referência do Censo Escolar, idade igual ou superior a dois anos acima da idade recomendada para a série frequentada. Esta série usa o recorte Brasil, todas as redes, anos finais do ensino fundamental.",
-    "historico_metodologia": "A série atual dos Indicadores Educacionais do INEP para taxa de distorção idade-série está disponível no portal oficial a partir de 2006, não desde 1994. Para evitar interpolação, estimativas ou reconstruções não auditáveis, foram mantidos apenas valores concretos localizados e validados em fontes oficiais ou em tabelas derivadas diretamente de MEC/INEP/DEED. A comparabilidade histórica deve considerar a transição do ensino fundamental de 8 para 9 anos, regulamentada na década de 2000, e a consolidação do Censo Escolar em formato eletrônico pelo Educacenso. A metodologia básica do indicador permanece baseada na relação entre idade do estudante, série frequentada e matrícula total, mas mudanças de organização escolar, coleta censitária, classificação de etapas e regras de progressão podem afetar a interpretação temporal.",
+    "descricao":
+      "Mede o percentual de alunos dos anos finais do ensino fundamental com dois ou mais anos de atraso em relação à idade considerada adequada para a série frequentada.",
+    "como_interpretar":
+      "Valores maiores indicam maior proporção de estudantes em atraso escolar. Quedas no indicador sugerem melhora no fluxo escolar, menor repetência acumulada, menor ingresso tardio ou menor retorno tardio após abandono. O indicador não mede diretamente aprendizagem, qualidade do ensino ou conclusão escolar.",
+    "metodologia":
+      "O indicador é calculado pelo INEP a partir dos registros administrativos do Censo Escolar da Educação Básica. Para cada série ou grupo de séries, divide-se o número de matrículas de alunos com idade superior à recomendada para a série pelo total de matrículas da série ou grupo de séries, multiplicando o resultado por 100. Considera-se distorção idade-série quando o estudante completa, no ano de referência do Censo Escolar, idade igual ou superior a dois anos acima da idade recomendada para a série frequentada. Esta série usa o recorte Brasil, todas as redes, anos finais do ensino fundamental.",
+    "historico_metodologia":
+      "A série atual dos Indicadores Educacionais do INEP para taxa de distorção idade-série está disponível no portal oficial a partir de 2006, não desde 1994. Para evitar interpolação, estimativas ou reconstruções não auditáveis, foram mantidos apenas valores concretos localizados e validados em fontes oficiais ou em tabelas derivadas diretamente de MEC/INEP/DEED. A comparabilidade histórica deve considerar a transição do ensino fundamental de 8 para 9 anos, regulamentada na década de 2000, e a consolidação do Censo Escolar em formato eletrônico pelo Educacenso. A metodologia básica do indicador permanece baseada na relação entre idade do estudante, série frequentada e matrícula total, mas mudanças de organização escolar, coleta censitária, classificação de etapas e regras de progressão podem afetar a interpretação temporal.",
     "abrangencia": "Brasil, todas as redes de ensino, anos finais do ensino fundamental da educação básica.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2016,
         "nome": "Transição EF",
-        "descricao": "A série ainda reflete efeitos da reorganização do ensino fundamental de 8 para 9 anos e da convivência entre estruturas seriadas distintas nos registros educacionais."
+        "descricao":
+          "A série ainda reflete efeitos da reorganização do ensino fundamental de 8 para 9 anos e da convivência entre estruturas seriadas distintas nos registros educacionais.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 alterou o funcionamento das escolas, o calendário letivo e as políticas de progressão, afetando indicadores de fluxo escolar."
+        "descricao":
+          "A pandemia de COVID-19 alterou o funcionamento das escolas, o calendário letivo e as políticas de progressão, afetando indicadores de fluxo escolar.",
       },
       {
         "ano": 2021,
         "nome": "Progressão excepcional",
-        "descricao": "Políticas de aprovação, reorganização curricular e retorno gradual às aulas presenciais influenciaram a leitura dos indicadores de atraso escolar no período pós-pandemia."
+        "descricao":
+          "Políticas de aprovação, reorganização curricular e retorno gradual às aulas presenciais influenciaram a leitura dos indicadores de atraso escolar no período pós-pandemia.",
       },
       {
         "ano": 2022,
         "nome": "Retomada presencial",
-        "descricao": "A retomada mais ampla das atividades presenciais coincidiu com forte redução da taxa de distorção idade-série nos anos finais."
+        "descricao":
+          "A retomada mais ampla das atividades presenciais coincidiu com forte redução da taxa de distorção idade-série nos anos finais.",
       },
       {
         "ano": 2025,
         "nome": "Queda recente",
-        "descricao": "Os resultados do Censo Escolar 2025 indicaram nova queda na distorção idade-série dos anos finais do ensino fundamental."
-      }
+        "descricao":
+          "Os resultados do Censo Escolar 2025 indicaram nova queda na distorção idade-série dos anos finais do ensino fundamental.",
+      },
     ],
-    "comparacao_paises": "Não há comparação internacional direta e metodologicamente segura para este indicador, pois ele depende da estrutura seriada, idade normativa de ingresso, regras nacionais de progressão e desenho administrativo do Censo Escolar. Para comparação internacional de atraso ou fluxo escolar, indicadores da UNESCO/UIS podem ser usados, mas não são equivalentes diretos à taxa de distorção idade-série do INEP.",
-    "nivel_confiabilidade": "Alto para os anos informados, pois os dados derivam do Censo Escolar da Educação Básica e dos Indicadores Educacionais do INEP. A principal limitação é que a série oficial pública atual não cobre 1994 em formato diretamente comparável, e o recorte escolhido é especificamente anos finais do ensino fundamental, não toda a educação básica.",
+    "comparacao_paises":
+      "Não há comparação internacional direta e metodologicamente segura para este indicador, pois ele depende da estrutura seriada, idade normativa de ingresso, regras nacionais de progressão e desenho administrativo do Censo Escolar. Para comparação internacional de atraso ou fluxo escolar, indicadores da UNESCO/UIS podem ser usados, mas não são equivalentes diretos à taxa de distorção idade-série do INEP.",
+    "nivel_confiabilidade":
+      "Alto para os anos informados, pois os dados derivam do Censo Escolar da Educação Básica e dos Indicadores Educacionais do INEP. A principal limitação é que a série oficial pública atual não cobre 1994 em formato diretamente comparável, e o recorte escolhido é especificamente anos finais do ensino fundamental, não toda a educação básica.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "INEP - Taxas de Distorção Idade-série",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-distorcao-idade-serie"
+        "url":
+          "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-distorcao-idade-serie",
       },
       {
         "titulo": "INEP - Dicionário de Indicadores Educacionais: Fórmulas de Cálculo",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/dicionario_de_indicadores_educacionais_formulas_de_calculo.pdf"
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/dicionario_de_indicadores_educacionais_formulas_de_calculo.pdf",
       },
       {
         "titulo": "INEP - Apresentação do Censo Escolar da Educação Básica 2025",
-        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf",
       },
       {
         "titulo": "INEP - Censo Escolar da Educação Básica 2024: Resumo Técnico",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf",
       },
       {
         "titulo": "Todos Pela Educação - Anuário Brasileiro da Educação Básica 2025, com Fonte MEC/INEP/DEED",
-        "url": "https://anuario.todospelaeducacao.org.br/2025/capitulo-3-ef-anos-finais.html"
-      }
+        "url": "https://anuario.todospelaeducacao.org.br/2025/capitulo-3-ef-anos-finais.html",
+      },
     ],
     "dados": [
-      {
-        "ano": 2014,
-        "valor": 27.3
-      },
-      {
-        "ano": 2015,
-        "valor": 26.8
-      },
-      {
-        "ano": 2016,
-        "valor": 26.4
-      },
-      {
-        "ano": 2017,
-        "valor": 25.9
-      },
-      {
-        "ano": 2018,
-        "valor": 24.7
-      },
-      {
-        "ano": 2019,
-        "valor": 23.4
-      },
-      {
-        "ano": 2020,
-        "valor": 22.7
-      },
-      {
-        "ano": 2021,
-        "valor": 21.0
-      },
-      {
-        "ano": 2022,
-        "valor": 18.5
-      },
-      {
-        "ano": 2023,
-        "valor": 17.0
-      },
-      {
-        "ano": 2024,
-        "valor": 15.7
-      },
-      {
-        "ano": 2025,
-        "valor": 14.4
-      }
-    ]
+      { "ano": 2014, "valor": 27.3 },
+      { "ano": 2015, "valor": 26.8 },
+      { "ano": 2016, "valor": 26.4 },
+      { "ano": 2017, "valor": 25.9 },
+      { "ano": 2018, "valor": 24.7 },
+      { "ano": 2019, "valor": 23.4 },
+      { "ano": 2020, "valor": 22.7 },
+      { "ano": 2021, "valor": 21.0 },
+      { "ano": 2022, "valor": 18.5 },
+      { "ano": 2023, "valor": 17.0 },
+      { "ano": 2024, "valor": 15.7 },
+      { "ano": 2025, "valor": 14.4 },
+    ],
   },
   "ideb_anos_iniciais_total_brasil": {
     "label": "IDEB Anos Iniciais",
     "fonte_sigla": "INEP",
     "unidade": "Índice de 0 a 10",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Índice de Desenvolvimento da Educação Básica (Ideb)",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Índice de Desenvolvimento da Educação Básica (Ideb)",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede a qualidade dos anos iniciais do ensino fundamental no Brasil, combinando desempenho no Saeb e fluxo escolar medido pelas taxas de aprovação.",
-    "como_interpretar": "Valores maiores indicam melhor combinação entre aprendizagem em língua portuguesa e matemática e progressão escolar. O indicador varia de 0 a 10. A série não deve ser interpretada como medida completa da qualidade educacional, pois não cobre diretamente infraestrutura, equidade, clima escolar, formação docente ou competências não avaliadas pelo Saeb.",
-    "metodologia": "O Ideb é calculado pelo Inep como o produto entre a proficiência média padronizada dos estudantes no Saeb, em língua portuguesa e matemática, e o indicador de rendimento escolar obtido a partir das taxas de aprovação do Censo Escolar. A fórmula sintética é Ideb = N x P, em que N representa a média padronizada de desempenho em escala de 0 a 10 e P representa o indicador de rendimento, derivado do fluxo escolar. Esta série usa o recorte oficial 'Ideb Total - Anos iniciais do ensino fundamental - Brasil'.",
-    "historico_metodologia": "O Ideb foi criado em 2007 e possui série oficial iniciada em 2005, com divulgação bienal. Não há valores oficiais do Ideb antes de 2005. O primeiro ciclo de metas foi pactuado no âmbito do Decreto nº 6.094/2007, com metas intermediárias até 2021. Em 2024, o Inep instituiu o Grupo Técnico Novo Ideb para subsidiar a atualização do indicador após o fim do primeiro ciclo de metas. A série foi mantida apenas com anos oficialmente divulgados pelo Inep; não foram incluídas projeções, metas ou estimativas.",
+    "descricao":
+      "Mede a qualidade dos anos iniciais do ensino fundamental no Brasil, combinando desempenho no Saeb e fluxo escolar medido pelas taxas de aprovação.",
+    "como_interpretar":
+      "Valores maiores indicam melhor combinação entre aprendizagem em língua portuguesa e matemática e progressão escolar. O indicador varia de 0 a 10. A série não deve ser interpretada como medida completa da qualidade educacional, pois não cobre diretamente infraestrutura, equidade, clima escolar, formação docente ou competências não avaliadas pelo Saeb.",
+    "metodologia":
+      "O Ideb é calculado pelo Inep como o produto entre a proficiência média padronizada dos estudantes no Saeb, em língua portuguesa e matemática, e o indicador de rendimento escolar obtido a partir das taxas de aprovação do Censo Escolar. A fórmula sintética é Ideb = N x P, em que N representa a média padronizada de desempenho em escala de 0 a 10 e P representa o indicador de rendimento, derivado do fluxo escolar. Esta série usa o recorte oficial 'Ideb Total - Anos iniciais do ensino fundamental - Brasil'.",
+    "historico_metodologia":
+      "O Ideb foi criado em 2007 e possui série oficial iniciada em 2005, com divulgação bienal. Não há valores oficiais do Ideb antes de 2005. O primeiro ciclo de metas foi pactuado no âmbito do Decreto nº 6.094/2007, com metas intermediárias até 2021. Em 2024, o Inep instituiu o Grupo Técnico Novo Ideb para subsidiar a atualização do indicador após o fim do primeiro ciclo de metas. A série foi mantida apenas com anos oficialmente divulgados pelo Inep; não foram incluídas projeções, metas ou estimativas.",
     "abrangencia": "Brasil, total das redes, anos iniciais do ensino fundamental.",
     "periodicidade": "Bienal.",
     "eventos_externos": [
       {
         "ano": 2007,
         "nome": "Criação Ideb",
-        "descricao": "O Ideb foi criado em 2007, com base inicial em 2005, para combinar desempenho no Saeb e fluxo escolar em um indicador sintético."
+        "descricao":
+          "O Ideb foi criado em 2007, com base inicial em 2005, para combinar desempenho no Saeb e fluxo escolar em um indicador sintético.",
       },
       {
         "ano": 2017,
         "nome": "Avanço contínuo",
-        "descricao": "A série dos anos iniciais manteve crescimento consistente até 2017, impulsionada pela melhora combinada do rendimento escolar e do desempenho padronizado."
+        "descricao":
+          "A série dos anos iniciais manteve crescimento consistente até 2017, impulsionada pela melhora combinada do rendimento escolar e do desempenho padronizado.",
       },
       {
         "ano": 2021,
         "nome": "Queda Saeb",
-        "descricao": "O Ideb caiu de 5,9 em 2019 para 5,8 em 2021 porque a proficiência média padronizada recuou, apesar da elevação do indicador de rendimento."
+        "descricao":
+          "O Ideb caiu de 5,9 em 2019 para 5,8 em 2021 porque a proficiência média padronizada recuou, apesar da elevação do indicador de rendimento.",
       },
       {
         "ano": 2023,
         "nome": "Recuperação parcial",
-        "descricao": "O Ideb dos anos iniciais chegou a 6,0 em 2023, com recuperação da proficiência média padronizada em relação a 2021, embora o indicador de rendimento tenha recuado levemente."
+        "descricao":
+          "O Ideb dos anos iniciais chegou a 6,0 em 2023, com recuperação da proficiência média padronizada em relação a 2021, embora o indicador de rendimento tenha recuado levemente.",
       },
       {
         "ano": 2024,
         "nome": "Novo Ideb",
-        "descricao": "O Inep instituiu o Grupo Técnico Novo Ideb para estudar a atualização do indicador após o encerramento do primeiro ciclo de metas."
-      }
+        "descricao":
+          "O Inep instituiu o Grupo Técnico Novo Ideb para estudar a atualização do indicador após o encerramento do primeiro ciclo de metas.",
+      },
     ],
-    "comparacao_paises": "O Ideb é um indicador nacional brasileiro e não possui comparação internacional direta. Para comparação entre países, indicadores mais adequados são PISA/OCDE, TIMSS/IEA, PIRLS/IEA ou métricas harmonizadas do Banco Mundial, como Learning Poverty. Portanto, não é metodologicamente correto comparar o valor do Ideb diretamente com indicadores de outros países.",
-    "nivel_confiabilidade": "Muito alto para o recorte informado, pois os valores vêm diretamente do Inep, órgão oficial responsável pelo Saeb, pelo Censo Escolar e pelo cálculo do Ideb. A principal limitação é conceitual: o Ideb é comparável ao longo do tempo dentro do mesmo recorte, mas não é uma métrica completa de qualidade educacional nem um indicador internacionalmente comparável.",
+    "comparacao_paises":
+      "O Ideb é um indicador nacional brasileiro e não possui comparação internacional direta. Para comparação entre países, indicadores mais adequados são PISA/OCDE, TIMSS/IEA, PIRLS/IEA ou métricas harmonizadas do Banco Mundial, como Learning Poverty. Portanto, não é metodologicamente correto comparar o valor do Ideb diretamente com indicadores de outros países.",
+    "nivel_confiabilidade":
+      "Muito alto para o recorte informado, pois os valores vêm diretamente do Inep, órgão oficial responsável pelo Saeb, pelo Censo Escolar e pelo cálculo do Ideb. A principal limitação é conceitual: o Ideb é comparável ao longo do tempo dentro do mesmo recorte, mas não é uma métrica completa de qualidade educacional nem um indicador internacionalmente comparável.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "Inep - Índice de Desenvolvimento da Educação Básica (Ideb)",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb",
       },
       {
         "titulo": "Inep - Resultados do Ideb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
       },
       {
         "titulo": "Inep - Apresentação Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
       },
       {
         "titulo": "Inep - Nota Técnica das Metas Intermediárias do Ideb",
-        "url": "https://download.inep.gov.br/educacao_basica/portal_ideb/o_que_sao_as_metas/Nota_Tecnica_n2_metas_intermediarias_IDEB.pdf"
-      }
+        "url":
+          "https://download.inep.gov.br/educacao_basica/portal_ideb/o_que_sao_as_metas/Nota_Tecnica_n2_metas_intermediarias_IDEB.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 2005,
-        "valor": 3.8
-      },
-      {
-        "ano": 2007,
-        "valor": 4.2
-      },
-      {
-        "ano": 2009,
-        "valor": 4.6
-      },
-      {
-        "ano": 2011,
-        "valor": 5
-      },
-      {
-        "ano": 2013,
-        "valor": 5.2
-      },
-      {
-        "ano": 2015,
-        "valor": 5.5
-      },
-      {
-        "ano": 2017,
-        "valor": 5.8
-      },
-      {
-        "ano": 2019,
-        "valor": 5.9
-      },
-      {
-        "ano": 2021,
-        "valor": 5.8
-      },
-      {
-        "ano": 2023,
-        "valor": 6
-      }
-    ]
+      { "ano": 2005, "valor": 3.8 },
+      { "ano": 2007, "valor": 4.2 },
+      { "ano": 2009, "valor": 4.6 },
+      { "ano": 2011, "valor": 5 },
+      { "ano": 2013, "valor": 5.2 },
+      { "ano": 2015, "valor": 5.5 },
+      { "ano": 2017, "valor": 5.8 },
+      { "ano": 2019, "valor": 5.9 },
+      { "ano": 2021, "valor": 5.8 },
+      { "ano": 2023, "valor": 6 },
+    ],
   },
   "proficiencia_media_saeb_lingua_portuguesa_5_ano_ef": {
     "label": "Proficiência Média SAEB Em Língua Portuguesa - 5º Ano EF",
     "fonte_sigla": "INEP/SAEB",
     "unidade": "Pontos na escala de proficiência do Saeb",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica (Saeb)",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica (Saeb)",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede a proficiência média nacional dos estudantes do 5º ano do ensino fundamental em Língua Portuguesa no Saeb. Nas edições antigas, a etapa equivalente era denominada 4ª série do ensino fundamental.",
-    "como_interpretar": "Valores maiores indicam maior proficiência média em Língua Portuguesa, especialmente em leitura e interpretação de textos, conforme a escala do Saeb para a etapa avaliada. O indicador deve ser comparado apenas dentro da mesma etapa escolar e da mesma área avaliada; não mede diretamente abandono, aprovação, equidade, infraestrutura escolar ou qualidade pedagógica individual.",
-    "metodologia": "O Saeb é uma avaliação externa em larga escala conduzida pelo Inep. A série utiliza médias nacionais de proficiência em Língua Portuguesa para estudantes da 4ª série/5º ano do ensino fundamental. A partir de 1995, o Saeb adotou a Teoria de Resposta ao Item (TRI), permitindo a comparabilidade longitudinal das proficiências na escala do Saeb. Foram mantidos apenas anos com resultado nacional oficial publicado pelo Inep; não foram interpolados anos sem edição ou sem valor publicado. Os valores de 1995 a 2005 seguem a tabela oficial de médias de proficiência do Saeb 1995-2005. Os valores de 2007 a 2019 seguem a série histórica oficial publicada no Relatório de Resultados do Saeb 2019. Os valores de 2021 e 2023 seguem os resultados oficiais divulgados pelo Inep para o Saeb/Ideb 2023 e pelo relatório de proficiência do Saeb 2023.",
-    "historico_metodologia": "Não há valor oficial comparável para 1994 nesta série. Em 1995, o Saeb passou a usar TRI, marco metodológico que tornou possível comparar resultados ao longo do tempo. Em 1997, foram desenvolvidas novas matrizes de referência. Em 2001, o Saeb passou a concentrar os testes em Língua Portuguesa e Matemática e adotou novas matrizes. Em 2005, o Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados para redes, municípios e escolas públicas, mantendo a série nacional. Em 2007, o desempenho do Saeb passou a compor o Ideb junto com taxas de rendimento escolar. A nomenclatura da etapa mudou de 4ª série para 5º ano do ensino fundamental com a reorganização do ensino fundamental. As edições de 2021 e 2023 devem ser interpretadas considerando o impacto educacional da pandemia de COVID-19 sobre participação, aprendizagem e trajetória escolar. Os valores de 2007 e 2009 foram mantidos no arredondamento oficial publicado na série histórica do relatório do Saeb 2019.",
-    "abrangencia": "Brasil, total nacional, estudantes da 4ª série/5º ano do ensino fundamental avaliados no Saeb, abrangendo redes públicas e privadas conforme o desenho amostral e censitário oficial de cada edição.",
+    "descricao":
+      "Mede a proficiência média nacional dos estudantes do 5º ano do ensino fundamental em Língua Portuguesa no Saeb. Nas edições antigas, a etapa equivalente era denominada 4ª série do ensino fundamental.",
+    "como_interpretar":
+      "Valores maiores indicam maior proficiência média em Língua Portuguesa, especialmente em leitura e interpretação de textos, conforme a escala do Saeb para a etapa avaliada. O indicador deve ser comparado apenas dentro da mesma etapa escolar e da mesma área avaliada; não mede diretamente abandono, aprovação, equidade, infraestrutura escolar ou qualidade pedagógica individual.",
+    "metodologia":
+      "O Saeb é uma avaliação externa em larga escala conduzida pelo Inep. A série utiliza médias nacionais de proficiência em Língua Portuguesa para estudantes da 4ª série/5º ano do ensino fundamental. A partir de 1995, o Saeb adotou a Teoria de Resposta ao Item (TRI), permitindo a comparabilidade longitudinal das proficiências na escala do Saeb. Foram mantidos apenas anos com resultado nacional oficial publicado pelo Inep; não foram interpolados anos sem edição ou sem valor publicado. Os valores de 1995 a 2005 seguem a tabela oficial de médias de proficiência do Saeb 1995-2005. Os valores de 2007 a 2019 seguem a série histórica oficial publicada no Relatório de Resultados do Saeb 2019. Os valores de 2021 e 2023 seguem os resultados oficiais divulgados pelo Inep para o Saeb/Ideb 2023 e pelo relatório de proficiência do Saeb 2023.",
+    "historico_metodologia":
+      "Não há valor oficial comparável para 1994 nesta série. Em 1995, o Saeb passou a usar TRI, marco metodológico que tornou possível comparar resultados ao longo do tempo. Em 1997, foram desenvolvidas novas matrizes de referência. Em 2001, o Saeb passou a concentrar os testes em Língua Portuguesa e Matemática e adotou novas matrizes. Em 2005, o Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados para redes, municípios e escolas públicas, mantendo a série nacional. Em 2007, o desempenho do Saeb passou a compor o Ideb junto com taxas de rendimento escolar. A nomenclatura da etapa mudou de 4ª série para 5º ano do ensino fundamental com a reorganização do ensino fundamental. As edições de 2021 e 2023 devem ser interpretadas considerando o impacto educacional da pandemia de COVID-19 sobre participação, aprendizagem e trajetória escolar. Os valores de 2007 e 2009 foram mantidos no arredondamento oficial publicado na série histórica do relatório do Saeb 2019.",
+    "abrangencia":
+      "Brasil, total nacional, estudantes da 4ª série/5º ano do ensino fundamental avaliados no Saeb, abrangendo redes públicas e privadas conforme o desenho amostral e censitário oficial de cada edição.",
     "periodicidade": "Bienal nas edições consideradas, com divulgação por edição do Saeb.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "TRI",
-        "descricao": "O Saeb adotou a Teoria de Resposta ao Item, permitindo comparabilidade longitudinal dos resultados de proficiência."
+        "descricao":
+          "O Saeb adotou a Teoria de Resposta ao Item, permitindo comparabilidade longitudinal dos resultados de proficiência.",
       },
       {
         "ano": 2001,
         "nome": "Novas Matrizes",
-        "descricao": "O Saeb passou a aplicar testes apenas de Língua Portuguesa e Matemática e adotou novas matrizes de referência."
+        "descricao":
+          "O Saeb passou a aplicar testes apenas de Língua Portuguesa e Matemática e adotou novas matrizes de referência.",
       },
       {
         "ano": 2005,
         "nome": "Prova Brasil",
-        "descricao": "O Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados sem interromper a série nacional."
+        "descricao":
+          "O Saeb foi reestruturado em Aneb e Anresc/Prova Brasil, ampliando a divulgação de resultados sem interromper a série nacional.",
       },
       {
         "ano": 2007,
         "nome": "Ideb",
-        "descricao": "O Inep passou a usar médias de desempenho do Saeb, combinadas com taxas de rendimento escolar, para calcular o Ideb."
+        "descricao":
+          "O Inep passou a usar médias de desempenho do Saeb, combinadas com taxas de rendimento escolar, para calcular o Ideb.",
       },
       {
         "ano": 2021,
         "nome": "Pandemia",
-        "descricao": "A edição de 2021 registrou queda expressiva da proficiência média em relação a 2019, em contexto de interrupção e instabilidade das aulas presenciais."
+        "descricao":
+          "A edição de 2021 registrou queda expressiva da proficiência média em relação a 2019, em contexto de interrupção e instabilidade das aulas presenciais.",
       },
       {
         "ano": 2023,
         "nome": "Recuperação",
-        "descricao": "A proficiência média nacional voltou a subir em relação a 2021, aproximando-se novamente do patamar observado em 2019."
-      }
+        "descricao":
+          "A proficiência média nacional voltou a subir em relação a 2021, aproximando-se novamente do patamar observado em 2019.",
+      },
     ],
-    "comparacao_paises": "Não aplicável para comparação direta entre países, pois o Saeb é uma avaliação nacional brasileira com escala própria. Para comparação internacional de desempenho em leitura, os indicadores mais adequados são avaliações internacionais como Pisa e PIRLS, não a escala do Saeb.",
-    "nivel_confiabilidade": "Muito alto para a série nacional oficial do Brasil, pois os valores são publicados pelo Inep, órgão oficial responsável pelo Saeb. A principal ressalva é metodológica: mudanças de desenho, abrangência, nomenclatura escolar e contexto de aplicação podem afetar a interpretação histórica. Os valores foram mantidos apenas quando publicados oficialmente, sem interpolação, projeção ou estimativa externa.",
+    "comparacao_paises":
+      "Não aplicável para comparação direta entre países, pois o Saeb é uma avaliação nacional brasileira com escala própria. Para comparação internacional de desempenho em leitura, os indicadores mais adequados são avaliações internacionais como Pisa e PIRLS, não a escala do Saeb.",
+    "nivel_confiabilidade":
+      "Muito alto para a série nacional oficial do Brasil, pois os valores são publicados pelo Inep, órgão oficial responsável pelo Saeb. A principal ressalva é metodológica: mudanças de desenho, abrangência, nomenclatura escolar e contexto de aplicação podem afetar a interpretação histórica. Os valores foram mantidos apenas quando publicados oficialmente, sem interpolação, projeção ou estimativa externa.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "Inep - Resultados do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados",
       },
       {
         "titulo": "Inep - Histórico do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico",
       },
       {
         "titulo": "Inep - Saeb 1995-2005: Médias de Proficiência",
-        "url": "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/SAEB1995_2005.pdf"
+        "url": "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/SAEB1995_2005.pdf",
       },
       {
         "titulo": "Inep - Relatório de Resultados do Saeb 2019, Volume 1",
-        "url": "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf"
+        "url":
+          "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf",
       },
       {
         "titulo": "Inep - Apresentação Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
       },
       {
         "titulo": "Inep - Relatório de Resultados do Saeb 2023: Dados de Proficiência, Volume 1",
-        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf"
-      }
+        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 1995,
-        "valor": 188.3
-      },
-      {
-        "ano": 1997,
-        "valor": 186.5
-      },
-      {
-        "ano": 1999,
-        "valor": 170.7
-      },
-      {
-        "ano": 2001,
-        "valor": 165.1
-      },
-      {
-        "ano": 2003,
-        "valor": 169.4
-      },
-      {
-        "ano": 2005,
-        "valor": 172.3
-      },
-      {
-        "ano": 2007,
-        "valor": 176
-      },
-      {
-        "ano": 2009,
-        "valor": 184
-      },
-      {
-        "ano": 2011,
-        "valor": 191
-      },
-      {
-        "ano": 2013,
-        "valor": 196
-      },
-      {
-        "ano": 2015,
-        "valor": 208
-      },
-      {
-        "ano": 2017,
-        "valor": 215
-      },
-      {
-        "ano": 2019,
-        "valor": 214.6
-      },
-      {
-        "ano": 2021,
-        "valor": 208.1
-      },
-      {
-        "ano": 2023,
-        "valor": 213.9
-      }
-    ]
+      { "ano": 1995, "valor": 188.3 },
+      { "ano": 1997, "valor": 186.5 },
+      { "ano": 1999, "valor": 170.7 },
+      { "ano": 2001, "valor": 165.1 },
+      { "ano": 2003, "valor": 169.4 },
+      { "ano": 2005, "valor": 172.3 },
+      { "ano": 2007, "valor": 176 },
+      { "ano": 2009, "valor": 184 },
+      { "ano": 2011, "valor": 191 },
+      { "ano": 2013, "valor": 196 },
+      { "ano": 2015, "valor": 208 },
+      { "ano": 2017, "valor": 215 },
+      { "ano": 2019, "valor": 214.6 },
+      { "ano": 2021, "valor": 208.1 },
+      { "ano": 2023, "valor": 213.9 },
+    ],
   },
   "proficiencia_media_saeb_matematica_5ano_ef": {
     "label": "Proficiência Média SAEB em Matemática - 5º Ano do Ensino Fundamental",
     "fonte_sigla": "INEP/SAEB",
     "unidade": "pontos na escala SAEB",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica - Proficiência Média em Matemática no 5º ano do Ensino Fundamental - Brasil",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Sistema de Avaliação da Educação Básica - Proficiência Média em Matemática no 5º ano do Ensino Fundamental - Brasil",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede a proficiência média dos estudantes brasileiros do 5º ano do ensino fundamental em Matemática, segundo a escala oficial do Saeb.",
-    "como_interpretar": "Valores maiores indicam maior desempenho médio dos estudantes em Matemática na etapa avaliada. A escala é própria do Saeb e não deve ser interpretada como percentual de acertos nem comparada diretamente com avaliações internacionais. A comparação temporal é válida dentro da mesma etapa, área e escala, respeitando mudanças metodológicas e de cobertura.",
-    "metodologia": "O indicador corresponde à média nacional das proficiências dos estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb. O Inep calcula as proficiências em uma escala de desempenho educacional construída para a avaliação, com uso de procedimentos estatísticos de larga escala, pesos amostrais quando aplicável e agregação nacional. Foram mantidos apenas anos com resultados oficiais publicados pelo Inep; não foram incluídos anos sem aplicação regular nem valores projetados.",
-    "historico_metodologia": "O Saeb foi criado em 1990 e passou por reformulação relevante em 1995, quando a série histórica moderna de proficiências passou a permitir comparações mais consistentes. A partir de 2005, a Prova Brasil/Anresc ampliou a divulgação de resultados para escolas e municípios, enquanto a Aneb manteve componente amostral. Em 2019, o Inep manteve as matrizes de Língua Portuguesa e Matemática não atualizadas à BNCC para preservar a comparabilidade da série histórica. Em 2021, a aplicação ocorreu sob forte impacto da pandemia de COVID-19, afetando participação e desempenho. Em 2023, houve recuperação parcial em relação a 2021, mas o resultado nacional ainda ficou abaixo do nível pré-pandemia de 2019.",
-    "abrangencia": "Brasil, estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb, com resultados nacionais agregados.",
+    "descricao":
+      "Mede a proficiência média dos estudantes brasileiros do 5º ano do ensino fundamental em Matemática, segundo a escala oficial do Saeb.",
+    "como_interpretar":
+      "Valores maiores indicam maior desempenho médio dos estudantes em Matemática na etapa avaliada. A escala é própria do Saeb e não deve ser interpretada como percentual de acertos nem comparada diretamente com avaliações internacionais. A comparação temporal é válida dentro da mesma etapa, área e escala, respeitando mudanças metodológicas e de cobertura.",
+    "metodologia":
+      "O indicador corresponde à média nacional das proficiências dos estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb. O Inep calcula as proficiências em uma escala de desempenho educacional construída para a avaliação, com uso de procedimentos estatísticos de larga escala, pesos amostrais quando aplicável e agregação nacional. Foram mantidos apenas anos com resultados oficiais publicados pelo Inep; não foram incluídos anos sem aplicação regular nem valores projetados.",
+    "historico_metodologia":
+      "O Saeb foi criado em 1990 e passou por reformulação relevante em 1995, quando a série histórica moderna de proficiências passou a permitir comparações mais consistentes. A partir de 2005, a Prova Brasil/Anresc ampliou a divulgação de resultados para escolas e municípios, enquanto a Aneb manteve componente amostral. Em 2019, o Inep manteve as matrizes de Língua Portuguesa e Matemática não atualizadas à BNCC para preservar a comparabilidade da série histórica. Em 2021, a aplicação ocorreu sob forte impacto da pandemia de COVID-19, afetando participação e desempenho. Em 2023, houve recuperação parcial em relação a 2021, mas o resultado nacional ainda ficou abaixo do nível pré-pandemia de 2019.",
+    "abrangencia":
+      "Brasil, estudantes do 5º ano do ensino fundamental avaliados em Matemática pelo Saeb, com resultados nacionais agregados.",
     "periodicidade": "Bienal, nas edições regulares do Saeb.",
     "eventos_externos": [
       {
         "ano": 1995,
         "nome": "Reformulação",
-        "descricao": "O Saeb foi reformulado, iniciando a série moderna de resultados comparáveis de proficiência."
+        "descricao": "O Saeb foi reformulado, iniciando a série moderna de resultados comparáveis de proficiência.",
       },
       {
         "ano": 2005,
         "nome": "Prova Brasil",
-        "descricao": "A ampliação da avaliação com a Anresc/Prova Brasil aumentou a granularidade dos resultados divulgados para redes, municípios e escolas públicas elegíveis."
+        "descricao":
+          "A ampliação da avaliação com a Anresc/Prova Brasil aumentou a granularidade dos resultados divulgados para redes, municípios e escolas públicas elegíveis.",
       },
       {
         "ano": 2019,
         "nome": "Matriz Mantida",
-        "descricao": "O Inep manteve as matrizes de Língua Portuguesa e Matemática para preservar a comparabilidade histórica da série."
+        "descricao":
+          "O Inep manteve as matrizes de Língua Portuguesa e Matemática para preservar a comparabilidade histórica da série.",
       },
       {
         "ano": 2021,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou fortemente o desempenho e interrompeu a trajetória de crescimento observada antes de 2019."
+        "descricao":
+          "A pandemia de COVID-19 afetou fortemente o desempenho e interrompeu a trajetória de crescimento observada antes de 2019.",
       },
       {
         "ano": 2023,
         "nome": "Recuperação Parcial",
-        "descricao": "O resultado de 2023 recuperou parte da queda de 2021, mas ainda ficou abaixo do nível pré-pandemia de 2019."
-      }
+        "descricao":
+          "O resultado de 2023 recuperou parte da queda de 2021, mas ainda ficou abaixo do nível pré-pandemia de 2019.",
+      },
     ],
-    "comparacao_paises": "O Saeb não possui comparação internacional direta, pois usa escala, matriz e população-alvo próprias do Brasil. Para comparação entre países, avaliações como Pisa e Timss são metodologicamente mais adequadas, mas não devem ser misturadas com a escala do Saeb.",
-    "nivel_confiabilidade": "Alto. Os valores vêm de relatórios oficiais do Inep/Saeb. A principal ressalva é que os valores de 1995 a 2017 aparecem nos gráficos oficiais arredondados, enquanto 2019, 2021 e 2023 foram divulgados também com valores arredondados nos relatórios e, em apresentações oficiais, com uma casa decimal.",
+    "comparacao_paises":
+      "O Saeb não possui comparação internacional direta, pois usa escala, matriz e população-alvo próprias do Brasil. Para comparação entre países, avaliações como Pisa e Timss são metodologicamente mais adequadas, mas não devem ser misturadas com a escala do Saeb.",
+    "nivel_confiabilidade":
+      "Alto. Os valores vêm de relatórios oficiais do Inep/Saeb. A principal ressalva é que os valores de 1995 a 2017 aparecem nos gráficos oficiais arredondados, enquanto 2019, 2021 e 2023 foram divulgados também com valores arredondados nos relatórios e, em apresentações oficiais, com uma casa decimal.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "Inep - Resultados do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados",
       },
       {
         "titulo": "Inep - Relatório de Resultados do Saeb 2019 - Volume 1",
-        "url": "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf"
+        "url":
+          "https://download.inep.gov.br/educacao_basica/saeb/2019/resultados/relatorio_de_resultados_do_saeb_2019_volume_1.pdf",
       },
       {
         "titulo": "Inep - Relatório de Resultados do Saeb 2023 - Volume 1 - Dados de Proficiência",
-        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf"
+        "url": "https://download.inep.gov.br/saeb/volume_1_dados_de_proficiencia.pdf",
       },
       {
         "titulo": "Inep - Apresentação Ideb 2023",
-        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf"
+        "url": "https://download.inep.gov.br/ideb/apresentacao_ideb_2023.pdf",
       },
       {
         "titulo": "Inep - Histórico do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/historico",
       },
       {
         "titulo": "Inep - Microdados do Saeb",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/saeb"
-      }
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/saeb",
+      },
     ],
     "dados": [
-      {
-        "ano": 1995,
-        "valor": 191
-      },
-      {
-        "ano": 1997,
-        "valor": 191
-      },
-      {
-        "ano": 1999,
-        "valor": 181
-      },
-      {
-        "ano": 2001,
-        "valor": 176
-      },
-      {
-        "ano": 2003,
-        "valor": 177
-      },
-      {
-        "ano": 2005,
-        "valor": 182
-      },
-      {
-        "ano": 2007,
-        "valor": 193
-      },
-      {
-        "ano": 2009,
-        "valor": 204
-      },
-      {
-        "ano": 2011,
-        "valor": 210
-      },
-      {
-        "ano": 2013,
-        "valor": 211
-      },
-      {
-        "ano": 2015,
-        "valor": 219
-      },
-      {
-        "ano": 2017,
-        "valor": 224
-      },
-      {
-        "ano": 2019,
-        "valor": 227.9
-      },
-      {
-        "ano": 2021,
-        "valor": 216.9
-      },
-      {
-        "ano": 2023,
-        "valor": 224.8
-      }
-    ]
+      { "ano": 1995, "valor": 191 },
+      { "ano": 1997, "valor": 191 },
+      { "ano": 1999, "valor": 181 },
+      { "ano": 2001, "valor": 176 },
+      { "ano": 2003, "valor": 177 },
+      { "ano": 2005, "valor": 182 },
+      { "ano": 2007, "valor": 193 },
+      { "ano": 2009, "valor": 204 },
+      { "ano": 2011, "valor": 210 },
+      { "ano": 2013, "valor": 211 },
+      { "ano": 2015, "valor": 219 },
+      { "ano": 2017, "valor": 224 },
+      { "ano": 2019, "valor": 227.9 },
+      { "ano": 2021, "valor": 216.9 },
+      { "ano": 2023, "valor": 224.8 },
+    ],
   },
   "taxa_conclusao_primario_ods_4_1_2": {
     "label": "Taxa de Conclusão do Primário",
@@ -10411,154 +10263,114 @@ window.__DADOS_ANUAIS__ = {
     "label": "Matrículas Na Educação Profissional Técnica De Nível Médio",
     "fonte_sigla": "INEP",
     "unidade": "matrículas",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Sinopse Estatística da Educação Básica",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Censo Escolar da Educação Básica / Sinopse Estatística da Educação Básica",
     "cat": "Educação",
     "padrao": false,
     "descricao": "Mede o número absoluto de matrículas na educação profissional técnica de nível médio no Brasil.",
-    "como_interpretar": "Valores maiores indicam maior volume de matrículas em cursos técnicos de nível médio. O indicador mede expansão de acesso, mas não mede conclusão, qualidade da formação, inserção profissional, permanência dos estudantes ou adequação da oferta ao mercado de trabalho.",
-    "metodologia": "O indicador corresponde ao número absoluto de matrículas em educação profissional técnica de nível médio declaradas ao Censo Escolar da Educação Básica, levantamento estatístico anual, obrigatório e declaratório realizado pelo Inep em colaboração com secretarias estaduais e municipais de educação e escolas públicas e privadas. A série considera matrículas em modalidades técnicas de nível médio, incluindo Ensino Médio Normal/Magistério, curso técnico integrado ao ensino médio, curso técnico integrado à EJA de nível médio, curso técnico concomitante e curso técnico subsequente. Para 2025, foi usado o total da categoria 'educação profissional técnica' divulgado pelo Inep no Censo Escolar 2025, excluindo FIC ou qualificação profissional.",
-    "historico_metodologia": "A série comparável oficial consolidada do indicador de educação profissional técnica de nível médio aparece nas publicações do PNE/Inep a partir de 2008 e, de forma central para a Meta 11 do PNE 2014-2024, a partir da linha de base de 2013. Não foram incluídos anos de 1994 a 2007 porque não foi localizada, nas fontes oficiais consultadas, série nacional contínua, validável e metodologicamente comparável para o mesmo recorte exato. A partir de 2022-2025, a expansão e a classificação da educação profissional passaram a ser afetadas pela organização curricular do ensino médio e pelo registro de itinerários de formação técnica e profissional, exigindo atenção para distinguir educação profissional técnica de FIC ou qualificação profissional.",
-    "abrangencia": "Brasil, total nacional, redes pública e privada, educação básica, educação profissional técnica de nível médio.",
+    "como_interpretar":
+      "Valores maiores indicam maior volume de matrículas em cursos técnicos de nível médio. O indicador mede expansão de acesso, mas não mede conclusão, qualidade da formação, inserção profissional, permanência dos estudantes ou adequação da oferta ao mercado de trabalho.",
+    "metodologia":
+      "O indicador corresponde ao número absoluto de matrículas em educação profissional técnica de nível médio declaradas ao Censo Escolar da Educação Básica, levantamento estatístico anual, obrigatório e declaratório realizado pelo Inep em colaboração com secretarias estaduais e municipais de educação e escolas públicas e privadas. A série considera matrículas em modalidades técnicas de nível médio, incluindo Ensino Médio Normal/Magistério, curso técnico integrado ao ensino médio, curso técnico integrado à EJA de nível médio, curso técnico concomitante e curso técnico subsequente. Para 2025, foi usado o total da categoria 'educação profissional técnica' divulgado pelo Inep no Censo Escolar 2025, excluindo FIC ou qualificação profissional.",
+    "historico_metodologia":
+      "A série comparável oficial consolidada do indicador de educação profissional técnica de nível médio aparece nas publicações do PNE/Inep a partir de 2008 e, de forma central para a Meta 11 do PNE 2014-2024, a partir da linha de base de 2013. Não foram incluídos anos de 1994 a 2007 porque não foi localizada, nas fontes oficiais consultadas, série nacional contínua, validável e metodologicamente comparável para o mesmo recorte exato. A partir de 2022-2025, a expansão e a classificação da educação profissional passaram a ser afetadas pela organização curricular do ensino médio e pelo registro de itinerários de formação técnica e profissional, exigindo atenção para distinguir educação profissional técnica de FIC ou qualificação profissional.",
+    "abrangencia":
+      "Brasil, total nacional, redes pública e privada, educação básica, educação profissional técnica de nível médio.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2011,
         "nome": "Pronatec",
-        "descricao": "O Programa Nacional de Acesso ao Ensino Técnico e Emprego foi criado para ampliar a oferta de cursos técnicos e de formação profissional, antecedendo a forte expansão observada até 2014."
+        "descricao":
+          "O Programa Nacional de Acesso ao Ensino Técnico e Emprego foi criado para ampliar a oferta de cursos técnicos e de formação profissional, antecedendo a forte expansão observada até 2014.",
       },
       {
         "ano": 2014,
         "nome": "PNE",
-        "descricao": "O Plano Nacional de Educação 2014-2024 estabeleceu a Meta 11 de triplicar as matrículas da educação profissional técnica de nível médio, tomando 2013 como linha de base."
+        "descricao":
+          "O Plano Nacional de Educação 2014-2024 estabeleceu a Meta 11 de triplicar as matrículas da educação profissional técnica de nível médio, tomando 2013 como linha de base.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou o funcionamento das redes de ensino e os processos educacionais, embora a série de matrículas técnicas tenha mantido crescimento agregado em 2020."
+        "descricao":
+          "A pandemia de COVID-19 afetou o funcionamento das redes de ensino e os processos educacionais, embora a série de matrículas técnicas tenha mantido crescimento agregado em 2020.",
       },
       {
         "ano": 2021,
         "nome": "Retração",
-        "descricao": "O número de matrículas técnicas caiu em 2021 em relação a 2020, em contexto de efeitos persistentes da pandemia e reorganização das redes de ensino."
+        "descricao":
+          "O número de matrículas técnicas caiu em 2021 em relação a 2020, em contexto de efeitos persistentes da pandemia e reorganização das redes de ensino.",
       },
       {
         "ano": 2022,
         "nome": "Retomada",
-        "descricao": "As matrículas técnicas voltaram a crescer fortemente em 2022, superando 2 milhões de registros."
+        "descricao": "As matrículas técnicas voltaram a crescer fortemente em 2022, superando 2 milhões de registros.",
       },
       {
         "ano": 2025,
         "nome": "Itinerários Técnicos",
-        "descricao": "O Censo Escolar 2025 registrou expansão da educação profissional técnica, com destaque para matrículas relacionadas ao itinerário de formação técnica e profissional."
-      }
+        "descricao":
+          "O Censo Escolar 2025 registrou expansão da educação profissional técnica, com destaque para matrículas relacionadas ao itinerário de formação técnica e profissional.",
+      },
     ],
-    "comparacao_paises": "A comparação internacional direta por número absoluto de matrículas não é metodologicamente adequada, pois depende do tamanho populacional e da estrutura do ensino médio de cada país. Para comparação entre países, o indicador mais apropriado é a proporção de estudantes do ensino médio em programas vocacionais/técnicos segundo classificações internacionais como ISCED/OCDE. No Censo Escolar 2025, o Brasil registrou 21,5% dos alunos do ensino médio em cursos técnicos articulados ao ensino médio regular no total das redes e 20,1% na rede pública.",
-    "nivel_confiabilidade": "Alto para os anos de 2008 a 2025 incluídos, pois os valores foram obtidos em publicações oficiais do Inep/MEC baseadas no Censo Escolar da Educação Básica. A principal ressalva é metodológica: os anos anteriores a 2008 não foram incluídos por falta de série oficial nacional contínua e comparável para o recorte exato; além disso, mudanças de classificação e expansão dos itinerários técnicos no ensino médio podem afetar a interpretação da tendência recente.",
+    "comparacao_paises":
+      "A comparação internacional direta por número absoluto de matrículas não é metodologicamente adequada, pois depende do tamanho populacional e da estrutura do ensino médio de cada país. Para comparação entre países, o indicador mais apropriado é a proporção de estudantes do ensino médio em programas vocacionais/técnicos segundo classificações internacionais como ISCED/OCDE. No Censo Escolar 2025, o Brasil registrou 21,5% dos alunos do ensino médio em cursos técnicos articulados ao ensino médio regular no total das redes e 20,1% na rede pública.",
+    "nivel_confiabilidade":
+      "Alto para os anos de 2008 a 2025 incluídos, pois os valores foram obtidos em publicações oficiais do Inep/MEC baseadas no Censo Escolar da Educação Básica. A principal ressalva é metodológica: os anos anteriores a 2008 não foram incluídos por falta de série oficial nacional contínua e comparável para o recorte exato; além disso, mudanças de classificação e expansão dos itinerários técnicos no ensino médio podem afetar a interpretação da tendência recente.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "Inep - Sinopses Estatísticas da Educação Básica",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica"
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica",
       },
       {
         "titulo": "Inep - Censo Escolar",
-        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar"
+        "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar",
       },
       {
         "titulo": "Inep - Apresentação do Censo Escolar 2025",
-        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf"
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2025/apresentacao_coletiva.pdf",
       },
       {
         "titulo": "Inep - Apresentação do Censo Escolar 2024",
-        "url": "https://download.inep.gov.br/censo_escolar/resultados/2024/apresentacao_coletiva.pdf"
+        "url": "https://download.inep.gov.br/censo_escolar/resultados/2024/apresentacao_coletiva.pdf",
       },
       {
         "titulo": "Inep - Relatório do Quinto Ciclo de Monitoramento das Metas do PNE",
-        "url": "https://cooperacaopne.mec.gov.br/pluginfile.php/311/mod_page/content/5/relatorio_do_quinto_ciclo_de_monitoramento_das_metas_do_plano_nacional_de_educacao.pdf"
+        "url":
+          "https://cooperacaopne.mec.gov.br/pluginfile.php/311/mod_page/content/5/relatorio_do_quinto_ciclo_de_monitoramento_das_metas_do_plano_nacional_de_educacao.pdf",
       },
       {
         "titulo": "Inep - Plano Nacional de Educação 2014-2024: Linha de Base",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/plano_nacional_de_educacao_pne_2014_2024_linha_de_base.pdf"
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/plano_nacional_de_educacao_pne_2014_2024_linha_de_base.pdf",
       },
       {
         "titulo": "Lei nº 13.005/2014 - Plano Nacional de Educação",
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13005.htm"
-      }
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13005.htm",
+      },
     ],
     "dados": [
-      {
-        "ano": 2008,
-        "valor": 1129584
-      },
-      {
-        "ano": 2009,
-        "valor": 1252240
-      },
-      {
-        "ano": 2010,
-        "valor": 1361827
-      },
-      {
-        "ano": 2011,
-        "valor": 1458496
-      },
-      {
-        "ano": 2012,
-        "valor": 1532562
-      },
-      {
-        "ano": 2013,
-        "valor": 1602946
-      },
-      {
-        "ano": 2014,
-        "valor": 1886167
-      },
-      {
-        "ano": 2015,
-        "valor": 1825457
-      },
-      {
-        "ano": 2016,
-        "valor": 1775324
-      },
-      {
-        "ano": 2017,
-        "valor": 1791806
-      },
-      {
-        "ano": 2018,
-        "valor": 1868917
-      },
-      {
-        "ano": 2019,
-        "valor": 1874974
-      },
-      {
-        "ano": 2020,
-        "valor": 1901477
-      },
-      {
-        "ano": 2021,
-        "valor": 1851541
-      },
-      {
-        "ano": 2022,
-        "valor": 2069771
-      },
-      {
-        "ano": 2023,
-        "valor": 2271607
-      },
-      {
-        "ano": 2024,
-        "valor": 2389454
-      },
-      {
-        "ano": 2025,
-        "valor": 2490145
-      }
-    ]
+      { "ano": 2008, "valor": 1129584 },
+      { "ano": 2009, "valor": 1252240 },
+      { "ano": 2010, "valor": 1361827 },
+      { "ano": 2011, "valor": 1458496 },
+      { "ano": 2012, "valor": 1532562 },
+      { "ano": 2013, "valor": 1602946 },
+      { "ano": 2014, "valor": 1886167 },
+      { "ano": 2015, "valor": 1825457 },
+      { "ano": 2016, "valor": 1775324 },
+      { "ano": 2017, "valor": 1791806 },
+      { "ano": 2018, "valor": 1868917 },
+      { "ano": 2019, "valor": 1874974 },
+      { "ano": 2020, "valor": 1901477 },
+      { "ano": 2021, "valor": 1851541 },
+      { "ano": 2022, "valor": 2069771 },
+      { "ano": 2023, "valor": 2271607 },
+      { "ano": 2024, "valor": 2389454 },
+      { "ano": 2025, "valor": 2490145 },
+    ],
   },
   "matriculas_graduacao_educacao_superior_brasil": {
     "label": "Matrículas na Graduação da Educação Superior",
@@ -10567,323 +10379,229 @@ window.__DADOS_ANUAIS__ = {
     "fonte": "MEC/Inep - Censo da Educação Superior - Número de matrículas em cursos de graduação - Brasil",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede o número total de matrículas em cursos de graduação no Brasil, considerando instituições de educação superior públicas e privadas.",
-    "como_interpretar": "Valores maiores indicam maior volume de vínculos de matrícula em cursos de graduação. O indicador mede escala do sistema de educação superior, mas não mede taxa de acesso, taxa líquida, taxa bruta, qualidade dos cursos, permanência, conclusão ou proporção da população em idade universitária atendida.",
-    "metodologia": "O indicador usa o total nacional de matrículas em cursos de graduação informado pelo Censo da Educação Superior do Inep. A coleta é anual, descentralizada e indireta, baseada nas declarações obrigatórias das instituições de educação superior públicas e privadas. O conceito utilizado é matrícula em curso de graduação, abrangendo bacharelado, licenciatura e tecnológico, nas modalidades presencial e a distância. Os valores representam vínculos de matrícula, não necessariamente pessoas únicas. Foram mantidos apenas valores oficiais publicados pelo Inep para o Brasil de 1994 a 2024. Não foram incluídas estimativas, projeções, cursos sequenciais ou pós-graduação.",
-    "historico_metodologia": "O Censo da Educação Superior é a fonte estatística oficial do Inep para a educação superior brasileira. Ao longo do tempo, o instrumento de coleta, os sistemas de preenchimento, os módulos, as validações de consistência e os procedimentos de disseminação foram aperfeiçoados, especialmente com o uso do sistema Censup e publicações metodológicas anuais. Essas mudanças podem afetar a qualidade e a consistência operacional da coleta, mas o agregado nacional de matrículas em cursos de graduação preserva alta comparabilidade temporal. A partir de 2008, o Decreto nº 6.425 regulamentou o censo anual da educação, reforçando a obrigatoriedade da declaração. A série usa os valores divulgados oficialmente pelo Inep no Censo da Educação Superior 2024, que consolida a série histórica 1980-2024.",
-    "abrangencia": "Brasil, cobertura nacional, instituições de educação superior públicas e privadas, cursos de graduação presenciais e a distância.",
+    "descricao":
+      "Mede o número total de matrículas em cursos de graduação no Brasil, considerando instituições de educação superior públicas e privadas.",
+    "como_interpretar":
+      "Valores maiores indicam maior volume de vínculos de matrícula em cursos de graduação. O indicador mede escala do sistema de educação superior, mas não mede taxa de acesso, taxa líquida, taxa bruta, qualidade dos cursos, permanência, conclusão ou proporção da população em idade universitária atendida.",
+    "metodologia":
+      "O indicador usa o total nacional de matrículas em cursos de graduação informado pelo Censo da Educação Superior do Inep. A coleta é anual, descentralizada e indireta, baseada nas declarações obrigatórias das instituições de educação superior públicas e privadas. O conceito utilizado é matrícula em curso de graduação, abrangendo bacharelado, licenciatura e tecnológico, nas modalidades presencial e a distância. Os valores representam vínculos de matrícula, não necessariamente pessoas únicas. Foram mantidos apenas valores oficiais publicados pelo Inep para o Brasil de 1994 a 2024. Não foram incluídas estimativas, projeções, cursos sequenciais ou pós-graduação.",
+    "historico_metodologia":
+      "O Censo da Educação Superior é a fonte estatística oficial do Inep para a educação superior brasileira. Ao longo do tempo, o instrumento de coleta, os sistemas de preenchimento, os módulos, as validações de consistência e os procedimentos de disseminação foram aperfeiçoados, especialmente com o uso do sistema Censup e publicações metodológicas anuais. Essas mudanças podem afetar a qualidade e a consistência operacional da coleta, mas o agregado nacional de matrículas em cursos de graduação preserva alta comparabilidade temporal. A partir de 2008, o Decreto nº 6.425 regulamentou o censo anual da educação, reforçando a obrigatoriedade da declaração. A série usa os valores divulgados oficialmente pelo Inep no Censo da Educação Superior 2024, que consolida a série histórica 1980-2024.",
+    "abrangencia":
+      "Brasil, cobertura nacional, instituições de educação superior públicas e privadas, cursos de graduação presenciais e a distância.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 1996,
         "nome": "LDB",
-        "descricao": "A Lei nº 9.394/1996 reorganizou as diretrizes e bases da educação nacional, incluindo a educação superior, em um período que antecedeu forte expansão das matrículas."
+        "descricao":
+          "A Lei nº 9.394/1996 reorganizou as diretrizes e bases da educação nacional, incluindo a educação superior, em um período que antecedeu forte expansão das matrículas.",
       },
       {
         "ano": 1999,
         "nome": "Fies",
-        "descricao": "O Fundo de Financiamento ao Estudante de Ensino Superior foi instituído no fim da década de 1990, ampliando mecanismos de financiamento para cursos superiores não gratuitos."
+        "descricao":
+          "O Fundo de Financiamento ao Estudante de Ensino Superior foi instituído no fim da década de 1990, ampliando mecanismos de financiamento para cursos superiores não gratuitos.",
       },
       {
         "ano": 2005,
         "nome": "ProUni",
-        "descricao": "O Programa Universidade para Todos passou a ofertar bolsas de estudo em cursos de graduação e sequenciais de formação específica, compondo o contexto de expansão do acesso no setor privado."
+        "descricao":
+          "O Programa Universidade para Todos passou a ofertar bolsas de estudo em cursos de graduação e sequenciais de formação específica, compondo o contexto de expansão do acesso no setor privado.",
       },
       {
         "ano": 2007,
         "nome": "Reuni",
-        "descricao": "O Programa de Apoio a Planos de Reestruturação e Expansão das Universidades Federais foi instituído para expandir e reestruturar a rede federal de educação superior."
+        "descricao":
+          "O Programa de Apoio a Planos de Reestruturação e Expansão das Universidades Federais foi instituído para expandir e reestruturar a rede federal de educação superior.",
       },
       {
         "ano": 2017,
         "nome": "Marco EaD",
-        "descricao": "A regulamentação federal da educação a distância no ensino superior contribuiu para o contexto de expansão posterior das matrículas EaD."
+        "descricao":
+          "A regulamentação federal da educação a distância no ensino superior contribuiu para o contexto de expansão posterior das matrículas EaD.",
       },
       {
         "ano": 2020,
         "nome": "Pandemia",
-        "descricao": "A pandemia de COVID-19 afetou calendários acadêmicos e procedimentos de coleta, exigindo orientações específicas do Inep para instituições com atraso no calendário."
+        "descricao":
+          "A pandemia de COVID-19 afetou calendários acadêmicos e procedimentos de coleta, exigindo orientações específicas do Inep para instituições com atraso no calendário.",
       },
       {
         "ano": 2024,
         "nome": "EaD maioria",
-        "descricao": "Em 2024, a educação a distância passou a representar 50,7% das matrículas de graduação, e o total de matrículas ultrapassou 10 milhões pela primeira vez na série histórica do Inep."
-      }
+        "descricao":
+          "Em 2024, a educação a distância passou a representar 50,7% das matrículas de graduação, e o total de matrículas ultrapassou 10 milhões pela primeira vez na série histórica do Inep.",
+      },
     ],
-    "comparacao_paises": "A comparação direta entre países por número absoluto de matrículas não é metodologicamente adequada, pois países mais populosos tendem a ter mais matrículas. Para comparação internacional de acesso, o indicador mais apropriado é a taxa bruta de matrícula no ensino terciário, como a série da UNESCO/UIS ou do Banco Mundial. Este JSON não usa essa taxa porque mantém apenas a contagem oficial de matrículas da graduação do Inep.",
-    "nivel_confiabilidade": "Muito alto para contagem oficial de matrículas na graduação no Brasil, pois os valores vêm do Censo da Educação Superior do Inep, fonte oficial, anual e obrigatória. A principal ressalva é conceitual: o indicador mede vínculos de matrícula, não pessoas únicas nem taxa de atendimento populacional.",
+    "comparacao_paises":
+      "A comparação direta entre países por número absoluto de matrículas não é metodologicamente adequada, pois países mais populosos tendem a ter mais matrículas. Para comparação internacional de acesso, o indicador mais apropriado é a taxa bruta de matrícula no ensino terciário, como a série da UNESCO/UIS ou do Banco Mundial. Este JSON não usa essa taxa porque mantém apenas a contagem oficial de matrículas da graduação do Inep.",
+    "nivel_confiabilidade":
+      "Muito alto para contagem oficial de matrículas na graduação no Brasil, pois os valores vêm do Censo da Educação Superior do Inep, fonte oficial, anual e obrigatória. A principal ressalva é conceitual: o indicador mede vínculos de matrícula, não pessoas únicas nem taxa de atendimento populacional.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "Inep - Apresentação do Censo da Educação Superior 2024 - Gráfico 28",
-        "url": "https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf"
+        "url":
+          "https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf",
       },
       {
         "titulo": "Inep - Notas Estatísticas do Censo da Educação Superior 2024",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/notas_estatisticas_censo_escolar_da_educacao_superior_2024.pdf"
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/notas_estatisticas_censo_escolar_da_educacao_superior_2024.pdf",
       },
       {
         "titulo": "Inep - Microdados do Censo da Educação Superior",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior"
+        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior",
       },
       {
         "titulo": "Inep - Metodologia de Coleta do Censo da Educação Superior 2024",
-        "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/metodologia-de-coleta-do-censo-da-educacao-superior-2024"
+        "url":
+          "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/metodologia-de-coleta-do-censo-da-educacao-superior-2024",
       },
       {
         "titulo": "Inep - Manual de Preenchimento do Censo da Educação Superior 2024 - Módulo Aluno",
-        "url": "https://download.inep.gov.br/pesquisas_estatisticas_indicadores_educacionais/censo_da_educacao_superior/orientacoes/manuais/modulo_aluno_2024.pdf"
+        "url":
+          "https://download.inep.gov.br/pesquisas_estatisticas_indicadores_educacionais/censo_da_educacao_superior/orientacoes/manuais/modulo_aluno_2024.pdf",
       },
       {
         "titulo": "Planalto - Decreto nº 6.425/2008 - Censo Anual da Educação",
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6425.htm"
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6425.htm",
       },
       {
         "titulo": "Planalto - Lei nº 9.394/1996 - Lei de Diretrizes e Bases da Educação Nacional",
-        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm",
       },
       {
         "titulo": "Planalto - Decreto nº 6.096/2007 - Reuni",
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6096.htm"
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6096.htm",
       },
-      {
-        "titulo": "MEC - Programa Universidade para Todos - ProUni",
-        "url": "https://www.gov.br/mec/pt-br/prouni"
-      },
+      { "titulo": "MEC - Programa Universidade para Todos - ProUni", "url": "https://www.gov.br/mec/pt-br/prouni" },
       {
         "titulo": "MEC - Fundo de Financiamento Estudantil - Fies",
-        "url": "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/fundo-de-financiamento-estudantil-fies"
-      }
+        "url":
+          "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/fundo-de-financiamento-estudantil-fies",
+      },
     ],
     "dados": [
-      {
-        "ano": 1994,
-        "valor": 1661034
-      },
-      {
-        "ano": 1995,
-        "valor": 1759703
-      },
-      {
-        "ano": 1996,
-        "valor": 1868529
-      },
-      {
-        "ano": 1997,
-        "valor": 1945615
-      },
-      {
-        "ano": 1998,
-        "valor": 2125958
-      },
-      {
-        "ano": 1999,
-        "valor": 2369945
-      },
-      {
-        "ano": 2000,
-        "valor": 2695927
-      },
-      {
-        "ano": 2001,
-        "valor": 3036113
-      },
-      {
-        "ano": 2002,
-        "valor": 3520627
-      },
-      {
-        "ano": 2003,
-        "valor": 3936933
-      },
-      {
-        "ano": 2004,
-        "valor": 4223344
-      },
-      {
-        "ano": 2005,
-        "valor": 4567798
-      },
-      {
-        "ano": 2006,
-        "valor": 4883852
-      },
-      {
-        "ano": 2007,
-        "valor": 5250147
-      },
-      {
-        "ano": 2008,
-        "valor": 5808017
-      },
-      {
-        "ano": 2009,
-        "valor": 5954021
-      },
-      {
-        "ano": 2010,
-        "valor": 6379299
-      },
-      {
-        "ano": 2011,
-        "valor": 6739689
-      },
-      {
-        "ano": 2012,
-        "valor": 7037688
-      },
-      {
-        "ano": 2013,
-        "valor": 7305977
-      },
-      {
-        "ano": 2014,
-        "valor": 7828013
-      },
-      {
-        "ano": 2015,
-        "valor": 8027297
-      },
-      {
-        "ano": 2016,
-        "valor": 8048701
-      },
-      {
-        "ano": 2017,
-        "valor": 8286663
-      },
-      {
-        "ano": 2018,
-        "valor": 8450755
-      },
-      {
-        "ano": 2019,
-        "valor": 8603824
-      },
-      {
-        "ano": 2020,
-        "valor": 8680354
-      },
-      {
-        "ano": 2021,
-        "valor": 8986554
-      },
-      {
-        "ano": 2022,
-        "valor": 9443597
-      },
-      {
-        "ano": 2023,
-        "valor": 9976782
-      },
-      {
-        "ano": 2024,
-        "valor": 10226873
-      }
-    ]
+      { "ano": 1994, "valor": 1661034 },
+      { "ano": 1995, "valor": 1759703 },
+      { "ano": 1996, "valor": 1868529 },
+      { "ano": 1997, "valor": 1945615 },
+      { "ano": 1998, "valor": 2125958 },
+      { "ano": 1999, "valor": 2369945 },
+      { "ano": 2000, "valor": 2695927 },
+      { "ano": 2001, "valor": 3036113 },
+      { "ano": 2002, "valor": 3520627 },
+      { "ano": 2003, "valor": 3936933 },
+      { "ano": 2004, "valor": 4223344 },
+      { "ano": 2005, "valor": 4567798 },
+      { "ano": 2006, "valor": 4883852 },
+      { "ano": 2007, "valor": 5250147 },
+      { "ano": 2008, "valor": 5808017 },
+      { "ano": 2009, "valor": 5954021 },
+      { "ano": 2010, "valor": 6379299 },
+      { "ano": 2011, "valor": 6739689 },
+      { "ano": 2012, "valor": 7037688 },
+      { "ano": 2013, "valor": 7305977 },
+      { "ano": 2014, "valor": 7828013 },
+      { "ano": 2015, "valor": 8027297 },
+      { "ano": 2016, "valor": 8048701 },
+      { "ano": 2017, "valor": 8286663 },
+      { "ano": 2018, "valor": 8450755 },
+      { "ano": 2019, "valor": 8603824 },
+      { "ano": 2020, "valor": 8680354 },
+      { "ano": 2021, "valor": 8986554 },
+      { "ano": 2022, "valor": 9443597 },
+      { "ano": 2023, "valor": 9976782 },
+      { "ano": 2024, "valor": 10226873 },
+    ],
   },
   "indicador_adequacao_formacao_docente": {
     "label": "Indicador de Adequação da Formação Docente",
     "fonte_sigla": "INEP",
     "unidade": "% de docências no Grupo 1",
-    "fonte": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Adequação da Formação Docente",
+    "fonte":
+      "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Indicadores Educacionais - Adequação da Formação Docente",
     "cat": "Educação",
     "padrao": false,
-    "descricao": "Mede a proporção de docências em que o professor possui formação superior de licenciatura, ou bacharelado com complementação pedagógica, na mesma área da disciplina que leciona.",
-    "como_interpretar": "Valores maiores indicam maior adequação entre a formação inicial do docente e a disciplina ministrada. O Grupo 1 representa a situação considerada mais adequada pelo INEP. O indicador não mede qualidade pedagógica, aprendizagem dos alunos, experiência docente, remuneração, estabilidade profissional ou condições de trabalho.",
-    "metodologia": "O INEP classifica cada docência, isto é, cada relação entre docente, turma e disciplina, em cinco grupos de adequação, com base nos dados declarados no Censo Escolar da Educação Básica. O Grupo 1 inclui docentes com formação superior de licenciatura na mesma disciplina que lecionam, ou bacharelado na mesma disciplina com curso de complementação pedagógica concluído. A série abaixo usa o percentual de docências classificadas no Grupo 1, agregado para Brasil, todas as redes, ensino médio.",
-    "historico_metodologia": "A Nota Técnica nº 020/2014 do INEP introduziu o indicador com base no Censo Escolar de 2013 e definiu a classificação em cinco grupos. Não há série oficial comparável desde 1994; por isso foram mantidos apenas anos com dados oficiais disponíveis e comparáveis na divulgação do INEP. A partir de 2019, o Censo Escolar deixou de coletar cursos superiores em andamento, e parte da elevação observada em indicadores de formação docente decorre da atualização do cadastro de docentes promovida pelo INEP, incluindo cursos concluídos em anos anteriores até então não declarados.",
-    "abrangencia": "Brasil, todas as redes de ensino, ensino médio, docências da educação básica avaliadas pelo Censo Escolar.",
+    "descricao":
+      "Mede a proporção de docências em que o professor possui formação superior de licenciatura, ou bacharelado com complementação pedagógica, na mesma área da disciplina que leciona.",
+    "como_interpretar":
+      "Valores maiores indicam maior adequação entre a formação inicial do docente e a disciplina ministrada. O Grupo 1 representa a situação considerada mais adequada pelo INEP. O indicador não mede qualidade pedagógica, aprendizagem dos alunos, experiência docente, remuneração, estabilidade profissional ou condições de trabalho.",
+    "metodologia":
+      "O INEP classifica cada docência, isto é, cada relação entre docente, turma e disciplina, em cinco grupos de adequação, com base nos dados declarados no Censo Escolar da Educação Básica. O Grupo 1 inclui docentes com formação superior de licenciatura na mesma disciplina que lecionam, ou bacharelado na mesma disciplina com curso de complementação pedagógica concluído. A série abaixo usa o percentual de docências classificadas no Grupo 1, agregado para Brasil, todas as redes, ensino médio.",
+    "historico_metodologia":
+      "A Nota Técnica nº 020/2014 do INEP introduziu o indicador com base no Censo Escolar de 2013 e definiu a classificação em cinco grupos. Não há série oficial comparável desde 1994; por isso foram mantidos apenas anos com dados oficiais disponíveis e comparáveis na divulgação do INEP. A partir de 2019, o Censo Escolar deixou de coletar cursos superiores em andamento, e parte da elevação observada em indicadores de formação docente decorre da atualização do cadastro de docentes promovida pelo INEP, incluindo cursos concluídos em anos anteriores até então não declarados.",
+    "abrangencia":
+      "Brasil, todas as redes de ensino, ensino médio, docências da educação básica avaliadas pelo Censo Escolar.",
     "periodicidade": "Anual.",
     "eventos_externos": [
       {
         "ano": 2014,
         "nome": "PNE",
-        "descricao": "A Lei nº 13.005/2014 aprovou o Plano Nacional de Educação, cuja Meta 15 reforçou a formação específica de nível superior em licenciatura na área de atuação dos professores da educação básica."
+        "descricao":
+          "A Lei nº 13.005/2014 aprovou o Plano Nacional de Educação, cuja Meta 15 reforçou a formação específica de nível superior em licenciatura na área de atuação dos professores da educação básica.",
       },
       {
         "ano": 2014,
         "nome": "Nota Técnica",
-        "descricao": "O INEP publicou a Nota Técnica nº 020/2014, formalizando a metodologia do Indicador de Adequação da Formação Docente e a classificação das docências em cinco grupos."
+        "descricao":
+          "O INEP publicou a Nota Técnica nº 020/2014, formalizando a metodologia do Indicador de Adequação da Formação Docente e a classificação das docências em cinco grupos.",
       },
       {
         "ano": 2019,
         "nome": "Cadastro Docente",
-        "descricao": "A divulgação do Censo Escolar registrou efeito da atualização do cadastro de docentes, com inclusão de cursos concluídos em anos anteriores que ainda não haviam sido declarados."
+        "descricao":
+          "A divulgação do Censo Escolar registrou efeito da atualização do cadastro de docentes, com inclusão de cursos concluídos em anos anteriores que ainda não haviam sido declarados.",
       },
       {
         "ano": 2024,
         "nome": "Novo PNE",
-        "descricao": "A discussão do novo Plano Nacional de Educação manteve a adequação da formação docente como dimensão relevante para monitorar a valorização e a qualificação dos profissionais da educação básica."
-      }
+        "descricao":
+          "A discussão do novo Plano Nacional de Educação manteve a adequação da formação docente como dimensão relevante para monitorar a valorização e a qualificação dos profissionais da educação básica.",
+      },
     ],
-    "comparacao_paises": "Não há comparação internacional direta robusta para este indicador, pois ele depende da legislação brasileira sobre licenciaturas, complementação pedagógica, organização curricular e declaração de docências no Censo Escolar. Comparações internacionais devem usar indicadores mais gerais, como qualificação formal de professores por etapa de ensino, produzidos por UNESCO/UIS ou OCDE, quando disponíveis.",
-    "nivel_confiabilidade": "Alto para a série oficial brasileira de 2014 a 2024, pois os dados derivam do Censo Escolar da Educação Básica e da metodologia documentada pelo INEP. A principal limitação é que o indicador depende da qualidade da declaração das escolas e do cadastro de formação docente; além disso, não há série oficial comparável desde 1994.",
+    "comparacao_paises":
+      "Não há comparação internacional direta robusta para este indicador, pois ele depende da legislação brasileira sobre licenciaturas, complementação pedagógica, organização curricular e declaração de docências no Censo Escolar. Comparações internacionais devem usar indicadores mais gerais, como qualificação formal de professores por etapa de ensino, produzidos por UNESCO/UIS ou OCDE, quando disponíveis.",
+    "nivel_confiabilidade":
+      "Alto para a série oficial brasileira de 2014 a 2024, pois os dados derivam do Censo Escolar da Educação Básica e da metodologia documentada pelo INEP. A principal limitação é que o indicador depende da qualidade da declaração das escolas e do cadastro de formação docente; além disso, não há série oficial comparável desde 1994.",
     "validacao": "GPT-5.5 Thinking (OpenAI) - 30/04/2026",
     "fontes_links": [
       {
         "titulo": "INEP - Adequação da Formação Docente",
-        "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/adequacao-da-formacao-docente"
+        "url":
+          "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/adequacao-da-formacao-docente",
       },
       {
         "titulo": "INEP - Nota Técnica nº 020/2014 - Indicador de Adequação da Formação do Docente da Educação Básica",
-        "url": "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/2013/nota_tecnica_indicador_de_adequacao_da_formacao_do_docente_da_educacao_basica.pdf"
+        "url":
+          "https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/resultados/2013/nota_tecnica_indicador_de_adequacao_da_formacao_do_docente_da_educacao_basica.pdf",
       },
       {
         "titulo": "INEP - Indicadores Educacionais",
-        "url": "https://www.gov.br/inep/pt-br/relatorio-anual-de-atividades-e-gestao-do-inep-2025/pesquisas-estatisticas-e-indicadores-educacionais/indicadores-educacionais"
+        "url":
+          "https://www.gov.br/inep/pt-br/relatorio-anual-de-atividades-e-gestao-do-inep-2025/pesquisas-estatisticas-e-indicadores-educacionais/indicadores-educacionais",
       },
       {
         "titulo": "INEP - Censo Escolar da Educação Básica 2024 - Resumo Técnico",
-        "url": "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf"
-      }
+        "url":
+          "https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/resumo_tecnico_censo_escolar_2024.pdf",
+      },
     ],
     "dados": [
-      {
-        "ano": 2014,
-        "valor": 59.5
-      },
-      {
-        "ano": 2015,
-        "valor": 58.9
-      },
-      {
-        "ano": 2016,
-        "valor": 60.4
-      },
-      {
-        "ano": 2017,
-        "valor": 61.0
-      },
-      {
-        "ano": 2018,
-        "valor": 61.9
-      },
-      {
-        "ano": 2019,
-        "valor": 63.3
-      },
-      {
-        "ano": 2020,
-        "valor": 65.2
-      },
-      {
-        "ano": 2021,
-        "valor": 66.6
-      },
-      {
-        "ano": 2022,
-        "valor": 67.6
-      },
-      {
-        "ano": 2023,
-        "valor": 68.2
-      },
-      {
-        "ano": 2024,
-        "valor": 68.4
-      }
-    ]
+      { "ano": 2014, "valor": 59.5 },
+      { "ano": 2015, "valor": 58.9 },
+      { "ano": 2016, "valor": 60.4 },
+      { "ano": 2017, "valor": 61.0 },
+      { "ano": 2018, "valor": 61.9 },
+      { "ano": 2019, "valor": 63.3 },
+      { "ano": 2020, "valor": 65.2 },
+      { "ano": 2021, "valor": 66.6 },
+      { "ano": 2022, "valor": 67.6 },
+      { "ano": 2023, "valor": 68.2 },
+      { "ano": 2024, "valor": 68.4 },
+    ],
   },
   "timss_matematica_ciencias": {
     "label": "TIMSS Matemática e Ciências",
@@ -10989,6 +10707,786 @@ window.__DADOS_ANUAIS__ = {
       },
     ],
     "dados": [{ "ano": 2021, "valor": 419 }],
+  },
+  "gasto_ped_pib": {
+    "label": "Gasto Em P&D Como Percentual Do PIB",
+    "fonte_sigla": "WDI/UNESCO UIS",
+    "unidade": "% do PIB",
+    "fonte":
+      "World Bank - World Development Indicators / UNESCO Institute for Statistics - Research and Development Expenditure (% of GDP) (GB.XPD.RSDV.GD.ZS)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede o dispêndio interno bruto em pesquisa e desenvolvimento (P&D) como proporção do Produto Interno Bruto.",
+    "como_interpretar":
+      "Valores maiores indicam maior esforço econômico relativo em pesquisa e desenvolvimento. O indicador mede intensidade de investimento em P&D, mas não mede diretamente eficiência da inovação, qualidade da pesquisa, patentes geradas, produtividade tecnológica ou impacto econômico dos projetos financiados.",
+    "metodologia":
+      "O indicador corresponde aos dispêndios internos brutos em pesquisa e desenvolvimento, incluindo gastos correntes e de capital realizados por empresas, governo, ensino superior e instituições privadas sem fins lucrativos residentes no país, divididos pelo PIB e multiplicados por 100. P&D cobre pesquisa básica, pesquisa aplicada e desenvolvimento experimental, conforme conceitos internacionais do Manual de Frascati. Os dados são coletados por pesquisas nacionais de P&D e compilados internacionalmente pelo UNESCO Institute for Statistics, sendo redistribuídos pelo World Bank no World Development Indicators sob o código GB.XPD.RSDV.GD.ZS.",
+    "historico_metodologia":
+      "A série pode sofrer revisões retroativas por mudanças nas pesquisas nacionais de P&D, atualização das contas nacionais, revisão do PIB, mudanças de cobertura setorial, incorporação de novas fontes empresariais e aperfeiçoamentos metodológicos do UNESCO UIS e do MCTI/IBGE. Para o Brasil, a apuração nacional combina informações públicas federais e estaduais, ensino superior e dispêndios empresariais derivados principalmente de levantamentos oficiais como PINTEC/IBGE e bases orçamentárias. Foram mantidos apenas anos com valores observados disponíveis em fontes oficiais; anos sem dado observado desde 1994 não foram preenchidos por interpolação, projeção ou estimativa própria.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo World Development Indicators para comparação entre países.",
+    "periodicidade": "Anual, sujeita à disponibilidade e revisão das pesquisas nacionais de P&D.",
+    "eventos_externos": [
+      {
+        "ano": 2004,
+        "nome": "Marco Inovação",
+        "descricao":
+          "A Lei de Inovação criou instrumentos de incentivo à interação entre instituições científicas, tecnológicas e empresas, compondo o ambiente institucional de política de CT&I no período.",
+      },
+      {
+        "ano": 2005,
+        "nome": "Lei Do Bem",
+        "descricao":
+          "A Lei nº 11.196/2005 instituiu incentivos fiscais à inovação tecnológica, afetando o ambiente de dispêndios empresariais em P&D.",
+      },
+      {
+        "ano": 2015,
+        "nome": "Pico Da Série",
+        "descricao":
+          "O indicador atingiu o maior valor da série recente, antes da queda associada ao ciclo de crise econômica e fiscal de 2015-2016.",
+      },
+      {
+        "ano": 2016,
+        "nome": "Crise Fiscal",
+        "descricao":
+          "A recessão e a restrição fiscal coincidiram com redução do dispêndio nacional em P&D como proporção do PIB nos anos seguintes.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 alterou simultaneamente o PIB e a execução de dispêndios públicos e privados, afetando a leitura do indicador como proporção do PIB.",
+      },
+      {
+        "ano": 2022,
+        "nome": "Recuperação Parcial",
+        "descricao":
+          "Após queda em 2021, o indicador voltou a 1,19% do PIB em 2022 e permaneceu nesse patamar em 2023, segundo dados oficiais recentes do MCTI.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil investe proporcionalmente mais em P&D do que muitos países latino-americanos, mas permanece abaixo das economias líderes em inovação. Em comparações recentes, países como Coreia do Sul, Israel, Estados Unidos, Japão, Alemanha e China apresentam intensidade de P&D substancialmente superior à brasileira, frequentemente acima de 2% ou 3% do PIB.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do World Development Indicators com fonte primária UNESCO UIS e metodologia internacional padronizada. A principal ressalva é que os valores dependem da qualidade, cobertura e periodicidade das pesquisas nacionais de P&D e podem ser revisados retroativamente. Valores ausentes antes de 2000 e após 2023 não foram estimados.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - Research and development expenditure (% of GDP) - Brazil - GB.XPD.RSDV.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - GB.XPD.RSDV.GD.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/GB.XPD.RSDV.GD.ZS",
+      },
+      {
+        "titulo": "UNESCO UIS Data Browser - Bulk Data Resources",
+        "url": "https://databrowser.uis.unesco.org/resources/bulk",
+      },
+      {
+        "titulo": "MCTI - Tabela 2.1.3 - Dispêndio nacional em pesquisa e desenvolvimento (P&D), 2000-2023",
+        "url":
+          "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/indicadores/paginas/recursos-aplicados/indicadores-consolidados/arquivos/tab_02_01_03_e_2023.csv",
+      },
+      {
+        "titulo": "Ipea - Evolução dos Dispêndios em Pesquisa e Desenvolvimento",
+        "url":
+          "https://www.ipea.gov.br/cts/pt/central-de-conteudo/artigos/artigos/499-evolucao-dos-dispendios-em-pesquisa-e-desenvolvimento",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 1.05 },
+      { "ano": 2001, "valor": 1.06 },
+      { "ano": 2002, "valor": 1.01 },
+      { "ano": 2003, "valor": 1.0 },
+      { "ano": 2004, "valor": 0.96 },
+      { "ano": 2005, "valor": 1.0 },
+      { "ano": 2006, "valor": 0.99 },
+      { "ano": 2007, "valor": 1.08 },
+      { "ano": 2008, "valor": 1.13 },
+      { "ano": 2009, "valor": 1.12 },
+      { "ano": 2010, "valor": 1.16 },
+      { "ano": 2011, "valor": 1.14 },
+      { "ano": 2012, "valor": 1.13 },
+      { "ano": 2013, "valor": 1.2 },
+      { "ano": 2014, "valor": 1.27 },
+      { "ano": 2015, "valor": 1.37 },
+      { "ano": 2016, "valor": 1.29 },
+      { "ano": 2017, "valor": 1.12 },
+      { "ano": 2018, "valor": 1.17 },
+      { "ano": 2019, "valor": 1.21 },
+      { "ano": 2020, "valor": 1.22 },
+      { "ano": 2021, "valor": 1.13 },
+      { "ano": 2022, "valor": 1.19 },
+      { "ano": 2023, "valor": 1.19 },
+    ],
+  },
+  "pedidos_patentes_residentes": {
+    "label": "Pedidos De Patentes Por Residentes",
+    "fonte_sigla": "WDI/WIPO",
+    "unidade": "número de pedidos",
+    "fonte":
+      "WIPO Patent Report: Statistics on Worldwide Patent Activity, World Intellectual Property Organization (WIPO), via World Development Indicators - World Bank (IP.PAT.RESD)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede o número anual de pedidos de patente feitos por residentes do Brasil, conforme a residência do primeiro requerente ou titular identificado.",
+    "como_interpretar":
+      "Valores maiores indicam maior volume de atividade formal de proteção de invenções por residentes brasileiros. O indicador mede pedidos depositados, não patentes concedidas, qualidade tecnológica, valor econômico das invenções, comercialização, impacto científico ou inovação efetivamente adotada no mercado.",
+    "metodologia":
+      "O Banco Mundial/WDI define pedidos de patente como pedidos depositados por meio do Tratado de Cooperação em Matéria de Patentes (PCT) ou junto a escritórios nacionais de patente para proteção exclusiva de uma invenção. Residentes são os pedidos nos quais o primeiro requerente ou titular identificado é residente do país ou região em questão. Para o Brasil, a série é derivada das estatísticas de propriedade intelectual da WIPO, harmonizadas no World Development Indicators sob o código IP.PAT.RESD.",
+    "historico_metodologia":
+      "A série WDI/WIPO disponível para o Brasil cobre 1980 a 2021 na base WDI consultada. Não foram incluídos anos posteriores porque a série WDI IP.PAT.RESD ainda não apresenta observações anuais completas após 2021. A WIPO pode revisar dados quando escritórios nacionais atualizam estatísticas, corrigem classificações por residência, atualizam origem do requerente ou revisam depósitos via rotas nacionais e PCT. Não foi encontrada, nas fontes oficiais consultadas, uma quebra metodológica específica que invalide a comparação anual de 1994 a 2021, mas a comparação deve considerar defasagem de publicação, revisões retroativas e diferenças entre pedidos depositados, pedidos publicados e patentes concedidas.",
+    "abrangencia":
+      "Brasil, pedidos de patente atribuídos a residentes brasileiros, com padronização internacional WIPO/WDI para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "O Brasil tem o maior volume de pedidos de patentes por residentes na América Latina e América do Sul segundo o perfil estatístico recente da WIPO, mas permanece muito abaixo das grandes economias líderes em patentes, especialmente China, Estados Unidos, Japão, Coreia do Sul e Alemanha. Em 2021, a série WDI registra 4.666 pedidos por residentes no Brasil, enquanto a China registrava mais de 1,4 milhão de pedidos por residentes, mostrando que o Brasil é regionalmente relevante, mas globalmente distante da fronteira de patenteamento.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional até 2021, pois os valores vêm da WIPO e são republicados pelo World Development Indicators do Banco Mundial. A principal limitação é a defasagem da série WDI, que não traz observações anuais completas após 2021 no indicador IP.PAT.RESD consultado. Não foram incluídas projeções, interpolações ou estimativas derivadas.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Patent applications, residents - Brazil - IP.PAT.RESD",
+        "url": "https://data.worldbank.org/indicator/IP.PAT.RESD?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - IP.PAT.RESD",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IP.PAT.RESD",
+      },
+      { "titulo": "WIPO - IP Statistics Data Center", "url": "https://www.wipo.int/en/web/ip-statistics" },
+      {
+        "titulo": "WIPO - Intellectual Property Statistics - Brazil",
+        "url": "https://www.wipo.int/edocs/statistics-country-profile/en/br.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 2269 },
+      { "ano": 1995, "valor": 2707 },
+      { "ano": 1996, "valor": 2611 },
+      { "ano": 1997, "valor": 2756 },
+      { "ano": 1998, "valor": 2491 },
+      { "ano": 1999, "valor": 2816 },
+      { "ano": 2000, "valor": 3179 },
+      { "ano": 2001, "valor": 3439 },
+      { "ano": 2002, "valor": 3481 },
+      { "ano": 2003, "valor": 3866 },
+      { "ano": 2004, "valor": 4044 },
+      { "ano": 2005, "valor": 4054 },
+      { "ano": 2006, "valor": 3956 },
+      { "ano": 2007, "valor": 4194 },
+      { "ano": 2008, "valor": 4280 },
+      { "ano": 2009, "valor": 4271 },
+      { "ano": 2010, "valor": 4228 },
+      { "ano": 2011, "valor": 4695 },
+      { "ano": 2012, "valor": 4798 },
+      { "ano": 2013, "valor": 4959 },
+      { "ano": 2014, "valor": 4659 },
+      { "ano": 2015, "valor": 4641 },
+      { "ano": 2016, "valor": 5200 },
+      { "ano": 2017, "valor": 5480 },
+      { "ano": 2018, "valor": 4980 },
+      { "ano": 2019, "valor": 5464 },
+      { "ano": 2020, "valor": 5280 },
+      { "ano": 2021, "valor": 4666 },
+    ],
+  },
+  "artigos_cientificos_tecnicos": {
+    "label": "Artigos Científicos e Técnicos",
+    "fonte_sigla": "WDI/NSF/Scopus",
+    "unidade": "contagem fracionária de artigos",
+    "fonte":
+      "Science and Engineering Indicators, National Science Foundation (NSF), via World Development Indicators (IP.JRN.ARTC.SC), com dados bibliométricos da Scopus",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a produção anual de artigos científicos e técnicos atribuída ao Brasil em periódicos revisados por pares e anais de conferências selecionados na base Scopus, usando contagem fracionária por país.",
+    "como_interpretar":
+      "Valores maiores indicam maior volume de produção científica e técnica atribuída ao Brasil. O indicador mede quantidade de publicações indexadas, não qualidade científica, impacto por citações, inovação aplicada, patentes, transferência tecnológica ou relevância econômica direta.",
+    "metodologia":
+      "O World Development Indicators reporta o indicador IP.JRN.ARTC.SC a partir do Science and Engineering Indicators da National Science Foundation. A contagem considera publicações de uma seleção de periódicos revisados por pares e anais de conferências indexados na Scopus em áreas de ciência e engenharia, segundo a Taxonomy of Disciplines do National Center for Science and Engineering Statistics. A métrica usa contagem fracionária: quando uma publicação tem autores de mais de uma instituição, região, país ou economia, o crédito é dividido proporcionalmente entre os participantes, permitindo que a soma das parcelas corresponda ao número total de artigos.",
+    "historico_metodologia":
+      "A série oficial disponível no WDI para o Brasil cobre 1996 a 2022; não há valor oficial publicado para 1994, 1995 ou anos posteriores a 2022 nessa série consultada. O metadado atual do WDI informa uso da Scopus e contagem fracionária. O próprio portal ESG/WDI informa que dados anteriores a 2003 vêm de edições anteriores do Science and Engineering Indicators e podem não ser estritamente comparáveis aos dados de 2003 a 2022. Também há ressalva metodológica de que bases bibliométricas são atualizadas continuamente e que o NCSES não recomenda comparar números exatos entre diferentes edições do Science and Engineering Indicators; para cada edição é usado um recorte fixo da base. A Scopus exige título e resumo em inglês, o que introduz viés não mensurável contra publicações fora desse padrão.",
+    "abrangencia":
+      "Brasil, com atribuição bibliométrica internacional por país/economia, cobrindo artigos científicos e técnicos em campos de ciência e engenharia indexados na Scopus.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2022, o Brasil registrou 67.030,59 artigos em contagem fracionária, próximo de Espanha e França e abaixo de Canadá, Coreia do Sul, Rússia, Itália, Japão, Reino Unido, Alemanha, Índia, Estados Unidos e China. A comparação internacional deve considerar tamanho populacional, estrutura universitária, intensidade de P&D, idioma, cobertura da Scopus, colaboração internacional e critérios de indexação.",
+    "nivel_confiabilidade":
+      "Alto para os valores oficiais publicados pelo WDI/NSF, pois a série vem de fonte institucional, metodologia documentada e base bibliométrica internacional padronizada. As principais limitações são cobertura parcial da produção científica mundial pela Scopus, viés de idioma, contagem fracionária, possível não comparabilidade estrita antes de 2003 e revisões futuras de edições do Science and Engineering Indicators.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Scientific and technical journal articles - Brazil - IP.JRN.ARTC.SC",
+        "url": "https://data.worldbank.org/indicator/IP.JRN.ARTC.SC?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - IP.JRN.ARTC.SC",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IP.JRN.ARTC.SC",
+      },
+      {
+        "titulo": "World Bank ESG Data Portal - Indicator Explorer - IP.JRN.ARTC.SC",
+        "url": "https://esgdata.worldbank.org/data/indicators?ind=IP.JRN.ARTC.SC&lang=en",
+      },
+      {
+        "titulo": "National Science Foundation - Science and Engineering Indicators",
+        "url": "https://ncses.nsf.gov/indicators",
+      },
+      {
+        "titulo": "Our World in Data - Annual Articles Published in Scientific and Technical Journals",
+        "url": "https://ourworldindata.org/grapher/scientific-and-technical-journal-articles",
+      },
+      {
+        "titulo": "CEIC - Brazil Governance: Technology and Innovation - Scientific and Technical Journal Articles",
+        "url": "https://www.ceicdata.com/en/brazil/governance-technology-and-innovation",
+      },
+    ],
+    "dados": [
+      { "ano": 1996, "valor": 7645.85 },
+      { "ano": 2000, "valor": 12800.4 },
+      { "ano": 2016, "valor": 55719.1 },
+      { "ano": 2017, "valor": 59143 },
+      { "ano": 2018, "valor": 63130.1 },
+      { "ano": 2019, "valor": 66506.2 },
+      { "ano": 2020, "valor": 70490.5 },
+      { "ano": 2021, "valor": 73727.34 },
+      { "ano": 2022, "valor": 67030.59 },
+    ],
+  },
+  "pesquisadores_pd_eti_por_mil_pessoas_ocupadas": {
+    "label": "Pesquisadores Em P&D Por Mil Pessoas Ocupadas",
+    "fonte_sigla": "MCTI/OCDE",
+    "unidade": "pesquisadores em ETI por mil pessoas ocupadas",
+    "fonte":
+      "Ministério da Ciência, Tecnologia e Inovação - Indicadores Nacionais de Ciência, Tecnologia e Inovação / OECD Main Science and Technology Indicators",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a quantidade de pesquisadores envolvidos em pesquisa e desenvolvimento experimental, em equivalência de tempo integral, para cada mil pessoas ocupadas.",
+    "como_interpretar":
+      "Valores maiores indicam maior densidade de pesquisadores dedicados a P&D em relação ao total de pessoas ocupadas. O indicador mede capacidade humana formal em pesquisa e desenvolvimento, mas não mede diretamente qualidade científica, impacto tecnológico, produtividade, inovação empresarial ou retorno econômico da pesquisa.",
+    "metodologia":
+      "O indicador contabiliza pesquisadores envolvidos em pesquisa e desenvolvimento experimental em equivalência de tempo integral (ETI/FTE) e divide esse total pelo número de pessoas ocupadas, multiplicando o resultado por mil. A equivalência de tempo integral converte dedicação parcial em unidades comparáveis de pessoa-ano. A definição de pesquisadores e de P&D segue os padrões internacionais do Manual de Frascati da OCDE, no qual P&D compreende pesquisa básica, pesquisa aplicada e desenvolvimento experimental. Para comparação internacional, o MCTI utiliza dados da OECD Main Science and Technology Indicators e, para o Brasil, dados nacionais consolidados pelo próprio MCTI.",
+    "historico_metodologia":
+      "A série pode sofrer revisões quando o MCTI atualiza os Indicadores Nacionais de CT&I, quando a OCDE revisa a base Main Science and Technology Indicators ou quando há mudanças em fontes nacionais de pesquisadores, pessoas ocupadas, equivalência de tempo integral, cobertura institucional e classificação setorial. O uso de ETI reduz distorções de contagem simples de pessoas, mas torna a série sensível a mudanças na estimativa de dedicação parcial a P&D. Foram mantidos apenas anos com valores observados na série oficial do MCTI/OCDE até 2023; anos posteriores, projeções e extrapolações não foram incluídos.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização metodológica para comparação internacional com países selecionados.",
+    "periodicidade": "Anual, conforme disponibilidade de dados nacionais e atualização da base MCTI/OCDE.",
+    "eventos_externos": [
+      {
+        "ano": 2004,
+        "nome": "Lei Inovação",
+        "descricao":
+          "A Lei de Inovação criou instrumentos para estimular cooperação entre instituições científicas e tecnológicas e empresas, compondo o ambiente institucional de P&D no Brasil.",
+      },
+      {
+        "ano": 2005,
+        "nome": "Lei do Bem",
+        "descricao":
+          "A Lei do Bem instituiu incentivos fiscais para empresas que realizam atividades de pesquisa, desenvolvimento e inovação tecnológica.",
+      },
+      {
+        "ano": 2020,
+        "nome": "Pandemia",
+        "descricao":
+          "A pandemia de COVID-19 afetou atividades econômicas, orçamento público, execução de pesquisas e funcionamento de instituições, podendo impactar recursos humanos e dispêndios em P&D.",
+      },
+    ],
+    "comparacao_paises":
+      "O Brasil permanece em patamar baixo frente a economias líderes em ciência e tecnologia. Países como Coreia do Sul, Japão, Alemanha, Estados Unidos, Reino Unido e China apresentam densidade de pesquisadores por mil pessoas ocupadas muito superior à brasileira. A comparação deve considerar diferenças de estrutura produtiva, intensidade empresarial em P&D, financiamento público e privado, peso das universidades, metodologia de ETI e cobertura institucional.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional agregada, pois a série usa fonte oficial brasileira (MCTI) e base internacional da OCDE. A principal ressalva é que estatísticas de P&D podem ser revisadas retroativamente e dependem de estimativas de equivalência de tempo integral, cobertura institucional e dados de pessoas ocupadas. Os valores foram mantidos com uma casa decimal, conforme padrão usual da tabela oficial consultada.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo":
+          "MCTI - Tabela 8.2.2 - Pesquisadores em P&D em ETI por mil pessoas ocupadas, países selecionados, 2000-2023",
+        "url":
+          "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/indicadores/paginas/comparacoes-internacionais/recursos-humanos/arquivos/tab_08_02_02_e_2023.pdf",
+      },
+      {
+        "titulo": "MCTI - Página do indicador 8.2.2",
+        "url":
+          "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/indicadores/paginas/comparacoes-internacionais/recursos-humanos/8-2-2-pesquisadores-em-pesquisa-e-desenvolvimento-em-equivalencia-de-tempo-integral-em-relacao-a-cada-mil-pessoas-ocupadas-de-paises-selecionados",
+      },
+      {
+        "titulo": "MCTI - Arquivos da tabela 8.2.2 em CSV, XLSX, PDF e imagem",
+        "url":
+          "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/indicadores/paginas/comparacoes-internacionais/recursos-humanos/arquivos/",
+      },
+      {
+        "titulo": "OECD - Main Science and Technology Indicators",
+        "url": "https://www.oecd.org/en/data/datasets/main-science-and-technology-indicators.html",
+      },
+      { "titulo": "OECD - Researchers", "url": "https://www.oecd.org/en/data/indicators/researchers.html" },
+      {
+        "titulo": "OECD - Frascati Manual 2015",
+        "url": "https://www.oecd.org/en/publications/2015/10/frascati-manual-2015_g1g57dcb.html",
+      },
+    ],
+    "dados": [
+      { "ano": 2000, "valor": 0.5 },
+      { "ano": 2001, "valor": 0.5 },
+      { "ano": 2002, "valor": 0.7 },
+      { "ano": 2003, "valor": 0.8 },
+      { "ano": 2004, "valor": 0.8 },
+      { "ano": 2005, "valor": 0.9 },
+      { "ano": 2006, "valor": 0.9 },
+      { "ano": 2007, "valor": 1.2 },
+      { "ano": 2008, "valor": 1.3 },
+      { "ano": 2009, "valor": 1.3 },
+      { "ano": 2010, "valor": 1.2 },
+      { "ano": 2011, "valor": 1.3 },
+      { "ano": 2012, "valor": 1.4 },
+      { "ano": 2013, "valor": 1.4 },
+      { "ano": 2014, "valor": 1.7 },
+      { "ano": 2015, "valor": 1.8 },
+      { "ano": 2016, "valor": 1.8 },
+      { "ano": 2017, "valor": 1.8 },
+      { "ano": 2018, "valor": 1.2 },
+      { "ano": 2019, "valor": 1.3 },
+      { "ano": 2020, "valor": 1.4 },
+      { "ano": 2021, "valor": 1.7 },
+      { "ano": 2022, "valor": 1.6 },
+      { "ano": 2023, "valor": 1.7 },
+    ],
+  },
+  "exportacoes_alta_tecnologia_manufaturados": {
+    "label": "Exportações De Alta Tecnologia Sobre Manufaturados",
+    "fonte_sigla": "WDI/UN Comtrade/WITS",
+    "unidade": "% das exportações manufaturadas",
+    "fonte":
+      "World Bank - World Development Indicators (TX.VAL.TECH.MF.ZS) / United Nations Comtrade Database / World Integrated Trade Solution",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a participação dos produtos de alta tecnologia no total das exportações manufaturadas do Brasil.",
+    "como_interpretar":
+      "Valores maiores indicam maior participação de bens intensivos em P&D nas exportações manufaturadas. O indicador não mede diretamente inovação doméstica, valor agregado nacional, sofisticação tecnológica interna, patentes, produtividade ou competitividade total da indústria.",
+    "metodologia":
+      "O Banco Mundial define exportações de alta tecnologia como produtos com alta intensidade de pesquisa e desenvolvimento, incluindo aeroespacial, computadores, farmacêuticos, instrumentos científicos e máquinas elétricas. Os dados são obtidos da base United Nations Comtrade por meio da plataforma World Integrated Trade Solution. O valor considerado corresponde às exportações brutas menos reexportações, usando estatísticas comerciais reportadas pelo país. O numerador agrega produtos classificados como alta tecnologia segundo códigos SITC Rev.4, baseados em classificação da OCDE/Eurostat. O denominador corresponde ao total das exportações manufaturadas. A série é expressa como percentual das exportações manufaturadas.",
+    "historico_metodologia":
+      "A série disponível para o Brasil no WDI cobre 2007 a 2024 para este indicador. O WDI informa que a definição foi atualizada de SITC Rev.3 para SITC Rev.4 em setembro de 2019. Em outubro de 2024, a definição do WDI foi modificada para incluir integralmente o código SITC Rev.4 776, incorporando subcategorias afetadas por problemas de conversão HS2022-SITC4. Essa mudança pode afetar a comparabilidade temporal em países impactados por essa conversão. Foram mantidos apenas anos com observações disponíveis na série WDI/Comtrade/WITS; anos sem dado entre 1994 e 2006 não foram preenchidos, interpolados ou estimados.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com base nas estatísticas de comércio internacional reportadas ao UN Comtrade e padronizadas no WDI/WITS para comparação internacional.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 11,1% das exportações manufaturadas em produtos de alta tecnologia. Esse valor ficou abaixo de economias com maior especialização em bens tecnológicos, como Índia, Hungria, Irlanda, Hong Kong SAR, Singapura e Filipinas, segundo a comparação internacional do WDI. A comparação deve ser feita com cautela, pois países com baixa base de manufaturados ou estruturas exportadoras muito concentradas podem apresentar percentuais elevados sem necessariamente ter maior capacidade tecnológica ampla.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do World Development Indicators, alimentada por UN Comtrade e WITS. A principal ressalva é metodológica: mudanças de classificação SITC/HS e a alteração do WDI em outubro de 2024 podem afetar a comparabilidade histórica, especialmente em anos recentes. Também há limitação estrutural: o indicador mede participação nas exportações manufaturadas, não capacidade tecnológica total da economia.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data - High-technology exports (% of manufactured exports) - Brazil - TX.VAL.TECH.MF.ZS",
+        "url": "https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank - Metadata Glossary - TX.VAL.TECH.MF.ZS",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/TX.VAL.TECH.MF.ZS",
+      },
+      {
+        "titulo": "World Integrated Trade Solution - Brazil High-technology exports - TX-VAL-TECH-MF-ZS",
+        "url":
+          "https://wits.worldbank.org/countryprofile/en/country/BRA/startyear/LTST/endyear/LTST/indicator/TX-VAL-TECH-MF-ZS",
+      },
+      { "titulo": "United Nations Comtrade Database", "url": "https://comtradeplus.un.org/" },
+    ],
+    "dados": [
+      { "ano": 2007, "valor": 12.6 },
+      { "ano": 2008, "valor": 12.8 },
+      { "ano": 2009, "valor": 14.8 },
+      { "ano": 2010, "valor": 12.6 },
+      { "ano": 2011, "valor": 11.1 },
+      { "ano": 2012, "valor": 11.9 },
+      { "ano": 2013, "valor": 12.0 },
+      { "ano": 2014, "valor": 12.4 },
+      { "ano": 2015, "valor": 14.5 },
+      { "ano": 2016, "valor": 16.0 },
+      { "ano": 2017, "valor": 14.3 },
+      { "ano": 2018, "valor": 14.7 },
+      { "ano": 2019, "valor": 14.1 },
+      { "ano": 2020, "valor": 11.4 },
+      { "ano": 2021, "valor": 9.0 },
+      { "ano": 2022, "valor": 9.1 },
+      { "ano": 2023, "valor": 9.8 },
+      { "ano": 2024, "valor": 11.1 },
+    ],
+  },
+  "valor_adicionado_industria_media_alta_tecnologia_manufatura": {
+    "label": "Valor Adicionado Da Indústria De Média E Alta Tecnologia Na Manufatura",
+    "fonte_sigla": "WDI/UNIDO CIP",
+    "unidade": "% do valor adicionado da manufatura",
+    "fonte":
+      "World Development Indicators - Medium and high-tech manufacturing value added (% manufacturing value added) (NV.MNF.TECH.ZS.UN), based on Competitive Industrial Performance (CIP) database, United Nations Industrial Development Organization (UNIDO)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a participação das atividades industriais de média e alta tecnologia no valor adicionado total da manufatura.",
+    "como_interpretar":
+      "Valores maiores indicam maior peso relativo de setores manufatureiros de média e alta intensidade tecnológica dentro da manufatura. O indicador não mede volume absoluto de produção, produtividade total, sofisticação das exportações, inovação empresarial direta, qualidade tecnológica dos produtos ou participação da manufatura no PIB.",
+    "metodologia":
+      "O indicador é calculado como a soma do valor adicionado das atividades industriais de média e alta tecnologia dividida pelo valor adicionado total da manufatura, multiplicada por 100. A classificação de média e alta tecnologia segue a taxonomia da OCDE aplicada às divisões da ISIC. No metadado WDI/UNIDO, a indústria de média e alta tecnologia é definida a partir das divisões ISIC Rev. 3 24, 29, 30, 31, 32, 33, 34 e 35, excluindo 351; e, em ISIC Rev. 4, inclui principalmente divisões como 20, 21, 26, 27, 28, 29 e 30, com ajustes de classificação quando há informação mais detalhada. O denominador é o valor adicionado da manufatura, correspondente à Seção C da ISIC Rev. 4 e à Seção D da ISIC Rev. 3. Os dados são compilados pela UNIDO a partir da base INDSTAT/CIP, com informações coletadas junto a institutos nacionais de estatística, fontes oficiais nacionais, OCDE para países membros e publicações oficiais.",
+    "historico_metodologia":
+      "A série pode ser afetada por revisões da base UNIDO INDSTAT/CIP, mudanças de classificação industrial entre ISIC Rev. 3 e ISIC Rev. 4, revisões das estatísticas industriais nacionais e atualizações retroativas no WDI. O metadado oficial informa referência anual 1990-2022 para esta série no WDI. Não foram incluídos anos posteriores a 2022 porque não havia valor oficial disponível nesta série no momento da validação.",
+    "abrangencia":
+      "Brasil, cobertura nacional, comparável internacionalmente por país dentro da base World Development Indicators/UNIDO CIP.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2022, o Brasil registrou 31,338016%, acima da mediana mundial aproximada da série disponível e próximo de economias como Canadá e Indonésia, mas bem abaixo de economias industriais com forte concentração tecnológica na manufatura, como Coreia do Sul, Alemanha, Japão, Suíça e Singapura. A comparação deve ser feita com cautela porque o indicador mede composição interna da manufatura, não o tamanho da manufatura no PIB nem o volume absoluto de produção tecnológica.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional, pois a série vem do World Development Indicators com fonte primária UNIDO CIP/INDSTAT e metodologia padronizada. A principal ressalva é que a série depende de estatísticas industriais nacionais, harmonização internacional, classificação ISIC e revisões retroativas; portanto, os valores podem ser atualizados posteriormente pela UNIDO ou pelo Banco Mundial.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo":
+          "World Bank Data - Medium and high-tech manufacturing value added (% manufacturing value added) - NV.MNF.TECH.ZS.UN",
+        "url": "https://data.worldbank.org/indicator/NV.MNF.TECH.ZS.UN?locations=BR",
+      },
+      {
+        "titulo": "World Bank DataBank Metadata - NV.MNF.TECH.ZS.UN",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.MNF.TECH.ZS.UN",
+      },
+      {
+        "titulo": "World Bank Data360 Metadata - WB_WDI_NV_MNF_TECH_ZS_UN",
+        "url": "https://data360.worldbank.org/en/indicator/WB_WDI_NV_MNF_TECH_ZS_UN",
+      },
+      {
+        "titulo": "UNIDO Statistics Portal - Competitive Industrial Performance / INDSTAT",
+        "url": "https://stat.unido.org/",
+      },
+    ],
+    "dados": [
+      { "ano": 1994, "valor": 49.794832 },
+      { "ano": 1995, "valor": 51.021558 },
+      { "ano": 1996, "valor": 36.69854 },
+      { "ano": 1997, "valor": 37.382906 },
+      { "ano": 1998, "valor": 36.491178 },
+      { "ano": 1999, "valor": 35.552792 },
+      { "ano": 2000, "valor": 34.852296 },
+      { "ano": 2001, "valor": 35.563591 },
+      { "ano": 2002, "valor": 34.678499 },
+      { "ano": 2003, "valor": 33.242202 },
+      { "ano": 2004, "valor": 34.431295 },
+      { "ano": 2005, "valor": 33.101044 },
+      { "ano": 2006, "valor": 33.267505 },
+      { "ano": 2007, "valor": 34.971695 },
+      { "ano": 2008, "valor": 36.629809 },
+      { "ano": 2009, "valor": 34.75859 },
+      { "ano": 2010, "valor": 36.154845 },
+      { "ano": 2011, "valor": 36.338583 },
+      { "ano": 2012, "valor": 35.339806 },
+      { "ano": 2013, "valor": 36.388831 },
+      { "ano": 2014, "valor": 34.154664 },
+      { "ano": 2015, "valor": 35.462197 },
+      { "ano": 2016, "valor": 32.777698 },
+      { "ano": 2017, "valor": 34.933281 },
+      { "ano": 2018, "valor": 34.262605 },
+      { "ano": 2019, "valor": 34.48756 },
+      { "ano": 2020, "valor": 30.403231 },
+      { "ano": 2021, "valor": 31.338016 },
+      { "ano": 2022, "valor": 31.338016 },
+    ],
+  },
+  "domicilios_com_acesso_a_internet": {
+    "label": "Domicílios Com Acesso À Internet",
+    "fonte_sigla": "ITU",
+    "unidade": "% dos domicílios",
+    "fonte": "International Telecommunication Union - ITU DataHub (Households with Internet access at home - 12047)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a proporção de domicílios brasileiros com acesso à Internet em casa, por qualquer meio de conexão fixo ou móvel.",
+    "como_interpretar":
+      "Valores maiores indicam maior presença de conexão à Internet nos domicílios. O indicador mede disponibilidade de acesso no domicílio, não qualidade da conexão, velocidade, estabilidade, custo, tipo de dispositivo usado ou nível de conectividade significativa.",
+    "metodologia":
+      "A ITU define o indicador como a proporção de domicílios com acesso à Internet em casa. O acesso pode ocorrer por rede fixa ou móvel. Para o Brasil, a série é compatível com a pesquisa TIC Domicílios, produzida pelo CGI.br/NIC.br/Cetic.br, que mede o acesso e uso de tecnologias de informação e comunicação em domicílios brasileiros por meio de pesquisa amostral domiciliar, com ponderação estatística para representar a população-alvo. Foram mantidos apenas anos com observações oficiais publicadas para o Brasil; anos anteriores sem cobertura nacional comparável não foram preenchidos.",
+    "historico_metodologia":
+      "A série TIC Domicílios começou em 2005, mas nos primeiros anos investigava apenas áreas urbanas. A partir de 2008, passou a incluir áreas rurais, tornando a série nacional mais adequada para comparação temporal ampla. Em 2020, a metodologia de coleta foi adaptada por causa da pandemia de COVID-19, incluindo entrevistas telefônicas; por isso, comparações com 2020 devem ser feitas com cautela. A ITU DataHub passou a concentrar gratuitamente os dados antes distribuídos pela World Telecommunication/ICT Indicators Database, descontinuada em 2024.",
+    "abrangencia": "Brasil, cobertura nacional de domicílios, com indicador comparável internacionalmente pela ITU.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [
+      {
+        "ano": 2008,
+        "nome": "Cobertura Rural",
+        "descricao":
+          "A pesquisa passou a incluir áreas rurais, tornando a série nacional mais abrangente e reduzindo a comparabilidade direta com anos anteriores exclusivamente urbanos.",
+      },
+      {
+        "ano": 2016,
+        "nome": "Expansão Nacional",
+        "descricao":
+          "A proporção de domicílios com Internet chegou a 54%, refletindo forte expansão do acesso domiciliar em relação a 2008.",
+      },
+      {
+        "ano": 2020,
+        "nome": "COVID-19",
+        "descricao":
+          "A coleta foi adaptada durante a pandemia, com uso de entrevistas telefônicas; a própria fonte recomenda cautela ao comparar 2020 com outros anos.",
+      },
+      {
+        "ano": 2023,
+        "nome": "Pico Histórico",
+        "descricao":
+          "A pesquisa TIC Domicílios 2023 indicou 84% dos domicílios brasileiros com Internet, o maior ponto da série histórica até então.",
+      },
+      {
+        "ano": 2024,
+        "nome": "Estabilidade",
+        "descricao":
+          "A pesquisa TIC Domicílios 2024 indicou estabilidade em relação a 2023, com 83% dos domicílios brasileiros com Internet, enquanto persistiam desigualdades por classe social.",
+      },
+    ],
+    "comparacao_paises":
+      "Em 2024, o Brasil aparece na ITU DataHub com cerca de 83,4% dos domicílios com acesso à Internet em casa. O nível é alto em comparação com muitos países de renda média, mas ainda abaixo de economias avançadas próximas da universalização domiciliar, como países europeus com proporções acima de 90%. A comparação internacional deve considerar diferenças de renda, urbanização, custo de conexão, cobertura territorial, metodologia amostral e definição de domicílio conectado.",
+    "nivel_confiabilidade":
+      "Alto para medir acesso domiciliar à Internet no Brasil, pois a série vem de fonte estatística especializada nacional e é padronizada internacionalmente pela ITU. A principal ressalva é metodológica: há quebra de abrangência antes de 2008, cautela específica para 2020 por mudança de coleta durante a pandemia e o indicador não mede qualidade efetiva da conexão.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "ITU DataHub - Households with Internet access at home - Brazil",
+        "url": "https://datahub.itu.int/data/?e=BRA&i=12047",
+      },
+      { "titulo": "ITU DataHub - About", "url": "https://datahub.itu.int/about/" },
+      {
+        "titulo": "ITU - World Telecommunication/ICT Indicators Database discontinued in 2024",
+        "url": "https://www.itu.int/en/ITU-D/Statistics/Pages/publications/wtid.aspx",
+      },
+      {
+        "titulo": "World Bank Data360 - Percentage of households with internet access at home (ITU)",
+        "url": "https://data360.worldbank.org/en/indicator/IT_HH_INT",
+      },
+      {
+        "titulo": "Cetic.br/NIC.br - ICT Households Survey 2024",
+        "url": "https://cetic.br/media/docs/publicacoes/2/20250512115121/e-book_ict_households_2024.pdf",
+      },
+      {
+        "titulo": "Cetic.br/NIC.br - Executive Summary ICT Households 2024",
+        "url": "https://cetic.br/media/docs/publicacoes/2/20250512113914/executive_summary_ict_households_2024.pdf",
+      },
+      {
+        "titulo": "ITU - Digital Development Dashboard - Brazil",
+        "url": "https://www.itu.int/en/ITU-D/Statistics/Documents/DDD/ddd_BRA.pdf",
+      },
+    ],
+    "dados": [
+      { "ano": 2008, "valor": 18 },
+      { "ano": 2009, "valor": 24 },
+      { "ano": 2010, "valor": 27 },
+      { "ano": 2011, "valor": 36 },
+      { "ano": 2012, "valor": 40 },
+      { "ano": 2013, "valor": 43 },
+      { "ano": 2014, "valor": 50 },
+      { "ano": 2015, "valor": 51 },
+      { "ano": 2016, "valor": 54 },
+      { "ano": 2017, "valor": 61 },
+      { "ano": 2018, "valor": 67 },
+      { "ano": 2019, "valor": 71 },
+      { "ano": 2020, "valor": 83 },
+      { "ano": 2021, "valor": 82 },
+      { "ano": 2022, "valor": 80 },
+      { "ano": 2023, "valor": 84 },
+      { "ano": 2024, "valor": 83.4 },
+    ],
+  },
+  "assinaturas_banda_larga_fixa_100_hab": {
+    "label": "Assinaturas De Banda Larga Fixa",
+    "fonte_sigla": "WDI/ITU",
+    "unidade": "assinaturas por 100 habitantes",
+    "fonte":
+      "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), via World Development Indicators - World Bank (IT.NET.BBND.P2)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao": "Mede o número de assinaturas de banda larga fixa no Brasil para cada 100 habitantes.",
+    "como_interpretar":
+      "Valores maiores indicam maior penetração de conexões fixas de banda larga em relação à população. O indicador mede assinaturas, não pessoas conectadas, qualidade da conexão, velocidade média, preço, cobertura territorial ou uso efetivo da internet.",
+    "metodologia":
+      "O indicador considera assinaturas fixas de acesso de alta velocidade à internet pública por conexão TCP/IP, com velocidade de download igual ou superior a 256 kbit/s. Inclui cable modem, DSL, fibra até a residência/prédio, outras conexões fixas cabeadas, banda larga via satélite e tecnologias fixas sem fio, incluindo fixed WiMAX e outras tecnologias fixas wireless. Exclui assinaturas de acesso por redes móveis celulares. O valor por 100 habitantes é calculado dividindo o número de assinaturas fixas de banda larga pela população e multiplicando por 100.",
+    "historico_metodologia":
+      "A série WDI/ITU informa cobertura de referência a partir de 1998 e periodicidade anual. A definição central do indicador é estável: assinaturas fixas de banda larga com velocidade downstream igual ou superior a 256 kbit/s, excluindo acesso móvel celular. Mudanças de composição tecnológica ao longo do tempo — DSL, cabo, fibra, satélite e acesso fixo sem fio — podem afetar a comparabilidade econômica do indicador, mas permanecem dentro do conceito oficial de banda larga fixa. Também podem ocorrer revisões retroativas quando a ITU ou as autoridades nacionais atualizam dados administrativos, população de referência ou séries históricas.",
+    "abrangencia":
+      "Brasil, cobertura nacional, com padronização internacional pelo WDI/ITU para comparação entre países.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou 24,1 assinaturas de banda larga fixa por 100 habitantes. O nível brasileiro ficou acima da média mundial aproximada, mas abaixo dos patamares típicos de economias de alta renda, onde a penetração fixa costuma superar 35 a 40 assinaturas por 100 habitantes. A comparação deve ser feita com cautela porque uma única assinatura fixa pode atender várias pessoas em um domicílio, e países com maior uso de banda larga móvel podem ter menor densidade de conexões fixas sem necessariamente menor acesso à internet.",
+    "nivel_confiabilidade":
+      "Alto. A série vem do World Telecommunication/ICT Indicators Database da ITU, republicado no World Development Indicators do Banco Mundial. A principal ressalva é que o indicador mede assinaturas e depende de dados reportados por provedores/reguladores nacionais; portanto, pode sofrer revisões e não mede qualidade, velocidade real, preço ou distribuição territorial do acesso.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "Banco Mundial - Fixed broadband subscriptions (per 100 people) - Brazil - IT.NET.BBND.P2",
+        "url": "https://data.worldbank.org/indicator/IT.NET.BBND.P2?locations=BR",
+      },
+      {
+        "titulo": "Banco Mundial DataBank - Metadata - IT.NET.BBND.P2",
+        "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IT.NET.BBND.P2",
+      },
+      { "titulo": "ITU - ICT Statistics", "url": "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx" },
+      {
+        "titulo": "Our World in Data - Landline Internet subscriptions per 100 people - ITU via World Bank",
+        "url": "https://ourworldindata.org/grapher/broadband-penetration-by-country",
+      },
+    ],
+    "dados": [
+      { "ano": 1998, "valor": 0.0 },
+      { "ano": 1999, "valor": 0.0 },
+      { "ano": 2000, "valor": 0.1 },
+      { "ano": 2001, "valor": 0.2 },
+      { "ano": 2002, "valor": 0.4 },
+      { "ano": 2003, "valor": 0.7 },
+      { "ano": 2004, "valor": 1.2 },
+      { "ano": 2005, "valor": 1.8 },
+      { "ano": 2006, "valor": 2.6 },
+      { "ano": 2007, "valor": 4.0 },
+      { "ano": 2008, "valor": 5.3 },
+      { "ano": 2009, "valor": 6.1 },
+      { "ano": 2010, "valor": 7.3 },
+      { "ano": 2011, "valor": 9.1 },
+      { "ano": 2012, "valor": 9.7 },
+      { "ano": 2013, "valor": 10.8 },
+      { "ano": 2014, "valor": 12.0 },
+      { "ano": 2015, "valor": 12.6 },
+      { "ano": 2016, "valor": 13.2 },
+      { "ano": 2017, "valor": 14.1 },
+      { "ano": 2018, "valor": 15.2 },
+      { "ano": 2019, "valor": 15.9 },
+      { "ano": 2020, "valor": 17.4 },
+      { "ano": 2021, "valor": 19.8 },
+      { "ano": 2022, "valor": 21.0 },
+      { "ano": 2023, "valor": 22.4 },
+      { "ano": 2024, "valor": 24.1 },
+    ],
+  },
+  "populacao_coberta_rede_movel_3g_ou_superior": {
+    "label": "População Coberta Por Rede Móvel 3G Ou Superior",
+    "fonte_sigla": "ITU/ODS",
+    "unidade": "% da população",
+    "fonte": "International Telecommunication Union - ITU DataHub / United Nations Global SDG Database - IT_MOB_3GNTWK",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede o percentual da população do Brasil que vive dentro da área de cobertura de uma rede móvel de pelo menos tecnologia 3G.",
+    "como_interpretar":
+      "Valores mais altos indicam maior disponibilidade populacional de rede móvel de banda larga básica. O indicador mede cobertura potencial de sinal, não mede uso efetivo da internet, assinatura ativa, velocidade real, qualidade da conexão, preço, latência, estabilidade, cobertura indoor ou acesso por dispositivo adequado.",
+    "metodologia":
+      "O indicador corresponde à proporção da população coberta por pelo menos uma rede móvel 3G. Segundo a metodologia ODS 9.c.1/ITU, é calculado dividindo o número de habitantes dentro do alcance de um sinal móvel-celular de pelo menos 3G pela população total do país e multiplicando por 100. O indicador inclui pessoas cobertas por 3G ou tecnologias superiores, mas exclui pessoas cobertas apenas por GPRS, EDGE ou CDMA 1xRTT. A cobertura é baseada no local onde a população vive, não onde trabalha, estuda ou circula. Quando há múltiplas operadoras, deve-se considerar a maior população coberta reportada, evitando dupla contagem.",
+    "historico_metodologia":
+      "A metodologia do ODS 9.c.1 evoluiu para separar a cobertura por tecnologia: qualquer rede móvel, pelo menos 2G, pelo menos 3G, pelo menos LTE/4G e pelo menos 5G. A série 3G é comparável como indicador de cobertura móvel de banda larga básica, mas pode sofrer revisões quando países atualizam dados de cobertura, mapas de rede, população de referência ou reporte regulatório. A própria metodologia da ONU/ITU observa que alguns países têm dificuldade de calcular cobertura populacional total e que, em alguns casos, os dados podem se referir ao operador de maior cobertura, o que pode subestimar a cobertura total. Foram mantidos apenas anos com valores observados disponíveis para o Brasil na série IT_MOB_3GNTWK.",
+    "abrangencia":
+      "Brasil, cobertura nacional, população total, com padronização internacional para comparação entre países no contexto do indicador ODS 9.c.1.",
+    "periodicidade": "Anual.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2025, a ITU informou que a cobertura por tecnologia 3G ou superior alcançou cerca de 96% da população mundial, enquanto o Brasil registrou 92,7% em 2024 na série de pelo menos 3G. Isso coloca o Brasil próximo, mas abaixo, da média global recente de cobertura móvel de banda larga básica. A comparação deve considerar diferenças territoriais, densidade populacional, relevo, cobertura rural, critérios nacionais de medição e atualização dos dados reportados.",
+    "nivel_confiabilidade":
+      "Alto para análise histórica e comparação internacional, pois a série deriva do ITU DataHub e do banco global dos Objetivos de Desenvolvimento Sustentável da ONU. A principal ressalva é que cobertura populacional é um indicador regulatório/técnico dependente de mapas de rede e reporte nacional; portanto, pode ser revisado e não deve ser interpretado como uso efetivo ou qualidade real da conexão.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "ITU DataHub - Brazil - Population coverage, by mobile network technology",
+        "url": "https://datahub.itu.int/data/?e=BRA&i=100095",
+      },
+      {
+        "titulo": "ITU DataHub - Brazil - At least 3G",
+        "url": "https://datahub.itu.int/data/?e=BRA&i=100095&s=430&v=chart",
+      },
+      {
+        "titulo": "United Nations SDG Metadata - Indicator 9.c.1",
+        "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-09-0C-01.pdf",
+      },
+      {
+        "titulo": "United Nations SDG Series - IT_MOB_3GNTWK",
+        "url":
+          "https://metadata.un.org/skosmos-dev/sdg/en/page/?clang=en&uri=http%3A%2F%2Fmetadata.un.org%2Fsdg%2FIT_MOB_3GNTWK",
+      },
+      {
+        "titulo": "Our World in Data Grapher - Population covered by mobile network by capability - ITU/SDG mirror",
+        "url":
+          "https://ourworldindata.org/grapher/population-covered-by-mobile-network-by-network-capability.csv?csvType=full&useColumnShortNames=true&v=1",
+      },
+    ],
+    "dados": [
+      { "ano": 2009, "valor": 55 },
+      { "ano": 2010, "valor": 67.05 },
+      { "ano": 2011, "valor": 81.63 },
+      { "ano": 2012, "valor": 85.98 },
+      { "ano": 2013, "valor": 88.66 },
+      { "ano": 2014, "valor": 92.2 },
+      { "ano": 2015, "valor": 93.53 },
+      { "ano": 2016, "valor": 95.17 },
+      { "ano": 2017, "valor": 95.52 },
+      { "ano": 2018, "valor": 95.52 },
+      { "ano": 2019, "valor": 91.13 },
+      { "ano": 2020, "valor": 90.11 },
+      { "ano": 2021, "valor": 90.15 },
+      { "ano": 2022, "valor": 92.36 },
+      { "ano": 2023, "valor": 93.39 },
+      { "ano": 2024, "valor": 92.7 },
+    ],
+  },
+  "indice_servicos_online_egdi_onu": {
+    "label": "Índice de Serviços Online",
+    "fonte_sigla": "ONU/UN DESA",
+    "unidade": "Índice de 0 a 1",
+    "fonte":
+      "United Nations Department of Economic and Social Affairs (UN DESA) - United Nations E-Government Survey / Online Services Index (EGDI)",
+    "cat": "Tecnologia e Inovação",
+    "padrao": false,
+    "descricao":
+      "Mede a maturidade relativa da presença online do governo nacional e da oferta de serviços públicos digitais no âmbito do E-Government Development Index.",
+    "como_interpretar":
+      "Valores mais próximos de 1 indicam maior desenvolvimento relativo dos serviços públicos online avaliados pela ONU. O indicador é comparativo entre países e entre edições da pesquisa; não deve ser interpretado como medida absoluta de qualidade, acesso universal ou satisfação dos usuários com serviços digitais.",
+    "metodologia":
+      "O Online Services Index (OSI) é um dos três componentes do E-Government Development Index (EGDI), ao lado do Telecommunication Infrastructure Index (TII) e do Human Capital Index (HCI). O OSI é calculado pela UN DESA a partir de avaliação independente da presença online nacional dos 193 Estados-membros da ONU, complementada por Member State Questionnaire (MSQ). A avaliação considera características dos portais nacionais e serviços digitais, incluindo estrutura institucional, provisão de serviços, provisão de conteúdo, tecnologia e participação eletrônica. Os valores são normalizados em escala de 0 a 1.",
+    "historico_metodologia":
+      "A série deve ser lida com cautela longitudinal. A ONU informa que a estrutura geral do EGDI permaneceu consistente, mas sofreu melhorias metodológicas incrementais ao longo das edições. Em 2008, o foco deixou de ser 'e-government readiness' e passou a enfatizar desenvolvimento efetivo de governo eletrônico. Em 2024, o OSI continuou baseado em cinco critérios: institutional framework, services provision, content provision, technology e e-participation, mas os itens avaliados foram modificados para incluir novas características e remover características obsoletas; a edição de 2024 usou 183 questões, contra 148 em 2020. Por isso, variações fortes podem refletir tanto mudanças reais nos serviços digitais quanto ajustes metodológicos e de normalização relativa entre países.",
+    "abrangencia":
+      "Brasil, nível nacional, comparável com os 193 Estados-membros da ONU avaliados pela United Nations E-Government Survey.",
+    "periodicidade":
+      "Bienal nas edições recentes; série oficial disponível em anos de pesquisa selecionados: 2003, 2004, 2005, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022 e 2024.",
+    "eventos_externos": [],
+    "comparacao_paises":
+      "Em 2024, o Brasil registrou OSI de 0.90631 e ficou em 21º lugar entre 193 países na base Data360/UN DESA, acima da média global de aproximadamente 0.57540. O Brasil ficou abaixo dos líderes globais, como Coreia do Sul, Dinamarca, Estônia, Arábia Saudita e Ucrânia, mas permaneceu em faixa alta de desenvolvimento relativo de serviços online.",
+    "nivel_confiabilidade":
+      "Alto para comparação internacional oficial, pois os dados são publicados pela UN DESA e republicados em base estruturada pelo World Bank Data360. A principal ressalva é metodológica: o OSI é um índice composto, relativo e normalizado, com mudanças de questionário e critérios entre edições; portanto, a comparabilidade temporal é boa para tendência geral, mas limitada para interpretação causal ou variações ano a ano.",
+    "validacao": "GPT-5.5 Thinking (OpenAI) - 01/05/2026",
+    "fontes_links": [
+      {
+        "titulo": "World Bank Data360 - UN_EGDI_OSI_WIDEF.csv",
+        "url": "https://data360files.worldbank.org/data360-data/data/UN_EGDI/UN_EGDI_OSI_WIDEF.csv",
+      },
+      {
+        "titulo": "World Bank Data360 - Online Services Index (EGDI) Metadata",
+        "url": "https://data360files.worldbank.org/data360-data/metadata/UN_EGDI/UN_EGDI_OSI.pdf",
+      },
+      {
+        "titulo": "UN DESA - E-Government Survey 2024",
+        "url":
+          "https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf",
+      },
+      {
+        "titulo": "UN E-Government Knowledgebase - Brazil",
+        "url": "https://publicadministration.un.org/egovkb/en-us/Data/Country-Information/id/24-Brazil",
+      },
+    ],
+    "dados": [
+      { "ano": 2003, "valor": 0.57641 },
+      { "ano": 2004, "valor": 0.63706 },
+      { "ano": 2005, "valor": 0.75 },
+      { "ano": 2008, "valor": 0.602 },
+      { "ano": 2010, "valor": 0.36825 },
+      { "ano": 2012, "valor": 0.6732 },
+      { "ano": 2014, "valor": 0.59842 },
+      { "ano": 2016, "valor": 0.73188 },
+      { "ano": 2018, "valor": 0.9236 },
+      { "ano": 2020, "valor": 0.8706 },
+      { "ano": 2022, "valor": 0.8964 },
+      { "ano": 2024, "valor": 0.90631 },
+    ],
   },
   "homicidios_intencionais_100_mil_hab": {
     "label": "Homicídios Intencionais",
